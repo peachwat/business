@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: mariadb
--- Generation Time: Nov 29, 2025 at 02:28 PM
+-- Generation Time: Nov 29, 2025 at 03:50 PM
 -- Server version: 12.1.2-MariaDB-ubu2404
 -- PHP Version: 8.3.26
 
@@ -2713,7 +2713,7 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (84, NULL, NULL, 'PS_STOCK_MVT_REASON_DEFAULT', '3', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (85, NULL, NULL, 'PS_SPECIFIC_PRICE_PRIORITIES', 'id_shop;id_currency;id_country;id_group', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (86, NULL, NULL, 'PS_TAX_DISPLAY', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(87, NULL, NULL, 'PS_SMARTY_FORCE_COMPILE', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(87, NULL, NULL, 'PS_SMARTY_FORCE_COMPILE', '2', '0000-00-00 00:00:00', '2025-11-29 16:49:02'),
 (88, NULL, NULL, 'PS_DISTANCE_UNIT', 'km', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (89, NULL, NULL, 'PS_STORES_DISPLAY_CMS', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (90, NULL, NULL, 'SHOP_LOGO_WIDTH', '100', '0000-00-00 00:00:00', '2025-11-29 14:49:44'),
@@ -2729,7 +2729,7 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (100, NULL, NULL, 'PS_LOCALE_LANGUAGE', 'pl', '0000-00-00 00:00:00', '2025-11-29 14:49:44'),
 (101, NULL, NULL, 'PS_LOCALE_COUNTRY', 'pl', '0000-00-00 00:00:00', '2025-11-29 14:49:44'),
 (102, NULL, NULL, 'PS_ATTACHMENT_MAXIMUM_SIZE', '8', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(103, NULL, NULL, 'PS_SMARTY_CACHE', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(103, NULL, NULL, 'PS_SMARTY_CACHE', NULL, '0000-00-00 00:00:00', '2025-11-29 16:49:02'),
 (104, NULL, NULL, 'PS_DIMENSION_UNIT', 'cm', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (105, NULL, NULL, 'PS_GUEST_CHECKOUT_ENABLED', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (106, NULL, NULL, 'PS_DISPLAY_SUPPLIERS', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
@@ -2892,7 +2892,7 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (263, NULL, NULL, 'PS_DASHBOARD_SIMULATION', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (264, NULL, NULL, 'PS_USE_HTMLPURIFIER', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (265, NULL, NULL, 'PS_SMARTY_CACHING_TYPE', 'filesystem', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(266, NULL, NULL, 'PS_SMARTY_LOCAL', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(266, NULL, NULL, 'PS_SMARTY_LOCAL', NULL, '0000-00-00 00:00:00', '2025-11-29 16:49:02'),
 (267, NULL, NULL, 'PS_SMARTY_CLEAR_CACHE', 'everytime', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (268, NULL, NULL, 'PS_DETECT_LANG', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (269, NULL, NULL, 'PS_DETECT_COUNTRY', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
@@ -3059,7 +3059,7 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (430, NULL, NULL, 'PS_PSX_FIREBASE_REFRESH_TOKEN', NULL, '2025-11-29 14:52:49', '2025-11-29 14:52:49'),
 (431, NULL, NULL, 'PS_PSX_FIREBASE_REFRESH_DATE', '2025-11-29 14:52:49', '2025-11-29 14:52:49', '2025-11-29 14:52:49'),
 (432, NULL, NULL, 'PS_ACCOUNTS_FIREBASE_ID_TOKEN', NULL, '2025-11-29 14:52:49', '2025-11-29 14:52:49'),
-(433, NULL, NULL, 'PS_ACCOUNTS_FIREBASE_REFRESH_TOKEN', NULL, '2025-11-29 14:52:49', '2025-11-29 15:12:54');
+(433, NULL, NULL, 'PS_ACCOUNTS_FIREBASE_REFRESH_TOKEN', NULL, '2025-11-29 14:52:49', '2025-11-29 16:48:44');
 
 -- --------------------------------------------------------
 
@@ -3192,7 +3192,8 @@ CREATE TABLE `ps_connections` (
 --
 
 INSERT INTO `ps_connections` (`id_connections`, `id_shop_group`, `id_shop`, `id_guest`, `id_page`, `ip_address`, `date_add`, `http_referer`) VALUES
-(1, 1, 1, 1, 1, 2886926337, '2025-11-29 14:50:34', 'http://localhost:8080/install/index.php');
+(1, 1, 1, 1, 1, 2886926337, '2025-11-29 14:50:34', 'http://localhost:8080/install/index.php'),
+(2, 1, 1, 2, 1, 2886860801, '2025-11-29 16:47:09', '');
 
 -- --------------------------------------------------------
 
@@ -3231,7 +3232,24 @@ INSERT INTO `ps_connections_source` (`id_connections_source`, `id_connections`, 
 (2, 1, 'http://localhost:8080/', 'localhost:8080/login?back=my-account', '', '2025-11-29 15:10:33'),
 (3, 1, 'http://localhost:8080/login?back=my-account', 'localhost:8080/contact-us', '', '2025-11-29 15:10:39'),
 (4, 1, 'http://localhost:8080/contact-us', 'localhost:8080/', '', '2025-11-29 15:10:47'),
-(5, 1, 'http://localhost:8080/contact-us', 'localhost:8080/', '', '2025-11-29 15:17:08');
+(5, 1, 'http://localhost:8080/contact-us', 'localhost:8080/', '', '2025-11-29 15:17:08'),
+(6, 2, 'http://localhost:8080/admin532eej0yx/index.php?controller=AdminLogin&token=65a834b0e683710c5db3b2284d024d25', 'localhost:8080/img/prestashop@2x.png', '', '2025-11-29 16:48:40'),
+(7, 2, 'http://localhost:8080/admin532eej0yx/index.php?controller=AdminLogin&token=65a834b0e683710c5db3b2284d024d25', 'localhost:8080/img/preston-login@2x.png', '', '2025-11-29 16:48:40'),
+(8, 2, 'http://localhost:8080/admin532eej0yx/index.php?controller=AdminLogin&token=65a834b0e683710c5db3b2284d024d25', 'localhost:8080/img/preston-login-wink@2x.png', '', '2025-11-29 16:48:40'),
+(9, 2, 'http://localhost:8080/admin532eej0yx/index.php?controller=AdminLogin&token=65a834b0e683710c5db3b2284d024d25', 'localhost:8080/img/favicon.ico', '', '2025-11-29 16:48:40'),
+(10, 2, 'http://localhost:8080/admin532eej0yx/index.php?controller=AdminLogin&token=65a834b0e683710c5db3b2284d024d25', 'localhost:8080/img/preston-login-wink@2x.png', '', '2025-11-29 16:48:41'),
+(11, 2, 'http://localhost:8080/admin532eej0yx/index.php?controller=AdminLogin&token=65a834b0e683710c5db3b2284d024d25', 'localhost:8080/img/preston-login@2x.png', '', '2025-11-29 16:48:42'),
+(12, 2, 'http://localhost:8080/admin532eej0yx/index.php?controller=AdminLogin&token=65a834b0e683710c5db3b2284d024d25', 'localhost:8080/img/preston-login-wink@2x.png', '', '2025-11-29 16:48:42'),
+(13, 2, 'http://localhost:8080/admin532eej0yx/index.php?controller=AdminLogin&token=65a834b0e683710c5db3b2284d024d25', 'localhost:8080/img/preston-login@2x.png', '', '2025-11-29 16:48:42'),
+(14, 2, 'http://localhost:8080/admin532eej0yx/index.php?controller=AdminLogin&token=65a834b0e683710c5db3b2284d024d25', 'localhost:8080/img/preston-login@2x.png', '', '2025-11-29 16:48:43'),
+(15, 2, 'http://localhost:8080/admin532eej0yx/index.php?controller=AdminDashboard&token=33ef283101f01965bc8e297bb986d20a', 'localhost:8080/img/favicon.ico', '', '2025-11-29 16:48:43'),
+(16, 2, 'http://localhost:8080/admin532eej0yx/index.php?controller=AdminDashboard&token=33ef283101f01965bc8e297bb986d20a', 'localhost:8080/img/pr/default.jpg', '', '2025-11-29 16:48:43'),
+(17, 2, 'http://localhost:8080/admin532eej0yx/index.php/configure/advanced/performance/?_token=v7_MmAvvUgp_-Bj0V3iHXeMdmlJabRwUw3cBeLph4Zk', 'localhost:8080/img/pr/default.jpg', '', '2025-11-29 16:48:48'),
+(18, 2, 'http://localhost:8080/admin532eej0yx/index.php/configure/advanced/performance/?_token=v7_MmAvvUgp_-Bj0V3iHXeMdmlJabRwUw3cBeLph4Zk', 'localhost:8080/img/favicon.ico', '', '2025-11-29 16:48:48'),
+(19, 2, 'http://localhost:8080/admin532eej0yx/index.php/configure/advanced/performance/?_token=v7_MmAvvUgp_-Bj0V3iHXeMdmlJabRwUw3cBeLph4Zk', 'localhost:8080/img/pr/default.jpg', '', '2025-11-29 16:48:55'),
+(20, 2, 'http://localhost:8080/admin532eej0yx/index.php/configure/advanced/performance/?_token=v7_MmAvvUgp_-Bj0V3iHXeMdmlJabRwUw3cBeLph4Zk', 'localhost:8080/img/favicon.ico', '', '2025-11-29 16:48:55'),
+(21, 2, 'http://localhost:8080/admin532eej0yx/index.php/configure/advanced/performance/?_token=v7_MmAvvUgp_-Bj0V3iHXeMdmlJabRwUw3cBeLph4Zk', 'localhost:8080/img/pr/default.jpg', '', '2025-11-29 16:49:03'),
+(22, 2, 'http://localhost:8080/admin532eej0yx/index.php/configure/advanced/performance/?_token=v7_MmAvvUgp_-Bj0V3iHXeMdmlJabRwUw3cBeLph4Zk', 'localhost:8080/img/favicon.ico', '', '2025-11-29 16:49:03');
 
 -- --------------------------------------------------------
 
@@ -4460,7 +4478,8 @@ CREATE TABLE `ps_employee_session` (
 --
 
 INSERT INTO `ps_employee_session` (`id_employee_session`, `id_employee`, `token`) VALUES
-(1, 1, 'd8eccd9621dd0cb8af640740159f71cac1d78b74');
+(1, 1, 'd8eccd9621dd0cb8af640740159f71cac1d78b74'),
+(2, 1, 'd21a534a32ad3f9ebdc0edc05f1f82577879df23');
 
 -- --------------------------------------------------------
 
@@ -6631,7 +6650,8 @@ INSERT INTO `ps_log` (`id_log`, `severity`, `error_code`, `message`, `object_typ
 (224, 1, 0, 'Protect vendor folder in module blockreassurance', '', 0, 1, NULL, 1, 0, 1, '2025-11-29 14:50:19', '2025-11-29 14:50:19'),
 (225, 1, 0, 'Module blockreassurance has no vendor folder', '', 0, 1, NULL, 1, 0, 1, '2025-11-29 14:50:19', '2025-11-29 14:50:19'),
 (226, 1, 0, 'Połączenie z panelem administracyjnym z 172.19.0.1', '', 0, NULL, NULL, 1, 1, 1, '2025-11-29 14:51:50', '2025-11-29 14:51:50'),
-(227, 1, 0, 'Protect vendor folder in module ps_accounts', '', 0, 1, NULL, 1, 0, 1, '2025-11-29 14:52:48', '2025-11-29 14:52:48');
+(227, 1, 0, 'Protect vendor folder in module ps_accounts', '', 0, 1, NULL, 1, 0, 1, '2025-11-29 14:52:48', '2025-11-29 14:52:48'),
+(228, 1, 0, 'Połączenie z panelem administracyjnym z 172.18.0.1', '', 0, NULL, NULL, 1, 1, 1, '2025-11-29 16:48:43', '2025-11-29 16:48:43');
 
 -- --------------------------------------------------------
 
@@ -14017,13 +14037,13 @@ ALTER TABLE `ps_configuration_kpi`
 -- AUTO_INCREMENT for table `ps_connections`
 --
 ALTER TABLE `ps_connections`
-  MODIFY `id_connections` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_connections` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `ps_connections_source`
 --
 ALTER TABLE `ps_connections_source`
-  MODIFY `id_connections_source` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_connections_source` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT for table `ps_contact`
@@ -14113,7 +14133,7 @@ ALTER TABLE `ps_employee_account`
 -- AUTO_INCREMENT for table `ps_employee_session`
 --
 ALTER TABLE `ps_employee_session`
-  MODIFY `id_employee_session` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_employee_session` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `ps_feature`
@@ -14251,7 +14271,7 @@ ALTER TABLE `ps_link_block_shop`
 -- AUTO_INCREMENT for table `ps_log`
 --
 ALTER TABLE `ps_log`
-  MODIFY `id_log` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=228;
+  MODIFY `id_log` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=229;
 
 --
 -- AUTO_INCREMENT for table `ps_mail`
