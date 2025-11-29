@@ -1,0 +1,8 @@
+.gitattributes
+.idea
+venv
+.DS_Store
+.vscode
+
+/prestashop_src/var/cache/dev
+/prestashop_src/img

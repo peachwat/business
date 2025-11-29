@@ -1,0 +1,12 @@
+# ignore cache and logs
+var/logs/*
+var/sessions/*
+var/tmp/*
+
+# Ignore cache and logs
+logs/
+
+# temporary files which can be created if a process still has a handle open of a deleted file
+node_modules/
+*.tmp
+*.log
