@@ -29,6 +29,7 @@ Baza Danych - MariaDB 12.1.2, uruchomiona w kontenerze mariadb.
 Testy UI - Selenium. Skrypt automatyzujący proces zakupowy i testujący podstawowe działania strony internetowej.
 
 3. Uruchomienie Środowiska Deweloperskiego
+
 Projekt jest zoptymalizowany pod kątem pracy w konteneryzacji.
 
 A. Wymagania wstępne
@@ -61,6 +62,7 @@ Panel Admina: http://localhost:8080/admin532eej0yx;
 phpMyAdmin: http://localhost:8081.
 
 4. Foldery i Skrypty
+
 Repozytorium jest podzielone zgodnie z wymogami projektu:
 
 -kody źródłowe sklepu/: Główny kod Prestashop.
