@@ -1,0 +1,10 @@
+parent: classic
+name: czasnaherbate
+display_name: Czas na herbate theme
+version: 1.0.0
+assets:
+    css:
+        product:
+            - id: product-extra-style
+              path: assets/css/theme.css
+              media: all
