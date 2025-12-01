@@ -28,6 +28,44 @@
   </div>
 {/block}
 
+{block name='header_topper'}
+      <div class="header-topper">
+        <div class="container">
+          <div class="row">
+            <div class>
+              <div class="col-xs-12 topper">
+                <div class="social-top">
+                  <ul>
+                    <li class="fejs">
+                      <a href="https://www.facebook.com/czasnaherbate/" title="Przejdź na nasz profil na Facebooku">
+                        <svg width="17" height="17">
+                          <use href="#facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="insta">
+                      <a href="https://www.instagram.com/twojczasnaherbate/"
+                        title="Przejdź na nasz profil na Instagramie">
+                        <svg width="17" height="17">
+                          <use href="#instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+
+
+
+              {hook h='displayTopper'}
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+{/block}
+
 {block name='header_nav'}
   <nav class="header-nav">
     <div class="container">
