@@ -32,35 +32,7 @@
       <div class="header-topper">
         <div class="container">
           <div class="row">
-            <div class>
-              <div class="col-xs-12 topper">
-                <div class="social-top">
-                  <ul>
-                    <li class="fejs">
-                      <a href="https://www.facebook.com/czasnaherbate/" title="Przejdź na nasz profil na Facebooku">
-                        <svg width="17" height="17">
-                          <use href="#facebook"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="insta">
-                      <a href="https://www.instagram.com/twojczasnaherbate/"
-                        title="Przejdź na nasz profil na Instagramie">
-                        <svg width="17" height="17">
-                          <use href="#instagram"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-
-
-
-
               {hook h='displayTopper'}
-
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -96,21 +68,11 @@
   <div class="header-top">
     <div class="container">
        <div class="row">
-        <div class="col-md-2 hidden-sm-down" id="_desktop_logo">
-          {if $shop.logo_details}
-            {if $page.page_name == 'index'}
-              <h1>
-                {renderLogo}
-              </h1>
-            {else}
-              {renderLogo}
-            {/if}
-          {/if}
-        </div>
-        <div class="header-top-right col-md-10 col-sm-12 position-static">
+        <div class="col-xs-12 position-static">
           {hook h='displayTop'}
         </div>
       </div>
+      
       <div id="mobile_top_menu_wrapper" class="row hidden-md-up" style="display:none;">
         <div class="js-top-menu mobile" id="_mobile_top_menu"></div>
         <div class="js-top-menu-bottom">
