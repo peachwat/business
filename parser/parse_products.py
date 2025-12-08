@@ -104,7 +104,7 @@ def parse(driver: uc.Chrome, limit_of_categories: int = None, limit_of_subcatego
 
     products_csv_headers = ["Product ID", "Active (0/1)", "Name *", "Categories (x,y,z...)", "Price tax excluded",
                             "Tax rules ID", "On sale (0/1)", "Quantity","Summary", "Description",
-                            "Show price (0 = No, 1 = Yes)", "Image URLs (x,y,z...)"]
+                            "Show price (0 = No, 1 = Yes)", "Image URLs (x,y,z...)", "Usuń istniejące zdjęcia (0 = Nie, 1 = Tak)"]
 
     unique_product_names = set()
     with open("categories.csv", "w+", newline='') as categories_csv:
@@ -145,13 +145,14 @@ def parse(driver: uc.Chrome, limit_of_categories: int = None, limit_of_subcatego
                                      product["name"],
                                      categories_entry, # categories
                                      product["price_netto"], # Price tax excluded
-                                     1, #"Tax rules ID"
-                                     0, # TODO: "On sale (0/1)"
+                                     # 1, #"Tax rules ID"
+                                     # 0, # TODO: "On sale (0/1)"
                                      random.randint(1, 100),# "Quantity",
                                      product["short_description"], #"Summary"
                                      product["text_description"], # "Description"
                                      1, # Show price (0 = No, 1 = Yes)
-                                     product["main_image_url"] +',' + ','.join(product["thumbnail_urls"])
+                                     "http://localhost/"+ product["main_image_path"],  # images
+                                     1, # Usuń istniejące zdjęcia (0 = Nie, 1 = Tak)
                                      ]
                                 )
 
@@ -233,6 +234,10 @@ def parse_products_from_page(driver: uc.Chrome, url: str) -> List[Dict]:
     return products_on_page
 
 
+from urllib.parse import urlparse
+from utils import sanitize_filename, download_image
+
+
 def parse_product_page(driver: uc.Chrome, url: str) -> Dict:
     """
     Parses a single product page. This version is more robust and handles
@@ -271,6 +276,32 @@ def parse_product_page(driver: uc.Chrome, url: str) -> Dict:
         product_info['main_image_url'] = ''
         product_info['thumbnail_urls'] = []
         logging.warning(f"Could not parse images for {url}")
+
+    # Download images
+    product_info['main_image_path'] = ''
+    product_info['thumbnail_paths'] = []
+    sanitized_product_name = sanitize_filename(product_info.get('name', ''))
+    if sanitized_product_name and product_info['main_image_url']:
+        image_dir = os.path.join('images', 'product_images', sanitized_product_name)
+        
+        # Download main image
+        try:
+            main_image_url = product_info['main_image_url']
+            downloaded_path = download_image(main_image_url, 'main_image', image_dir)
+            if downloaded_path:
+                product_info['main_image_path'] = downloaded_path
+        except Exception as e:
+            logging.error(f"Error downloading main image for {product_info['name']}: {e}")
+
+        # Download thumbnail images
+        for i, thumb_url in enumerate(product_info.get('thumbnail_urls', [])):
+            try:
+                downloaded_path = download_image(thumb_url, f'thumbnail_{i}', image_dir)
+                if downloaded_path:
+                    product_info['thumbnail_paths'].append(downloaded_path)
+            except Exception as e:
+                logging.error(f"Error downloading thumbnail {i} for {product_info['name']}: {e}")
+
 
     try:
         product_info['code'] = driver.find_element(By.CSS_SELECTOR, 'span[itemprop="sku"]').text
