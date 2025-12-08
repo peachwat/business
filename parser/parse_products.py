@@ -38,7 +38,7 @@ def parse(driver: uc.Chrome, limit_of_categories: int = None, limit_of_subcatego
     product_categories_data = []
     top_category_elements = driver.find_elements(By.XPATH, "//a[contains(@class, 'dropdown-item') and @data-depth='0']")
 
-    for id, top_category_element in enumerate(top_category_elements):
+    for id, top_category_element in enumerate(top_category_elements[:limit_of_categories]):
         top_category_data = {
             "id": None,
             "name": top_category_element.get_attribute('textContent').strip(),
@@ -51,7 +51,7 @@ def parse(driver: uc.Chrome, limit_of_categories: int = None, limit_of_subcatego
 
         subcategory_elements = top_category_element.find_elements(By.XPATH,
                                                                   "following-sibling::div//a[contains(@class, 'dropdown-item') and @data-depth='1']")
-        for subcategory_element in subcategory_elements:
+        for subcategory_element in subcategory_elements[:limit_of_subcategories]:
             subcategory_data = {
                 "id": None,
                 "name": subcategory_element.get_attribute('textContent').strip(),
@@ -64,7 +64,7 @@ def parse(driver: uc.Chrome, limit_of_categories: int = None, limit_of_subcatego
 
             group_elements = subcategory_element.find_elements(By.XPATH,
                                                                "following-sibling::div//a[contains(@class, 'dropdown-item') and @data-depth='2']")
-            for group_element in group_elements:
+            for group_element in group_elements[:limit_of_groups]:
                 group_data = {
                     "id": None,
                     "name": group_element.get_attribute('textContent').strip(),
@@ -103,42 +103,42 @@ def parse(driver: uc.Chrome, limit_of_categories: int = None, limit_of_subcatego
                             "Depends On Stock", "Warehouse", "Acessories  (x,y,z...)"]
 
     products_csv_headers = ["Product ID", "Active (0/1)", "Name *", "Categories (x,y,z...)", "Price tax excluded",
-                            "Tax rules ID", "On sale (0/1)", "Summary", "Description",
+                            "Tax rules ID", "On sale (0/1)", "Quantity","Summary", "Description",
                             "Show price (0 = No, 1 = Yes)", "Image URLs (x,y,z...)"]
 
     unique_product_names = set()
     with open("categories.csv", "w+", newline='') as categories_csv:
-        categories_writer = csv.writer(categories_csv, delimiter=';')
-        categories_writer.writerow(categories_csv_headers)
-        for category in product_categories_data:
-            categories_writer.writerow(
-                [category["id"], category["active"], category["name"], category["parent"], category["is_root"]])
-            for subcategory in category["subcategories"]:
+        with open("products.csv", "w+", newline='') as products_csv:
+            product_writer = csv.writer(products_csv, delimiter=';')
+            categories_writer = csv.writer(categories_csv, delimiter=';')
+            categories_writer.writerow(categories_csv_headers)
+            product_writer.writerow(products_csv_headers)
+            for category in product_categories_data:
                 categories_writer.writerow(
-                    [subcategory["id"], subcategory["active"], subcategory["name"], subcategory["parent"],
-                     subcategory["is_root"]]
-                )
-                for group in subcategory["groups"]:
+                    [category["id"], category["active"], category["name"], category["parent"], category["is_root"]])
+                for subcategory in category["subcategories"]:
                     categories_writer.writerow(
-                        [group["id"], group["active"], group["name"], group["parent"], group["is_root"]]
+                        [subcategory["id"], subcategory["active"], subcategory["name"], subcategory["parent"],
+                         subcategory["is_root"]]
                     )
-                    link = group["link"]
-                    logging.info(f"Parsing products in group {link}")
-                    product_summaries = parse_products_from_page(driver, link)
-                    detailed_products = []
-                    for summary in product_summaries[:4]: #TODO: Disable limit
-                        product_link = summary['link']
-                        detailed_info = parse_product_page(driver, product_link)
-                        summary.update(detailed_info)
-                        detailed_products.append(summary)
-                    group["products"] = detailed_products
-                    with open("products.csv", "a", newline='') as products_csv:
-                        product_writer = csv.writer(products_csv, delimiter=';')
-                        product_writer.writerow(products_csv_headers)
+                    for group in subcategory["groups"]:
+                        categories_writer.writerow(
+                            [group["id"], group["active"], group["name"], group["parent"], group["is_root"]]
+                        )
+                        link = group["link"]
+                        logging.info(f"Parsing products in group {link}")
+                        product_summaries = parse_products_from_page(driver, link)
+                        detailed_products = []
+                        for summary in product_summaries[:4]: #TODO: Disable limit
+                            product_link = summary['link']
+                            detailed_info = parse_product_page(driver, product_link)
+                            summary.update(detailed_info)
+                            detailed_products.append(summary)
+                        group["products"] = detailed_products
                         for product in detailed_products:
                             if product['name'] not in unique_product_names:
                                 unique_product_names.add(product['name'])
-                                categories_entry = ''.join([temp_cat['name'] for temp_cat in product["categories"]])
+                                categories_entry = ','.join([temp_cat['name'] for temp_cat in product["categories"]])
                                 product_writer.writerow(
                                     [product["id"],
                                      product["active"],
@@ -147,10 +147,11 @@ def parse(driver: uc.Chrome, limit_of_categories: int = None, limit_of_subcatego
                                      product["price_netto"], # Price tax excluded
                                      1, #"Tax rules ID"
                                      0, # TODO: "On sale (0/1)"
+                                     random.randint(1, 100),# "Quantity",
                                      product["short_description"], #"Summary"
                                      product["text_description"], # "Description"
                                      1, # Show price (0 = No, 1 = Yes)
-                                     product["main_image_url"].join(product["thumbnail_urls"])
+                                     product["main_image_url"] +',' + ','.join(product["thumbnail_urls"])
                                      ]
                                 )
 
@@ -293,7 +294,7 @@ def parse_product_page(driver: uc.Chrome, url: str) -> Dict:
 
         # Set a default text description from the first paragraph
         try:
-            product_info['text_description'] = description_div.find_element(By.TAG_NAME, 'p').text.strip()
+            product_info['text_description'] = description_div.find_element(By.TAG_NAME, 'p').text.strip().replace('\n', ' ')
         except NoSuchElementException:
             pass
 
@@ -364,7 +365,8 @@ if __name__ == "__main__":
     accept_cookies(driver)
 
     try:
-        print(parse(driver))
+        result = parse(driver, limit_of_groups=2, limit_of_subcategories=4, limit_of_categories=4)
+        print(json.dumps(result, indent=4))
 
 
     finally:
