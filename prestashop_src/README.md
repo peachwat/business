@@ -1,1 +1,5 @@
-## if back office catatog crashes - create img/temp directory
+## Scraping
+
+-   install requirements
+-   run
+-   copy images folder to presta/src

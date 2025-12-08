@@ -103,7 +103,7 @@ def parse(driver: uc.Chrome, limit_of_categories: int = None, limit_of_subcatego
                             "Depends On Stock", "Warehouse", "Acessories  (x,y,z...)"]
 
     products_csv_headers = ["Product ID", "Active (0/1)", "Name *", "Categories (x,y,z...)", "Price tax excluded",
-                            "Tax rules ID", "On sale (0/1)", "Quantity","Summary", "Description",
+                            "Tax rules ID",  "Quantity", "Summary", "Description",
                             "Show price (0 = No, 1 = Yes)", "Image URLs (x,y,z...)", "Usuń istniejące zdjęcia (0 = Nie, 1 = Tak)"]
 
     unique_product_names = set()
@@ -139,19 +139,19 @@ def parse(driver: uc.Chrome, limit_of_categories: int = None, limit_of_subcatego
                             if product['name'] not in unique_product_names:
                                 unique_product_names.add(product['name'])
                                 categories_entry = ','.join([temp_cat['name'] for temp_cat in product["categories"]])
+                                images = ["http://localhost/" + img_path for img_path in product["images_path"]]
                                 product_writer.writerow(
                                     [product["id"],
                                      product["active"],
                                      product["name"],
                                      categories_entry, # categories
                                      product["price_netto"], # Price tax excluded
-                                     # 1, #"Tax rules ID"
-                                     # 0, # TODO: "On sale (0/1)"
+                                     1, #"Tax rules ID"
                                      random.randint(1, 100),# "Quantity",
                                      product["short_description"], #"Summary"
                                      product["text_description"], # "Description"
                                      1, # Show price (0 = No, 1 = Yes)
-                                     "http://localhost/"+ product["main_image_path"],  # images
+                                     ", ".join(images),  # Image URLs (x,y,z...)
                                      1, # Usuń istniejące zdjęcia (0 = Nie, 1 = Tak)
                                      ]
                                 )
@@ -267,40 +267,53 @@ def parse_product_page(driver: uc.Chrome, url: str) -> Dict:
         logging.warning(f"Could not parse product price for {url}")
 
     # Main Image and Thumbnails
+
     try:
-        product_info['main_image_url'] = driver.find_element(By.CSS_SELECTOR, 'img.js-qv-product-cover').get_attribute(
-            'src')
-        thumb_elements = driver.find_elements(By.CSS_SELECTOR, 'ul.product-images img')
-        product_info['thumbnail_urls'] = [thumb.get_attribute('src') for thumb in thumb_elements]
+        images_objects = driver.find_elements(By.CSS_SELECTOR, "img.js-thumb")
+        product_info['images'] = [img.get_attribute("data-image-large-src") for img in images_objects]
+
+        # product_info['main_image_url'] = driver.find_element(By.CSS_SELECTOR, 'img.js-qv-product-cover').get_attribute(
+        #     'src').replace("home_default", "large_default").replace("webp", "jpg")
+        # thumb_elements = driver.find_elements(By.CSS_SELECTOR, 'ul.product-images img')
+        #
+        # for thumb in thumb_elements:
+        #     temp = thumb.get_attribute('src').replace("home_default", "large_default").replace("webp", "jpg")
+        #     if temp not in product_info['thumbnail_urls']:
+        #         product_info['thumbnail_urls'].append(temp)
+
+        # product_info['thumbnail_urls'] = [thumb.get_attribute('src').replace("home_default", "large_default").replace("webp", "jpg") for thumb in thumb_elements]
+
     except NoSuchElementException:
         product_info['main_image_url'] = ''
         product_info['thumbnail_urls'] = []
         logging.warning(f"Could not parse images for {url}")
 
+
     # Download images
-    product_info['main_image_path'] = ''
-    product_info['thumbnail_paths'] = []
+    product_info["images_path"] = []
     sanitized_product_name = sanitize_filename(product_info.get('name', ''))
-    if sanitized_product_name and product_info['main_image_url']:
+    if sanitized_product_name and product_info['images']:
         image_dir = os.path.join('images', 'product_images', sanitized_product_name)
         
         # Download main image
-        try:
-            main_image_url = product_info['main_image_url']
-            downloaded_path = download_image(main_image_url, 'main_image', image_dir)
-            if downloaded_path:
-                product_info['main_image_path'] = downloaded_path
-        except Exception as e:
-            logging.error(f"Error downloading main image for {product_info['name']}: {e}")
+
+
+        # try:
+        #     main_image_url = product_info['main_image_url']
+        #     downloaded_path = download_image(main_image_url, 'main_image', image_dir)
+        #     if downloaded_path:
+        #         product_info['main_image_path'] = downloaded_path
+        # except Exception as e:
+        #     logging.error(f"Error downloading main image for {product_info['name']}: {e}")
 
         # Download thumbnail images
-        for i, thumb_url in enumerate(product_info.get('thumbnail_urls', [])):
+        for i,  url in enumerate(product_info.get('images', [])):
             try:
-                downloaded_path = download_image(thumb_url, f'thumbnail_{i}', image_dir)
+                downloaded_path = download_image(url.replace("webp", "jpg"), f'img_{i}', image_dir)
                 if downloaded_path:
-                    product_info['thumbnail_paths'].append(downloaded_path)
+                    product_info['images_path'].append(downloaded_path)
             except Exception as e:
-                logging.error(f"Error downloading thumbnail {i} for {product_info['name']}: {e}")
+                logging.error(f"Error downloading img {i} for {product_info['name']}: {e}")
 
 
     try:
@@ -396,7 +409,7 @@ if __name__ == "__main__":
     accept_cookies(driver)
 
     try:
-        result = parse(driver, limit_of_groups=2, limit_of_subcategories=4, limit_of_categories=4)
+        result = parse(driver, limit_of_groups=3, limit_of_subcategories=4, limit_of_categories=4)
         print(json.dumps(result, indent=4))
 
 
