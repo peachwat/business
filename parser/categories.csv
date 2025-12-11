@@ -4,7 +4,6 @@ Category ID;Active (0/1);Name *;Parent category;Root category (0/1);Description;
 ;1;Herbata Czarna;Klasyczna;0
 ;1;Herbata Zielona;Klasyczna;0
 ;1;Herbata Pu Erh;Klasyczna;0
-;1;Herbata Biała;Klasyczna;0
 ;1;Herbata Żółta;Klasyczna;0
 ;1;Herbata Oolong;Klasyczna;0
 ;1;Rooibos i Honeybush;Klasyczna;0
@@ -60,7 +59,6 @@ Category ID;Active (0/1);Name *;Parent category;Root category (0/1);Description;
 ;1;Herbaty chińskie Zheijang;Regiony;0
 ;1;Herbaty cejlońskie;Regiony;0
 ;1;Herbaty koreańskie;Regiony;0
-;1;Herbaty japońskie;Regiony;0
 ;1;Herbaty gruzińskie;Regiony;0
 ;1;Herbaty kenijskie;Regiony;0
 ;1;Herbaty tureckie;Regiony;0
@@ -69,7 +67,6 @@ Category ID;Active (0/1);Name *;Parent category;Root category (0/1);Description;
 ;1;Herbata wietnamska;Regiony;0
 ;1;Herbaty z Egiptu;Regiony;0
 ;1;Herbaty Sri Lanka;Regiony;0
-;1;Herbata premium;Home;0
 ;1;Kawa;Home;0
 ;1;Kawy Klasyczne;Kawa;0
 ;1;Kawy Smakowe;Kawa;0
