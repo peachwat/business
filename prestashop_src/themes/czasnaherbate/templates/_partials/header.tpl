@@ -32,7 +32,7 @@
       <div class="header-topper">
         <div class="container">
           <div class="row">
-              {hook h='displayTopper'}
+            {hook h='displayTopper'}
           </div>
         </div>
       </div>
