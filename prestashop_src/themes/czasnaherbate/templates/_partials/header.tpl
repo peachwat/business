@@ -32,7 +32,11 @@
       <div class="header-topper">
         <div class="container">
           <div class="row">
-            {hook h='displayTopper'}
+            <div class="topper-container" style="background-color:rgb(255, 0, 0); text-align: center;">
+              <h3>ALOOOOOOOOOOOOOOOOOOO</h3>
+            </div>
+
+            {widget name="ps_searchbar"}
           </div>
         </div>
       </div>
