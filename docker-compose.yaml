@@ -17,12 +17,13 @@ services:
   prestashop:
     platform: linux/x86_64
     container_name: prestashop
-    image: prestashop/prestashop:1.7.8
+    image: prestashop
     restart: unless-stopped
     depends_on:
       - mariadb
     ports:
-      - 8080:80
+      - 80:80
+      - 443:443
     volumes:
       - ./prestashop_src:/var/www/html
     environment:
