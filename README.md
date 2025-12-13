@@ -1,84 +1,96 @@
-https://czasnaherbate.net/ - Sklep Internetowy Prestashop.
+# E-commerce Store with PrestaShop
 
-Projekt realizowany w ramach zajęć z przedmiotu Biznes elektroniczny.
+This project is a PrestaShop 1.7.8 e-commerce store running in a containerized environment using Docker.
 
-Celem projektu jest praktyczne zastosowanie narzędzi Open Source (Docker, Git, Selenium) do wdrożenia, konfiguracji oraz dostosowania sklepu internetowego Prestashop 1.7.8.
+## Tech Stack
 
-1. Wymagania Projektu.
+*   **PrestaShop:** 1.7.8
+*   **Database:** MariaDB 12.1.2
+*   **Web Server:** Apache (within the PrestaShop container)
+*   **Containerization:** Docker & Docker Compose
+*   **Database Management:** phpMyAdmin
 
-Wszystkie wymagania obowiązkowe zostały spełnione.
+## Prerequisites
 
-Repozytorium: założone zgodnie z wytycznymi (Issues, PR/MR, .gitignore, README.md).
+Before you begin, ensure you have the following installed on your system:
 
-Środowisko: zbudowane z wykorzystaniem konteneryzacji (Docker/Docker Compose).
+*   [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+*   [Git](https://git-scm.com/downloads)
+*   **OpenSSL:**
+    *   **macOS/Linux:** Should be pre-installed.
+    *   **Windows:** Available through [Git Bash](https://gitforwindows.org/) or WSL.
 
-Dane: zeskanowano i zaimportowano produkty ze sklepu źródłowego https://czasnaherbate.net/.
+---
 
-Testy: przygotowano zestaw automatycznych testów Selenium.
+## Local Development Setup
 
-2. Wykorzystane Technologie i Wersje
+Follow these steps to get the development environment running on your local machine.
 
-Skorzystaliśmy z Prestashop 1.7.8 do rozwiązania bazowego projektu.
+### 1. Clone the Repository
 
-Repozytorium - GitHub repozytorium do zarządzania kodem źródłowym i organizacji pracy (Issues, PR/MR).
-
-Wirtualizacja - Docker do konteneryzacji środowiska deweloperskiego.
-
-Baza Danych - MariaDB 12.1.2, uruchomiona w kontenerze mariadb.
-
-Testy UI - Selenium. Skrypt automatyzujący proces zakupowy i testujący podstawowe działania strony internetowej.
-
-3. Uruchomienie Środowiska Deweloperskiego
-
-Projekt jest zoptymalizowany pod kątem pracy w konteneryzacji.
-
-A. Wymagania wstępne
-
--Zainstalowany Docker Desktop.
-
--Zainstalowany Git.
-
--(Zalecane) Korzystanie z Visual Studio Code oraz rozszerzenia Remote - WSL (w przypadku pracy na Windows).
-
-B. Instrukcja uruchomienia
-1. Klonowanie Repozytorium: Sklonuj projekt i przejdź do katalogu głównego.
-
-git clone https://github.com/peachwat/business.git,
-
+```bash
+git clone https://github.com/peachwat/business.git
 cd business
+```
 
-2. Uruchomienie Kontenerów:
+### 2. Create a Local SSL Certificate
 
-Użyj pliku docker-compose.yml do uruchomienia wszystkich wymaganych usług.
+The local environment uses HTTPS. You need to generate a self-signed certificate for the Apache server to use. These files are ignored by Git and will not be shared.
 
+**A. Create the SSL directory:**
+
+```bash
+mkdir -p docker/apache/ssl
+```
+
+**B. Generate the certificate:**
+Run the following command. It will create a `localhost.crt` and `localhost.key` file in the directory you just created.
+
+```bash
+openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
+-keyout docker/apache/ssl/localhost.key \
+-out docker/apache/ssl/localhost.crt \
+-subj "/CN=localhost"
+```
+
+### 3. Start the Environment
+
+With the SSL certificate in place, you can now start all the services using Docker Compose.
+
+```bash
 docker-compose up -d
+```
 
-3. Adresy Dostępu:
+The services will now be running in the background.
 
-Sklep: http://localhost:8080;
+---
 
-Panel Admina: http://localhost:8080/admin532eej0yx;
+## Access URLs and Credentials
 
-phpMyAdmin: http://localhost:8081.
+*   **Shop URL:** **[https://localhost:8443](https://localhost:8443)**
+*   **Admin Panel:** **[https://localhost:8443/admin](https://localhost:8443/admin)**
+*   **phpMyAdmin:** **[http://localhost:8081](http://localhost:8081)**
 
-4. Foldery i Skrypty
+> **Note on SSL:** When you first access a `https://localhost:8443` URL, your browser will show a security warning because the certificate is self-signed. This is expected. You must accept the risk to proceed.
 
-Repozytorium jest podzielone zgodnie z wymogami projektu:
+### Credentials
 
--kody źródłowe sklepu/: Główny kod Prestashop.
+*   **PrestaShop Admin:**
+    *   **Email:** `admin@prestashop.com`
+    *   **Password:** `admin`
+*   **phpMyAdmin:**
+    *   **Server:** `mariadb`
+    *   **Username:** `root`
+    *   **Password:** `admin`
 
--kody źródłowe testów automatycznych/: Zawiera skrypty testowe Selenium.
+## Project Structure
 
--kody źródłowe narzędzia do scrapowania/: Zawiera skrypt do pobierania danych produktów.
-
--rezultat scrappowania/: Zawiera pliki UTF-8 z danymi produktów (kategorie, nazwy, ceny, opisy).
-
--pliki konfiguracyjne i skrypty wykorzystywane w procesie instalacji/wdrożenia/: Zawiera docker-compose.yml, skrypty instalacyjne oraz eksport ustawień sklepu.
-
-5. Skład Zespołu
-
-Evelina Rylova - 201303;
-
-Artem Ulianych - 196803;
-
-Mikita Kasiak - 201342;
+```
+.
+├── docker/              # Docker-related configurations (Apache, MariaDB)
+├── parser/              # Python scripts for scraping products
+├── prestashop_src/      # The PrestaShop source code (the application root)
+├── .gitignore           # Files and directories ignored by Git
+├── docker-compose.yaml  # Defines the services, networks, and volumes for Docker
+└── README.md            # This file
+```
