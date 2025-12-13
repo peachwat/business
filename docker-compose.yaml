@@ -1,59 +1,58 @@
-version: '3'
+version: "3"
 services:
-  mariadb:
-    container_name: mariadb
-    platform: linux/x86_64
-    image: mariadb:12.1.2
-    restart: unless-stopped
-    environment:
-      MARIADB_ROOT_PASSWORD: admin
-      MARIADB_DATABASE: prestashop
-      MARIADB_USER: admin
-      MARIADB_PASSWORD: admin
-    networks:
-      - prestashop_network
-    volumes:
-      - ./docker/mariadb:/docker-entrypoint-initdb.d
-  prestashop:
-    platform: linux/x86_64
-    container_name: prestashop
-    image: prestashop
-    restart: unless-stopped
-    depends_on:
-      - mariadb
-    ports:
-      - 80:80
-      - 443:443
-    volumes:
-      - ./prestashop_src:/var/www/html
-    environment:
-      DB_SERVER: mariadb
-      DB_NAME: prestashop
-      DB_USER: admin
-      DB_PASSWD: admin
-      PS_INSTALL_AUTO: 0
-      PS_FOLDER_ADMIN: admin
-      PS_DEV_MODE: 1
-      # set admin email
-      ADMIN_MAIL: admin@prestashop.com
-      # set admin password
-      ADMIN_PASSWD: admin
-    networks:
-      - prestashop_network
-  phpmyadmin:
-    platform: linux/x86_64
-    container_name: phpmyadmin
-    image: phpmyadmin/phpmyadmin:5.2.3
-    restart: unless-stopped
-    depends_on:
-      - mariadb
-    ports:
-      - 8081:80
-    environment:
-      PMA_HOST: mariadb
-      MYSQL_ROOT_PASSWORD: admin
-    networks:
-      - prestashop_network
+    mariadb:
+        container_name: mariadb
+        platform: linux/x86_64
+        image: mariadb:12.1.2
+        restart: unless-stopped
+        environment:
+            MARIADB_ROOT_PASSWORD: admin
+            MARIADB_DATABASE: prestashop
+            MARIADB_USER: admin
+            MARIADB_PASSWORD: admin
+        networks:
+            - prestashop_network
+        volumes:
+            - ./docker/mariadb:/docker-entrypoint-initdb.d
+    prestashop:
+        platform: linux/x86_64
+        container_name: prestashop
+        build: .
+        restart: unless-stopped
+        depends_on:
+            - mariadb
+        ports:
+            - 80:80
+            - 443:443
+        volumes:
+            - ./prestashop_src:/var/www/html
+        environment:
+            DB_SERVER: mariadb
+            DB_NAME: prestashop
+            DB_USER: admin
+            DB_PASSWD: admin
+            PS_INSTALL_AUTO: 0
+            PS_FOLDER_ADMIN: admin
+            PS_DEV_MODE: 1
+            # set admin email
+            ADMIN_MAIL: admin@prestashop.com
+            # set admin password
+            ADMIN_PASSWD: admin
+        networks:
+            - prestashop_network
+    phpmyadmin:
+        platform: linux/x86_64
+        container_name: phpmyadmin
+        image: phpmyadmin/phpmyadmin:5.2.3
+        restart: unless-stopped
+        depends_on:
+            - mariadb
+        ports:
+            - 8081:80
+        environment:
+            PMA_HOST: mariadb
+            MYSQL_ROOT_PASSWORD: admin
+        networks:
+            - prestashop_network
 networks:
-  prestashop_network:
-  
+    prestashop_network:
