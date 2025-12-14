@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>payu</name>
+    <displayName><![CDATA[PayU]]></displayName>
+    <version><![CDATA[3.4.1]]></version>
+    <description><![CDATA[Akceptuje płatności przez PayU]]></description>
+    <author><![CDATA[PayU]]></author>
+    <tab><![CDATA[payments_gateways]]></tab>
+	<confirmUninstall><![CDATA[Czy na pewno chcesz odinstalować moduł? Po tej operacji stracisz wszystkie ustawienia!]]></confirmUninstall>
+    <is_configurable>1</is_configurable>
+    <need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>
