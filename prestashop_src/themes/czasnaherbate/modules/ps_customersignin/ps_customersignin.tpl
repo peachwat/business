@@ -46,10 +46,12 @@
       <a
         href="{$urls.pages.my_account}"
         title="{l s='Log in to your customer account' d='Shop.Theme.Customeraccount'}"
-        rel="nofollow"
-      >
-        <i class="material-icons">&#xE7FF;</i>
+        rel="nofollow">
+        
         <span class="hidden-sm-down">{l s='Sign in' d='Shop.Theme.Actions'}</span>
+        <svg id="account" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle;" width="24" height="24" viewBox="0 0 95 95" fill="currentColor">
+        <path d="M47.5 95A47.513 47.513 0 0 1 29.011 3.732a47.513 47.513 0 0 1 36.978 87.535A47.183 47.183 0 0 1 47.5 95Zm1-40.55c-10.013 0-17.953 2.647-22.961 7.654-3.911 3.911-5.3 8.47-5.3 11.185a4.507 4.507 0 0 0 1.23 3.318 2.715 2.715 0 0 0 .336.353A38.493 38.493 0 0 0 48.5 87a40.679 40.679 0 0 0 26.565-9.993 4.347 4.347 0 0 0 1.694-3.718c0-2.716-1.388-7.275-5.3-11.185-5.006-5.004-12.946-7.653-22.959-7.653Zm0-32.97a14.13 14.13 0 1 0 14.13 14.13A14.146 14.146 0 0 0 48.5 21.481Z"></path>
+     </svg>
       </a>
     {/if}
   </div>
