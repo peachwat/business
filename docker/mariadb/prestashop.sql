@@ -2,10 +2,10 @@
 -- version 5.2.3
 -- https://www.phpmyadmin.net/
 --
--- Host: mariadb
--- Generation Time: Dec 14, 2025 at 04:39 PM
--- Server version: 12.1.2-MariaDB-ubu2404
--- PHP Version: 8.3.26
+-- Хост: mariadb
+-- Время создания: Дек 14 2025 г., 21:24
+-- Версия сервера: 12.1.2-MariaDB-ubu2404
+-- Версия PHP: 8.3.26
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `prestashop`
+-- База данных: `prestashop`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_access`
+-- Структура таблицы `ps_access`
 --
 
 CREATE TABLE `ps_access` (
@@ -33,7 +33,7 @@ CREATE TABLE `ps_access` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_access`
+-- Дамп данных таблицы `ps_access`
 --
 
 INSERT INTO `ps_access` (`id_profile`, `id_authorization_role`) VALUES
@@ -641,7 +641,7 @@ INSERT INTO `ps_access` (`id_profile`, `id_authorization_role`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_accessory`
+-- Структура таблицы `ps_accessory`
 --
 
 CREATE TABLE `ps_accessory` (
@@ -652,7 +652,7 @@ CREATE TABLE `ps_accessory` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_address`
+-- Структура таблицы `ps_address`
 --
 
 CREATE TABLE `ps_address` (
@@ -683,7 +683,7 @@ CREATE TABLE `ps_address` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_address`
+-- Дамп данных таблицы `ps_address`
 --
 
 INSERT INTO `ps_address` (`id_address`, `id_country`, `id_state`, `id_customer`, `id_manufacturer`, `id_supplier`, `id_warehouse`, `alias`, `company`, `lastname`, `firstname`, `address1`, `address2`, `postcode`, `city`, `other`, `phone`, `phone_mobile`, `vat_number`, `dni`, `date_add`, `date_upd`, `active`, `deleted`) VALUES
@@ -692,7 +692,7 @@ INSERT INTO `ps_address` (`id_address`, `id_country`, `id_state`, `id_customer`,
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_address_format`
+-- Структура таблицы `ps_address_format`
 --
 
 CREATE TABLE `ps_address_format` (
@@ -701,7 +701,7 @@ CREATE TABLE `ps_address_format` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_address_format`
+-- Дамп данных таблицы `ps_address_format`
 --
 
 INSERT INTO `ps_address_format` (`id_country`, `format`) VALUES
@@ -950,7 +950,7 @@ INSERT INTO `ps_address_format` (`id_country`, `format`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_admin_filter`
+-- Структура таблицы `ps_admin_filter`
 --
 
 CREATE TABLE `ps_admin_filter` (
@@ -964,7 +964,7 @@ CREATE TABLE `ps_admin_filter` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `ps_admin_filter`
+-- Дамп данных таблицы `ps_admin_filter`
 --
 
 INSERT INTO `ps_admin_filter` (`id`, `employee`, `shop`, `controller`, `action`, `filter`, `filter_id`) VALUES
@@ -975,7 +975,7 @@ INSERT INTO `ps_admin_filter` (`id`, `employee`, `shop`, `controller`, `action`,
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_alias`
+-- Структура таблицы `ps_alias`
 --
 
 CREATE TABLE `ps_alias` (
@@ -988,7 +988,7 @@ CREATE TABLE `ps_alias` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_attachment`
+-- Структура таблицы `ps_attachment`
 --
 
 CREATE TABLE `ps_attachment` (
@@ -1002,7 +1002,7 @@ CREATE TABLE `ps_attachment` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_attachment_lang`
+-- Структура таблицы `ps_attachment_lang`
 --
 
 CREATE TABLE `ps_attachment_lang` (
@@ -1015,7 +1015,7 @@ CREATE TABLE `ps_attachment_lang` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_attribute`
+-- Структура таблицы `ps_attribute`
 --
 
 CREATE TABLE `ps_attribute` (
@@ -1028,7 +1028,7 @@ CREATE TABLE `ps_attribute` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_attribute_group`
+-- Структура таблицы `ps_attribute_group`
 --
 
 CREATE TABLE `ps_attribute_group` (
@@ -1041,7 +1041,7 @@ CREATE TABLE `ps_attribute_group` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_attribute_group_lang`
+-- Структура таблицы `ps_attribute_group_lang`
 --
 
 CREATE TABLE `ps_attribute_group_lang` (
@@ -1054,7 +1054,7 @@ CREATE TABLE `ps_attribute_group_lang` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_attribute_group_shop`
+-- Структура таблицы `ps_attribute_group_shop`
 --
 
 CREATE TABLE `ps_attribute_group_shop` (
@@ -1065,7 +1065,7 @@ CREATE TABLE `ps_attribute_group_shop` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_attribute_impact`
+-- Структура таблицы `ps_attribute_impact`
 --
 
 CREATE TABLE `ps_attribute_impact` (
@@ -1079,7 +1079,7 @@ CREATE TABLE `ps_attribute_impact` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_attribute_lang`
+-- Структура таблицы `ps_attribute_lang`
 --
 
 CREATE TABLE `ps_attribute_lang` (
@@ -1091,7 +1091,7 @@ CREATE TABLE `ps_attribute_lang` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_attribute_shop`
+-- Структура таблицы `ps_attribute_shop`
 --
 
 CREATE TABLE `ps_attribute_shop` (
@@ -1102,7 +1102,7 @@ CREATE TABLE `ps_attribute_shop` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_authorization_role`
+-- Структура таблицы `ps_authorization_role`
 --
 
 CREATE TABLE `ps_authorization_role` (
@@ -1111,7 +1111,7 @@ CREATE TABLE `ps_authorization_role` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_authorization_role`
+-- Дамп данных таблицы `ps_authorization_role`
 --
 
 INSERT INTO `ps_authorization_role` (`id_authorization_role`, `slug`) VALUES
@@ -1979,7 +1979,7 @@ INSERT INTO `ps_authorization_role` (`id_authorization_role`, `slug`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_blockwishlist_statistics`
+-- Структура таблицы `ps_blockwishlist_statistics`
 --
 
 CREATE TABLE `ps_blockwishlist_statistics` (
@@ -1994,7 +1994,7 @@ CREATE TABLE `ps_blockwishlist_statistics` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_carrier`
+-- Структура таблицы `ps_carrier`
 --
 
 CREATE TABLE `ps_carrier` (
@@ -2022,7 +2022,7 @@ CREATE TABLE `ps_carrier` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_carrier`
+-- Дамп данных таблицы `ps_carrier`
 --
 
 INSERT INTO `ps_carrier` (`id_carrier`, `id_reference`, `id_tax_rules_group`, `name`, `url`, `active`, `deleted`, `shipping_handling`, `range_behavior`, `is_module`, `is_free`, `shipping_external`, `need_range`, `external_module_name`, `shipping_method`, `position`, `max_width`, `max_height`, `max_depth`, `max_weight`, `grade`) VALUES
@@ -2033,7 +2033,7 @@ INSERT INTO `ps_carrier` (`id_carrier`, `id_reference`, `id_tax_rules_group`, `n
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_carrier_group`
+-- Структура таблицы `ps_carrier_group`
 --
 
 CREATE TABLE `ps_carrier_group` (
@@ -2042,7 +2042,7 @@ CREATE TABLE `ps_carrier_group` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_carrier_group`
+-- Дамп данных таблицы `ps_carrier_group`
 --
 
 INSERT INTO `ps_carrier_group` (`id_carrier`, `id_group`) VALUES
@@ -2059,7 +2059,7 @@ INSERT INTO `ps_carrier_group` (`id_carrier`, `id_group`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_carrier_lang`
+-- Структура таблицы `ps_carrier_lang`
 --
 
 CREATE TABLE `ps_carrier_lang` (
@@ -2070,7 +2070,7 @@ CREATE TABLE `ps_carrier_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_carrier_lang`
+-- Дамп данных таблицы `ps_carrier_lang`
 --
 
 INSERT INTO `ps_carrier_lang` (`id_carrier`, `id_shop`, `id_lang`, `delay`) VALUES
@@ -2081,7 +2081,7 @@ INSERT INTO `ps_carrier_lang` (`id_carrier`, `id_shop`, `id_lang`, `delay`) VALU
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_carrier_shop`
+-- Структура таблицы `ps_carrier_shop`
 --
 
 CREATE TABLE `ps_carrier_shop` (
@@ -2090,7 +2090,7 @@ CREATE TABLE `ps_carrier_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_carrier_shop`
+-- Дамп данных таблицы `ps_carrier_shop`
 --
 
 INSERT INTO `ps_carrier_shop` (`id_carrier`, `id_shop`) VALUES
@@ -2101,7 +2101,7 @@ INSERT INTO `ps_carrier_shop` (`id_carrier`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_carrier_tax_rules_group_shop`
+-- Структура таблицы `ps_carrier_tax_rules_group_shop`
 --
 
 CREATE TABLE `ps_carrier_tax_rules_group_shop` (
@@ -2111,7 +2111,7 @@ CREATE TABLE `ps_carrier_tax_rules_group_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_carrier_tax_rules_group_shop`
+-- Дамп данных таблицы `ps_carrier_tax_rules_group_shop`
 --
 
 INSERT INTO `ps_carrier_tax_rules_group_shop` (`id_carrier`, `id_tax_rules_group`, `id_shop`) VALUES
@@ -2122,7 +2122,7 @@ INSERT INTO `ps_carrier_tax_rules_group_shop` (`id_carrier`, `id_tax_rules_group
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_carrier_zone`
+-- Структура таблицы `ps_carrier_zone`
 --
 
 CREATE TABLE `ps_carrier_zone` (
@@ -2131,7 +2131,7 @@ CREATE TABLE `ps_carrier_zone` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_carrier_zone`
+-- Дамп данных таблицы `ps_carrier_zone`
 --
 
 INSERT INTO `ps_carrier_zone` (`id_carrier`, `id_zone`) VALUES
@@ -2142,7 +2142,7 @@ INSERT INTO `ps_carrier_zone` (`id_carrier`, `id_zone`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_cart`
+-- Структура таблицы `ps_cart`
 --
 
 CREATE TABLE `ps_cart` (
@@ -2168,10 +2168,17 @@ CREATE TABLE `ps_cart` (
   `checkout_session_data` mediumtext DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
+--
+-- Дамп данных таблицы `ps_cart`
+--
+
+INSERT INTO `ps_cart` (`id_cart`, `id_shop_group`, `id_shop`, `id_carrier`, `delivery_option`, `id_lang`, `id_address_delivery`, `id_address_invoice`, `id_currency`, `id_customer`, `id_guest`, `secure_key`, `recyclable`, `gift`, `gift_message`, `mobile_theme`, `allow_seperated_package`, `date_add`, `date_upd`, `checkout_session_data`) VALUES
+(1, 1, 1, 0, '', 1, 0, 0, 1, 0, 30, '', 0, 0, '', 0, 0, '2025-12-14 22:22:40', '2025-12-14 22:22:40', NULL);
+
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_cart_cart_rule`
+-- Структура таблицы `ps_cart_cart_rule`
 --
 
 CREATE TABLE `ps_cart_cart_rule` (
@@ -2182,7 +2189,7 @@ CREATE TABLE `ps_cart_cart_rule` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_cart_product`
+-- Структура таблицы `ps_cart_product`
 --
 
 CREATE TABLE `ps_cart_product` (
@@ -2196,10 +2203,17 @@ CREATE TABLE `ps_cart_product` (
   `date_add` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
+--
+-- Дамп данных таблицы `ps_cart_product`
+--
+
+INSERT INTO `ps_cart_product` (`id_cart`, `id_product`, `id_address_delivery`, `id_shop`, `id_product_attribute`, `id_customization`, `quantity`, `date_add`) VALUES
+(1, 270, 0, 1, 0, 0, 2, '2025-12-14 22:22:40');
+
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_cart_rule`
+-- Структура таблицы `ps_cart_rule`
 --
 
 CREATE TABLE `ps_cart_rule` (
@@ -2241,7 +2255,7 @@ CREATE TABLE `ps_cart_rule` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_cart_rule_carrier`
+-- Структура таблицы `ps_cart_rule_carrier`
 --
 
 CREATE TABLE `ps_cart_rule_carrier` (
@@ -2252,7 +2266,7 @@ CREATE TABLE `ps_cart_rule_carrier` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_cart_rule_combination`
+-- Структура таблицы `ps_cart_rule_combination`
 --
 
 CREATE TABLE `ps_cart_rule_combination` (
@@ -2263,7 +2277,7 @@ CREATE TABLE `ps_cart_rule_combination` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_cart_rule_country`
+-- Структура таблицы `ps_cart_rule_country`
 --
 
 CREATE TABLE `ps_cart_rule_country` (
@@ -2274,7 +2288,7 @@ CREATE TABLE `ps_cart_rule_country` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_cart_rule_group`
+-- Структура таблицы `ps_cart_rule_group`
 --
 
 CREATE TABLE `ps_cart_rule_group` (
@@ -2285,7 +2299,7 @@ CREATE TABLE `ps_cart_rule_group` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_cart_rule_lang`
+-- Структура таблицы `ps_cart_rule_lang`
 --
 
 CREATE TABLE `ps_cart_rule_lang` (
@@ -2297,7 +2311,7 @@ CREATE TABLE `ps_cart_rule_lang` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_cart_rule_product_rule`
+-- Структура таблицы `ps_cart_rule_product_rule`
 --
 
 CREATE TABLE `ps_cart_rule_product_rule` (
@@ -2309,7 +2323,7 @@ CREATE TABLE `ps_cart_rule_product_rule` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_cart_rule_product_rule_group`
+-- Структура таблицы `ps_cart_rule_product_rule_group`
 --
 
 CREATE TABLE `ps_cart_rule_product_rule_group` (
@@ -2321,7 +2335,7 @@ CREATE TABLE `ps_cart_rule_product_rule_group` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_cart_rule_product_rule_value`
+-- Структура таблицы `ps_cart_rule_product_rule_value`
 --
 
 CREATE TABLE `ps_cart_rule_product_rule_value` (
@@ -2332,7 +2346,7 @@ CREATE TABLE `ps_cart_rule_product_rule_value` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_cart_rule_shop`
+-- Структура таблицы `ps_cart_rule_shop`
 --
 
 CREATE TABLE `ps_cart_rule_shop` (
@@ -2343,7 +2357,7 @@ CREATE TABLE `ps_cart_rule_shop` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_category`
+-- Структура таблицы `ps_category`
 --
 
 CREATE TABLE `ps_category` (
@@ -2361,17 +2375,155 @@ CREATE TABLE `ps_category` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_category`
+-- Дамп данных таблицы `ps_category`
 --
 
 INSERT INTO `ps_category` (`id_category`, `id_parent`, `id_shop_default`, `level_depth`, `nleft`, `nright`, `active`, `date_add`, `date_upd`, `position`, `is_root_category`) VALUES
-(1, 0, 1, 0, 0, 0, 1, '2025-11-29 14:49:43', '2025-11-29 14:49:43', 0, 0),
-(2, 1, 1, 1, 0, 0, 1, '2025-11-29 14:49:43', '2025-11-29 14:49:43', 0, 1);
+(1, 0, 1, 0, 1, 280, 1, '2025-11-29 14:49:43', '2025-11-29 14:49:43', 0, 0),
+(2, 1, 1, 1, 2, 279, 1, '2025-11-29 14:49:43', '2025-11-29 14:49:43', 0, 1),
+(3, 2, 1, 2, 3, 4, 1, '2025-12-14 22:19:33', '2025-12-14 22:19:33', 0, 0),
+(4, 2, 1, 2, 5, 6, 1, '2025-12-14 22:19:33', '2025-12-14 22:19:33', 1, 0),
+(5, 2, 1, 2, 7, 8, 1, '2025-12-14 22:19:33', '2025-12-14 22:19:33', 2, 0),
+(6, 2, 1, 2, 9, 10, 1, '2025-12-14 22:19:33', '2025-12-14 22:19:33', 3, 0),
+(7, 2, 1, 2, 11, 12, 1, '2025-12-14 22:19:33', '2025-12-14 22:19:33', 4, 0),
+(8, 2, 1, 2, 13, 14, 1, '2025-12-14 22:19:33', '2025-12-14 22:19:33', 5, 0),
+(9, 2, 1, 2, 15, 16, 1, '2025-12-14 22:19:34', '2025-12-14 22:19:34', 6, 0),
+(10, 2, 1, 2, 17, 18, 1, '2025-12-14 22:19:34', '2025-12-14 22:19:34', 7, 0),
+(11, 2, 1, 2, 19, 20, 1, '2025-12-14 22:19:34', '2025-12-14 22:19:34', 8, 0),
+(12, 2, 1, 2, 21, 22, 1, '2025-12-14 22:19:34', '2025-12-14 22:19:34', 9, 0),
+(13, 2, 1, 2, 23, 24, 1, '2025-12-14 22:19:34', '2025-12-14 22:19:34', 10, 0),
+(14, 2, 1, 2, 25, 26, 1, '2025-12-14 22:19:34', '2025-12-14 22:19:34', 11, 0),
+(15, 2, 1, 2, 27, 28, 1, '2025-12-14 22:19:35', '2025-12-14 22:19:35', 12, 0),
+(16, 2, 1, 2, 29, 30, 1, '2025-12-14 22:19:35', '2025-12-14 22:19:35', 13, 0),
+(17, 2, 1, 2, 31, 32, 1, '2025-12-14 22:19:35', '2025-12-14 22:19:35', 14, 0),
+(18, 2, 1, 2, 33, 34, 1, '2025-12-14 22:19:36', '2025-12-14 22:19:36', 15, 0),
+(19, 2, 1, 2, 35, 36, 1, '2025-12-14 22:19:36', '2025-12-14 22:19:36', 16, 0),
+(20, 2, 1, 2, 37, 38, 1, '2025-12-14 22:19:36', '2025-12-14 22:19:36', 17, 0),
+(21, 2, 1, 2, 39, 40, 1, '2025-12-14 22:19:37', '2025-12-14 22:19:37', 18, 0),
+(22, 2, 1, 2, 41, 42, 1, '2025-12-14 22:19:37', '2025-12-14 22:19:37', 19, 0),
+(23, 2, 1, 2, 43, 44, 1, '2025-12-14 22:19:38', '2025-12-14 22:19:38', 20, 0),
+(24, 2, 1, 2, 45, 46, 1, '2025-12-14 22:19:38', '2025-12-14 22:19:38', 21, 0),
+(25, 2, 1, 2, 47, 48, 1, '2025-12-14 22:19:39', '2025-12-14 22:19:39', 22, 0),
+(26, 2, 1, 2, 49, 50, 1, '2025-12-14 22:19:39', '2025-12-14 22:19:39', 23, 0),
+(27, 2, 1, 2, 51, 52, 1, '2025-12-14 22:20:23', '2025-12-14 22:20:23', 24, 0),
+(28, 2, 1, 2, 53, 54, 1, '2025-12-14 22:19:40', '2025-12-14 22:19:40', 25, 0),
+(29, 2, 1, 2, 55, 56, 1, '2025-12-14 22:19:40', '2025-12-14 22:19:40', 26, 0),
+(30, 2, 1, 2, 57, 58, 1, '2025-12-14 22:19:40', '2025-12-14 22:19:40', 27, 0),
+(31, 2, 1, 2, 59, 60, 1, '2025-12-14 22:19:40', '2025-12-14 22:19:40', 28, 0),
+(32, 2, 1, 2, 61, 62, 1, '2025-12-14 22:19:40', '2025-12-14 22:19:40', 29, 0),
+(33, 2, 1, 2, 63, 64, 1, '2025-12-14 22:19:41', '2025-12-14 22:19:41', 30, 0),
+(34, 2, 1, 2, 65, 66, 1, '2025-12-14 22:19:41', '2025-12-14 22:19:41', 31, 0),
+(35, 2, 1, 2, 67, 68, 1, '2025-12-14 22:19:42', '2025-12-14 22:19:42', 32, 0),
+(36, 2, 1, 2, 69, 70, 1, '2025-12-14 22:19:42', '2025-12-14 22:19:42', 33, 0),
+(37, 2, 1, 2, 71, 72, 1, '2025-12-14 22:19:42', '2025-12-14 22:19:42', 34, 0),
+(38, 2, 1, 2, 73, 74, 1, '2025-12-14 22:19:42', '2025-12-14 22:19:42', 35, 0),
+(39, 2, 1, 2, 75, 76, 1, '2025-12-14 22:19:42', '2025-12-14 22:19:42', 36, 0),
+(40, 2, 1, 2, 77, 78, 1, '2025-12-14 22:19:42', '2025-12-14 22:19:42', 37, 0),
+(41, 2, 1, 2, 79, 80, 1, '2025-12-14 22:19:43', '2025-12-14 22:19:43', 38, 0),
+(42, 2, 1, 2, 81, 82, 1, '2025-12-14 22:19:43', '2025-12-14 22:19:43', 39, 0),
+(43, 2, 1, 2, 83, 84, 1, '2025-12-14 22:19:44', '2025-12-14 22:19:44', 40, 0),
+(44, 2, 1, 2, 85, 86, 1, '2025-12-14 22:19:44', '2025-12-14 22:19:44', 41, 0),
+(45, 2, 1, 2, 87, 88, 1, '2025-12-14 22:19:44', '2025-12-14 22:19:44', 42, 0),
+(46, 2, 1, 2, 89, 90, 1, '2025-12-14 22:19:44', '2025-12-14 22:19:44', 43, 0),
+(47, 2, 1, 2, 91, 92, 1, '2025-12-14 22:19:44', '2025-12-14 22:19:44', 44, 0),
+(48, 2, 1, 2, 93, 94, 1, '2025-12-14 22:19:45', '2025-12-14 22:19:45', 45, 0),
+(49, 2, 1, 2, 95, 96, 1, '2025-12-14 22:19:45', '2025-12-14 22:19:45', 46, 0),
+(50, 2, 1, 2, 97, 98, 1, '2025-12-14 22:19:44', '2025-12-14 22:19:44', 47, 0),
+(51, 2, 1, 2, 99, 100, 1, '2025-12-14 22:19:44', '2025-12-14 22:19:44', 48, 0),
+(52, 2, 1, 2, 101, 102, 1, '2025-12-14 22:19:45', '2025-12-14 22:19:45', 49, 0),
+(53, 2, 1, 2, 103, 104, 1, '2025-12-14 22:19:45', '2025-12-14 22:19:45', 50, 0),
+(54, 2, 1, 2, 105, 106, 1, '2025-12-14 22:19:45', '2025-12-14 22:19:45', 51, 0),
+(55, 2, 1, 2, 107, 108, 1, '2025-12-14 22:19:45', '2025-12-14 22:19:45', 52, 0),
+(56, 2, 1, 2, 109, 110, 1, '2025-12-14 22:19:47', '2025-12-14 22:19:47', 53, 0),
+(57, 2, 1, 2, 111, 112, 1, '2025-12-14 22:19:48', '2025-12-14 22:19:48', 54, 0),
+(58, 2, 1, 2, 113, 114, 1, '2025-12-14 22:19:48', '2025-12-14 22:19:48', 55, 0),
+(59, 2, 1, 2, 115, 116, 1, '2025-12-14 22:19:48', '2025-12-14 22:19:48', 56, 0),
+(60, 2, 1, 2, 117, 118, 1, '2025-12-14 22:19:48', '2025-12-14 22:19:48', 57, 0),
+(61, 2, 1, 2, 119, 120, 1, '2025-12-14 22:19:49', '2025-12-14 22:19:49', 58, 0),
+(62, 2, 1, 2, 121, 122, 1, '2025-12-14 22:19:50', '2025-12-14 22:19:50', 59, 0),
+(63, 2, 1, 2, 123, 124, 1, '2025-12-14 22:19:52', '2025-12-14 22:19:52', 60, 0),
+(64, 2, 1, 2, 125, 126, 1, '2025-12-14 22:19:52', '2025-12-14 22:19:52', 61, 0),
+(65, 2, 1, 2, 127, 128, 1, '2025-12-14 22:19:53', '2025-12-14 22:19:53', 62, 0),
+(66, 2, 1, 2, 129, 130, 1, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 63, 0),
+(67, 2, 1, 2, 131, 132, 1, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 64, 0),
+(68, 2, 1, 2, 133, 134, 1, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 65, 0),
+(69, 2, 1, 2, 135, 136, 1, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 66, 0),
+(70, 2, 1, 2, 137, 138, 1, '2025-12-14 22:19:58', '2025-12-14 22:19:58', 67, 0),
+(71, 2, 1, 2, 139, 140, 1, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 68, 0),
+(72, 2, 1, 2, 141, 142, 1, '2025-12-14 22:20:01', '2025-12-14 22:20:01', 69, 0),
+(73, 2, 1, 2, 143, 144, 1, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 70, 0),
+(74, 2, 1, 2, 145, 146, 1, '2025-12-14 22:20:09', '2025-12-14 22:20:09', 71, 0),
+(75, 2, 1, 2, 147, 148, 1, '2025-12-14 22:20:12', '2025-12-14 22:20:12', 72, 0),
+(76, 2, 1, 2, 149, 150, 1, '2025-12-14 22:20:12', '2025-12-14 22:20:12', 73, 0),
+(77, 2, 1, 2, 151, 152, 1, '2025-12-14 22:20:13', '2025-12-14 22:20:13', 74, 0),
+(78, 2, 1, 2, 153, 154, 1, '2025-12-14 22:20:19', '2025-12-14 22:20:19', 75, 0),
+(79, 2, 1, 2, 155, 156, 1, '2025-12-14 22:20:19', '2025-12-14 22:20:19', 76, 0),
+(80, 2, 1, 2, 157, 160, 1, '2025-12-14 22:20:20', '2025-12-14 22:20:20', 77, 0),
+(81, 80, 1, 3, 158, 159, 1, '2025-12-14 22:20:20', '2025-12-14 22:20:20', 0, 0),
+(82, 2, 1, 2, 161, 162, 1, '2025-12-14 22:20:25', '2025-12-14 22:20:25', 78, 0),
+(83, 2, 1, 2, 163, 164, 1, '2025-12-14 22:20:30', '2025-12-14 22:20:30', 79, 0),
+(84, 2, 1, 2, 165, 166, 1, '2025-12-14 22:20:31', '2025-12-14 22:20:31', 80, 0),
+(85, 2, 1, 2, 167, 168, 1, '2025-12-14 22:20:33', '2025-12-14 22:20:33', 81, 0),
+(86, 2, 1, 2, 169, 170, 1, '2025-12-14 22:20:34', '2025-12-14 22:20:34', 82, 0),
+(87, 2, 1, 2, 171, 172, 1, '2025-12-14 22:20:35', '2025-12-14 22:20:35', 83, 0),
+(88, 2, 1, 2, 173, 174, 1, '2025-12-14 22:20:35', '2025-12-14 22:20:35', 84, 0),
+(89, 2, 1, 2, 175, 176, 1, '2025-12-14 22:20:39', '2025-12-14 22:20:39', 85, 0),
+(90, 2, 1, 2, 177, 178, 1, '2025-12-14 22:20:44', '2025-12-14 22:20:44', 86, 0),
+(91, 2, 1, 2, 179, 180, 1, '2025-12-14 22:20:46', '2025-12-14 22:20:46', 87, 0),
+(92, 2, 1, 2, 181, 182, 1, '2025-12-14 22:20:47', '2025-12-14 22:20:47', 88, 0),
+(93, 2, 1, 2, 183, 184, 1, '2025-12-14 22:20:47', '2025-12-14 22:20:47', 89, 0),
+(94, 2, 1, 2, 185, 186, 1, '2025-12-14 22:20:47', '2025-12-14 22:20:47', 90, 0),
+(95, 2, 1, 2, 187, 188, 1, '2025-12-14 22:20:48', '2025-12-14 22:20:48', 91, 0),
+(96, 2, 1, 2, 189, 190, 1, '2025-12-14 22:20:49', '2025-12-14 22:20:49', 92, 0),
+(97, 2, 1, 2, 191, 192, 1, '2025-12-14 22:20:49', '2025-12-14 22:20:49', 93, 0),
+(98, 2, 1, 2, 193, 194, 1, '2025-12-14 22:20:50', '2025-12-14 22:20:50', 94, 0),
+(99, 2, 1, 2, 195, 196, 1, '2025-12-14 22:20:50', '2025-12-14 22:20:50', 95, 0),
+(100, 2, 1, 2, 197, 198, 1, '2025-12-14 22:20:50', '2025-12-14 22:20:50', 96, 0),
+(101, 2, 1, 2, 199, 200, 1, '2025-12-14 22:20:50', '2025-12-14 22:20:50', 97, 0),
+(102, 2, 1, 2, 201, 202, 1, '2025-12-14 22:20:50', '2025-12-14 22:20:50', 98, 0),
+(103, 2, 1, 2, 203, 204, 1, '2025-12-14 22:20:50', '2025-12-14 22:20:50', 99, 0),
+(104, 2, 1, 2, 205, 206, 1, '2025-12-14 22:20:55', '2025-12-14 22:20:55', 100, 0),
+(105, 2, 1, 2, 207, 208, 1, '2025-12-14 22:20:57', '2025-12-14 22:20:57', 101, 0),
+(106, 2, 1, 2, 209, 210, 1, '2025-12-14 22:20:57', '2025-12-14 22:20:57', 102, 0),
+(107, 2, 1, 2, 211, 212, 1, '2025-12-14 22:20:57', '2025-12-14 22:20:57', 103, 0),
+(108, 2, 1, 2, 213, 214, 1, '2025-12-14 22:20:58', '2025-12-14 22:20:58', 104, 0),
+(109, 2, 1, 2, 215, 216, 1, '2025-12-14 22:21:00', '2025-12-14 22:21:00', 105, 0),
+(110, 2, 1, 2, 217, 218, 1, '2025-12-14 22:21:00', '2025-12-14 22:21:00', 106, 0),
+(111, 2, 1, 2, 219, 220, 1, '2025-12-14 22:21:03', '2025-12-14 22:21:03', 107, 0),
+(112, 2, 1, 2, 221, 222, 1, '2025-12-14 22:21:05', '2025-12-14 22:21:05', 108, 0),
+(113, 2, 1, 2, 223, 224, 1, '2025-12-14 22:21:05', '2025-12-14 22:21:05', 109, 0),
+(114, 2, 1, 2, 225, 226, 1, '2025-12-14 22:21:06', '2025-12-14 22:21:06', 110, 0),
+(115, 2, 1, 2, 227, 228, 1, '2025-12-14 22:21:08', '2025-12-14 22:21:08', 111, 0),
+(116, 2, 1, 2, 229, 230, 1, '2025-12-14 22:21:08', '2025-12-14 22:21:08', 112, 0),
+(117, 2, 1, 2, 231, 232, 1, '2025-12-14 22:21:10', '2025-12-14 22:21:10', 113, 0),
+(118, 2, 1, 2, 233, 234, 1, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 114, 0),
+(119, 2, 1, 2, 235, 236, 1, '2025-12-14 22:21:14', '2025-12-14 22:21:14', 115, 0),
+(120, 2, 1, 2, 237, 238, 1, '2025-12-14 22:21:16', '2025-12-14 22:21:16', 116, 0),
+(121, 2, 1, 2, 239, 240, 1, '2025-12-14 22:21:18', '2025-12-14 22:21:18', 117, 0),
+(122, 2, 1, 2, 241, 242, 1, '2025-12-14 22:21:18', '2025-12-14 22:21:18', 118, 0),
+(123, 2, 1, 2, 243, 244, 1, '2025-12-14 22:21:24', '2025-12-14 22:21:24', 119, 0),
+(124, 2, 1, 2, 245, 246, 1, '2025-12-14 22:21:24', '2025-12-14 22:21:24', 120, 0),
+(125, 2, 1, 2, 247, 248, 1, '2025-12-14 22:21:27', '2025-12-14 22:21:27', 121, 0),
+(126, 2, 1, 2, 249, 250, 1, '2025-12-14 22:21:28', '2025-12-14 22:21:28', 122, 0),
+(127, 2, 1, 2, 251, 252, 1, '2025-12-14 22:21:31', '2025-12-14 22:21:31', 123, 0),
+(128, 2, 1, 2, 253, 254, 1, '2025-12-14 22:21:31', '2025-12-14 22:21:31', 124, 0),
+(129, 2, 1, 2, 255, 256, 1, '2025-12-14 22:21:46', '2025-12-14 22:21:46', 125, 0),
+(130, 2, 1, 2, 257, 258, 1, '2025-12-14 22:22:06', '2025-12-14 22:22:06', 126, 0),
+(131, 2, 1, 2, 259, 260, 1, '2025-12-14 22:22:07', '2025-12-14 22:22:07', 127, 0),
+(132, 2, 1, 2, 261, 262, 1, '2025-12-14 22:22:07', '2025-12-14 22:22:07', 128, 0),
+(133, 2, 1, 2, 263, 264, 1, '2025-12-14 22:22:07', '2025-12-14 22:22:07', 129, 0),
+(134, 2, 1, 2, 265, 266, 1, '2025-12-14 22:22:10', '2025-12-14 22:22:10', 130, 0),
+(135, 2, 1, 2, 267, 268, 1, '2025-12-14 22:22:11', '2025-12-14 22:22:11', 131, 0),
+(136, 2, 1, 2, 269, 270, 1, '2025-12-14 22:22:12', '2025-12-14 22:22:12', 132, 0),
+(137, 2, 1, 2, 271, 272, 1, '2025-12-14 22:22:13', '2025-12-14 22:22:13', 133, 0),
+(138, 2, 1, 2, 273, 274, 1, '2025-12-14 22:22:14', '2025-12-14 22:22:14', 134, 0),
+(139, 2, 1, 2, 275, 276, 1, '2025-12-14 22:22:16', '2025-12-14 22:22:16', 135, 0),
+(140, 2, 1, 2, 277, 278, 1, '2025-12-14 22:22:17', '2025-12-14 22:22:17', 136, 0);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_category_group`
+-- Структура таблицы `ps_category_group`
 --
 
 CREATE TABLE `ps_category_group` (
@@ -2380,18 +2532,432 @@ CREATE TABLE `ps_category_group` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_category_group`
+-- Дамп данных таблицы `ps_category_group`
 --
 
 INSERT INTO `ps_category_group` (`id_category`, `id_group`) VALUES
 (2, 1),
 (2, 2),
-(2, 3);
+(2, 3),
+(3, 1),
+(3, 2),
+(3, 3),
+(4, 1),
+(4, 2),
+(4, 3),
+(5, 1),
+(5, 2),
+(5, 3),
+(6, 1),
+(6, 2),
+(6, 3),
+(7, 1),
+(7, 2),
+(7, 3),
+(8, 1),
+(8, 2),
+(8, 3),
+(9, 1),
+(9, 2),
+(9, 3),
+(10, 1),
+(10, 2),
+(10, 3),
+(11, 1),
+(11, 2),
+(11, 3),
+(12, 1),
+(12, 2),
+(12, 3),
+(13, 1),
+(13, 2),
+(13, 3),
+(14, 1),
+(14, 2),
+(14, 3),
+(15, 1),
+(15, 2),
+(15, 3),
+(16, 1),
+(16, 2),
+(16, 3),
+(17, 1),
+(17, 2),
+(17, 3),
+(18, 1),
+(18, 2),
+(18, 3),
+(19, 1),
+(19, 2),
+(19, 3),
+(20, 1),
+(20, 2),
+(20, 3),
+(21, 1),
+(21, 2),
+(21, 3),
+(22, 1),
+(22, 2),
+(22, 3),
+(23, 1),
+(23, 2),
+(23, 3),
+(24, 1),
+(24, 2),
+(24, 3),
+(25, 1),
+(25, 2),
+(25, 3),
+(26, 1),
+(26, 2),
+(26, 3),
+(27, 1),
+(27, 2),
+(27, 3),
+(28, 1),
+(28, 2),
+(28, 3),
+(29, 1),
+(29, 2),
+(29, 3),
+(30, 1),
+(30, 2),
+(30, 3),
+(31, 1),
+(31, 2),
+(31, 3),
+(32, 1),
+(32, 2),
+(32, 3),
+(33, 1),
+(33, 2),
+(33, 3),
+(34, 1),
+(34, 2),
+(34, 3),
+(35, 1),
+(35, 2),
+(35, 3),
+(36, 1),
+(36, 2),
+(36, 3),
+(37, 1),
+(37, 2),
+(37, 3),
+(38, 1),
+(38, 2),
+(38, 3),
+(39, 1),
+(39, 2),
+(39, 3),
+(40, 1),
+(40, 2),
+(40, 3),
+(41, 1),
+(41, 2),
+(41, 3),
+(42, 1),
+(42, 2),
+(42, 3),
+(43, 1),
+(43, 2),
+(43, 3),
+(44, 1),
+(44, 2),
+(44, 3),
+(45, 1),
+(45, 2),
+(45, 3),
+(46, 1),
+(46, 2),
+(46, 3),
+(47, 1),
+(47, 2),
+(47, 3),
+(48, 1),
+(48, 2),
+(48, 3),
+(49, 1),
+(49, 2),
+(49, 3),
+(50, 1),
+(50, 2),
+(50, 3),
+(51, 1),
+(51, 2),
+(51, 3),
+(52, 1),
+(52, 2),
+(52, 3),
+(53, 1),
+(53, 2),
+(53, 3),
+(54, 1),
+(54, 2),
+(54, 3),
+(55, 1),
+(55, 2),
+(55, 3),
+(56, 1),
+(56, 2),
+(56, 3),
+(57, 1),
+(57, 2),
+(57, 3),
+(58, 1),
+(58, 2),
+(58, 3),
+(59, 1),
+(59, 2),
+(59, 3),
+(60, 1),
+(60, 2),
+(60, 3),
+(61, 1),
+(61, 2),
+(61, 3),
+(62, 1),
+(62, 2),
+(62, 3),
+(63, 1),
+(63, 2),
+(63, 3),
+(64, 1),
+(64, 2),
+(64, 3),
+(65, 1),
+(65, 2),
+(65, 3),
+(66, 1),
+(66, 2),
+(66, 3),
+(67, 1),
+(67, 2),
+(67, 3),
+(68, 1),
+(68, 2),
+(68, 3),
+(69, 1),
+(69, 2),
+(69, 3),
+(70, 1),
+(70, 2),
+(70, 3),
+(71, 1),
+(71, 2),
+(71, 3),
+(72, 1),
+(72, 2),
+(72, 3),
+(73, 1),
+(73, 2),
+(73, 3),
+(74, 1),
+(74, 2),
+(74, 3),
+(75, 1),
+(75, 2),
+(75, 3),
+(76, 1),
+(76, 2),
+(76, 3),
+(77, 1),
+(77, 2),
+(77, 3),
+(78, 1),
+(78, 2),
+(78, 3),
+(79, 1),
+(79, 2),
+(79, 3),
+(80, 1),
+(80, 2),
+(80, 3),
+(81, 1),
+(81, 2),
+(81, 3),
+(82, 1),
+(82, 2),
+(82, 3),
+(83, 1),
+(83, 2),
+(83, 3),
+(84, 1),
+(84, 2),
+(84, 3),
+(85, 1),
+(85, 2),
+(85, 3),
+(86, 1),
+(86, 2),
+(86, 3),
+(87, 1),
+(87, 2),
+(87, 3),
+(88, 1),
+(88, 2),
+(88, 3),
+(89, 1),
+(89, 2),
+(89, 3),
+(90, 1),
+(90, 2),
+(90, 3),
+(91, 1),
+(91, 2),
+(91, 3),
+(92, 1),
+(92, 2),
+(92, 3),
+(93, 1),
+(93, 2),
+(93, 3),
+(94, 1),
+(94, 2),
+(94, 3),
+(95, 1),
+(95, 2),
+(95, 3),
+(96, 1),
+(96, 2),
+(96, 3),
+(97, 1),
+(97, 2),
+(97, 3),
+(98, 1),
+(98, 2),
+(98, 3),
+(99, 1),
+(99, 2),
+(99, 3),
+(100, 1),
+(100, 2),
+(100, 3),
+(101, 1),
+(101, 2),
+(101, 3),
+(102, 1),
+(102, 2),
+(102, 3),
+(103, 1),
+(103, 2),
+(103, 3),
+(104, 1),
+(104, 2),
+(104, 3),
+(105, 1),
+(105, 2),
+(105, 3),
+(106, 1),
+(106, 2),
+(106, 3),
+(107, 1),
+(107, 2),
+(107, 3),
+(108, 1),
+(108, 2),
+(108, 3),
+(109, 1),
+(109, 2),
+(109, 3),
+(110, 1),
+(110, 2),
+(110, 3),
+(111, 1),
+(111, 2),
+(111, 3),
+(112, 1),
+(112, 2),
+(112, 3),
+(113, 1),
+(113, 2),
+(113, 3),
+(114, 1),
+(114, 2),
+(114, 3),
+(115, 1),
+(115, 2),
+(115, 3),
+(116, 1),
+(116, 2),
+(116, 3),
+(117, 1),
+(117, 2),
+(117, 3),
+(118, 1),
+(118, 2),
+(118, 3),
+(119, 1),
+(119, 2),
+(119, 3),
+(120, 1),
+(120, 2),
+(120, 3),
+(121, 1),
+(121, 2),
+(121, 3),
+(122, 1),
+(122, 2),
+(122, 3),
+(123, 1),
+(123, 2),
+(123, 3),
+(124, 1),
+(124, 2),
+(124, 3),
+(125, 1),
+(125, 2),
+(125, 3),
+(126, 1),
+(126, 2),
+(126, 3),
+(127, 1),
+(127, 2),
+(127, 3),
+(128, 1),
+(128, 2),
+(128, 3),
+(129, 1),
+(129, 2),
+(129, 3),
+(130, 1),
+(130, 2),
+(130, 3),
+(131, 1),
+(131, 2),
+(131, 3),
+(132, 1),
+(132, 2),
+(132, 3),
+(133, 1),
+(133, 2),
+(133, 3),
+(134, 1),
+(134, 2),
+(134, 3),
+(135, 1),
+(135, 2),
+(135, 3),
+(136, 1),
+(136, 2),
+(136, 3),
+(137, 1),
+(137, 2),
+(137, 3),
+(138, 1),
+(138, 2),
+(138, 3),
+(139, 1),
+(139, 2),
+(139, 3),
+(140, 1),
+(140, 2),
+(140, 3);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_category_lang`
+-- Структура таблицы `ps_category_lang`
 --
 
 CREATE TABLE `ps_category_lang` (
@@ -2407,17 +2973,155 @@ CREATE TABLE `ps_category_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_category_lang`
+-- Дамп данных таблицы `ps_category_lang`
 --
 
 INSERT INTO `ps_category_lang` (`id_category`, `id_shop`, `id_lang`, `name`, `description`, `link_rewrite`, `meta_title`, `meta_keywords`, `meta_description`) VALUES
 (1, 1, 1, 'Root', '', 'root', '', '', ''),
-(2, 1, 1, 'Home', '', 'home', '', '', '');
+(2, 1, 1, 'Home', '', 'home', '', '', ''),
+(3, 1, 1, 'Herbata', '', 'herbata', '', '', ''),
+(4, 1, 1, 'Klasyczna', '', 'klasyczna', '', '', ''),
+(5, 1, 1, 'Herbata Czarna', '', 'herbata-czarna', '', '', ''),
+(6, 1, 1, 'Herbaty indyjskie Assam', '', 'herbaty-indyjskie-assam', '', '', ''),
+(7, 1, 1, 'Herbaty do biura', '', 'herbaty-do-biura', '', '', ''),
+(8, 1, 1, 'Herbaty do restauracji', '', 'herbaty-do-restauracji', '', '', ''),
+(9, 1, 1, 'Herbaty cejlońskie', '', 'herbaty-cejlonskie', '', '', ''),
+(10, 1, 1, 'Herbaty chińskie', '', 'herbaty-chinskie', '', '', ''),
+(11, 1, 1, 'Herbaty w puszkach firmowych', '', 'herbaty-w-puszkach-firmowych', '', '', ''),
+(12, 1, 1, 'Herbaty Indyjskie Darjeeling', '', 'herbaty-indyjskie-darjeeling', '', '', ''),
+(13, 1, 1, 'Herbaty do kawiarni', '', 'herbaty-do-kawiarni', '', '', ''),
+(14, 1, 1, 'Cyber Monday', '', 'cyber-monday', '', '', ''),
+(15, 1, 1, 'Herbaty po angielsku', '', 'herbaty-po-angielsku', '', '', ''),
+(16, 1, 1, 'Herbaty chińskie Yunnan', '', 'herbaty-chinskie-yunnan', '', '', ''),
+(17, 1, 1, 'Herbaty gruzińskie', '', 'herbaty-gruzinskie', '', '', ''),
+(18, 1, 1, 'Herbaty kenijskie', '', 'herbaty-kenijskie', '', '', ''),
+(19, 1, 1, 'Herbaty nepalskie', '', 'herbaty-nepalskie', '', '', ''),
+(20, 1, 1, 'Herbaty chińskie Zheijang', '', 'herbaty-chinskie-zheijang', '', '', ''),
+(21, 1, 1, 'Herbaty tureckie', '', 'herbaty-tureckie', '', '', ''),
+(22, 1, 1, 'Herbata Zielona', '', 'herbata-zielona', '', '', ''),
+(23, 1, 1, 'Herbaty Sri Lanka', '', 'herbaty-sri-lanka', '', '', ''),
+(24, 1, 1, 'Herbaty do gastronomii', '', 'herbaty-do-gastronomii', '', '', ''),
+(25, 1, 1, 'Herbata z jaśminem', '', 'herbata-z-jasminem', '', '', ''),
+(26, 1, 1, 'Herbaty koreańskie', '', 'herbaty-koreanskie', '', '', ''),
+(27, 1, 1, 'Herbata Pu Erh', '', 'herbata-pu-erh', '', '', ''),
+(28, 1, 1, 'Herbata Żółta', '', 'herbata-zolta', '', '', ''),
+(29, 1, 1, 'Herbaty urodzinowe', '', 'herbaty-urodzinowe', '', '', ''),
+(30, 1, 1, 'Herbaty chińskie Anhui', '', 'herbaty-chinskie-anhui', '', '', ''),
+(31, 1, 1, 'Herbata Oolong', '', 'herbata-oolong', '', '', ''),
+(32, 1, 1, 'Promocja urodzinowa', '', 'promocja-urodzinowa', '', '', ''),
+(33, 1, 1, 'Rooibos i Honeybush', '', 'rooibos-i-honeybush', '', '', ''),
+(34, 1, 1, 'Herbaty RPA', '', 'herbaty-rpa', '', '', ''),
+(35, 1, 1, 'Herbata Kwitnąca', '', 'herbata-kwitnaca', '', '', ''),
+(36, 1, 1, 'Herbaty w kartonikach okazjonalnych', '', 'herbaty-w-kartonikach-okazjonalnych', '', '', ''),
+(37, 1, 1, 'Prezenty dla mamy', '', 'prezenty-dla-mamy', '', '', ''),
+(38, 1, 1, 'Prezenty dla kobiety', '', 'prezenty-dla-kobiety', '', '', ''),
+(39, 1, 1, 'Prezenty dla zakochanych', '', 'prezenty-dla-zakochanych', '', '', ''),
+(40, 1, 1, 'Prezenty dla Babci i Dziadka', '', 'prezenty-dla-babci-i-dziadka', '', '', ''),
+(41, 1, 1, 'Herbaty pakowane', '', 'herbaty-pakowane', '', '', ''),
+(42, 1, 1, 'Herbaty w torebkach okazjonalnych', '', 'herbaty-w-torebkach-okazjonalnych', '', '', ''),
+(43, 1, 1, 'Zestawy prezentowe', '', 'zestawy-prezentowe', '', '', ''),
+(44, 1, 1, 'Prezenty', '', 'prezenty', '', '', ''),
+(45, 1, 1, 'Kompozycje', '', 'kompozycje', '', '', ''),
+(46, 1, 1, 'Herbata Czarna z dodatkami', '', 'herbata-czarna-z-dodatkami', '', '', ''),
+(47, 1, 1, 'Herbaty Adwentowe', '', 'herbaty-adwentowe', '', '', ''),
+(48, 1, 1, 'Herbaty świąteczne', '', 'herbaty-swiateczne', '', '', ''),
+(49, 1, 1, 'Herbaty na zimę', '', 'herbaty-na-zime', '', '', ''),
+(50, 1, 1, 'Herbaty rozgrzewające', '', 'herbaty-rozgrzewajace', '', '', ''),
+(51, 1, 1, 'Herbata wietnamska', '', 'herbata-wietnamska', '', '', ''),
+(52, 1, 1, 'Herbaty na lato', '', 'herbaty-na-lato', '', '', ''),
+(53, 1, 1, 'Herbaty na jesień', '', 'herbaty-na-jesien', '', '', ''),
+(54, 1, 1, 'Herbata Earl Grey', '', 'herbata-earl-grey', '', '', ''),
+(55, 1, 1, 'Herbaty kwiatowe', '', 'herbaty-kwiatowe', '', '', ''),
+(56, 1, 1, 'Herbata z imbirem', '', 'herbata-z-imbirem', '', '', ''),
+(57, 1, 1, 'Herbaty limitowane', '', 'herbaty-limitowane', '', '', ''),
+(58, 1, 1, 'Herbata Zielona z dodatkami', '', 'herbata-zielona-z-dodatkami', '', '', ''),
+(59, 1, 1, 'Herbaty na zimno', '', 'herbaty-na-zimno', '', '', ''),
+(60, 1, 1, 'Herbata z miętą', '', 'herbata-z-mieta', '', '', ''),
+(61, 1, 1, 'Herbaty wielkanocne', '', 'herbaty-wielkanocne', '', '', ''),
+(62, 1, 1, 'Herbata z hibiskusem', '', 'herbata-z-hibiskusem', '', '', ''),
+(63, 1, 1, 'Produkty na Wielkanoc', '', 'produkty-na-wielkanoc', '', '', ''),
+(64, 1, 1, 'Herbata Pu Erh z dodatkami', '', 'herbata-pu-erh-z-dodatkami', '', '', ''),
+(65, 1, 1, 'Herbata Biała z dodatkami', '', 'herbata-biala-z-dodatkami', '', '', ''),
+(66, 1, 1, 'Herbata Żółta z dodatkami', '', 'herbata-zolta-z-dodatkami', '', '', ''),
+(67, 1, 1, 'Herbata Oolong kompozycje', '', 'herbata-oolong-kompozycje', '', '', ''),
+(68, 1, 1, 'Herbata Owocowa', '', 'herbata-owocowa', '', '', ''),
+(69, 1, 1, 'Herbaty z Egiptu', '', 'herbaty-z-egiptu', '', '', ''),
+(70, 1, 1, 'Rooibos kompozycje', '', 'rooibos-kompozycje', '', '', ''),
+(71, 1, 1, 'ALLEGRO', '', 'allegro', '', '', ''),
+(72, 1, 1, 'Herbaty na wiosnę', '', 'herbaty-na-wiosne', '', '', ''),
+(73, 1, 1, 'Herbaty świąteczne w kartonikach', '', 'herbaty-swiateczne-w-kartonikach', '', '', ''),
+(74, 1, 1, 'Herbaty świąteczne w torebkach', '', 'herbaty-swiateczne-w-torebkach', '', '', ''),
+(75, 1, 1, 'Prezenty dla taty', '', 'prezenty-dla-taty', '', '', ''),
+(76, 1, 1, 'Prezenty dla mężczyzny', '', 'prezenty-dla-mezczyzny', '', '', ''),
+(77, 1, 1, 'Prezenty dla nauczyciela', '', 'prezenty-dla-nauczyciela', '', '', ''),
+(78, 1, 1, 'Prezenty na Wielkanoc', '', 'prezenty-na-wielkanoc', '', '', ''),
+(79, 1, 1, 'Herbaty w puszkach', '', 'herbaty-w-puszkach', '', '', ''),
+(80, 1, 1, 'Herbaty w Filtrach', '', 'herbaty-w-filtrach', '', '', ''),
+(81, 1, 1, 'Herbaciane kubki', '', 'herbaciane-kubki', '', '', ''),
+(82, 1, 1, 'Zestawy Degustacyjne', '', 'zestawy-degustacyjne', '', '', ''),
+(83, 1, 1, 'Herbaty do Sushi', '', 'herbaty-do-sushi', '', '', ''),
+(84, 1, 1, 'Matcha', '', 'matcha', '', '', ''),
+(85, 1, 1, 'Herbaty z adaptogenami', '', 'herbaty-z-adaptogenami', '', '', ''),
+(86, 1, 1, 'Strona główna', '', 'strona-glowna', '', '', ''),
+(87, 1, 1, 'Kawa', '', 'kawa', '', '', ''),
+(88, 1, 1, 'Kawy Klasyczne', '', 'kawy-klasyczne', '', '', ''),
+(89, 1, 1, 'Kawy Smakowe', '', 'kawy-smakowe', '', '', ''),
+(90, 1, 1, 'Kawy Paczkowane', '', 'kawy-paczkowane', '', '', ''),
+(91, 1, 1, 'Kawy bezkofeinowe', '', 'kawy-bezkofeinowe', '', '', ''),
+(92, 1, 1, 'Akcesoria', '', 'akcesoria', '', '', ''),
+(93, 1, 1, 'Akcesoria do kawy', '', 'akcesoria-do-kawy', '', '', ''),
+(94, 1, 1, 'Filtry papierowe', '', 'filtry-papierowe', '', '', ''),
+(95, 1, 1, 'French Press', '', 'french-press', '', '', ''),
+(96, 1, 1, 'Kawiarki', '', 'kawiarki', '', '', ''),
+(97, 1, 1, 'Przechowywanie', '', 'przechowywanie', '', '', ''),
+(98, 1, 1, 'Kubki', '', 'kubki', '', '', ''),
+(99, 1, 1, 'Pozostałe', '', 'pozostale', '', '', ''),
+(100, 1, 1, 'Szklanki', '', 'szklanki', '', '', ''),
+(101, 1, 1, 'Filiżanki', '', 'filizanki', '', '', ''),
+(102, 1, 1, 'Yerba Mate', '', 'yerba-mate', '', '', ''),
+(103, 1, 1, 'Yerba Mate Pakowana', '', 'yerba-mate-pakowana', '', '', ''),
+(104, 1, 1, 'Zestawy Yerba Mate', '', 'zestawy-yerba-mate', '', '', ''),
+(105, 1, 1, 'Napoje z Yerba Mate', '', 'napoje-z-yerba-mate', '', '', ''),
+(106, 1, 1, 'Akcesoria do yerba mate', '', 'akcesoria-do-yerba-mate', '', '', ''),
+(107, 1, 1, 'Bombille', '', 'bombille', '', '', ''),
+(108, 1, 1, 'Matero', '', 'matero', '', '', ''),
+(109, 1, 1, 'Wyprzedaż', '', 'wyprzedaz', '', '', ''),
+(110, 1, 1, 'Dzbanki do herbaty', '', 'dzbanki-do-herbaty', '', '', ''),
+(111, 1, 1, 'Akcesoria do matchy', '', 'akcesoria-do-matchy', '', '', ''),
+(112, 1, 1, 'Filtry do herbaty', '', 'filtry-do-herbaty', '', '', ''),
+(113, 1, 1, 'Podgrzewacze', '', 'podgrzewacze', '', '', ''),
+(114, 1, 1, 'Dodatki do prezentów', '', 'dodatki-do-prezentow', '', '', ''),
+(115, 1, 1, 'Tea for one', '', 'tea-for-one', '', '', ''),
+(116, 1, 1, 'Zaparzacze', '', 'zaparzacze', '', '', ''),
+(117, 1, 1, 'Butelki', '', 'butelki', '', '', ''),
+(118, 1, 1, 'Świece Teaverso Home', '', 'swiece-teaverso-home', '', '', ''),
+(119, 1, 1, 'Kubki z zaparzaczem', '', 'kubki-z-zaparzaczem', '', '', ''),
+(120, 1, 1, 'Kubki termiczne', '', 'kubki-termiczne', '', '', ''),
+(121, 1, 1, 'Promocje', '', 'promocje', '', '', ''),
+(122, 1, 1, 'Aktualne promocje', '', 'aktualne-promocje', '', '', ''),
+(123, 1, 1, 'Zioła', '', 'ziola', '', '', ''),
+(124, 1, 1, 'Zioła klasyczne', '', 'ziola-klasyczne', '', '', ''),
+(125, 1, 1, 'Kompozycje ziołowe', '', 'kompozycje-ziolowe', '', '', ''),
+(126, 1, 1, 'Suplementy diety', '', 'suplementy-diety', '', '', ''),
+(127, 1, 1, 'Prezenty z bakaliami', '', 'prezenty-z-bakaliami', '', '', ''),
+(128, 1, 1, 'Zestawy promocyjne', '', 'zestawy-promocyjne', '', '', ''),
+(129, 1, 1, 'Prezenty na Święta', '', 'prezenty-na-swieta', '', '', ''),
+(130, 1, 1, 'Drobne upominki', '', 'drobne-upominki', '', '', ''),
+(131, 1, 1, 'Kalendarze Adwentowe', '', 'kalendarze-adwentowe', '', '', ''),
+(132, 1, 1, 'Słodkości i przekąski', '', 'slodkosci-i-przekaski', '', '', ''),
+(133, 1, 1, 'Czekolada', '', 'czekolada', '', '', ''),
+(134, 1, 1, 'Czekolada na Gorąco', '', 'czekolada-na-goraco', '', '', ''),
+(135, 1, 1, 'Bakalie', '', 'bakalie', '', '', ''),
+(136, 1, 1, 'Syropy do kawy', '', 'syropy-do-kawy', '', '', ''),
+(137, 1, 1, 'Syropy owocowe', '', 'syropy-owocowe', '', '', ''),
+(138, 1, 1, 'Konfitury', '', 'konfitury', '', '', ''),
+(139, 1, 1, 'Miody', '', 'miody', '', '', ''),
+(140, 1, 1, 'Ciastka', '', 'ciastka', '', '', '');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_category_product`
+-- Структура таблицы `ps_category_product`
 --
 
 CREATE TABLE `ps_category_product` (
@@ -2427,16 +3131,2018 @@ CREATE TABLE `ps_category_product` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_category_product`
+-- Дамп данных таблицы `ps_category_product`
 --
 
 INSERT INTO `ps_category_product` (`id_category`, `id_product`, `position`) VALUES
-(2, 1, 1);
+(2, 270, 1),
+(2, 271, 2),
+(3, 1, 1),
+(3, 2, 2),
+(3, 3, 3),
+(3, 4, 4),
+(3, 5, 5),
+(3, 6, 6),
+(3, 7, 7),
+(3, 8, 8),
+(3, 9, 9),
+(3, 10, 10),
+(3, 11, 11),
+(3, 12, 12),
+(3, 13, 13),
+(3, 14, 14),
+(3, 15, 15),
+(3, 16, 16),
+(3, 17, 17),
+(3, 18, 18),
+(3, 19, 19),
+(3, 20, 20),
+(3, 21, 21),
+(3, 22, 22),
+(3, 23, 23),
+(3, 24, 24),
+(3, 25, 25),
+(3, 26, 26),
+(3, 27, 27),
+(3, 28, 28),
+(3, 29, 29),
+(3, 30, 30),
+(3, 31, 31),
+(3, 32, 32),
+(3, 33, 33),
+(3, 34, 34),
+(3, 35, 35),
+(3, 36, 36),
+(3, 37, 37),
+(3, 38, 38),
+(3, 39, 39),
+(3, 40, 40),
+(3, 41, 41),
+(3, 42, 42),
+(3, 44, 43),
+(3, 45, 44),
+(3, 47, 45),
+(3, 48, 46),
+(3, 49, 47),
+(3, 50, 48),
+(3, 51, 49),
+(3, 52, 50),
+(3, 54, 51),
+(3, 55, 52),
+(3, 56, 53),
+(3, 57, 54),
+(3, 59, 55),
+(3, 60, 56),
+(3, 61, 57),
+(3, 62, 58),
+(3, 63, 59),
+(3, 64, 60),
+(3, 65, 61),
+(3, 66, 62),
+(3, 67, 63),
+(3, 68, 64),
+(3, 69, 65),
+(3, 70, 66),
+(3, 71, 67),
+(3, 72, 68),
+(3, 73, 69),
+(3, 74, 70),
+(3, 75, 71),
+(3, 76, 72),
+(3, 77, 73),
+(3, 78, 74),
+(3, 79, 75),
+(3, 80, 76),
+(3, 81, 77),
+(3, 82, 78),
+(3, 83, 79),
+(3, 84, 80),
+(3, 85, 81),
+(3, 86, 82),
+(3, 87, 83),
+(3, 88, 84),
+(3, 89, 85),
+(3, 90, 86),
+(3, 91, 87),
+(3, 92, 88),
+(3, 93, 89),
+(3, 94, 90),
+(3, 95, 91),
+(3, 96, 92),
+(3, 97, 93),
+(3, 98, 94),
+(3, 99, 95),
+(3, 100, 96),
+(3, 101, 97),
+(3, 102, 98),
+(3, 103, 99),
+(3, 104, 100),
+(3, 105, 101),
+(3, 107, 102),
+(3, 108, 103),
+(3, 109, 104),
+(3, 110, 105),
+(3, 111, 106),
+(3, 112, 107),
+(3, 113, 108),
+(3, 114, 109),
+(3, 115, 110),
+(3, 116, 111),
+(3, 117, 112),
+(3, 118, 113),
+(3, 119, 114),
+(3, 120, 115),
+(3, 121, 116),
+(3, 122, 117),
+(3, 123, 118),
+(3, 124, 119),
+(3, 125, 120),
+(3, 126, 121),
+(3, 127, 122),
+(3, 128, 123),
+(3, 129, 124),
+(3, 130, 125),
+(3, 131, 126),
+(3, 132, 127),
+(3, 133, 128),
+(3, 134, 129),
+(3, 135, 130),
+(3, 136, 131),
+(3, 137, 132),
+(3, 138, 133),
+(3, 139, 134),
+(3, 140, 135),
+(3, 141, 136),
+(3, 142, 137),
+(3, 147, 138),
+(3, 148, 139),
+(3, 149, 140),
+(3, 150, 141),
+(3, 151, 142),
+(3, 152, 143),
+(3, 153, 144),
+(3, 155, 145),
+(3, 156, 146),
+(3, 157, 147),
+(3, 159, 148),
+(3, 160, 149),
+(3, 161, 150),
+(3, 162, 151),
+(3, 163, 152),
+(3, 164, 153),
+(3, 165, 154),
+(3, 166, 155),
+(3, 167, 156),
+(3, 168, 157),
+(3, 169, 158),
+(3, 170, 159),
+(3, 171, 160),
+(3, 172, 161),
+(3, 173, 162),
+(3, 272, 163),
+(3, 273, 164),
+(3, 274, 165),
+(4, 1, 1),
+(4, 2, 2),
+(4, 3, 3),
+(4, 4, 4),
+(4, 5, 5),
+(4, 6, 6),
+(4, 7, 7),
+(4, 8, 8),
+(4, 9, 9),
+(4, 10, 10),
+(4, 11, 11),
+(4, 12, 12),
+(4, 13, 13),
+(4, 14, 14),
+(4, 15, 15),
+(4, 16, 16),
+(4, 17, 17),
+(4, 18, 18),
+(4, 19, 19),
+(4, 20, 20),
+(4, 21, 21),
+(4, 22, 22),
+(4, 23, 23),
+(4, 24, 24),
+(4, 25, 25),
+(4, 26, 26),
+(4, 28, 27),
+(4, 30, 28),
+(4, 31, 29),
+(4, 32, 30),
+(4, 33, 31),
+(4, 34, 32),
+(4, 35, 33),
+(4, 37, 34),
+(4, 38, 35),
+(4, 39, 36),
+(4, 41, 37),
+(4, 42, 38),
+(4, 45, 39),
+(5, 1, 1),
+(5, 2, 2),
+(5, 3, 3),
+(5, 4, 4),
+(5, 5, 5),
+(5, 6, 6),
+(5, 7, 7),
+(5, 8, 8),
+(5, 9, 9),
+(5, 10, 10),
+(5, 11, 11),
+(5, 12, 12),
+(5, 13, 13),
+(5, 14, 14),
+(5, 15, 15),
+(5, 16, 16),
+(5, 17, 17),
+(5, 18, 18),
+(5, 19, 19),
+(6, 1, 1),
+(6, 2, 2),
+(6, 142, 3),
+(7, 1, 1),
+(7, 3, 2),
+(7, 22, 3),
+(7, 59, 4),
+(7, 61, 5),
+(7, 68, 6),
+(7, 80, 7),
+(7, 91, 8),
+(7, 171, 9),
+(7, 172, 10),
+(8, 2, 1),
+(8, 3, 2),
+(8, 10, 3),
+(8, 20, 4),
+(8, 27, 5),
+(8, 30, 6),
+(8, 32, 7),
+(8, 63, 8),
+(8, 74, 9),
+(8, 91, 10),
+(9, 3, 1),
+(9, 9, 2),
+(9, 22, 3),
+(9, 54, 4),
+(9, 56, 5),
+(9, 59, 6),
+(9, 63, 7),
+(9, 68, 8),
+(9, 272, 9),
+(10, 4, 1),
+(10, 12, 2),
+(10, 14, 3),
+(10, 18, 4),
+(10, 19, 5),
+(10, 20, 6),
+(10, 21, 7),
+(10, 24, 8),
+(10, 25, 9),
+(10, 26, 10),
+(10, 29, 11),
+(10, 30, 12),
+(10, 31, 13),
+(10, 32, 14),
+(10, 33, 15),
+(10, 37, 16),
+(10, 38, 17),
+(10, 39, 18),
+(11, 5, 1),
+(11, 19, 2),
+(11, 23, 3),
+(11, 30, 4),
+(11, 62, 5),
+(11, 63, 6),
+(11, 68, 7),
+(11, 70, 8),
+(11, 74, 9),
+(11, 79, 10),
+(11, 80, 11),
+(11, 88, 12),
+(11, 169, 13),
+(11, 172, 14),
+(11, 273, 15),
+(12, 5, 1),
+(12, 6, 2),
+(12, 7, 3),
+(12, 8, 4),
+(13, 5, 1),
+(13, 61, 2),
+(13, 75, 3),
+(13, 93, 4),
+(13, 98, 5),
+(13, 105, 6),
+(13, 122, 7),
+(13, 136, 8),
+(13, 170, 9),
+(13, 171, 10),
+(14, 7, 1),
+(14, 202, 2),
+(14, 203, 3),
+(14, 204, 4),
+(14, 205, 5),
+(14, 254, 6),
+(14, 255, 7),
+(14, 256, 8),
+(14, 343, 9),
+(14, 344, 10),
+(14, 462, 11),
+(14, 463, 12),
+(14, 464, 13),
+(14, 465, 14),
+(14, 466, 15),
+(14, 467, 16),
+(14, 497, 17),
+(14, 500, 18),
+(14, 517, 19),
+(14, 518, 20),
+(14, 572, 21),
+(14, 574, 22),
+(15, 9, 1),
+(15, 59, 2),
+(15, 61, 3),
+(15, 63, 4),
+(15, 64, 5),
+(15, 65, 6),
+(15, 67, 7),
+(15, 77, 8),
+(15, 92, 9),
+(16, 10, 1),
+(16, 19, 2),
+(16, 23, 3),
+(16, 34, 4),
+(17, 11, 1),
+(18, 13, 1),
+(19, 15, 1),
+(20, 16, 1),
+(21, 17, 1),
+(22, 20, 1),
+(22, 21, 2),
+(22, 22, 3),
+(22, 23, 4),
+(22, 24, 5),
+(22, 25, 6),
+(22, 26, 7),
+(22, 27, 8),
+(22, 28, 9),
+(22, 29, 10),
+(22, 30, 11),
+(22, 31, 12),
+(23, 22, 1),
+(24, 25, 1),
+(24, 29, 2),
+(24, 59, 3),
+(24, 64, 4),
+(24, 66, 5),
+(24, 79, 6),
+(24, 90, 7),
+(24, 159, 8),
+(24, 168, 9),
+(24, 169, 10),
+(25, 27, 1),
+(25, 37, 2),
+(25, 81, 3),
+(25, 82, 4),
+(25, 88, 5),
+(26, 28, 1),
+(27, 32, 1),
+(27, 33, 2),
+(27, 34, 3),
+(28, 35, 1),
+(28, 36, 2),
+(29, 35, 1),
+(29, 38, 2),
+(29, 54, 3),
+(29, 64, 4),
+(29, 70, 5),
+(29, 74, 6),
+(29, 75, 7),
+(29, 78, 8),
+(29, 81, 9),
+(29, 84, 10),
+(29, 91, 11),
+(29, 95, 12),
+(29, 98, 13),
+(29, 101, 14),
+(29, 105, 15),
+(29, 107, 16),
+(29, 110, 17),
+(29, 111, 18),
+(29, 113, 19),
+(29, 115, 20),
+(29, 117, 21),
+(29, 124, 22),
+(29, 129, 23),
+(29, 133, 24),
+(29, 137, 25),
+(29, 139, 26),
+(29, 141, 27),
+(29, 157, 28),
+(30, 35, 1),
+(30, 36, 2),
+(31, 37, 1),
+(31, 38, 2),
+(31, 39, 3),
+(31, 40, 4),
+(32, 38, 1),
+(32, 54, 2),
+(32, 62, 3),
+(32, 66, 4),
+(32, 82, 5),
+(32, 83, 6),
+(32, 88, 7),
+(32, 93, 8),
+(32, 117, 9),
+(32, 125, 10),
+(32, 141, 11),
+(32, 274, 12),
+(32, 396, 13),
+(32, 410, 14),
+(32, 510, 15),
+(33, 41, 1),
+(33, 42, 2),
+(34, 41, 1),
+(34, 133, 2),
+(34, 135, 3),
+(34, 137, 4),
+(34, 138, 5),
+(34, 140, 6),
+(35, 43, 1),
+(35, 44, 2),
+(35, 45, 3),
+(35, 46, 4),
+(35, 47, 5),
+(35, 48, 6),
+(35, 49, 7),
+(35, 50, 8),
+(35, 51, 9),
+(35, 52, 10),
+(35, 53, 11),
+(36, 43, 1),
+(36, 144, 2),
+(36, 145, 3),
+(36, 146, 4),
+(36, 198, 5),
+(36, 199, 6),
+(36, 200, 7),
+(36, 201, 8),
+(36, 202, 9),
+(36, 203, 10),
+(36, 204, 11),
+(36, 205, 12),
+(36, 206, 13),
+(36, 207, 14),
+(36, 208, 15),
+(36, 209, 16),
+(36, 210, 17),
+(36, 211, 18),
+(36, 212, 19),
+(36, 213, 20),
+(36, 214, 21),
+(36, 545, 22),
+(36, 546, 23),
+(36, 547, 24),
+(36, 548, 25),
+(36, 556, 26),
+(36, 557, 27),
+(36, 558, 28),
+(36, 576, 29),
+(36, 593, 30),
+(36, 594, 31),
+(37, 43, 1),
+(37, 53, 2),
+(37, 209, 3),
+(37, 210, 4),
+(37, 211, 5),
+(37, 212, 6),
+(37, 213, 7),
+(37, 214, 8),
+(37, 217, 9),
+(37, 220, 10),
+(37, 543, 11),
+(37, 544, 12),
+(37, 545, 13),
+(37, 546, 14),
+(37, 547, 15),
+(37, 548, 16),
+(37, 549, 17),
+(37, 550, 18),
+(37, 551, 19),
+(37, 552, 20),
+(37, 553, 21),
+(37, 564, 22),
+(37, 595, 23),
+(37, 596, 24),
+(37, 597, 25),
+(37, 598, 26),
+(37, 601, 27),
+(37, 603, 28),
+(38, 43, 1),
+(38, 53, 2),
+(38, 206, 3),
+(38, 207, 4),
+(38, 208, 5),
+(38, 209, 6),
+(38, 210, 7),
+(38, 211, 8),
+(38, 212, 9),
+(38, 213, 10),
+(38, 214, 11),
+(38, 215, 12),
+(38, 217, 13),
+(38, 220, 14),
+(38, 221, 15),
+(38, 543, 16),
+(38, 544, 17),
+(38, 545, 18),
+(38, 546, 19),
+(38, 547, 20),
+(38, 550, 21),
+(38, 557, 22),
+(38, 564, 23),
+(38, 566, 24),
+(38, 567, 25),
+(38, 576, 26),
+(38, 593, 27),
+(38, 595, 28),
+(38, 596, 29),
+(38, 597, 30),
+(38, 598, 31),
+(38, 601, 32),
+(38, 603, 33),
+(38, 614, 34),
+(38, 615, 35),
+(39, 43, 1),
+(39, 53, 2),
+(39, 200, 3),
+(39, 206, 4),
+(39, 207, 5),
+(39, 208, 6),
+(39, 212, 7),
+(39, 213, 8),
+(39, 214, 9),
+(39, 548, 10),
+(39, 559, 11),
+(39, 562, 12),
+(39, 564, 13),
+(39, 592, 14),
+(39, 593, 15),
+(39, 594, 16),
+(39, 595, 17),
+(39, 596, 18),
+(39, 597, 19),
+(39, 598, 20),
+(39, 599, 21),
+(39, 615, 22),
+(40, 43, 1),
+(40, 53, 2),
+(40, 198, 3),
+(40, 200, 4),
+(40, 209, 5),
+(40, 211, 6),
+(40, 543, 7),
+(40, 544, 8),
+(40, 545, 9),
+(40, 546, 10),
+(40, 550, 11),
+(40, 551, 12),
+(40, 552, 13),
+(40, 553, 14),
+(40, 554, 15),
+(40, 555, 16),
+(40, 556, 17),
+(40, 557, 18),
+(40, 558, 19),
+(40, 562, 20),
+(40, 563, 21),
+(40, 566, 22),
+(40, 567, 23),
+(40, 570, 24),
+(40, 593, 25),
+(40, 595, 26),
+(40, 598, 27),
+(40, 599, 28),
+(40, 600, 29),
+(40, 601, 30),
+(40, 603, 31),
+(40, 613, 32),
+(40, 614, 33),
+(41, 46, 1),
+(41, 180, 2),
+(41, 198, 3),
+(41, 200, 4),
+(41, 201, 5),
+(41, 202, 6),
+(41, 203, 7),
+(41, 204, 8),
+(41, 205, 9),
+(41, 206, 10),
+(41, 207, 11),
+(41, 208, 12),
+(41, 209, 13),
+(41, 210, 14),
+(41, 211, 15),
+(41, 212, 16),
+(41, 213, 17),
+(41, 214, 18),
+(41, 215, 19),
+(41, 216, 20),
+(41, 217, 21),
+(41, 218, 22),
+(41, 219, 23),
+(41, 220, 24),
+(41, 221, 25),
+(41, 222, 26),
+(41, 223, 27),
+(41, 225, 28),
+(41, 226, 29),
+(41, 227, 30),
+(41, 228, 31),
+(41, 229, 32),
+(41, 230, 33),
+(41, 231, 34),
+(41, 232, 35),
+(41, 233, 36),
+(41, 234, 37),
+(41, 235, 38),
+(41, 236, 39),
+(41, 237, 40),
+(41, 238, 41),
+(41, 239, 42),
+(41, 240, 43),
+(41, 241, 44),
+(41, 242, 45),
+(41, 243, 46),
+(41, 244, 47),
+(41, 245, 48),
+(41, 246, 49),
+(41, 247, 50),
+(41, 248, 51),
+(41, 249, 52),
+(41, 250, 53),
+(41, 251, 54),
+(41, 252, 55),
+(41, 253, 56),
+(41, 254, 57),
+(41, 255, 58),
+(41, 256, 59),
+(41, 257, 60),
+(41, 258, 61),
+(41, 259, 62),
+(41, 260, 63),
+(41, 261, 64),
+(41, 262, 65),
+(41, 263, 66),
+(41, 264, 67),
+(41, 545, 68),
+(41, 546, 69),
+(41, 547, 70),
+(41, 556, 71),
+(41, 557, 72),
+(41, 558, 73),
+(41, 576, 74),
+(41, 594, 75),
+(42, 46, 1),
+(42, 215, 2),
+(42, 216, 3),
+(42, 217, 4),
+(42, 218, 5),
+(42, 219, 6),
+(42, 220, 7),
+(42, 221, 8),
+(42, 222, 9),
+(42, 223, 10),
+(42, 224, 11),
+(43, 52, 1),
+(43, 53, 2),
+(43, 370, 3),
+(43, 371, 4),
+(43, 372, 5),
+(43, 373, 6),
+(43, 374, 7),
+(43, 375, 8),
+(43, 549, 9),
+(43, 550, 10),
+(43, 551, 11),
+(43, 552, 12),
+(43, 553, 13),
+(43, 554, 14),
+(43, 555, 15),
+(43, 559, 16),
+(43, 560, 17),
+(43, 561, 18),
+(43, 562, 19),
+(43, 563, 20),
+(43, 564, 21),
+(43, 565, 22),
+(43, 566, 23),
+(43, 567, 24),
+(43, 568, 25),
+(43, 569, 26),
+(43, 570, 27),
+(43, 571, 28),
+(43, 572, 29),
+(43, 573, 30),
+(43, 574, 31),
+(43, 575, 32),
+(43, 582, 33),
+(43, 583, 34),
+(43, 584, 35),
+(43, 595, 36),
+(43, 596, 37),
+(43, 597, 38),
+(43, 598, 39),
+(43, 599, 40),
+(43, 600, 41),
+(43, 601, 42),
+(43, 602, 43),
+(43, 603, 44),
+(43, 614, 45),
+(43, 615, 46),
+(44, 53, 1),
+(44, 370, 2),
+(44, 371, 3),
+(44, 549, 4),
+(44, 551, 5),
+(44, 552, 6),
+(44, 553, 7),
+(44, 554, 8),
+(44, 555, 9),
+(44, 560, 10),
+(44, 561, 11),
+(44, 562, 12),
+(44, 563, 13),
+(44, 564, 14),
+(44, 565, 15),
+(44, 566, 16),
+(44, 567, 17),
+(44, 568, 18),
+(44, 569, 19),
+(44, 570, 20),
+(44, 571, 21),
+(44, 572, 22),
+(44, 573, 23),
+(44, 574, 24),
+(44, 575, 25),
+(44, 582, 26),
+(44, 583, 27),
+(44, 584, 28),
+(44, 595, 29),
+(44, 596, 30),
+(44, 597, 31),
+(44, 598, 32),
+(44, 599, 33),
+(44, 600, 34),
+(44, 601, 35),
+(44, 602, 36),
+(44, 603, 37),
+(44, 614, 38),
+(44, 615, 39),
+(45, 54, 1),
+(45, 56, 2),
+(45, 57, 3),
+(45, 59, 4),
+(45, 60, 5),
+(45, 61, 6),
+(45, 62, 7),
+(45, 63, 8),
+(45, 64, 9),
+(45, 65, 10),
+(45, 66, 11),
+(45, 67, 12),
+(45, 68, 13),
+(45, 69, 14),
+(45, 70, 15),
+(45, 71, 16),
+(45, 72, 17),
+(45, 73, 18),
+(45, 74, 19),
+(45, 75, 20),
+(45, 76, 21),
+(45, 77, 22),
+(45, 78, 23),
+(45, 79, 24),
+(45, 80, 25),
+(45, 81, 26),
+(45, 82, 27),
+(45, 83, 28),
+(45, 84, 29),
+(45, 86, 30),
+(45, 87, 31),
+(45, 88, 32),
+(45, 89, 33),
+(45, 90, 34),
+(45, 91, 35),
+(45, 92, 36),
+(45, 93, 37),
+(45, 94, 38),
+(45, 95, 39),
+(45, 96, 40),
+(45, 97, 41),
+(45, 98, 42),
+(45, 99, 43),
+(45, 100, 44),
+(45, 102, 45),
+(45, 103, 46),
+(45, 104, 47),
+(45, 105, 48),
+(45, 108, 49),
+(45, 109, 50),
+(45, 110, 51),
+(45, 113, 52),
+(45, 114, 53),
+(45, 115, 54),
+(45, 116, 55),
+(45, 117, 56),
+(45, 118, 57),
+(45, 119, 58),
+(45, 120, 59),
+(45, 121, 60),
+(45, 122, 61),
+(45, 123, 62),
+(45, 125, 63),
+(45, 126, 64),
+(45, 127, 65),
+(45, 129, 66),
+(45, 130, 67),
+(45, 133, 68),
+(45, 134, 69),
+(45, 135, 70),
+(45, 136, 71),
+(45, 137, 72),
+(45, 138, 73),
+(45, 139, 74),
+(45, 140, 75),
+(45, 141, 76),
+(45, 142, 77),
+(45, 147, 78),
+(45, 148, 79),
+(45, 149, 80),
+(45, 150, 81),
+(45, 151, 82),
+(45, 152, 83),
+(45, 154, 84),
+(45, 155, 85),
+(45, 156, 86),
+(45, 157, 87),
+(45, 159, 88),
+(45, 166, 89),
+(45, 167, 90),
+(45, 168, 91),
+(45, 169, 92),
+(45, 170, 93),
+(45, 171, 94),
+(45, 172, 95),
+(45, 173, 96),
+(45, 272, 97),
+(45, 273, 98),
+(45, 274, 99),
+(46, 54, 1),
+(46, 55, 2),
+(46, 56, 3),
+(46, 57, 4),
+(46, 58, 5),
+(46, 59, 6),
+(46, 60, 7),
+(46, 61, 8),
+(46, 62, 9),
+(46, 63, 10),
+(46, 64, 11),
+(46, 65, 12),
+(46, 66, 13),
+(46, 67, 14),
+(46, 68, 15),
+(46, 69, 16),
+(46, 70, 17),
+(46, 71, 18),
+(46, 72, 19),
+(46, 73, 20),
+(46, 141, 21),
+(46, 142, 22),
+(46, 147, 23),
+(46, 149, 24),
+(46, 151, 25),
+(46, 152, 26),
+(46, 154, 27),
+(46, 156, 28),
+(46, 157, 29),
+(46, 158, 30),
+(46, 160, 31),
+(46, 161, 32),
+(46, 162, 33),
+(46, 164, 34),
+(46, 166, 35),
+(46, 167, 36),
+(46, 168, 37),
+(46, 169, 38),
+(46, 171, 39),
+(46, 173, 40),
+(46, 272, 41),
+(46, 273, 42),
+(46, 274, 43),
+(47, 54, 1),
+(47, 79, 2),
+(47, 88, 3),
+(47, 94, 4),
+(47, 99, 5),
+(47, 184, 6),
+(47, 272, 7),
+(48, 55, 1),
+(48, 58, 2),
+(48, 67, 3),
+(48, 69, 4),
+(48, 85, 5),
+(48, 118, 6),
+(48, 128, 7),
+(48, 131, 8),
+(48, 132, 9),
+(48, 142, 10),
+(48, 152, 11),
+(48, 160, 12),
+(48, 161, 13),
+(48, 162, 14),
+(48, 163, 15),
+(48, 164, 16),
+(48, 165, 17),
+(49, 55, 1),
+(49, 58, 2),
+(49, 67, 3),
+(49, 69, 4),
+(49, 85, 5),
+(49, 118, 6),
+(49, 131, 7),
+(49, 132, 8),
+(49, 142, 9),
+(49, 152, 10),
+(49, 160, 11),
+(49, 161, 12),
+(49, 162, 13),
+(49, 163, 14),
+(49, 164, 15),
+(49, 165, 16),
+(50, 57, 1),
+(50, 67, 2),
+(50, 79, 3),
+(50, 89, 4),
+(50, 118, 5),
+(50, 129, 6),
+(50, 142, 7),
+(50, 147, 8),
+(50, 150, 9),
+(50, 151, 10),
+(50, 152, 11),
+(51, 57, 1),
+(51, 62, 2),
+(51, 66, 3),
+(51, 151, 4),
+(51, 168, 5),
+(51, 169, 6),
+(51, 273, 7),
+(51, 274, 8),
+(52, 58, 1),
+(52, 71, 2),
+(52, 72, 3),
+(52, 73, 4),
+(52, 75, 5),
+(52, 84, 6),
+(52, 86, 7),
+(52, 87, 8),
+(52, 101, 9),
+(52, 107, 10),
+(52, 154, 11),
+(52, 155, 12),
+(52, 156, 13),
+(52, 157, 14),
+(52, 158, 15),
+(53, 58, 1),
+(53, 67, 2),
+(53, 89, 3),
+(53, 120, 4),
+(53, 121, 5),
+(53, 123, 6),
+(53, 129, 7),
+(53, 147, 8),
+(53, 150, 9),
+(53, 151, 10),
+(54, 59, 1),
+(54, 60, 2),
+(54, 61, 3),
+(54, 62, 4),
+(54, 63, 5),
+(54, 64, 6),
+(54, 65, 7),
+(54, 66, 8),
+(54, 67, 9),
+(54, 68, 10),
+(54, 77, 11),
+(54, 112, 12),
+(55, 60, 1),
+(55, 77, 2),
+(55, 92, 3),
+(55, 104, 4),
+(55, 110, 5),
+(55, 149, 6),
+(55, 166, 7),
+(55, 167, 8),
+(56, 67, 1),
+(56, 79, 2),
+(56, 98, 3),
+(56, 142, 4),
+(56, 143, 5),
+(57, 71, 1),
+(57, 73, 2),
+(57, 84, 3),
+(57, 101, 4),
+(57, 106, 5),
+(57, 107, 6),
+(57, 112, 7),
+(57, 144, 8),
+(57, 145, 9),
+(57, 146, 10),
+(57, 147, 11),
+(57, 148, 12),
+(57, 149, 13),
+(58, 74, 1),
+(58, 75, 2),
+(58, 76, 3),
+(58, 77, 4),
+(58, 78, 5),
+(58, 79, 6),
+(58, 80, 7),
+(58, 81, 8),
+(58, 82, 9),
+(58, 83, 10),
+(58, 84, 11),
+(58, 85, 12),
+(58, 86, 13),
+(58, 87, 14),
+(58, 88, 15),
+(58, 89, 16),
+(58, 90, 17),
+(58, 91, 18),
+(58, 92, 19),
+(58, 93, 20),
+(58, 148, 21),
+(58, 150, 22),
+(58, 153, 23),
+(58, 155, 24),
+(58, 159, 25),
+(58, 163, 26),
+(58, 165, 27),
+(58, 170, 28),
+(58, 172, 29),
+(59, 74, 1),
+(59, 75, 2),
+(59, 79, 3),
+(59, 87, 4),
+(59, 116, 5),
+(59, 138, 6),
+(59, 140, 7),
+(59, 153, 8),
+(59, 158, 9),
+(60, 75, 1),
+(60, 87, 2),
+(60, 90, 3),
+(60, 105, 4),
+(60, 133, 5),
+(60, 143, 6),
+(60, 153, 7),
+(61, 77, 1),
+(61, 92, 2),
+(61, 104, 3),
+(61, 111, 4),
+(61, 155, 5),
+(61, 168, 6),
+(61, 173, 7),
+(62, 80, 1),
+(62, 100, 2),
+(62, 115, 3),
+(62, 118, 4),
+(62, 119, 5),
+(62, 120, 6),
+(62, 121, 7),
+(62, 122, 8),
+(62, 123, 9),
+(62, 125, 10),
+(62, 126, 11),
+(62, 129, 12),
+(62, 130, 13),
+(62, 141, 14),
+(63, 92, 1),
+(63, 104, 2),
+(64, 94, 1),
+(64, 95, 2),
+(64, 96, 3),
+(64, 97, 4),
+(64, 98, 5),
+(64, 99, 6),
+(64, 100, 7),
+(65, 101, 1),
+(65, 102, 2),
+(65, 103, 3),
+(65, 104, 4),
+(65, 105, 5),
+(65, 106, 6),
+(65, 107, 7),
+(65, 108, 8),
+(65, 109, 9),
+(65, 110, 10),
+(65, 111, 11),
+(66, 112, 1),
+(67, 113, 1),
+(67, 114, 2),
+(68, 115, 1),
+(68, 116, 2),
+(68, 117, 3),
+(68, 118, 4),
+(68, 119, 5),
+(68, 120, 6),
+(68, 121, 7),
+(68, 122, 8),
+(68, 123, 9),
+(68, 124, 10),
+(68, 125, 11),
+(68, 126, 12),
+(68, 127, 13),
+(68, 128, 14),
+(68, 129, 15),
+(68, 130, 16),
+(69, 115, 1),
+(69, 120, 2),
+(69, 126, 3),
+(70, 131, 1),
+(70, 132, 2),
+(70, 133, 3),
+(70, 134, 4),
+(70, 135, 5),
+(70, 136, 6),
+(70, 137, 7),
+(70, 138, 8),
+(70, 139, 9),
+(70, 140, 10),
+(71, 144, 1),
+(71, 145, 2),
+(71, 146, 3),
+(72, 149, 1),
+(72, 154, 2),
+(72, 159, 3),
+(73, 174, 1),
+(73, 175, 2),
+(73, 176, 3),
+(73, 177, 4),
+(73, 178, 5),
+(73, 179, 6),
+(73, 180, 7),
+(73, 181, 8),
+(73, 182, 9),
+(73, 183, 10),
+(73, 184, 11),
+(73, 185, 12),
+(73, 186, 13),
+(73, 187, 14),
+(73, 188, 15),
+(73, 189, 16),
+(73, 190, 17),
+(74, 191, 1),
+(74, 192, 2),
+(74, 193, 3),
+(74, 194, 4),
+(74, 195, 5),
+(74, 196, 6),
+(74, 197, 7),
+(75, 198, 1),
+(75, 199, 2),
+(75, 200, 3),
+(75, 219, 4),
+(75, 225, 5),
+(75, 226, 6),
+(75, 227, 7),
+(75, 370, 8),
+(75, 371, 9),
+(75, 372, 10),
+(75, 373, 11),
+(75, 374, 12),
+(75, 375, 13),
+(75, 549, 14),
+(75, 554, 15),
+(75, 555, 16),
+(75, 556, 17),
+(75, 557, 18),
+(75, 558, 19),
+(75, 559, 20),
+(75, 560, 21),
+(75, 561, 22),
+(75, 562, 23),
+(75, 563, 24),
+(75, 564, 25),
+(75, 565, 26),
+(76, 198, 1),
+(76, 199, 2),
+(76, 200, 3),
+(76, 211, 4),
+(76, 225, 5),
+(76, 226, 6),
+(76, 227, 7),
+(76, 275, 8),
+(76, 278, 9),
+(76, 318, 10),
+(76, 357, 11),
+(76, 367, 12),
+(76, 370, 13),
+(76, 371, 14),
+(76, 374, 15),
+(76, 489, 16),
+(76, 551, 17),
+(76, 554, 18),
+(76, 556, 19),
+(76, 557, 20),
+(76, 558, 21),
+(76, 559, 22),
+(76, 560, 23),
+(76, 562, 24),
+(76, 564, 25),
+(76, 565, 26),
+(76, 569, 27),
+(76, 576, 28),
+(76, 602, 29),
+(77, 201, 1),
+(77, 202, 2),
+(77, 203, 3),
+(77, 204, 4),
+(77, 205, 5),
+(77, 551, 6),
+(77, 553, 7),
+(77, 568, 8),
+(77, 569, 9),
+(77, 570, 10),
+(77, 571, 11),
+(77, 572, 12),
+(77, 573, 13),
+(77, 574, 14),
+(77, 599, 15),
+(77, 600, 16),
+(77, 601, 17),
+(77, 602, 18),
+(77, 603, 19),
+(78, 224, 1),
+(79, 225, 1),
+(79, 226, 2),
+(79, 227, 3),
+(81, 228, 1),
+(81, 229, 2),
+(81, 230, 3),
+(81, 231, 4),
+(81, 232, 5),
+(81, 233, 6),
+(81, 234, 7),
+(81, 235, 8),
+(81, 236, 9),
+(81, 237, 10),
+(81, 238, 11),
+(81, 239, 12),
+(81, 240, 13),
+(81, 241, 14),
+(81, 242, 15),
+(81, 243, 16),
+(81, 244, 17),
+(81, 245, 18),
+(81, 246, 19),
+(82, 247, 1),
+(82, 248, 2),
+(82, 249, 3),
+(82, 250, 4),
+(82, 251, 5),
+(82, 252, 6),
+(82, 253, 7),
+(83, 254, 1),
+(83, 255, 2),
+(83, 256, 3),
+(84, 257, 1),
+(84, 258, 2),
+(84, 259, 3),
+(84, 260, 4),
+(84, 261, 5),
+(84, 262, 6),
+(84, 263, 7),
+(84, 264, 8),
+(85, 265, 1),
+(85, 266, 2),
+(85, 267, 3),
+(85, 268, 4),
+(85, 269, 5),
+(86, 273, 1),
+(86, 434, 2),
+(86, 668, 3),
+(86, 672, 4),
+(87, 275, 1),
+(87, 276, 2),
+(87, 277, 3),
+(87, 278, 4),
+(87, 279, 5),
+(87, 280, 6),
+(87, 281, 7),
+(87, 282, 8),
+(87, 283, 9),
+(87, 284, 10),
+(87, 285, 11),
+(87, 286, 12),
+(87, 287, 13),
+(87, 288, 14),
+(87, 289, 15),
+(87, 290, 16),
+(87, 291, 17),
+(87, 292, 18),
+(87, 293, 19),
+(87, 294, 20),
+(87, 295, 21),
+(87, 296, 22),
+(87, 297, 23),
+(87, 299, 24),
+(87, 300, 25),
+(87, 301, 26),
+(87, 302, 27),
+(87, 303, 28),
+(87, 304, 29),
+(87, 305, 30),
+(87, 306, 31),
+(87, 307, 32),
+(87, 308, 33),
+(87, 309, 34),
+(87, 310, 35),
+(87, 311, 36),
+(87, 312, 37),
+(87, 313, 38),
+(87, 314, 39),
+(87, 329, 40),
+(87, 330, 41),
+(87, 331, 42),
+(87, 332, 43),
+(88, 275, 1),
+(88, 276, 2),
+(88, 277, 3),
+(88, 278, 4),
+(88, 279, 5),
+(88, 280, 6),
+(88, 281, 7),
+(88, 282, 8),
+(88, 283, 9),
+(88, 284, 10),
+(88, 285, 11),
+(88, 286, 12),
+(88, 287, 13),
+(88, 288, 14),
+(88, 289, 15),
+(88, 290, 16),
+(88, 291, 17),
+(88, 292, 18),
+(88, 293, 19),
+(88, 294, 20),
+(89, 295, 1),
+(89, 296, 2),
+(89, 297, 3),
+(89, 298, 4),
+(89, 299, 5),
+(89, 300, 6),
+(89, 301, 7),
+(89, 302, 8),
+(89, 303, 9),
+(89, 304, 10),
+(89, 305, 11),
+(89, 306, 12),
+(89, 307, 13),
+(89, 308, 14),
+(89, 309, 15),
+(89, 310, 16),
+(89, 311, 17),
+(89, 312, 18),
+(89, 313, 19),
+(89, 314, 20),
+(90, 315, 1),
+(90, 316, 2),
+(90, 317, 3),
+(90, 318, 4),
+(90, 319, 5),
+(90, 320, 6),
+(90, 321, 7),
+(90, 322, 8),
+(90, 323, 9),
+(90, 324, 10),
+(90, 325, 11),
+(90, 326, 12),
+(90, 327, 13),
+(90, 328, 14),
+(90, 592, 15),
+(91, 329, 1),
+(91, 330, 2),
+(91, 331, 3),
+(91, 332, 4),
+(92, 333, 1),
+(92, 345, 2),
+(92, 348, 3),
+(92, 349, 4),
+(92, 398, 5),
+(92, 399, 6),
+(92, 400, 7),
+(92, 401, 8),
+(92, 402, 9),
+(92, 403, 10),
+(92, 404, 11),
+(92, 405, 12),
+(92, 406, 13),
+(92, 407, 14),
+(92, 408, 15),
+(92, 409, 16),
+(92, 410, 17),
+(92, 411, 18),
+(92, 412, 19),
+(92, 413, 20),
+(92, 414, 21),
+(92, 415, 22),
+(92, 416, 23),
+(92, 417, 24),
+(92, 418, 25),
+(92, 419, 26),
+(92, 420, 27),
+(92, 421, 28),
+(92, 422, 29),
+(92, 423, 30),
+(92, 424, 31),
+(92, 425, 32),
+(92, 426, 33),
+(92, 427, 34),
+(92, 428, 35),
+(92, 429, 36),
+(92, 430, 37),
+(92, 431, 38),
+(92, 432, 39),
+(92, 433, 40),
+(92, 434, 41),
+(92, 435, 42),
+(92, 436, 43),
+(92, 437, 44),
+(92, 438, 45),
+(92, 439, 46),
+(92, 440, 47),
+(92, 441, 48),
+(92, 442, 49),
+(92, 443, 50),
+(92, 444, 51),
+(92, 445, 52),
+(92, 446, 53),
+(92, 447, 54),
+(92, 448, 55),
+(92, 449, 56),
+(92, 450, 57),
+(92, 451, 58),
+(92, 452, 59),
+(92, 453, 60),
+(92, 454, 61),
+(92, 455, 62),
+(92, 456, 63),
+(92, 457, 64),
+(92, 458, 65),
+(92, 459, 66),
+(92, 460, 67),
+(92, 461, 68),
+(92, 468, 69),
+(92, 469, 70),
+(92, 470, 71),
+(92, 471, 72),
+(92, 482, 73),
+(92, 498, 74),
+(92, 508, 75),
+(92, 510, 76),
+(92, 513, 77),
+(92, 514, 78),
+(92, 515, 79),
+(93, 333, 1),
+(93, 334, 2),
+(93, 335, 3),
+(93, 336, 4),
+(93, 337, 5),
+(93, 338, 6),
+(93, 339, 7),
+(93, 340, 8),
+(93, 341, 9),
+(93, 342, 10),
+(93, 343, 11),
+(93, 344, 12),
+(93, 345, 13),
+(93, 346, 14),
+(93, 347, 15),
+(93, 348, 16),
+(93, 349, 17),
+(94, 334, 1),
+(94, 335, 2),
+(94, 336, 3),
+(94, 337, 4),
+(95, 338, 1),
+(95, 339, 2),
+(95, 340, 3),
+(95, 341, 4),
+(95, 342, 5),
+(96, 343, 1),
+(96, 344, 2),
+(97, 345, 1),
+(97, 431, 2),
+(97, 432, 3),
+(97, 433, 4),
+(97, 434, 5),
+(97, 435, 6),
+(97, 436, 7),
+(97, 437, 8),
+(97, 438, 9),
+(97, 439, 10),
+(97, 440, 11),
+(97, 441, 12),
+(98, 346, 1),
+(98, 472, 2),
+(98, 473, 3),
+(98, 474, 4),
+(98, 475, 5),
+(98, 476, 6),
+(98, 477, 7),
+(98, 478, 8),
+(98, 479, 9),
+(98, 480, 10),
+(98, 481, 11),
+(98, 482, 12),
+(98, 483, 13),
+(98, 484, 14),
+(98, 485, 15),
+(98, 486, 16),
+(98, 487, 17),
+(98, 488, 18),
+(98, 489, 19),
+(98, 490, 20),
+(98, 491, 21),
+(98, 492, 22),
+(98, 493, 23),
+(98, 494, 24),
+(98, 495, 25),
+(98, 496, 26),
+(98, 497, 27),
+(98, 499, 28),
+(98, 500, 29),
+(98, 502, 30),
+(98, 503, 31),
+(98, 504, 32),
+(98, 505, 33),
+(98, 518, 34),
+(98, 613, 35),
+(99, 346, 1),
+(99, 487, 2),
+(99, 488, 3),
+(99, 489, 4),
+(99, 490, 5),
+(99, 491, 6),
+(99, 492, 7),
+(99, 493, 8),
+(99, 494, 9),
+(99, 495, 10),
+(99, 496, 11),
+(99, 497, 12),
+(99, 498, 13),
+(99, 499, 14),
+(99, 500, 15),
+(99, 501, 16),
+(99, 502, 17),
+(99, 503, 18),
+(99, 504, 19),
+(99, 505, 20),
+(99, 518, 21),
+(99, 543, 22),
+(99, 544, 23),
+(99, 613, 24),
+(100, 346, 1),
+(100, 347, 2),
+(100, 468, 3),
+(100, 469, 4),
+(100, 470, 5),
+(100, 471, 6),
+(101, 347, 1),
+(101, 468, 2),
+(101, 469, 3),
+(101, 470, 4),
+(101, 471, 5),
+(101, 506, 6),
+(101, 507, 7),
+(101, 508, 8),
+(101, 509, 9),
+(101, 510, 10),
+(101, 511, 11),
+(101, 512, 12),
+(101, 513, 13),
+(101, 514, 14),
+(101, 515, 15),
+(101, 516, 16),
+(101, 517, 17),
+(102, 350, 1),
+(102, 351, 2),
+(102, 352, 3),
+(102, 353, 4),
+(102, 354, 5),
+(102, 355, 6),
+(102, 356, 7),
+(102, 357, 8),
+(102, 358, 9),
+(102, 359, 10),
+(102, 360, 11),
+(102, 361, 12),
+(102, 362, 13),
+(102, 363, 14),
+(102, 364, 15),
+(102, 365, 16),
+(102, 366, 17),
+(102, 367, 18),
+(102, 368, 19),
+(102, 369, 20),
+(102, 372, 21),
+(102, 373, 22),
+(102, 374, 23),
+(102, 375, 24),
+(102, 376, 25),
+(102, 377, 26),
+(102, 378, 27),
+(103, 350, 1),
+(103, 351, 2),
+(103, 352, 3),
+(103, 353, 4),
+(103, 354, 5),
+(103, 355, 6),
+(103, 356, 7),
+(103, 357, 8),
+(103, 358, 9),
+(103, 359, 10),
+(103, 360, 11),
+(103, 361, 12),
+(103, 362, 13),
+(103, 363, 14),
+(103, 364, 15),
+(103, 365, 16),
+(103, 366, 17),
+(103, 367, 18),
+(103, 368, 19),
+(103, 369, 20),
+(104, 370, 1),
+(104, 371, 2),
+(104, 372, 3),
+(104, 373, 4),
+(104, 374, 5),
+(104, 375, 6),
+(105, 376, 1),
+(105, 377, 2),
+(105, 378, 3),
+(106, 379, 1),
+(106, 380, 2),
+(106, 381, 3),
+(106, 382, 4),
+(106, 383, 5),
+(106, 384, 6),
+(106, 385, 7),
+(106, 386, 8),
+(106, 387, 9),
+(106, 388, 10),
+(106, 389, 11),
+(106, 390, 12),
+(106, 391, 13),
+(106, 392, 14),
+(106, 393, 15),
+(106, 394, 16),
+(106, 395, 17),
+(106, 396, 18),
+(106, 397, 19),
+(107, 379, 1),
+(107, 380, 2),
+(107, 381, 3),
+(107, 382, 4),
+(107, 383, 5),
+(107, 384, 6),
+(107, 385, 7),
+(107, 397, 8),
+(108, 386, 1),
+(108, 387, 2),
+(108, 388, 3),
+(108, 389, 4),
+(108, 390, 5),
+(108, 391, 6),
+(108, 392, 7),
+(108, 393, 8),
+(108, 394, 9),
+(108, 395, 10),
+(108, 396, 11),
+(109, 394, 1),
+(109, 497, 2),
+(109, 500, 3),
+(109, 518, 4),
+(110, 398, 1),
+(110, 399, 2),
+(110, 400, 3),
+(110, 401, 4),
+(110, 402, 5),
+(110, 403, 6),
+(110, 404, 7),
+(110, 405, 8),
+(110, 406, 9),
+(110, 407, 10),
+(110, 408, 11),
+(110, 409, 12),
+(110, 410, 13),
+(110, 411, 14),
+(110, 412, 15),
+(110, 413, 16),
+(110, 414, 17),
+(110, 415, 18),
+(111, 416, 1),
+(111, 417, 2),
+(111, 418, 3),
+(111, 419, 4),
+(111, 420, 5),
+(111, 421, 6),
+(111, 422, 7),
+(111, 423, 8),
+(111, 424, 9),
+(112, 425, 1),
+(112, 426, 2),
+(112, 427, 3),
+(113, 428, 1),
+(113, 429, 2),
+(113, 430, 3),
+(114, 432, 1),
+(114, 604, 2),
+(114, 605, 3),
+(114, 606, 4),
+(114, 607, 5),
+(114, 608, 6),
+(114, 609, 7),
+(114, 610, 8),
+(114, 611, 9),
+(114, 612, 10),
+(115, 442, 1),
+(115, 443, 2),
+(115, 444, 3),
+(116, 445, 1),
+(116, 446, 2),
+(116, 447, 3),
+(116, 448, 4),
+(116, 449, 5),
+(116, 450, 6),
+(116, 451, 7),
+(116, 452, 8),
+(116, 453, 9),
+(116, 454, 10),
+(116, 455, 11),
+(116, 456, 12),
+(116, 457, 13),
+(116, 458, 14),
+(116, 459, 15),
+(116, 460, 16),
+(117, 461, 1),
+(118, 462, 1),
+(118, 463, 2),
+(118, 464, 3),
+(118, 465, 4),
+(118, 466, 5),
+(118, 467, 6),
+(119, 472, 1),
+(119, 473, 2),
+(119, 474, 3),
+(119, 475, 4),
+(119, 476, 5),
+(119, 477, 6),
+(119, 478, 7),
+(119, 479, 8),
+(119, 480, 9),
+(119, 481, 10),
+(119, 482, 11),
+(120, 483, 1),
+(120, 484, 2),
+(120, 485, 3),
+(120, 486, 4),
+(121, 489, 1),
+(121, 500, 2),
+(121, 640, 3),
+(122, 489, 1),
+(122, 497, 2),
+(123, 519, 1),
+(123, 520, 2),
+(123, 521, 3),
+(123, 522, 4),
+(123, 523, 5),
+(123, 524, 6),
+(123, 525, 7),
+(123, 526, 8),
+(123, 527, 9),
+(123, 528, 10),
+(123, 529, 11),
+(123, 530, 12),
+(123, 531, 13),
+(123, 532, 14),
+(123, 533, 15),
+(123, 534, 16),
+(123, 535, 17),
+(123, 536, 18),
+(124, 519, 1),
+(124, 520, 2),
+(124, 521, 3),
+(124, 522, 4),
+(124, 523, 5),
+(124, 524, 6),
+(124, 525, 7),
+(124, 526, 8),
+(124, 527, 9),
+(124, 528, 10),
+(124, 529, 11),
+(124, 530, 12),
+(125, 531, 1),
+(125, 532, 2),
+(125, 533, 3),
+(125, 534, 4),
+(125, 535, 5),
+(125, 536, 6),
+(126, 537, 1),
+(126, 538, 2),
+(126, 539, 3),
+(126, 540, 4),
+(126, 541, 5),
+(126, 542, 6),
+(127, 549, 1),
+(127, 550, 2),
+(127, 552, 3),
+(127, 568, 4),
+(127, 569, 5),
+(127, 581, 6),
+(127, 596, 7),
+(127, 599, 8),
+(127, 602, 9),
+(127, 614, 10),
+(127, 615, 11),
+(128, 549, 1),
+(128, 552, 2),
+(128, 568, 3),
+(128, 571, 4),
+(128, 596, 5),
+(128, 601, 6),
+(129, 575, 1),
+(129, 577, 2),
+(129, 578, 3),
+(129, 579, 4),
+(129, 580, 5),
+(129, 581, 6),
+(129, 582, 7),
+(129, 583, 8),
+(129, 584, 9),
+(129, 585, 10),
+(129, 586, 11),
+(129, 587, 12),
+(129, 588, 13),
+(129, 589, 14),
+(129, 590, 15),
+(129, 591, 16),
+(130, 616, 1),
+(130, 617, 2),
+(130, 618, 3),
+(131, 619, 1),
+(131, 620, 2),
+(132, 621, 1),
+(132, 622, 2),
+(132, 623, 3),
+(132, 624, 4),
+(132, 625, 5),
+(132, 626, 6),
+(132, 627, 7),
+(132, 628, 8),
+(132, 629, 9),
+(132, 630, 10),
+(132, 631, 11),
+(132, 632, 12),
+(132, 633, 13),
+(132, 634, 14),
+(132, 635, 15),
+(132, 636, 16),
+(132, 637, 17),
+(132, 638, 18),
+(132, 639, 19),
+(132, 640, 20),
+(132, 641, 21),
+(132, 642, 22),
+(132, 643, 23),
+(132, 644, 24),
+(132, 645, 25),
+(132, 646, 26),
+(132, 647, 27),
+(132, 648, 28),
+(132, 649, 29),
+(132, 650, 30),
+(132, 651, 31),
+(132, 652, 32),
+(132, 653, 33),
+(132, 654, 34),
+(132, 655, 35),
+(132, 656, 36),
+(132, 657, 37),
+(132, 658, 38),
+(132, 660, 39),
+(132, 661, 40),
+(132, 662, 41),
+(132, 663, 42),
+(132, 664, 43),
+(132, 665, 44),
+(132, 666, 45),
+(132, 667, 46),
+(132, 668, 47),
+(132, 669, 48),
+(132, 670, 49),
+(132, 671, 50),
+(132, 672, 51),
+(132, 673, 52),
+(132, 674, 53),
+(132, 675, 54),
+(132, 676, 55),
+(132, 677, 56),
+(132, 678, 57),
+(132, 679, 58),
+(132, 680, 59),
+(132, 681, 60),
+(132, 682, 61),
+(132, 683, 62),
+(132, 684, 63),
+(132, 685, 64),
+(132, 686, 65),
+(133, 621, 1),
+(133, 622, 2),
+(133, 623, 3),
+(133, 624, 4),
+(133, 625, 5),
+(133, 626, 6),
+(133, 627, 7),
+(133, 628, 8),
+(133, 629, 9),
+(133, 630, 10),
+(133, 631, 11),
+(133, 632, 12),
+(133, 633, 13),
+(134, 634, 1),
+(134, 635, 2),
+(134, 636, 3),
+(134, 637, 4),
+(134, 638, 5),
+(135, 639, 1),
+(135, 640, 2),
+(135, 641, 3),
+(135, 642, 4),
+(135, 643, 5),
+(135, 644, 6),
+(135, 645, 7),
+(136, 646, 1),
+(136, 647, 2),
+(136, 648, 3),
+(136, 649, 4),
+(136, 650, 5),
+(136, 651, 6),
+(136, 652, 7),
+(136, 653, 8),
+(136, 654, 9),
+(136, 655, 10),
+(137, 656, 1),
+(137, 657, 2),
+(137, 658, 3),
+(137, 659, 4),
+(137, 660, 5),
+(137, 661, 6),
+(138, 662, 1),
+(138, 663, 2),
+(138, 664, 3),
+(138, 665, 4),
+(138, 666, 5),
+(138, 667, 6),
+(138, 668, 7),
+(138, 669, 8),
+(138, 670, 9),
+(138, 671, 10),
+(138, 672, 11),
+(138, 673, 12),
+(138, 674, 13),
+(138, 675, 14),
+(139, 676, 1),
+(139, 677, 2),
+(139, 678, 3),
+(139, 679, 4),
+(139, 680, 5),
+(139, 681, 6),
+(139, 682, 7),
+(139, 683, 8),
+(140, 684, 1),
+(140, 685, 2),
+(140, 686, 3);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_category_shop`
+-- Структура таблицы `ps_category_shop`
 --
 
 CREATE TABLE `ps_category_shop` (
@@ -2446,17 +5152,155 @@ CREATE TABLE `ps_category_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_category_shop`
+-- Дамп данных таблицы `ps_category_shop`
 --
 
 INSERT INTO `ps_category_shop` (`id_category`, `id_shop`, `position`) VALUES
 (1, 1, 0),
-(2, 1, 0);
+(2, 1, 0),
+(3, 1, 0),
+(4, 1, 1),
+(5, 1, 2),
+(6, 1, 3),
+(7, 1, 4),
+(8, 1, 5),
+(9, 1, 6),
+(10, 1, 7),
+(11, 1, 8),
+(12, 1, 9),
+(13, 1, 10),
+(14, 1, 11),
+(15, 1, 12),
+(16, 1, 13),
+(17, 1, 14),
+(18, 1, 15),
+(19, 1, 16),
+(20, 1, 17),
+(21, 1, 18),
+(22, 1, 19),
+(23, 1, 20),
+(24, 1, 21),
+(25, 1, 22),
+(26, 1, 23),
+(27, 1, 24),
+(28, 1, 25),
+(29, 1, 26),
+(30, 1, 27),
+(31, 1, 28),
+(32, 1, 29),
+(33, 1, 30),
+(34, 1, 31),
+(35, 1, 32),
+(36, 1, 33),
+(37, 1, 34),
+(38, 1, 35),
+(39, 1, 36),
+(40, 1, 37),
+(41, 1, 38),
+(42, 1, 39),
+(43, 1, 40),
+(44, 1, 41),
+(45, 1, 42),
+(46, 1, 43),
+(47, 1, 44),
+(48, 1, 45),
+(49, 1, 46),
+(50, 1, 47),
+(51, 1, 48),
+(52, 1, 49),
+(53, 1, 50),
+(54, 1, 51),
+(55, 1, 52),
+(56, 1, 53),
+(57, 1, 54),
+(58, 1, 55),
+(59, 1, 56),
+(60, 1, 57),
+(61, 1, 58),
+(62, 1, 59),
+(63, 1, 60),
+(64, 1, 61),
+(65, 1, 62),
+(66, 1, 63),
+(67, 1, 64),
+(68, 1, 65),
+(69, 1, 66),
+(70, 1, 67),
+(71, 1, 68),
+(72, 1, 69),
+(73, 1, 70),
+(74, 1, 71),
+(75, 1, 72),
+(76, 1, 73),
+(77, 1, 74),
+(78, 1, 75),
+(79, 1, 76),
+(80, 1, 77),
+(81, 1, 0),
+(82, 1, 78),
+(83, 1, 79),
+(84, 1, 80),
+(85, 1, 81),
+(86, 1, 82),
+(87, 1, 83),
+(88, 1, 84),
+(89, 1, 85),
+(90, 1, 86),
+(91, 1, 87),
+(92, 1, 88),
+(93, 1, 89),
+(94, 1, 90),
+(95, 1, 91),
+(96, 1, 92),
+(97, 1, 93),
+(98, 1, 94),
+(99, 1, 95),
+(100, 1, 96),
+(101, 1, 97),
+(102, 1, 98),
+(103, 1, 99),
+(104, 1, 100),
+(105, 1, 101),
+(106, 1, 102),
+(107, 1, 103),
+(108, 1, 104),
+(109, 1, 105),
+(110, 1, 106),
+(111, 1, 107),
+(112, 1, 108),
+(113, 1, 109),
+(114, 1, 110),
+(115, 1, 111),
+(116, 1, 112),
+(117, 1, 113),
+(118, 1, 114),
+(119, 1, 115),
+(120, 1, 116),
+(121, 1, 117),
+(122, 1, 118),
+(123, 1, 119),
+(124, 1, 120),
+(125, 1, 121),
+(126, 1, 122),
+(127, 1, 123),
+(128, 1, 124),
+(129, 1, 125),
+(130, 1, 126),
+(131, 1, 127),
+(132, 1, 128),
+(133, 1, 129),
+(134, 1, 130),
+(135, 1, 131),
+(136, 1, 132),
+(137, 1, 133),
+(138, 1, 134),
+(139, 1, 135),
+(140, 1, 136);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_cms`
+-- Структура таблицы `ps_cms`
 --
 
 CREATE TABLE `ps_cms` (
@@ -2468,7 +5312,7 @@ CREATE TABLE `ps_cms` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_cms`
+-- Дамп данных таблицы `ps_cms`
 --
 
 INSERT INTO `ps_cms` (`id_cms`, `id_cms_category`, `position`, `active`, `indexation`) VALUES
@@ -2481,7 +5325,7 @@ INSERT INTO `ps_cms` (`id_cms`, `id_cms_category`, `position`, `active`, `indexa
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_cms_category`
+-- Структура таблицы `ps_cms_category`
 --
 
 CREATE TABLE `ps_cms_category` (
@@ -2495,7 +5339,7 @@ CREATE TABLE `ps_cms_category` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_cms_category`
+-- Дамп данных таблицы `ps_cms_category`
 --
 
 INSERT INTO `ps_cms_category` (`id_cms_category`, `id_parent`, `level_depth`, `active`, `date_add`, `date_upd`, `position`) VALUES
@@ -2504,7 +5348,7 @@ INSERT INTO `ps_cms_category` (`id_cms_category`, `id_parent`, `level_depth`, `a
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_cms_category_lang`
+-- Структура таблицы `ps_cms_category_lang`
 --
 
 CREATE TABLE `ps_cms_category_lang` (
@@ -2520,7 +5364,7 @@ CREATE TABLE `ps_cms_category_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_cms_category_lang`
+-- Дамп данных таблицы `ps_cms_category_lang`
 --
 
 INSERT INTO `ps_cms_category_lang` (`id_cms_category`, `id_lang`, `id_shop`, `name`, `description`, `link_rewrite`, `meta_title`, `meta_keywords`, `meta_description`) VALUES
@@ -2529,7 +5373,7 @@ INSERT INTO `ps_cms_category_lang` (`id_cms_category`, `id_lang`, `id_shop`, `na
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_cms_category_shop`
+-- Структура таблицы `ps_cms_category_shop`
 --
 
 CREATE TABLE `ps_cms_category_shop` (
@@ -2538,7 +5382,7 @@ CREATE TABLE `ps_cms_category_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_cms_category_shop`
+-- Дамп данных таблицы `ps_cms_category_shop`
 --
 
 INSERT INTO `ps_cms_category_shop` (`id_cms_category`, `id_shop`) VALUES
@@ -2547,7 +5391,7 @@ INSERT INTO `ps_cms_category_shop` (`id_cms_category`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_cms_lang`
+-- Структура таблицы `ps_cms_lang`
 --
 
 CREATE TABLE `ps_cms_lang` (
@@ -2563,7 +5407,7 @@ CREATE TABLE `ps_cms_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_cms_lang`
+-- Дамп данных таблицы `ps_cms_lang`
 --
 
 INSERT INTO `ps_cms_lang` (`id_cms`, `id_lang`, `id_shop`, `meta_title`, `head_seo_title`, `meta_description`, `meta_keywords`, `content`, `link_rewrite`) VALUES
@@ -2576,7 +5420,7 @@ INSERT INTO `ps_cms_lang` (`id_cms`, `id_lang`, `id_shop`, `meta_title`, `head_s
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_cms_role`
+-- Структура таблицы `ps_cms_role`
 --
 
 CREATE TABLE `ps_cms_role` (
@@ -2586,7 +5430,7 @@ CREATE TABLE `ps_cms_role` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_cms_role`
+-- Дамп данных таблицы `ps_cms_role`
 --
 
 INSERT INTO `ps_cms_role` (`id_cms_role`, `name`, `id_cms`) VALUES
@@ -2596,7 +5440,7 @@ INSERT INTO `ps_cms_role` (`id_cms_role`, `name`, `id_cms`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_cms_role_lang`
+-- Структура таблицы `ps_cms_role_lang`
 --
 
 CREATE TABLE `ps_cms_role_lang` (
@@ -2609,7 +5453,7 @@ CREATE TABLE `ps_cms_role_lang` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_cms_shop`
+-- Структура таблицы `ps_cms_shop`
 --
 
 CREATE TABLE `ps_cms_shop` (
@@ -2618,7 +5462,7 @@ CREATE TABLE `ps_cms_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_cms_shop`
+-- Дамп данных таблицы `ps_cms_shop`
 --
 
 INSERT INTO `ps_cms_shop` (`id_cms`, `id_shop`) VALUES
@@ -2631,7 +5475,7 @@ INSERT INTO `ps_cms_shop` (`id_cms`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_configuration`
+-- Структура таблицы `ps_configuration`
 --
 
 CREATE TABLE `ps_configuration` (
@@ -2645,7 +5489,7 @@ CREATE TABLE `ps_configuration` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_configuration`
+-- Дамп данных таблицы `ps_configuration`
 --
 
 INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, `name`, `value`, `date_add`, `date_upd`) VALUES
@@ -3081,7 +5925,7 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (430, NULL, NULL, 'PS_PSX_FIREBASE_REFRESH_TOKEN', NULL, '2025-11-29 14:52:49', '2025-11-29 14:52:49'),
 (431, NULL, NULL, 'PS_PSX_FIREBASE_REFRESH_DATE', '2025-11-29 14:52:49', '2025-11-29 14:52:49', '2025-11-29 14:52:49'),
 (432, NULL, NULL, 'PS_ACCOUNTS_FIREBASE_ID_TOKEN', NULL, '2025-11-29 14:52:49', '2025-11-29 14:52:49'),
-(433, NULL, NULL, 'PS_ACCOUNTS_FIREBASE_REFRESH_TOKEN', NULL, '2025-11-29 14:52:49', '2025-12-14 16:52:30'),
+(433, NULL, NULL, 'PS_ACCOUNTS_FIREBASE_REFRESH_TOKEN', NULL, '2025-11-29 14:52:49', '2025-12-14 22:12:57'),
 (434, NULL, NULL, 'CONF_PAYU_FIXED', '0.2', '2025-12-14 16:33:39', '2025-12-14 16:33:39'),
 (435, NULL, NULL, 'CONF_PAYU_VAR', '2', '2025-12-14 16:33:39', '2025-12-14 16:33:39'),
 (436, NULL, NULL, 'CONF_PAYU_FIXED_FOREIGN', '0.2', '2025-12-14 16:33:39', '2025-12-14 16:33:39'),
@@ -3121,7 +5965,7 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_configuration_kpi`
+-- Структура таблицы `ps_configuration_kpi`
 --
 
 CREATE TABLE `ps_configuration_kpi` (
@@ -3135,7 +5979,7 @@ CREATE TABLE `ps_configuration_kpi` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_configuration_kpi`
+-- Дамп данных таблицы `ps_configuration_kpi`
 --
 
 INSERT INTO `ps_configuration_kpi` (`id_configuration_kpi`, `id_shop_group`, `id_shop`, `name`, `value`, `date_add`, `date_upd`) VALUES
@@ -3179,7 +6023,7 @@ INSERT INTO `ps_configuration_kpi` (`id_configuration_kpi`, `id_shop_group`, `id
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_configuration_kpi_lang`
+-- Структура таблицы `ps_configuration_kpi_lang`
 --
 
 CREATE TABLE `ps_configuration_kpi_lang` (
@@ -3192,7 +6036,7 @@ CREATE TABLE `ps_configuration_kpi_lang` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_configuration_lang`
+-- Структура таблицы `ps_configuration_lang`
 --
 
 CREATE TABLE `ps_configuration_lang` (
@@ -3203,7 +6047,7 @@ CREATE TABLE `ps_configuration_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_configuration_lang`
+-- Дамп данных таблицы `ps_configuration_lang`
 --
 
 INSERT INTO `ps_configuration_lang` (`id_configuration`, `id_lang`, `value`, `date_upd`) VALUES
@@ -3230,7 +6074,7 @@ INSERT INTO `ps_configuration_lang` (`id_configuration`, `id_lang`, `value`, `da
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_connections`
+-- Структура таблицы `ps_connections`
 --
 
 CREATE TABLE `ps_connections` (
@@ -3245,19 +6089,20 @@ CREATE TABLE `ps_connections` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_connections`
+-- Дамп данных таблицы `ps_connections`
 --
 
 INSERT INTO `ps_connections` (`id_connections`, `id_shop_group`, `id_shop`, `id_guest`, `id_page`, `ip_address`, `date_add`, `http_referer`) VALUES
 (1, 1, 1, 1, 1, 2886926337, '2025-11-29 14:50:34', 'http://localhost:8080/install/index.php'),
 (2, 1, 1, 2, 1, 2886860801, '2025-11-29 16:47:09', ''),
 (3, 1, 1, 1, 1, 2886926337, '2025-12-12 17:08:14', ''),
-(4, 1, 1, 1, 1, 2886926337, '2025-12-14 16:19:10', '');
+(4, 1, 1, 1, 1, 2886926337, '2025-12-14 16:19:10', ''),
+(5, 1, 1, 30, 1, 2886860801, '2025-12-14 22:12:19', '');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_connections_page`
+-- Структура таблицы `ps_connections_page`
 --
 
 CREATE TABLE `ps_connections_page` (
@@ -3270,7 +6115,7 @@ CREATE TABLE `ps_connections_page` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_connections_source`
+-- Структура таблицы `ps_connections_source`
 --
 
 CREATE TABLE `ps_connections_source` (
@@ -3283,7 +6128,7 @@ CREATE TABLE `ps_connections_source` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_connections_source`
+-- Дамп данных таблицы `ps_connections_source`
 --
 
 INSERT INTO `ps_connections_source` (`id_connections_source`, `id_connections`, `http_referer`, `request_uri`, `keywords`, `date_add`) VALUES
@@ -3313,7 +6158,7 @@ INSERT INTO `ps_connections_source` (`id_connections_source`, `id_connections`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_contact`
+-- Структура таблицы `ps_contact`
 --
 
 CREATE TABLE `ps_contact` (
@@ -3324,7 +6169,7 @@ CREATE TABLE `ps_contact` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_contact`
+-- Дамп данных таблицы `ps_contact`
 --
 
 INSERT INTO `ps_contact` (`id_contact`, `email`, `customer_service`, `position`) VALUES
@@ -3334,7 +6179,7 @@ INSERT INTO `ps_contact` (`id_contact`, `email`, `customer_service`, `position`)
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_contact_lang`
+-- Структура таблицы `ps_contact_lang`
 --
 
 CREATE TABLE `ps_contact_lang` (
@@ -3345,7 +6190,7 @@ CREATE TABLE `ps_contact_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_contact_lang`
+-- Дамп данных таблицы `ps_contact_lang`
 --
 
 INSERT INTO `ps_contact_lang` (`id_contact`, `id_lang`, `name`, `description`) VALUES
@@ -3355,7 +6200,7 @@ INSERT INTO `ps_contact_lang` (`id_contact`, `id_lang`, `name`, `description`) V
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_contact_shop`
+-- Структура таблицы `ps_contact_shop`
 --
 
 CREATE TABLE `ps_contact_shop` (
@@ -3364,7 +6209,7 @@ CREATE TABLE `ps_contact_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_contact_shop`
+-- Дамп данных таблицы `ps_contact_shop`
 --
 
 INSERT INTO `ps_contact_shop` (`id_contact`, `id_shop`) VALUES
@@ -3374,7 +6219,7 @@ INSERT INTO `ps_contact_shop` (`id_contact`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_country`
+-- Структура таблицы `ps_country`
 --
 
 CREATE TABLE `ps_country` (
@@ -3392,7 +6237,7 @@ CREATE TABLE `ps_country` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_country`
+-- Дамп данных таблицы `ps_country`
 --
 
 INSERT INTO `ps_country` (`id_country`, `id_zone`, `id_currency`, `iso_code`, `call_prefix`, `active`, `contains_states`, `need_identification_number`, `need_zip_code`, `zip_code_format`, `display_tax_label`) VALUES
@@ -3641,7 +6486,7 @@ INSERT INTO `ps_country` (`id_country`, `id_zone`, `id_currency`, `iso_code`, `c
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_country_lang`
+-- Структура таблицы `ps_country_lang`
 --
 
 CREATE TABLE `ps_country_lang` (
@@ -3651,7 +6496,7 @@ CREATE TABLE `ps_country_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_country_lang`
+-- Дамп данных таблицы `ps_country_lang`
 --
 
 INSERT INTO `ps_country_lang` (`id_country`, `id_lang`, `name`) VALUES
@@ -3900,7 +6745,7 @@ INSERT INTO `ps_country_lang` (`id_country`, `id_lang`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_country_shop`
+-- Структура таблицы `ps_country_shop`
 --
 
 CREATE TABLE `ps_country_shop` (
@@ -3909,7 +6754,7 @@ CREATE TABLE `ps_country_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_country_shop`
+-- Дамп данных таблицы `ps_country_shop`
 --
 
 INSERT INTO `ps_country_shop` (`id_country`, `id_shop`) VALUES
@@ -4158,7 +7003,7 @@ INSERT INTO `ps_country_shop` (`id_country`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_currency`
+-- Структура таблицы `ps_currency`
 --
 
 CREATE TABLE `ps_currency` (
@@ -4175,7 +7020,7 @@ CREATE TABLE `ps_currency` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_currency`
+-- Дамп данных таблицы `ps_currency`
 --
 
 INSERT INTO `ps_currency` (`id_currency`, `name`, `iso_code`, `numeric_iso_code`, `precision`, `conversion_rate`, `deleted`, `active`, `unofficial`, `modified`) VALUES
@@ -4184,7 +7029,7 @@ INSERT INTO `ps_currency` (`id_currency`, `name`, `iso_code`, `numeric_iso_code`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_currency_lang`
+-- Структура таблицы `ps_currency_lang`
 --
 
 CREATE TABLE `ps_currency_lang` (
@@ -4196,7 +7041,7 @@ CREATE TABLE `ps_currency_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_currency_lang`
+-- Дамп данных таблицы `ps_currency_lang`
 --
 
 INSERT INTO `ps_currency_lang` (`id_currency`, `id_lang`, `name`, `symbol`, `pattern`) VALUES
@@ -4205,7 +7050,7 @@ INSERT INTO `ps_currency_lang` (`id_currency`, `id_lang`, `name`, `symbol`, `pat
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_currency_shop`
+-- Структура таблицы `ps_currency_shop`
 --
 
 CREATE TABLE `ps_currency_shop` (
@@ -4215,7 +7060,7 @@ CREATE TABLE `ps_currency_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_currency_shop`
+-- Дамп данных таблицы `ps_currency_shop`
 --
 
 INSERT INTO `ps_currency_shop` (`id_currency`, `id_shop`, `conversion_rate`) VALUES
@@ -4224,7 +7069,7 @@ INSERT INTO `ps_currency_shop` (`id_currency`, `id_shop`, `conversion_rate`) VAL
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_customer`
+-- Структура таблицы `ps_customer`
 --
 
 CREATE TABLE `ps_customer` (
@@ -4264,7 +7109,7 @@ CREATE TABLE `ps_customer` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_customer`
+-- Дамп данных таблицы `ps_customer`
 --
 
 INSERT INTO `ps_customer` (`id_customer`, `id_shop_group`, `id_shop`, `id_gender`, `id_default_group`, `id_lang`, `id_risk`, `company`, `siret`, `ape`, `firstname`, `lastname`, `email`, `passwd`, `last_passwd_gen`, `birthday`, `newsletter`, `ip_registration_newsletter`, `newsletter_date_add`, `optin`, `website`, `outstanding_allow_amount`, `show_public_prices`, `max_payment_days`, `secure_key`, `note`, `active`, `is_guest`, `deleted`, `date_add`, `date_upd`, `reset_password_token`, `reset_password_validity`) VALUES
@@ -4273,7 +7118,7 @@ INSERT INTO `ps_customer` (`id_customer`, `id_shop_group`, `id_shop`, `id_gender
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_customer_group`
+-- Структура таблицы `ps_customer_group`
 --
 
 CREATE TABLE `ps_customer_group` (
@@ -4282,7 +7127,7 @@ CREATE TABLE `ps_customer_group` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_customer_group`
+-- Дамп данных таблицы `ps_customer_group`
 --
 
 INSERT INTO `ps_customer_group` (`id_customer`, `id_group`) VALUES
@@ -4291,7 +7136,7 @@ INSERT INTO `ps_customer_group` (`id_customer`, `id_group`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_customer_message`
+-- Структура таблицы `ps_customer_message`
 --
 
 CREATE TABLE `ps_customer_message` (
@@ -4311,7 +7156,7 @@ CREATE TABLE `ps_customer_message` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_customer_message_sync_imap`
+-- Структура таблицы `ps_customer_message_sync_imap`
 --
 
 CREATE TABLE `ps_customer_message_sync_imap` (
@@ -4321,7 +7166,7 @@ CREATE TABLE `ps_customer_message_sync_imap` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_customer_session`
+-- Структура таблицы `ps_customer_session`
 --
 
 CREATE TABLE `ps_customer_session` (
@@ -4333,7 +7178,7 @@ CREATE TABLE `ps_customer_session` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_customer_thread`
+-- Структура таблицы `ps_customer_thread`
 --
 
 CREATE TABLE `ps_customer_thread` (
@@ -4354,7 +7199,7 @@ CREATE TABLE `ps_customer_thread` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_customization`
+-- Структура таблицы `ps_customization`
 --
 
 CREATE TABLE `ps_customization` (
@@ -4372,7 +7217,7 @@ CREATE TABLE `ps_customization` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_customization_field`
+-- Структура таблицы `ps_customization_field`
 --
 
 CREATE TABLE `ps_customization_field` (
@@ -4387,7 +7232,7 @@ CREATE TABLE `ps_customization_field` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_customization_field_lang`
+-- Структура таблицы `ps_customization_field_lang`
 --
 
 CREATE TABLE `ps_customization_field_lang` (
@@ -4400,7 +7245,7 @@ CREATE TABLE `ps_customization_field_lang` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_customized_data`
+-- Структура таблицы `ps_customized_data`
 --
 
 CREATE TABLE `ps_customized_data` (
@@ -4416,7 +7261,7 @@ CREATE TABLE `ps_customized_data` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_date_range`
+-- Структура таблицы `ps_date_range`
 --
 
 CREATE TABLE `ps_date_range` (
@@ -4428,7 +7273,7 @@ CREATE TABLE `ps_date_range` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_delivery`
+-- Структура таблицы `ps_delivery`
 --
 
 CREATE TABLE `ps_delivery` (
@@ -4443,7 +7288,7 @@ CREATE TABLE `ps_delivery` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_delivery`
+-- Дамп данных таблицы `ps_delivery`
 --
 
 INSERT INTO `ps_delivery` (`id_delivery`, `id_shop`, `id_shop_group`, `id_carrier`, `id_range_price`, `id_range_weight`, `id_zone`, `price`) VALUES
@@ -4455,7 +7300,7 @@ INSERT INTO `ps_delivery` (`id_delivery`, `id_shop`, `id_shop_group`, `id_carrie
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_emailsubscription`
+-- Структура таблицы `ps_emailsubscription`
 --
 
 CREATE TABLE `ps_emailsubscription` (
@@ -4473,7 +7318,7 @@ CREATE TABLE `ps_emailsubscription` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_employee`
+-- Структура таблицы `ps_employee`
 --
 
 CREATE TABLE `ps_employee` (
@@ -4509,7 +7354,7 @@ CREATE TABLE `ps_employee` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_employee`
+-- Дамп данных таблицы `ps_employee`
 --
 
 INSERT INTO `ps_employee` (`id_employee`, `id_profile`, `id_lang`, `lastname`, `firstname`, `email`, `passwd`, `last_passwd_gen`, `stats_date_from`, `stats_date_to`, `stats_compare_from`, `stats_compare_to`, `stats_compare_option`, `preselect_date_range`, `bo_color`, `bo_theme`, `bo_css`, `default_tab`, `bo_width`, `bo_menu`, `active`, `optin`, `id_last_order`, `id_last_customer_message`, `id_last_customer`, `last_connection_date`, `reset_password_token`, `reset_password_validity`, `has_enabled_gravatar`) VALUES
@@ -4518,7 +7363,7 @@ INSERT INTO `ps_employee` (`id_employee`, `id_profile`, `id_lang`, `lastname`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_employee_account`
+-- Структура таблицы `ps_employee_account`
 --
 
 CREATE TABLE `ps_employee_account` (
@@ -4533,7 +7378,7 @@ CREATE TABLE `ps_employee_account` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_employee_session`
+-- Структура таблицы `ps_employee_session`
 --
 
 CREATE TABLE `ps_employee_session` (
@@ -4543,19 +7388,19 @@ CREATE TABLE `ps_employee_session` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_employee_session`
+-- Дамп данных таблицы `ps_employee_session`
 --
 
 INSERT INTO `ps_employee_session` (`id_employee_session`, `id_employee`, `token`) VALUES
 (1, 1, 'd8eccd9621dd0cb8af640740159f71cac1d78b74'),
 (2, 1, 'd21a534a32ad3f9ebdc0edc05f1f82577879df23'),
 (3, 1, 'b1c871aaa5cfcdc07c18853105675b2b5f59ac70'),
-(4, 1, '53aae4c7d8c820d690313e5fb0e91901db0e19ca');
+(5, 1, 'cc1a33c7cf71ef540dd45aa88037ee278861ea9f');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_employee_shop`
+-- Структура таблицы `ps_employee_shop`
 --
 
 CREATE TABLE `ps_employee_shop` (
@@ -4564,7 +7409,7 @@ CREATE TABLE `ps_employee_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_employee_shop`
+-- Дамп данных таблицы `ps_employee_shop`
 --
 
 INSERT INTO `ps_employee_shop` (`id_employee`, `id_shop`) VALUES
@@ -4573,7 +7418,7 @@ INSERT INTO `ps_employee_shop` (`id_employee`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_fb_category_match`
+-- Структура таблицы `ps_fb_category_match`
 --
 
 CREATE TABLE `ps_fb_category_match` (
@@ -4589,7 +7434,7 @@ CREATE TABLE `ps_fb_category_match` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_feature`
+-- Структура таблицы `ps_feature`
 --
 
 CREATE TABLE `ps_feature` (
@@ -4600,7 +7445,7 @@ CREATE TABLE `ps_feature` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_feature_flag`
+-- Структура таблицы `ps_feature_flag`
 --
 
 CREATE TABLE `ps_feature_flag` (
@@ -4614,7 +7459,7 @@ CREATE TABLE `ps_feature_flag` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `ps_feature_flag`
+-- Дамп данных таблицы `ps_feature_flag`
 --
 
 INSERT INTO `ps_feature_flag` (`id_feature_flag`, `name`, `state`, `label_wording`, `label_domain`, `description_wording`, `description_domain`) VALUES
@@ -4623,7 +7468,7 @@ INSERT INTO `ps_feature_flag` (`id_feature_flag`, `name`, `state`, `label_wordin
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_feature_lang`
+-- Структура таблицы `ps_feature_lang`
 --
 
 CREATE TABLE `ps_feature_lang` (
@@ -4635,7 +7480,7 @@ CREATE TABLE `ps_feature_lang` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_feature_product`
+-- Структура таблицы `ps_feature_product`
 --
 
 CREATE TABLE `ps_feature_product` (
@@ -4647,7 +7492,7 @@ CREATE TABLE `ps_feature_product` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_feature_shop`
+-- Структура таблицы `ps_feature_shop`
 --
 
 CREATE TABLE `ps_feature_shop` (
@@ -4658,7 +7503,7 @@ CREATE TABLE `ps_feature_shop` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_feature_value`
+-- Структура таблицы `ps_feature_value`
 --
 
 CREATE TABLE `ps_feature_value` (
@@ -4670,7 +7515,7 @@ CREATE TABLE `ps_feature_value` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_feature_value_lang`
+-- Структура таблицы `ps_feature_value_lang`
 --
 
 CREATE TABLE `ps_feature_value_lang` (
@@ -4682,7 +7527,7 @@ CREATE TABLE `ps_feature_value_lang` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_gender`
+-- Структура таблицы `ps_gender`
 --
 
 CREATE TABLE `ps_gender` (
@@ -4691,7 +7536,7 @@ CREATE TABLE `ps_gender` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_gender`
+-- Дамп данных таблицы `ps_gender`
 --
 
 INSERT INTO `ps_gender` (`id_gender`, `type`) VALUES
@@ -4701,7 +7546,7 @@ INSERT INTO `ps_gender` (`id_gender`, `type`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_gender_lang`
+-- Структура таблицы `ps_gender_lang`
 --
 
 CREATE TABLE `ps_gender_lang` (
@@ -4711,7 +7556,7 @@ CREATE TABLE `ps_gender_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_gender_lang`
+-- Дамп данных таблицы `ps_gender_lang`
 --
 
 INSERT INTO `ps_gender_lang` (`id_gender`, `id_lang`, `name`) VALUES
@@ -4721,7 +7566,7 @@ INSERT INTO `ps_gender_lang` (`id_gender`, `id_lang`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_group`
+-- Структура таблицы `ps_group`
 --
 
 CREATE TABLE `ps_group` (
@@ -4734,7 +7579,7 @@ CREATE TABLE `ps_group` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_group`
+-- Дамп данных таблицы `ps_group`
 --
 
 INSERT INTO `ps_group` (`id_group`, `reduction`, `price_display_method`, `show_prices`, `date_add`, `date_upd`) VALUES
@@ -4745,7 +7590,7 @@ INSERT INTO `ps_group` (`id_group`, `reduction`, `price_display_method`, `show_p
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_group_lang`
+-- Структура таблицы `ps_group_lang`
 --
 
 CREATE TABLE `ps_group_lang` (
@@ -4755,7 +7600,7 @@ CREATE TABLE `ps_group_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_group_lang`
+-- Дамп данных таблицы `ps_group_lang`
 --
 
 INSERT INTO `ps_group_lang` (`id_group`, `id_lang`, `name`) VALUES
@@ -4766,7 +7611,7 @@ INSERT INTO `ps_group_lang` (`id_group`, `id_lang`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_group_reduction`
+-- Структура таблицы `ps_group_reduction`
 --
 
 CREATE TABLE `ps_group_reduction` (
@@ -4779,7 +7624,7 @@ CREATE TABLE `ps_group_reduction` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_group_shop`
+-- Структура таблицы `ps_group_shop`
 --
 
 CREATE TABLE `ps_group_shop` (
@@ -4788,7 +7633,7 @@ CREATE TABLE `ps_group_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_group_shop`
+-- Дамп данных таблицы `ps_group_shop`
 --
 
 INSERT INTO `ps_group_shop` (`id_group`, `id_shop`) VALUES
@@ -4799,7 +7644,7 @@ INSERT INTO `ps_group_shop` (`id_group`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_gsitemap_sitemap`
+-- Структура таблицы `ps_gsitemap_sitemap`
 --
 
 CREATE TABLE `ps_gsitemap_sitemap` (
@@ -4810,7 +7655,7 @@ CREATE TABLE `ps_gsitemap_sitemap` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_guest`
+-- Структура таблицы `ps_guest`
 --
 
 CREATE TABLE `ps_guest` (
@@ -4833,7 +7678,7 @@ CREATE TABLE `ps_guest` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_guest`
+-- Дамп данных таблицы `ps_guest`
 --
 
 INSERT INTO `ps_guest` (`id_guest`, `id_operating_system`, `id_web_browser`, `id_customer`, `javascript`, `screen_resolution_x`, `screen_resolution_y`, `screen_color`, `sun_java`, `adobe_flash`, `adobe_director`, `apple_quicktime`, `real_player`, `windows_media`, `accept_language`, `mobile_theme`) VALUES
@@ -4842,7 +7687,7 @@ INSERT INTO `ps_guest` (`id_guest`, `id_operating_system`, `id_web_browser`, `id
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_homeslider`
+-- Структура таблицы `ps_homeslider`
 --
 
 CREATE TABLE `ps_homeslider` (
@@ -4851,7 +7696,7 @@ CREATE TABLE `ps_homeslider` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_homeslider`
+-- Дамп данных таблицы `ps_homeslider`
 --
 
 INSERT INTO `ps_homeslider` (`id_homeslider_slides`, `id_shop`) VALUES
@@ -4862,7 +7707,7 @@ INSERT INTO `ps_homeslider` (`id_homeslider_slides`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_homeslider_slides`
+-- Структура таблицы `ps_homeslider_slides`
 --
 
 CREATE TABLE `ps_homeslider_slides` (
@@ -4872,7 +7717,7 @@ CREATE TABLE `ps_homeslider_slides` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_homeslider_slides`
+-- Дамп данных таблицы `ps_homeslider_slides`
 --
 
 INSERT INTO `ps_homeslider_slides` (`id_homeslider_slides`, `position`, `active`) VALUES
@@ -4883,7 +7728,7 @@ INSERT INTO `ps_homeslider_slides` (`id_homeslider_slides`, `position`, `active`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_homeslider_slides_lang`
+-- Структура таблицы `ps_homeslider_slides_lang`
 --
 
 CREATE TABLE `ps_homeslider_slides_lang` (
@@ -4897,7 +7742,7 @@ CREATE TABLE `ps_homeslider_slides_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_homeslider_slides_lang`
+-- Дамп данных таблицы `ps_homeslider_slides_lang`
 --
 
 INSERT INTO `ps_homeslider_slides_lang` (`id_homeslider_slides`, `id_lang`, `title`, `description`, `legend`, `url`, `image`) VALUES
@@ -4908,7 +7753,7 @@ INSERT INTO `ps_homeslider_slides_lang` (`id_homeslider_slides`, `id_lang`, `tit
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_hook`
+-- Структура таблицы `ps_hook`
 --
 
 CREATE TABLE `ps_hook` (
@@ -4921,7 +7766,7 @@ CREATE TABLE `ps_hook` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_hook`
+-- Дамп данных таблицы `ps_hook`
 --
 
 INSERT INTO `ps_hook` (`id_hook`, `name`, `title`, `description`, `active`, `position`) VALUES
@@ -5691,7 +8536,7 @@ INSERT INTO `ps_hook` (`id_hook`, `name`, `title`, `description`, `active`, `pos
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_hook_alias`
+-- Структура таблицы `ps_hook_alias`
 --
 
 CREATE TABLE `ps_hook_alias` (
@@ -5701,7 +8546,7 @@ CREATE TABLE `ps_hook_alias` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_hook_alias`
+-- Дамп данных таблицы `ps_hook_alias`
 --
 
 INSERT INTO `ps_hook_alias` (`id_hook_alias`, `alias`, `name`) VALUES
@@ -5797,7 +8642,7 @@ INSERT INTO `ps_hook_alias` (`id_hook_alias`, `alias`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_hook_module`
+-- Структура таблицы `ps_hook_module`
 --
 
 CREATE TABLE `ps_hook_module` (
@@ -5808,7 +8653,7 @@ CREATE TABLE `ps_hook_module` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_hook_module`
+-- Дамп данных таблицы `ps_hook_module`
 --
 
 INSERT INTO `ps_hook_module` (`id_module`, `id_shop`, `id_hook`, `position`) VALUES
@@ -6040,7 +8885,7 @@ INSERT INTO `ps_hook_module` (`id_module`, `id_shop`, `id_hook`, `position`) VAL
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_hook_module_exceptions`
+-- Структура таблицы `ps_hook_module_exceptions`
 --
 
 CREATE TABLE `ps_hook_module_exceptions` (
@@ -6054,7 +8899,7 @@ CREATE TABLE `ps_hook_module_exceptions` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_image`
+-- Структура таблицы `ps_image`
 --
 
 CREATE TABLE `ps_image` (
@@ -6064,10 +8909,1318 @@ CREATE TABLE `ps_image` (
   `cover` tinyint(1) UNSIGNED DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
+--
+-- Дамп данных таблицы `ps_image`
+--
+
+INSERT INTO `ps_image` (`id_image`, `id_product`, `position`, `cover`) VALUES
+(1, 1, 1, 1),
+(2, 2, 1, 1),
+(3, 3, 1, 1),
+(4, 3, 2, NULL),
+(5, 4, 1, 1),
+(6, 5, 1, 1),
+(7, 5, 2, NULL),
+(8, 6, 1, 1),
+(9, 7, 1, 1),
+(10, 8, 1, 1),
+(11, 9, 1, 1),
+(12, 9, 2, NULL),
+(13, 10, 1, 1),
+(14, 11, 1, 1),
+(15, 12, 1, 1),
+(16, 13, 1, 1),
+(17, 14, 1, 1),
+(18, 15, 1, 1),
+(19, 16, 1, 1),
+(20, 17, 1, 1),
+(21, 18, 1, 1),
+(22, 19, 1, 1),
+(23, 19, 2, NULL),
+(24, 20, 1, 1),
+(25, 21, 1, 1),
+(26, 22, 1, 1),
+(27, 23, 1, 1),
+(28, 23, 2, NULL),
+(29, 24, 1, 1),
+(30, 25, 1, 1),
+(31, 26, 1, 1),
+(32, 27, 1, 1),
+(33, 28, 1, 1),
+(34, 29, 1, 1),
+(35, 30, 1, 1),
+(36, 30, 2, NULL),
+(37, 31, 1, 1),
+(38, 32, 1, 1),
+(39, 33, 1, 1),
+(40, 33, 2, NULL),
+(41, 34, 1, 1),
+(42, 35, 1, 1),
+(43, 36, 1, 1),
+(44, 37, 1, 1),
+(45, 38, 1, 1),
+(46, 38, 2, NULL),
+(47, 39, 1, 1),
+(48, 40, 1, 1),
+(49, 41, 1, 1),
+(50, 42, 1, 1),
+(51, 42, 2, NULL),
+(52, 43, 1, 1),
+(53, 43, 2, NULL),
+(54, 43, 3, NULL),
+(55, 44, 1, 1),
+(56, 45, 1, 1),
+(57, 46, 1, 1),
+(58, 46, 2, NULL),
+(59, 46, 3, NULL),
+(60, 47, 1, 1),
+(61, 48, 1, 1),
+(62, 49, 1, 1),
+(63, 50, 1, 1),
+(64, 51, 1, 1),
+(65, 52, 1, 1),
+(66, 52, 2, NULL),
+(67, 52, 3, NULL),
+(68, 52, 4, NULL),
+(69, 53, 1, 1),
+(70, 54, 1, 1),
+(71, 55, 1, 1),
+(72, 56, 1, 1),
+(73, 57, 1, 1),
+(74, 58, 1, 1),
+(75, 59, 1, 1),
+(76, 60, 1, 1),
+(77, 61, 1, 1),
+(78, 62, 1, 1),
+(79, 62, 2, NULL),
+(80, 63, 1, 1),
+(81, 63, 2, NULL),
+(82, 64, 1, 1),
+(83, 64, 2, NULL),
+(84, 65, 1, 1),
+(85, 66, 1, 1),
+(86, 67, 1, 1),
+(87, 68, 1, 1),
+(88, 68, 2, NULL),
+(89, 69, 1, 1),
+(90, 70, 1, 1),
+(91, 70, 2, NULL),
+(92, 71, 1, 1),
+(93, 72, 1, 1),
+(94, 73, 1, 1),
+(95, 74, 1, 1),
+(96, 74, 2, NULL),
+(97, 75, 1, 1),
+(98, 76, 1, 1),
+(99, 77, 1, 1),
+(100, 78, 1, 1),
+(101, 78, 2, NULL),
+(102, 79, 1, 1),
+(103, 79, 2, NULL),
+(104, 80, 1, 1),
+(105, 80, 2, NULL),
+(106, 81, 1, 1),
+(107, 82, 1, 1),
+(108, 83, 1, 1),
+(109, 84, 1, 1),
+(110, 84, 2, NULL),
+(111, 84, 3, NULL),
+(112, 85, 1, 1),
+(113, 86, 1, 1),
+(114, 87, 1, 1),
+(115, 88, 1, 1),
+(116, 88, 2, NULL),
+(117, 89, 1, 1),
+(118, 90, 1, 1),
+(119, 91, 1, 1),
+(120, 92, 1, 1),
+(121, 93, 1, 1),
+(122, 94, 1, 1),
+(123, 95, 1, 1),
+(124, 96, 1, 1),
+(125, 97, 1, 1),
+(126, 98, 1, 1),
+(127, 99, 1, 1),
+(128, 100, 1, 1),
+(129, 101, 1, 1),
+(130, 101, 2, NULL),
+(131, 101, 3, NULL),
+(132, 102, 1, 1),
+(133, 103, 1, 1),
+(134, 104, 1, 1),
+(135, 105, 1, 1),
+(136, 106, 1, 1),
+(137, 107, 1, 1),
+(138, 108, 1, 1),
+(139, 109, 1, 1),
+(140, 110, 1, 1),
+(141, 111, 1, 1),
+(142, 112, 1, 1),
+(143, 113, 1, 1),
+(144, 114, 1, 1),
+(145, 115, 1, 1),
+(146, 116, 1, 1),
+(147, 117, 1, 1),
+(148, 118, 1, 1),
+(149, 119, 1, 1),
+(150, 120, 1, 1),
+(151, 121, 1, 1),
+(152, 122, 1, 1),
+(153, 123, 1, 1),
+(154, 124, 1, 1),
+(155, 125, 1, 1),
+(156, 126, 1, 1),
+(157, 127, 1, 1),
+(158, 128, 1, 1),
+(159, 129, 1, 1),
+(160, 130, 1, 1),
+(161, 131, 1, 1),
+(162, 132, 1, 1),
+(163, 133, 1, 1),
+(164, 134, 1, 1),
+(165, 135, 1, 1),
+(166, 136, 1, 1),
+(167, 137, 1, 1),
+(168, 138, 1, 1),
+(169, 139, 1, 1),
+(170, 140, 1, 1),
+(171, 141, 1, 1),
+(172, 142, 1, 1),
+(173, 143, 1, 1),
+(174, 144, 1, 1),
+(175, 144, 2, NULL),
+(176, 145, 1, 1),
+(177, 145, 2, NULL),
+(178, 146, 1, 1),
+(179, 146, 2, NULL),
+(180, 147, 1, 1),
+(181, 148, 1, 1),
+(182, 149, 1, 1),
+(183, 150, 1, 1),
+(184, 151, 1, 1),
+(185, 152, 1, 1),
+(186, 153, 1, 1),
+(187, 154, 1, 1),
+(188, 155, 1, 1),
+(189, 156, 1, 1),
+(190, 157, 1, 1),
+(191, 158, 1, 1),
+(192, 159, 1, 1),
+(193, 160, 1, 1),
+(194, 161, 1, 1),
+(195, 162, 1, 1),
+(196, 163, 1, 1),
+(197, 164, 1, 1),
+(198, 165, 1, 1),
+(199, 166, 1, 1),
+(200, 167, 1, 1),
+(201, 168, 1, 1),
+(202, 169, 1, 1),
+(203, 169, 2, NULL),
+(204, 170, 1, 1),
+(205, 171, 1, 1),
+(206, 172, 1, 1),
+(207, 172, 2, NULL),
+(208, 173, 1, 1),
+(209, 174, 1, 1),
+(210, 174, 2, NULL),
+(211, 175, 1, 1),
+(212, 175, 2, NULL),
+(213, 175, 3, NULL),
+(214, 176, 1, 1),
+(215, 176, 2, NULL),
+(216, 177, 1, 1),
+(217, 177, 2, NULL),
+(218, 178, 1, 1),
+(219, 178, 2, NULL),
+(220, 179, 1, 1),
+(221, 179, 2, NULL),
+(222, 180, 1, 1),
+(223, 180, 2, NULL),
+(224, 181, 1, 1),
+(225, 181, 2, NULL),
+(226, 182, 1, 1),
+(227, 182, 2, NULL),
+(228, 183, 1, 1),
+(229, 183, 2, NULL),
+(230, 184, 1, 1),
+(231, 184, 2, NULL),
+(232, 185, 1, 1),
+(233, 185, 2, NULL),
+(234, 185, 3, NULL),
+(235, 186, 1, 1),
+(236, 186, 2, NULL),
+(237, 186, 3, NULL),
+(238, 187, 1, 1),
+(239, 187, 2, NULL),
+(240, 188, 1, 1),
+(241, 188, 2, NULL),
+(242, 188, 3, NULL),
+(243, 189, 1, 1),
+(244, 189, 2, NULL),
+(245, 190, 1, 1),
+(246, 190, 2, NULL),
+(247, 191, 1, 1),
+(248, 191, 2, NULL),
+(249, 191, 3, NULL),
+(250, 192, 1, 1),
+(251, 192, 2, NULL),
+(252, 192, 3, NULL),
+(253, 193, 1, 1),
+(254, 193, 2, NULL),
+(255, 193, 3, NULL),
+(256, 194, 1, 1),
+(257, 194, 2, NULL),
+(258, 194, 3, NULL),
+(259, 195, 1, 1),
+(260, 195, 2, NULL),
+(261, 195, 3, NULL),
+(262, 196, 1, 1),
+(263, 196, 2, NULL),
+(264, 196, 3, NULL),
+(265, 197, 1, 1),
+(266, 197, 2, NULL),
+(267, 197, 3, NULL),
+(268, 198, 1, 1),
+(269, 198, 2, NULL),
+(270, 199, 1, 1),
+(271, 199, 2, NULL),
+(272, 199, 3, NULL),
+(273, 200, 1, 1),
+(274, 201, 1, 1),
+(275, 201, 2, NULL),
+(276, 202, 1, 1),
+(277, 202, 2, NULL),
+(278, 202, 3, NULL),
+(279, 203, 1, 1),
+(280, 203, 2, NULL),
+(281, 204, 1, 1),
+(282, 204, 2, NULL),
+(283, 205, 1, 1),
+(284, 205, 2, NULL),
+(285, 205, 3, NULL),
+(286, 206, 1, 1),
+(287, 206, 2, NULL),
+(288, 207, 1, 1),
+(289, 207, 2, NULL),
+(290, 208, 1, 1),
+(291, 208, 2, NULL),
+(292, 209, 1, 1),
+(293, 209, 2, NULL),
+(294, 209, 3, NULL),
+(295, 210, 1, 1),
+(296, 210, 2, NULL),
+(297, 210, 3, NULL),
+(298, 211, 1, 1),
+(299, 211, 2, NULL),
+(300, 211, 3, NULL),
+(301, 212, 1, 1),
+(302, 212, 2, NULL),
+(303, 213, 1, 1),
+(304, 213, 2, NULL),
+(305, 214, 1, 1),
+(306, 214, 2, NULL),
+(307, 215, 1, 1),
+(308, 215, 2, NULL),
+(309, 216, 1, 1),
+(310, 216, 2, NULL),
+(311, 217, 1, 1),
+(312, 217, 2, NULL),
+(313, 218, 1, 1),
+(314, 218, 2, NULL),
+(315, 219, 1, 1),
+(316, 219, 2, NULL),
+(317, 220, 1, 1),
+(318, 220, 2, NULL),
+(319, 221, 1, 1),
+(320, 221, 2, NULL),
+(321, 222, 1, 1),
+(322, 222, 2, NULL),
+(323, 223, 1, 1),
+(324, 223, 2, NULL),
+(325, 224, 1, 1),
+(326, 224, 2, NULL),
+(327, 225, 1, 1),
+(328, 225, 2, NULL),
+(329, 225, 3, NULL),
+(330, 225, 4, NULL),
+(331, 226, 1, 1),
+(332, 226, 2, NULL),
+(333, 226, 3, NULL),
+(334, 226, 4, NULL),
+(335, 227, 1, 1),
+(336, 227, 2, NULL),
+(337, 227, 3, NULL),
+(338, 227, 4, NULL),
+(339, 228, 1, 1),
+(340, 228, 2, NULL),
+(341, 229, 1, 1),
+(342, 229, 2, NULL),
+(343, 230, 1, 1),
+(344, 230, 2, NULL),
+(345, 230, 3, NULL),
+(346, 231, 1, 1),
+(347, 231, 2, NULL),
+(348, 232, 1, 1),
+(349, 232, 2, NULL),
+(350, 233, 1, 1),
+(351, 233, 2, NULL),
+(352, 234, 1, 1),
+(353, 234, 2, NULL),
+(354, 234, 3, NULL),
+(355, 235, 1, 1),
+(356, 235, 2, NULL),
+(357, 236, 1, 1),
+(358, 236, 2, NULL),
+(359, 237, 1, 1),
+(360, 237, 2, NULL),
+(361, 238, 1, 1),
+(362, 238, 2, NULL),
+(363, 239, 1, 1),
+(364, 239, 2, NULL),
+(365, 240, 1, 1),
+(366, 240, 2, NULL),
+(367, 241, 1, 1),
+(368, 241, 2, NULL),
+(369, 242, 1, 1),
+(370, 242, 2, NULL),
+(371, 243, 1, 1),
+(372, 243, 2, NULL),
+(373, 244, 1, 1),
+(374, 244, 2, NULL),
+(375, 245, 1, 1),
+(376, 245, 2, NULL),
+(377, 246, 1, 1),
+(378, 246, 2, NULL),
+(379, 247, 1, 1),
+(380, 247, 2, NULL),
+(381, 247, 3, NULL),
+(382, 247, 4, NULL),
+(383, 247, 5, NULL),
+(384, 247, 6, NULL),
+(385, 248, 1, 1),
+(386, 248, 2, NULL),
+(387, 248, 3, NULL),
+(388, 248, 4, NULL),
+(389, 248, 5, NULL),
+(390, 248, 6, NULL),
+(391, 249, 1, 1),
+(392, 249, 2, NULL),
+(393, 249, 3, NULL),
+(394, 249, 4, NULL),
+(395, 249, 5, NULL),
+(396, 249, 6, NULL),
+(397, 250, 1, 1),
+(398, 250, 2, NULL),
+(399, 250, 3, NULL),
+(400, 250, 4, NULL),
+(401, 250, 5, NULL),
+(402, 250, 6, NULL),
+(403, 250, 7, NULL),
+(404, 251, 1, 1),
+(405, 251, 2, NULL),
+(406, 251, 3, NULL),
+(407, 251, 4, NULL),
+(408, 251, 5, NULL),
+(409, 251, 6, NULL),
+(410, 252, 1, 1),
+(411, 252, 2, NULL),
+(412, 252, 3, NULL),
+(413, 252, 4, NULL),
+(414, 252, 5, NULL),
+(415, 252, 6, NULL),
+(416, 253, 1, 1),
+(417, 253, 2, NULL),
+(418, 253, 3, NULL),
+(419, 253, 4, NULL),
+(420, 253, 5, NULL),
+(421, 253, 6, NULL),
+(422, 254, 1, 1),
+(423, 255, 1, 1),
+(424, 256, 1, 1),
+(425, 257, 1, 1),
+(426, 258, 1, 1),
+(427, 258, 2, NULL),
+(428, 258, 3, NULL),
+(429, 259, 1, 1),
+(430, 259, 2, NULL),
+(431, 259, 3, NULL),
+(432, 260, 1, 1),
+(433, 260, 2, NULL),
+(434, 260, 3, NULL),
+(435, 261, 1, 1),
+(436, 261, 2, NULL),
+(437, 261, 3, NULL),
+(438, 262, 1, 1),
+(439, 262, 2, NULL),
+(440, 262, 3, NULL),
+(441, 263, 1, 1),
+(442, 264, 1, 1),
+(443, 265, 1, 1),
+(444, 266, 1, 1),
+(445, 267, 1, 1),
+(446, 268, 1, 1),
+(447, 269, 1, 1),
+(448, 270, 1, 1),
+(449, 270, 2, NULL),
+(450, 271, 1, 1),
+(451, 271, 2, NULL),
+(452, 271, 3, NULL),
+(453, 272, 1, 1),
+(454, 272, 2, NULL),
+(455, 273, 1, 1),
+(456, 273, 2, NULL),
+(457, 274, 1, 1),
+(458, 275, 1, 1),
+(459, 276, 1, 1),
+(460, 276, 2, NULL),
+(461, 277, 1, 1),
+(462, 277, 2, NULL),
+(463, 278, 1, 1),
+(464, 279, 1, 1),
+(465, 280, 1, 1),
+(466, 281, 1, 1),
+(467, 282, 1, 1),
+(468, 282, 2, NULL),
+(469, 283, 1, 1),
+(470, 283, 2, NULL),
+(471, 284, 1, 1),
+(472, 284, 2, NULL),
+(473, 285, 1, 1),
+(474, 286, 1, 1),
+(475, 286, 2, NULL),
+(476, 287, 1, 1),
+(477, 287, 2, NULL),
+(478, 288, 1, 1),
+(479, 288, 2, NULL),
+(480, 289, 1, 1),
+(481, 290, 1, 1),
+(482, 290, 2, NULL),
+(483, 291, 1, 1),
+(484, 291, 2, NULL),
+(485, 292, 1, 1),
+(486, 293, 1, 1),
+(487, 293, 2, NULL),
+(488, 294, 1, 1),
+(489, 295, 1, 1),
+(490, 295, 2, NULL),
+(491, 296, 1, 1),
+(492, 296, 2, NULL),
+(493, 297, 1, 1),
+(494, 298, 1, 1),
+(495, 299, 1, 1),
+(496, 299, 2, NULL),
+(497, 300, 1, 1),
+(498, 300, 2, NULL),
+(499, 301, 1, 1),
+(500, 301, 2, NULL),
+(501, 302, 1, 1),
+(502, 302, 2, NULL),
+(503, 303, 1, 1),
+(504, 303, 2, NULL),
+(505, 304, 1, 1),
+(506, 304, 2, NULL),
+(507, 305, 1, 1),
+(508, 305, 2, NULL),
+(509, 306, 1, 1),
+(510, 306, 2, NULL),
+(511, 307, 1, 1),
+(512, 308, 1, 1),
+(513, 308, 2, NULL),
+(514, 309, 1, 1),
+(515, 309, 2, NULL),
+(516, 310, 1, 1),
+(517, 310, 2, NULL),
+(518, 311, 1, 1),
+(519, 311, 2, NULL),
+(520, 312, 1, 1),
+(521, 313, 1, 1),
+(522, 313, 2, NULL),
+(523, 314, 1, 1),
+(524, 315, 1, 1),
+(525, 315, 2, NULL),
+(526, 316, 1, 1),
+(527, 317, 1, 1),
+(528, 317, 2, NULL),
+(529, 318, 1, 1),
+(530, 318, 2, NULL),
+(531, 319, 1, 1),
+(532, 319, 2, NULL),
+(533, 320, 1, 1),
+(534, 321, 1, 1),
+(535, 322, 1, 1),
+(536, 323, 1, 1),
+(537, 324, 1, 1),
+(538, 325, 1, 1),
+(539, 326, 1, 1),
+(540, 327, 1, 1),
+(541, 327, 2, NULL),
+(542, 328, 1, 1),
+(543, 329, 1, 1),
+(544, 330, 1, 1),
+(545, 330, 2, NULL),
+(546, 331, 1, 1),
+(547, 331, 2, NULL),
+(548, 332, 1, 1),
+(549, 332, 2, NULL),
+(550, 333, 1, 1),
+(551, 334, 1, 1),
+(552, 334, 2, NULL),
+(553, 335, 1, 1),
+(554, 336, 1, 1),
+(555, 337, 1, 1),
+(556, 338, 1, 1),
+(557, 338, 2, NULL),
+(558, 339, 1, 1),
+(559, 339, 2, NULL),
+(560, 340, 1, 1),
+(561, 340, 2, NULL),
+(562, 340, 3, NULL),
+(563, 341, 1, 1),
+(564, 341, 2, NULL),
+(565, 341, 3, NULL),
+(566, 342, 1, 1),
+(567, 343, 1, 1),
+(568, 344, 1, 1),
+(569, 345, 1, 1),
+(570, 346, 1, 1),
+(571, 347, 1, 1),
+(572, 347, 2, NULL),
+(573, 347, 3, NULL),
+(574, 348, 1, 1),
+(575, 349, 1, 1),
+(576, 350, 1, 1),
+(577, 351, 1, 1),
+(578, 352, 1, 1),
+(579, 353, 1, 1),
+(580, 354, 1, 1),
+(581, 354, 2, NULL),
+(582, 355, 1, 1),
+(583, 355, 2, NULL),
+(584, 356, 1, 1),
+(585, 356, 2, NULL),
+(586, 357, 1, 1),
+(587, 357, 2, NULL),
+(588, 358, 1, 1),
+(589, 358, 2, NULL),
+(590, 359, 1, 1),
+(591, 359, 2, NULL),
+(592, 360, 1, 1),
+(593, 360, 2, NULL),
+(594, 361, 1, 1),
+(595, 361, 2, NULL),
+(596, 362, 1, 1),
+(597, 362, 2, NULL),
+(598, 363, 1, 1),
+(599, 363, 2, NULL),
+(600, 364, 1, 1),
+(601, 364, 2, NULL),
+(602, 365, 1, 1),
+(603, 365, 2, NULL),
+(604, 366, 1, 1),
+(605, 366, 2, NULL),
+(606, 367, 1, 1),
+(607, 367, 2, NULL),
+(608, 368, 1, 1),
+(609, 368, 2, NULL),
+(610, 369, 1, 1),
+(611, 369, 2, NULL),
+(612, 370, 1, 1),
+(613, 370, 2, NULL),
+(614, 370, 3, NULL),
+(615, 370, 4, NULL),
+(616, 371, 1, 1),
+(617, 371, 2, NULL),
+(618, 371, 3, NULL),
+(619, 371, 4, NULL),
+(620, 372, 1, 1),
+(621, 372, 2, NULL),
+(622, 373, 1, 1),
+(623, 373, 2, NULL),
+(624, 374, 1, 1),
+(625, 374, 2, NULL),
+(626, 375, 1, 1),
+(627, 375, 2, NULL),
+(628, 376, 1, 1),
+(629, 377, 1, 1),
+(630, 378, 1, 1),
+(631, 379, 1, 1),
+(632, 380, 1, 1),
+(633, 381, 1, 1),
+(634, 381, 2, NULL),
+(635, 382, 1, 1),
+(636, 383, 1, 1),
+(637, 384, 1, 1),
+(638, 384, 2, NULL),
+(639, 385, 1, 1),
+(640, 386, 1, 1),
+(641, 387, 1, 1),
+(642, 388, 1, 1),
+(643, 389, 1, 1),
+(644, 390, 1, 1),
+(645, 391, 1, 1),
+(646, 392, 1, 1),
+(647, 393, 1, 1),
+(648, 394, 1, 1),
+(649, 395, 1, 1),
+(650, 396, 1, 1),
+(651, 397, 1, 1),
+(652, 398, 1, 1),
+(653, 399, 1, 1),
+(654, 400, 1, 1),
+(655, 401, 1, 1),
+(656, 402, 1, 1),
+(657, 402, 2, NULL),
+(658, 403, 1, 1),
+(659, 403, 2, NULL),
+(660, 404, 1, 1),
+(661, 405, 1, 1),
+(662, 405, 2, NULL),
+(663, 406, 1, 1),
+(664, 407, 1, 1),
+(665, 408, 1, 1),
+(666, 409, 1, 1),
+(667, 409, 2, NULL),
+(668, 409, 3, NULL),
+(669, 410, 1, 1),
+(670, 410, 2, NULL),
+(671, 411, 1, 1),
+(672, 412, 1, 1),
+(673, 413, 1, 1),
+(674, 414, 1, 1),
+(675, 415, 1, 1),
+(676, 416, 1, 1),
+(677, 417, 1, 1),
+(678, 418, 1, 1),
+(679, 418, 2, NULL),
+(680, 419, 1, 1),
+(681, 419, 2, NULL),
+(682, 420, 1, 1),
+(683, 420, 2, NULL),
+(684, 420, 3, NULL),
+(685, 421, 1, 1),
+(686, 421, 2, NULL),
+(687, 422, 1, 1),
+(688, 423, 1, 1),
+(689, 424, 1, 1),
+(690, 425, 1, 1),
+(691, 426, 1, 1),
+(692, 427, 1, 1),
+(693, 428, 1, 1),
+(694, 429, 1, 1),
+(695, 430, 1, 1),
+(696, 431, 1, 1),
+(697, 432, 1, 1),
+(698, 432, 2, NULL),
+(699, 432, 3, NULL),
+(700, 432, 4, NULL),
+(701, 432, 5, NULL),
+(702, 433, 1, 1),
+(703, 434, 1, 1),
+(704, 435, 1, 1),
+(705, 436, 1, 1),
+(706, 437, 1, 1),
+(707, 438, 1, 1),
+(708, 439, 1, 1),
+(709, 440, 1, 1),
+(710, 441, 1, 1),
+(711, 442, 1, 1),
+(712, 443, 1, 1),
+(713, 444, 1, 1),
+(714, 445, 1, 1),
+(715, 445, 2, NULL),
+(716, 445, 3, NULL),
+(717, 446, 1, 1),
+(718, 447, 1, 1),
+(719, 448, 1, 1),
+(720, 449, 1, 1),
+(721, 450, 1, 1),
+(722, 451, 1, 1),
+(723, 452, 1, 1),
+(724, 453, 1, 1),
+(725, 454, 1, 1),
+(726, 455, 1, 1),
+(727, 456, 1, 1),
+(728, 457, 1, 1),
+(729, 458, 1, 1),
+(730, 459, 1, 1),
+(731, 460, 1, 1),
+(732, 461, 1, 1),
+(733, 461, 2, NULL),
+(734, 461, 3, NULL),
+(735, 462, 1, 1),
+(736, 462, 2, NULL),
+(737, 462, 3, NULL),
+(738, 463, 1, 1),
+(739, 463, 2, NULL),
+(740, 463, 3, NULL),
+(741, 464, 1, 1),
+(742, 464, 2, NULL),
+(743, 464, 3, NULL),
+(744, 465, 1, 1),
+(745, 465, 2, NULL),
+(746, 465, 3, NULL),
+(747, 466, 1, 1),
+(748, 466, 2, NULL),
+(749, 466, 3, NULL),
+(750, 467, 1, 1),
+(751, 467, 2, NULL),
+(752, 467, 3, NULL),
+(753, 468, 1, 1),
+(754, 468, 2, NULL),
+(755, 468, 3, NULL),
+(756, 469, 1, 1),
+(757, 469, 2, NULL),
+(758, 469, 3, NULL),
+(759, 470, 1, 1),
+(760, 470, 2, NULL),
+(761, 470, 3, NULL),
+(762, 471, 1, 1),
+(763, 471, 2, NULL),
+(764, 471, 3, NULL),
+(765, 472, 1, 1),
+(766, 472, 2, NULL),
+(767, 473, 1, 1),
+(768, 474, 1, 1),
+(769, 475, 1, 1),
+(770, 476, 1, 1),
+(771, 477, 1, 1),
+(772, 477, 2, NULL),
+(773, 478, 1, 1),
+(774, 478, 2, NULL),
+(775, 479, 1, 1),
+(776, 479, 2, NULL),
+(777, 480, 1, 1),
+(778, 480, 2, NULL),
+(779, 481, 1, 1),
+(780, 481, 2, NULL),
+(781, 482, 1, 1),
+(782, 482, 2, NULL),
+(783, 483, 1, 1),
+(784, 483, 2, NULL),
+(785, 484, 1, 1),
+(786, 484, 2, NULL),
+(787, 485, 1, 1),
+(788, 485, 2, NULL),
+(789, 486, 1, 1),
+(790, 486, 2, NULL),
+(791, 487, 1, 1),
+(792, 487, 2, NULL),
+(793, 487, 3, NULL),
+(794, 488, 1, 1),
+(795, 488, 2, NULL),
+(796, 488, 3, NULL),
+(797, 489, 1, 1),
+(798, 489, 2, NULL),
+(799, 490, 1, 1),
+(800, 491, 1, 1),
+(801, 492, 1, 1),
+(802, 493, 1, 1),
+(803, 494, 1, 1),
+(804, 495, 1, 1),
+(805, 496, 1, 1),
+(806, 497, 1, 1),
+(807, 498, 1, 1),
+(808, 498, 2, NULL),
+(809, 499, 1, 1),
+(810, 499, 2, NULL),
+(811, 500, 1, 1),
+(812, 501, 1, 1),
+(813, 501, 2, NULL),
+(814, 502, 1, 1),
+(815, 502, 2, NULL),
+(816, 503, 1, 1),
+(817, 503, 2, NULL),
+(818, 503, 3, NULL),
+(819, 504, 1, 1),
+(820, 504, 2, NULL),
+(821, 505, 1, 1),
+(822, 505, 2, NULL),
+(823, 505, 3, NULL),
+(824, 506, 1, 1),
+(825, 507, 1, 1),
+(826, 508, 1, 1),
+(827, 508, 2, NULL),
+(828, 509, 1, 1),
+(829, 509, 2, NULL),
+(830, 510, 1, 1),
+(831, 510, 2, NULL),
+(832, 511, 1, 1),
+(833, 511, 2, NULL),
+(834, 512, 1, 1),
+(835, 512, 2, NULL),
+(836, 513, 1, 1),
+(837, 513, 2, NULL),
+(838, 514, 1, 1),
+(839, 514, 2, NULL),
+(840, 515, 1, 1),
+(841, 515, 2, NULL),
+(842, 516, 1, 1),
+(843, 517, 1, 1),
+(844, 518, 1, 1),
+(845, 519, 1, 1),
+(846, 519, 2, NULL),
+(847, 520, 1, 1),
+(848, 520, 2, NULL),
+(849, 521, 1, 1),
+(850, 521, 2, NULL),
+(851, 522, 1, 1),
+(852, 522, 2, NULL),
+(853, 523, 1, 1),
+(854, 523, 2, NULL),
+(855, 524, 1, 1),
+(856, 524, 2, NULL),
+(857, 525, 1, 1),
+(858, 525, 2, NULL),
+(859, 526, 1, 1),
+(860, 526, 2, NULL),
+(861, 527, 1, 1),
+(862, 527, 2, NULL),
+(863, 528, 1, 1),
+(864, 528, 2, NULL),
+(865, 529, 1, 1),
+(866, 529, 2, NULL),
+(867, 530, 1, 1),
+(868, 530, 2, NULL),
+(869, 531, 1, 1),
+(870, 531, 2, NULL),
+(871, 531, 3, NULL),
+(872, 532, 1, 1),
+(873, 532, 2, NULL),
+(874, 533, 1, 1),
+(875, 533, 2, NULL),
+(876, 534, 1, 1),
+(877, 534, 2, NULL),
+(878, 535, 1, 1),
+(879, 535, 2, NULL),
+(880, 536, 1, 1),
+(881, 536, 2, NULL),
+(882, 537, 1, 1),
+(883, 537, 2, NULL),
+(884, 538, 1, 1),
+(885, 538, 2, NULL),
+(886, 539, 1, 1),
+(887, 539, 2, NULL),
+(888, 540, 1, 1),
+(889, 540, 2, NULL),
+(890, 541, 1, 1),
+(891, 541, 2, NULL),
+(892, 542, 1, 1),
+(893, 542, 2, NULL),
+(894, 543, 1, 1),
+(895, 544, 1, 1),
+(896, 544, 2, NULL),
+(897, 544, 3, NULL),
+(898, 545, 1, 1),
+(899, 545, 2, NULL),
+(900, 546, 1, 1),
+(901, 546, 2, NULL),
+(902, 547, 1, 1),
+(903, 547, 2, NULL),
+(904, 548, 1, 1),
+(905, 548, 2, NULL),
+(906, 548, 3, NULL),
+(907, 549, 1, 1),
+(908, 549, 2, NULL),
+(909, 549, 3, NULL),
+(910, 549, 4, NULL),
+(911, 549, 5, NULL),
+(912, 549, 6, NULL),
+(913, 550, 1, 1),
+(914, 550, 2, NULL),
+(915, 550, 3, NULL),
+(916, 550, 4, NULL),
+(917, 550, 5, NULL),
+(918, 550, 6, NULL),
+(919, 550, 7, NULL),
+(920, 551, 1, 1),
+(921, 551, 2, NULL),
+(922, 551, 3, NULL),
+(923, 551, 4, NULL),
+(924, 551, 5, NULL),
+(925, 551, 6, NULL),
+(926, 551, 7, NULL),
+(927, 551, 8, NULL),
+(928, 552, 1, 1),
+(929, 552, 2, NULL),
+(930, 552, 3, NULL),
+(931, 552, 4, NULL),
+(932, 552, 5, NULL),
+(933, 552, 6, NULL),
+(934, 552, 7, NULL),
+(935, 552, 8, NULL),
+(936, 553, 1, 1),
+(937, 553, 2, NULL),
+(938, 553, 3, NULL),
+(939, 553, 4, NULL),
+(940, 554, 1, 1),
+(941, 554, 2, NULL),
+(942, 554, 3, NULL),
+(943, 554, 4, NULL),
+(944, 554, 5, NULL),
+(945, 554, 6, NULL),
+(946, 555, 1, 1),
+(947, 555, 2, NULL),
+(948, 555, 3, NULL),
+(949, 555, 4, NULL),
+(950, 555, 5, NULL),
+(951, 555, 6, NULL),
+(952, 556, 1, 1),
+(953, 556, 2, NULL),
+(954, 557, 1, 1),
+(955, 557, 2, NULL),
+(956, 558, 1, 1),
+(957, 558, 2, NULL),
+(958, 559, 1, 1),
+(959, 559, 2, NULL),
+(960, 559, 3, NULL),
+(961, 559, 4, NULL),
+(962, 560, 1, 1),
+(963, 560, 2, NULL),
+(964, 560, 3, NULL),
+(965, 560, 4, NULL),
+(966, 561, 1, 1),
+(967, 561, 2, NULL),
+(968, 561, 3, NULL),
+(969, 561, 4, NULL),
+(970, 562, 1, 1),
+(971, 562, 2, NULL),
+(972, 562, 3, NULL),
+(973, 562, 4, NULL),
+(974, 563, 1, 1),
+(975, 563, 2, NULL),
+(976, 563, 3, NULL),
+(977, 563, 4, NULL),
+(978, 564, 1, 1),
+(979, 564, 2, NULL),
+(980, 564, 3, NULL),
+(981, 564, 4, NULL),
+(982, 564, 5, NULL),
+(983, 565, 1, 1),
+(984, 565, 2, NULL),
+(985, 565, 3, NULL),
+(986, 565, 4, NULL),
+(987, 566, 1, 1),
+(988, 566, 2, NULL),
+(989, 566, 3, NULL),
+(990, 566, 4, NULL),
+(991, 566, 5, NULL),
+(992, 566, 6, NULL),
+(993, 567, 1, 1),
+(994, 567, 2, NULL),
+(995, 567, 3, NULL),
+(996, 567, 4, NULL),
+(997, 568, 1, 1),
+(998, 568, 2, NULL),
+(999, 568, 3, NULL),
+(1000, 568, 4, NULL),
+(1001, 569, 1, 1),
+(1002, 569, 2, NULL),
+(1003, 569, 3, NULL),
+(1004, 569, 4, NULL),
+(1005, 569, 5, NULL),
+(1006, 569, 6, NULL),
+(1007, 569, 7, NULL),
+(1008, 570, 1, 1),
+(1009, 570, 2, NULL),
+(1010, 570, 3, NULL),
+(1011, 570, 4, NULL),
+(1012, 570, 5, NULL),
+(1013, 570, 6, NULL),
+(1014, 570, 7, NULL),
+(1015, 570, 8, NULL),
+(1016, 570, 9, NULL),
+(1017, 570, 10, NULL),
+(1018, 570, 11, NULL),
+(1019, 570, 12, NULL),
+(1020, 571, 1, 1),
+(1021, 571, 2, NULL),
+(1022, 571, 3, NULL),
+(1023, 571, 4, NULL),
+(1024, 571, 5, NULL),
+(1025, 571, 6, NULL),
+(1026, 571, 7, NULL),
+(1027, 572, 1, 1),
+(1028, 572, 2, NULL),
+(1029, 572, 3, NULL),
+(1030, 572, 4, NULL),
+(1031, 573, 1, 1),
+(1032, 573, 2, NULL),
+(1033, 573, 3, NULL),
+(1034, 573, 4, NULL),
+(1035, 574, 1, 1),
+(1036, 574, 2, NULL),
+(1037, 574, 3, NULL),
+(1038, 574, 4, NULL),
+(1039, 574, 5, NULL),
+(1040, 575, 1, 1),
+(1041, 575, 2, NULL),
+(1042, 575, 3, NULL),
+(1043, 575, 4, NULL),
+(1044, 575, 5, NULL),
+(1045, 575, 6, NULL),
+(1046, 576, 1, 1),
+(1047, 576, 2, NULL),
+(1048, 577, 1, 1),
+(1049, 577, 2, NULL),
+(1050, 577, 3, NULL),
+(1051, 577, 4, NULL),
+(1052, 577, 5, NULL),
+(1053, 578, 1, 1),
+(1054, 578, 2, NULL),
+(1055, 578, 3, NULL),
+(1056, 579, 1, 1),
+(1057, 579, 2, NULL),
+(1058, 579, 3, NULL),
+(1059, 579, 4, NULL),
+(1060, 579, 5, NULL),
+(1061, 579, 6, NULL),
+(1062, 579, 7, NULL),
+(1063, 579, 8, NULL),
+(1064, 579, 9, NULL),
+(1065, 579, 10, NULL),
+(1066, 579, 11, NULL),
+(1067, 579, 12, NULL),
+(1068, 579, 13, NULL),
+(1069, 579, 14, NULL),
+(1070, 579, 15, NULL),
+(1071, 579, 16, NULL),
+(1072, 579, 17, NULL),
+(1073, 580, 1, 1),
+(1074, 580, 2, NULL),
+(1075, 580, 3, NULL),
+(1076, 580, 4, NULL),
+(1077, 580, 5, NULL),
+(1078, 581, 1, 1),
+(1079, 582, 1, 1),
+(1080, 582, 2, NULL),
+(1081, 582, 3, NULL),
+(1082, 582, 4, NULL),
+(1083, 582, 5, NULL),
+(1084, 583, 1, 1),
+(1085, 583, 2, NULL),
+(1086, 583, 3, NULL),
+(1087, 583, 4, NULL),
+(1088, 583, 5, NULL),
+(1089, 584, 1, 1),
+(1090, 584, 2, NULL),
+(1091, 584, 3, NULL),
+(1092, 584, 4, NULL),
+(1093, 585, 1, 1),
+(1094, 585, 2, NULL),
+(1095, 585, 3, NULL),
+(1096, 585, 4, NULL),
+(1097, 586, 1, 1),
+(1098, 586, 2, NULL),
+(1099, 586, 3, NULL),
+(1100, 586, 4, NULL),
+(1101, 587, 1, 1),
+(1102, 587, 2, NULL),
+(1103, 587, 3, NULL),
+(1104, 587, 4, NULL),
+(1105, 587, 5, NULL),
+(1106, 588, 1, 1),
+(1107, 588, 2, NULL),
+(1108, 588, 3, NULL),
+(1109, 588, 4, NULL),
+(1110, 588, 5, NULL),
+(1111, 589, 1, 1),
+(1112, 589, 2, NULL),
+(1113, 589, 3, NULL),
+(1114, 589, 4, NULL),
+(1115, 589, 5, NULL),
+(1116, 589, 6, NULL),
+(1117, 590, 1, 1),
+(1118, 590, 2, NULL),
+(1119, 590, 3, NULL),
+(1120, 590, 4, NULL),
+(1121, 590, 5, NULL),
+(1122, 590, 6, NULL),
+(1123, 591, 1, 1),
+(1124, 591, 2, NULL),
+(1125, 591, 3, NULL),
+(1126, 591, 4, NULL),
+(1127, 591, 5, NULL),
+(1128, 592, 1, 1),
+(1129, 593, 1, 1),
+(1130, 593, 2, NULL),
+(1131, 594, 1, 1),
+(1132, 594, 2, NULL),
+(1133, 595, 1, 1),
+(1134, 595, 2, NULL),
+(1135, 595, 3, NULL),
+(1136, 595, 4, NULL),
+(1137, 596, 1, 1),
+(1138, 596, 2, NULL),
+(1139, 596, 3, NULL),
+(1140, 596, 4, NULL),
+(1141, 596, 5, NULL),
+(1142, 597, 1, 1),
+(1143, 597, 2, NULL),
+(1144, 597, 3, NULL),
+(1145, 598, 1, 1),
+(1146, 598, 2, NULL),
+(1147, 598, 3, NULL),
+(1148, 598, 4, NULL),
+(1149, 598, 5, NULL),
+(1150, 599, 1, 1),
+(1151, 599, 2, NULL),
+(1152, 599, 3, NULL),
+(1153, 599, 4, NULL),
+(1154, 599, 5, NULL),
+(1155, 600, 1, 1),
+(1156, 600, 2, NULL),
+(1157, 600, 3, NULL),
+(1158, 600, 4, NULL),
+(1159, 600, 5, NULL),
+(1160, 601, 1, 1),
+(1161, 601, 2, NULL),
+(1162, 601, 3, NULL),
+(1163, 602, 1, 1),
+(1164, 602, 2, NULL),
+(1165, 602, 3, NULL),
+(1166, 602, 4, NULL),
+(1167, 602, 5, NULL),
+(1168, 602, 6, NULL),
+(1169, 603, 1, 1),
+(1170, 603, 2, NULL),
+(1171, 603, 3, NULL),
+(1172, 603, 4, NULL),
+(1173, 603, 5, NULL),
+(1174, 603, 6, NULL),
+(1175, 603, 7, NULL),
+(1176, 604, 1, 1),
+(1177, 604, 2, NULL),
+(1178, 605, 1, 1),
+(1179, 605, 2, NULL),
+(1180, 606, 1, 1),
+(1181, 606, 2, NULL),
+(1182, 606, 3, NULL),
+(1183, 607, 1, 1),
+(1184, 607, 2, NULL),
+(1185, 607, 3, NULL),
+(1186, 608, 1, 1),
+(1187, 608, 2, NULL),
+(1188, 609, 1, 1),
+(1189, 609, 2, NULL),
+(1190, 609, 3, NULL),
+(1191, 610, 1, 1),
+(1192, 610, 2, NULL),
+(1193, 610, 3, NULL),
+(1194, 611, 1, 1),
+(1195, 611, 2, NULL),
+(1196, 611, 3, NULL),
+(1197, 612, 1, 1),
+(1198, 613, 1, 1),
+(1199, 613, 2, NULL),
+(1200, 614, 1, 1),
+(1201, 614, 2, NULL),
+(1202, 614, 3, NULL),
+(1203, 614, 4, NULL),
+(1204, 614, 5, NULL),
+(1205, 614, 6, NULL),
+(1206, 614, 7, NULL),
+(1207, 614, 8, NULL),
+(1208, 614, 9, NULL),
+(1209, 615, 1, 1),
+(1210, 615, 2, NULL),
+(1211, 615, 3, NULL),
+(1212, 615, 4, NULL),
+(1213, 615, 5, NULL),
+(1214, 616, 1, 1),
+(1215, 616, 2, NULL),
+(1216, 617, 1, 1),
+(1217, 617, 2, NULL),
+(1218, 618, 1, 1),
+(1219, 618, 2, NULL),
+(1220, 619, 1, 1),
+(1221, 619, 2, NULL),
+(1222, 620, 1, 1),
+(1223, 620, 2, NULL),
+(1224, 621, 1, 1),
+(1225, 622, 1, 1),
+(1226, 623, 1, 1),
+(1227, 624, 1, 1),
+(1228, 625, 1, 1),
+(1229, 625, 2, NULL),
+(1230, 626, 1, 1),
+(1231, 626, 2, NULL),
+(1232, 627, 1, 1),
+(1233, 627, 2, NULL),
+(1234, 628, 1, 1),
+(1235, 628, 2, NULL),
+(1236, 629, 1, 1),
+(1237, 630, 1, 1),
+(1238, 631, 1, 1),
+(1239, 631, 2, NULL),
+(1240, 632, 1, 1),
+(1241, 632, 2, NULL),
+(1242, 633, 1, 1),
+(1243, 634, 1, 1),
+(1244, 634, 2, NULL),
+(1245, 635, 1, 1),
+(1246, 635, 2, NULL),
+(1247, 636, 1, 1),
+(1248, 636, 2, NULL),
+(1249, 637, 1, 1),
+(1250, 637, 2, NULL),
+(1251, 638, 1, 1),
+(1252, 639, 1, 1),
+(1253, 640, 1, 1),
+(1254, 641, 1, 1),
+(1255, 642, 1, 1),
+(1256, 643, 1, 1),
+(1257, 644, 1, 1),
+(1258, 645, 1, 1),
+(1259, 646, 1, 1),
+(1260, 647, 1, 1),
+(1261, 648, 1, 1),
+(1262, 649, 1, 1),
+(1263, 650, 1, 1),
+(1264, 651, 1, 1),
+(1265, 652, 1, 1),
+(1266, 653, 1, 1),
+(1267, 654, 1, 1),
+(1268, 655, 1, 1),
+(1269, 656, 1, 1),
+(1270, 657, 1, 1),
+(1271, 658, 1, 1),
+(1272, 659, 1, 1),
+(1273, 660, 1, 1),
+(1274, 661, 1, 1),
+(1275, 662, 1, 1),
+(1276, 663, 1, 1),
+(1277, 664, 1, 1),
+(1278, 665, 1, 1),
+(1279, 666, 1, 1),
+(1280, 667, 1, 1),
+(1281, 668, 1, 1),
+(1282, 669, 1, 1),
+(1283, 670, 1, 1),
+(1284, 671, 1, 1),
+(1285, 672, 1, 1),
+(1286, 673, 1, 1),
+(1287, 674, 1, 1),
+(1288, 675, 1, 1),
+(1289, 676, 1, 1),
+(1290, 677, 1, 1),
+(1291, 678, 1, 1),
+(1292, 679, 1, 1),
+(1293, 680, 1, 1),
+(1294, 681, 1, 1),
+(1295, 682, 1, 1),
+(1296, 683, 1, 1),
+(1297, 684, 1, 1),
+(1298, 684, 2, NULL),
+(1299, 685, 1, 1),
+(1300, 685, 2, NULL),
+(1301, 686, 1, 1),
+(1302, 686, 2, NULL);
+
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_image_lang`
+-- Структура таблицы `ps_image_lang`
 --
 
 CREATE TABLE `ps_image_lang` (
@@ -6076,10 +10229,1318 @@ CREATE TABLE `ps_image_lang` (
   `legend` varchar(128) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
+--
+-- Дамп данных таблицы `ps_image_lang`
+--
+
+INSERT INTO `ps_image_lang` (`id_image`, `id_lang`, `legend`) VALUES
+(1, 1, ''),
+(2, 1, ''),
+(3, 1, ''),
+(4, 1, ''),
+(5, 1, ''),
+(6, 1, ''),
+(7, 1, ''),
+(8, 1, ''),
+(9, 1, ''),
+(10, 1, ''),
+(11, 1, ''),
+(12, 1, ''),
+(13, 1, ''),
+(14, 1, ''),
+(15, 1, ''),
+(16, 1, ''),
+(17, 1, ''),
+(18, 1, ''),
+(19, 1, ''),
+(20, 1, ''),
+(21, 1, ''),
+(22, 1, ''),
+(23, 1, ''),
+(24, 1, ''),
+(25, 1, ''),
+(26, 1, ''),
+(27, 1, ''),
+(28, 1, ''),
+(29, 1, ''),
+(30, 1, ''),
+(31, 1, ''),
+(32, 1, ''),
+(33, 1, ''),
+(34, 1, ''),
+(35, 1, ''),
+(36, 1, ''),
+(37, 1, ''),
+(38, 1, ''),
+(39, 1, ''),
+(40, 1, ''),
+(41, 1, ''),
+(42, 1, ''),
+(43, 1, ''),
+(44, 1, ''),
+(45, 1, ''),
+(46, 1, ''),
+(47, 1, ''),
+(48, 1, ''),
+(49, 1, ''),
+(50, 1, ''),
+(51, 1, ''),
+(52, 1, ''),
+(53, 1, ''),
+(54, 1, ''),
+(55, 1, ''),
+(56, 1, ''),
+(57, 1, ''),
+(58, 1, ''),
+(59, 1, ''),
+(60, 1, ''),
+(61, 1, ''),
+(62, 1, ''),
+(63, 1, ''),
+(64, 1, ''),
+(65, 1, ''),
+(66, 1, ''),
+(67, 1, ''),
+(68, 1, ''),
+(69, 1, ''),
+(70, 1, ''),
+(71, 1, ''),
+(72, 1, ''),
+(73, 1, ''),
+(74, 1, ''),
+(75, 1, ''),
+(76, 1, ''),
+(77, 1, ''),
+(78, 1, ''),
+(79, 1, ''),
+(80, 1, ''),
+(81, 1, ''),
+(82, 1, ''),
+(83, 1, ''),
+(84, 1, ''),
+(85, 1, ''),
+(86, 1, ''),
+(87, 1, ''),
+(88, 1, ''),
+(89, 1, ''),
+(90, 1, ''),
+(91, 1, ''),
+(92, 1, ''),
+(93, 1, ''),
+(94, 1, ''),
+(95, 1, ''),
+(96, 1, ''),
+(97, 1, ''),
+(98, 1, ''),
+(99, 1, ''),
+(100, 1, ''),
+(101, 1, ''),
+(102, 1, ''),
+(103, 1, ''),
+(104, 1, ''),
+(105, 1, ''),
+(106, 1, ''),
+(107, 1, ''),
+(108, 1, ''),
+(109, 1, ''),
+(110, 1, ''),
+(111, 1, ''),
+(112, 1, ''),
+(113, 1, ''),
+(114, 1, ''),
+(115, 1, ''),
+(116, 1, ''),
+(117, 1, ''),
+(118, 1, ''),
+(119, 1, ''),
+(120, 1, ''),
+(121, 1, ''),
+(122, 1, ''),
+(123, 1, ''),
+(124, 1, ''),
+(125, 1, ''),
+(126, 1, ''),
+(127, 1, ''),
+(128, 1, ''),
+(129, 1, ''),
+(130, 1, ''),
+(131, 1, ''),
+(132, 1, ''),
+(133, 1, ''),
+(134, 1, ''),
+(135, 1, ''),
+(136, 1, ''),
+(137, 1, ''),
+(138, 1, ''),
+(139, 1, ''),
+(140, 1, ''),
+(141, 1, ''),
+(142, 1, ''),
+(143, 1, ''),
+(144, 1, ''),
+(145, 1, ''),
+(146, 1, ''),
+(147, 1, ''),
+(148, 1, ''),
+(149, 1, ''),
+(150, 1, ''),
+(151, 1, ''),
+(152, 1, ''),
+(153, 1, ''),
+(154, 1, ''),
+(155, 1, ''),
+(156, 1, ''),
+(157, 1, ''),
+(158, 1, ''),
+(159, 1, ''),
+(160, 1, ''),
+(161, 1, ''),
+(162, 1, ''),
+(163, 1, ''),
+(164, 1, ''),
+(165, 1, ''),
+(166, 1, ''),
+(167, 1, ''),
+(168, 1, ''),
+(169, 1, ''),
+(170, 1, ''),
+(171, 1, ''),
+(172, 1, ''),
+(173, 1, ''),
+(174, 1, ''),
+(175, 1, ''),
+(176, 1, ''),
+(177, 1, ''),
+(178, 1, ''),
+(179, 1, ''),
+(180, 1, ''),
+(181, 1, ''),
+(182, 1, ''),
+(183, 1, ''),
+(184, 1, ''),
+(185, 1, ''),
+(186, 1, ''),
+(187, 1, ''),
+(188, 1, ''),
+(189, 1, ''),
+(190, 1, ''),
+(191, 1, ''),
+(192, 1, ''),
+(193, 1, ''),
+(194, 1, ''),
+(195, 1, ''),
+(196, 1, ''),
+(197, 1, ''),
+(198, 1, ''),
+(199, 1, ''),
+(200, 1, ''),
+(201, 1, ''),
+(202, 1, ''),
+(203, 1, ''),
+(204, 1, ''),
+(205, 1, ''),
+(206, 1, ''),
+(207, 1, ''),
+(208, 1, ''),
+(209, 1, ''),
+(210, 1, ''),
+(211, 1, ''),
+(212, 1, ''),
+(213, 1, ''),
+(214, 1, ''),
+(215, 1, ''),
+(216, 1, ''),
+(217, 1, ''),
+(218, 1, ''),
+(219, 1, ''),
+(220, 1, ''),
+(221, 1, ''),
+(222, 1, ''),
+(223, 1, ''),
+(224, 1, ''),
+(225, 1, ''),
+(226, 1, ''),
+(227, 1, ''),
+(228, 1, ''),
+(229, 1, ''),
+(230, 1, ''),
+(231, 1, ''),
+(232, 1, ''),
+(233, 1, ''),
+(234, 1, ''),
+(235, 1, ''),
+(236, 1, ''),
+(237, 1, ''),
+(238, 1, ''),
+(239, 1, ''),
+(240, 1, ''),
+(241, 1, ''),
+(242, 1, ''),
+(243, 1, ''),
+(244, 1, ''),
+(245, 1, ''),
+(246, 1, ''),
+(247, 1, ''),
+(248, 1, ''),
+(249, 1, ''),
+(250, 1, ''),
+(251, 1, ''),
+(252, 1, ''),
+(253, 1, ''),
+(254, 1, ''),
+(255, 1, ''),
+(256, 1, ''),
+(257, 1, ''),
+(258, 1, ''),
+(259, 1, ''),
+(260, 1, ''),
+(261, 1, ''),
+(262, 1, ''),
+(263, 1, ''),
+(264, 1, ''),
+(265, 1, ''),
+(266, 1, ''),
+(267, 1, ''),
+(268, 1, ''),
+(269, 1, ''),
+(270, 1, ''),
+(271, 1, ''),
+(272, 1, ''),
+(273, 1, ''),
+(274, 1, ''),
+(275, 1, ''),
+(276, 1, ''),
+(277, 1, ''),
+(278, 1, ''),
+(279, 1, ''),
+(280, 1, ''),
+(281, 1, ''),
+(282, 1, ''),
+(283, 1, ''),
+(284, 1, ''),
+(285, 1, ''),
+(286, 1, ''),
+(287, 1, ''),
+(288, 1, ''),
+(289, 1, ''),
+(290, 1, ''),
+(291, 1, ''),
+(292, 1, ''),
+(293, 1, ''),
+(294, 1, ''),
+(295, 1, ''),
+(296, 1, ''),
+(297, 1, ''),
+(298, 1, ''),
+(299, 1, ''),
+(300, 1, ''),
+(301, 1, ''),
+(302, 1, ''),
+(303, 1, ''),
+(304, 1, ''),
+(305, 1, ''),
+(306, 1, ''),
+(307, 1, ''),
+(308, 1, ''),
+(309, 1, ''),
+(310, 1, ''),
+(311, 1, ''),
+(312, 1, ''),
+(313, 1, ''),
+(314, 1, ''),
+(315, 1, ''),
+(316, 1, ''),
+(317, 1, ''),
+(318, 1, ''),
+(319, 1, ''),
+(320, 1, ''),
+(321, 1, ''),
+(322, 1, ''),
+(323, 1, ''),
+(324, 1, ''),
+(325, 1, ''),
+(326, 1, ''),
+(327, 1, ''),
+(328, 1, ''),
+(329, 1, ''),
+(330, 1, ''),
+(331, 1, ''),
+(332, 1, ''),
+(333, 1, ''),
+(334, 1, ''),
+(335, 1, ''),
+(336, 1, ''),
+(337, 1, ''),
+(338, 1, ''),
+(339, 1, ''),
+(340, 1, ''),
+(341, 1, ''),
+(342, 1, ''),
+(343, 1, ''),
+(344, 1, ''),
+(345, 1, ''),
+(346, 1, ''),
+(347, 1, ''),
+(348, 1, ''),
+(349, 1, ''),
+(350, 1, ''),
+(351, 1, ''),
+(352, 1, ''),
+(353, 1, ''),
+(354, 1, ''),
+(355, 1, ''),
+(356, 1, ''),
+(357, 1, ''),
+(358, 1, ''),
+(359, 1, ''),
+(360, 1, ''),
+(361, 1, ''),
+(362, 1, ''),
+(363, 1, ''),
+(364, 1, ''),
+(365, 1, ''),
+(366, 1, ''),
+(367, 1, ''),
+(368, 1, ''),
+(369, 1, ''),
+(370, 1, ''),
+(371, 1, ''),
+(372, 1, ''),
+(373, 1, ''),
+(374, 1, ''),
+(375, 1, ''),
+(376, 1, ''),
+(377, 1, ''),
+(378, 1, ''),
+(379, 1, ''),
+(380, 1, ''),
+(381, 1, ''),
+(382, 1, ''),
+(383, 1, ''),
+(384, 1, ''),
+(385, 1, ''),
+(386, 1, ''),
+(387, 1, ''),
+(388, 1, ''),
+(389, 1, ''),
+(390, 1, ''),
+(391, 1, ''),
+(392, 1, ''),
+(393, 1, ''),
+(394, 1, ''),
+(395, 1, ''),
+(396, 1, ''),
+(397, 1, ''),
+(398, 1, ''),
+(399, 1, ''),
+(400, 1, ''),
+(401, 1, ''),
+(402, 1, ''),
+(403, 1, ''),
+(404, 1, ''),
+(405, 1, ''),
+(406, 1, ''),
+(407, 1, ''),
+(408, 1, ''),
+(409, 1, ''),
+(410, 1, ''),
+(411, 1, ''),
+(412, 1, ''),
+(413, 1, ''),
+(414, 1, ''),
+(415, 1, ''),
+(416, 1, ''),
+(417, 1, ''),
+(418, 1, ''),
+(419, 1, ''),
+(420, 1, ''),
+(421, 1, ''),
+(422, 1, ''),
+(423, 1, ''),
+(424, 1, ''),
+(425, 1, ''),
+(426, 1, ''),
+(427, 1, ''),
+(428, 1, ''),
+(429, 1, ''),
+(430, 1, ''),
+(431, 1, ''),
+(432, 1, ''),
+(433, 1, ''),
+(434, 1, ''),
+(435, 1, ''),
+(436, 1, ''),
+(437, 1, ''),
+(438, 1, ''),
+(439, 1, ''),
+(440, 1, ''),
+(441, 1, ''),
+(442, 1, ''),
+(443, 1, ''),
+(444, 1, ''),
+(445, 1, ''),
+(446, 1, ''),
+(447, 1, ''),
+(448, 1, ''),
+(449, 1, ''),
+(450, 1, ''),
+(451, 1, ''),
+(452, 1, ''),
+(453, 1, ''),
+(454, 1, ''),
+(455, 1, ''),
+(456, 1, ''),
+(457, 1, ''),
+(458, 1, ''),
+(459, 1, ''),
+(460, 1, ''),
+(461, 1, ''),
+(462, 1, ''),
+(463, 1, ''),
+(464, 1, ''),
+(465, 1, ''),
+(466, 1, ''),
+(467, 1, ''),
+(468, 1, ''),
+(469, 1, ''),
+(470, 1, ''),
+(471, 1, ''),
+(472, 1, ''),
+(473, 1, ''),
+(474, 1, ''),
+(475, 1, ''),
+(476, 1, ''),
+(477, 1, ''),
+(478, 1, ''),
+(479, 1, ''),
+(480, 1, ''),
+(481, 1, ''),
+(482, 1, ''),
+(483, 1, ''),
+(484, 1, ''),
+(485, 1, ''),
+(486, 1, ''),
+(487, 1, ''),
+(488, 1, ''),
+(489, 1, ''),
+(490, 1, ''),
+(491, 1, ''),
+(492, 1, ''),
+(493, 1, ''),
+(494, 1, ''),
+(495, 1, ''),
+(496, 1, ''),
+(497, 1, ''),
+(498, 1, ''),
+(499, 1, ''),
+(500, 1, ''),
+(501, 1, ''),
+(502, 1, ''),
+(503, 1, ''),
+(504, 1, ''),
+(505, 1, ''),
+(506, 1, ''),
+(507, 1, ''),
+(508, 1, ''),
+(509, 1, ''),
+(510, 1, ''),
+(511, 1, ''),
+(512, 1, ''),
+(513, 1, ''),
+(514, 1, ''),
+(515, 1, ''),
+(516, 1, ''),
+(517, 1, ''),
+(518, 1, ''),
+(519, 1, ''),
+(520, 1, ''),
+(521, 1, ''),
+(522, 1, ''),
+(523, 1, ''),
+(524, 1, ''),
+(525, 1, ''),
+(526, 1, ''),
+(527, 1, ''),
+(528, 1, ''),
+(529, 1, ''),
+(530, 1, ''),
+(531, 1, ''),
+(532, 1, ''),
+(533, 1, ''),
+(534, 1, ''),
+(535, 1, ''),
+(536, 1, ''),
+(537, 1, ''),
+(538, 1, ''),
+(539, 1, ''),
+(540, 1, ''),
+(541, 1, ''),
+(542, 1, ''),
+(543, 1, ''),
+(544, 1, ''),
+(545, 1, ''),
+(546, 1, ''),
+(547, 1, ''),
+(548, 1, ''),
+(549, 1, ''),
+(550, 1, ''),
+(551, 1, ''),
+(552, 1, ''),
+(553, 1, ''),
+(554, 1, ''),
+(555, 1, ''),
+(556, 1, ''),
+(557, 1, ''),
+(558, 1, ''),
+(559, 1, ''),
+(560, 1, ''),
+(561, 1, ''),
+(562, 1, ''),
+(563, 1, ''),
+(564, 1, ''),
+(565, 1, ''),
+(566, 1, ''),
+(567, 1, ''),
+(568, 1, ''),
+(569, 1, ''),
+(570, 1, ''),
+(571, 1, ''),
+(572, 1, ''),
+(573, 1, ''),
+(574, 1, ''),
+(575, 1, ''),
+(576, 1, ''),
+(577, 1, ''),
+(578, 1, ''),
+(579, 1, ''),
+(580, 1, ''),
+(581, 1, ''),
+(582, 1, ''),
+(583, 1, ''),
+(584, 1, ''),
+(585, 1, ''),
+(586, 1, ''),
+(587, 1, ''),
+(588, 1, ''),
+(589, 1, ''),
+(590, 1, ''),
+(591, 1, ''),
+(592, 1, ''),
+(593, 1, ''),
+(594, 1, ''),
+(595, 1, ''),
+(596, 1, ''),
+(597, 1, ''),
+(598, 1, ''),
+(599, 1, ''),
+(600, 1, ''),
+(601, 1, ''),
+(602, 1, ''),
+(603, 1, ''),
+(604, 1, ''),
+(605, 1, ''),
+(606, 1, ''),
+(607, 1, ''),
+(608, 1, ''),
+(609, 1, ''),
+(610, 1, ''),
+(611, 1, ''),
+(612, 1, ''),
+(613, 1, ''),
+(614, 1, ''),
+(615, 1, ''),
+(616, 1, ''),
+(617, 1, ''),
+(618, 1, ''),
+(619, 1, ''),
+(620, 1, ''),
+(621, 1, ''),
+(622, 1, ''),
+(623, 1, ''),
+(624, 1, ''),
+(625, 1, ''),
+(626, 1, ''),
+(627, 1, ''),
+(628, 1, ''),
+(629, 1, ''),
+(630, 1, ''),
+(631, 1, ''),
+(632, 1, ''),
+(633, 1, ''),
+(634, 1, ''),
+(635, 1, ''),
+(636, 1, ''),
+(637, 1, ''),
+(638, 1, ''),
+(639, 1, ''),
+(640, 1, ''),
+(641, 1, ''),
+(642, 1, ''),
+(643, 1, ''),
+(644, 1, ''),
+(645, 1, ''),
+(646, 1, ''),
+(647, 1, ''),
+(648, 1, ''),
+(649, 1, ''),
+(650, 1, ''),
+(651, 1, ''),
+(652, 1, ''),
+(653, 1, ''),
+(654, 1, ''),
+(655, 1, ''),
+(656, 1, ''),
+(657, 1, ''),
+(658, 1, ''),
+(659, 1, ''),
+(660, 1, ''),
+(661, 1, ''),
+(662, 1, ''),
+(663, 1, ''),
+(664, 1, ''),
+(665, 1, ''),
+(666, 1, ''),
+(667, 1, ''),
+(668, 1, ''),
+(669, 1, ''),
+(670, 1, ''),
+(671, 1, ''),
+(672, 1, ''),
+(673, 1, ''),
+(674, 1, ''),
+(675, 1, ''),
+(676, 1, ''),
+(677, 1, ''),
+(678, 1, ''),
+(679, 1, ''),
+(680, 1, ''),
+(681, 1, ''),
+(682, 1, ''),
+(683, 1, ''),
+(684, 1, ''),
+(685, 1, ''),
+(686, 1, ''),
+(687, 1, ''),
+(688, 1, ''),
+(689, 1, ''),
+(690, 1, ''),
+(691, 1, ''),
+(692, 1, ''),
+(693, 1, ''),
+(694, 1, ''),
+(695, 1, ''),
+(696, 1, ''),
+(697, 1, ''),
+(698, 1, ''),
+(699, 1, ''),
+(700, 1, ''),
+(701, 1, ''),
+(702, 1, ''),
+(703, 1, ''),
+(704, 1, ''),
+(705, 1, ''),
+(706, 1, ''),
+(707, 1, ''),
+(708, 1, ''),
+(709, 1, ''),
+(710, 1, ''),
+(711, 1, ''),
+(712, 1, ''),
+(713, 1, ''),
+(714, 1, ''),
+(715, 1, ''),
+(716, 1, ''),
+(717, 1, ''),
+(718, 1, ''),
+(719, 1, ''),
+(720, 1, ''),
+(721, 1, ''),
+(722, 1, ''),
+(723, 1, ''),
+(724, 1, ''),
+(725, 1, ''),
+(726, 1, ''),
+(727, 1, ''),
+(728, 1, ''),
+(729, 1, ''),
+(730, 1, ''),
+(731, 1, ''),
+(732, 1, ''),
+(733, 1, ''),
+(734, 1, ''),
+(735, 1, ''),
+(736, 1, ''),
+(737, 1, ''),
+(738, 1, ''),
+(739, 1, ''),
+(740, 1, ''),
+(741, 1, ''),
+(742, 1, ''),
+(743, 1, ''),
+(744, 1, ''),
+(745, 1, ''),
+(746, 1, ''),
+(747, 1, ''),
+(748, 1, ''),
+(749, 1, ''),
+(750, 1, ''),
+(751, 1, ''),
+(752, 1, ''),
+(753, 1, ''),
+(754, 1, ''),
+(755, 1, ''),
+(756, 1, ''),
+(757, 1, ''),
+(758, 1, ''),
+(759, 1, ''),
+(760, 1, ''),
+(761, 1, ''),
+(762, 1, ''),
+(763, 1, ''),
+(764, 1, ''),
+(765, 1, ''),
+(766, 1, ''),
+(767, 1, ''),
+(768, 1, ''),
+(769, 1, ''),
+(770, 1, ''),
+(771, 1, ''),
+(772, 1, ''),
+(773, 1, ''),
+(774, 1, ''),
+(775, 1, ''),
+(776, 1, ''),
+(777, 1, ''),
+(778, 1, ''),
+(779, 1, ''),
+(780, 1, ''),
+(781, 1, ''),
+(782, 1, ''),
+(783, 1, ''),
+(784, 1, ''),
+(785, 1, ''),
+(786, 1, ''),
+(787, 1, ''),
+(788, 1, ''),
+(789, 1, ''),
+(790, 1, ''),
+(791, 1, ''),
+(792, 1, ''),
+(793, 1, ''),
+(794, 1, ''),
+(795, 1, ''),
+(796, 1, ''),
+(797, 1, ''),
+(798, 1, ''),
+(799, 1, ''),
+(800, 1, ''),
+(801, 1, ''),
+(802, 1, ''),
+(803, 1, ''),
+(804, 1, ''),
+(805, 1, ''),
+(806, 1, ''),
+(807, 1, ''),
+(808, 1, ''),
+(809, 1, ''),
+(810, 1, ''),
+(811, 1, ''),
+(812, 1, ''),
+(813, 1, ''),
+(814, 1, ''),
+(815, 1, ''),
+(816, 1, ''),
+(817, 1, ''),
+(818, 1, ''),
+(819, 1, ''),
+(820, 1, ''),
+(821, 1, ''),
+(822, 1, ''),
+(823, 1, ''),
+(824, 1, ''),
+(825, 1, ''),
+(826, 1, ''),
+(827, 1, ''),
+(828, 1, ''),
+(829, 1, ''),
+(830, 1, ''),
+(831, 1, ''),
+(832, 1, ''),
+(833, 1, ''),
+(834, 1, ''),
+(835, 1, ''),
+(836, 1, ''),
+(837, 1, ''),
+(838, 1, ''),
+(839, 1, ''),
+(840, 1, ''),
+(841, 1, ''),
+(842, 1, ''),
+(843, 1, ''),
+(844, 1, ''),
+(845, 1, ''),
+(846, 1, ''),
+(847, 1, ''),
+(848, 1, ''),
+(849, 1, ''),
+(850, 1, ''),
+(851, 1, ''),
+(852, 1, ''),
+(853, 1, ''),
+(854, 1, ''),
+(855, 1, ''),
+(856, 1, ''),
+(857, 1, ''),
+(858, 1, ''),
+(859, 1, ''),
+(860, 1, ''),
+(861, 1, ''),
+(862, 1, ''),
+(863, 1, ''),
+(864, 1, ''),
+(865, 1, ''),
+(866, 1, ''),
+(867, 1, ''),
+(868, 1, ''),
+(869, 1, ''),
+(870, 1, ''),
+(871, 1, ''),
+(872, 1, ''),
+(873, 1, ''),
+(874, 1, ''),
+(875, 1, ''),
+(876, 1, ''),
+(877, 1, ''),
+(878, 1, ''),
+(879, 1, ''),
+(880, 1, ''),
+(881, 1, ''),
+(882, 1, ''),
+(883, 1, ''),
+(884, 1, ''),
+(885, 1, ''),
+(886, 1, ''),
+(887, 1, ''),
+(888, 1, ''),
+(889, 1, ''),
+(890, 1, ''),
+(891, 1, ''),
+(892, 1, ''),
+(893, 1, ''),
+(894, 1, ''),
+(895, 1, ''),
+(896, 1, ''),
+(897, 1, ''),
+(898, 1, ''),
+(899, 1, ''),
+(900, 1, ''),
+(901, 1, ''),
+(902, 1, ''),
+(903, 1, ''),
+(904, 1, ''),
+(905, 1, ''),
+(906, 1, ''),
+(907, 1, ''),
+(908, 1, ''),
+(909, 1, ''),
+(910, 1, ''),
+(911, 1, ''),
+(912, 1, ''),
+(913, 1, ''),
+(914, 1, ''),
+(915, 1, ''),
+(916, 1, ''),
+(917, 1, ''),
+(918, 1, ''),
+(919, 1, ''),
+(920, 1, ''),
+(921, 1, ''),
+(922, 1, ''),
+(923, 1, ''),
+(924, 1, ''),
+(925, 1, ''),
+(926, 1, ''),
+(927, 1, ''),
+(928, 1, ''),
+(929, 1, ''),
+(930, 1, ''),
+(931, 1, ''),
+(932, 1, ''),
+(933, 1, ''),
+(934, 1, ''),
+(935, 1, ''),
+(936, 1, ''),
+(937, 1, ''),
+(938, 1, ''),
+(939, 1, ''),
+(940, 1, ''),
+(941, 1, ''),
+(942, 1, ''),
+(943, 1, ''),
+(944, 1, ''),
+(945, 1, ''),
+(946, 1, ''),
+(947, 1, ''),
+(948, 1, ''),
+(949, 1, ''),
+(950, 1, ''),
+(951, 1, ''),
+(952, 1, ''),
+(953, 1, ''),
+(954, 1, ''),
+(955, 1, ''),
+(956, 1, ''),
+(957, 1, ''),
+(958, 1, ''),
+(959, 1, ''),
+(960, 1, ''),
+(961, 1, ''),
+(962, 1, ''),
+(963, 1, ''),
+(964, 1, ''),
+(965, 1, ''),
+(966, 1, ''),
+(967, 1, ''),
+(968, 1, ''),
+(969, 1, ''),
+(970, 1, ''),
+(971, 1, ''),
+(972, 1, ''),
+(973, 1, ''),
+(974, 1, ''),
+(975, 1, ''),
+(976, 1, ''),
+(977, 1, ''),
+(978, 1, ''),
+(979, 1, ''),
+(980, 1, ''),
+(981, 1, ''),
+(982, 1, ''),
+(983, 1, ''),
+(984, 1, ''),
+(985, 1, ''),
+(986, 1, ''),
+(987, 1, ''),
+(988, 1, ''),
+(989, 1, ''),
+(990, 1, ''),
+(991, 1, ''),
+(992, 1, ''),
+(993, 1, ''),
+(994, 1, ''),
+(995, 1, ''),
+(996, 1, ''),
+(997, 1, ''),
+(998, 1, ''),
+(999, 1, ''),
+(1000, 1, ''),
+(1001, 1, ''),
+(1002, 1, ''),
+(1003, 1, ''),
+(1004, 1, ''),
+(1005, 1, ''),
+(1006, 1, ''),
+(1007, 1, ''),
+(1008, 1, ''),
+(1009, 1, ''),
+(1010, 1, ''),
+(1011, 1, ''),
+(1012, 1, ''),
+(1013, 1, ''),
+(1014, 1, ''),
+(1015, 1, ''),
+(1016, 1, ''),
+(1017, 1, ''),
+(1018, 1, ''),
+(1019, 1, ''),
+(1020, 1, ''),
+(1021, 1, ''),
+(1022, 1, ''),
+(1023, 1, ''),
+(1024, 1, ''),
+(1025, 1, ''),
+(1026, 1, ''),
+(1027, 1, ''),
+(1028, 1, ''),
+(1029, 1, ''),
+(1030, 1, ''),
+(1031, 1, ''),
+(1032, 1, ''),
+(1033, 1, ''),
+(1034, 1, ''),
+(1035, 1, ''),
+(1036, 1, ''),
+(1037, 1, ''),
+(1038, 1, ''),
+(1039, 1, ''),
+(1040, 1, ''),
+(1041, 1, ''),
+(1042, 1, ''),
+(1043, 1, ''),
+(1044, 1, ''),
+(1045, 1, ''),
+(1046, 1, ''),
+(1047, 1, ''),
+(1048, 1, ''),
+(1049, 1, ''),
+(1050, 1, ''),
+(1051, 1, ''),
+(1052, 1, ''),
+(1053, 1, ''),
+(1054, 1, ''),
+(1055, 1, ''),
+(1056, 1, ''),
+(1057, 1, ''),
+(1058, 1, ''),
+(1059, 1, ''),
+(1060, 1, ''),
+(1061, 1, ''),
+(1062, 1, ''),
+(1063, 1, ''),
+(1064, 1, ''),
+(1065, 1, ''),
+(1066, 1, ''),
+(1067, 1, ''),
+(1068, 1, ''),
+(1069, 1, ''),
+(1070, 1, ''),
+(1071, 1, ''),
+(1072, 1, ''),
+(1073, 1, ''),
+(1074, 1, ''),
+(1075, 1, ''),
+(1076, 1, ''),
+(1077, 1, ''),
+(1078, 1, ''),
+(1079, 1, ''),
+(1080, 1, ''),
+(1081, 1, ''),
+(1082, 1, ''),
+(1083, 1, ''),
+(1084, 1, ''),
+(1085, 1, ''),
+(1086, 1, ''),
+(1087, 1, ''),
+(1088, 1, ''),
+(1089, 1, ''),
+(1090, 1, ''),
+(1091, 1, ''),
+(1092, 1, ''),
+(1093, 1, ''),
+(1094, 1, ''),
+(1095, 1, ''),
+(1096, 1, ''),
+(1097, 1, ''),
+(1098, 1, ''),
+(1099, 1, ''),
+(1100, 1, ''),
+(1101, 1, ''),
+(1102, 1, ''),
+(1103, 1, ''),
+(1104, 1, ''),
+(1105, 1, ''),
+(1106, 1, ''),
+(1107, 1, ''),
+(1108, 1, ''),
+(1109, 1, ''),
+(1110, 1, ''),
+(1111, 1, ''),
+(1112, 1, ''),
+(1113, 1, ''),
+(1114, 1, ''),
+(1115, 1, ''),
+(1116, 1, ''),
+(1117, 1, ''),
+(1118, 1, ''),
+(1119, 1, ''),
+(1120, 1, ''),
+(1121, 1, ''),
+(1122, 1, ''),
+(1123, 1, ''),
+(1124, 1, ''),
+(1125, 1, ''),
+(1126, 1, ''),
+(1127, 1, ''),
+(1128, 1, ''),
+(1129, 1, ''),
+(1130, 1, ''),
+(1131, 1, ''),
+(1132, 1, ''),
+(1133, 1, ''),
+(1134, 1, ''),
+(1135, 1, ''),
+(1136, 1, ''),
+(1137, 1, ''),
+(1138, 1, ''),
+(1139, 1, ''),
+(1140, 1, ''),
+(1141, 1, ''),
+(1142, 1, ''),
+(1143, 1, ''),
+(1144, 1, ''),
+(1145, 1, ''),
+(1146, 1, ''),
+(1147, 1, ''),
+(1148, 1, ''),
+(1149, 1, ''),
+(1150, 1, ''),
+(1151, 1, ''),
+(1152, 1, ''),
+(1153, 1, ''),
+(1154, 1, ''),
+(1155, 1, ''),
+(1156, 1, ''),
+(1157, 1, ''),
+(1158, 1, ''),
+(1159, 1, ''),
+(1160, 1, ''),
+(1161, 1, ''),
+(1162, 1, ''),
+(1163, 1, ''),
+(1164, 1, ''),
+(1165, 1, ''),
+(1166, 1, ''),
+(1167, 1, ''),
+(1168, 1, ''),
+(1169, 1, ''),
+(1170, 1, ''),
+(1171, 1, ''),
+(1172, 1, ''),
+(1173, 1, ''),
+(1174, 1, ''),
+(1175, 1, ''),
+(1176, 1, ''),
+(1177, 1, ''),
+(1178, 1, ''),
+(1179, 1, ''),
+(1180, 1, ''),
+(1181, 1, ''),
+(1182, 1, ''),
+(1183, 1, ''),
+(1184, 1, ''),
+(1185, 1, ''),
+(1186, 1, ''),
+(1187, 1, ''),
+(1188, 1, ''),
+(1189, 1, ''),
+(1190, 1, ''),
+(1191, 1, ''),
+(1192, 1, ''),
+(1193, 1, ''),
+(1194, 1, ''),
+(1195, 1, ''),
+(1196, 1, ''),
+(1197, 1, ''),
+(1198, 1, ''),
+(1199, 1, ''),
+(1200, 1, ''),
+(1201, 1, ''),
+(1202, 1, ''),
+(1203, 1, ''),
+(1204, 1, ''),
+(1205, 1, ''),
+(1206, 1, ''),
+(1207, 1, ''),
+(1208, 1, ''),
+(1209, 1, ''),
+(1210, 1, ''),
+(1211, 1, ''),
+(1212, 1, ''),
+(1213, 1, ''),
+(1214, 1, ''),
+(1215, 1, ''),
+(1216, 1, ''),
+(1217, 1, ''),
+(1218, 1, ''),
+(1219, 1, ''),
+(1220, 1, ''),
+(1221, 1, ''),
+(1222, 1, ''),
+(1223, 1, ''),
+(1224, 1, ''),
+(1225, 1, ''),
+(1226, 1, ''),
+(1227, 1, ''),
+(1228, 1, ''),
+(1229, 1, ''),
+(1230, 1, ''),
+(1231, 1, ''),
+(1232, 1, ''),
+(1233, 1, ''),
+(1234, 1, ''),
+(1235, 1, ''),
+(1236, 1, ''),
+(1237, 1, ''),
+(1238, 1, ''),
+(1239, 1, ''),
+(1240, 1, ''),
+(1241, 1, ''),
+(1242, 1, ''),
+(1243, 1, ''),
+(1244, 1, ''),
+(1245, 1, ''),
+(1246, 1, ''),
+(1247, 1, ''),
+(1248, 1, ''),
+(1249, 1, ''),
+(1250, 1, ''),
+(1251, 1, ''),
+(1252, 1, ''),
+(1253, 1, ''),
+(1254, 1, ''),
+(1255, 1, ''),
+(1256, 1, ''),
+(1257, 1, ''),
+(1258, 1, ''),
+(1259, 1, ''),
+(1260, 1, ''),
+(1261, 1, ''),
+(1262, 1, ''),
+(1263, 1, ''),
+(1264, 1, ''),
+(1265, 1, ''),
+(1266, 1, ''),
+(1267, 1, ''),
+(1268, 1, ''),
+(1269, 1, ''),
+(1270, 1, ''),
+(1271, 1, ''),
+(1272, 1, ''),
+(1273, 1, ''),
+(1274, 1, ''),
+(1275, 1, ''),
+(1276, 1, ''),
+(1277, 1, ''),
+(1278, 1, ''),
+(1279, 1, ''),
+(1280, 1, ''),
+(1281, 1, ''),
+(1282, 1, ''),
+(1283, 1, ''),
+(1284, 1, ''),
+(1285, 1, ''),
+(1286, 1, ''),
+(1287, 1, ''),
+(1288, 1, ''),
+(1289, 1, ''),
+(1290, 1, ''),
+(1291, 1, ''),
+(1292, 1, ''),
+(1293, 1, ''),
+(1294, 1, ''),
+(1295, 1, ''),
+(1296, 1, ''),
+(1297, 1, ''),
+(1298, 1, ''),
+(1299, 1, ''),
+(1300, 1, ''),
+(1301, 1, ''),
+(1302, 1, '');
+
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_image_shop`
+-- Структура таблицы `ps_image_shop`
 --
 
 CREATE TABLE `ps_image_shop` (
@@ -6089,10 +11550,1318 @@ CREATE TABLE `ps_image_shop` (
   `cover` tinyint(1) UNSIGNED DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
+--
+-- Дамп данных таблицы `ps_image_shop`
+--
+
+INSERT INTO `ps_image_shop` (`id_product`, `id_image`, `id_shop`, `cover`) VALUES
+(1, 1, 1, 1),
+(2, 2, 1, 1),
+(3, 4, 1, NULL),
+(3, 3, 1, 1),
+(4, 5, 1, 1),
+(5, 7, 1, NULL),
+(5, 6, 1, 1),
+(6, 8, 1, 1),
+(7, 9, 1, 1),
+(8, 10, 1, 1),
+(9, 12, 1, NULL),
+(9, 11, 1, 1),
+(10, 13, 1, 1),
+(11, 14, 1, 1),
+(12, 15, 1, 1),
+(13, 16, 1, 1),
+(14, 17, 1, 1),
+(15, 18, 1, 1),
+(16, 19, 1, 1),
+(17, 20, 1, 1),
+(18, 21, 1, 1),
+(19, 23, 1, NULL),
+(19, 22, 1, 1),
+(20, 24, 1, 1),
+(21, 25, 1, 1),
+(22, 26, 1, 1),
+(23, 28, 1, NULL),
+(23, 27, 1, 1),
+(24, 29, 1, 1),
+(25, 30, 1, 1),
+(26, 31, 1, 1),
+(27, 32, 1, 1),
+(28, 33, 1, 1),
+(29, 34, 1, 1),
+(30, 36, 1, NULL),
+(30, 35, 1, 1),
+(31, 37, 1, 1),
+(32, 38, 1, 1),
+(33, 40, 1, NULL),
+(33, 39, 1, 1),
+(34, 41, 1, 1),
+(35, 42, 1, 1),
+(36, 43, 1, 1),
+(37, 44, 1, 1),
+(38, 46, 1, NULL),
+(38, 45, 1, 1),
+(39, 47, 1, 1),
+(40, 48, 1, 1),
+(41, 49, 1, 1),
+(42, 51, 1, NULL),
+(42, 50, 1, 1),
+(43, 53, 1, NULL),
+(43, 54, 1, NULL),
+(43, 52, 1, 1),
+(44, 55, 1, 1),
+(45, 56, 1, 1),
+(46, 58, 1, NULL),
+(46, 59, 1, NULL),
+(46, 57, 1, 1),
+(47, 60, 1, 1),
+(48, 61, 1, 1),
+(49, 62, 1, 1),
+(50, 63, 1, 1),
+(51, 64, 1, 1),
+(52, 66, 1, NULL),
+(52, 67, 1, NULL),
+(52, 68, 1, NULL),
+(52, 65, 1, 1),
+(53, 69, 1, 1),
+(54, 70, 1, 1),
+(55, 71, 1, 1),
+(56, 72, 1, 1),
+(57, 73, 1, 1),
+(58, 74, 1, 1),
+(59, 75, 1, 1),
+(60, 76, 1, 1),
+(61, 77, 1, 1),
+(62, 79, 1, NULL),
+(62, 78, 1, 1),
+(63, 81, 1, NULL),
+(63, 80, 1, 1),
+(64, 83, 1, NULL),
+(64, 82, 1, 1),
+(65, 84, 1, 1),
+(66, 85, 1, 1),
+(67, 86, 1, 1),
+(68, 88, 1, NULL),
+(68, 87, 1, 1),
+(69, 89, 1, 1),
+(70, 91, 1, NULL),
+(70, 90, 1, 1),
+(71, 92, 1, 1),
+(72, 93, 1, 1),
+(73, 94, 1, 1),
+(74, 96, 1, NULL),
+(74, 95, 1, 1),
+(75, 97, 1, 1),
+(76, 98, 1, 1),
+(77, 99, 1, 1),
+(78, 101, 1, NULL),
+(78, 100, 1, 1),
+(79, 103, 1, NULL),
+(79, 102, 1, 1),
+(80, 105, 1, NULL),
+(80, 104, 1, 1),
+(81, 106, 1, 1),
+(82, 107, 1, 1),
+(83, 108, 1, 1),
+(84, 110, 1, NULL),
+(84, 111, 1, NULL),
+(84, 109, 1, 1),
+(85, 112, 1, 1),
+(86, 113, 1, 1),
+(87, 114, 1, 1),
+(88, 116, 1, NULL),
+(88, 115, 1, 1),
+(89, 117, 1, 1),
+(90, 118, 1, 1),
+(91, 119, 1, 1),
+(92, 120, 1, 1),
+(93, 121, 1, 1),
+(94, 122, 1, 1),
+(95, 123, 1, 1),
+(96, 124, 1, 1),
+(97, 125, 1, 1),
+(98, 126, 1, 1),
+(99, 127, 1, 1),
+(100, 128, 1, 1),
+(101, 130, 1, NULL),
+(101, 131, 1, NULL),
+(101, 129, 1, 1),
+(102, 132, 1, 1),
+(103, 133, 1, 1),
+(104, 134, 1, 1),
+(105, 135, 1, 1),
+(106, 136, 1, 1),
+(107, 137, 1, 1),
+(108, 138, 1, 1),
+(109, 139, 1, 1),
+(110, 140, 1, 1),
+(111, 141, 1, 1),
+(112, 142, 1, 1),
+(113, 143, 1, 1),
+(114, 144, 1, 1),
+(115, 145, 1, 1),
+(116, 146, 1, 1),
+(117, 147, 1, 1),
+(118, 148, 1, 1),
+(119, 149, 1, 1),
+(120, 150, 1, 1),
+(121, 151, 1, 1),
+(122, 152, 1, 1),
+(123, 153, 1, 1),
+(124, 154, 1, 1),
+(125, 155, 1, 1),
+(126, 156, 1, 1),
+(127, 157, 1, 1),
+(128, 158, 1, 1),
+(129, 159, 1, 1),
+(130, 160, 1, 1),
+(131, 161, 1, 1),
+(132, 162, 1, 1),
+(133, 163, 1, 1),
+(134, 164, 1, 1),
+(135, 165, 1, 1),
+(136, 166, 1, 1),
+(137, 167, 1, 1),
+(138, 168, 1, 1),
+(139, 169, 1, 1),
+(140, 170, 1, 1),
+(141, 171, 1, 1),
+(142, 172, 1, 1),
+(143, 173, 1, 1),
+(144, 175, 1, NULL),
+(144, 174, 1, 1),
+(145, 177, 1, NULL),
+(145, 176, 1, 1),
+(146, 179, 1, NULL),
+(146, 178, 1, 1),
+(147, 180, 1, 1),
+(148, 181, 1, 1),
+(149, 182, 1, 1),
+(150, 183, 1, 1),
+(151, 184, 1, 1),
+(152, 185, 1, 1),
+(153, 186, 1, 1),
+(154, 187, 1, 1),
+(155, 188, 1, 1),
+(156, 189, 1, 1),
+(157, 190, 1, 1),
+(158, 191, 1, 1),
+(159, 192, 1, 1),
+(160, 193, 1, 1),
+(161, 194, 1, 1),
+(162, 195, 1, 1),
+(163, 196, 1, 1),
+(164, 197, 1, 1),
+(165, 198, 1, 1),
+(166, 199, 1, 1),
+(167, 200, 1, 1),
+(168, 201, 1, 1),
+(169, 203, 1, NULL),
+(169, 202, 1, 1),
+(170, 204, 1, 1),
+(171, 205, 1, 1),
+(172, 207, 1, NULL),
+(172, 206, 1, 1),
+(173, 208, 1, 1),
+(174, 210, 1, NULL),
+(174, 209, 1, 1),
+(175, 212, 1, NULL),
+(175, 213, 1, NULL),
+(175, 211, 1, 1),
+(176, 215, 1, NULL),
+(176, 214, 1, 1),
+(177, 217, 1, NULL),
+(177, 216, 1, 1),
+(178, 219, 1, NULL),
+(178, 218, 1, 1),
+(179, 221, 1, NULL),
+(179, 220, 1, 1),
+(180, 223, 1, NULL),
+(180, 222, 1, 1),
+(181, 225, 1, NULL),
+(181, 224, 1, 1),
+(182, 227, 1, NULL),
+(182, 226, 1, 1),
+(183, 229, 1, NULL),
+(183, 228, 1, 1),
+(184, 231, 1, NULL),
+(184, 230, 1, 1),
+(185, 233, 1, NULL),
+(185, 234, 1, NULL),
+(185, 232, 1, 1),
+(186, 236, 1, NULL),
+(186, 237, 1, NULL),
+(186, 235, 1, 1),
+(187, 239, 1, NULL),
+(187, 238, 1, 1),
+(188, 241, 1, NULL),
+(188, 242, 1, NULL),
+(188, 240, 1, 1),
+(189, 244, 1, NULL),
+(189, 243, 1, 1),
+(190, 246, 1, NULL),
+(190, 245, 1, 1),
+(191, 248, 1, NULL),
+(191, 249, 1, NULL),
+(191, 247, 1, 1),
+(192, 251, 1, NULL),
+(192, 252, 1, NULL),
+(192, 250, 1, 1),
+(193, 254, 1, NULL),
+(193, 255, 1, NULL),
+(193, 253, 1, 1),
+(194, 257, 1, NULL),
+(194, 258, 1, NULL),
+(194, 256, 1, 1),
+(195, 260, 1, NULL),
+(195, 261, 1, NULL),
+(195, 259, 1, 1),
+(196, 263, 1, NULL),
+(196, 264, 1, NULL),
+(196, 262, 1, 1),
+(197, 266, 1, NULL),
+(197, 267, 1, NULL),
+(197, 265, 1, 1),
+(198, 269, 1, NULL),
+(198, 268, 1, 1),
+(199, 271, 1, NULL),
+(199, 272, 1, NULL),
+(199, 270, 1, 1),
+(200, 273, 1, 1),
+(201, 275, 1, NULL),
+(201, 274, 1, 1),
+(202, 277, 1, NULL),
+(202, 278, 1, NULL),
+(202, 276, 1, 1),
+(203, 280, 1, NULL),
+(203, 279, 1, 1),
+(204, 282, 1, NULL),
+(204, 281, 1, 1),
+(205, 284, 1, NULL),
+(205, 285, 1, NULL),
+(205, 283, 1, 1),
+(206, 287, 1, NULL),
+(206, 286, 1, 1),
+(207, 289, 1, NULL),
+(207, 288, 1, 1),
+(208, 291, 1, NULL),
+(208, 290, 1, 1),
+(209, 293, 1, NULL),
+(209, 294, 1, NULL),
+(209, 292, 1, 1),
+(210, 296, 1, NULL),
+(210, 297, 1, NULL),
+(210, 295, 1, 1),
+(211, 299, 1, NULL),
+(211, 300, 1, NULL),
+(211, 298, 1, 1),
+(212, 302, 1, NULL),
+(212, 301, 1, 1),
+(213, 304, 1, NULL),
+(213, 303, 1, 1),
+(214, 306, 1, NULL),
+(214, 305, 1, 1),
+(215, 308, 1, NULL),
+(215, 307, 1, 1),
+(216, 310, 1, NULL),
+(216, 309, 1, 1),
+(217, 312, 1, NULL),
+(217, 311, 1, 1),
+(218, 314, 1, NULL),
+(218, 313, 1, 1),
+(219, 316, 1, NULL),
+(219, 315, 1, 1),
+(220, 318, 1, NULL),
+(220, 317, 1, 1),
+(221, 320, 1, NULL),
+(221, 319, 1, 1),
+(222, 322, 1, NULL),
+(222, 321, 1, 1),
+(223, 324, 1, NULL),
+(223, 323, 1, 1),
+(224, 326, 1, NULL),
+(224, 325, 1, 1),
+(225, 328, 1, NULL),
+(225, 329, 1, NULL),
+(225, 330, 1, NULL),
+(225, 327, 1, 1),
+(226, 332, 1, NULL),
+(226, 333, 1, NULL),
+(226, 334, 1, NULL),
+(226, 331, 1, 1),
+(227, 336, 1, NULL),
+(227, 337, 1, NULL),
+(227, 338, 1, NULL),
+(227, 335, 1, 1),
+(228, 340, 1, NULL),
+(228, 339, 1, 1),
+(229, 342, 1, NULL),
+(229, 341, 1, 1),
+(230, 344, 1, NULL),
+(230, 345, 1, NULL),
+(230, 343, 1, 1),
+(231, 347, 1, NULL),
+(231, 346, 1, 1),
+(232, 349, 1, NULL),
+(232, 348, 1, 1),
+(233, 351, 1, NULL),
+(233, 350, 1, 1),
+(234, 353, 1, NULL),
+(234, 354, 1, NULL),
+(234, 352, 1, 1),
+(235, 356, 1, NULL),
+(235, 355, 1, 1),
+(236, 358, 1, NULL),
+(236, 357, 1, 1),
+(237, 360, 1, NULL),
+(237, 359, 1, 1),
+(238, 362, 1, NULL),
+(238, 361, 1, 1),
+(239, 364, 1, NULL),
+(239, 363, 1, 1),
+(240, 366, 1, NULL),
+(240, 365, 1, 1),
+(241, 368, 1, NULL),
+(241, 367, 1, 1),
+(242, 370, 1, NULL),
+(242, 369, 1, 1),
+(243, 372, 1, NULL),
+(243, 371, 1, 1),
+(244, 374, 1, NULL),
+(244, 373, 1, 1),
+(245, 376, 1, NULL),
+(245, 375, 1, 1),
+(246, 378, 1, NULL),
+(246, 377, 1, 1),
+(247, 380, 1, NULL),
+(247, 381, 1, NULL),
+(247, 382, 1, NULL),
+(247, 383, 1, NULL),
+(247, 384, 1, NULL),
+(247, 379, 1, 1),
+(248, 386, 1, NULL),
+(248, 387, 1, NULL),
+(248, 388, 1, NULL),
+(248, 389, 1, NULL),
+(248, 390, 1, NULL),
+(248, 385, 1, 1),
+(249, 392, 1, NULL),
+(249, 393, 1, NULL),
+(249, 394, 1, NULL),
+(249, 395, 1, NULL),
+(249, 396, 1, NULL),
+(249, 391, 1, 1),
+(250, 398, 1, NULL),
+(250, 399, 1, NULL),
+(250, 400, 1, NULL),
+(250, 401, 1, NULL),
+(250, 402, 1, NULL),
+(250, 403, 1, NULL),
+(250, 397, 1, 1),
+(251, 405, 1, NULL),
+(251, 406, 1, NULL),
+(251, 407, 1, NULL),
+(251, 408, 1, NULL),
+(251, 409, 1, NULL),
+(251, 404, 1, 1),
+(252, 411, 1, NULL),
+(252, 412, 1, NULL),
+(252, 413, 1, NULL),
+(252, 414, 1, NULL),
+(252, 415, 1, NULL),
+(252, 410, 1, 1),
+(253, 417, 1, NULL),
+(253, 418, 1, NULL),
+(253, 419, 1, NULL),
+(253, 420, 1, NULL),
+(253, 421, 1, NULL),
+(253, 416, 1, 1),
+(254, 422, 1, 1),
+(255, 423, 1, 1),
+(256, 424, 1, 1),
+(257, 425, 1, 1),
+(258, 427, 1, NULL),
+(258, 428, 1, NULL),
+(258, 426, 1, 1),
+(259, 430, 1, NULL),
+(259, 431, 1, NULL),
+(259, 429, 1, 1),
+(260, 433, 1, NULL),
+(260, 434, 1, NULL),
+(260, 432, 1, 1),
+(261, 436, 1, NULL),
+(261, 437, 1, NULL),
+(261, 435, 1, 1),
+(262, 439, 1, NULL),
+(262, 440, 1, NULL),
+(262, 438, 1, 1),
+(263, 441, 1, 1),
+(264, 442, 1, 1),
+(265, 443, 1, 1),
+(266, 444, 1, 1),
+(267, 445, 1, 1),
+(268, 446, 1, 1),
+(269, 447, 1, 1),
+(270, 449, 1, NULL),
+(270, 448, 1, 1),
+(271, 451, 1, NULL),
+(271, 452, 1, NULL),
+(271, 450, 1, 1),
+(272, 454, 1, NULL),
+(272, 453, 1, 1),
+(273, 456, 1, NULL),
+(273, 455, 1, 1),
+(274, 457, 1, 1),
+(275, 458, 1, 1),
+(276, 460, 1, NULL),
+(276, 459, 1, 1),
+(277, 462, 1, NULL),
+(277, 461, 1, 1),
+(278, 463, 1, 1),
+(279, 464, 1, 1),
+(280, 465, 1, 1),
+(281, 466, 1, 1),
+(282, 468, 1, NULL),
+(282, 467, 1, 1),
+(283, 470, 1, NULL),
+(283, 469, 1, 1),
+(284, 472, 1, NULL),
+(284, 471, 1, 1),
+(285, 473, 1, 1),
+(286, 475, 1, NULL),
+(286, 474, 1, 1),
+(287, 477, 1, NULL),
+(287, 476, 1, 1),
+(288, 479, 1, NULL),
+(288, 478, 1, 1),
+(289, 480, 1, 1),
+(290, 482, 1, NULL),
+(290, 481, 1, 1),
+(291, 484, 1, NULL),
+(291, 483, 1, 1),
+(292, 485, 1, 1),
+(293, 487, 1, NULL),
+(293, 486, 1, 1),
+(294, 488, 1, 1),
+(295, 490, 1, NULL),
+(295, 489, 1, 1),
+(296, 492, 1, NULL),
+(296, 491, 1, 1),
+(297, 493, 1, 1),
+(298, 494, 1, 1),
+(299, 496, 1, NULL),
+(299, 495, 1, 1),
+(300, 498, 1, NULL),
+(300, 497, 1, 1),
+(301, 500, 1, NULL),
+(301, 499, 1, 1),
+(302, 502, 1, NULL),
+(302, 501, 1, 1),
+(303, 504, 1, NULL),
+(303, 503, 1, 1),
+(304, 506, 1, NULL),
+(304, 505, 1, 1),
+(305, 508, 1, NULL),
+(305, 507, 1, 1),
+(306, 510, 1, NULL),
+(306, 509, 1, 1),
+(307, 511, 1, 1),
+(308, 513, 1, NULL),
+(308, 512, 1, 1),
+(309, 515, 1, NULL),
+(309, 514, 1, 1),
+(310, 517, 1, NULL),
+(310, 516, 1, 1),
+(311, 519, 1, NULL),
+(311, 518, 1, 1),
+(312, 520, 1, 1),
+(313, 522, 1, NULL),
+(313, 521, 1, 1),
+(314, 523, 1, 1),
+(315, 525, 1, NULL),
+(315, 524, 1, 1),
+(316, 526, 1, 1),
+(317, 528, 1, NULL),
+(317, 527, 1, 1),
+(318, 530, 1, NULL),
+(318, 529, 1, 1),
+(319, 532, 1, NULL),
+(319, 531, 1, 1),
+(320, 533, 1, 1),
+(321, 534, 1, 1),
+(322, 535, 1, 1),
+(323, 536, 1, 1),
+(324, 537, 1, 1),
+(325, 538, 1, 1),
+(326, 539, 1, 1),
+(327, 541, 1, NULL),
+(327, 540, 1, 1),
+(328, 542, 1, 1),
+(329, 543, 1, 1),
+(330, 545, 1, NULL),
+(330, 544, 1, 1),
+(331, 547, 1, NULL),
+(331, 546, 1, 1),
+(332, 549, 1, NULL),
+(332, 548, 1, 1),
+(333, 550, 1, 1),
+(334, 552, 1, NULL),
+(334, 551, 1, 1),
+(335, 553, 1, 1),
+(336, 554, 1, 1),
+(337, 555, 1, 1),
+(338, 557, 1, NULL),
+(338, 556, 1, 1),
+(339, 559, 1, NULL),
+(339, 558, 1, 1),
+(340, 561, 1, NULL),
+(340, 562, 1, NULL),
+(340, 560, 1, 1),
+(341, 564, 1, NULL),
+(341, 565, 1, NULL),
+(341, 563, 1, 1),
+(342, 566, 1, 1),
+(343, 567, 1, 1),
+(344, 568, 1, 1),
+(345, 569, 1, 1),
+(346, 570, 1, 1),
+(347, 572, 1, NULL),
+(347, 573, 1, NULL),
+(347, 571, 1, 1),
+(348, 574, 1, 1),
+(349, 575, 1, 1),
+(350, 576, 1, 1),
+(351, 577, 1, 1),
+(352, 578, 1, 1),
+(353, 579, 1, 1),
+(354, 581, 1, NULL),
+(354, 580, 1, 1),
+(355, 583, 1, NULL),
+(355, 582, 1, 1),
+(356, 585, 1, NULL),
+(356, 584, 1, 1),
+(357, 587, 1, NULL),
+(357, 586, 1, 1),
+(358, 589, 1, NULL),
+(358, 588, 1, 1),
+(359, 591, 1, NULL),
+(359, 590, 1, 1),
+(360, 593, 1, NULL),
+(360, 592, 1, 1),
+(361, 595, 1, NULL),
+(361, 594, 1, 1),
+(362, 597, 1, NULL),
+(362, 596, 1, 1),
+(363, 599, 1, NULL),
+(363, 598, 1, 1),
+(364, 601, 1, NULL),
+(364, 600, 1, 1),
+(365, 603, 1, NULL),
+(365, 602, 1, 1),
+(366, 605, 1, NULL),
+(366, 604, 1, 1),
+(367, 607, 1, NULL),
+(367, 606, 1, 1),
+(368, 609, 1, NULL),
+(368, 608, 1, 1),
+(369, 611, 1, NULL),
+(369, 610, 1, 1),
+(370, 613, 1, NULL),
+(370, 614, 1, NULL),
+(370, 615, 1, NULL),
+(370, 612, 1, 1),
+(371, 617, 1, NULL),
+(371, 618, 1, NULL),
+(371, 619, 1, NULL),
+(371, 616, 1, 1),
+(372, 621, 1, NULL),
+(372, 620, 1, 1),
+(373, 623, 1, NULL),
+(373, 622, 1, 1),
+(374, 625, 1, NULL),
+(374, 624, 1, 1),
+(375, 627, 1, NULL),
+(375, 626, 1, 1),
+(376, 628, 1, 1),
+(377, 629, 1, 1),
+(378, 630, 1, 1),
+(379, 631, 1, 1),
+(380, 632, 1, 1),
+(381, 634, 1, NULL),
+(381, 633, 1, 1),
+(382, 635, 1, 1),
+(383, 636, 1, 1),
+(384, 638, 1, NULL),
+(384, 637, 1, 1),
+(385, 639, 1, 1),
+(386, 640, 1, 1),
+(387, 641, 1, 1),
+(388, 642, 1, 1),
+(389, 643, 1, 1),
+(390, 644, 1, 1),
+(391, 645, 1, 1),
+(392, 646, 1, 1),
+(393, 647, 1, 1),
+(394, 648, 1, 1),
+(395, 649, 1, 1),
+(396, 650, 1, 1),
+(397, 651, 1, 1),
+(398, 652, 1, 1),
+(399, 653, 1, 1),
+(400, 654, 1, 1),
+(401, 655, 1, 1),
+(402, 657, 1, NULL),
+(402, 656, 1, 1),
+(403, 659, 1, NULL),
+(403, 658, 1, 1),
+(404, 660, 1, 1),
+(405, 662, 1, NULL),
+(405, 661, 1, 1),
+(406, 663, 1, 1),
+(407, 664, 1, 1),
+(408, 665, 1, 1),
+(409, 667, 1, NULL),
+(409, 668, 1, NULL),
+(409, 666, 1, 1),
+(410, 670, 1, NULL),
+(410, 669, 1, 1),
+(411, 671, 1, 1),
+(412, 672, 1, 1),
+(413, 673, 1, 1),
+(414, 674, 1, 1),
+(415, 675, 1, 1),
+(416, 676, 1, 1),
+(417, 677, 1, 1),
+(418, 679, 1, NULL),
+(418, 678, 1, 1),
+(419, 681, 1, NULL),
+(419, 680, 1, 1),
+(420, 683, 1, NULL),
+(420, 684, 1, NULL),
+(420, 682, 1, 1),
+(421, 686, 1, NULL),
+(421, 685, 1, 1),
+(422, 687, 1, 1),
+(423, 688, 1, 1),
+(424, 689, 1, 1),
+(425, 690, 1, 1),
+(426, 691, 1, 1),
+(427, 692, 1, 1),
+(428, 693, 1, 1),
+(429, 694, 1, 1),
+(430, 695, 1, 1),
+(431, 696, 1, 1),
+(432, 698, 1, NULL),
+(432, 699, 1, NULL),
+(432, 700, 1, NULL),
+(432, 701, 1, NULL),
+(432, 697, 1, 1),
+(433, 702, 1, 1),
+(434, 703, 1, 1),
+(435, 704, 1, 1),
+(436, 705, 1, 1),
+(437, 706, 1, 1),
+(438, 707, 1, 1),
+(439, 708, 1, 1),
+(440, 709, 1, 1),
+(441, 710, 1, 1),
+(442, 711, 1, 1),
+(443, 712, 1, 1),
+(444, 713, 1, 1),
+(445, 715, 1, NULL),
+(445, 716, 1, NULL),
+(445, 714, 1, 1),
+(446, 717, 1, 1),
+(447, 718, 1, 1),
+(448, 719, 1, 1),
+(449, 720, 1, 1),
+(450, 721, 1, 1),
+(451, 722, 1, 1),
+(452, 723, 1, 1),
+(453, 724, 1, 1),
+(454, 725, 1, 1),
+(455, 726, 1, 1),
+(456, 727, 1, 1),
+(457, 728, 1, 1),
+(458, 729, 1, 1),
+(459, 730, 1, 1),
+(460, 731, 1, 1),
+(461, 733, 1, NULL),
+(461, 734, 1, NULL),
+(461, 732, 1, 1),
+(462, 736, 1, NULL),
+(462, 737, 1, NULL),
+(462, 735, 1, 1),
+(463, 739, 1, NULL),
+(463, 740, 1, NULL),
+(463, 738, 1, 1),
+(464, 742, 1, NULL),
+(464, 743, 1, NULL),
+(464, 741, 1, 1),
+(465, 745, 1, NULL),
+(465, 746, 1, NULL),
+(465, 744, 1, 1),
+(466, 748, 1, NULL),
+(466, 749, 1, NULL),
+(466, 747, 1, 1),
+(467, 751, 1, NULL),
+(467, 752, 1, NULL),
+(467, 750, 1, 1),
+(468, 754, 1, NULL),
+(468, 755, 1, NULL),
+(468, 753, 1, 1),
+(469, 757, 1, NULL),
+(469, 758, 1, NULL),
+(469, 756, 1, 1),
+(470, 760, 1, NULL),
+(470, 761, 1, NULL),
+(470, 759, 1, 1),
+(471, 763, 1, NULL),
+(471, 764, 1, NULL),
+(471, 762, 1, 1),
+(472, 766, 1, NULL),
+(472, 765, 1, 1),
+(473, 767, 1, 1),
+(474, 768, 1, 1),
+(475, 769, 1, 1),
+(476, 770, 1, 1),
+(477, 772, 1, NULL),
+(477, 771, 1, 1),
+(478, 774, 1, NULL),
+(478, 773, 1, 1),
+(479, 776, 1, NULL),
+(479, 775, 1, 1),
+(480, 778, 1, NULL),
+(480, 777, 1, 1),
+(481, 780, 1, NULL),
+(481, 779, 1, 1),
+(482, 782, 1, NULL),
+(482, 781, 1, 1),
+(483, 784, 1, NULL),
+(483, 783, 1, 1),
+(484, 786, 1, NULL),
+(484, 785, 1, 1),
+(485, 788, 1, NULL),
+(485, 787, 1, 1),
+(486, 790, 1, NULL),
+(486, 789, 1, 1),
+(487, 792, 1, NULL),
+(487, 793, 1, NULL),
+(487, 791, 1, 1),
+(488, 795, 1, NULL),
+(488, 796, 1, NULL),
+(488, 794, 1, 1),
+(489, 798, 1, NULL),
+(489, 797, 1, 1),
+(490, 799, 1, 1),
+(491, 800, 1, 1),
+(492, 801, 1, 1),
+(493, 802, 1, 1),
+(494, 803, 1, 1),
+(495, 804, 1, 1),
+(496, 805, 1, 1),
+(497, 806, 1, 1),
+(498, 808, 1, NULL),
+(498, 807, 1, 1),
+(499, 810, 1, NULL),
+(499, 809, 1, 1),
+(500, 811, 1, 1),
+(501, 813, 1, NULL),
+(501, 812, 1, 1),
+(502, 815, 1, NULL),
+(502, 814, 1, 1),
+(503, 817, 1, NULL),
+(503, 818, 1, NULL),
+(503, 816, 1, 1),
+(504, 820, 1, NULL),
+(504, 819, 1, 1),
+(505, 822, 1, NULL),
+(505, 823, 1, NULL),
+(505, 821, 1, 1),
+(506, 824, 1, 1),
+(507, 825, 1, 1),
+(508, 827, 1, NULL),
+(508, 826, 1, 1),
+(509, 829, 1, NULL),
+(509, 828, 1, 1),
+(510, 831, 1, NULL),
+(510, 830, 1, 1),
+(511, 833, 1, NULL),
+(511, 832, 1, 1),
+(512, 835, 1, NULL),
+(512, 834, 1, 1),
+(513, 837, 1, NULL),
+(513, 836, 1, 1),
+(514, 839, 1, NULL),
+(514, 838, 1, 1),
+(515, 841, 1, NULL),
+(515, 840, 1, 1),
+(516, 842, 1, 1),
+(517, 843, 1, 1),
+(518, 844, 1, 1),
+(519, 846, 1, NULL),
+(519, 845, 1, 1),
+(520, 848, 1, NULL),
+(520, 847, 1, 1),
+(521, 850, 1, NULL),
+(521, 849, 1, 1),
+(522, 852, 1, NULL),
+(522, 851, 1, 1),
+(523, 854, 1, NULL),
+(523, 853, 1, 1),
+(524, 856, 1, NULL),
+(524, 855, 1, 1),
+(525, 858, 1, NULL),
+(525, 857, 1, 1),
+(526, 860, 1, NULL),
+(526, 859, 1, 1),
+(527, 862, 1, NULL),
+(527, 861, 1, 1),
+(528, 864, 1, NULL),
+(528, 863, 1, 1),
+(529, 866, 1, NULL),
+(529, 865, 1, 1),
+(530, 868, 1, NULL),
+(530, 867, 1, 1),
+(531, 870, 1, NULL),
+(531, 871, 1, NULL),
+(531, 869, 1, 1),
+(532, 873, 1, NULL),
+(532, 872, 1, 1),
+(533, 875, 1, NULL),
+(533, 874, 1, 1),
+(534, 877, 1, NULL),
+(534, 876, 1, 1),
+(535, 879, 1, NULL),
+(535, 878, 1, 1),
+(536, 881, 1, NULL),
+(536, 880, 1, 1),
+(537, 883, 1, NULL),
+(537, 882, 1, 1),
+(538, 885, 1, NULL),
+(538, 884, 1, 1),
+(539, 887, 1, NULL),
+(539, 886, 1, 1),
+(540, 889, 1, NULL),
+(540, 888, 1, 1),
+(541, 891, 1, NULL),
+(541, 890, 1, 1),
+(542, 893, 1, NULL),
+(542, 892, 1, 1),
+(543, 894, 1, 1),
+(544, 896, 1, NULL),
+(544, 897, 1, NULL),
+(544, 895, 1, 1),
+(545, 899, 1, NULL),
+(545, 898, 1, 1),
+(546, 901, 1, NULL),
+(546, 900, 1, 1),
+(547, 903, 1, NULL),
+(547, 902, 1, 1),
+(548, 905, 1, NULL),
+(548, 906, 1, NULL),
+(548, 904, 1, 1),
+(549, 908, 1, NULL),
+(549, 909, 1, NULL),
+(549, 910, 1, NULL),
+(549, 911, 1, NULL),
+(549, 912, 1, NULL),
+(549, 907, 1, 1),
+(550, 914, 1, NULL),
+(550, 915, 1, NULL),
+(550, 916, 1, NULL),
+(550, 917, 1, NULL),
+(550, 918, 1, NULL),
+(550, 919, 1, NULL),
+(550, 913, 1, 1),
+(551, 921, 1, NULL),
+(551, 922, 1, NULL),
+(551, 923, 1, NULL),
+(551, 924, 1, NULL),
+(551, 925, 1, NULL),
+(551, 926, 1, NULL),
+(551, 927, 1, NULL),
+(551, 920, 1, 1),
+(552, 929, 1, NULL),
+(552, 930, 1, NULL),
+(552, 931, 1, NULL),
+(552, 932, 1, NULL),
+(552, 933, 1, NULL),
+(552, 934, 1, NULL),
+(552, 935, 1, NULL),
+(552, 928, 1, 1),
+(553, 937, 1, NULL),
+(553, 938, 1, NULL),
+(553, 939, 1, NULL),
+(553, 936, 1, 1),
+(554, 941, 1, NULL),
+(554, 942, 1, NULL),
+(554, 943, 1, NULL),
+(554, 944, 1, NULL),
+(554, 945, 1, NULL),
+(554, 940, 1, 1),
+(555, 947, 1, NULL),
+(555, 948, 1, NULL),
+(555, 949, 1, NULL),
+(555, 950, 1, NULL),
+(555, 951, 1, NULL),
+(555, 946, 1, 1),
+(556, 953, 1, NULL),
+(556, 952, 1, 1),
+(557, 955, 1, NULL),
+(557, 954, 1, 1),
+(558, 957, 1, NULL),
+(558, 956, 1, 1),
+(559, 959, 1, NULL),
+(559, 960, 1, NULL),
+(559, 961, 1, NULL),
+(559, 958, 1, 1),
+(560, 963, 1, NULL),
+(560, 964, 1, NULL),
+(560, 965, 1, NULL),
+(560, 962, 1, 1),
+(561, 967, 1, NULL),
+(561, 968, 1, NULL),
+(561, 969, 1, NULL),
+(561, 966, 1, 1),
+(562, 971, 1, NULL),
+(562, 972, 1, NULL),
+(562, 973, 1, NULL),
+(562, 970, 1, 1),
+(563, 975, 1, NULL),
+(563, 976, 1, NULL),
+(563, 977, 1, NULL),
+(563, 974, 1, 1),
+(564, 979, 1, NULL),
+(564, 980, 1, NULL),
+(564, 981, 1, NULL),
+(564, 982, 1, NULL),
+(564, 978, 1, 1),
+(565, 984, 1, NULL),
+(565, 985, 1, NULL),
+(565, 986, 1, NULL),
+(565, 983, 1, 1),
+(566, 988, 1, NULL),
+(566, 989, 1, NULL),
+(566, 990, 1, NULL),
+(566, 991, 1, NULL),
+(566, 992, 1, NULL),
+(566, 987, 1, 1),
+(567, 994, 1, NULL),
+(567, 995, 1, NULL),
+(567, 996, 1, NULL),
+(567, 993, 1, 1),
+(568, 998, 1, NULL),
+(568, 999, 1, NULL),
+(568, 1000, 1, NULL),
+(568, 997, 1, 1),
+(569, 1002, 1, NULL),
+(569, 1003, 1, NULL),
+(569, 1004, 1, NULL),
+(569, 1005, 1, NULL),
+(569, 1006, 1, NULL),
+(569, 1007, 1, NULL),
+(569, 1001, 1, 1),
+(570, 1009, 1, NULL),
+(570, 1010, 1, NULL),
+(570, 1011, 1, NULL),
+(570, 1012, 1, NULL),
+(570, 1013, 1, NULL),
+(570, 1014, 1, NULL),
+(570, 1015, 1, NULL),
+(570, 1016, 1, NULL),
+(570, 1017, 1, NULL),
+(570, 1018, 1, NULL),
+(570, 1019, 1, NULL),
+(570, 1008, 1, 1),
+(571, 1021, 1, NULL),
+(571, 1022, 1, NULL),
+(571, 1023, 1, NULL),
+(571, 1024, 1, NULL),
+(571, 1025, 1, NULL),
+(571, 1026, 1, NULL),
+(571, 1020, 1, 1),
+(572, 1028, 1, NULL),
+(572, 1029, 1, NULL),
+(572, 1030, 1, NULL),
+(572, 1027, 1, 1),
+(573, 1032, 1, NULL),
+(573, 1033, 1, NULL),
+(573, 1034, 1, NULL),
+(573, 1031, 1, 1),
+(574, 1036, 1, NULL),
+(574, 1037, 1, NULL),
+(574, 1038, 1, NULL),
+(574, 1039, 1, NULL),
+(574, 1035, 1, 1),
+(575, 1041, 1, NULL),
+(575, 1042, 1, NULL),
+(575, 1043, 1, NULL),
+(575, 1044, 1, NULL),
+(575, 1045, 1, NULL),
+(575, 1040, 1, 1),
+(576, 1047, 1, NULL),
+(576, 1046, 1, 1),
+(577, 1049, 1, NULL),
+(577, 1050, 1, NULL),
+(577, 1051, 1, NULL),
+(577, 1052, 1, NULL),
+(577, 1048, 1, 1),
+(578, 1054, 1, NULL),
+(578, 1055, 1, NULL),
+(578, 1053, 1, 1),
+(579, 1057, 1, NULL),
+(579, 1058, 1, NULL),
+(579, 1059, 1, NULL),
+(579, 1060, 1, NULL),
+(579, 1061, 1, NULL),
+(579, 1062, 1, NULL),
+(579, 1063, 1, NULL),
+(579, 1064, 1, NULL),
+(579, 1065, 1, NULL),
+(579, 1066, 1, NULL),
+(579, 1067, 1, NULL),
+(579, 1068, 1, NULL),
+(579, 1069, 1, NULL),
+(579, 1070, 1, NULL),
+(579, 1071, 1, NULL),
+(579, 1072, 1, NULL),
+(579, 1056, 1, 1),
+(580, 1074, 1, NULL),
+(580, 1075, 1, NULL),
+(580, 1076, 1, NULL),
+(580, 1077, 1, NULL),
+(580, 1073, 1, 1),
+(581, 1078, 1, 1),
+(582, 1080, 1, NULL),
+(582, 1081, 1, NULL),
+(582, 1082, 1, NULL),
+(582, 1083, 1, NULL),
+(582, 1079, 1, 1),
+(583, 1085, 1, NULL),
+(583, 1086, 1, NULL),
+(583, 1087, 1, NULL),
+(583, 1088, 1, NULL),
+(583, 1084, 1, 1),
+(584, 1090, 1, NULL),
+(584, 1091, 1, NULL),
+(584, 1092, 1, NULL),
+(584, 1089, 1, 1),
+(585, 1094, 1, NULL),
+(585, 1095, 1, NULL),
+(585, 1096, 1, NULL),
+(585, 1093, 1, 1),
+(586, 1098, 1, NULL),
+(586, 1099, 1, NULL),
+(586, 1100, 1, NULL),
+(586, 1097, 1, 1),
+(587, 1102, 1, NULL),
+(587, 1103, 1, NULL),
+(587, 1104, 1, NULL),
+(587, 1105, 1, NULL),
+(587, 1101, 1, 1),
+(588, 1107, 1, NULL),
+(588, 1108, 1, NULL),
+(588, 1109, 1, NULL),
+(588, 1110, 1, NULL),
+(588, 1106, 1, 1),
+(589, 1112, 1, NULL),
+(589, 1113, 1, NULL),
+(589, 1114, 1, NULL),
+(589, 1115, 1, NULL),
+(589, 1116, 1, NULL),
+(589, 1111, 1, 1),
+(590, 1118, 1, NULL),
+(590, 1119, 1, NULL),
+(590, 1120, 1, NULL),
+(590, 1121, 1, NULL),
+(590, 1122, 1, NULL),
+(590, 1117, 1, 1),
+(591, 1124, 1, NULL),
+(591, 1125, 1, NULL),
+(591, 1126, 1, NULL),
+(591, 1127, 1, NULL),
+(591, 1123, 1, 1),
+(592, 1128, 1, 1),
+(593, 1130, 1, NULL),
+(593, 1129, 1, 1),
+(594, 1132, 1, NULL),
+(594, 1131, 1, 1),
+(595, 1134, 1, NULL),
+(595, 1135, 1, NULL),
+(595, 1136, 1, NULL),
+(595, 1133, 1, 1),
+(596, 1138, 1, NULL),
+(596, 1139, 1, NULL),
+(596, 1140, 1, NULL),
+(596, 1141, 1, NULL),
+(596, 1137, 1, 1),
+(597, 1143, 1, NULL),
+(597, 1144, 1, NULL),
+(597, 1142, 1, 1),
+(598, 1146, 1, NULL),
+(598, 1147, 1, NULL),
+(598, 1148, 1, NULL),
+(598, 1149, 1, NULL),
+(598, 1145, 1, 1),
+(599, 1151, 1, NULL),
+(599, 1152, 1, NULL),
+(599, 1153, 1, NULL),
+(599, 1154, 1, NULL),
+(599, 1150, 1, 1),
+(600, 1156, 1, NULL),
+(600, 1157, 1, NULL),
+(600, 1158, 1, NULL),
+(600, 1159, 1, NULL),
+(600, 1155, 1, 1),
+(601, 1161, 1, NULL),
+(601, 1162, 1, NULL),
+(601, 1160, 1, 1),
+(602, 1164, 1, NULL),
+(602, 1165, 1, NULL),
+(602, 1166, 1, NULL),
+(602, 1167, 1, NULL),
+(602, 1168, 1, NULL),
+(602, 1163, 1, 1),
+(603, 1170, 1, NULL),
+(603, 1171, 1, NULL),
+(603, 1172, 1, NULL),
+(603, 1173, 1, NULL),
+(603, 1174, 1, NULL),
+(603, 1175, 1, NULL),
+(603, 1169, 1, 1),
+(604, 1177, 1, NULL),
+(604, 1176, 1, 1),
+(605, 1179, 1, NULL),
+(605, 1178, 1, 1),
+(606, 1181, 1, NULL),
+(606, 1182, 1, NULL),
+(606, 1180, 1, 1),
+(607, 1184, 1, NULL),
+(607, 1185, 1, NULL),
+(607, 1183, 1, 1),
+(608, 1187, 1, NULL),
+(608, 1186, 1, 1),
+(609, 1189, 1, NULL),
+(609, 1190, 1, NULL),
+(609, 1188, 1, 1),
+(610, 1192, 1, NULL),
+(610, 1193, 1, NULL),
+(610, 1191, 1, 1),
+(611, 1195, 1, NULL),
+(611, 1196, 1, NULL),
+(611, 1194, 1, 1),
+(612, 1197, 1, 1),
+(613, 1199, 1, NULL),
+(613, 1198, 1, 1),
+(614, 1201, 1, NULL),
+(614, 1202, 1, NULL),
+(614, 1203, 1, NULL),
+(614, 1204, 1, NULL),
+(614, 1205, 1, NULL),
+(614, 1206, 1, NULL),
+(614, 1207, 1, NULL),
+(614, 1208, 1, NULL),
+(614, 1200, 1, 1),
+(615, 1210, 1, NULL),
+(615, 1211, 1, NULL),
+(615, 1212, 1, NULL),
+(615, 1213, 1, NULL),
+(615, 1209, 1, 1),
+(616, 1215, 1, NULL),
+(616, 1214, 1, 1),
+(617, 1217, 1, NULL),
+(617, 1216, 1, 1),
+(618, 1219, 1, NULL),
+(618, 1218, 1, 1),
+(619, 1221, 1, NULL),
+(619, 1220, 1, 1),
+(620, 1223, 1, NULL),
+(620, 1222, 1, 1),
+(621, 1224, 1, 1),
+(622, 1225, 1, 1),
+(623, 1226, 1, 1),
+(624, 1227, 1, 1),
+(625, 1229, 1, NULL),
+(625, 1228, 1, 1),
+(626, 1231, 1, NULL),
+(626, 1230, 1, 1),
+(627, 1233, 1, NULL),
+(627, 1232, 1, 1),
+(628, 1235, 1, NULL),
+(628, 1234, 1, 1),
+(629, 1236, 1, 1),
+(630, 1237, 1, 1),
+(631, 1239, 1, NULL),
+(631, 1238, 1, 1),
+(632, 1241, 1, NULL),
+(632, 1240, 1, 1),
+(633, 1242, 1, 1),
+(634, 1244, 1, NULL),
+(634, 1243, 1, 1),
+(635, 1246, 1, NULL),
+(635, 1245, 1, 1),
+(636, 1248, 1, NULL),
+(636, 1247, 1, 1),
+(637, 1250, 1, NULL),
+(637, 1249, 1, 1),
+(638, 1251, 1, 1),
+(639, 1252, 1, 1),
+(640, 1253, 1, 1),
+(641, 1254, 1, 1),
+(642, 1255, 1, 1),
+(643, 1256, 1, 1),
+(644, 1257, 1, 1),
+(645, 1258, 1, 1),
+(646, 1259, 1, 1),
+(647, 1260, 1, 1),
+(648, 1261, 1, 1),
+(649, 1262, 1, 1),
+(650, 1263, 1, 1),
+(651, 1264, 1, 1),
+(652, 1265, 1, 1),
+(653, 1266, 1, 1),
+(654, 1267, 1, 1),
+(655, 1268, 1, 1),
+(656, 1269, 1, 1),
+(657, 1270, 1, 1),
+(658, 1271, 1, 1),
+(659, 1272, 1, 1),
+(660, 1273, 1, 1),
+(661, 1274, 1, 1),
+(662, 1275, 1, 1),
+(663, 1276, 1, 1),
+(664, 1277, 1, 1),
+(665, 1278, 1, 1),
+(666, 1279, 1, 1),
+(667, 1280, 1, 1),
+(668, 1281, 1, 1),
+(669, 1282, 1, 1),
+(670, 1283, 1, 1),
+(671, 1284, 1, 1),
+(672, 1285, 1, 1),
+(673, 1286, 1, 1),
+(674, 1287, 1, 1),
+(675, 1288, 1, 1),
+(676, 1289, 1, 1),
+(677, 1290, 1, 1),
+(678, 1291, 1, 1),
+(679, 1292, 1, 1),
+(680, 1293, 1, 1),
+(681, 1294, 1, 1),
+(682, 1295, 1, 1),
+(683, 1296, 1, 1),
+(684, 1298, 1, NULL),
+(684, 1297, 1, 1),
+(685, 1300, 1, NULL),
+(685, 1299, 1, 1),
+(686, 1302, 1, NULL),
+(686, 1301, 1, 1);
+
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_image_type`
+-- Структура таблицы `ps_image_type`
 --
 
 CREATE TABLE `ps_image_type` (
@@ -6108,7 +12877,7 @@ CREATE TABLE `ps_image_type` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_image_type`
+-- Дамп данных таблицы `ps_image_type`
 --
 
 INSERT INTO `ps_image_type` (`id_image_type`, `name`, `width`, `height`, `products`, `categories`, `manufacturers`, `suppliers`, `stores`) VALUES
@@ -6123,7 +12892,7 @@ INSERT INTO `ps_image_type` (`id_image_type`, `name`, `width`, `height`, `produc
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_import_match`
+-- Структура таблицы `ps_import_match`
 --
 
 CREATE TABLE `ps_import_match` (
@@ -6136,7 +12905,7 @@ CREATE TABLE `ps_import_match` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_info`
+-- Структура таблицы `ps_info`
 --
 
 CREATE TABLE `ps_info` (
@@ -6144,7 +12913,7 @@ CREATE TABLE `ps_info` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_info`
+-- Дамп данных таблицы `ps_info`
 --
 
 INSERT INTO `ps_info` (`id_info`) VALUES
@@ -6153,7 +12922,7 @@ INSERT INTO `ps_info` (`id_info`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_info_lang`
+-- Структура таблицы `ps_info_lang`
 --
 
 CREATE TABLE `ps_info_lang` (
@@ -6164,7 +12933,7 @@ CREATE TABLE `ps_info_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_info_lang`
+-- Дамп данных таблицы `ps_info_lang`
 --
 
 INSERT INTO `ps_info_lang` (`id_info`, `id_shop`, `id_lang`, `text`) VALUES
@@ -6173,7 +12942,7 @@ INSERT INTO `ps_info_lang` (`id_info`, `id_shop`, `id_lang`, `text`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_info_shop`
+-- Структура таблицы `ps_info_shop`
 --
 
 CREATE TABLE `ps_info_shop` (
@@ -6182,7 +12951,7 @@ CREATE TABLE `ps_info_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_info_shop`
+-- Дамп данных таблицы `ps_info_shop`
 --
 
 INSERT INTO `ps_info_shop` (`id_info`, `id_shop`) VALUES
@@ -6191,7 +12960,7 @@ INSERT INTO `ps_info_shop` (`id_info`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_lang`
+-- Структура таблицы `ps_lang`
 --
 
 CREATE TABLE `ps_lang` (
@@ -6207,7 +12976,7 @@ CREATE TABLE `ps_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `ps_lang`
+-- Дамп данных таблицы `ps_lang`
 --
 
 INSERT INTO `ps_lang` (`id_lang`, `name`, `active`, `iso_code`, `language_code`, `locale`, `date_format_lite`, `date_format_full`, `is_rtl`) VALUES
@@ -6216,7 +12985,7 @@ INSERT INTO `ps_lang` (`id_lang`, `name`, `active`, `iso_code`, `language_code`,
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_lang_shop`
+-- Структура таблицы `ps_lang_shop`
 --
 
 CREATE TABLE `ps_lang_shop` (
@@ -6225,7 +12994,7 @@ CREATE TABLE `ps_lang_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `ps_lang_shop`
+-- Дамп данных таблицы `ps_lang_shop`
 --
 
 INSERT INTO `ps_lang_shop` (`id_lang`, `id_shop`) VALUES
@@ -6234,7 +13003,7 @@ INSERT INTO `ps_lang_shop` (`id_lang`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_layered_category`
+-- Структура таблицы `ps_layered_category`
 --
 
 CREATE TABLE `ps_layered_category` (
@@ -6252,7 +13021,7 @@ CREATE TABLE `ps_layered_category` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_layered_filter`
+-- Структура таблицы `ps_layered_filter`
 --
 
 CREATE TABLE `ps_layered_filter` (
@@ -6266,7 +13035,7 @@ CREATE TABLE `ps_layered_filter` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_layered_filter_block`
+-- Структура таблицы `ps_layered_filter_block`
 --
 
 CREATE TABLE `ps_layered_filter_block` (
@@ -6277,7 +13046,7 @@ CREATE TABLE `ps_layered_filter_block` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_layered_filter_shop`
+-- Структура таблицы `ps_layered_filter_shop`
 --
 
 CREATE TABLE `ps_layered_filter_shop` (
@@ -6288,7 +13057,7 @@ CREATE TABLE `ps_layered_filter_shop` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_layered_indexable_attribute_group`
+-- Структура таблицы `ps_layered_indexable_attribute_group`
 --
 
 CREATE TABLE `ps_layered_indexable_attribute_group` (
@@ -6299,7 +13068,7 @@ CREATE TABLE `ps_layered_indexable_attribute_group` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_layered_indexable_attribute_group_lang_value`
+-- Структура таблицы `ps_layered_indexable_attribute_group_lang_value`
 --
 
 CREATE TABLE `ps_layered_indexable_attribute_group_lang_value` (
@@ -6312,7 +13081,7 @@ CREATE TABLE `ps_layered_indexable_attribute_group_lang_value` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_layered_indexable_attribute_lang_value`
+-- Структура таблицы `ps_layered_indexable_attribute_lang_value`
 --
 
 CREATE TABLE `ps_layered_indexable_attribute_lang_value` (
@@ -6325,7 +13094,7 @@ CREATE TABLE `ps_layered_indexable_attribute_lang_value` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_layered_indexable_feature`
+-- Структура таблицы `ps_layered_indexable_feature`
 --
 
 CREATE TABLE `ps_layered_indexable_feature` (
@@ -6336,7 +13105,7 @@ CREATE TABLE `ps_layered_indexable_feature` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_layered_indexable_feature_lang_value`
+-- Структура таблицы `ps_layered_indexable_feature_lang_value`
 --
 
 CREATE TABLE `ps_layered_indexable_feature_lang_value` (
@@ -6349,7 +13118,7 @@ CREATE TABLE `ps_layered_indexable_feature_lang_value` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_layered_indexable_feature_value_lang_value`
+-- Структура таблицы `ps_layered_indexable_feature_value_lang_value`
 --
 
 CREATE TABLE `ps_layered_indexable_feature_value_lang_value` (
@@ -6362,7 +13131,7 @@ CREATE TABLE `ps_layered_indexable_feature_value_lang_value` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_layered_price_index`
+-- Структура таблицы `ps_layered_price_index`
 --
 
 CREATE TABLE `ps_layered_price_index` (
@@ -6375,16 +13144,701 @@ CREATE TABLE `ps_layered_price_index` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_layered_price_index`
+-- Дамп данных таблицы `ps_layered_price_index`
 --
 
 INSERT INTO `ps_layered_price_index` (`id_product`, `id_currency`, `id_shop`, `price_min`, `price_max`, `id_country`) VALUES
-(1, 1, 1, 0.000000, 0.000000, 14);
+(1, 1, 1, 19.618500, 19.618500, 14),
+(2, 1, 1, 20.233500, 20.233500, 14),
+(3, 1, 1, 19.003500, 19.003500, 14),
+(4, 1, 1, 34.378500, 34.378500, 14),
+(5, 1, 1, 30.073500, 30.073500, 14),
+(6, 1, 1, 98.338500, 98.338500, 14),
+(7, 1, 1, 36.838500, 36.838500, 14),
+(8, 1, 1, 34.378500, 34.378500, 14),
+(9, 1, 1, 26.383500, 26.383500, 14),
+(10, 1, 1, 30.688500, 30.688500, 14),
+(11, 1, 1, 16.543500, 16.543500, 14),
+(12, 1, 1, 29.458500, 29.458500, 14),
+(13, 1, 1, 29.458500, 29.458500, 14),
+(14, 1, 1, 20.233500, 20.233500, 14),
+(15, 1, 1, 30.073500, 30.073500, 14),
+(16, 1, 1, 23.923500, 23.923500, 14),
+(17, 1, 1, 20.233500, 20.233500, 14),
+(18, 1, 1, 36.838500, 36.838500, 14),
+(19, 1, 1, 23.923500, 23.923500, 14),
+(20, 1, 1, 23.923500, 23.923500, 14),
+(21, 1, 1, 27.613500, 27.613500, 14),
+(22, 1, 1, 24.538500, 24.538500, 14),
+(23, 1, 1, 24.538500, 24.538500, 14),
+(24, 1, 1, 16.543500, 16.543500, 14),
+(25, 1, 1, 17.773500, 17.773500, 14),
+(26, 1, 1, 24.538500, 24.538500, 14),
+(27, 1, 1, 20.233500, 20.233500, 14),
+(28, 1, 1, 39.298500, 39.298500, 14),
+(29, 1, 1, 16.543500, 16.543500, 14),
+(30, 1, 1, 23.923500, 23.923500, 14),
+(31, 1, 1, 39.298500, 39.298500, 14),
+(32, 1, 1, 20.233500, 20.233500, 14),
+(33, 1, 1, 28.228500, 28.228500, 14),
+(34, 1, 1, 30.688500, 30.688500, 14),
+(35, 1, 1, 36.838500, 36.838500, 14),
+(36, 1, 1, 36.838500, 36.838500, 14),
+(37, 1, 1, 30.688500, 30.688500, 14),
+(38, 1, 1, 28.843500, 28.843500, 14),
+(39, 1, 1, 19.618500, 19.618500, 14),
+(40, 1, 1, 26.383500, 26.383500, 14),
+(41, 1, 1, 18.388500, 18.388500, 14),
+(42, 1, 1, 12.238500, 12.238500, 14),
+(43, 1, 1, 24.477000, 24.477000, 14),
+(44, 1, 1, 10.947000, 10.947000, 14),
+(45, 1, 1, 10.947000, 10.947000, 14),
+(46, 1, 1, 33.087000, 33.087000, 14),
+(47, 1, 1, 10.947000, 10.947000, 14),
+(48, 1, 1, 10.947000, 10.947000, 14),
+(49, 1, 1, 10.947000, 10.947000, 14),
+(50, 1, 1, 10.947000, 10.947000, 14),
+(51, 1, 1, 10.947000, 10.947000, 14),
+(52, 1, 1, 61.377000, 61.377000, 14),
+(53, 1, 1, 36.777000, 36.777000, 14),
+(54, 1, 1, 30.688500, 30.688500, 14),
+(55, 1, 1, 25.768500, 25.768500, 14),
+(56, 1, 1, 29.458500, 29.458500, 14),
+(57, 1, 1, 23.923500, 23.923500, 14),
+(58, 1, 1, 26.383500, 26.383500, 14),
+(59, 1, 1, 22.693500, 22.693500, 14),
+(60, 1, 1, 24.538500, 24.538500, 14),
+(61, 1, 1, 23.308500, 23.308500, 14),
+(62, 1, 1, 23.308500, 23.308500, 14),
+(63, 1, 1, 22.693500, 22.693500, 14),
+(64, 1, 1, 42.373500, 42.373500, 14),
+(65, 1, 1, 23.923500, 23.923500, 14),
+(66, 1, 1, 24.538500, 24.538500, 14),
+(67, 1, 1, 23.923500, 23.923500, 14),
+(68, 1, 1, 29.458500, 29.458500, 14),
+(69, 1, 1, 25.768500, 25.768500, 14),
+(70, 1, 1, 23.308500, 23.308500, 14),
+(71, 1, 1, 23.308500, 23.308500, 14),
+(72, 1, 1, 23.308500, 23.308500, 14),
+(73, 1, 1, 23.308500, 23.308500, 14),
+(74, 1, 1, 23.923500, 23.923500, 14),
+(75, 1, 1, 24.538500, 24.538500, 14),
+(76, 1, 1, 24.538500, 24.538500, 14),
+(77, 1, 1, 26.383500, 26.383500, 14),
+(78, 1, 1, 24.538500, 24.538500, 14),
+(79, 1, 1, 23.923500, 23.923500, 14),
+(80, 1, 1, 24.538500, 24.538500, 14),
+(81, 1, 1, 24.538500, 24.538500, 14),
+(82, 1, 1, 28.228500, 28.228500, 14),
+(83, 1, 1, 23.923500, 23.923500, 14),
+(84, 1, 1, 45.387000, 45.387000, 14),
+(85, 1, 1, 22.693500, 22.693500, 14),
+(86, 1, 1, 24.538500, 24.538500, 14),
+(87, 1, 1, 27.613500, 27.613500, 14),
+(88, 1, 1, 24.538500, 24.538500, 14),
+(89, 1, 1, 28.843500, 28.843500, 14),
+(90, 1, 1, 19.618500, 19.618500, 14),
+(91, 1, 1, 23.923500, 23.923500, 14),
+(92, 1, 1, 25.768500, 25.768500, 14),
+(93, 1, 1, 27.613500, 27.613500, 14),
+(94, 1, 1, 26.998500, 26.998500, 14),
+(95, 1, 1, 24.538500, 24.538500, 14),
+(96, 1, 1, 24.538500, 24.538500, 14),
+(97, 1, 1, 24.538500, 24.538500, 14),
+(98, 1, 1, 26.383500, 26.383500, 14),
+(99, 1, 1, 23.923500, 23.923500, 14),
+(100, 1, 1, 24.538500, 24.538500, 14),
+(101, 1, 1, 56.457000, 56.457000, 14),
+(102, 1, 1, 36.838500, 36.838500, 14),
+(103, 1, 1, 42.988500, 42.988500, 14),
+(104, 1, 1, 36.838500, 36.838500, 14),
+(105, 1, 1, 30.688500, 30.688500, 14),
+(106, 1, 1, 23.308500, 23.308500, 14),
+(107, 1, 1, 39.913500, 39.913500, 14),
+(108, 1, 1, 30.688500, 30.688500, 14),
+(109, 1, 1, 39.913500, 39.913500, 14),
+(110, 1, 1, 30.688500, 30.688500, 14),
+(111, 1, 1, 48.523500, 48.523500, 14),
+(112, 1, 1, 31.918500, 31.918500, 14),
+(113, 1, 1, 30.688500, 30.688500, 14),
+(114, 1, 1, 33.763500, 33.763500, 14),
+(115, 1, 1, 28.843500, 28.843500, 14),
+(116, 1, 1, 28.228500, 28.228500, 14),
+(117, 1, 1, 26.998500, 26.998500, 14),
+(118, 1, 1, 26.383500, 26.383500, 14),
+(119, 1, 1, 27.613500, 27.613500, 14),
+(120, 1, 1, 27.613500, 27.613500, 14),
+(121, 1, 1, 27.613500, 27.613500, 14),
+(122, 1, 1, 24.538500, 24.538500, 14),
+(123, 1, 1, 28.843500, 28.843500, 14),
+(124, 1, 1, 18.388500, 18.388500, 14),
+(125, 1, 1, 34.378500, 34.378500, 14),
+(126, 1, 1, 27.613500, 27.613500, 14),
+(127, 1, 1, 34.993500, 34.993500, 14),
+(128, 1, 1, 27.613500, 27.613500, 14),
+(129, 1, 1, 27.613500, 27.613500, 14),
+(130, 1, 1, 27.613500, 27.613500, 14),
+(131, 1, 1, 23.308500, 23.308500, 14),
+(132, 1, 1, 33.148500, 33.148500, 14),
+(133, 1, 1, 18.388500, 18.388500, 14),
+(134, 1, 1, 19.618500, 19.618500, 14),
+(135, 1, 1, 18.388500, 18.388500, 14),
+(136, 1, 1, 18.388500, 18.388500, 14),
+(137, 1, 1, 18.388500, 18.388500, 14),
+(138, 1, 1, 27.613500, 27.613500, 14),
+(139, 1, 1, 23.923500, 23.923500, 14),
+(140, 1, 1, 24.538500, 24.538500, 14),
+(141, 1, 1, 24.538500, 24.538500, 14),
+(142, 1, 1, 28.228500, 28.228500, 14),
+(143, 1, 1, 15.928500, 15.928500, 14),
+(144, 1, 1, 35.547000, 35.547000, 14),
+(145, 1, 1, 55.227000, 55.227000, 14),
+(146, 1, 1, 34.317000, 34.317000, 14),
+(147, 1, 1, 26.998500, 26.998500, 14),
+(148, 1, 1, 24.538500, 24.538500, 14),
+(149, 1, 1, 22.078500, 22.078500, 14),
+(150, 1, 1, 24.538500, 24.538500, 14),
+(151, 1, 1, 27.613500, 27.613500, 14),
+(152, 1, 1, 23.923500, 23.923500, 14),
+(153, 1, 1, 24.538500, 24.538500, 14),
+(154, 1, 1, 28.228500, 28.228500, 14),
+(155, 1, 1, 22.693500, 22.693500, 14),
+(156, 1, 1, 28.843500, 28.843500, 14),
+(157, 1, 1, 41.758500, 41.758500, 14),
+(158, 1, 1, 22.693500, 22.693500, 14),
+(159, 1, 1, 18.388500, 18.388500, 14),
+(160, 1, 1, 25.153500, 25.153500, 14),
+(161, 1, 1, 24.538500, 24.538500, 14),
+(162, 1, 1, 26.383500, 26.383500, 14),
+(163, 1, 1, 25.153500, 25.153500, 14),
+(164, 1, 1, 24.538500, 24.538500, 14),
+(165, 1, 1, 25.768500, 25.768500, 14),
+(166, 1, 1, 30.688500, 30.688500, 14),
+(167, 1, 1, 24.538500, 24.538500, 14),
+(168, 1, 1, 19.618500, 19.618500, 14),
+(169, 1, 1, 22.693500, 22.693500, 14),
+(170, 1, 1, 19.618500, 19.618500, 14),
+(171, 1, 1, 24.538500, 24.538500, 14),
+(172, 1, 1, 18.388500, 18.388500, 14),
+(173, 1, 1, 27.613500, 27.613500, 14),
+(174, 1, 1, 36.777000, 36.777000, 14),
+(175, 1, 1, 36.777000, 36.777000, 14),
+(176, 1, 1, 36.777000, 36.777000, 14),
+(177, 1, 1, 36.777000, 36.777000, 14),
+(178, 1, 1, 36.777000, 36.777000, 14),
+(179, 1, 1, 36.777000, 36.777000, 14),
+(180, 1, 1, 26.469600, 26.469600, 14),
+(181, 1, 1, 36.777000, 36.777000, 14),
+(182, 1, 1, 36.777000, 36.777000, 14),
+(183, 1, 1, 36.777000, 36.777000, 14),
+(184, 1, 1, 36.777000, 36.777000, 14),
+(185, 1, 1, 36.777000, 36.777000, 14),
+(186, 1, 1, 36.777000, 36.777000, 14),
+(187, 1, 1, 36.777000, 36.777000, 14),
+(188, 1, 1, 36.777000, 36.777000, 14),
+(189, 1, 1, 36.777000, 36.777000, 14),
+(190, 1, 1, 36.777000, 36.777000, 14),
+(191, 1, 1, 53.997000, 53.997000, 14),
+(192, 1, 1, 53.997000, 53.997000, 14),
+(193, 1, 1, 53.997000, 53.997000, 14),
+(194, 1, 1, 53.997000, 53.997000, 14),
+(195, 1, 1, 53.997000, 53.997000, 14),
+(196, 1, 1, 53.997000, 53.997000, 14),
+(197, 1, 1, 53.997000, 53.997000, 14),
+(198, 1, 1, 34.317000, 34.317000, 14),
+(199, 1, 1, 40.467000, 40.467000, 14),
+(200, 1, 1, 31.857000, 31.857000, 14),
+(201, 1, 1, 22.299900, 22.299900, 14),
+(202, 1, 1, 40.380900, 40.380900, 14),
+(203, 1, 1, 24.021900, 24.021900, 14),
+(204, 1, 1, 30.048900, 30.048900, 14),
+(205, 1, 1, 42.963900, 42.963900, 14),
+(206, 1, 1, 36.777000, 36.777000, 14),
+(207, 1, 1, 46.617000, 46.617000, 14),
+(208, 1, 1, 36.777000, 36.777000, 14),
+(209, 1, 1, 33.087000, 33.087000, 14),
+(210, 1, 1, 40.467000, 40.467000, 14),
+(211, 1, 1, 30.627000, 30.627000, 14),
+(212, 1, 1, 33.087000, 33.087000, 14),
+(213, 1, 1, 31.857000, 31.857000, 14),
+(214, 1, 1, 33.087000, 33.087000, 14),
+(215, 1, 1, 45.387000, 45.387000, 14),
+(216, 1, 1, 42.927000, 42.927000, 14),
+(217, 1, 1, 47.847000, 47.847000, 14),
+(218, 1, 1, 42.927000, 42.927000, 14),
+(219, 1, 1, 50.307000, 50.307000, 14),
+(220, 1, 1, 49.077000, 49.077000, 14),
+(221, 1, 1, 49.077000, 49.077000, 14),
+(222, 1, 1, 49.077000, 49.077000, 14),
+(223, 1, 1, 45.387000, 45.387000, 14),
+(224, 1, 1, 24.550800, 24.550800, 14),
+(225, 1, 1, 30.627000, 30.627000, 14),
+(226, 1, 1, 30.627000, 30.627000, 14),
+(227, 1, 1, 30.627000, 30.627000, 14),
+(228, 1, 1, 30.627000, 30.627000, 14),
+(229, 1, 1, 30.627000, 30.627000, 14),
+(230, 1, 1, 30.627000, 30.627000, 14),
+(231, 1, 1, 30.627000, 30.627000, 14),
+(232, 1, 1, 30.627000, 30.627000, 14),
+(233, 1, 1, 30.627000, 30.627000, 14),
+(234, 1, 1, 30.627000, 30.627000, 14),
+(235, 1, 1, 30.627000, 30.627000, 14),
+(236, 1, 1, 35.547000, 35.547000, 14),
+(237, 1, 1, 42.927000, 42.927000, 14),
+(238, 1, 1, 39.237000, 39.237000, 14),
+(239, 1, 1, 51.537000, 51.537000, 14),
+(240, 1, 1, 36.777000, 36.777000, 14),
+(241, 1, 1, 41.697000, 41.697000, 14),
+(242, 1, 1, 44.157000, 44.157000, 14),
+(243, 1, 1, 38.007000, 38.007000, 14),
+(244, 1, 1, 36.777000, 36.777000, 14),
+(245, 1, 1, 46.617000, 46.617000, 14),
+(246, 1, 1, 39.237000, 39.237000, 14),
+(247, 1, 1, 31.857000, 31.857000, 14),
+(248, 1, 1, 31.857000, 31.857000, 14),
+(249, 1, 1, 29.397000, 29.397000, 14),
+(250, 1, 1, 36.777000, 36.777000, 14),
+(251, 1, 1, 24.477000, 24.477000, 14),
+(252, 1, 1, 29.397000, 29.397000, 14),
+(253, 1, 1, 26.937000, 26.937000, 14),
+(254, 1, 1, 33.087000, 33.087000, 14),
+(255, 1, 1, 23.247000, 23.247000, 14),
+(256, 1, 1, 33.087000, 33.087000, 14),
+(257, 1, 1, 88.437000, 88.437000, 14),
+(258, 1, 1, 49.077000, 49.077000, 14),
+(259, 1, 1, 51.537000, 51.537000, 14),
+(260, 1, 1, 51.537000, 51.537000, 14),
+(261, 1, 1, 49.077000, 49.077000, 14),
+(262, 1, 1, 51.537000, 51.537000, 14),
+(263, 1, 1, 29.397000, 29.397000, 14),
+(264, 1, 1, 95.817000, 95.817000, 14),
+(265, 1, 1, 29.397000, 29.397000, 14),
+(266, 1, 1, 29.397000, 29.397000, 14),
+(267, 1, 1, 29.397000, 29.397000, 14),
+(268, 1, 1, 29.397000, 29.397000, 14),
+(269, 1, 1, 29.397000, 29.397000, 14),
+(270, 1, 1, 30.688500, 30.688500, 14),
+(271, 1, 1, 24.538500, 24.538500, 14),
+(272, 1, 1, 28.843500, 28.843500, 14),
+(273, 1, 1, 19.618500, 19.618500, 14),
+(274, 1, 1, 23.923500, 23.923500, 14),
+(275, 1, 1, 15.313500, 15.313500, 14),
+(276, 1, 1, 15.928500, 15.928500, 14),
+(277, 1, 1, 14.083500, 14.083500, 14),
+(278, 1, 1, 15.313500, 15.313500, 14),
+(279, 1, 1, 15.313500, 15.313500, 14),
+(280, 1, 1, 15.313500, 15.313500, 14),
+(281, 1, 1, 20.848500, 20.848500, 14),
+(282, 1, 1, 21.463500, 21.463500, 14),
+(283, 1, 1, 20.233500, 20.233500, 14),
+(284, 1, 1, 12.238500, 12.238500, 14),
+(285, 1, 1, 15.313500, 15.313500, 14),
+(286, 1, 1, 22.078500, 22.078500, 14),
+(287, 1, 1, 11.623500, 11.623500, 14),
+(288, 1, 1, 13.468500, 13.468500, 14),
+(289, 1, 1, 15.928500, 15.928500, 14),
+(290, 1, 1, 15.928500, 15.928500, 14),
+(291, 1, 1, 17.773500, 17.773500, 14),
+(292, 1, 1, 15.313500, 15.313500, 14),
+(293, 1, 1, 20.233500, 20.233500, 14),
+(294, 1, 1, 15.313500, 15.313500, 14),
+(295, 1, 1, 15.928500, 15.928500, 14),
+(296, 1, 1, 15.928500, 15.928500, 14),
+(297, 1, 1, 15.928500, 15.928500, 14),
+(298, 1, 1, 15.928500, 15.928500, 14),
+(299, 1, 1, 15.928500, 15.928500, 14),
+(300, 1, 1, 15.928500, 15.928500, 14),
+(301, 1, 1, 15.928500, 15.928500, 14),
+(302, 1, 1, 15.928500, 15.928500, 14),
+(303, 1, 1, 15.928500, 15.928500, 14),
+(304, 1, 1, 15.928500, 15.928500, 14),
+(305, 1, 1, 15.928500, 15.928500, 14),
+(306, 1, 1, 15.928500, 15.928500, 14),
+(307, 1, 1, 15.928500, 15.928500, 14),
+(308, 1, 1, 15.928500, 15.928500, 14),
+(309, 1, 1, 15.928500, 15.928500, 14),
+(310, 1, 1, 15.928500, 15.928500, 14),
+(311, 1, 1, 15.928500, 15.928500, 14),
+(312, 1, 1, 15.928500, 15.928500, 14),
+(313, 1, 1, 15.928500, 15.928500, 14),
+(314, 1, 1, 15.928500, 15.928500, 14),
+(315, 1, 1, 147.477000, 147.477000, 14),
+(316, 1, 1, 55.227000, 55.227000, 14),
+(317, 1, 1, 71.217000, 71.217000, 14),
+(318, 1, 1, 147.477000, 147.477000, 14),
+(319, 1, 1, 122.877000, 122.877000, 14),
+(320, 1, 1, 53.997000, 53.997000, 14),
+(321, 1, 1, 50.307000, 50.307000, 14),
+(322, 1, 1, 50.307000, 50.307000, 14),
+(323, 1, 1, 50.307000, 50.307000, 14),
+(324, 1, 1, 50.307000, 50.307000, 14),
+(325, 1, 1, 49.077000, 49.077000, 14),
+(326, 1, 1, 49.077000, 49.077000, 14),
+(327, 1, 1, 159.777000, 159.777000, 14),
+(328, 1, 1, 49.077000, 49.077000, 14),
+(329, 1, 1, 16.543500, 16.543500, 14),
+(330, 1, 1, 17.773500, 17.773500, 14),
+(331, 1, 1, 17.773500, 17.773500, 14),
+(332, 1, 1, 17.773500, 17.773500, 14),
+(333, 1, 1, 245.877000, 245.877000, 14),
+(334, 1, 1, 41.697000, 41.697000, 14),
+(335, 1, 1, 22.017000, 22.017000, 14),
+(336, 1, 1, 31.857000, 31.857000, 14),
+(337, 1, 1, 33.087000, 33.087000, 14),
+(338, 1, 1, 68.757000, 68.757000, 14),
+(339, 1, 1, 106.887000, 106.887000, 14),
+(340, 1, 1, 98.277000, 98.277000, 14),
+(341, 1, 1, 106.887000, 106.887000, 14),
+(342, 1, 1, 88.437000, 88.437000, 14),
+(343, 1, 1, 324.597000, 324.597000, 14),
+(344, 1, 1, 330.747000, 330.747000, 14),
+(345, 1, 1, 61.377000, 61.377000, 14),
+(346, 1, 1, 56.457000, 56.457000, 14),
+(347, 1, 1, 61.377000, 61.377000, 14),
+(348, 1, 1, 109.347000, 109.347000, 14),
+(349, 1, 1, 133.947000, 133.947000, 14),
+(350, 1, 1, 30.627000, 30.627000, 14),
+(351, 1, 1, 57.687000, 57.687000, 14),
+(352, 1, 1, 30.627000, 30.627000, 14),
+(353, 1, 1, 57.687000, 57.687000, 14),
+(354, 1, 1, 30.627000, 30.627000, 14),
+(355, 1, 1, 57.687000, 57.687000, 14),
+(356, 1, 1, 30.627000, 30.627000, 14),
+(357, 1, 1, 57.687000, 57.687000, 14),
+(358, 1, 1, 30.627000, 30.627000, 14),
+(359, 1, 1, 57.687000, 57.687000, 14),
+(360, 1, 1, 30.627000, 30.627000, 14),
+(361, 1, 1, 57.687000, 57.687000, 14),
+(362, 1, 1, 30.627000, 30.627000, 14),
+(363, 1, 1, 57.687000, 57.687000, 14),
+(364, 1, 1, 30.627000, 30.627000, 14),
+(365, 1, 1, 57.687000, 57.687000, 14),
+(366, 1, 1, 30.627000, 30.627000, 14),
+(367, 1, 1, 57.687000, 57.687000, 14),
+(368, 1, 1, 30.627000, 30.627000, 14),
+(369, 1, 1, 57.687000, 57.687000, 14),
+(370, 1, 1, 79.827000, 79.827000, 14),
+(371, 1, 1, 79.827000, 79.827000, 14),
+(372, 1, 1, 115.497000, 115.497000, 14),
+(373, 1, 1, 115.497000, 115.497000, 14),
+(374, 1, 1, 115.497000, 115.497000, 14),
+(375, 1, 1, 89.667000, 89.667000, 14),
+(376, 1, 1, 10.947000, 10.947000, 14),
+(377, 1, 1, 10.947000, 10.947000, 14),
+(378, 1, 1, 10.947000, 10.947000, 14),
+(379, 1, 1, 23.247000, 23.247000, 14),
+(380, 1, 1, 38.007000, 38.007000, 14),
+(381, 1, 1, 31.967700, 31.967700, 14),
+(382, 1, 1, 92.127000, 92.127000, 14),
+(383, 1, 1, 31.857000, 31.857000, 14),
+(384, 1, 1, 36.777000, 36.777000, 14),
+(385, 1, 1, 31.857000, 31.857000, 14),
+(386, 1, 1, 45.387000, 45.387000, 14),
+(387, 1, 1, 45.387000, 45.387000, 14),
+(388, 1, 1, 45.387000, 45.387000, 14),
+(389, 1, 1, 45.387000, 45.387000, 14),
+(390, 1, 1, 45.387000, 45.387000, 14),
+(391, 1, 1, 45.387000, 45.387000, 14),
+(392, 1, 1, 45.387000, 45.387000, 14),
+(393, 1, 1, 45.387000, 45.387000, 14),
+(394, 1, 1, 45.387000, 45.387000, 14),
+(395, 1, 1, 45.387000, 45.387000, 14),
+(396, 1, 1, 95.817000, 95.817000, 14),
+(397, 1, 1, 13.407000, 13.407000, 14),
+(398, 1, 1, 204.057000, 204.057000, 14),
+(399, 1, 1, 220.047000, 220.047000, 14),
+(400, 1, 1, 204.057000, 204.057000, 14),
+(401, 1, 1, 153.627000, 153.627000, 14),
+(402, 1, 1, 138.867000, 138.867000, 14),
+(403, 1, 1, 127.797000, 127.797000, 14),
+(404, 1, 1, 67.527000, 67.527000, 14),
+(405, 1, 1, 94.587000, 94.587000, 14),
+(406, 1, 1, 73.677000, 73.677000, 14),
+(407, 1, 1, 92.127000, 92.127000, 14),
+(408, 1, 1, 101.967000, 101.967000, 14),
+(409, 1, 1, 140.097000, 140.097000, 14),
+(410, 1, 1, 108.117000, 108.117000, 14),
+(411, 1, 1, 167.157000, 167.157000, 14),
+(412, 1, 1, 162.237000, 162.237000, 14),
+(413, 1, 1, 184.377000, 184.377000, 14),
+(414, 1, 1, 196.677000, 196.677000, 14),
+(415, 1, 1, 210.207000, 210.207000, 14),
+(416, 1, 1, 47.847000, 47.847000, 14),
+(417, 1, 1, 47.847000, 47.847000, 14),
+(418, 1, 1, 78.597000, 78.597000, 14),
+(419, 1, 1, 78.597000, 78.597000, 14),
+(420, 1, 1, 95.817000, 95.817000, 14),
+(421, 1, 1, 47.847000, 47.847000, 14),
+(422, 1, 1, 47.847000, 47.847000, 14),
+(423, 1, 1, 92.127000, 92.127000, 14),
+(424, 1, 1, 23.247000, 23.247000, 14),
+(425, 1, 1, 20.787000, 20.787000, 14),
+(426, 1, 1, 66.297000, 66.297000, 14),
+(427, 1, 1, 18.327000, 18.327000, 14),
+(428, 1, 1, 69.987000, 69.987000, 14),
+(429, 1, 1, 65.067000, 65.067000, 14),
+(430, 1, 1, 88.437000, 88.437000, 14),
+(431, 1, 1, 34.317000, 34.317000, 14),
+(432, 1, 1, 1.377600, 1.377600, 14),
+(433, 1, 1, 31.857000, 31.857000, 14),
+(434, 1, 1, 45.387000, 45.387000, 14),
+(435, 1, 1, 45.387000, 45.387000, 14),
+(436, 1, 1, 28.167000, 28.167000, 14),
+(437, 1, 1, 42.927000, 42.927000, 14),
+(438, 1, 1, 25.707000, 25.707000, 14),
+(439, 1, 1, 31.857000, 31.857000, 14),
+(440, 1, 1, 42.927000, 42.927000, 14),
+(441, 1, 1, 34.317000, 34.317000, 14),
+(442, 1, 1, 132.717000, 132.717000, 14),
+(443, 1, 1, 135.177000, 135.177000, 14),
+(444, 1, 1, 205.287000, 205.287000, 14),
+(445, 1, 1, 20.787000, 20.787000, 14),
+(446, 1, 1, 47.847000, 47.847000, 14),
+(447, 1, 1, 23.247000, 23.247000, 14),
+(448, 1, 1, 57.687000, 57.687000, 14),
+(449, 1, 1, 51.537000, 51.537000, 14),
+(450, 1, 1, 47.847000, 47.847000, 14),
+(451, 1, 1, 14.637000, 14.637000, 14),
+(452, 1, 1, 42.927000, 42.927000, 14),
+(453, 1, 1, 35.547000, 35.547000, 14),
+(454, 1, 1, 42.927000, 42.927000, 14),
+(455, 1, 1, 38.007000, 38.007000, 14),
+(456, 1, 1, 26.937000, 26.937000, 14),
+(457, 1, 1, 17.097000, 17.097000, 14),
+(458, 1, 1, 17.097000, 17.097000, 14),
+(459, 1, 1, 18.327000, 18.327000, 14),
+(460, 1, 1, 47.847000, 47.847000, 14),
+(461, 1, 1, 223.737000, 223.737000, 14),
+(462, 1, 1, 85.977000, 85.977000, 14),
+(463, 1, 1, 85.977000, 85.977000, 14),
+(464, 1, 1, 85.977000, 85.977000, 14),
+(465, 1, 1, 98.277000, 98.277000, 14),
+(466, 1, 1, 98.277000, 98.277000, 14),
+(467, 1, 1, 98.277000, 98.277000, 14),
+(468, 1, 1, 49.077000, 49.077000, 14),
+(469, 1, 1, 49.077000, 49.077000, 14),
+(470, 1, 1, 49.077000, 49.077000, 14),
+(471, 1, 1, 49.077000, 49.077000, 14),
+(472, 1, 1, 60.147000, 60.147000, 14),
+(473, 1, 1, 62.607000, 62.607000, 14),
+(474, 1, 1, 62.607000, 62.607000, 14),
+(475, 1, 1, 62.607000, 62.607000, 14),
+(476, 1, 1, 62.607000, 62.607000, 14),
+(477, 1, 1, 97.047000, 97.047000, 14),
+(478, 1, 1, 67.527000, 67.527000, 14),
+(479, 1, 1, 67.527000, 67.527000, 14),
+(480, 1, 1, 67.527000, 67.527000, 14),
+(481, 1, 1, 67.527000, 67.527000, 14),
+(482, 1, 1, 135.177000, 135.177000, 14),
+(483, 1, 1, 184.377000, 184.377000, 14),
+(484, 1, 1, 221.277000, 221.277000, 14),
+(485, 1, 1, 184.377000, 184.377000, 14),
+(486, 1, 1, 184.377000, 184.377000, 14),
+(487, 1, 1, 110.577000, 110.577000, 14),
+(488, 1, 1, 61.377000, 61.377000, 14),
+(489, 1, 1, 33.763500, 33.763500, 14),
+(490, 1, 1, 99.507000, 99.507000, 14),
+(491, 1, 1, 61.377000, 61.377000, 14),
+(492, 1, 1, 61.377000, 61.377000, 14),
+(493, 1, 1, 49.077000, 49.077000, 14),
+(494, 1, 1, 49.077000, 49.077000, 14),
+(495, 1, 1, 49.077000, 49.077000, 14),
+(496, 1, 1, 99.507000, 99.507000, 14),
+(497, 1, 1, 34.993500, 34.993500, 14),
+(498, 1, 1, 51.537000, 51.537000, 14),
+(499, 1, 1, 51.537000, 51.537000, 14),
+(500, 1, 1, 36.777000, 36.777000, 14),
+(501, 1, 1, 51.537000, 51.537000, 14),
+(502, 1, 1, 61.377000, 61.377000, 14),
+(503, 1, 1, 61.377000, 61.377000, 14),
+(504, 1, 1, 61.377000, 61.377000, 14),
+(505, 1, 1, 61.377000, 61.377000, 14),
+(506, 1, 1, 60.909600, 60.909600, 14),
+(507, 1, 1, 104.427000, 104.427000, 14),
+(508, 1, 1, 89.667000, 89.667000, 14),
+(509, 1, 1, 89.667000, 89.667000, 14),
+(510, 1, 1, 89.667000, 89.667000, 14),
+(511, 1, 1, 89.667000, 89.667000, 14),
+(512, 1, 1, 89.667000, 89.667000, 14),
+(513, 1, 1, 89.667000, 89.667000, 14),
+(514, 1, 1, 89.667000, 89.667000, 14),
+(515, 1, 1, 68.757000, 68.757000, 14),
+(516, 1, 1, 167.034000, 167.034000, 14),
+(517, 1, 1, 111.807000, 111.807000, 14),
+(518, 1, 1, 36.777000, 36.777000, 14),
+(519, 1, 1, 15.867000, 15.867000, 14),
+(520, 1, 1, 15.867000, 15.867000, 14),
+(521, 1, 1, 22.017000, 22.017000, 14),
+(522, 1, 1, 19.557000, 19.557000, 14),
+(523, 1, 1, 9.717000, 9.717000, 14),
+(524, 1, 1, 12.177000, 12.177000, 14),
+(525, 1, 1, 12.177000, 12.177000, 14),
+(526, 1, 1, 12.177000, 12.177000, 14),
+(527, 1, 1, 10.947000, 10.947000, 14),
+(528, 1, 1, 10.947000, 10.947000, 14),
+(529, 1, 1, 12.177000, 12.177000, 14),
+(530, 1, 1, 12.177000, 12.177000, 14),
+(531, 1, 1, 33.087000, 33.087000, 14),
+(532, 1, 1, 13.407000, 13.407000, 14),
+(533, 1, 1, 18.327000, 18.327000, 14),
+(534, 1, 1, 18.327000, 18.327000, 14),
+(535, 1, 1, 18.327000, 18.327000, 14),
+(536, 1, 1, 19.557000, 19.557000, 14),
+(537, 1, 1, 25.707000, 25.707000, 14),
+(538, 1, 1, 25.707000, 25.707000, 14),
+(539, 1, 1, 25.707000, 25.707000, 14),
+(540, 1, 1, 31.857000, 31.857000, 14),
+(541, 1, 1, 25.707000, 25.707000, 14),
+(542, 1, 1, 25.707000, 25.707000, 14),
+(543, 1, 1, 161.007000, 161.007000, 14),
+(544, 1, 1, 161.007000, 161.007000, 14),
+(545, 1, 1, 41.697000, 41.697000, 14),
+(546, 1, 1, 35.547000, 35.547000, 14),
+(547, 1, 1, 38.007000, 38.007000, 14),
+(548, 1, 1, 31.857000, 31.857000, 14),
+(549, 1, 1, 113.037000, 113.037000, 14),
+(550, 1, 1, 72.447000, 72.447000, 14),
+(551, 1, 1, 122.877000, 122.877000, 14),
+(552, 1, 1, 172.077000, 172.077000, 14),
+(553, 1, 1, 61.377000, 61.377000, 14),
+(554, 1, 1, 106.887000, 106.887000, 14),
+(555, 1, 1, 95.817000, 95.817000, 14),
+(556, 1, 1, 36.777000, 36.777000, 14),
+(557, 1, 1, 40.467000, 40.467000, 14),
+(558, 1, 1, 33.087000, 33.087000, 14),
+(559, 1, 1, 92.127000, 92.127000, 14),
+(560, 1, 1, 67.527000, 67.527000, 14),
+(561, 1, 1, 78.597000, 78.597000, 14),
+(562, 1, 1, 87.207000, 87.207000, 14),
+(563, 1, 1, 67.527000, 67.527000, 14),
+(564, 1, 1, 98.277000, 98.277000, 14),
+(565, 1, 1, 69.987000, 69.987000, 14),
+(566, 1, 1, 109.347000, 109.347000, 14),
+(567, 1, 1, 58.917000, 58.917000, 14),
+(568, 1, 1, 72.447000, 72.447000, 14),
+(569, 1, 1, 113.037000, 113.037000, 14),
+(570, 1, 1, 184.377000, 184.377000, 14),
+(571, 1, 1, 78.264900, 78.264900, 14),
+(572, 1, 1, 85.977000, 85.977000, 14),
+(573, 1, 1, 73.098900, 73.098900, 14),
+(574, 1, 1, 73.098900, 73.098900, 14),
+(575, 1, 1, 98.277000, 98.277000, 14),
+(576, 1, 1, 33.087000, 33.087000, 14),
+(577, 1, 1, 92.127000, 92.127000, 14),
+(578, 1, 1, 73.677000, 73.677000, 14),
+(579, 1, 1, 184.377000, 184.377000, 14),
+(580, 1, 1, 122.877000, 122.877000, 14),
+(581, 1, 1, 184.377000, 184.377000, 14),
+(582, 1, 1, 98.277000, 98.277000, 14),
+(583, 1, 1, 196.677000, 196.677000, 14),
+(584, 1, 1, 67.527000, 67.527000, 14),
+(585, 1, 1, 36.777000, 36.777000, 14),
+(586, 1, 1, 36.777000, 36.777000, 14),
+(587, 1, 1, 73.677000, 73.677000, 14),
+(588, 1, 1, 79.827000, 79.827000, 14),
+(589, 1, 1, 135.177000, 135.177000, 14),
+(590, 1, 1, 184.377000, 184.377000, 14),
+(591, 1, 1, 104.427000, 104.427000, 14),
+(592, 1, 1, 33.087000, 33.087000, 14),
+(593, 1, 1, 24.477000, 24.477000, 14),
+(594, 1, 1, 40.467000, 40.467000, 14),
+(595, 1, 1, 69.987000, 69.987000, 14),
+(596, 1, 1, 76.137000, 76.137000, 14),
+(597, 1, 1, 68.757000, 68.757000, 14),
+(598, 1, 1, 98.277000, 98.277000, 14),
+(599, 1, 1, 110.577000, 110.577000, 14),
+(600, 1, 1, 108.117000, 108.117000, 14),
+(601, 1, 1, 165.927000, 165.927000, 14),
+(602, 1, 1, 208.977000, 208.977000, 14),
+(603, 1, 1, 208.977000, 208.977000, 14),
+(604, 1, 1, 18.327000, 18.327000, 14),
+(605, 1, 1, 24.477000, 24.477000, 14),
+(606, 1, 1, 50.307000, 50.307000, 14),
+(607, 1, 1, 45.387000, 45.387000, 14),
+(608, 1, 1, 38.007000, 38.007000, 14),
+(609, 1, 1, 53.997000, 53.997000, 14),
+(610, 1, 1, 66.297000, 66.297000, 14),
+(611, 1, 1, 31.857000, 31.857000, 14),
+(612, 1, 1, 11.070000, 11.070000, 14),
+(613, 1, 1, 106.887000, 106.887000, 14),
+(614, 1, 1, 172.077000, 172.077000, 14),
+(615, 1, 1, 113.037000, 113.037000, 14),
+(616, 1, 1, 7.257000, 7.257000, 14),
+(617, 1, 1, 7.257000, 7.257000, 14),
+(618, 1, 1, 7.257000, 7.257000, 14),
+(619, 1, 1, 85.977000, 85.977000, 14),
+(620, 1, 1, 159.777000, 159.777000, 14),
+(621, 1, 1, 34.317000, 34.317000, 14),
+(622, 1, 1, 39.237000, 39.237000, 14),
+(623, 1, 1, 34.317000, 34.317000, 14),
+(624, 1, 1, 36.777000, 36.777000, 14),
+(625, 1, 1, 30.627000, 30.627000, 14),
+(626, 1, 1, 30.627000, 30.627000, 14),
+(627, 1, 1, 30.627000, 30.627000, 14),
+(628, 1, 1, 30.627000, 30.627000, 14),
+(629, 1, 1, 30.627000, 30.627000, 14),
+(630, 1, 1, 42.927000, 42.927000, 14),
+(631, 1, 1, 30.627000, 30.627000, 14),
+(632, 1, 1, 30.627000, 30.627000, 14),
+(633, 1, 1, 2.078700, 2.078700, 14),
+(634, 1, 1, 52.767000, 52.767000, 14),
+(635, 1, 1, 52.767000, 52.767000, 14),
+(636, 1, 1, 47.847000, 47.847000, 14),
+(637, 1, 1, 52.767000, 52.767000, 14),
+(638, 1, 1, 52.767000, 52.767000, 14),
+(639, 1, 1, 29.397000, 29.397000, 14),
+(640, 1, 1, 29.397000, 29.397000, 14),
+(641, 1, 1, 29.397000, 29.397000, 14),
+(642, 1, 1, 29.397000, 29.397000, 14),
+(643, 1, 1, 29.397000, 29.397000, 14),
+(644, 1, 1, 29.397000, 29.397000, 14),
+(645, 1, 1, 29.397000, 29.397000, 14),
+(646, 1, 1, 14.637000, 14.637000, 14),
+(647, 1, 1, 14.637000, 14.637000, 14),
+(648, 1, 1, 14.637000, 14.637000, 14),
+(649, 1, 1, 14.637000, 14.637000, 14),
+(650, 1, 1, 14.637000, 14.637000, 14),
+(651, 1, 1, 14.637000, 14.637000, 14),
+(652, 1, 1, 14.637000, 14.637000, 14),
+(653, 1, 1, 14.637000, 14.637000, 14),
+(654, 1, 1, 14.637000, 14.637000, 14),
+(655, 1, 1, 14.637000, 14.637000, 14),
+(656, 1, 1, 25.707000, 25.707000, 14),
+(657, 1, 1, 25.707000, 25.707000, 14),
+(658, 1, 1, 25.707000, 25.707000, 14),
+(659, 1, 1, 30.627000, 30.627000, 14),
+(660, 1, 1, 30.627000, 30.627000, 14),
+(661, 1, 1, 25.707000, 25.707000, 14),
+(662, 1, 1, 31.857000, 31.857000, 14),
+(663, 1, 1, 31.857000, 31.857000, 14),
+(664, 1, 1, 24.477000, 24.477000, 14),
+(665, 1, 1, 20.787000, 20.787000, 14),
+(666, 1, 1, 10.947000, 10.947000, 14),
+(667, 1, 1, 10.947000, 10.947000, 14),
+(668, 1, 1, 31.857000, 31.857000, 14),
+(669, 1, 1, 45.387000, 45.387000, 14),
+(670, 1, 1, 29.397000, 29.397000, 14),
+(671, 1, 1, 10.947000, 10.947000, 14),
+(672, 1, 1, 30.627000, 30.627000, 14),
+(673, 1, 1, 10.947000, 10.947000, 14),
+(674, 1, 1, 49.077000, 49.077000, 14),
+(675, 1, 1, 10.947000, 10.947000, 14),
+(676, 1, 1, 12.177000, 12.177000, 14),
+(677, 1, 1, 45.387000, 45.387000, 14),
+(678, 1, 1, 38.007000, 38.007000, 14),
+(679, 1, 1, 38.007000, 38.007000, 14),
+(680, 1, 1, 45.387000, 45.387000, 14),
+(681, 1, 1, 10.947000, 10.947000, 14),
+(682, 1, 1, 10.947000, 10.947000, 14),
+(683, 1, 1, 10.947000, 10.947000, 14),
+(684, 1, 1, 7.626000, 7.626000, 14),
+(685, 1, 1, 7.626000, 7.626000, 14),
+(686, 1, 1, 7.626000, 7.626000, 14);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_layered_product_attribute`
+-- Структура таблицы `ps_layered_product_attribute`
 --
 
 CREATE TABLE `ps_layered_product_attribute` (
@@ -6397,7 +13851,7 @@ CREATE TABLE `ps_layered_product_attribute` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_linksmenutop`
+-- Структура таблицы `ps_linksmenutop`
 --
 
 CREATE TABLE `ps_linksmenutop` (
@@ -6409,7 +13863,7 @@ CREATE TABLE `ps_linksmenutop` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_linksmenutop_lang`
+-- Структура таблицы `ps_linksmenutop_lang`
 --
 
 CREATE TABLE `ps_linksmenutop_lang` (
@@ -6423,7 +13877,7 @@ CREATE TABLE `ps_linksmenutop_lang` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_link_block`
+-- Структура таблицы `ps_link_block`
 --
 
 CREATE TABLE `ps_link_block` (
@@ -6434,7 +13888,7 @@ CREATE TABLE `ps_link_block` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_link_block`
+-- Дамп данных таблицы `ps_link_block`
 --
 
 INSERT INTO `ps_link_block` (`id_link_block`, `id_hook`, `position`, `content`) VALUES
@@ -6444,7 +13898,7 @@ INSERT INTO `ps_link_block` (`id_link_block`, `id_hook`, `position`, `content`) 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_link_block_lang`
+-- Структура таблицы `ps_link_block_lang`
 --
 
 CREATE TABLE `ps_link_block_lang` (
@@ -6455,7 +13909,7 @@ CREATE TABLE `ps_link_block_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_link_block_lang`
+-- Дамп данных таблицы `ps_link_block_lang`
 --
 
 INSERT INTO `ps_link_block_lang` (`id_link_block`, `id_lang`, `name`, `custom_content`) VALUES
@@ -6465,7 +13919,7 @@ INSERT INTO `ps_link_block_lang` (`id_link_block`, `id_lang`, `name`, `custom_co
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_link_block_shop`
+-- Структура таблицы `ps_link_block_shop`
 --
 
 CREATE TABLE `ps_link_block_shop` (
@@ -6475,7 +13929,7 @@ CREATE TABLE `ps_link_block_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_link_block_shop`
+-- Дамп данных таблицы `ps_link_block_shop`
 --
 
 INSERT INTO `ps_link_block_shop` (`id_link_block`, `id_shop`, `position`) VALUES
@@ -6485,7 +13939,7 @@ INSERT INTO `ps_link_block_shop` (`id_link_block`, `id_shop`, `position`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_log`
+-- Структура таблицы `ps_log`
 --
 
 CREATE TABLE `ps_log` (
@@ -6505,7 +13959,7 @@ CREATE TABLE `ps_log` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_log`
+-- Дамп данных таблицы `ps_log`
 --
 
 INSERT INTO `ps_log` (`id_log`, `severity`, `error_code`, `message`, `object_type`, `object_id`, `id_shop`, `id_shop_group`, `id_lang`, `in_all_shops`, `id_employee`, `date_add`, `date_upd`) VALUES
@@ -6742,12 +14196,58 @@ INSERT INTO `ps_log` (`id_log`, `severity`, `error_code`, `message`, `object_typ
 (231, 1, 0, 'Protect vendor folder in module payu', '', 0, 1, NULL, 1, 0, 1, '2025-12-14 16:33:50', '2025-12-14 16:33:50'),
 (232, 1, 0, 'Module payu has no vendor folder', '', 0, 1, NULL, 1, 0, 1, '2025-12-14 16:33:50', '2025-12-14 16:33:50'),
 (233, 1, 0, 'Protect vendor folder in module payu', '', 0, 1, NULL, 1, 0, 1, '2025-12-14 16:36:35', '2025-12-14 16:36:35'),
-(234, 1, 0, 'Module payu has no vendor folder', '', 0, 1, NULL, 1, 0, 1, '2025-12-14 16:36:35', '2025-12-14 16:36:35');
+(234, 1, 0, 'Module payu has no vendor folder', '', 0, 1, NULL, 1, 0, 1, '2025-12-14 16:36:35', '2025-12-14 16:36:35'),
+(235, 1, 0, 'Połączenie z panelem administracyjnym z 172.18.0.1', '', 0, NULL, NULL, 1, 1, 1, '2025-12-14 22:12:51', '2025-12-14 22:12:51'),
+(236, 1, 0, 'import Produkty (od 0 do 5) z zaokrągleniem', '', 0, 1, NULL, 1, 0, 1, '2025-12-14 22:19:30', '2025-12-14 22:19:30'),
+(237, 1, 0, 'import Produkty (od 5 do 20) z zaokrągleniem', '', 0, 1, NULL, 1, 0, 1, '2025-12-14 22:19:31', '2025-12-14 22:19:31'),
+(238, 1, 0, 'import Produkty (od 25 do 80) z zaokrągleniem', '', 0, 1, NULL, 1, 0, 1, '2025-12-14 22:19:31', '2025-12-14 22:19:31'),
+(239, 1, 0, 'import Produkty (od 105 do 100) z zaokrągleniem', '', 0, 1, NULL, 1, 0, 1, '2025-12-14 22:19:31', '2025-12-14 22:19:31'),
+(240, 1, 0, 'import Produkty (od 205 do 100) z zaokrągleniem', '', 0, 1, NULL, 1, 0, 1, '2025-12-14 22:19:31', '2025-12-14 22:19:31'),
+(241, 1, 0, 'import Produkty (od 305 do 100) z zaokrągleniem', '', 0, 1, NULL, 1, 0, 1, '2025-12-14 22:19:31', '2025-12-14 22:19:31'),
+(242, 1, 0, 'import Produkty (od 405 do 100) z zaokrągleniem', '', 0, 1, NULL, 1, 0, 1, '2025-12-14 22:19:32', '2025-12-14 22:19:32'),
+(243, 1, 0, 'import Produkty (od 505 do 100) z zaokrągleniem', '', 0, 1, NULL, 1, 0, 1, '2025-12-14 22:19:32', '2025-12-14 22:19:32'),
+(244, 1, 0, 'import Produkty (od 605 do 100) z zaokrągleniem', '', 0, 1, NULL, 1, 0, 1, '2025-12-14 22:19:32', '2025-12-14 22:19:32'),
+(245, 1, 0, 'import Produkty (od 0 do 5) z zaokrągleniem', '', 0, 1, NULL, 1, 0, 1, '2025-12-14 22:19:35', '2025-12-14 22:19:35'),
+(246, 1, 0, 'import Produkty (od 5 do 10) z zaokrągleniem', '', 0, 1, NULL, 1, 0, 1, '2025-12-14 22:19:36', '2025-12-14 22:19:36'),
+(247, 1, 0, 'import Produkty (od 15 do 25) z zaokrągleniem', '', 0, 1, NULL, 1, 0, 1, '2025-12-14 22:19:41', '2025-12-14 22:19:41'),
+(248, 1, 0, 'import Produkty (od 40 do 25) z zaokrągleniem', '', 0, 1, NULL, 1, 0, 1, '2025-12-14 22:19:46', '2025-12-14 22:19:46'),
+(249, 1, 0, 'import Produkty (od 65 do 23) z zaokrągleniem', '', 0, 1, NULL, 1, 0, 1, '2025-12-14 22:19:51', '2025-12-14 22:19:51'),
+(250, 1, 0, 'import Produkty (od 88 do 25) z zaokrągleniem', '', 0, 1, NULL, 1, 0, 1, '2025-12-14 22:19:55', '2025-12-14 22:19:55'),
+(251, 1, 0, 'import Produkty (od 113 do 29) z zaokrągleniem', '', 0, 1, NULL, 1, 0, 1, '2025-12-14 22:20:00', '2025-12-14 22:20:00'),
+(252, 1, 0, 'import Produkty (od 142 do 30) z zaokrągleniem', '', 0, 1, NULL, 1, 0, 1, '2025-12-14 22:20:05', '2025-12-14 22:20:05'),
+(253, 1, 0, 'import Produkty (od 172 do 29) z zaokrągleniem', '', 0, 1, NULL, 1, 0, 1, '2025-12-14 22:20:13', '2025-12-14 22:20:13'),
+(254, 1, 0, 'import Produkty (od 201 do 18) z zaokrągleniem', '', 0, 1, NULL, 1, 0, 1, '2025-12-14 22:20:18', '2025-12-14 22:20:18'),
+(255, 1, 0, 'import Produkty (od 219 do 18) z zaokrągleniem', '', 0, 1, NULL, 1, 0, 1, '2025-12-14 22:20:23', '2025-12-14 22:20:23'),
+(256, 1, 0, 'import Produkty (od 237 do 16) z zaokrągleniem', '', 0, 1, NULL, 1, 0, 1, '2025-12-14 22:20:30', '2025-12-14 22:20:30'),
+(257, 1, 0, 'import Produkty (od 253 do 11) z zaokrągleniem', '', 0, 1, NULL, 1, 0, 1, '2025-12-14 22:20:33', '2025-12-14 22:20:33'),
+(258, 1, 0, 'import Produkty (od 264 do 21) z zaokrągleniem', '', 0, 1, NULL, 1, 0, 1, '2025-12-14 22:20:37', '2025-12-14 22:20:37'),
+(259, 1, 0, 'import Produkty (od 285 do 24) z zaokrągleniem', '', 0, 1, NULL, 1, 0, 1, '2025-12-14 22:20:43', '2025-12-14 22:20:43'),
+(260, 1, 0, 'import Produkty (od 309 do 21) z zaokrągleniem', '', 0, 1, NULL, 1, 0, 1, '2025-12-14 22:20:47', '2025-12-14 22:20:47'),
+(261, 1, 0, 'import Produkty (od 330 do 26) z zaokrągleniem', '', 0, 1, NULL, 1, 0, 1, '2025-12-14 22:20:52', '2025-12-14 22:20:52'),
+(262, 1, 0, 'import Produkty (od 356 do 24) z zaokrągleniem', '', 0, 1, NULL, 1, 0, 1, '2025-12-14 22:20:58', '2025-12-14 22:20:58'),
+(263, 1, 0, 'import Produkty (od 380 do 20) z zaokrągleniem', '', 0, 1, NULL, 1, 0, 1, '2025-12-14 22:21:00', '2025-12-14 22:21:00'),
+(264, 1, 0, 'import Produkty (od 400 do 34) z zaokrągleniem', '', 0, 1, NULL, 1, 0, 1, '2025-12-14 22:21:07', '2025-12-14 22:21:07'),
+(265, 1, 0, 'import Produkty (od 434 do 27) z zaokrągleniem', '', 0, 1, NULL, 1, 0, 1, '2025-12-14 22:21:11', '2025-12-14 22:21:11'),
+(266, 1, 0, 'import Produkty (od 461 do 33) z zaokrągleniem', '', 0, 1, NULL, 1, 0, 1, '2025-12-14 22:21:19', '2025-12-14 22:21:19'),
+(267, 1, 0, 'import Produkty (od 494 do 20) z zaokrągleniem', '', 0, 1, NULL, 1, 0, 1, '2025-12-14 22:21:23', '2025-12-14 22:21:23'),
+(268, 1, 0, 'import Produkty (od 514 do 23) z zaokrągleniem', '', 0, 1, NULL, 1, 0, 1, '2025-12-14 22:21:28', '2025-12-14 22:21:28'),
+(269, 1, 0, 'import Produkty (od 537 do 20) z zaokrągleniem', '', 0, 1, NULL, 1, 0, 1, '2025-12-14 22:21:37', '2025-12-14 22:21:37'),
+(270, 1, 0, 'import Produkty (od 557 do 11) z zaokrągleniem', '', 0, 1, NULL, 1, 0, 1, '2025-12-14 22:21:42', '2025-12-14 22:21:42'),
+(271, 1, 0, 'import Produkty (od 568 do 10) z zaokrągleniem', '', 0, 1, NULL, 1, 0, 1, '2025-12-14 22:21:48', '2025-12-14 22:21:48'),
+(272, 1, 0, 'import Produkty (od 578 do 7) z zaokrągleniem', '', 0, 1, NULL, 1, 0, 1, '2025-12-14 22:21:53', '2025-12-14 22:21:53'),
+(273, 1, 0, 'import Produkty (od 585 do 7) z zaokrągleniem', '', 0, 1, NULL, 1, 0, 1, '2025-12-14 22:21:57', '2025-12-14 22:21:57'),
+(274, 1, 0, 'import Produkty (od 592 do 9) z zaokrągleniem', '', 0, 1, NULL, 1, 0, 1, '2025-12-14 22:22:00', '2025-12-14 22:22:00'),
+(275, 1, 0, 'import Produkty (od 601 do 11) z zaokrągleniem', '', 0, 1, NULL, 1, 0, 1, '2025-12-14 22:22:04', '2025-12-14 22:22:04'),
+(276, 1, 0, 'import Produkty (od 612 do 14) z zaokrągleniem', '', 0, 1, NULL, 1, 0, 1, '2025-12-14 22:22:08', '2025-12-14 22:22:08'),
+(277, 1, 0, 'import Produkty (od 626 do 17) z zaokrągleniem', '', 0, 1, NULL, 1, 0, 1, '2025-12-14 22:22:12', '2025-12-14 22:22:12'),
+(278, 1, 0, 'import Produkty (od 643 do 26) z zaokrągleniem', '', 0, 1, NULL, 1, 0, 1, '2025-12-14 22:22:15', '2025-12-14 22:22:15'),
+(279, 1, 0, 'import Produkty (od 669 do 36) z zaokrągleniem', '', 0, 1, NULL, 1, 0, 1, '2025-12-14 22:22:18', '2025-12-14 22:22:18'),
+(280, 1, 0, 'import Produkty (od 0 do 5) z zaokrągleniem', '', 0, 1, NULL, 1, 0, 1, '2025-12-14 22:22:18', '2025-12-14 22:22:18');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_mail`
+-- Структура таблицы `ps_mail`
 --
 
 CREATE TABLE `ps_mail` (
@@ -6762,7 +14262,7 @@ CREATE TABLE `ps_mail` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_manufacturer`
+-- Структура таблицы `ps_manufacturer`
 --
 
 CREATE TABLE `ps_manufacturer` (
@@ -6776,7 +14276,7 @@ CREATE TABLE `ps_manufacturer` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_manufacturer_lang`
+-- Структура таблицы `ps_manufacturer_lang`
 --
 
 CREATE TABLE `ps_manufacturer_lang` (
@@ -6792,7 +14292,7 @@ CREATE TABLE `ps_manufacturer_lang` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_manufacturer_shop`
+-- Структура таблицы `ps_manufacturer_shop`
 --
 
 CREATE TABLE `ps_manufacturer_shop` (
@@ -6803,7 +14303,7 @@ CREATE TABLE `ps_manufacturer_shop` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_memcached_servers`
+-- Структура таблицы `ps_memcached_servers`
 --
 
 CREATE TABLE `ps_memcached_servers` (
@@ -6816,7 +14316,7 @@ CREATE TABLE `ps_memcached_servers` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_message`
+-- Структура таблицы `ps_message`
 --
 
 CREATE TABLE `ps_message` (
@@ -6833,7 +14333,7 @@ CREATE TABLE `ps_message` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_message_readed`
+-- Структура таблицы `ps_message_readed`
 --
 
 CREATE TABLE `ps_message_readed` (
@@ -6845,7 +14345,7 @@ CREATE TABLE `ps_message_readed` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_meta`
+-- Структура таблицы `ps_meta`
 --
 
 CREATE TABLE `ps_meta` (
@@ -6855,7 +14355,7 @@ CREATE TABLE `ps_meta` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_meta`
+-- Дамп данных таблицы `ps_meta`
 --
 
 INSERT INTO `ps_meta` (`id_meta`, `page`, `configurable`) VALUES
@@ -6903,7 +14403,7 @@ INSERT INTO `ps_meta` (`id_meta`, `page`, `configurable`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_meta_lang`
+-- Структура таблицы `ps_meta_lang`
 --
 
 CREATE TABLE `ps_meta_lang` (
@@ -6917,7 +14417,7 @@ CREATE TABLE `ps_meta_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_meta_lang`
+-- Дамп данных таблицы `ps_meta_lang`
 --
 
 INSERT INTO `ps_meta_lang` (`id_meta`, `id_shop`, `id_lang`, `title`, `description`, `keywords`, `url_rewrite`) VALUES
@@ -6957,7 +14457,7 @@ INSERT INTO `ps_meta_lang` (`id_meta`, `id_shop`, `id_lang`, `title`, `descripti
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_module`
+-- Структура таблицы `ps_module`
 --
 
 CREATE TABLE `ps_module` (
@@ -6968,7 +14468,7 @@ CREATE TABLE `ps_module` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_module`
+-- Дамп данных таблицы `ps_module`
 --
 
 INSERT INTO `ps_module` (`id_module`, `name`, `active`, `version`) VALUES
@@ -7038,7 +14538,7 @@ INSERT INTO `ps_module` (`id_module`, `name`, `active`, `version`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_module_access`
+-- Структура таблицы `ps_module_access`
 --
 
 CREATE TABLE `ps_module_access` (
@@ -7047,7 +14547,7 @@ CREATE TABLE `ps_module_access` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_module_access`
+-- Дамп данных таблицы `ps_module_access`
 --
 
 INSERT INTO `ps_module_access` (`id_profile`, `id_authorization_role`) VALUES
@@ -7303,7 +14803,7 @@ INSERT INTO `ps_module_access` (`id_profile`, `id_authorization_role`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_module_carrier`
+-- Структура таблицы `ps_module_carrier`
 --
 
 CREATE TABLE `ps_module_carrier` (
@@ -7313,7 +14813,7 @@ CREATE TABLE `ps_module_carrier` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_module_carrier`
+-- Дамп данных таблицы `ps_module_carrier`
 --
 
 INSERT INTO `ps_module_carrier` (`id_module`, `id_shop`, `id_reference`) VALUES
@@ -7333,7 +14833,7 @@ INSERT INTO `ps_module_carrier` (`id_module`, `id_shop`, `id_reference`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_module_country`
+-- Структура таблицы `ps_module_country`
 --
 
 CREATE TABLE `ps_module_country` (
@@ -7343,7 +14843,7 @@ CREATE TABLE `ps_module_country` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_module_country`
+-- Дамп данных таблицы `ps_module_country`
 --
 
 INSERT INTO `ps_module_country` (`id_module`, `id_shop`, `id_country`) VALUES
@@ -7554,7 +15054,7 @@ INSERT INTO `ps_module_country` (`id_module`, `id_shop`, `id_country`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_module_currency`
+-- Структура таблицы `ps_module_currency`
 --
 
 CREATE TABLE `ps_module_currency` (
@@ -7564,7 +15064,7 @@ CREATE TABLE `ps_module_currency` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_module_currency`
+-- Дамп данных таблицы `ps_module_currency`
 --
 
 INSERT INTO `ps_module_currency` (`id_module`, `id_shop`, `id_currency`) VALUES
@@ -7576,7 +15076,7 @@ INSERT INTO `ps_module_currency` (`id_module`, `id_shop`, `id_currency`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_module_group`
+-- Структура таблицы `ps_module_group`
 --
 
 CREATE TABLE `ps_module_group` (
@@ -7586,7 +15086,7 @@ CREATE TABLE `ps_module_group` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_module_group`
+-- Дамп данных таблицы `ps_module_group`
 --
 
 INSERT INTO `ps_module_group` (`id_module`, `id_shop`, `id_group`) VALUES
@@ -7780,7 +15280,7 @@ INSERT INTO `ps_module_group` (`id_module`, `id_shop`, `id_group`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_module_history`
+-- Структура таблицы `ps_module_history`
 --
 
 CREATE TABLE `ps_module_history` (
@@ -7792,7 +15292,7 @@ CREATE TABLE `ps_module_history` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `ps_module_history`
+-- Дамп данных таблицы `ps_module_history`
 --
 
 INSERT INTO `ps_module_history` (`id`, `id_employee`, `id_module`, `date_add`, `date_upd`) VALUES
@@ -7801,7 +15301,7 @@ INSERT INTO `ps_module_history` (`id`, `id_employee`, `id_module`, `date_add`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_module_preference`
+-- Структура таблицы `ps_module_preference`
 --
 
 CREATE TABLE `ps_module_preference` (
@@ -7815,7 +15315,7 @@ CREATE TABLE `ps_module_preference` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_module_shop`
+-- Структура таблицы `ps_module_shop`
 --
 
 CREATE TABLE `ps_module_shop` (
@@ -7825,7 +15325,7 @@ CREATE TABLE `ps_module_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_module_shop`
+-- Дамп данных таблицы `ps_module_shop`
 --
 
 INSERT INTO `ps_module_shop` (`id_module`, `id_shop`, `enable_device`) VALUES
@@ -7895,7 +15395,7 @@ INSERT INTO `ps_module_shop` (`id_module`, `id_shop`, `enable_device`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_operating_system`
+-- Структура таблицы `ps_operating_system`
 --
 
 CREATE TABLE `ps_operating_system` (
@@ -7904,7 +15404,7 @@ CREATE TABLE `ps_operating_system` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_operating_system`
+-- Дамп данных таблицы `ps_operating_system`
 --
 
 INSERT INTO `ps_operating_system` (`id_operating_system`, `name`) VALUES
@@ -7921,7 +15421,7 @@ INSERT INTO `ps_operating_system` (`id_operating_system`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_orders`
+-- Структура таблицы `ps_orders`
 --
 
 CREATE TABLE `ps_orders` (
@@ -7977,7 +15477,7 @@ CREATE TABLE `ps_orders` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_order_carrier`
+-- Структура таблицы `ps_order_carrier`
 --
 
 CREATE TABLE `ps_order_carrier` (
@@ -7995,7 +15495,7 @@ CREATE TABLE `ps_order_carrier` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_order_cart_rule`
+-- Структура таблицы `ps_order_cart_rule`
 --
 
 CREATE TABLE `ps_order_cart_rule` (
@@ -8013,7 +15513,7 @@ CREATE TABLE `ps_order_cart_rule` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_order_detail`
+-- Структура таблицы `ps_order_detail`
 --
 
 CREATE TABLE `ps_order_detail` (
@@ -8071,7 +15571,7 @@ CREATE TABLE `ps_order_detail` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_order_detail_tax`
+-- Структура таблицы `ps_order_detail_tax`
 --
 
 CREATE TABLE `ps_order_detail_tax` (
@@ -8084,7 +15584,7 @@ CREATE TABLE `ps_order_detail_tax` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_order_history`
+-- Структура таблицы `ps_order_history`
 --
 
 CREATE TABLE `ps_order_history` (
@@ -8098,7 +15598,7 @@ CREATE TABLE `ps_order_history` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_order_invoice`
+-- Структура таблицы `ps_order_invoice`
 --
 
 CREATE TABLE `ps_order_invoice` (
@@ -8126,7 +15626,7 @@ CREATE TABLE `ps_order_invoice` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_order_invoice_payment`
+-- Структура таблицы `ps_order_invoice_payment`
 --
 
 CREATE TABLE `ps_order_invoice_payment` (
@@ -8138,7 +15638,7 @@ CREATE TABLE `ps_order_invoice_payment` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_order_invoice_tax`
+-- Структура таблицы `ps_order_invoice_tax`
 --
 
 CREATE TABLE `ps_order_invoice_tax` (
@@ -8151,7 +15651,7 @@ CREATE TABLE `ps_order_invoice_tax` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_order_message`
+-- Структура таблицы `ps_order_message`
 --
 
 CREATE TABLE `ps_order_message` (
@@ -8162,7 +15662,7 @@ CREATE TABLE `ps_order_message` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_order_message_lang`
+-- Структура таблицы `ps_order_message_lang`
 --
 
 CREATE TABLE `ps_order_message_lang` (
@@ -8175,7 +15675,7 @@ CREATE TABLE `ps_order_message_lang` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_order_payment`
+-- Структура таблицы `ps_order_payment`
 --
 
 CREATE TABLE `ps_order_payment` (
@@ -8196,7 +15696,7 @@ CREATE TABLE `ps_order_payment` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_order_payu_payments`
+-- Структура таблицы `ps_order_payu_payments`
 --
 
 CREATE TABLE `ps_order_payu_payments` (
@@ -8214,7 +15714,7 @@ CREATE TABLE `ps_order_payu_payments` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_order_payu_payments_history`
+-- Структура таблицы `ps_order_payu_payments_history`
 --
 
 CREATE TABLE `ps_order_payu_payments_history` (
@@ -8228,7 +15728,7 @@ CREATE TABLE `ps_order_payu_payments_history` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_order_return`
+-- Структура таблицы `ps_order_return`
 --
 
 CREATE TABLE `ps_order_return` (
@@ -8244,7 +15744,7 @@ CREATE TABLE `ps_order_return` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_order_return_detail`
+-- Структура таблицы `ps_order_return_detail`
 --
 
 CREATE TABLE `ps_order_return_detail` (
@@ -8257,7 +15757,7 @@ CREATE TABLE `ps_order_return_detail` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_order_return_state`
+-- Структура таблицы `ps_order_return_state`
 --
 
 CREATE TABLE `ps_order_return_state` (
@@ -8266,7 +15766,7 @@ CREATE TABLE `ps_order_return_state` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_order_return_state`
+-- Дамп данных таблицы `ps_order_return_state`
 --
 
 INSERT INTO `ps_order_return_state` (`id_order_return_state`, `color`) VALUES
@@ -8279,7 +15779,7 @@ INSERT INTO `ps_order_return_state` (`id_order_return_state`, `color`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_order_return_state_lang`
+-- Структура таблицы `ps_order_return_state_lang`
 --
 
 CREATE TABLE `ps_order_return_state_lang` (
@@ -8289,7 +15789,7 @@ CREATE TABLE `ps_order_return_state_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_order_return_state_lang`
+-- Дамп данных таблицы `ps_order_return_state_lang`
 --
 
 INSERT INTO `ps_order_return_state_lang` (`id_order_return_state`, `id_lang`, `name`) VALUES
@@ -8302,7 +15802,7 @@ INSERT INTO `ps_order_return_state_lang` (`id_order_return_state`, `id_lang`, `n
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_order_slip`
+-- Структура таблицы `ps_order_slip`
 --
 
 CREATE TABLE `ps_order_slip` (
@@ -8326,7 +15826,7 @@ CREATE TABLE `ps_order_slip` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_order_slip_detail`
+-- Структура таблицы `ps_order_slip_detail`
 --
 
 CREATE TABLE `ps_order_slip_detail` (
@@ -8344,7 +15844,7 @@ CREATE TABLE `ps_order_slip_detail` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_order_state`
+-- Структура таблицы `ps_order_state`
 --
 
 CREATE TABLE `ps_order_state` (
@@ -8365,7 +15865,7 @@ CREATE TABLE `ps_order_state` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_order_state`
+-- Дамп данных таблицы `ps_order_state`
 --
 
 INSERT INTO `ps_order_state` (`id_order_state`, `invoice`, `send_email`, `module_name`, `color`, `unremovable`, `hidden`, `logable`, `delivery`, `shipped`, `paid`, `pdf_invoice`, `pdf_delivery`, `deleted`) VALUES
@@ -8391,7 +15891,7 @@ INSERT INTO `ps_order_state` (`id_order_state`, `invoice`, `send_email`, `module
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_order_state_lang`
+-- Структура таблицы `ps_order_state_lang`
 --
 
 CREATE TABLE `ps_order_state_lang` (
@@ -8402,7 +15902,7 @@ CREATE TABLE `ps_order_state_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_order_state_lang`
+-- Дамп данных таблицы `ps_order_state_lang`
 --
 
 INSERT INTO `ps_order_state_lang` (`id_order_state`, `id_lang`, `name`, `template`) VALUES
@@ -8428,7 +15928,7 @@ INSERT INTO `ps_order_state_lang` (`id_order_state`, `id_lang`, `name`, `templat
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_pack`
+-- Структура таблицы `ps_pack`
 --
 
 CREATE TABLE `ps_pack` (
@@ -8441,7 +15941,7 @@ CREATE TABLE `ps_pack` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_page`
+-- Структура таблицы `ps_page`
 --
 
 CREATE TABLE `ps_page` (
@@ -8451,7 +15951,7 @@ CREATE TABLE `ps_page` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_page`
+-- Дамп данных таблицы `ps_page`
 --
 
 INSERT INTO `ps_page` (`id_page`, `id_page_type`, `id_object`) VALUES
@@ -8460,7 +15960,7 @@ INSERT INTO `ps_page` (`id_page`, `id_page_type`, `id_object`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_pagenotfound`
+-- Структура таблицы `ps_pagenotfound`
 --
 
 CREATE TABLE `ps_pagenotfound` (
@@ -8475,7 +15975,7 @@ CREATE TABLE `ps_pagenotfound` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_page_type`
+-- Структура таблицы `ps_page_type`
 --
 
 CREATE TABLE `ps_page_type` (
@@ -8484,7 +15984,7 @@ CREATE TABLE `ps_page_type` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_page_type`
+-- Дамп данных таблицы `ps_page_type`
 --
 
 INSERT INTO `ps_page_type` (`id_page_type`, `name`) VALUES
@@ -8493,7 +15993,7 @@ INSERT INTO `ps_page_type` (`id_page_type`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_page_viewed`
+-- Структура таблицы `ps_page_viewed`
 --
 
 CREATE TABLE `ps_page_viewed` (
@@ -8507,7 +16007,7 @@ CREATE TABLE `ps_page_viewed` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_product`
+-- Структура таблицы `ps_product`
 --
 
 CREATE TABLE `ps_product` (
@@ -8569,16 +16069,705 @@ CREATE TABLE `ps_product` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_product`
+-- Дамп данных таблицы `ps_product`
 --
 
 INSERT INTO `ps_product` (`id_product`, `id_supplier`, `id_manufacturer`, `id_category_default`, `id_shop_default`, `id_tax_rules_group`, `on_sale`, `online_only`, `ean13`, `isbn`, `upc`, `mpn`, `ecotax`, `quantity`, `minimal_quantity`, `low_stock_threshold`, `low_stock_alert`, `price`, `wholesale_price`, `unity`, `unit_price_ratio`, `additional_shipping_cost`, `reference`, `supplier_reference`, `location`, `width`, `height`, `depth`, `weight`, `out_of_stock`, `additional_delivery_times`, `quantity_discount`, `customizable`, `uploadable_files`, `text_fields`, `active`, `redirect_type`, `id_type_redirected`, `available_for_order`, `available_date`, `show_condition`, `condition`, `show_price`, `indexed`, `visibility`, `cache_is_pack`, `cache_has_attachments`, `is_virtual`, `cache_default_attribute`, `date_add`, `date_upd`, `advanced_stock_management`, `pack_stock_type`, `state`, `product_type`) VALUES
-(1, 0, 0, 2, 1, 0, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 0.000000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 0, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-11-29 14:51:55', '2025-11-29 14:51:55', 0, 3, 0, '');
+(1, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 15.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:32', '2025-12-14 22:19:32', 0, 3, 1, ''),
+(2, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 16.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:32', '2025-12-14 22:19:32', 0, 3, 1, ''),
+(3, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 15.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:32', '2025-12-14 22:19:32', 0, 3, 1, ''),
+(4, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 27.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:32', '2025-12-14 22:19:32', 0, 3, 1, ''),
+(5, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 24.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:32', '2025-12-14 22:19:32', 0, 3, 1, ''),
+(6, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 79.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 0, 3, 1, ''),
+(7, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 29.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 0, 3, 1, ''),
+(8, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 27.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 0, 3, 1, ''),
+(9, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 21.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 0, 3, 1, ''),
+(10, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 24.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 0, 3, 1, ''),
+(11, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 13.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 0, 3, 1, ''),
+(12, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 23.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 0, 3, 1, ''),
+(13, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 23.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 0, 3, 1, ''),
+(14, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 16.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 0, 3, 1, ''),
+(15, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 24.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 0, 3, 1, ''),
+(16, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 19.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:36', '2025-12-14 22:19:36', 0, 3, 1, ''),
+(17, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 16.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:36', '2025-12-14 22:19:36', 0, 3, 1, ''),
+(18, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 29.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:36', '2025-12-14 22:19:36', 0, 3, 1, ''),
+(19, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 19.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:36', '2025-12-14 22:19:36', 0, 3, 1, ''),
+(20, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 19.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:36', '2025-12-14 22:19:36', 0, 3, 1, ''),
+(21, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 22.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:36', '2025-12-14 22:19:36', 0, 3, 1, ''),
+(22, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 19.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:36', '2025-12-14 22:19:36', 0, 3, 1, ''),
+(23, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 19.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:36', '2025-12-14 22:19:36', 0, 3, 1, ''),
+(24, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 13.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:36', '2025-12-14 22:19:36', 0, 3, 1, ''),
+(25, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 14.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:36', '2025-12-14 22:19:36', 0, 3, 1, ''),
+(26, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 19.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:36', '2025-12-14 22:19:36', 0, 3, 1, ''),
+(27, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 16.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:36', '2025-12-14 22:19:36', 0, 3, 1, ''),
+(28, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 31.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:36', '2025-12-14 22:19:36', 0, 3, 1, ''),
+(29, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 13.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:36', '2025-12-14 22:19:36', 0, 3, 1, ''),
+(30, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 19.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:36', '2025-12-14 22:19:36', 0, 3, 1, ''),
+(31, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 31.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:36', '2025-12-14 22:19:36', 0, 3, 1, ''),
+(32, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 16.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:36', '2025-12-14 22:19:36', 0, 3, 1, ''),
+(33, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 22.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:36', '2025-12-14 22:19:36', 0, 3, 1, ''),
+(34, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 24.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:36', '2025-12-14 22:19:36', 0, 3, 1, ''),
+(35, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 29.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:36', '2025-12-14 22:19:36', 0, 3, 1, ''),
+(36, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 29.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:36', '2025-12-14 22:19:36', 0, 3, 1, ''),
+(37, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 24.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:36', '2025-12-14 22:19:36', 0, 3, 1, ''),
+(38, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 23.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:36', '2025-12-14 22:19:36', 0, 3, 1, ''),
+(39, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 15.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:36', '2025-12-14 22:19:36', 0, 3, 1, ''),
+(40, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 21.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:36', '2025-12-14 22:19:36', 0, 3, 1, ''),
+(41, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 14.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:41', '2025-12-14 22:19:41', 0, 3, 1, ''),
+(42, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 9.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:41', '2025-12-14 22:19:41', 0, 3, 1, ''),
+(43, 0, 0, 35, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 19.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:41', '2025-12-14 22:19:41', 0, 3, 1, ''),
+(44, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 8.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:41', '2025-12-14 22:19:41', 0, 3, 1, ''),
+(45, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 8.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:41', '2025-12-14 22:19:41', 0, 3, 1, ''),
+(46, 0, 0, 35, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 26.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:41', '2025-12-14 22:19:41', 0, 3, 1, ''),
+(47, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 8.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:41', '2025-12-14 22:19:41', 0, 3, 1, ''),
+(48, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 8.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:41', '2025-12-14 22:19:41', 0, 3, 1, ''),
+(49, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 8.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:41', '2025-12-14 22:19:41', 0, 3, 1, ''),
+(50, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 8.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:41', '2025-12-14 22:19:41', 0, 3, 1, ''),
+(51, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 8.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:41', '2025-12-14 22:19:41', 0, 3, 1, ''),
+(52, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 49.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:41', '2025-12-14 22:19:41', 0, 3, 1, ''),
+(53, 0, 0, 44, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:41', '2025-12-14 22:19:41', 0, 3, 1, ''),
+(54, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 24.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:41', '2025-12-14 22:19:41', 0, 3, 1, ''),
+(55, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 20.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:41', '2025-12-14 22:19:41', 0, 3, 1, ''),
+(56, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 23.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:41', '2025-12-14 22:19:41', 0, 3, 1, ''),
+(57, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 19.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:41', '2025-12-14 22:19:41', 0, 3, 1, ''),
+(58, 0, 0, 46, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 21.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:41', '2025-12-14 22:19:41', 0, 3, 1, ''),
+(59, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 18.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:41', '2025-12-14 22:19:41', 0, 3, 1, ''),
+(60, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 19.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:41', '2025-12-14 22:19:41', 0, 3, 1, ''),
+(61, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 18.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:41', '2025-12-14 22:19:41', 0, 3, 1, ''),
+(62, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 18.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:41', '2025-12-14 22:19:41', 0, 3, 1, ''),
+(63, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 18.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:41', '2025-12-14 22:19:41', 0, 3, 1, ''),
+(64, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 34.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:41', '2025-12-14 22:19:41', 0, 3, 1, ''),
+(65, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 19.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:41', '2025-12-14 22:19:41', 0, 3, 1, ''),
+(66, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 19.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:46', '2025-12-14 22:19:46', 0, 3, 1, ''),
+(67, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 19.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:46', '2025-12-14 22:19:46', 0, 3, 1, ''),
+(68, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 23.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:46', '2025-12-14 22:19:46', 0, 3, 1, ''),
+(69, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 20.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:46', '2025-12-14 22:19:46', 0, 3, 1, ''),
+(70, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 18.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:46', '2025-12-14 22:19:46', 0, 3, 1, ''),
+(71, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 18.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:46', '2025-12-14 22:19:46', 0, 3, 1, ''),
+(72, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 18.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:46', '2025-12-14 22:19:46', 0, 3, 1, ''),
+(73, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 18.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:46', '2025-12-14 22:19:46', 0, 3, 1, ''),
+(74, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 19.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:46', '2025-12-14 22:19:46', 0, 3, 1, ''),
+(75, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 19.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:46', '2025-12-14 22:19:46', 0, 3, 1, ''),
+(76, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 19.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:46', '2025-12-14 22:19:46', 0, 3, 1, ''),
+(77, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 21.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:46', '2025-12-14 22:19:46', 0, 3, 1, ''),
+(78, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 19.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:46', '2025-12-14 22:19:46', 0, 3, 1, ''),
+(79, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 19.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:46', '2025-12-14 22:19:46', 0, 3, 1, ''),
+(80, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 19.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:46', '2025-12-14 22:19:46', 0, 3, 1, ''),
+(81, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 19.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:46', '2025-12-14 22:19:46', 0, 3, 1, ''),
+(82, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 22.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:46', '2025-12-14 22:19:46', 0, 3, 1, ''),
+(83, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 19.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:46', '2025-12-14 22:19:46', 0, 3, 1, ''),
+(84, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 36.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:46', '2025-12-14 22:19:46', 0, 3, 1, ''),
+(85, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 18.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:46', '2025-12-14 22:19:46', 0, 3, 1, ''),
+(86, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 19.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:46', '2025-12-14 22:19:46', 0, 3, 1, ''),
+(87, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 22.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:46', '2025-12-14 22:19:46', 0, 3, 1, ''),
+(88, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 19.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:46', '2025-12-14 22:19:46', 0, 3, 1, ''),
+(89, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 23.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:51', '2025-12-14 22:19:51', 0, 3, 1, ''),
+(90, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 15.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:51', '2025-12-14 22:19:51', 0, 3, 1, ''),
+(91, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 19.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:51', '2025-12-14 22:19:51', 0, 3, 1, ''),
+(92, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 20.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:51', '2025-12-14 22:19:51', 0, 3, 1, ''),
+(93, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 22.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:51', '2025-12-14 22:19:51', 0, 3, 1, ''),
+(94, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 21.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:51', '2025-12-14 22:19:51', 0, 3, 1, ''),
+(95, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 19.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:51', '2025-12-14 22:19:51', 0, 3, 1, ''),
+(96, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 19.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:51', '2025-12-14 22:19:51', 0, 3, 1, ''),
+(97, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 19.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:51', '2025-12-14 22:19:51', 0, 3, 1, ''),
+(98, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 21.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:51', '2025-12-14 22:19:51', 0, 3, 1, ''),
+(99, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 19.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:51', '2025-12-14 22:19:51', 0, 3, 1, ''),
+(100, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 19.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:51', '2025-12-14 22:19:51', 0, 3, 1, ''),
+(101, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 45.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:51', '2025-12-14 22:19:51', 0, 3, 1, ''),
+(102, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 29.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:51', '2025-12-14 22:19:51', 0, 3, 1, ''),
+(103, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 34.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:51', '2025-12-14 22:19:51', 0, 3, 1, ''),
+(104, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 29.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:51', '2025-12-14 22:19:51', 0, 3, 1, ''),
+(105, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 24.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:51', '2025-12-14 22:19:51', 0, 3, 1, ''),
+(106, 0, 0, 65, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 18.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:51', '2025-12-14 22:19:51', 0, 3, 1, ''),
+(107, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 32.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:51', '2025-12-14 22:19:51', 0, 3, 1, ''),
+(108, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 24.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:51', '2025-12-14 22:19:51', 0, 3, 1, ''),
+(109, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 32.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:51', '2025-12-14 22:19:51', 0, 3, 1, ''),
+(110, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 24.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:51', '2025-12-14 22:19:51', 0, 3, 1, ''),
+(111, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 39.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:51', '2025-12-14 22:19:51', 0, 3, 1, ''),
+(112, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 25.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:51', '2025-12-14 22:19:51', 0, 3, 1, ''),
+(113, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 24.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:51', '2025-12-14 22:19:51', 0, 3, 1, ''),
+(114, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 27.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 0, 3, 1, ''),
+(115, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 23.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 0, 3, 1, ''),
+(116, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 22.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 0, 3, 1, ''),
+(117, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 21.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 0, 3, 1, ''),
+(118, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 21.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 0, 3, 1, ''),
+(119, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 22.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 0, 3, 1, ''),
+(120, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 22.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 0, 3, 1, ''),
+(121, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 22.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 0, 3, 1, ''),
+(122, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 19.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 0, 3, 1, ''),
+(123, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 23.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 0, 3, 1, ''),
+(124, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 14.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 0, 3, 1, ''),
+(125, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 27.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 0, 3, 1, ''),
+(126, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 22.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 0, 3, 1, ''),
+(127, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 28.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 0, 3, 1, ''),
+(128, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 22.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 0, 3, 1, ''),
+(129, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 22.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 0, 3, 1, ''),
+(130, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 22.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 0, 3, 1, ''),
+(131, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 18.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 0, 3, 1, ''),
+(132, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 26.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 0, 3, 1, ''),
+(133, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 14.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 0, 3, 1, ''),
+(134, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 15.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 0, 3, 1, ''),
+(135, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 14.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 0, 3, 1, ''),
+(136, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 14.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 0, 3, 1, ''),
+(137, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 14.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 0, 3, 1, ''),
+(138, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 22.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 0, 3, 1, ''),
+(139, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 19.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 0, 3, 1, ''),
+(140, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 19.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 0, 3, 1, ''),
+(141, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 19.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 0, 3, 1, ''),
+(142, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 22.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 0, 3, 1, ''),
+(143, 0, 0, 56, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 12.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 0, 3, 1, ''),
+(144, 0, 0, 36, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 28.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 0, 3, 1, ''),
+(145, 0, 0, 36, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 44.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 0, 3, 1, ''),
+(146, 0, 0, 36, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 27.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 0, 3, 1, ''),
+(147, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 21.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 0, 3, 1, ''),
+(148, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 19.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 0, 3, 1, ''),
+(149, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 17.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 0, 3, 1, ''),
+(150, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 19.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 0, 3, 1, ''),
+(151, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 22.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 0, 3, 1, ''),
+(152, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 19.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 0, 3, 1, ''),
+(153, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 19.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 0, 3, 1, ''),
+(154, 0, 0, 45, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 22.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 0, 3, 1, ''),
+(155, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 18.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 0, 3, 1, ''),
+(156, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 23.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 0, 3, 1, ''),
+(157, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 33.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 0, 3, 1, ''),
+(158, 0, 0, 46, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 18.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 0, 3, 1, ''),
+(159, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 14.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 0, 3, 1, ''),
+(160, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 20.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 0, 3, 1, '');
+INSERT INTO `ps_product` (`id_product`, `id_supplier`, `id_manufacturer`, `id_category_default`, `id_shop_default`, `id_tax_rules_group`, `on_sale`, `online_only`, `ean13`, `isbn`, `upc`, `mpn`, `ecotax`, `quantity`, `minimal_quantity`, `low_stock_threshold`, `low_stock_alert`, `price`, `wholesale_price`, `unity`, `unit_price_ratio`, `additional_shipping_cost`, `reference`, `supplier_reference`, `location`, `width`, `height`, `depth`, `weight`, `out_of_stock`, `additional_delivery_times`, `quantity_discount`, `customizable`, `uploadable_files`, `text_fields`, `active`, `redirect_type`, `id_type_redirected`, `available_for_order`, `available_date`, `show_condition`, `condition`, `show_price`, `indexed`, `visibility`, `cache_is_pack`, `cache_has_attachments`, `is_virtual`, `cache_default_attribute`, `date_add`, `date_upd`, `advanced_stock_management`, `pack_stock_type`, `state`, `product_type`) VALUES
+(161, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 19.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 0, 3, 1, ''),
+(162, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 21.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 0, 3, 1, ''),
+(163, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 20.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 0, 3, 1, ''),
+(164, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 19.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 0, 3, 1, ''),
+(165, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 20.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 0, 3, 1, ''),
+(166, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 24.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 0, 3, 1, ''),
+(167, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 19.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 0, 3, 1, ''),
+(168, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 15.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 0, 3, 1, ''),
+(169, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 18.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 0, 3, 1, ''),
+(170, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 15.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 0, 3, 1, ''),
+(171, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 19.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 0, 3, 1, ''),
+(172, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 14.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 0, 3, 1, ''),
+(173, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 22.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 0, 3, 1, ''),
+(174, 0, 0, 73, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 0, 3, 1, ''),
+(175, 0, 0, 73, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 0, 3, 1, ''),
+(176, 0, 0, 73, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 0, 3, 1, ''),
+(177, 0, 0, 73, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 0, 3, 1, ''),
+(178, 0, 0, 73, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 0, 3, 1, ''),
+(179, 0, 0, 73, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 0, 3, 1, ''),
+(180, 0, 0, 41, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 21.520000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 0, 3, 1, ''),
+(181, 0, 0, 73, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 0, 3, 1, ''),
+(182, 0, 0, 73, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 0, 3, 1, ''),
+(183, 0, 0, 73, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 0, 3, 1, ''),
+(184, 0, 0, 47, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 0, 3, 1, ''),
+(185, 0, 0, 73, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 0, 3, 1, ''),
+(186, 0, 0, 73, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 0, 3, 1, ''),
+(187, 0, 0, 73, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 0, 3, 1, ''),
+(188, 0, 0, 73, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 0, 3, 1, ''),
+(189, 0, 0, 73, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 0, 3, 1, ''),
+(190, 0, 0, 73, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 0, 3, 1, ''),
+(191, 0, 0, 74, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 43.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 0, 3, 1, ''),
+(192, 0, 0, 74, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 43.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 0, 3, 1, ''),
+(193, 0, 0, 74, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 43.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 0, 3, 1, ''),
+(194, 0, 0, 74, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 43.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 0, 3, 1, ''),
+(195, 0, 0, 74, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 43.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 0, 3, 1, ''),
+(196, 0, 0, 74, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 43.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 0, 3, 1, ''),
+(197, 0, 0, 74, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 43.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 0, 3, 1, ''),
+(198, 0, 0, 36, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 27.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 0, 3, 1, ''),
+(199, 0, 0, 36, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 32.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 0, 3, 1, ''),
+(200, 0, 0, 36, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 25.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 0, 3, 1, ''),
+(201, 0, 0, 36, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 18.130000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 0, 3, 1, ''),
+(202, 0, 0, 36, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 32.830000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:13', '2025-12-14 22:20:13', 0, 3, 1, ''),
+(203, 0, 0, 36, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 19.530000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:13', '2025-12-14 22:20:13', 0, 3, 1, ''),
+(204, 0, 0, 36, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 24.430000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:13', '2025-12-14 22:20:13', 0, 3, 1, ''),
+(205, 0, 0, 36, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 34.930000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:13', '2025-12-14 22:20:13', 0, 3, 1, ''),
+(206, 0, 0, 36, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:13', '2025-12-14 22:20:13', 0, 3, 1, ''),
+(207, 0, 0, 36, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 37.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:13', '2025-12-14 22:20:13', 0, 3, 1, ''),
+(208, 0, 0, 36, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:13', '2025-12-14 22:20:13', 0, 3, 1, ''),
+(209, 0, 0, 36, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 26.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:13', '2025-12-14 22:20:13', 0, 3, 1, ''),
+(210, 0, 0, 36, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 32.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:13', '2025-12-14 22:20:13', 0, 3, 1, ''),
+(211, 0, 0, 36, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:13', '2025-12-14 22:20:13', 0, 3, 1, ''),
+(212, 0, 0, 36, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 26.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:13', '2025-12-14 22:20:13', 0, 3, 1, ''),
+(213, 0, 0, 36, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 25.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:13', '2025-12-14 22:20:13', 0, 3, 1, ''),
+(214, 0, 0, 36, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 26.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:13', '2025-12-14 22:20:13', 0, 3, 1, ''),
+(215, 0, 0, 38, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 36.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:13', '2025-12-14 22:20:13', 0, 3, 1, ''),
+(216, 0, 0, 41, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 34.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:13', '2025-12-14 22:20:13', 0, 3, 1, ''),
+(217, 0, 0, 37, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 38.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:13', '2025-12-14 22:20:13', 0, 3, 1, ''),
+(218, 0, 0, 41, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 34.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:13', '2025-12-14 22:20:13', 0, 3, 1, ''),
+(219, 0, 0, 75, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 40.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:13', '2025-12-14 22:20:13', 0, 3, 1, ''),
+(220, 0, 0, 37, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 39.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 0, 3, 1, ''),
+(221, 0, 0, 38, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 39.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 0, 3, 1, ''),
+(222, 0, 0, 41, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 39.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 0, 3, 1, ''),
+(223, 0, 0, 41, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 36.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 0, 3, 1, ''),
+(224, 0, 0, 78, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 19.960000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 0, 3, 1, ''),
+(225, 0, 0, 75, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 0, 3, 1, ''),
+(226, 0, 0, 75, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 0, 3, 1, ''),
+(227, 0, 0, 75, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 0, 3, 1, ''),
+(228, 0, 0, 81, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 0, 3, 1, ''),
+(229, 0, 0, 81, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 0, 3, 1, ''),
+(230, 0, 0, 81, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 0, 3, 1, ''),
+(231, 0, 0, 81, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 0, 3, 1, ''),
+(232, 0, 0, 81, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 0, 3, 1, ''),
+(233, 0, 0, 81, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 0, 3, 1, ''),
+(234, 0, 0, 81, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 0, 3, 1, ''),
+(235, 0, 0, 81, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 0, 3, 1, ''),
+(236, 0, 0, 81, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 28.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 0, 3, 1, ''),
+(237, 0, 0, 81, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 34.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 0, 3, 1, ''),
+(238, 0, 0, 81, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 31.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:23', '2025-12-14 22:20:23', 0, 3, 1, ''),
+(239, 0, 0, 81, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 41.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:23', '2025-12-14 22:20:23', 0, 3, 1, ''),
+(240, 0, 0, 81, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:23', '2025-12-14 22:20:23', 0, 3, 1, ''),
+(241, 0, 0, 81, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 33.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:23', '2025-12-14 22:20:23', 0, 3, 1, ''),
+(242, 0, 0, 81, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 35.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:23', '2025-12-14 22:20:23', 0, 3, 1, ''),
+(243, 0, 0, 81, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 30.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:23', '2025-12-14 22:20:23', 0, 3, 1, ''),
+(244, 0, 0, 81, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:23', '2025-12-14 22:20:23', 0, 3, 1, ''),
+(245, 0, 0, 81, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 37.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:23', '2025-12-14 22:20:23', 0, 3, 1, ''),
+(246, 0, 0, 81, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 31.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:23', '2025-12-14 22:20:23', 0, 3, 1, ''),
+(247, 0, 0, 82, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 25.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:23', '2025-12-14 22:20:23', 0, 3, 1, ''),
+(248, 0, 0, 82, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 25.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:23', '2025-12-14 22:20:23', 0, 3, 1, ''),
+(249, 0, 0, 82, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 23.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:23', '2025-12-14 22:20:23', 0, 3, 1, ''),
+(250, 0, 0, 82, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:23', '2025-12-14 22:20:23', 0, 3, 1, ''),
+(251, 0, 0, 82, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 19.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:23', '2025-12-14 22:20:23', 0, 3, 1, ''),
+(252, 0, 0, 82, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 23.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:23', '2025-12-14 22:20:23', 0, 3, 1, ''),
+(253, 0, 0, 82, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 21.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:23', '2025-12-14 22:20:23', 0, 3, 1, ''),
+(254, 0, 0, 41, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 26.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:30', '2025-12-14 22:20:30', 0, 3, 1, ''),
+(255, 0, 0, 41, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 18.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:30', '2025-12-14 22:20:30', 0, 3, 1, ''),
+(256, 0, 0, 41, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 26.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:30', '2025-12-14 22:20:30', 0, 3, 1, ''),
+(257, 0, 0, 84, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 71.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:30', '2025-12-14 22:20:30', 0, 3, 1, ''),
+(258, 0, 0, 84, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 39.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:30', '2025-12-14 22:20:30', 0, 3, 1, ''),
+(259, 0, 0, 84, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 41.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:30', '2025-12-14 22:20:30', 0, 3, 1, ''),
+(260, 0, 0, 84, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 41.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:30', '2025-12-14 22:20:30', 0, 3, 1, ''),
+(261, 0, 0, 84, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 39.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:30', '2025-12-14 22:20:30', 0, 3, 1, ''),
+(262, 0, 0, 84, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 41.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:30', '2025-12-14 22:20:30', 0, 3, 1, ''),
+(263, 0, 0, 84, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 23.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:30', '2025-12-14 22:20:30', 0, 3, 1, ''),
+(264, 0, 0, 84, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 77.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:30', '2025-12-14 22:20:30', 0, 3, 1, ''),
+(265, 0, 0, 85, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 23.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:33', '2025-12-14 22:20:33', 0, 3, 1, ''),
+(266, 0, 0, 85, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 23.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:33', '2025-12-14 22:20:33', 0, 3, 1, ''),
+(267, 0, 0, 85, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 23.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:33', '2025-12-14 22:20:33', 0, 3, 1, ''),
+(268, 0, 0, 85, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 23.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:33', '2025-12-14 22:20:33', 0, 3, 1, ''),
+(269, 0, 0, 85, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 23.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:33', '2025-12-14 22:20:33', 0, 3, 1, ''),
+(270, 0, 0, 2, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 24.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:33', '2025-12-14 22:20:33', 0, 3, 1, ''),
+(271, 0, 0, 2, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 19.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:33', '2025-12-14 22:20:33', 0, 3, 1, ''),
+(272, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 23.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:33', '2025-12-14 22:20:33', 0, 3, 1, ''),
+(273, 0, 0, 86, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 15.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:33', '2025-12-14 22:20:33', 0, 3, 1, ''),
+(274, 0, 0, 3, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 19.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:33', '2025-12-14 22:20:33', 0, 3, 1, ''),
+(275, 0, 0, 87, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 12.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:33', '2025-12-14 22:20:33', 0, 3, 1, ''),
+(276, 0, 0, 87, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 12.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:33', '2025-12-14 22:20:33', 0, 3, 1, ''),
+(277, 0, 0, 87, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 11.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:33', '2025-12-14 22:20:33', 0, 3, 1, ''),
+(278, 0, 0, 87, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 12.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:33', '2025-12-14 22:20:33', 0, 3, 1, ''),
+(279, 0, 0, 87, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 12.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:33', '2025-12-14 22:20:33', 0, 3, 1, ''),
+(280, 0, 0, 87, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 12.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:33', '2025-12-14 22:20:33', 0, 3, 1, ''),
+(281, 0, 0, 87, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 16.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:33', '2025-12-14 22:20:33', 0, 3, 1, ''),
+(282, 0, 0, 87, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 17.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:33', '2025-12-14 22:20:33', 0, 3, 1, ''),
+(283, 0, 0, 87, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 16.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:33', '2025-12-14 22:20:33', 0, 3, 1, ''),
+(284, 0, 0, 87, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 9.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:33', '2025-12-14 22:20:33', 0, 3, 1, ''),
+(285, 0, 0, 87, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 12.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:33', '2025-12-14 22:20:33', 0, 3, 1, ''),
+(286, 0, 0, 87, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 17.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:37', '2025-12-14 22:20:37', 0, 3, 1, ''),
+(287, 0, 0, 87, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 9.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:37', '2025-12-14 22:20:37', 0, 3, 1, ''),
+(288, 0, 0, 87, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 10.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:37', '2025-12-14 22:20:37', 0, 3, 1, ''),
+(289, 0, 0, 87, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 12.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:37', '2025-12-14 22:20:37', 0, 3, 1, ''),
+(290, 0, 0, 87, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 12.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:37', '2025-12-14 22:20:37', 0, 3, 1, ''),
+(291, 0, 0, 87, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 14.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:37', '2025-12-14 22:20:37', 0, 3, 1, ''),
+(292, 0, 0, 87, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 12.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:37', '2025-12-14 22:20:37', 0, 3, 1, ''),
+(293, 0, 0, 87, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 16.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:37', '2025-12-14 22:20:37', 0, 3, 1, ''),
+(294, 0, 0, 87, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 12.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:37', '2025-12-14 22:20:37', 0, 3, 1, ''),
+(295, 0, 0, 87, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 12.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:37', '2025-12-14 22:20:37', 0, 3, 1, ''),
+(296, 0, 0, 87, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 12.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:37', '2025-12-14 22:20:37', 0, 3, 1, ''),
+(297, 0, 0, 87, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 12.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:37', '2025-12-14 22:20:37', 0, 3, 1, ''),
+(298, 0, 0, 89, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 12.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:37', '2025-12-14 22:20:37', 0, 3, 1, ''),
+(299, 0, 0, 87, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 12.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:37', '2025-12-14 22:20:37', 0, 3, 1, ''),
+(300, 0, 0, 87, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 12.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:37', '2025-12-14 22:20:37', 0, 3, 1, ''),
+(301, 0, 0, 87, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 12.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:37', '2025-12-14 22:20:37', 0, 3, 1, ''),
+(302, 0, 0, 87, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 12.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:37', '2025-12-14 22:20:37', 0, 3, 1, ''),
+(303, 0, 0, 87, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 12.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:37', '2025-12-14 22:20:37', 0, 3, 1, ''),
+(304, 0, 0, 87, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 12.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:37', '2025-12-14 22:20:37', 0, 3, 1, ''),
+(305, 0, 0, 87, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 12.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:37', '2025-12-14 22:20:37', 0, 3, 1, ''),
+(306, 0, 0, 87, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 12.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:37', '2025-12-14 22:20:37', 0, 3, 1, ''),
+(307, 0, 0, 87, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 12.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:37', '2025-12-14 22:20:37', 0, 3, 1, ''),
+(308, 0, 0, 87, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 12.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:37', '2025-12-14 22:20:37', 0, 3, 1, ''),
+(309, 0, 0, 87, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 12.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:37', '2025-12-14 22:20:37', 0, 3, 1, ''),
+(310, 0, 0, 87, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 12.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:43', '2025-12-14 22:20:43', 0, 3, 1, ''),
+(311, 0, 0, 87, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 12.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:43', '2025-12-14 22:20:43', 0, 3, 1, ''),
+(312, 0, 0, 87, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 12.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:43', '2025-12-14 22:20:43', 0, 3, 1, ''),
+(313, 0, 0, 87, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 12.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:43', '2025-12-14 22:20:43', 0, 3, 1, ''),
+(314, 0, 0, 87, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 12.950000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:43', '2025-12-14 22:20:43', 0, 3, 1, ''),
+(315, 0, 0, 90, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 119.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:43', '2025-12-14 22:20:43', 0, 3, 1, ''),
+(316, 0, 0, 90, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 44.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:43', '2025-12-14 22:20:43', 0, 3, 1, ''),
+(317, 0, 0, 90, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 57.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:43', '2025-12-14 22:20:43', 0, 3, 1, ''),
+(318, 0, 0, 90, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 119.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:43', '2025-12-14 22:20:43', 0, 3, 1, ''),
+(319, 0, 0, 90, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 99.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:43', '2025-12-14 22:20:43', 0, 3, 1, '');
+INSERT INTO `ps_product` (`id_product`, `id_supplier`, `id_manufacturer`, `id_category_default`, `id_shop_default`, `id_tax_rules_group`, `on_sale`, `online_only`, `ean13`, `isbn`, `upc`, `mpn`, `ecotax`, `quantity`, `minimal_quantity`, `low_stock_threshold`, `low_stock_alert`, `price`, `wholesale_price`, `unity`, `unit_price_ratio`, `additional_shipping_cost`, `reference`, `supplier_reference`, `location`, `width`, `height`, `depth`, `weight`, `out_of_stock`, `additional_delivery_times`, `quantity_discount`, `customizable`, `uploadable_files`, `text_fields`, `active`, `redirect_type`, `id_type_redirected`, `available_for_order`, `available_date`, `show_condition`, `condition`, `show_price`, `indexed`, `visibility`, `cache_is_pack`, `cache_has_attachments`, `is_virtual`, `cache_default_attribute`, `date_add`, `date_upd`, `advanced_stock_management`, `pack_stock_type`, `state`, `product_type`) VALUES
+(320, 0, 0, 90, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 43.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:43', '2025-12-14 22:20:43', 0, 3, 1, ''),
+(321, 0, 0, 90, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 40.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:43', '2025-12-14 22:20:43', 0, 3, 1, ''),
+(322, 0, 0, 90, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 40.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:43', '2025-12-14 22:20:43', 0, 3, 1, ''),
+(323, 0, 0, 90, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 40.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:43', '2025-12-14 22:20:43', 0, 3, 1, ''),
+(324, 0, 0, 90, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 40.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:43', '2025-12-14 22:20:43', 0, 3, 1, ''),
+(325, 0, 0, 90, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 39.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:43', '2025-12-14 22:20:43', 0, 3, 1, ''),
+(326, 0, 0, 90, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 39.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:43', '2025-12-14 22:20:43', 0, 3, 1, ''),
+(327, 0, 0, 90, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 129.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:43', '2025-12-14 22:20:43', 0, 3, 1, ''),
+(328, 0, 0, 90, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 39.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:43', '2025-12-14 22:20:43', 0, 3, 1, ''),
+(329, 0, 0, 87, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 13.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:43', '2025-12-14 22:20:43', 0, 3, 1, ''),
+(330, 0, 0, 87, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 14.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:43', '2025-12-14 22:20:43', 0, 3, 1, ''),
+(331, 0, 0, 87, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 14.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:47', '2025-12-14 22:20:47', 0, 3, 1, ''),
+(332, 0, 0, 87, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 14.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:47', '2025-12-14 22:20:47', 0, 3, 1, ''),
+(333, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 199.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:47', '2025-12-14 22:20:47', 0, 3, 1, ''),
+(334, 0, 0, 93, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 33.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:47', '2025-12-14 22:20:47', 0, 3, 1, ''),
+(335, 0, 0, 93, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 17.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:47', '2025-12-14 22:20:47', 0, 3, 1, ''),
+(336, 0, 0, 93, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 25.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:47', '2025-12-14 22:20:47', 0, 3, 1, ''),
+(337, 0, 0, 93, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 26.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:47', '2025-12-14 22:20:47', 0, 3, 1, ''),
+(338, 0, 0, 93, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 55.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:47', '2025-12-14 22:20:47', 0, 3, 1, ''),
+(339, 0, 0, 93, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 86.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:47', '2025-12-14 22:20:47', 0, 3, 1, ''),
+(340, 0, 0, 93, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 79.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:47', '2025-12-14 22:20:47', 0, 3, 1, ''),
+(341, 0, 0, 93, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 86.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:47', '2025-12-14 22:20:47', 0, 3, 1, ''),
+(342, 0, 0, 93, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 71.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:47', '2025-12-14 22:20:47', 0, 3, 1, ''),
+(343, 0, 0, 93, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 263.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:47', '2025-12-14 22:20:47', 0, 3, 1, ''),
+(344, 0, 0, 93, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 268.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:47', '2025-12-14 22:20:47', 0, 3, 1, ''),
+(345, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 49.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:47', '2025-12-14 22:20:47', 0, 3, 1, ''),
+(346, 0, 0, 98, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 45.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:47', '2025-12-14 22:20:47', 0, 3, 1, ''),
+(347, 0, 0, 93, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 49.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:47', '2025-12-14 22:20:47', 0, 3, 1, ''),
+(348, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 88.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:47', '2025-12-14 22:20:47', 0, 3, 1, ''),
+(349, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 108.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:47', '2025-12-14 22:20:47', 0, 3, 1, ''),
+(350, 0, 0, 102, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:47', '2025-12-14 22:20:47', 0, 3, 1, ''),
+(351, 0, 0, 102, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 46.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:47', '2025-12-14 22:20:47', 0, 3, 1, ''),
+(352, 0, 0, 102, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:47', '2025-12-14 22:20:47', 0, 3, 1, ''),
+(353, 0, 0, 102, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 46.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:47', '2025-12-14 22:20:47', 0, 3, 1, ''),
+(354, 0, 0, 102, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:47', '2025-12-14 22:20:47', 0, 3, 1, ''),
+(355, 0, 0, 102, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 46.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:47', '2025-12-14 22:20:47', 0, 3, 1, ''),
+(356, 0, 0, 102, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:47', '2025-12-14 22:20:47', 0, 3, 1, ''),
+(357, 0, 0, 102, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 46.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:52', '2025-12-14 22:20:52', 0, 3, 1, ''),
+(358, 0, 0, 102, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:52', '2025-12-14 22:20:52', 0, 3, 1, ''),
+(359, 0, 0, 102, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 46.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:52', '2025-12-14 22:20:52', 0, 3, 1, ''),
+(360, 0, 0, 102, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:52', '2025-12-14 22:20:52', 0, 3, 1, ''),
+(361, 0, 0, 102, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 46.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:52', '2025-12-14 22:20:52', 0, 3, 1, ''),
+(362, 0, 0, 102, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:52', '2025-12-14 22:20:52', 0, 3, 1, ''),
+(363, 0, 0, 102, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 46.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:52', '2025-12-14 22:20:52', 0, 3, 1, ''),
+(364, 0, 0, 102, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:52', '2025-12-14 22:20:52', 0, 3, 1, ''),
+(365, 0, 0, 102, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 46.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:52', '2025-12-14 22:20:52', 0, 3, 1, ''),
+(366, 0, 0, 102, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:52', '2025-12-14 22:20:52', 0, 3, 1, ''),
+(367, 0, 0, 102, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 46.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:52', '2025-12-14 22:20:52', 0, 3, 1, ''),
+(368, 0, 0, 102, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:52', '2025-12-14 22:20:52', 0, 3, 1, ''),
+(369, 0, 0, 102, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 46.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:52', '2025-12-14 22:20:52', 0, 3, 1, ''),
+(370, 0, 0, 44, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 64.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:52', '2025-12-14 22:20:52', 0, 3, 1, ''),
+(371, 0, 0, 44, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 64.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:52', '2025-12-14 22:20:52', 0, 3, 1, ''),
+(372, 0, 0, 102, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 93.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:52', '2025-12-14 22:20:52', 0, 3, 1, ''),
+(373, 0, 0, 102, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 93.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:52', '2025-12-14 22:20:52', 0, 3, 1, ''),
+(374, 0, 0, 102, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 93.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:52', '2025-12-14 22:20:52', 0, 3, 1, ''),
+(375, 0, 0, 102, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 72.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:52', '2025-12-14 22:20:52', 0, 3, 1, ''),
+(376, 0, 0, 102, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 8.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:52', '2025-12-14 22:20:52', 0, 3, 1, ''),
+(377, 0, 0, 102, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 8.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:52', '2025-12-14 22:20:52', 0, 3, 1, ''),
+(378, 0, 0, 102, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 8.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:52', '2025-12-14 22:20:52', 0, 3, 1, ''),
+(379, 0, 0, 106, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 18.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:52', '2025-12-14 22:20:52', 0, 3, 1, ''),
+(380, 0, 0, 106, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 30.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:52', '2025-12-14 22:20:52', 0, 3, 1, ''),
+(381, 0, 0, 106, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 25.990000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:58', '2025-12-14 22:20:58', 0, 3, 1, ''),
+(382, 0, 0, 106, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 74.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:58', '2025-12-14 22:20:58', 0, 3, 1, ''),
+(383, 0, 0, 106, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 25.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:58', '2025-12-14 22:20:58', 0, 3, 1, ''),
+(384, 0, 0, 106, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:58', '2025-12-14 22:20:58', 0, 3, 1, ''),
+(385, 0, 0, 106, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 25.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:58', '2025-12-14 22:20:58', 0, 3, 1, ''),
+(386, 0, 0, 106, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 36.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:58', '2025-12-14 22:20:58', 0, 3, 1, ''),
+(387, 0, 0, 106, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 36.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:58', '2025-12-14 22:20:58', 0, 3, 1, ''),
+(388, 0, 0, 106, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 36.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:58', '2025-12-14 22:20:58', 0, 3, 1, ''),
+(389, 0, 0, 106, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 36.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:58', '2025-12-14 22:20:58', 0, 3, 1, ''),
+(390, 0, 0, 106, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 36.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:58', '2025-12-14 22:20:58', 0, 3, 1, ''),
+(391, 0, 0, 106, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 36.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:58', '2025-12-14 22:20:58', 0, 3, 1, ''),
+(392, 0, 0, 106, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 36.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:58', '2025-12-14 22:20:58', 0, 3, 1, ''),
+(393, 0, 0, 106, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 36.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:58', '2025-12-14 22:20:58', 0, 3, 1, ''),
+(394, 0, 0, 106, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 36.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:58', '2025-12-14 22:20:58', 0, 3, 1, ''),
+(395, 0, 0, 106, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 36.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:58', '2025-12-14 22:20:58', 0, 3, 1, ''),
+(396, 0, 0, 106, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 77.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:58', '2025-12-14 22:20:58', 0, 3, 1, ''),
+(397, 0, 0, 106, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 10.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:58', '2025-12-14 22:20:58', 0, 3, 1, ''),
+(398, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 165.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:58', '2025-12-14 22:20:58', 0, 3, 1, ''),
+(399, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 178.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:58', '2025-12-14 22:20:58', 0, 3, 1, ''),
+(400, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 165.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:20:58', '2025-12-14 22:20:58', 0, 3, 1, ''),
+(401, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 124.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 0, 3, 1, ''),
+(402, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 112.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 0, 3, 1, ''),
+(403, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 103.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 0, 3, 1, ''),
+(404, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 54.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 0, 3, 1, ''),
+(405, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 76.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 0, 3, 1, ''),
+(406, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 59.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 0, 3, 1, ''),
+(407, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 74.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 0, 3, 1, ''),
+(408, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 82.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 0, 3, 1, ''),
+(409, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 113.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 0, 3, 1, ''),
+(410, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 87.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 0, 3, 1, ''),
+(411, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 135.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 0, 3, 1, ''),
+(412, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 131.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 0, 3, 1, ''),
+(413, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 149.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 0, 3, 1, ''),
+(414, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 159.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 0, 3, 1, ''),
+(415, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 170.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 0, 3, 1, ''),
+(416, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 38.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 0, 3, 1, ''),
+(417, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 38.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 0, 3, 1, ''),
+(418, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 63.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 0, 3, 1, ''),
+(419, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 63.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 0, 3, 1, ''),
+(420, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 77.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 0, 3, 1, ''),
+(421, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 38.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 0, 3, 1, ''),
+(422, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 38.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 0, 3, 1, ''),
+(423, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 74.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 0, 3, 1, ''),
+(424, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 18.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 0, 3, 1, ''),
+(425, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 16.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 0, 3, 1, ''),
+(426, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 53.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 0, 3, 1, ''),
+(427, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 14.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 0, 3, 1, ''),
+(428, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 56.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 0, 3, 1, ''),
+(429, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 52.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 0, 3, 1, ''),
+(430, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 71.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 0, 3, 1, ''),
+(431, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 27.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 0, 3, 1, ''),
+(432, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 1.120000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 0, 3, 1, ''),
+(433, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 25.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 0, 3, 1, ''),
+(434, 0, 0, 86, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 36.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 0, 3, 1, ''),
+(435, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 36.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:07', '2025-12-14 22:21:07', 0, 3, 1, ''),
+(436, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 22.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:07', '2025-12-14 22:21:07', 0, 3, 1, ''),
+(437, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 34.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:07', '2025-12-14 22:21:07', 0, 3, 1, ''),
+(438, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 20.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:07', '2025-12-14 22:21:07', 0, 3, 1, ''),
+(439, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 25.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:07', '2025-12-14 22:21:07', 0, 3, 1, ''),
+(440, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 34.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:07', '2025-12-14 22:21:07', 0, 3, 1, ''),
+(441, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 27.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:07', '2025-12-14 22:21:07', 0, 3, 1, ''),
+(442, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 107.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:07', '2025-12-14 22:21:07', 0, 3, 1, ''),
+(443, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 109.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:07', '2025-12-14 22:21:07', 0, 3, 1, ''),
+(444, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 166.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:07', '2025-12-14 22:21:07', 0, 3, 1, ''),
+(445, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 16.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:07', '2025-12-14 22:21:07', 0, 3, 1, ''),
+(446, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 38.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:07', '2025-12-14 22:21:07', 0, 3, 1, ''),
+(447, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 18.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:07', '2025-12-14 22:21:07', 0, 3, 1, ''),
+(448, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 46.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:07', '2025-12-14 22:21:07', 0, 3, 1, ''),
+(449, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 41.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:07', '2025-12-14 22:21:07', 0, 3, 1, ''),
+(450, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 38.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:07', '2025-12-14 22:21:07', 0, 3, 1, ''),
+(451, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 11.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:07', '2025-12-14 22:21:07', 0, 3, 1, ''),
+(452, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 34.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:07', '2025-12-14 22:21:07', 0, 3, 1, ''),
+(453, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 28.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:07', '2025-12-14 22:21:07', 0, 3, 1, ''),
+(454, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 34.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:07', '2025-12-14 22:21:07', 0, 3, 1, ''),
+(455, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 30.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:07', '2025-12-14 22:21:07', 0, 3, 1, ''),
+(456, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 21.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:07', '2025-12-14 22:21:07', 0, 3, 1, ''),
+(457, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 13.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:07', '2025-12-14 22:21:07', 0, 3, 1, ''),
+(458, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 13.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:07', '2025-12-14 22:21:07', 0, 3, 1, ''),
+(459, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 14.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:07', '2025-12-14 22:21:07', 0, 3, 1, ''),
+(460, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 38.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:07', '2025-12-14 22:21:07', 0, 3, 1, ''),
+(461, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 181.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:07', '2025-12-14 22:21:07', 0, 3, 1, ''),
+(462, 0, 0, 14, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 69.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 0, 3, 1, ''),
+(463, 0, 0, 14, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 69.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 0, 3, 1, ''),
+(464, 0, 0, 14, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 69.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 0, 3, 1, ''),
+(465, 0, 0, 14, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 79.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 0, 3, 1, ''),
+(466, 0, 0, 14, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 79.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 0, 3, 1, ''),
+(467, 0, 0, 14, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 79.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 0, 3, 1, ''),
+(468, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 39.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 0, 3, 1, ''),
+(469, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 39.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 0, 3, 1, ''),
+(470, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 39.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 0, 3, 1, ''),
+(471, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 39.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 0, 3, 1, ''),
+(472, 0, 0, 98, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 48.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 0, 3, 1, ''),
+(473, 0, 0, 98, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 50.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 0, 3, 1, ''),
+(474, 0, 0, 98, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 50.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 0, 3, 1, ''),
+(475, 0, 0, 98, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 50.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 0, 3, 1, ''),
+(476, 0, 0, 98, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 50.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 0, 3, 1, ''),
+(477, 0, 0, 98, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 78.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 0, 3, 1, ''),
+(478, 0, 0, 98, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 54.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 0, 3, 1, '');
+INSERT INTO `ps_product` (`id_product`, `id_supplier`, `id_manufacturer`, `id_category_default`, `id_shop_default`, `id_tax_rules_group`, `on_sale`, `online_only`, `ean13`, `isbn`, `upc`, `mpn`, `ecotax`, `quantity`, `minimal_quantity`, `low_stock_threshold`, `low_stock_alert`, `price`, `wholesale_price`, `unity`, `unit_price_ratio`, `additional_shipping_cost`, `reference`, `supplier_reference`, `location`, `width`, `height`, `depth`, `weight`, `out_of_stock`, `additional_delivery_times`, `quantity_discount`, `customizable`, `uploadable_files`, `text_fields`, `active`, `redirect_type`, `id_type_redirected`, `available_for_order`, `available_date`, `show_condition`, `condition`, `show_price`, `indexed`, `visibility`, `cache_is_pack`, `cache_has_attachments`, `is_virtual`, `cache_default_attribute`, `date_add`, `date_upd`, `advanced_stock_management`, `pack_stock_type`, `state`, `product_type`) VALUES
+(479, 0, 0, 98, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 54.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 0, 3, 1, ''),
+(480, 0, 0, 98, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 54.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 0, 3, 1, ''),
+(481, 0, 0, 98, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 54.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 0, 3, 1, ''),
+(482, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 109.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 0, 3, 1, ''),
+(483, 0, 0, 98, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 149.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 0, 3, 1, ''),
+(484, 0, 0, 98, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 179.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 0, 3, 1, ''),
+(485, 0, 0, 98, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 149.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 0, 3, 1, ''),
+(486, 0, 0, 98, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 149.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 0, 3, 1, ''),
+(487, 0, 0, 98, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 89.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 0, 3, 1, ''),
+(488, 0, 0, 98, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 49.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 0, 3, 1, ''),
+(489, 0, 0, 98, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 27.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 0, 3, 1, ''),
+(490, 0, 0, 98, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 80.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 0, 3, 1, ''),
+(491, 0, 0, 98, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 49.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 0, 3, 1, ''),
+(492, 0, 0, 98, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 49.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 0, 3, 1, ''),
+(493, 0, 0, 98, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 39.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 0, 3, 1, ''),
+(494, 0, 0, 98, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 39.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 0, 3, 1, ''),
+(495, 0, 0, 98, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 39.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:19', '2025-12-14 22:21:19', 0, 3, 1, ''),
+(496, 0, 0, 98, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 80.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:19', '2025-12-14 22:21:19', 0, 3, 1, ''),
+(497, 0, 0, 98, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 28.450000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:19', '2025-12-14 22:21:19', 0, 3, 1, ''),
+(498, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 41.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:19', '2025-12-14 22:21:19', 0, 3, 1, ''),
+(499, 0, 0, 98, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 41.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:19', '2025-12-14 22:21:19', 0, 3, 1, ''),
+(500, 0, 0, 98, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:19', '2025-12-14 22:21:19', 0, 3, 1, ''),
+(501, 0, 0, 99, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 41.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:19', '2025-12-14 22:21:19', 0, 3, 1, ''),
+(502, 0, 0, 98, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 49.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:19', '2025-12-14 22:21:19', 0, 3, 1, ''),
+(503, 0, 0, 98, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 49.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:19', '2025-12-14 22:21:19', 0, 3, 1, ''),
+(504, 0, 0, 98, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 49.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:19', '2025-12-14 22:21:19', 0, 3, 1, ''),
+(505, 0, 0, 98, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 49.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:19', '2025-12-14 22:21:19', 0, 3, 1, ''),
+(506, 0, 0, 101, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 49.520000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:19', '2025-12-14 22:21:19', 0, 3, 1, ''),
+(507, 0, 0, 101, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 84.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:19', '2025-12-14 22:21:19', 0, 3, 1, ''),
+(508, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 72.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:19', '2025-12-14 22:21:19', 0, 3, 1, ''),
+(509, 0, 0, 101, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 72.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:19', '2025-12-14 22:21:19', 0, 3, 1, ''),
+(510, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 72.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:19', '2025-12-14 22:21:19', 0, 3, 1, ''),
+(511, 0, 0, 101, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 72.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:19', '2025-12-14 22:21:19', 0, 3, 1, ''),
+(512, 0, 0, 101, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 72.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:19', '2025-12-14 22:21:19', 0, 3, 1, ''),
+(513, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 72.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:19', '2025-12-14 22:21:19', 0, 3, 1, ''),
+(514, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 72.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:19', '2025-12-14 22:21:19', 0, 3, 1, ''),
+(515, 0, 0, 92, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 55.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:23', '2025-12-14 22:21:23', 0, 3, 1, ''),
+(516, 0, 0, 101, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 135.800000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:23', '2025-12-14 22:21:23', 0, 3, 1, ''),
+(517, 0, 0, 14, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 90.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:23', '2025-12-14 22:21:23', 0, 3, 1, ''),
+(518, 0, 0, 98, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:23', '2025-12-14 22:21:23', 0, 3, 1, ''),
+(519, 0, 0, 123, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 12.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:23', '2025-12-14 22:21:23', 0, 3, 1, ''),
+(520, 0, 0, 123, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 12.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:23', '2025-12-14 22:21:23', 0, 3, 1, ''),
+(521, 0, 0, 123, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 17.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:23', '2025-12-14 22:21:23', 0, 3, 1, ''),
+(522, 0, 0, 123, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 15.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:23', '2025-12-14 22:21:23', 0, 3, 1, ''),
+(523, 0, 0, 123, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 7.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:23', '2025-12-14 22:21:23', 0, 3, 1, ''),
+(524, 0, 0, 123, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 9.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:23', '2025-12-14 22:21:23', 0, 3, 1, ''),
+(525, 0, 0, 123, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 9.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:23', '2025-12-14 22:21:23', 0, 3, 1, ''),
+(526, 0, 0, 123, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 9.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:23', '2025-12-14 22:21:23', 0, 3, 1, ''),
+(527, 0, 0, 123, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 8.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:23', '2025-12-14 22:21:23', 0, 3, 1, ''),
+(528, 0, 0, 123, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 8.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:23', '2025-12-14 22:21:23', 0, 3, 1, ''),
+(529, 0, 0, 123, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 9.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:23', '2025-12-14 22:21:23', 0, 3, 1, ''),
+(530, 0, 0, 123, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 9.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:23', '2025-12-14 22:21:23', 0, 3, 1, ''),
+(531, 0, 0, 123, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 26.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:23', '2025-12-14 22:21:23', 0, 3, 1, ''),
+(532, 0, 0, 123, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 10.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:23', '2025-12-14 22:21:23', 0, 3, 1, ''),
+(533, 0, 0, 123, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 14.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:23', '2025-12-14 22:21:23', 0, 3, 1, ''),
+(534, 0, 0, 123, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 14.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:23', '2025-12-14 22:21:23', 0, 3, 1, ''),
+(535, 0, 0, 123, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 14.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:23', '2025-12-14 22:21:23', 0, 3, 1, ''),
+(536, 0, 0, 123, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 15.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:23', '2025-12-14 22:21:23', 0, 3, 1, ''),
+(537, 0, 0, 126, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 20.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:23', '2025-12-14 22:21:23', 0, 3, 1, ''),
+(538, 0, 0, 126, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 20.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:29', '2025-12-14 22:21:29', 0, 3, 1, ''),
+(539, 0, 0, 126, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 20.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:29', '2025-12-14 22:21:29', 0, 3, 1, ''),
+(540, 0, 0, 126, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 25.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:29', '2025-12-14 22:21:29', 0, 3, 1, ''),
+(541, 0, 0, 126, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 20.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:29', '2025-12-14 22:21:29', 0, 3, 1, ''),
+(542, 0, 0, 126, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 20.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:29', '2025-12-14 22:21:29', 0, 3, 1, ''),
+(543, 0, 0, 37, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 130.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:29', '2025-12-14 22:21:29', 0, 3, 1, ''),
+(544, 0, 0, 37, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 130.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:29', '2025-12-14 22:21:29', 0, 3, 1, ''),
+(545, 0, 0, 36, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 33.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:29', '2025-12-14 22:21:29', 0, 3, 1, ''),
+(546, 0, 0, 36, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 28.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:29', '2025-12-14 22:21:29', 0, 3, 1, ''),
+(547, 0, 0, 36, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 30.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:29', '2025-12-14 22:21:29', 0, 3, 1, ''),
+(548, 0, 0, 36, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 25.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:29', '2025-12-14 22:21:29', 0, 3, 1, ''),
+(549, 0, 0, 44, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 91.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:29', '2025-12-14 22:21:29', 0, 3, 1, ''),
+(550, 0, 0, 43, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 58.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:29', '2025-12-14 22:21:29', 0, 3, 1, ''),
+(551, 0, 0, 44, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 99.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:29', '2025-12-14 22:21:29', 0, 3, 1, ''),
+(552, 0, 0, 44, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 139.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:29', '2025-12-14 22:21:29', 0, 3, 1, ''),
+(553, 0, 0, 44, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 49.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:29', '2025-12-14 22:21:29', 0, 3, 1, ''),
+(554, 0, 0, 44, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 86.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:29', '2025-12-14 22:21:29', 0, 3, 1, ''),
+(555, 0, 0, 44, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 77.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:29', '2025-12-14 22:21:29', 0, 3, 1, ''),
+(556, 0, 0, 36, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:29', '2025-12-14 22:21:29', 0, 3, 1, ''),
+(557, 0, 0, 36, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 32.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:29', '2025-12-14 22:21:29', 0, 3, 1, ''),
+(558, 0, 0, 36, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 26.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:37', '2025-12-14 22:21:37', 0, 3, 1, ''),
+(559, 0, 0, 43, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 74.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:37', '2025-12-14 22:21:37', 0, 3, 1, ''),
+(560, 0, 0, 44, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 54.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:37', '2025-12-14 22:21:37', 0, 3, 1, ''),
+(561, 0, 0, 44, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 63.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:37', '2025-12-14 22:21:37', 0, 3, 1, ''),
+(562, 0, 0, 44, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 70.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:37', '2025-12-14 22:21:37', 0, 3, 1, ''),
+(563, 0, 0, 44, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 54.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:37', '2025-12-14 22:21:37', 0, 3, 1, ''),
+(564, 0, 0, 44, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 79.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:37', '2025-12-14 22:21:37', 0, 3, 1, ''),
+(565, 0, 0, 44, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 56.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:37', '2025-12-14 22:21:37', 0, 3, 1, ''),
+(566, 0, 0, 44, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 88.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:37', '2025-12-14 22:21:37', 0, 3, 1, ''),
+(567, 0, 0, 44, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 47.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:37', '2025-12-14 22:21:37', 0, 3, 1, ''),
+(568, 0, 0, 44, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 58.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:37', '2025-12-14 22:21:37', 0, 3, 1, ''),
+(569, 0, 0, 44, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 91.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:42', '2025-12-14 22:21:42', 0, 3, 1, ''),
+(570, 0, 0, 44, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 149.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:42', '2025-12-14 22:21:42', 0, 3, 1, ''),
+(571, 0, 0, 44, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 63.630000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:42', '2025-12-14 22:21:42', 0, 3, 1, ''),
+(572, 0, 0, 44, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 69.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:42', '2025-12-14 22:21:42', 0, 3, 1, ''),
+(573, 0, 0, 44, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 59.430000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:42', '2025-12-14 22:21:42', 0, 3, 1, ''),
+(574, 0, 0, 44, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 59.430000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:42', '2025-12-14 22:21:42', 0, 3, 1, ''),
+(575, 0, 0, 44, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 79.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:42', '2025-12-14 22:21:42', 0, 3, 1, ''),
+(576, 0, 0, 36, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 26.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:42', '2025-12-14 22:21:42', 0, 3, 1, ''),
+(577, 0, 0, 129, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 74.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:42', '2025-12-14 22:21:42', 0, 3, 1, ''),
+(578, 0, 0, 129, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 59.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:42', '2025-12-14 22:21:42', 0, 3, 1, ''),
+(579, 0, 0, 129, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 149.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:48', '2025-12-14 22:21:48', 0, 3, 1, ''),
+(580, 0, 0, 129, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 99.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:48', '2025-12-14 22:21:48', 0, 3, 1, ''),
+(581, 0, 0, 129, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 149.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:48', '2025-12-14 22:21:48', 0, 3, 1, ''),
+(582, 0, 0, 44, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 79.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:48', '2025-12-14 22:21:48', 0, 3, 1, ''),
+(583, 0, 0, 44, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 159.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:48', '2025-12-14 22:21:48', 0, 3, 1, ''),
+(584, 0, 0, 44, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 54.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:48', '2025-12-14 22:21:48', 0, 3, 1, ''),
+(585, 0, 0, 129, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:48', '2025-12-14 22:21:48', 0, 3, 1, ''),
+(586, 0, 0, 129, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:53', '2025-12-14 22:21:53', 0, 3, 1, ''),
+(587, 0, 0, 129, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 59.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:53', '2025-12-14 22:21:53', 0, 3, 1, ''),
+(588, 0, 0, 129, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 64.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:53', '2025-12-14 22:21:53', 0, 3, 1, ''),
+(589, 0, 0, 129, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 109.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:53', '2025-12-14 22:21:53', 0, 3, 1, ''),
+(590, 0, 0, 129, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 149.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:53', '2025-12-14 22:21:53', 0, 3, 1, ''),
+(591, 0, 0, 129, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 84.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:53', '2025-12-14 22:21:53', 0, 3, 1, ''),
+(592, 0, 0, 90, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 26.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:53', '2025-12-14 22:21:53', 0, 3, 1, ''),
+(593, 0, 0, 36, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 19.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:57', '2025-12-14 22:21:57', 0, 3, 1, ''),
+(594, 0, 0, 36, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 32.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:57', '2025-12-14 22:21:57', 0, 3, 1, ''),
+(595, 0, 0, 44, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 56.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:57', '2025-12-14 22:21:57', 0, 3, 1, ''),
+(596, 0, 0, 44, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 61.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:57', '2025-12-14 22:21:57', 0, 3, 1, ''),
+(597, 0, 0, 44, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 55.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:57', '2025-12-14 22:21:57', 0, 3, 1, ''),
+(598, 0, 0, 44, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 79.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:57', '2025-12-14 22:21:57', 0, 3, 1, ''),
+(599, 0, 0, 44, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 89.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:57', '2025-12-14 22:21:57', 0, 3, 1, ''),
+(600, 0, 0, 44, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 87.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:57', '2025-12-14 22:21:57', 0, 3, 1, ''),
+(601, 0, 0, 44, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 134.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:21:57', '2025-12-14 22:21:57', 0, 3, 1, ''),
+(602, 0, 0, 44, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 169.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:00', '2025-12-14 22:22:00', 0, 3, 1, ''),
+(603, 0, 0, 44, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 169.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:00', '2025-12-14 22:22:00', 0, 3, 1, ''),
+(604, 0, 0, 114, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 14.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:00', '2025-12-14 22:22:00', 0, 3, 1, ''),
+(605, 0, 0, 114, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 19.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:00', '2025-12-14 22:22:00', 0, 3, 1, ''),
+(606, 0, 0, 114, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 40.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:00', '2025-12-14 22:22:00', 0, 3, 1, ''),
+(607, 0, 0, 114, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 36.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:00', '2025-12-14 22:22:00', 0, 3, 1, ''),
+(608, 0, 0, 114, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 30.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:00', '2025-12-14 22:22:00', 0, 3, 1, ''),
+(609, 0, 0, 114, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 43.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:00', '2025-12-14 22:22:00', 0, 3, 1, ''),
+(610, 0, 0, 114, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 53.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:00', '2025-12-14 22:22:00', 0, 3, 1, ''),
+(611, 0, 0, 114, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 25.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:00', '2025-12-14 22:22:00', 0, 3, 1, ''),
+(612, 0, 0, 114, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 9.000000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:00', '2025-12-14 22:22:00', 0, 3, 1, ''),
+(613, 0, 0, 98, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 86.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:04', '2025-12-14 22:22:04', 0, 3, 1, ''),
+(614, 0, 0, 44, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 139.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:04', '2025-12-14 22:22:04', 0, 3, 1, ''),
+(615, 0, 0, 44, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 91.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:04', '2025-12-14 22:22:04', 0, 3, 1, ''),
+(616, 0, 0, 130, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 5.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:04', '2025-12-14 22:22:04', 0, 3, 1, ''),
+(617, 0, 0, 130, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 5.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:04', '2025-12-14 22:22:04', 0, 3, 1, ''),
+(618, 0, 0, 130, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 5.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:04', '2025-12-14 22:22:04', 0, 3, 1, ''),
+(619, 0, 0, 131, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 69.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:04', '2025-12-14 22:22:04', 0, 3, 1, ''),
+(620, 0, 0, 131, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 129.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:04', '2025-12-14 22:22:04', 0, 3, 1, ''),
+(621, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 27.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:04', '2025-12-14 22:22:04', 0, 3, 1, ''),
+(622, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 31.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:04', '2025-12-14 22:22:04', 0, 3, 1, ''),
+(623, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 27.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:04', '2025-12-14 22:22:04', 0, 3, 1, ''),
+(624, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:04', '2025-12-14 22:22:04', 0, 3, 1, ''),
+(625, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:04', '2025-12-14 22:22:04', 0, 3, 1, ''),
+(626, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:04', '2025-12-14 22:22:04', 0, 3, 1, ''),
+(627, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:08', '2025-12-14 22:22:08', 0, 3, 1, ''),
+(628, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:08', '2025-12-14 22:22:08', 0, 3, 1, ''),
+(629, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:08', '2025-12-14 22:22:08', 0, 3, 1, ''),
+(630, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 34.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:08', '2025-12-14 22:22:08', 0, 3, 1, ''),
+(631, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:08', '2025-12-14 22:22:08', 0, 3, 1, ''),
+(632, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:08', '2025-12-14 22:22:08', 0, 3, 1, ''),
+(633, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 1.690000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:08', '2025-12-14 22:22:08', 0, 3, 1, ''),
+(634, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 42.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:08', '2025-12-14 22:22:08', 0, 3, 1, ''),
+(635, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 42.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:08', '2025-12-14 22:22:08', 0, 3, 1, ''),
+(636, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 38.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:08', '2025-12-14 22:22:08', 0, 3, 1, ''),
+(637, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 42.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:08', '2025-12-14 22:22:08', 0, 3, 1, '');
+INSERT INTO `ps_product` (`id_product`, `id_supplier`, `id_manufacturer`, `id_category_default`, `id_shop_default`, `id_tax_rules_group`, `on_sale`, `online_only`, `ean13`, `isbn`, `upc`, `mpn`, `ecotax`, `quantity`, `minimal_quantity`, `low_stock_threshold`, `low_stock_alert`, `price`, `wholesale_price`, `unity`, `unit_price_ratio`, `additional_shipping_cost`, `reference`, `supplier_reference`, `location`, `width`, `height`, `depth`, `weight`, `out_of_stock`, `additional_delivery_times`, `quantity_discount`, `customizable`, `uploadable_files`, `text_fields`, `active`, `redirect_type`, `id_type_redirected`, `available_for_order`, `available_date`, `show_condition`, `condition`, `show_price`, `indexed`, `visibility`, `cache_is_pack`, `cache_has_attachments`, `is_virtual`, `cache_default_attribute`, `date_add`, `date_upd`, `advanced_stock_management`, `pack_stock_type`, `state`, `product_type`) VALUES
+(638, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 42.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:08', '2025-12-14 22:22:08', 0, 3, 1, ''),
+(639, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 23.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:08', '2025-12-14 22:22:08', 0, 3, 1, ''),
+(640, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 23.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:08', '2025-12-14 22:22:08', 0, 3, 1, ''),
+(641, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 23.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:08', '2025-12-14 22:22:08', 0, 3, 1, ''),
+(642, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 23.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:08', '2025-12-14 22:22:08', 0, 3, 1, ''),
+(643, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 23.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:08', '2025-12-14 22:22:08', 0, 3, 1, ''),
+(644, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 23.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:12', '2025-12-14 22:22:12', 0, 3, 1, ''),
+(645, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 23.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:12', '2025-12-14 22:22:12', 0, 3, 1, ''),
+(646, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 11.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:12', '2025-12-14 22:22:12', 0, 3, 1, ''),
+(647, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 11.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:12', '2025-12-14 22:22:12', 0, 3, 1, ''),
+(648, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 11.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:12', '2025-12-14 22:22:12', 0, 3, 1, ''),
+(649, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 11.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:12', '2025-12-14 22:22:12', 0, 3, 1, ''),
+(650, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 11.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:12', '2025-12-14 22:22:12', 0, 3, 1, ''),
+(651, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 11.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:12', '2025-12-14 22:22:12', 0, 3, 1, ''),
+(652, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 11.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:12', '2025-12-14 22:22:12', 0, 3, 1, ''),
+(653, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 11.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:12', '2025-12-14 22:22:12', 0, 3, 1, ''),
+(654, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 11.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:12', '2025-12-14 22:22:12', 0, 3, 1, ''),
+(655, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 11.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:12', '2025-12-14 22:22:12', 0, 3, 1, ''),
+(656, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 20.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:12', '2025-12-14 22:22:12', 0, 3, 1, ''),
+(657, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 20.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:12', '2025-12-14 22:22:12', 0, 3, 1, ''),
+(658, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 20.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:12', '2025-12-14 22:22:12', 0, 3, 1, ''),
+(659, 0, 0, 137, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:12', '2025-12-14 22:22:12', 0, 3, 1, ''),
+(660, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:12', '2025-12-14 22:22:12', 0, 3, 1, ''),
+(661, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 20.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:12', '2025-12-14 22:22:12', 0, 3, 1, ''),
+(662, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 25.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:12', '2025-12-14 22:22:12', 0, 3, 1, ''),
+(663, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 25.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:12', '2025-12-14 22:22:12', 0, 3, 1, ''),
+(664, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 19.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:12', '2025-12-14 22:22:12', 0, 3, 1, ''),
+(665, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 16.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:12', '2025-12-14 22:22:12', 0, 3, 1, ''),
+(666, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 8.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:12', '2025-12-14 22:22:12', 0, 3, 1, ''),
+(667, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 8.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:12', '2025-12-14 22:22:12', 0, 3, 1, ''),
+(668, 0, 0, 86, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 25.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:12', '2025-12-14 22:22:12', 0, 3, 1, ''),
+(669, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 36.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:12', '2025-12-14 22:22:12', 0, 3, 1, ''),
+(670, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 23.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:15', '2025-12-14 22:22:15', 0, 3, 1, ''),
+(671, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 8.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:15', '2025-12-14 22:22:15', 0, 3, 1, ''),
+(672, 0, 0, 86, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:15', '2025-12-14 22:22:15', 0, 3, 1, ''),
+(673, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 8.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:15', '2025-12-14 22:22:15', 0, 3, 1, ''),
+(674, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 39.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:15', '2025-12-14 22:22:15', 0, 3, 1, ''),
+(675, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 8.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:15', '2025-12-14 22:22:15', 0, 3, 1, ''),
+(676, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 9.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:15', '2025-12-14 22:22:15', 0, 3, 1, ''),
+(677, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 36.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:15', '2025-12-14 22:22:15', 0, 3, 1, ''),
+(678, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 30.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:15', '2025-12-14 22:22:15', 0, 3, 1, ''),
+(679, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 30.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:15', '2025-12-14 22:22:15', 0, 3, 1, ''),
+(680, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 36.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:15', '2025-12-14 22:22:15', 0, 3, 1, ''),
+(681, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 8.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:15', '2025-12-14 22:22:15', 0, 3, 1, ''),
+(682, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 8.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:15', '2025-12-14 22:22:15', 0, 3, 1, ''),
+(683, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 8.900000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:15', '2025-12-14 22:22:15', 0, 3, 1, ''),
+(684, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 6.200000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:15', '2025-12-14 22:22:15', 0, 3, 1, ''),
+(685, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 6.200000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:15', '2025-12-14 22:22:15', 0, 3, 1, ''),
+(686, 0, 0, 132, 1, 1, 0, 0, '', '', '', '', 0.000000, 0, 1, NULL, 0, 6.200000, 0.000000, '', 0.000000, 0.000000, '', '', '', 0.000000, 0.000000, 0.000000, 0.000000, 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2025-12-14 22:22:15', '2025-12-14 22:22:15', 0, 3, 1, '');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_product_attachment`
+-- Структура таблицы `ps_product_attachment`
 --
 
 CREATE TABLE `ps_product_attachment` (
@@ -8589,7 +16778,7 @@ CREATE TABLE `ps_product_attachment` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_product_attribute`
+-- Структура таблицы `ps_product_attribute`
 --
 
 CREATE TABLE `ps_product_attribute` (
@@ -8618,7 +16807,7 @@ CREATE TABLE `ps_product_attribute` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_product_attribute_combination`
+-- Структура таблицы `ps_product_attribute_combination`
 --
 
 CREATE TABLE `ps_product_attribute_combination` (
@@ -8629,7 +16818,7 @@ CREATE TABLE `ps_product_attribute_combination` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_product_attribute_image`
+-- Структура таблицы `ps_product_attribute_image`
 --
 
 CREATE TABLE `ps_product_attribute_image` (
@@ -8640,7 +16829,7 @@ CREATE TABLE `ps_product_attribute_image` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_product_attribute_shop`
+-- Структура таблицы `ps_product_attribute_shop`
 --
 
 CREATE TABLE `ps_product_attribute_shop` (
@@ -8662,7 +16851,7 @@ CREATE TABLE `ps_product_attribute_shop` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_product_carrier`
+-- Структура таблицы `ps_product_carrier`
 --
 
 CREATE TABLE `ps_product_carrier` (
@@ -8674,7 +16863,7 @@ CREATE TABLE `ps_product_carrier` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_product_comment`
+-- Структура таблицы `ps_product_comment`
 --
 
 CREATE TABLE `ps_product_comment` (
@@ -8694,7 +16883,7 @@ CREATE TABLE `ps_product_comment` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_product_comment_criterion`
+-- Структура таблицы `ps_product_comment_criterion`
 --
 
 CREATE TABLE `ps_product_comment_criterion` (
@@ -8704,7 +16893,7 @@ CREATE TABLE `ps_product_comment_criterion` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `ps_product_comment_criterion`
+-- Дамп данных таблицы `ps_product_comment_criterion`
 --
 
 INSERT INTO `ps_product_comment_criterion` (`id_product_comment_criterion`, `id_product_comment_criterion_type`, `active`) VALUES
@@ -8713,7 +16902,7 @@ INSERT INTO `ps_product_comment_criterion` (`id_product_comment_criterion`, `id_
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_product_comment_criterion_category`
+-- Структура таблицы `ps_product_comment_criterion_category`
 --
 
 CREATE TABLE `ps_product_comment_criterion_category` (
@@ -8724,7 +16913,7 @@ CREATE TABLE `ps_product_comment_criterion_category` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_product_comment_criterion_lang`
+-- Структура таблицы `ps_product_comment_criterion_lang`
 --
 
 CREATE TABLE `ps_product_comment_criterion_lang` (
@@ -8734,7 +16923,7 @@ CREATE TABLE `ps_product_comment_criterion_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_product_comment_criterion_lang`
+-- Дамп данных таблицы `ps_product_comment_criterion_lang`
 --
 
 INSERT INTO `ps_product_comment_criterion_lang` (`id_product_comment_criterion`, `id_lang`, `name`) VALUES
@@ -8743,7 +16932,7 @@ INSERT INTO `ps_product_comment_criterion_lang` (`id_product_comment_criterion`,
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_product_comment_criterion_product`
+-- Структура таблицы `ps_product_comment_criterion_product`
 --
 
 CREATE TABLE `ps_product_comment_criterion_product` (
@@ -8754,7 +16943,7 @@ CREATE TABLE `ps_product_comment_criterion_product` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_product_comment_grade`
+-- Структура таблицы `ps_product_comment_grade`
 --
 
 CREATE TABLE `ps_product_comment_grade` (
@@ -8766,7 +16955,7 @@ CREATE TABLE `ps_product_comment_grade` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_product_comment_report`
+-- Структура таблицы `ps_product_comment_report`
 --
 
 CREATE TABLE `ps_product_comment_report` (
@@ -8777,7 +16966,7 @@ CREATE TABLE `ps_product_comment_report` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_product_comment_usefulness`
+-- Структура таблицы `ps_product_comment_usefulness`
 --
 
 CREATE TABLE `ps_product_comment_usefulness` (
@@ -8789,7 +16978,7 @@ CREATE TABLE `ps_product_comment_usefulness` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_product_country_tax`
+-- Структура таблицы `ps_product_country_tax`
 --
 
 CREATE TABLE `ps_product_country_tax` (
@@ -8801,7 +16990,7 @@ CREATE TABLE `ps_product_country_tax` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_product_download`
+-- Структура таблицы `ps_product_download`
 --
 
 CREATE TABLE `ps_product_download` (
@@ -8820,7 +17009,7 @@ CREATE TABLE `ps_product_download` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_product_group_reduction_cache`
+-- Структура таблицы `ps_product_group_reduction_cache`
 --
 
 CREATE TABLE `ps_product_group_reduction_cache` (
@@ -8832,7 +17021,7 @@ CREATE TABLE `ps_product_group_reduction_cache` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_product_lang`
+-- Структура таблицы `ps_product_lang`
 --
 
 CREATE TABLE `ps_product_lang` (
@@ -8853,16 +17042,702 @@ CREATE TABLE `ps_product_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_product_lang`
+-- Дамп данных таблицы `ps_product_lang`
 --
 
 INSERT INTO `ps_product_lang` (`id_product`, `id_shop`, `id_lang`, `description`, `description_short`, `link_rewrite`, `meta_description`, `meta_keywords`, `meta_title`, `name`, `available_now`, `available_later`, `delivery_in_stock`, `delivery_out_stock`) VALUES
-(1, 1, 1, '', '', '', '', '', '', '', '', '', '', '');
+(1, 1, 1, '', 'Mocna i cierpka herbata o głębokim kolorze naparu.', 'assam-dikom-stgfopi', '', '', '', 'ASSAM DIKOM STGFOPI', '', '', '', ''),
+(2, 1, 1, '', 'Wyśmienita herbata czarna  o wyrazistym smaku.', 'assam-tgfop-dekorai', '', '', '', 'ASSAM TGFOP DEKORAI', '', '', '', ''),
+(3, 1, 1, '', 'Czarna herbata o delikatnym aromacie z wyczuwalnym kwiatowym akcentem.', 'ceylon-high-grown-op', '', '', '', 'CEYLON HIGH GROWN OP', '', '', '', ''),
+(4, 1, 1, '', 'Herbata turkusowa z Chin.', 'da-hong-pao-std', '', '', '', 'DA HONG PAO STD', '', '', '', ''),
+(5, 1, 1, '', 'Herbata indyjska Darjeeling z pierwszego zbioru.', 'darjeeling-first-flush', '', '', '', 'DARJEELING FIRST FLUSH', '', '', '', ''),
+(6, 1, 1, '', 'Darjeeling Lotniczy Balasun - nasza wyjątkowa propozycja.', 'darjeeling-lotniczy-balasun-ftgfopi', '', '', '', 'DARJEELING LOTNICZY BALASUN FTGFOPI', '', '', '', ''),
+(7, 1, 1, '', 'Herbata z pierwszego zbioru w Dolinie Mirik.', 'darjeeling-mirik-valley-first-flush', '', '', '', 'DARJEELING MIRIK VALLEY FIRST FLUSH', '', '', '', ''),
+(8, 1, 1, '', 'Herbata indyjska Darjeeling z drugiego zbioru.', 'darjeeling-second-flush', '', '', '', 'DARJEELING SECOND FLUSH', '', '', '', ''),
+(9, 1, 1, '', 'Popularna kompozycja dwóch czarnych herbat gatunków Assam i Cejlon.', 'english-breakfast', '', '', '', 'ENGLISH BREAKFAST', '', '', '', ''),
+(10, 1, 1, '', 'Czarna herbata o dużej ilości złotych \"tipsów\".', 'golden-yunnan', '', '', '', 'GOLDEN YUNNAN', '', '', '', ''),
+(11, 1, 1, '', 'Herbata pochodząca z górskich zboczy Kaukazu.', 'gruzinska-bop', '', '', '', 'GRUZIŃSKA BOP', '', '', '', ''),
+(12, 1, 1, '', 'Czarna herbata o dymno-korzennym aromacie.', 'gunpowder-super-black', '', '', '', 'GUNPOWDER SUPER BLACK', '', '', '', ''),
+(13, 1, 1, '', 'Doskonała czarna kenijska herbata.', 'kenya-tinderet-gfop', '', '', '', 'KENYA TINDERET GFOP', '', '', '', ''),
+(14, 1, 1, '', 'Herbata o specyficznym \"dymnym\" smaku i aromacie.', 'lapsang-souchong', '', '', '', 'LAPSANG SOUCHONG', '', '', '', ''),
+(15, 1, 1, '', 'Najwyższej jakości czarna herbata z Nepalu.', 'nepal-maloom-ftgfopi', '', '', '', 'NEPAL MALOOM FTGFOPI', '', '', '', ''),
+(16, 1, 1, '', 'Herbata czarna o delikatnym smaku.', 'sencha-black', '', '', '', 'SENCHA BLACK', '', '', '', ''),
+(17, 1, 1, '', 'Herbata czarna z rejonu Morza Czarnego.', 'turecka-bop', '', '', '', 'TURECKA BOP', '', '', '', ''),
+(18, 1, 1, '', 'Herbata czarna o lekko słodkawym smaku.', 'yun-ming-czarny', '', '', '', 'YUN MING CZARNY', '', '', '', ''),
+(19, 1, 1, '', 'Herbata czarna o mocnym aromacie.', 'yunnan-black-premium', '', '', '', 'YUNNAN BLACK PREMIUM', '', '', '', ''),
+(20, 1, 1, '', 'Zielona herbata typu japońskiego', 'bancha', '', '', '', 'BANCHA', '', '', '', ''),
+(21, 1, 1, '', 'Chińska zielona herbata o mocno zwiniętych listkach.', 'bi-luo-chun', '', '', '', 'BI LUO CHUN', '', '', '', ''),
+(22, 1, 1, '', 'Cejlońska zielona herbata.', 'ceylon-dimbula-opa2', '', '', '', 'CEYLON DIMBULA OPA2', '', '', '', ''),
+(23, 1, 1, '', 'Wyjątkowa w smaku herbata zielona z rejonu Yunnan.', 'china-green-yunnan', '', '', '', 'CHINA GREEN YUNNAN', '', '', '', ''),
+(24, 1, 1, '', 'Zielona herbata Gunpowder o gorzkim smaku.', 'china-gunpowder', '', '', '', 'CHINA GUNPOWDER', '', '', '', ''),
+(25, 1, 1, '', 'Herbata zaliczana do specjałów.', 'china-gunpowder-super', '', '', '', 'CHINA GUNPOWDER SUPER', '', '', '', ''),
+(26, 1, 1, '', 'Zielona herbata z prażonymi ziarenkami ryżu.', 'gen-mai-cha', '', '', '', 'GEN MAI CHA', '', '', '', ''),
+(27, 1, 1, '', 'Herbata zielona Yunnan z dodatkiem kwiatu jaśminu.', 'jasminowa', '', '', '', 'JAŚMINOWA', '', '', '', ''),
+(28, 1, 1, '', 'Wspaniała zielona herbata o żółto-zielonym naparze.', 'korea-jeju-op', '', '', '', 'KOREA JEJU OP', '', '', '', ''),
+(29, 1, 1, '', 'Zielona herbata Sencha.', 'sencha', '', '', '', 'SENCHA', '', '', '', ''),
+(30, 1, 1, '', 'Najpopularniejsza herbata typu japońskiego.', 'sencha-japan-style', '', '', '', 'SENCHA JAPAN STYLE', '', '', '', ''),
+(31, 1, 1, '', 'Zielona herbata o lekko słodkawym smaku.', 'yun-ming-zielony', '', '', '', 'YUN MING ZIELONY', '', '', '', ''),
+(32, 1, 1, '', 'Herbata czerwona nazywana \"zabójcą tłuszczu\".', 'pu-erh', '', '', '', 'PU ERH', '', '', '', ''),
+(33, 1, 1, '', 'Wyśmienita odmiana herbaty czerwonej.', 'pu-erh-superior', '', '', '', 'PU ERH SUPERIOR', '', '', '', ''),
+(34, 1, 1, '', 'Herbata Pu erh w postaci sprasowanych gniazdek.', 'pu-erh-tuocha', '', '', '', 'PU ERH TUOCHA', '', '', '', ''),
+(35, 1, 1, '', 'Wyjątkowa i mało znana w Europie herbata żółta.', 'sunnon-yellow-tea', '', '', '', 'SUNNON YELLOW TEA', '', '', '', ''),
+(36, 1, 1, '', 'Herbata żółta pochodząca z Chin z prowincji Anhui', 'yellow-buds', '', '', '', 'YELLOW BUDS', '', '', '', ''),
+(37, 1, 1, '', 'Jaśminowa herbata Oolong.', 'jasmine-oolong', '', '', '', 'JASMINE OOLONG', '', '', '', ''),
+(38, 1, 1, '', 'Herbata odmiany Oolong charakteryzująca się mlecznym posmakiem.', 'milk-oolong', '', '', '', 'MILK OOLONG', '', '', '', ''),
+(39, 1, 1, '', 'Częściowo utleniona herbata o delikatnym smaku i wyjątkowym zapachu.', 'oolong', '', '', '', 'OOLONG', '', '', '', ''),
+(40, 1, 1, '', 'Klasyczna herbata Oolong o orzeźwiającym, brzoskwiniowym aromacie', 'peach-oolong', '', '', '', 'PEACH OOLONG', '', '', '', ''),
+(41, 1, 1, '', 'Napar Honeybush o lekko miodowym smaku i orzeźwiającym zapachu.', 'honeybush', '', '', '', 'HONEYBUSH', '', '', '', ''),
+(42, 1, 1, '', 'Rooibos - czerwonokrzew afrykański.', 'rooibos', '', '', '', 'ROOIBOS', '', '', '', ''),
+(43, 1, 1, '', 'Dwie herbaty kwitnące w firmowym opakowaniu.', 'herbaciany-specjal', '', '', '', 'HERBACIANY SPECJAŁ', '', '', '', ''),
+(44, 1, 1, '', 'Ręcznie zwijana zielona herbata kwitnąca.', 'kwiat-harmonii', '', '', '', 'KWIAT HARMONII', '', '', '', ''),
+(45, 1, 1, '', 'Ręcznie zwijana zielona herbata kwitnąca.', 'kwiat-milosci-lichi-ball', '', '', '', 'KWIAT MIŁOŚCI (LICHI BALL)', '', '', '', ''),
+(46, 1, 1, '', 'Zielona herbata kwitnąca 4 szt', 'kwiat-milosci-torebka-naturalna', '', '', '', 'KWIAT MIŁOŚCI TOREBKA NATURALNA', '', '', '', ''),
+(47, 1, 1, '', 'Ręcznie zwijana biała herbata kwitnąca.', 'kwiat-nadziei', '', '', '', 'KWIAT NADZIEI', '', '', '', ''),
+(48, 1, 1, '', 'Ręcznie zwijana biała herbata kwitnąca.', 'kwiat-przyjazni', '', '', '', 'KWIAT PRZYJAŹNI', '', '', '', ''),
+(49, 1, 1, '', 'Ręcznie zwijana biała herbata kwitnąca.', 'kwiat-radosci', '', '', '', 'KWIAT RADOŚCI', '', '', '', ''),
+(50, 1, 1, '', 'Ręcznie zwijana czarna herbata Black Needle.', 'kwiat-serdecznosci', '', '', '', 'KWIAT SERDECZNOŚCI', '', '', '', ''),
+(51, 1, 1, '', 'Ręcznie zwijana biała herbata kwitnąca.', 'kwiat-spelnienia', '', '', '', 'KWIAT SPEŁNIENIA', '', '', '', ''),
+(52, 1, 1, '', 'Bombonierka w złotym opakowaniu', 'zestaw-herbat-kwitnacych', '', '', '', 'ZESTAW HERBAT KWITNĄCYCH', '', '', '', ''),
+(53, 1, 1, '', 'Cztery herbaty kwitnące w wyjątkowym opakowaniu.', 'zestaw-kwitnaca-milosc', '', '', '', 'ZESTAW KWITNĄCA MIŁOŚĆ', '', '', '', ''),
+(54, 1, 1, '', 'Czarna herbata Ceylon z dodatkiem cytryny, truskawki, żurawiny oraz...', 'aleja-gwiazd', '', '', '', 'ALEJA GWIAZD', '', '', '', ''),
+(55, 1, 1, '', 'Czarna herbata OP z dodatkiem truskawki, wiśni, płatków śniegu oraz...', 'bajeczne-swieta', '', '', '', 'BAJECZNE ŚWIĘTA', '', '', '', ''),
+(56, 1, 1, '', 'Czarna herbata Ceylon z dodatkiem melisy, kawałków jabłek oraz...', 'casablanca', '', '', '', 'CASABLANCA', '', '', '', ''),
+(57, 1, 1, '', 'Herbata czarna OP oraz zielona Sencha z dodatkiem rodzynek, pomarańczy oraz...', 'chwila-przy-kominku', '', '', '', 'CHWILA PRZY KOMINKU', '', '', '', ''),
+(58, 1, 1, '', 'Herbata czarna cejlońska z dodatkiem pistacji.', 'czekoladowa-laguna', '', '', '', 'CZEKOLADOWA LAGUNA', '', '', '', ''),
+(59, 1, 1, '', 'Klasyczny Earl Grey.', 'earl-grey', '', '', '', 'EARL GREY', '', '', '', ''),
+(60, 1, 1, '', 'Herbata Ceylon z dodatkiem suszonej lawendy.', 'earl-grey-lawendowy', '', '', '', 'EARL GREY LAWENDOWY', '', '', '', ''),
+(61, 1, 1, '', 'Herbata Earl Grey z dodatkiem skórki cytrynowej.', 'earl-grey-lemon', '', '', '', 'EARL GREY LEMON', '', '', '', ''),
+(62, 1, 1, '', 'Herbata Earl Grey z dodatkiem kawałków pomarańczy.', 'earl-grey-madam-grey', '', '', '', 'EARL GREY MADAM GREY', '', '', '', ''),
+(63, 1, 1, '', 'Herbata Earl Grey z dodatkiem płatków bławatka.', 'earl-grey-niebieski-kwiat', '', '', '', 'EARL GREY NIEBIESKI KWIAT', '', '', '', ''),
+(64, 1, 1, '', 'Czarna herbata Yun ming z dodatkiem oleju z bergamoty.', 'earl-grey-royal', '', '', '', 'EARL GREY ROYAL', '', '', '', ''),
+(65, 1, 1, '', 'Earl Grey z dodatkiem płatków róży.', 'earl-grey-rozany', '', '', '', 'EARL GREY RÓŻANY', '', '', '', ''),
+(66, 1, 1, '', 'Czarna herbata z dodatkiem skórki cytrynowej kandyzowanej, maliny oraz...', 'earl-grey-serce-matki', '', '', '', 'EARL GREY SERCE MATKI', '', '', '', ''),
+(67, 1, 1, '', 'Czarna herbata Earl grey z dodatkiem kardamonu, pieprzu oraz...', 'earl-grey-spicy', '', '', '', 'EARL GREY SPICY', '', '', '', ''),
+(68, 1, 1, '', 'Herbata czarna Ceylon High Grown z dodatkiem liści limonki, maliny oraz...', 'earl-grey-wehikul-czasu', '', '', '', 'EARL GREY WEHIKUŁ CZASU', '', '', '', ''),
+(69, 1, 1, '', 'Herbata czarna Ceylon z dodatkiem jabłek, kokosa, kakaowca oraz kawy.', 'gwiazdkowy-sekret', '', '', '', 'GWIAZDKOWY SEKRET', '', '', '', ''),
+(70, 1, 1, '', 'Czarna herbata z dodatkiem mandarynki, skórki pomarańczowej oraz...', 'hiszpanska-mandarynka', '', '', '', 'HISZPAŃSKA MANDARYNKA', '', '', '', ''),
+(71, 1, 1, '', 'Czarna herbata dodatkiem brzoskwini, owocu dzikiej róży', 'ice-tea-brzoskwiniowa-rumba', '', '', '', 'ICE TEA BRZOSKWINIOWA RUMBA', '', '', '', ''),
+(72, 1, 1, '', 'Czarna herbata cejlońska z dodatkiem cytryny, owocu dzikiej róży oraz stewii.', 'ice-tea-cytrynowa-samba', '', '', '', 'ICE TEA CYTRYNOWA SAMBA', '', '', '', ''),
+(73, 1, 1, '', 'Czarna herbata z dodatkiem mango, mięty i limonki', 'ice-tea-mango-twist', '', '', '', 'ICE TEA MANGO TWIST', '', '', '', ''),
+(74, 1, 1, '', 'Herbata zielona Gunpowder z dodatkiem pokrzywy, aloesu i płatków róży.', 'aloe-vera', '', '', '', 'ALOE VERA', '', '', '', ''),
+(75, 1, 1, '', 'Połączenie zielonej herbaty Sencha, białej Pai Mu Tan, ananasa, acai oraz...', 'chwila-dla-ciebie', '', '', '', 'CHWILA DLA CIEBIE', '', '', '', ''),
+(76, 1, 1, '', 'Herbata zielona Gunpowder z dodatkiem skórki pomarańczowej oraz...', 'dotyk-aniola', '', '', '', 'DOTYK ANIOŁA', '', '', '', ''),
+(77, 1, 1, '', 'Zielona herbata Sencha z dodatkiem winogron, wiśni, rumianku, lippii oraz...', 'earl-grey-fantasy', '', '', '', 'EARL GREY FANTASY', '', '', '', ''),
+(78, 1, 1, '', 'Zielona herbata Sencha z dodatkiem ananasa, mango, kwiatu lotosu oraz...', 'eliksir-szczescia', '', '', '', 'ELIKSIR SZCZĘŚCIA', '', '', '', ''),
+(79, 1, 1, '', 'Zielona herbata Sencha z dodatkiem imbiru, trawy cytrynowej oraz...', 'gingerlemon', '', '', '', 'GINGER&LEMON', '', '', '', ''),
+(80, 1, 1, '', 'Herbata zielona Sencha z dodatkiem truskawki, pomarańczy, jabłka oraz...', 'green-orange', '', '', '', 'GREEN ORANGE', '', '', '', ''),
+(81, 1, 1, '', 'Herbata jaśminowa z imbirem.', 'jasminowa-dama', '', '', '', 'JAŚMINOWA DAMA', '', '', '', ''),
+(82, 1, 1, '', 'Herbata zielona Sencha z dodatkiem jaśminu.', 'jasminowa-premium', '', '', '', 'JAŚMINOWA PREMIUM', '', '', '', ''),
+(83, 1, 1, '', 'Herbata zielona Sencha z wiśnią i bławatkiem.', 'kwitnaca-wisnia', '', '', '', 'KWITNĄCA WIŚNIA', '', '', '', ''),
+(84, 1, 1, '', 'Herbata zielona Sencha z dodatkiem pomarańczy, trawy cytrynowej, imbiru oraz bazylii.', 'la-dolce-vita-limoncella-verde', '', '', '', 'LA DOLCE VITA! LIMONCELLA VERDE', '', '', '', ''),
+(85, 1, 1, '', 'Herbata zielona Sencha z dodatkiem herbaty białej Pai Mu Tan, jabłka oraz...', 'laponia', '', '', '', 'LAPONIA', '', '', '', ''),
+(86, 1, 1, '', 'Herbata zielona Sencha z dodatkiem opuncji, kwiatu pomarańczy oraz...', 'lemoniada-kaktusowa', '', '', '', 'LEMONIADA KAKTUSOWA', '', '', '', ''),
+(87, 1, 1, '', 'Zielona herbata Sencha z cytryną, miętą i liśćmi limonki.', 'letnie-orzezwienie', '', '', '', 'LETNIE ORZEŹWIENIE', '', '', '', ''),
+(88, 1, 1, '', 'Zielona herbata Sencha z dodatkiem wiśni kandyzowanej, ananasa oraz....', 'madam-butterfly', '', '', '', 'MADAM BUTTERFLY', '', '', '', ''),
+(89, 1, 1, '', 'Zielona herbata Sencha z dodatkiem maliny i lipy.', 'malina-z-lipa', '', '', '', 'MALINA Z LIPĄ', '', '', '', ''),
+(90, 1, 1, '', 'Herbata zielona Gunpowder z dodatkiem mięty.', 'marokanska', '', '', '', 'MAROKAŃSKA', '', '', '', ''),
+(91, 1, 1, '', 'Zielona herbata Sencha i Gunpowder z dodatkiem ananasa oraz...', 'milosny-usmiech', '', '', '', 'MIŁOSNY UŚMIECH', '', '', '', ''),
+(92, 1, 1, '', 'Herbata zielona Gunpowder z dodatkiem skórki cytryny, wiśni, kocanki i piwonii.', 'na-dobry-dzien', '', '', '', 'NA DOBRY DZIEŃ', '', '', '', ''),
+(93, 1, 1, '', 'Herbata zielona Sencha z dodatkiem truskawek, żurawiny, melona oraz...', 'owocowa-laguna', '', '', '', 'OWOCOWA LAGUNA', '', '', '', ''),
+(94, 1, 1, '', 'Herbata czerwona Pu erh z dodatkiem czarnej porzeczki, żurawiny oraz...', 'aksamitny-pocalunek', '', '', '', 'AKSAMITNY POCAŁUNEK', '', '', '', ''),
+(95, 1, 1, '', 'Herbata czerwona Pu erh z dodatkiem ananasa, skórki pomarańczowej oraz...', 'ognisty-smok', '', '', '', 'OGNISTY SMOK', '', '', '', ''),
+(96, 1, 1, '', 'Herbata czerwona Pu erh z pomarańczą, hibiskusem,suszoną skórką grejpfruta...', 'orange-spritz', '', '', '', 'ORANGE SPRITZ', '', '', '', ''),
+(97, 1, 1, '', 'Herbata czerwona Pu erh z dodatkiem yerba mate, jabłka oraz...', 'pu-erh-fitness', '', '', '', 'PU ERH FITNESS', '', '', '', ''),
+(98, 1, 1, '', 'Herbata czerwona Pu erh z dodatkiem czerwonej porzeczki, truskawki oraz...', 'pu-erh-malakka', '', '', '', 'PU ERH MALAKKA', '', '', '', ''),
+(99, 1, 1, '', 'Herbata czerwona Pu erh z dodatkiem wiśni kandyzowanej.', 'pu-erh-o-smaku-wisniowo-rumowym', '', '', '', 'PU ERH O SMAKU WIŚNIOWO-RUMOWYM', '', '', '', ''),
+(100, 1, 1, '', 'Herbata czerwona Pu erh z dodatkiem trawy cytrynowej, truskawki oraz...', 'red-orange', '', '', '', 'RED ORANGE', '', '', '', ''),
+(101, 1, 1, '', 'Herbata biała Pai Mu Tan z dodatkiem pomelo, limonki oraz rozmarynu.', 'la-dolce-vita-sycylijska-lemoniada', '', '', '', 'LA DOLCE VITA! SYCYLIJSKA LEMONIADA', '', '', '', ''),
+(102, 1, 1, '', 'Herbata biała Pai Mu Tan z dodatkiem truskawki.', 'mamma-mia', '', '', '', 'MAMMA MIA', '', '', '', ''),
+(103, 1, 1, '', 'Herbata biała Silver Needle z dodatkiem jabłka, migdałów, igieł świerku oraz....', 'ogrod-zmyslow', '', '', '', 'OGRÓD ZMYSŁÓW', '', '', '', ''),
+(104, 1, 1, '', 'Herbata biała Pai Mu Tan z dodatkiem ananasa, marakui, jagód inkaskich oraz...', 'pelnia-szczescia', '', '', '', 'PEŁNIA SZCZĘŚCIA', '', '', '', ''),
+(105, 1, 1, '', 'Herbata biała Pai Mu Tan z dodatkiem jabłka, trawy cytrynowej oraz...', 'rozkoszna-slodycz', '', '', '', 'ROZKOSZNA SŁODYCZ', '', '', '', ''),
+(106, 1, 1, '', 'Pikantna wersja białej herbaty.', 'spicy-white', '', '', '', 'SPICY WHITE', '', '', '', ''),
+(107, 1, 1, '', 'Herbata biała Pai Mu Tan z dodatkiem pomelo, limonki oraz rozmarynu.', 'sycylijska-lemoniada', '', '', '', 'SYCYLIJSKA LEMONIADA', '', '', '', ''),
+(108, 1, 1, '', 'Doskonała biała herbata Pai Mu Tan z jagodą inkaską, morwą i bławatkiem.', 'tajemnica-inkow', '', '', '', 'TAJEMNICA INKÓW', '', '', '', ''),
+(109, 1, 1, '', 'Herbata biała Pai Mu Tan z dodatkiem truskawki, cytryny, papai oraz...', 'white-ice-tea', '', '', '', 'WHITE ICE TEA', '', '', '', ''),
+(110, 1, 1, '', 'Biała herbata China Pai Mu Tan wzbogacona płatkami róży.', 'white-rose', '', '', '', 'WHITE ROSE', '', '', '', ''),
+(111, 1, 1, '', 'Kompozycja premium na bazie herbaty białej Premium Silver Needle', 'winogronowe-muscato', '', '', '', 'WINOGRONOWE MUSCATO', '', '', '', ''),
+(112, 1, 1, '', 'Żółta herbata z dodatkiem olejku bergamotowego.', 'earl-grey-yellow', '', '', '', 'EARL GREY YELLOW', '', '', '', ''),
+(113, 1, 1, '', 'Turkusowa herbata Oolong z dodatkiem żurawiny, truskawki, jabłka oraz...', 'noce-i-dnie', '', '', '', 'NOCE I DNIE', '', '', '', ''),
+(114, 1, 1, '', 'Turkusowa herbata Oolong z dodatkiem czarnej porzeczki, śliwką...', 'whisky-kioto', '', '', '', 'WHISKY KIOTO', '', '', '', ''),
+(115, 1, 1, '', 'Na kompozycję składają się hibiskus, jabłko, papaja, czarny bez, malina oraz...', 'bora-bora', '', '', '', 'BORA BORA', '', '', '', ''),
+(116, 1, 1, '', 'Na kompozycję składają się ananas, papaja, malina, rodzynki i jabłko.', 'cytrusowa-pokusa', '', '', '', 'CYTRUSOWA POKUSA', '', '', '', ''),
+(117, 1, 1, '', 'Gorąca kompozycja owocowa z ananasem, papają, jabłkiem oraz...', 'gorace-rytmy', '', '', '', 'GORĄCE RYTMY', '', '', '', ''),
+(118, 1, 1, '', 'Kompozycja zawiera hibiskus, jarzębinę, owoc głogu, cynamon, goździki oraz...', 'grzaniec', '', '', '', 'GRZANIEC', '', '', '', ''),
+(119, 1, 1, '', 'Owocowa kompozycja zawierająca suszone jabłko, rodzynki oraz...', 'kraina-lagodnosci', '', '', '', 'KRAINA ŁAGODNOŚCI', '', '', '', ''),
+(120, 1, 1, '', 'Kompozycja zawiera owoc aroni, jabłka, jarzębiny, maliny, skórkę róży oraz...', 'malinowa-rapsodia', '', '', '', 'MALINOWA RAPSODIA', '', '', '', ''),
+(121, 1, 1, '', 'Na naszą autorską kompozycję składają się kawałki ananasa oraz...', 'ogrod-babuni', '', '', '', 'OGRÓD BABUNI', '', '', '', ''),
+(122, 1, 1, '', 'W skład kompozycji wchodzi papaja kandyzowana, mango, jabłko oraz...', 'ogrody-edenu', '', '', '', 'OGRODY EDENU', '', '', '', ''),
+(123, 1, 1, '', 'W skład kompozycji wchodzi jabłko, skórka dzikiej róży oraz...', 'owocowe-love', '', '', '', 'OWOCOWE LOVE', '', '', '', ''),
+(124, 1, 1, '', 'Na kompozycję składają się rodzynki, hibiskus, ananas oraz wiśnie.', 'owocowy-karnawal', '', '', '', 'OWOCOWY KARNAWAŁ', '', '', '', ''),
+(125, 1, 1, '', 'Kompozycja owocowa - hibiskus, skórka dzikiej róży, truskawka, żurawina oraz...', 'paris-paris', '', '', '', 'PARIS PARIS', '', '', '', ''),
+(126, 1, 1, '', 'Owocowa kompozycja z hibiskusem, owocami i liśćmi poziomki oraz...', 'poziomkowa-etiuda', '', '', '', 'POZIOMKOWA ETIUDA', '', '', '', ''),
+(127, 1, 1, '', 'Kompozycja owocowa z pomarańczą, truskawką, cytryną...', 'sangriada', '', '', '', 'SANGRIADA', '', '', '', ''),
+(128, 1, 1, '', 'Kompozycja owocowa z dodatkiem daktyli, jabłek, malin oraz gruszek.', 'sen-mikolaja', '', '', '', 'SEN MIKOŁAJA', '', '', '', ''),
+(129, 1, 1, '', 'Kompozycja w skład której wchodzą: jagoda, wiśnia, hibiskus oraz...', 'susz-wisnie-w-rumie', '', '', '', 'SUSZ WIŚNIE W RUMIE', '', '', '', ''),
+(130, 1, 1, '', 'Kompozycja z hibiskusem, jabłkiem, skórką owocu dzikiej róży oraz...', 'tajemniczy-ogrod', '', '', '', 'TAJEMNICZY OGRÓD', '', '', '', ''),
+(131, 1, 1, '', 'Rooibos z dodatkiem jabłek, hibiskusa, cykorii oraz goździków.', 'blask-swiat', '', '', '', 'BLASK ŚWIĄT', '', '', '', ''),
+(132, 1, 1, '', 'Rooibos z dodatkiem gruszki, fasoli Tonka, skórki pomarańczowej..', 'eliksir-kumaru', '', '', '', 'ELIKSIR KUMARU', '', '', '', ''),
+(133, 1, 1, '', 'Rooibos z dodatkiem truskawki, lawendy i mięty.', 'rooibos-chillout', '', '', '', 'ROOIBOS CHILLOUT', '', '', '', ''),
+(134, 1, 1, '', 'Rooibos z dodatkami cytrusowymi i liśćmi eukaliptusa.', 'rooibos-cuba-libre', '', '', '', 'ROOIBOS CUBA LIBRE', '', '', '', ''),
+(135, 1, 1, '', 'Rooibos z dodatkiem jabłka, płatków róży oraz nagietka.', 'rooibos-kwiat-afryki', '', '', '', 'ROOIBOS KWIAT AFRYKI', '', '', '', ''),
+(136, 1, 1, '', 'Rooibos, trawa cytrynowa, skórka cytrynowa oraz limetka.', 'rooibos-limetka', '', '', '', 'ROOIBOS LIMETKA', '', '', '', ''),
+(137, 1, 1, '', 'Rooibos z dodatkiem kawałków pomarańczy oraz płatków nagietka.', 'rooibos-zachod-slonca', '', '', '', 'ROOIBOS ZACHÓD SŁOŃCA', '', '', '', ''),
+(138, 1, 1, '', 'Rooibos z dodatkiem dużej ilości malin i truskawek o delikatnym smaku.', 'rooibosek-malinowo-truskawkowy', '', '', '', 'ROOIBOSEK MALINOWO-TRUSKAWKOWY', '', '', '', ''),
+(139, 1, 1, '', 'Rooibos z dodatkiem czerwonej i czarnej porzeczki, jeżyny i kwiatu głogu.', 'sen-nocy-letniej', '', '', '', 'SEN NOCY LETNIEJ', '', '', '', ''),
+(140, 1, 1, '', 'Zielony Rooibos z dodatkiem mango i marakui.', 'sunset-sweet', '', '', '', 'SUNSET SWEET', '', '', '', ''),
+(141, 1, 1, '', 'Herbata czarna OP z trawą cytrynową, truskawką, pomarańczą oraz..', 'orange-dream', '', '', '', 'ORANGE DREAM', '', '', '', ''),
+(142, 1, 1, '', 'Czarna herbata Assam z intensywną mocą imbiru, goździków oraz...', 'masala-chai', '', '', '', 'MASALA CHAI', '', '', '', ''),
+(143, 1, 1, '', 'Liście mięty, liście czarnej porzeczki, trawa cytrynowa, mango, oraz...', 'wellnessspa', '', '', '', 'WELLNESS&SPA', '', '', '', ''),
+(144, 1, 1, '', 'Kompozycja zielona 70g', 'chwila-dla-ciebie-z-imbirem', '', '', '', 'CHWILA DLA CIEBIE Z IMBIREM', '', '', '', ''),
+(145, 1, 1, '', 'Kompozycja owocowa 100g', 'imbirowe-gorace-rytmy-kartonik', '', '', '', 'IMBIROWE GORĄCE RYTMY KARTONIK', '', '', '', ''),
+(146, 1, 1, '', 'Kompozycja zielona 70g', 'madam-butterfly-z-imbirem', '', '', '', 'MADAM BUTTERFLY Z IMBIREM', '', '', '', ''),
+(147, 1, 1, '', 'Herbata czarna Ceylon z dodatkiem dyni.', 'pikantna-dynia', '', '', '', 'PIKANTNA DYNIA', '', '', '', ''),
+(148, 1, 1, '', 'Zielona herbata Yunnan z dodatkiem żurawiny, skórki dzikiej róży oraz...', 'tea-love', '', '', '', 'TEA LOVE', '', '', '', ''),
+(149, 1, 1, '', 'Herbata czarna cejlońska z owocowo-kwiatowymi dodatkami', 'wiosenny-spacer', '', '', '', 'WIOSENNY SPACER', '', '', '', ''),
+(150, 1, 1, '', 'Gen Mai Cha z dodatkiem gruszki, pomarańczy  i pieprzu.', 'pieronska-gruszka', '', '', '', 'PIEROŃSKA GRUSZKA', '', '', '', ''),
+(151, 1, 1, '', 'Herbata czarna OP z dodatkiem maliny, cynamonu, pomarańczy, jabłka.', 'poezja-smaku', '', '', '', 'POEZJA SMAKU', '', '', '', ''),
+(152, 1, 1, '', 'Herbata czarna Sencha Black z korzennymi dodatkami.', 'sniezna-historia', '', '', '', 'ŚNIEŻNA HISTORIA', '', '', '', ''),
+(153, 1, 1, '', 'Zielona herbata Sencha z dodatkiem cytryny, ananasa, lawendy, mięty oraz...', 'pole-lawendowe', '', '', '', 'POLE LAWENDOWE', '', '', '', ''),
+(154, 1, 1, '', 'Herbata czarna Wietnam z dodatkiem kwiatu granatu, nagietka i berberysu.', 'kwiat-granatu', '', '', '', 'KWIAT GRANATU', '', '', '', ''),
+(155, 1, 1, '', 'Kompozycja zielona na Wielkanoc', 'swiateczna-chwila', '', '', '', 'ŚWIĄTECZNA CHWILA', '', '', '', ''),
+(156, 1, 1, '', 'Herbata czarna z dodatkiem pomarańczy, cytryny oraz mirtu cytrynowego.', 'tropikalna-pokusa', '', '', '', 'TROPIKALNA POKUSA', '', '', '', ''),
+(157, 1, 1, '', 'Herbata czarna z dodatkiem truskawek, poziomek oraz jabłka.', 'truskawki-ze-smietana', '', '', '', 'TRUSKAWKI ZE ŚMIETANĄ', '', '', '', ''),
+(158, 1, 1, '', 'Herbata czarna z dodatkiem pomarańczy, cytryny oraz mirtu.', 'zlote-wspomnienia', '', '', '', 'ZŁOTE WSPOMNIENIA', '', '', '', ''),
+(159, 1, 1, '', 'Herbata zielona Gunpowder z dodatkiem pomarańczy i nagietka.', 'zielona-o-smaku-pomaranczy-z-nagietkiem', '', '', '', 'ZIELONA O SMAKU POMARAŃCZY Z NAGIETKIEM', '', '', '', ''),
+(160, 1, 1, '', 'Czarna herbata OP z dodatkiem grejpfruta, mango, anyżu, goździka i pieprzu czerwonego.', 'magia-swiat', '', '', '', 'MAGIA ŚWIĄT', '', '', '', ''),
+(161, 1, 1, '', 'Czarna herbata Ceylon z dodatkiem brzoskwini, igieł świerku, safloru i bławatka białego.', 'noworoczna', '', '', '', 'NOWOROCZNA', '', '', '', ''),
+(162, 1, 1, '', 'Herbata czarna z dodatkiem maliny, cynamonu, pomarańczy oraz...', 'opowiesc-wigilijna', '', '', '', 'OPOWIEŚĆ WIGILIJNA', '', '', '', ''),
+(163, 1, 1, '', 'Zielona herbata Gunpowder z dodatkiem daktyli, malin, kakaowca oraz pomarańczy.', 'tajemnica-swiat', '', '', '', 'TAJEMNICA ŚWIĄT', '', '', '', ''),
+(164, 1, 1, '', 'Herbata czarna OP z dodatkiem skórki pomarańczowej, żurawiny, goździków oraz...', 'wigilijna', '', '', '', 'WIGILIJNA', '', '', '', ''),
+(165, 1, 1, '', 'Zielona herbata Gunpowder z dodatkiem cukrowych płatków, pomarańczy oraz...', 'zimowy-czar', '', '', '', 'ZIMOWY CZAR', '', '', '', ''),
+(166, 1, 1, '', 'Czarna herbata cejlońska z dodatkiem jabłka, maliny, płatków róży oraz...', 'imie-rozy', '', '', '', 'IMIĘ RÓŻY', '', '', '', ''),
+(167, 1, 1, '', 'Czarna herbata Yunnan z dodatkiem liści limonki i safloru.', 'sunrise', '', '', '', 'SUNRISE', '', '', '', ''),
+(168, 1, 1, '', 'Czarna herbata OP z dodatkiem jabłka i truskawki oraz kwiatów słonecznika.', 'pychotka', '', '', '', 'PYCHOTKA', '', '', '', ''),
+(169, 1, 1, '', 'Czarna herbata o smaku rumu z dodatkiem wiśni.', 'wisnie-w-rumie', '', '', '', 'WIŚNIE W RUMIE', '', '', '', ''),
+(170, 1, 1, '', 'Herbata zielona Sencha z dodatkiem kawałków cytryny.', 'sencha-cytrynowa', '', '', '', 'SENCHA CYTRYNOWA', '', '', '', ''),
+(171, 1, 1, '', 'Herbata czarna Assam z dodatkiem jabłka, białej czekolady oraz...', 'slodka-pokusa', '', '', '', 'SŁODKA POKUSA', '', '', '', ''),
+(172, 1, 1, '', 'Zielona herbata Gunpowder z dodatkiem jabłka oraz czarnej porzeczki.', 'owocowy-szot', '', '', '', 'OWOCOWY SZOT', '', '', '', ''),
+(173, 1, 1, '', 'Herbata czarna wietnamska z dodatkiem malin, jabłek oraz poziomek.', 'malinowa-chmurka', '', '', '', 'MALINOWA CHMURKA', '', '', '', ''),
+(174, 1, 1, '', 'Herbata czarna Bajeczne Święta w kartoniku okazjonalnym (70g).', 'bajeczne-swieta-kartonik', '', '', '', 'BAJECZNE ŚWIĘTA KARTONIK', '', '', '', ''),
+(175, 1, 1, '', 'Rooibos z dodatkiem jabłek, hibiskusa, cykorii oraz goździków.', 'blask-swiat-kartonik', '', '', '', 'BLASK ŚWIĄT KARTONIK', '', '', '', ''),
+(176, 1, 1, '', 'Herbata w kartoniku okazjonalnym (70g).', 'chwila-przy-kominku-kartonik', '', '', '', 'CHWILA PRZY KOMINKU KARTONIK', '', '', '', ''),
+(177, 1, 1, '', 'Herbata czarna w kartoniku okazjonalnym (70g).', 'earl-grey-spicy-kartonik', '', '', '', 'EARL GREY SPICY KARTONIK', '', '', '', ''),
+(178, 1, 1, '', 'Herbata owocowa Grzaniec w kartoniku okazjonalnym', 'grzaniec-kartonik', '', '', '', 'GRZANIEC KARTONIK', '', '', '', ''),
+(179, 1, 1, '', 'Herbata zielona Sencha z dodatkiem herbaty białej Pai Mu Tan, jabłka, pieprzu czerwonego.', 'laponia-kartonik', '', '', '', 'LAPONIA KARTONIK', '', '', '', ''),
+(180, 1, 1, '', 'Herbata zielona 50g', 'laponia-kartonik-bialy', '', '', '', 'LAPONIA KARTONIK BIAŁY', '', '', '', ''),
+(181, 1, 1, '', 'Herbata czarna Magia Świąt w kartoniku okazjonalnym (70g).', 'magia-swiat-kartonik', '', '', '', 'MAGIA ŚWIĄT KARTONIK', '', '', '', ''),
+(182, 1, 1, '', 'Herbata czarna Masala chai w kartoniku okazjonalnym (70g).', 'masala-chai-kartonik', '', '', '', 'MASALA CHAI KARTONIK', '', '', '', ''),
+(183, 1, 1, '', 'Herbata czarna w kartoniku okazjonalnym 70g', 'noworoczna-kartonik', '', '', '', 'NOWOROCZNA KARTONIK', '', '', '', ''),
+(184, 1, 1, '', 'Herbata czarna w kartoniku okazjonalnym (70g).', 'opowiesc-wigilijna-kartonik', '', '', '', 'OPOWIEŚĆ WIGILIJNA KARTONIK', '', '', '', ''),
+(185, 1, 1, '', 'Kompozycja owocowa z dodatkiem daktyli, jabłek, malin oraz gruszek.', 'sen-mikolaja-kartonik', '', '', '', 'SEN MIKOŁAJA KARTONIK', '', '', '', ''),
+(186, 1, 1, '', 'Herbata czarna w kartoniku okazjonalnym (70g).', 'sniezna-historia-kartonik', '', '', '', 'ŚNIEŻNA HISTORIA KARTONIK', '', '', '', ''),
+(187, 1, 1, '', 'Rooibos z dodatkiem pomarańczy, śliwki, goździka i pieprzu czerwonego.', 'swiateczna-podroz-kartonik', '', '', '', 'ŚWIĄTECZNA PODRÓŻ KARTONIK', '', '', '', ''),
+(188, 1, 1, '', 'Zielona herbata Gunpowder z dodatkiem daktyli, malin, kakaowca oraz pomarańczy.', 'tajemnica-swiat-kartonik', '', '', '', 'TAJEMNICA ŚWIĄT KARTONIK', '', '', '', ''),
+(189, 1, 1, '', 'Herbata czarna Wigilijna w kartoniku okazjonalnym (70g).', 'wigilijna-kartonik', '', '', '', 'WIGILIJNA KARTONIK', '', '', '', ''),
+(190, 1, 1, '', 'Herbata zielona Zimowy czar w kartoniku okazjonalnym (70g).', 'zimowy-czar-kartonik', '', '', '', 'ZIMOWY CZAR KARTONIK', '', '', '', ''),
+(191, 1, 1, '', 'Czarna herbata OP z dodatkiem truskawki, wiśni, płatków śniegu oraz...', 'bajeczne-swieta-torebka-biala', '', '', '', 'BAJECZNE ŚWIĘTA TOREBKA BIAŁA', '', '', '', ''),
+(192, 1, 1, '', 'Kompozycja zawiera cynamon, goździki, czarny bez, tarnina, czarna jagoda oraz...', 'grzaniec-torebka-biala', '', '', '', 'GRZANIEC TOREBKA BIAŁA', '', '', '', ''),
+(193, 1, 1, '', 'Czarna herbata OP z grejpfruta, mango, anyżu, goździka i pieprzu czerwonego.', 'magia-swiat-torebka-czerwona', '', '', '', 'MAGIA ŚWIĄT TOREBKA CZERWONA', '', '', '', ''),
+(194, 1, 1, '', 'Czarna herbata Ceylon z dodatkiem brzoskwini, igieł świerku, safloru i bławatka białego', 'noworoczna-torebka-zlota', '', '', '', 'NOWOROCZNA TOREBKA ZŁOTA', '', '', '', ''),
+(195, 1, 1, '', 'Herbata czarna z dodatkiem maliny, cynamonu, pomarańczy oraz...', 'opowiesc-wigilijna-torebka-zielona', '', '', '', 'OPOWIEŚĆ WIGILIJNA TOREBKA ZIELONA', '', '', '', ''),
+(196, 1, 1, '', 'Zielona herbata Gunpowder z dodatkiem daktyli, malin, kakaowca oraz pomarańczy.', 'tajemnica-swiat-torebka-zielona', '', '', '', 'TAJEMNICA ŚWIĄT TOREBKA ZIELONA', '', '', '', ''),
+(197, 1, 1, '', 'Zielona herbata Gunpowder z dodatkiem cukrowych płatków, pomarańczy oraz...', 'zimowy-czar-torebka-grafit', '', '', '', 'ZIMOWY CZAR TOREBKA GRAFIT', '', '', '', ''),
+(198, 1, 1, '', 'Herbata czarna OP oraz Sencha 70g', 'dla-mezczyzny-chwila-przy-kominku', '', '', '', 'DLA MĘŻCZYZNY CHWILA PRZY KOMINKU', '', '', '', ''),
+(199, 1, 1, '', 'Czarna herbata 70g', 'dla-mezczyzny-english-breakfast', '', '', '', 'DLA MĘŻCZYZNY ENGLISH BREAKFAST', '', '', '', ''),
+(200, 1, 1, '', 'Czarna kompozycja Wiśnie w rumie 70g', 'dla-mezczyzny-wisnie-z-rumem', '', '', '', 'DLA MĘŻCZYZNY WIŚNIE Z RUMEM', '', '', '', ''),
+(201, 1, 1, '', 'Herbata Earl grey niebieski kwiat 70g', 'dla-nauczyciela-earl-grey-niebieski-kwiat', '', '', '', 'DLA NAUCZYCIELA EARL GREY NIEBIESKI KWIAT', '', '', '', ''),
+(202, 1, 1, '', 'Earl Grey Royal kartonik dla nauczyciela 70g', 'dla-nauczyciela-earl-grey-royal', '', '', '', 'DLA NAUCZYCIELA EARL GREY ROYAL', '', '', '', ''),
+(203, 1, 1, '', 'Zielona kompozycja 70g', 'dla-nauczyciela-madam-butterfly', '', '', '', 'DLA NAUCZYCIELA MADAM BUTTERFLY', '', '', '', ''),
+(204, 1, 1, '', 'Kompozycja Oolong 70g', 'dla-nauczyciela-noce-i-dnie', '', '', '', 'DLA NAUCZYCIELA NOCE I DNIE', '', '', '', ''),
+(205, 1, 1, '', 'Herbata Winogronowe muscato 70g', 'dla-nauczyciela-winogronowe-muscato', '', '', '', 'DLA NAUCZYCIELA WINOGRONOWE MUSCATO', '', '', '', ''),
+(206, 1, 1, '', 'Zielona kompozycja 70g', 'do-milosci-eliksir', '', '', '', 'DO MIŁOŚCI... ELIKSIR', '', '', '', ''),
+(207, 1, 1, '', 'Owocowa kompozycja Paris Paris 70g', 'do-milosci-paris', '', '', '', 'DO MIŁOŚCI... PARIS', '', '', '', ''),
+(208, 1, 1, '', 'Kompozycja Spacer kochanków 70g', 'do-milosci-spacer', '', '', '', 'DO MIŁOŚCI... SPACER', '', '', '', ''),
+(209, 1, 1, '', 'Zielona kompozycja 70g', 'dziekuje-aloe-vera', '', '', '', 'DZIĘKUJĘ! ALOE VERA', '', '', '', ''),
+(210, 1, 1, '', 'Owocowa kompozycja 70g', 'dziekuje-bora-bora', '', '', '', 'DZIĘKUJĘ! BORA BORA', '', '', '', ''),
+(211, 1, 1, '', 'Kompozycja czarna 70g', 'dziekuje-hiszpanska', '', '', '', 'DZIĘKUJĘ! HISZPAŃSKA', '', '', '', ''),
+(212, 1, 1, '', 'Zielona kompozycja 70g', 'flower-power-aloe-vera', '', '', '', 'FLOWER POWER ALOE VERA', '', '', '', ''),
+(213, 1, 1, '', 'Czarna kompozycja Earl Grey 70g', 'flower-power-madam-grey', '', '', '', 'FLOWER POWER MADAM GREY', '', '', '', ''),
+(214, 1, 1, '', 'Czarna kompozycja 70g', 'flower-power-serce-matki', '', '', '', 'FLOWER POWER SERCE MATKI', '', '', '', ''),
+(215, 1, 1, '', 'Zielona kompozycja 100g', 'aloe-vera-torebka-naturalna', '', '', '', 'ALOE VERA TOREBKA NATURALNA', '', '', '', ''),
+(216, 1, 1, '', 'Owocowa kompozycja 100g', 'bora-bora-torebka-zielona', '', '', '', 'BORA BORA TOREBKA ZIELONA', '', '', '', ''),
+(217, 1, 1, '', 'Zielona kompozycja 100g', 'dotyk-aniola-torebka-biala', '', '', '', 'DOTYK ANIOŁA TOREBKA BIAŁA', '', '', '', ''),
+(218, 1, 1, '', 'Czarna kompozycja 100g', 'earl-grey-madam-grey-torebka-biala', '', '', '', 'EARL GREY MADAM GREY TOREBKA BIAŁA', '', '', '', ''),
+(219, 1, 1, '', 'Herbata czarna 100g', 'english-breakfast-torebka-naturalna', '', '', '', 'ENGLISH BREAKFAST TOREBKA NATURALNA', '', '', '', ''),
+(220, 1, 1, '', 'Czarna kompozycja 100g', 'imie-rozy-torebka-czerwona', '', '', '', 'IMIĘ RÓŻY TOREBKA CZERWONA', '', '', '', ''),
+(221, 1, 1, '', 'Czerwona kompozycja Pu erh 100g', 'ognisty-smok-torebka-czerwona', '', '', '', 'OGNISTY SMOK TOREBKA CZERWONA', '', '', '', ''),
+(222, 1, 1, '', 'Owocowa kompozycja 100g', 'ogrody-edenu-torebka-zielona', '', '', '', 'OGRODY EDENU TOREBKA ZIELONA', '', '', '', ''),
+(223, 1, 1, '', 'Zielona kompozycja 100g', 'rajski-ptak-torebka-naturalna', '', '', '', 'RAJSKI PTAK TOREBKA NATURALNA', '', '', '', ''),
+(224, 1, 1, '', 'Kompozycja czarna 100g', 'wielkanocne-sniadanie-torebka-biala', '', '', '', 'WIELKANOCNE ŚNIADANIE TOREBKA BIAŁA', '', '', '', ''),
+(225, 1, 1, '', 'Herbata czarna Assam Dekorai 50g w puszce.', 'assam-dekorai-puszka-czarna', '', '', '', 'ASSAM DEKORAI PUSZKA CZARNA', '', '', '', ''),
+(226, 1, 1, '', 'Herbata czarna Earl Grey Spicy 50g w puszce.', 'earl-grey-spicy-puszka-czarna', '', '', '', 'EARL GREY SPICY PUSZKA CZARNA', '', '', '', ''),
+(227, 1, 1, '', 'Herbata zielona Sencha Japan style 50g w puszce.', 'sencha-japan-style-puszka-czarna', '', '', '', 'SENCHA JAPAN STYLE PUSZKA CZARNA', '', '', '', ''),
+(228, 1, 1, '', 'Najlepsze herbaty zamknięte w wygodnym filtrze 10x3g.', 'box-assam-dekorai', '', '', '', 'BOX ASSAM DEKORAI', '', '', '', ''),
+(229, 1, 1, '', 'Najlepsze herbaty zamknięte w wygodnym filtrze 10x6g.', 'box-bora-bora', '', '', '', 'BOX BORA BORA', '', '', '', ''),
+(230, 1, 1, '', 'Najlepsze herbaty zamknięte w wygodnym filtrze 10x3g.', 'box-earl-grey-niebieski-kwiat', '', '', '', 'BOX EARL GREY NIEBIESKI KWIAT', '', '', '', ''),
+(231, 1, 1, '', 'Najlepsze herbaty zamknięte w wygodnym filtrze 10x2g.', 'box-gunpowder-super', '', '', '', 'BOX GUNPOWDER SUPER', '', '', '', ''),
+(232, 1, 1, '', 'Najlepsze herbaty zamknięte w wygodnym filtrze 10x2g.', 'box-jasminowa', '', '', '', 'BOX JAŚMINOWA', '', '', '', ''),
+(233, 1, 1, '', 'Najlepsze herbaty zamknięte w wygodnym filtrze 10x3g.', 'box-madagaskar', '', '', '', 'BOX MADAGASKAR', '', '', '', ''),
+(234, 1, 1, '', 'Najlepsze herbaty zamknięte w wygodnym filtrze 10x3g.', 'box-milosny-usmiech', '', '', '', 'BOX MIŁOSNY UŚMIECH', '', '', '', ''),
+(235, 1, 1, '', 'Najlepsze herbaty zamknięte w wygodnym filtrze 10x3g.', 'box-rooibos-limetka', '', '', '', 'BOX ROOIBOS LIMETKA', '', '', '', ''),
+(236, 1, 1, '', 'Herbaciany kubek zawiera herbatę Earl grey niebieski kwiat 70g.', 'herbaciany-kubek-earl-grey-niebieski-kwiat', '', '', '', 'HERBACIANY KUBEK EARL GREY NIEBIESKI KWIAT', '', '', '', ''),
+(237, 1, 1, '', 'Herbaciany kubek zawiera herbatę English breakfast 70g.', 'herbaciany-kubek-english-breakfast', '', '', '', 'HERBACIANY KUBEK ENGLISH BREAKFAST', '', '', '', ''),
+(238, 1, 1, '', 'Herbaciany kubek zawiera herbatę Jaśminową 80g', 'herbaciany-kubek-jasminowa', '', '', '', 'HERBACIANY KUBEK JAŚMINOWA', '', '', '', ''),
+(239, 1, 1, '', 'Herbaciany kubek zawiera herbatę Kraina łagodności 80g.', 'herbaciany-kubek-kraina-lagodnosci', '', '', '', 'HERBACIANY KUBEK KRAINA ŁAGODNOŚCI', '', '', '', ''),
+(240, 1, 1, '', 'Herbaciany kubek zawiera herbatę Madagaskar 60g.', 'herbaciany-kubek-madagaskar', '', '', '', 'HERBACIANY KUBEK MADAGASKAR', '', '', '', ''),
+(241, 1, 1, '', 'Herbaciany kubek zawiera herbatę Owocowa laguna 60g', 'herbaciany-kubek-owocowa-laguna', '', '', '', 'HERBACIANY KUBEK OWOCOWA LAGUNA', '', '', '', ''),
+(242, 1, 1, '', 'Herbaciany kubek zawiera herbatę Pu erh Malakka 70g.', 'herbaciany-kubek-pu-erh-malakka', '', '', '', 'HERBACIANY KUBEK PU ERH MALAKKA', '', '', '', ''),
+(243, 1, 1, '', 'Herbaciany kubek zawiera herbatę Rajski ptak 60g', 'herbaciany-kubek-rajski-ptak', '', '', '', 'HERBACIANY KUBEK RAJSKI PTAK', '', '', '', ''),
+(244, 1, 1, '', 'Herbaciany kubek zawiera herbatę Sekret piękna 50g', 'herbaciany-kubek-sekret-piekna', '', '', '', 'HERBACIANY KUBEK SEKRET PIĘKNA', '', '', '', ''),
+(245, 1, 1, '', 'Herbaciany kubek zawiera herbatę Śniadanie u Tiffany\'ego 70g', 'herbaciany-kubek-sniadanie-u-tiffany-ego', '', '', '', 'HERBACIANY KUBEK ŚNIADANIE U TIFFANY\'EGO', '', '', '', ''),
+(246, 1, 1, '', 'Herbaciany kubek zawiera herbatę Wiśnie w rumie 70g', 'herbaciany-kubek-wisnie-w-rumie', '', '', '', 'HERBACIANY KUBEK WIŚNIE W RUMIE', '', '', '', ''),
+(247, 1, 1, '', 'Zestaw kompozycji Earl Grey 5x10g', 'zestaw-degustacyjny-earl-grey', '', '', '', 'ZESTAW DEGUSTACYJNY EARL GREY', '', '', '', ''),
+(248, 1, 1, '', 'Zestaw herbat czarnych 5x10g', 'zestaw-degustacyjny-herbaty-czarne', '', '', '', 'ZESTAW DEGUSTACYJNY HERBATY CZARNE', '', '', '', ''),
+(249, 1, 1, '', 'Zestaw kompozycji czarnych 5x10g', 'zestaw-degustacyjny-kompozycje-czarne', '', '', '', 'ZESTAW DEGUSTACYJNY KOMPOZYCJE CZARNE', '', '', '', ''),
+(250, 1, 1, '', 'Zestaw herbat owocowych 6x10g', 'zestaw-degustacyjny-kompozycje-owocowe', '', '', '', 'ZESTAW DEGUSTACYJNY KOMPOZYCJE OWOCOWE', '', '', '', ''),
+(251, 1, 1, '', 'Zestaw kompozycji pu erh 5x10g', 'zestaw-degustacyjny-kompozycje-pu-erh', '', '', '', 'ZESTAW DEGUSTACYJNY KOMPOZYCJE PU ERH', '', '', '', ''),
+(252, 1, 1, '', 'Zestaw kompozycji zielonych 5x10g', 'zestaw-degustacyjny-kompozycje-zielone', '', '', '', 'ZESTAW DEGUSTACYJNY KOMPOZYCJE ZIELONE', '', '', '', ''),
+(253, 1, 1, '', 'Zestaw kompozycji rooibos 5x10g', 'zestaw-degustacyjny-rooibos', '', '', '', 'ZESTAW DEGUSTACYJNY ROOIBOS', '', '', '', ''),
+(254, 1, 1, '', 'Jaśminowa klasyczna zielona herbata Yunnan (70g).', 'sushi-tea-jasminowa', '', '', '', 'SUSHI TEA - JAŚMINOWA', '', '', '', ''),
+(255, 1, 1, '', 'Pai Mu Tan z dodatkiem mango, trawy cytrynowej, mięty oraz płatków róży (35g).', 'sushi-tea-mango-white', '', '', '', 'SUSHI TEA - MANGO WHITE', '', '', '', ''),
+(256, 1, 1, '', 'Zielona herbata z dodatkiem wiśni (70g).', 'sushi-tea-sakura-green', '', '', '', 'SUSHI TEA - SAKURA GREEN', '', '', '', ''),
+(257, 1, 1, '', 'Japońska Matcha najwyższej jakości (op 30g).', 'japanese-matcha', '', '', '', 'JAPANESE MATCHA', '', '', '', ''),
+(258, 1, 1, '', 'Mieszanka o pobudzającym działaniu 75g', 'kolorowa-matcha-black-energy', '', '', '', 'KOLOROWA MATCHA BLACK ENERGY', '', '', '', ''),
+(259, 1, 1, '', 'Mieszanka o właściwościach wyciszających 75g', 'kolorowa-matcha-blue-relax', '', '', '', 'KOLOROWA MATCHA BLUE RELAX', '', '', '', ''),
+(260, 1, 1, '', 'Mieszanka zapewniająca lepsze samopoczucie 75g', 'kolorowa-matcha-green-detox', '', '', '', 'KOLOROWA MATCHA GREEN DETOX', '', '', '', ''),
+(261, 1, 1, '', 'Mieszanka cechująca się słodkim, ananasowo-kokosowym smakiem 75g', 'kolorowa-matcha-white-happiness', '', '', '', 'KOLOROWA MATCHA WHITE HAPPINESS', '', '', '', ''),
+(262, 1, 1, '', 'Mieszanka o właściwościach wzmacniających 75g', 'kolorowa-matcha-yellow-immunity', '', '', '', 'KOLOROWA MATCHA YELLOW IMMUNITY', '', '', '', ''),
+(263, 1, 1, '', 'Herbata zielona sproszkowana', 'matcha-50g', '', '', '', 'MATCHA 50G', '', '', '', ''),
+(264, 1, 1, '', 'Zielona sproszkowana herbata 100%', 'matcha-japonska-ujicha', '', '', '', 'MATCHA JAPOŃSKA UJICHA', '', '', '', ''),
+(265, 1, 1, '', 'Zen &amp; Relaks 80g', 'harmonia', '', '', '', 'HARMONIA', '', '', '', ''),
+(266, 1, 1, '', 'Hair &amp; Beauty 80g', 'piekno', '', '', '', 'PIĘKNO', '', '', '', ''),
+(267, 1, 1, '', 'Feel happiness 80g', 'radosc', '', '', '', 'RADOŚĆ', '', '', '', ''),
+(268, 1, 1, '', 'Slim &amp; fit 80g', 'szczupla-sylwetka', '', '', '', 'SZCZUPŁA SYLWETKA', '', '', '', ''),
+(269, 1, 1, '', 'EnergyBoost 80g', 'witalnosc', '', '', '', 'WITALNOŚĆ', '', '', '', ''),
+(270, 1, 1, '', 'Assam Mokalbari to herbata pochodząca z północno-wschodniego regionu Indii położonego wzdłuż doliny rzeki Brahmaputry u podnóży Himalajów. Prowincja ta słynie z uprawy odmiany czarnej herbaty Camellia Assamica, która zachwyca słodowymi nutami i bogatym smakiem naparu.', 'assam-mokalbari-sf-black', '', '', '', 'Assam Mokalbari SF Black', '', '', '', ''),
+(271, 1, 1, '', 'Assam Satrupa zaskakuje złożonym smakiem i aromatem. Rośnie w północno-wschodnim regionie Indii, słynącym z upraw jednych z najlepszych herbat czarnych. Klasyczne nuty z delikatnie przeplatającymi się słodowymi smakami, to idealne połączenie i uzupełnienie wyjątkowych śniadań. Smakuje również z mlekiem.', 'assam-satrupa', '', '', '', 'Assam Satrupa', '', '', '', ''),
+(272, 1, 1, '', 'Herbata czarna Ceylon z dodatkiem dużej ilości malin.', 'malinowa', '', '', '', 'MALINOWA', '', '', '', ''),
+(273, 1, 1, '', 'Czarna herbata z dodatkiem papai, pomarańczy oraz maliny.', 'lazy-day', '', '', '', 'LAZY DAY', '', '', '', ''),
+(274, 1, 1, '', 'Czarna herbata z dodatkiem skórki pomarańczowej, truskawki i bławatka.', 'madagaskar', '', '', '', 'MADAGASKAR', '', '', '', ''),
+(275, 1, 1, '', 'Kawa arabika 100% speciality.', 'americano-blend', '', '', '', 'AMERICANO BLEND', '', '', '', ''),
+(276, 1, 1, '', 'Łagodna Arabika z Brazylii.', 'brazylia-bourbon', '', '', '', 'BRAZYLIA BOURBON', '', '', '', ''),
+(277, 1, 1, '', 'Kawa do wszechstronnego zastosowania.', 'brazylia-santos', '', '', '', 'BRAZYLIA SANTOS', '', '', '', ''),
+(278, 1, 1, '', 'Kawa arabika 100% speciality.', 'brazylia-speciality', '', '', '', 'BRAZYLIA SPECIALITY', '', '', '', ''),
+(279, 1, 1, '', 'Blend Arabicy i Robusty dla entuzjastów cappuccino.', 'cappuccino-blend', '', '', '', 'CAPPUCCINO BLEND', '', '', '', ''),
+(280, 1, 1, '', 'Blend ziaren z Brazylii, Kolumbii i Etiopii o jakości speciality', 'continental-roast', '', '', '', 'CONTINENTAL ROAST', '', '', '', ''),
+(281, 1, 1, '', 'Mieszanka ziaren Robusty i Arabiki o mocnym smaku.', 'espresso-blend', '', '', '', 'ESPRESSO BLEND', '', '', '', ''),
+(282, 1, 1, '', 'Kawa o dużych ziarnach o pikantnym, złożonym aromacie.', 'gwatemala-maragogype', '', '', '', 'GWATEMALA MARAGOGYPE', '', '', '', ''),
+(283, 1, 1, '', 'Wyjątkowa kawa jakości speciality.', 'indonezja-flores-beiposo', '', '', '', 'INDONEZJA FLORES BEIPOSO', '', '', '', ''),
+(284, 1, 1, '', 'Kawa Robusta pochodząca z indonezyjskich plantacji.', 'indonezja-robusta', '', '', '', 'INDONEZJA ROBUSTA', '', '', '', ''),
+(285, 1, 1, '', 'Blend ziaren z Brazylii, Kolumbii i Etiopii o jakości speciality', 'italian-dark-roast', '', '', '', 'ITALIAN DARK ROAST', '', '', '', ''),
+(286, 1, 1, '', 'Wysokiej jakości Arabica z Kenii.', 'kenia-meru', '', '', '', 'KENIA MERU', '', '', '', ''),
+(287, 1, 1, '', 'Mocno wypalone znakomite espresso.', 'kolumbia-espresso', '', '', '', 'KOLUMBIA ESPRESSO', '', '', '', ''),
+(288, 1, 1, '', 'Kawa idealna do parzenia w ekspresach ciśnieniowych.', 'kolumbia-medelin', '', '', '', 'KOLUMBIA MEDELIN', '', '', '', ''),
+(289, 1, 1, '', 'Cztery arabiki z kilku regionów świata o średnim stopniu palenia i zbilansowanej słodyczy.', 'latte-blend', '', '', '', 'LATTE BLEND', '', '', '', ''),
+(290, 1, 1, '', 'Aromatyczna meksykańska kawa o wyjątkowym smaku.', 'meksyk', '', '', '', 'MEKSYK', '', '', '', ''),
+(291, 1, 1, '', 'Delikatna kawa o dużych ziarnach.', 'nicaragua-maragogype', '', '', '', 'NICARAGUA MARAGOGYPE', '', '', '', ''),
+(292, 1, 1, '', 'Kawa arabika 100% speciality', 'nikaragua-speciality', '', '', '', 'NIKARAGUA SPECIALITY', '', '', '', ''),
+(293, 1, 1, '', 'Wyrazisty smak i owocowe nuty unikalnej kawy z Rwandy.', 'rwanda', '', '', '', 'RWANDA', '', '', '', ''),
+(294, 1, 1, '', 'Wysokiej jakości kawa speciality z Brazylii', 'yellow-bourbon-speciality', '', '', '', 'YELLOW BOURBON SPECIALITY', '', '', '', ''),
+(295, 1, 1, '', 'Kawa Arabica o smaku belgijskiej praliny.', 'kawa-belgijska-pralina', '', '', '', 'KAWA BELGIJSKA PRALINA', '', '', '', ''),
+(296, 1, 1, '', 'Kawa Arabica o smaku biszkoptowym', 'kawa-biszkopt', '', '', '', 'KAWA BISZKOPT', '', '', '', ''),
+(297, 1, 1, '', 'Kawa smakowa z nutami czekolady, śmietanki i toffi', 'kawa-choco-cream', '', '', '', 'KAWA CHOCO CREAM', '', '', '', ''),
+(298, 1, 1, '', 'Kawa o smaku czekolady, goździka i cynamonu', 'kawa-chwile-przy-kominku', '', '', '', 'KAWA CHWILE PRZY KOMINKU', '', '', '', ''),
+(299, 1, 1, '', 'Kawa Arabica o smaku creme brule.', 'kawa-creme-brule', '', '', '', 'KAWA CREME BRULE', '', '', '', ''),
+(300, 1, 1, '', 'Kawa Arabica o smaku czekolady i mięty.', 'kawa-czekolada-mieta', '', '', '', 'KAWA CZEKOLADA-MIĘTA', '', '', '', ''),
+(301, 1, 1, '', 'Kawa Arabica o smaku czekolady i orzechów.', 'kawa-czekolada-orzech', '', '', '', 'KAWA CZEKOLADA-ORZECH', '', '', '', ''),
+(302, 1, 1, '', 'Kawa Arabica o smaku irish cream.', 'kawa-irish-cream', '', '', '', 'KAWA IRISH CREAM', '', '', '', ''),
+(303, 1, 1, '', 'Kawa Arabica o smaku irish whiskey.', 'kawa-irish-whiskey', '', '', '', 'KAWA IRISH WHISKEY', '', '', '', ''),
+(304, 1, 1, '', 'Kawa Arabica o smaku kruchego ciasteczka.', 'kawa-kruche-ciastko', '', '', '', 'KAWA KRUCHE CIASTKO', '', '', '', ''),
+(305, 1, 1, '', 'Kawa Arabica o smaku marcepanowym.', 'kawa-marcepan', '', '', '', 'KAWA MARCEPAN', '', '', '', ''),
+(306, 1, 1, '', 'Kawa Arabica o smaku mlecznego karmelu', 'kawa-mleczny-karmel', '', '', '', 'KAWA MLECZNY KARMEL', '', '', '', ''),
+(307, 1, 1, '', 'Kawa o smaku białej czekolady.', 'kawa-o-smaku-bialej-czekolady', '', '', '', 'KAWA O SMAKU BIAŁEJ CZEKOLADY', '', '', '', ''),
+(308, 1, 1, '', 'Kawa Arabica o smaku orzechów w kremie.', 'kawa-orzech-krem', '', '', '', 'KAWA ORZECH-KREM', '', '', '', ''),
+(309, 1, 1, '', 'Kawa Arabica o smaku pistacjowym.', 'kawa-pistacjowa', '', '', '', 'KAWA PISTACJOWA', '', '', '', ''),
+(310, 1, 1, '', 'Kawa Arabica o smaku pomarańczowym.', 'kawa-pomaranczowa', '', '', '', 'KAWA POMARAŃCZOWA', '', '', '', ''),
+(311, 1, 1, '', 'Kawa Arabica o smaku śliwki w czekoladzie', 'kawa-sliwka-w-czekoladzie', '', '', '', 'KAWA ŚLIWKA W CZEKOLADZIE', '', '', '', ''),
+(312, 1, 1, '', 'Kawa o smaku słonego karmelu.', 'kawa-slony-karmel', '', '', '', 'KAWA SŁONY KARMEL', '', '', '', ''),
+(313, 1, 1, '', 'Kawa Arabica o smaku tiramisu.', 'kawa-tiramisu', '', '', '', 'KAWA TIRAMISU', '', '', '', ''),
+(314, 1, 1, '', 'Kawa o smaku wafelka w czekoladzie.', 'kawa-wafelek-w-czekoladzie', '', '', '', 'KAWA WAFELEK W CZEKOLADZIE', '', '', '', ''),
+(315, 1, 1, '', 'Delikatna kawa o niskiej kwasowości [1kg].', 'coffee-tink-brazylia-santos', '', '', '', 'COFFEE TINK BRAZYLIA SANTOS', '', '', '', ''),
+(316, 1, 1, '', 'Etiopska kawa o wyczuwalnej kwasowości [250g].', 'coffee-tink-etiopia-djimmah', '', '', '', 'COFFEE TINK ETIOPIA DJIMMAH', '', '', '', ''),
+(317, 1, 1, '', 'Kawa o intensywnym smaku z upraw wysokogórskich [250g].', 'coffee-tink-kenia-meru', '', '', '', 'COFFEE TINK KENIA MERU', '', '', '', ''),
+(318, 1, 1, '', 'Kolumbijska kawa o średniej kwasowości [1kg].', 'coffee-tink-kolumbia-excelso-medellin', '', '', '', 'COFFEE TINK KOLUMBIA EXCELSO MEDELLIN', '', '', '', ''),
+(319, 1, 1, '', 'Blend Arabiki i Robusty z pięciu krajów świata [1kg].', 'coffee-tink-royal-coffee', '', '', '', 'COFFEE TINK ROYAL COFFEE', '', '', '', ''),
+(320, 1, 1, '', 'Zbalansowana kawa do ekspresu ciśnieniowego [250g].', 'etno-abyssinian-highland', '', '', '', 'ETNO ABYSSINIAN HIGHLAND', '', '', '', ''),
+(321, 1, 1, '', 'Idealna kolumbijska kawa pod metody przelewowe i ciśnieniowe [250g].', 'etno-colombia-medellin', '', '', '', 'ETNO COLOMBIA MEDELLIN', '', '', '', ''),
+(322, 1, 1, '', 'Najwyższej jakości blend oparty na etiopskiej kawie [250g]', 'etno-fusion', '', '', '', 'ETNO FUSION', '', '', '', ''),
+(323, 1, 1, '', 'Zbalansowane połączenie kaw z Ameryki Południowej i Afryki [250g].', 'etno-intercontinental', '', '', '', 'ETNO INTERCONTINENTAL', '', '', '', ''),
+(324, 1, 1, '', 'Klasyczny smak kawy rodem z Włoch [250g].', 'etno-italian-roast', '', '', '', 'ETNO ITALIAN ROAST', '', '', '', ''),
+(325, 1, 1, '', 'Uniwersalna kawa z Brazylii [250g].', 'etno-yellow-bourbon', '', '', '', 'ETNO YELLOW BOURBON', '', '', '', ''),
+(326, 1, 1, '', 'Aromatyczne etiopskie ziarno pod metody ciśnieniowe i przelewowe [250g].', 'etno-yirgacheffe', '', '', '', 'ETNO YIRGACHEFFE', '', '', '', ''),
+(327, 1, 1, '', 'Najwyższej jakości kawa - dla wielu wzorzec do naśladowania [100g]', 'jamaica-blue-mountain', '', '', '', 'JAMAICA BLUE MOUNTAIN', '', '', '', ''),
+(328, 1, 1, '', 'Kawa mielona Arabika 90% Fasola Tonka 10%', 'kawa-kumaru', '', '', '', 'KAWA KUMARU', '', '', '', ''),
+(329, 1, 1, '', 'Kawa bezkofeinowa do wszechstronnego zastosowania.', 'brazylia-santos-decaf', '', '', '', 'BRAZYLIA SANTOS DECAF', '', '', '', ''),
+(330, 1, 1, '', 'Kawa decaf Arabica o smaku creme brule.', 'kawa-decaf-creme-brule', '', '', '', 'KAWA DECAF CREME BRULE', '', '', '', ''),
+(331, 1, 1, '', 'Bezkofeinowa Arabica o smaku wanilii i orzechów.', 'kawa-decaf-wanilia-orzech', '', '', '', 'KAWA DECAF WANILIA-ORZECH', '', '', '', ''),
+(332, 1, 1, '', 'Meksykańska bezkofeinowa łagodna kawa Arabica.', 'meksyk-swiss-water-decaf', '', '', '', 'MEKSYK SWISS WATER DECAF', '', '', '', ''),
+(333, 1, 1, '', 'Idealny zestaw startowy do zaparzania kawy.', 'dripperpot-hario-v60', '', '', '', 'DRIPPER&POT HARIO V60', '', '', '', ''),
+(334, 1, 1, '', 'Filtr papierowy 100szt. do drippera', 'filtr-papierowy-do-drippera', '', '', '', 'FILTR PAPIEROWY DO DRIPPERA', '', '', '', ''),
+(335, 1, 1, '', 'Filtr papierowy 40szt. do drippera V60-02 Hario', 'filtry-papierowe-do-drippera', '', '', '', 'FILTRY PAPIEROWE DO DRIPPERA', '', '', '', ''),
+(336, 1, 1, '', 'Filtry papierowe Moccamaster No.1 80szt', 'filtry-papierowe-moccamaster-no1', '', '', '', 'FILTRY PAPIEROWE MOCCAMASTER NO.1', '', '', '', ''),
+(337, 1, 1, '', 'Filtry papierowe No.4 Moccamaster 100 szt', 'filtry-papierowe-moccamaster-no4', '', '', '', 'FILTRY PAPIEROWE MOCCAMASTER NO.4', '', '', '', ''),
+(338, 1, 1, '', 'Nowoczesny zaparzacz 1l', 'french-press-zaparzacz-cisnieniowy', '', '', '', 'FRENCH PRESS ZAPARZACZ CIŚNIENIOWY', '', '', '', ''),
+(339, 1, 1, '', 'Nowoczesny zaparzacz grafit 1l', 'french-press-zaparzacz-grafit-cisnieniowy', '', '', '', 'FRENCH PRESS ZAPARZACZ GRAFIT CIŚNIENIOWY', '', '', '', ''),
+(340, 1, 1, '', 'Nowoczesny zaparzacz srebrny 1l', 'french-press-zaparzacz-srebrny-cisnieniowy', '', '', '', 'FRENCH PRESS ZAPARZACZ SREBRNY CIŚNIENIOWY', '', '', '', ''),
+(341, 1, 1, '', 'Nowoczesny zaparzacz złoty 1l', 'french-press-zaparzacz-zloty-cisnieniowy', '', '', '', 'FRENCH PRESS ZAPARZACZ ZŁOTY CIŚNIENIOWY', '', '', '', ''),
+(342, 1, 1, '', 'Kafeteria szklana o pojemności 1l.', 'kafeteria-azur', '', '', '', 'KAFETERIA AŻUR', '', '', '', ''),
+(343, 1, 1, '', 'Kawiarka Venus ze stali nierdzewnej o pojemności 6 espresso.', 'kafeterka-6-venus', '', '', '', 'KAFETERKA 6 VENUS', '', '', '', '');
+INSERT INTO `ps_product_lang` (`id_product`, `id_shop`, `id_lang`, `description`, `description_short`, `link_rewrite`, `meta_description`, `meta_keywords`, `meta_title`, `name`, `available_now`, `available_later`, `delivery_in_stock`, `delivery_out_stock`) VALUES
+(344, 1, 1, '', 'Kawiarka Venus ze stali nierdzewnej o pojemności 4 espresso.', 'kafeterka-venus-4tz-miedziana', '', '', '', 'KAFETERKA VENUS 4TZ MIEDZIANA', '', '', '', ''),
+(345, 1, 1, '', 'Pojemnik na kawę z klipsem 500g.', 'puszka-espresso-retro', '', '', '', 'PUSZKA ESPRESSO RETRO', '', '', '', ''),
+(346, 1, 1, '', 'Szklanka do latte z podwójnymi ściankami 320ml.', 'szklanka-amo-latte', '', '', '', 'SZKLANKA AMO LATTE', '', '', '', ''),
+(347, 1, 1, '', 'Szklanki Look Mug 2x250ml', 'szklanki-look-mug', '', '', '', 'SZKLANKI LOOK MUG', '', '', '', ''),
+(348, 1, 1, '', 'Tygielek do kawy Tognana Riflex 0,25l.', 'tygielek-tognana-025l', '', '', '', 'TYGIELEK TOGNANA 0,25L', '', '', '', ''),
+(349, 1, 1, '', 'Tygielek do kawy Tognana Riflex 0,45l.', 'tygielek-tognana-045l', '', '', '', 'TYGIELEK TOGNANA 0,45L', '', '', '', ''),
+(350, 1, 1, '', 'Mocno pobudzająca odmiana z Argentyny.', 'mate-argentina-200g', '', '', '', 'MATE ARGENTINA 200G', '', '', '', ''),
+(351, 1, 1, '', 'Mocno pobudzająca odmiana z Argentyny.', 'mate-argentina-400g', '', '', '', 'MATE ARGENTINA 400G', '', '', '', ''),
+(352, 1, 1, '', 'Najwyższej jakości yerba mate z Brazylii.', 'mate-brazil-despalada-200g', '', '', '', 'MATE BRAZIL DESPALADA 200G', '', '', '', ''),
+(353, 1, 1, '', 'Najwyższej jakości yerba mate z Brazylii.', 'mate-brazil-despalada-400g', '', '', '', 'MATE BRAZIL DESPALADA 400G', '', '', '', ''),
+(354, 1, 1, '', 'Delikatna Yerba Mate z dodatkiem konopi siewnych.', 'mate-cannabis-200g', '', '', '', 'MATE CANNABIS 200G', '', '', '', ''),
+(355, 1, 1, '', 'Delikatna Yerba Mate z dodatkiem konopi siewnych.', 'mate-cannabis-400g', '', '', '', 'MATE CANNABIS 400G', '', '', '', ''),
+(356, 1, 1, '', 'Mate z dodatkiem wiśni liofilizowanej i bławatka.', 'mate-cherry-200g', '', '', '', 'MATE CHERRY 200G', '', '', '', ''),
+(357, 1, 1, '', 'Mate z dodatkiem wiśni liofilizowanej i bławatka.', 'mate-cherry-400g', '', '', '', 'MATE CHERRY 400G', '', '', '', ''),
+(358, 1, 1, '', 'Mate z dodatkiem czarnej porzeczki, konopi oraz szyszki chmielu.', 'mate-chillout-200g', '', '', '', 'MATE CHILLOUT 200G', '', '', '', ''),
+(359, 1, 1, '', 'Mate z dodatkiem czarnej porzeczki, konopi oraz szyszki chmielu.', 'mate-chillout-400g', '', '', '', 'MATE CHILLOUT 400G', '', '', '', ''),
+(360, 1, 1, '', 'Mate z dodatkiem płatków róży, bławatka, aronii i guarany.', 'mate-de-guarana-200g', '', '', '', 'MATE DE GUARANA 200G', '', '', '', ''),
+(361, 1, 1, '', 'Mate z dodatkiem płatków róży, bławatka, aronii i guarany.', 'mate-de-guarana-400g', '', '', '', 'MATE DE GUARANA 400G', '', '', '', ''),
+(362, 1, 1, '', 'Yerba mate z dodatkiem czerwonej herbaty Pu erh, wiśni i jabłka.', 'mate-fitness-200g', '', '', '', 'MATE FITNESS 200G', '', '', '', ''),
+(363, 1, 1, '', 'Yerba mate z dodatkiem czerwonej herbaty Pu erh, wiśni i jabłka.', 'mate-fitness-400g', '', '', '', 'MATE FITNESS 400G', '', '', '', ''),
+(364, 1, 1, '', 'Mate z dodatkiem kiwi, guarany, tymianku, truskawki i żeń-szenia.', 'mate-iq-200g', '', '', '', 'MATE IQ 200G', '', '', '', ''),
+(365, 1, 1, '', 'Mate z dodatkiem kiwi, guarany, tymianku, truskawki i żeń-szenia.', 'mate-iq-400g', '', '', '', 'MATE IQ 400G', '', '', '', ''),
+(366, 1, 1, '', 'Yerba mate z dodatkiem skórki cytryny.', 'mate-lemon-200g', '', '', '', 'MATE LEMON 200G', '', '', '', ''),
+(367, 1, 1, '', 'Yerba mate z dodatkiem skórki cytryny.', 'mate-lemon-400g', '', '', '', 'MATE LEMON 400G', '', '', '', ''),
+(368, 1, 1, '', 'Yerba mate z dodatkiem mięty i eukaliptusa.', 'mate-mint-200g', '', '', '', 'MATE MINT 200G', '', '', '', ''),
+(369, 1, 1, '', 'Yerba mate z dodatkiem mięty i eukaliptusa.', 'mate-mint-400g', '', '', '', 'MATE MINT 400G', '', '', '', ''),
+(370, 1, 1, '', 'Zestaw startowy yerba mate.', 'zestaw-mate-brazil-despalada', '', '', '', 'ZESTAW MATE BRAZIL DESPALADA', '', '', '', ''),
+(371, 1, 1, '', 'Zestaw startowy yerba mate.', 'zestaw-mate-chillout', '', '', '', 'ZESTAW MATE CHILLOUT', '', '', '', ''),
+(372, 1, 1, '', 'Yerba Mate Lemon 400g, matero i bombilla.', 'zestaw-mate-lemon', '', '', '', 'ZESTAW MATE LEMON', '', '', '', ''),
+(373, 1, 1, '', 'Yerba Mate Very Berry 400g, matero i bombilla.', 'zestaw-mate-very-berry', '', '', '', 'ZESTAW MATE VERY BERRY', '', '', '', ''),
+(374, 1, 1, '', 'Yerba Mate Wild Energy 400g, matero i bombilla.', 'zestaw-mate-wild-energy', '', '', '', 'ZESTAW MATE WILD ENERGY', '', '', '', ''),
+(375, 1, 1, '', 'Yerba Mate Cannabis 200g, matero i bombilla.', 'zestaw-mini-mate-cannabis', '', '', '', 'ZESTAW MINI MATE CANNABIS', '', '', '', ''),
+(376, 1, 1, '', 'Seria napojów z yerba mate Wild Power o naturalnym składzie 330ml.', 'katuava-mate-energy-drink', '', '', '', 'KATUAVA MATE ENERGY DRINK', '', '', '', ''),
+(377, 1, 1, '', 'Seria napojów z yerba mate Wild Power o naturalnym składzie 330ml.', 'menthaboldo-mate-energy-drink', '', '', '', 'MENTHA&BOLDO MATE ENERGY DRINK', '', '', '', ''),
+(378, 1, 1, '', 'Seria napojów z yerba mate Wild Power o naturalnym składzie 330ml.', 'sabor-citrus-mate-energy-drink', '', '', '', 'SABOR CITRUS MATE ENERGY DRINK', '', '', '', ''),
+(379, 1, 1, '', 'Bambusowa bombilla 17cm.', 'bombilla-bambusowa', '', '', '', 'BOMBILLA BAMBUSOWA', '', '', '', ''),
+(380, 1, 1, '', 'Bombilla Liza srebrny pierścień ze szczoteczką rozkręcana', 'bombilla-liza-ze-szczoteczka', '', '', '', 'BOMBILLA LIZA ZE SZCZOTECZKĄ', '', '', '', ''),
+(381, 1, 1, '', 'Stalowa bombilla pierścień łyżeczka 19cm.', 'bombilla-pierscien-lyzeczka', '', '', '', 'BOMBILLA PIERŚCIEŃ ŁYŻECZKA', '', '', '', ''),
+(382, 1, 1, '', 'Bombilla potrójne filtrowanie 19cm', 'bombilla-potrojne-filtrowanie', '', '', '', 'BOMBILLA POTRÓJNE FILTROWANIE', '', '', '', ''),
+(383, 1, 1, '', 'Stalowa bombilla 19,5cm - rozkręcana.', 'bombilla-sortija', '', '', '', 'BOMBILLA SORTIJA', '', '', '', ''),
+(384, 1, 1, '', 'Stalowa bombilla 15,8cm', 'bombilla-spiralka', '', '', '', 'BOMBILLA SPIRALKA', '', '', '', ''),
+(385, 1, 1, '', 'Stalowa bombilla 19cm.', 'bombilla-lyzeczka-2', '', '', '', 'BOMBILLA ŁYŻECZKA 2', '', '', '', ''),
+(386, 1, 1, '', 'Naczynie do przyrządzania yerba mate.', 'matero-czarne', '', '', '', 'MATERO CZARNE', '', '', '', ''),
+(387, 1, 1, '', 'Naczynie do przyrządzania yerba mate.', 'matero-czerwone', '', '', '', 'MATERO CZERWONE', '', '', '', ''),
+(388, 1, 1, '', 'Naczynie do przyrządzania yerba mate.', 'matero-biale', '', '', '', 'MATERO BIAŁE', '', '', '', ''),
+(389, 1, 1, '', 'Naczynie do przyrządzania yerba mate.', 'matero-brazowe', '', '', '', 'MATERO BRĄZOWE', '', '', '', ''),
+(390, 1, 1, '', 'Naczynie do przyrządzania yerba mate.', 'matero-diament-biale', '', '', '', 'MATERO DIAMENT BIAŁE', '', '', '', ''),
+(391, 1, 1, '', 'Naczynie do przyrządzania yerba mate.', 'matero-diament-braz', '', '', '', 'MATERO DIAMENT BRĄZ', '', '', '', ''),
+(392, 1, 1, '', 'Naczynie do przyrządzania yerba mate.', 'matero-diament-czarne', '', '', '', 'MATERO DIAMENT CZARNE', '', '', '', ''),
+(393, 1, 1, '', 'Naczynie do przyrządzania yerba mate.', 'matero-drive', '', '', '', 'MATERO DRIVE', '', '', '', ''),
+(394, 1, 1, '', 'Naczynie do przyrządzania yerba mate 250ml.', 'matero-miodowe', '', '', '', 'MATERO MIODOWE', '', '', '', ''),
+(395, 1, 1, '', 'Naczynie do przyrządzania yerba mate.', 'matero-paski-zolte', '', '', '', 'MATERO PASKI ŻÓŁTE', '', '', '', ''),
+(396, 1, 1, '', 'Naczynie do przyrządzania yerba mate.', 'matero-stal-czarne', '', '', '', 'MATERO STAL CZARNE', '', '', '', ''),
+(397, 1, 1, '', 'Metalowa szczoteczka do czyszczenia bombill 20cm.', 'szczoteczka-do-bombilli', '', '', '', 'SZCZOTECZKA DO BOMBILLI', '', '', '', ''),
+(398, 1, 1, '', 'Dzbanek biały 1200ml', 'dzbanek-bialy-menje', '', '', '', 'DZBANEK BIAŁY MENJE', '', '', '', ''),
+(399, 1, 1, '', 'Dzbanek Duka Cherry Blossom 1l.', 'dzbanek-cherry-blossom', '', '', '', 'DZBANEK CHERRY BLOSSOM', '', '', '', ''),
+(400, 1, 1, '', 'Dzbanek czarny 1200ml', 'dzbanek-czarny-menje', '', '', '', 'DZBANEK CZARNY MENJE', '', '', '', ''),
+(401, 1, 1, '', 'Szklany dzbanek z zaparzaczem 1l.', 'dzbanek-eva', '', '', '', 'DZBANEK EVA', '', '', '', ''),
+(402, 1, 1, '', 'Dzbanek szklany 1,2l', 'dzbanek-krysztal-z-zaparzaczem', '', '', '', 'DZBANEK KRYSZTAŁ Z ZAPARZACZEM', '', '', '', ''),
+(403, 1, 1, '', 'Dzbanek Manon 0,36l', 'dzbanek-manon-szklany', '', '', '', 'DZBANEK MANON SZKLANY', '', '', '', ''),
+(404, 1, 1, '', 'Szklany dzbanek z plastikowym zaparzaczem o pojemności 1l.', 'dzbanek-matura', '', '', '', 'DZBANEK MATURA', '', '', '', ''),
+(405, 1, 1, '', 'Dzbanek szklany o pojemności 1 litra z metalowym zaparzaczem', 'dzbanek-simax-szklany-z-zap-1l', '', '', '', 'DZBANEK SIMAX SZKLANY Z ZAP 1L', '', '', '', ''),
+(406, 1, 1, '', 'Szklany dzbanek z plastikowym zaparzaczem o pojemności 1,5l.', 'dzbanek-svatava', '', '', '', 'DZBANEK SVATAVA', '', '', '', ''),
+(407, 1, 1, '', 'Dzbanek szklany 0,75l z zaparzaczem', 'dzbanek-szklany', '', '', '', 'DZBANEK SZKLANY', '', '', '', ''),
+(408, 1, 1, '', 'Dzbanek szklany z zaparzaczem o pojemności 600 ml.', 'dzbanek-szklany-banka', '', '', '', 'DZBANEK SZKLANY BAŃKA', '', '', '', ''),
+(409, 1, 1, '', 'Dzbanek szklany o pojemności 1,8 litra z metalowym zaparzaczem', 'dzbanek-szklany-look-jug-simax', '', '', '', 'DZBANEK SZKLANY LOOK JUG SIMAX', '', '', '', ''),
+(410, 1, 1, '', 'Dzbanek szklany o pojemności 1,3 litra z metalowym zaparzaczem', 'dzbanek-szklany-simax', '', '', '', 'DZBANEK SZKLANY SIMAX', '', '', '', ''),
+(411, 1, 1, '', 'Szklany dzbanek z podwójnymi ściankami  o pojemności 1,1l.', 'dzbanek-twin', '', '', '', 'DZBANEK TWIN', '', '', '', ''),
+(412, 1, 1, '', 'Dzbanek Vita 800ml szklany', 'dzbanek-vita', '', '', '', 'DZBANEK VITA', '', '', '', ''),
+(413, 1, 1, '', 'Żeliwny czajnik bez zaparzacza o pojemności 800ml.', 'dzbanek-zeliwny-bialy', '', '', '', 'DZBANEK ŻELIWNY BIAŁY', '', '', '', ''),
+(414, 1, 1, '', 'Żeliwny czajnik z zaparzaczem o pojemności 850ml.', 'dzbanek-zeliwny-czarny', '', '', '', 'DZBANEK ŻELIWNY CZARNY', '', '', '', ''),
+(415, 1, 1, '', 'Żeliwny czajnik z zaparzaczem o pojemności 1,5l.', 'dzbanek-zeliwny-piasek', '', '', '', 'DZBANEK ŻELIWNY PIASEK', '', '', '', ''),
+(416, 1, 1, '', 'Tradycyjna czarka do herbaty Matcha - 120ml', 'czarka-brazowa-zeliwna', '', '', '', 'CZARKA BRĄZOWA ŻELIWNA', '', '', '', ''),
+(417, 1, 1, '', 'Tradycyjna czarka do herbaty Matcha - 120ml', 'czarka-czarna-zeliwna', '', '', '', 'CZARKA CZARNA ŻELIWNA', '', '', '', ''),
+(418, 1, 1, '', 'Czarka do matchy 400ml', 'czarka-do-matchy-akari', '', '', '', 'CZARKA DO MATCHY AKARI', '', '', '', ''),
+(419, 1, 1, '', 'Czarka do matchy 400ml', 'czarka-do-matchy-kohura', '', '', '', 'CZARKA DO MATCHY KOHURA', '', '', '', ''),
+(420, 1, 1, '', 'Czarka do matchy Sachiko 300ml', 'czarka-do-matchy-sachiko', '', '', '', 'CZARKA DO MATCHY SACHIKO', '', '', '', ''),
+(421, 1, 1, '', 'Czarka do matchy Taiki 400ml', 'czarka-do-matchy-taiki', '', '', '', 'CZARKA DO MATCHY TAIKI', '', '', '', ''),
+(422, 1, 1, '', 'Tradycyjna czarka do herbaty Matcha - 120ml', 'czarka-zielona-zeliwna', '', '', '', 'CZARKA ZIELONA ŻELIWNA', '', '', '', ''),
+(423, 1, 1, '', 'Bambusowy pędzelek przeznaczony do przygotowywania herbaty Matcha.', 'miotelka-chasen', '', '', '', 'MIOTEŁKA CHASEN', '', '', '', ''),
+(424, 1, 1, '', 'Bambusowa łyżeczka przeznaczona do przygotowywania herbaty Matcha - 18cm.', 'lyzeczka-chashaku', '', '', '', 'ŁYŻECZKA CHASHAKU', '', '', '', ''),
+(425, 1, 1, '', 'Filtry papierowe do herbaty op. 100 szt.', 'filtr-papierowy-m', '', '', '', 'FILTR PAPIEROWY M', '', '', '', ''),
+(426, 1, 1, '', 'Filtry papierowe do herbaty ze sznureczkiem (do małego dzbanka).', 'filtr-saszetka-my-teabag-100-szt', '', '', '', 'FILTR SASZETKA MY TEABAG 100 SZT', '', '', '', ''),
+(427, 1, 1, '', 'Filtry papierowe do herbaty op. 100 szt.', 'filtry-papierowe-xs', '', '', '', 'FILTRY PAPIEROWE XS', '', '', '', ''),
+(428, 1, 1, '', 'Podgrzewacz do herbaty metalowy: średnica 17cm.', 'podgrzewacz-black', '', '', '', 'PODGRZEWACZ BLACK', '', '', '', ''),
+(429, 1, 1, '', 'Podgrzewacz do herbaty metalowy: średnica 17cm.', 'podgrzewacz-chrom', '', '', '', 'PODGRZEWACZ CHROM', '', '', '', ''),
+(430, 1, 1, '', 'Szklany podgrzewacz.', 'podgrzewacz-kon-szklany', '', '', '', 'PODGRZEWACZ KON SZKLANY', '', '', '', ''),
+(431, 1, 1, '', 'Koszyk metalowy Skrzaty', 'czerwony-metalowy-koszyk-w-skrzaty', '', '', '', 'CZERWONY METALOWY KOSZYK W SKRZATY', '', '', '', ''),
+(432, 1, 1, '', 'Drewniana spinka. 1 sztuka w opakowaniu.', 'ekospinka', '', '', '', 'EKOSPINKA', '', '', '', ''),
+(433, 1, 1, '', 'Pojemnik na herbatę 100g.', 'puszka-bialy-koliber', '', '', '', 'PUSZKA BIAŁY KOLIBER', '', '', '', ''),
+(434, 1, 1, '', 'Puszka okrągła 180g świąteczna', 'puszka-czarna-seasons-greetings', '', '', '', 'PUSZKA CZARNA SEASONS GREETINGS', '', '', '', ''),
+(435, 1, 1, '', 'Puszka okrągła 180g świąteczna', 'puszka-czerwona-seasons-greetings', '', '', '', 'PUSZKA CZERWONA SEASONS GREETINGS', '', '', '', ''),
+(436, 1, 1, '', 'Pojemnik na herbatę 150g', 'puszka-firmowa-150g', '', '', '', 'PUSZKA FIRMOWA 150G', '', '', '', ''),
+(437, 1, 1, '', 'Pojemnik na herbatę 100g.', 'puszka-herbal-retro', '', '', '', 'PUSZKA HERBAL RETRO', '', '', '', ''),
+(438, 1, 1, '', 'Pojemnik na herbatę 100g.', 'puszka-koci-swiat', '', '', '', 'PUSZKA KOCI ŚWIAT', '', '', '', ''),
+(439, 1, 1, '', 'Pojemnik na herbatę 100g.', 'puszka-le-chat-noir', '', '', '', 'PUSZKA LE CHAT NOIR', '', '', '', ''),
+(440, 1, 1, '', 'Pojemnik na herbatę 100g.', 'puszka-poppy-zolta', '', '', '', 'PUSZKA POPPY ŻÓŁTA', '', '', '', ''),
+(441, 1, 1, '', 'Koszyk metalowy Mikołaj', 'zielony-metalowy-koszyk-z-mikolajem', '', '', '', 'ZIELONY METALOWY KOSZYK Z MIKOŁAJEM', '', '', '', ''),
+(442, 1, 1, '', 'Ceramiczny zestaw: dzbanek 400ml i filiżanka 220ml.', 'tea-for-one-blue-little', '', '', '', 'TEA FOR ONE BLUE LITTLE', '', '', '', ''),
+(443, 1, 1, '', 'Zestaw dzbanek z filiżanką.', 'tea-for-one-flowers', '', '', '', 'TEA FOR ONE FLOWERS', '', '', '', ''),
+(444, 1, 1, '', 'Zestaw dzbanek z filiżanką.', 'tea-for-one-pocalunek', '', '', '', 'TEA FOR ONE POCAŁUNEK', '', '', '', ''),
+(445, 1, 1, '', 'Precyzyjny pomiar temperatury wody.', 'termometr-metalowy', '', '', '', 'TERMOMETR METALOWY', '', '', '', ''),
+(446, 1, 1, '', 'Stalowy zaparzacz z silikonowym uchwytem.', 'zaparzacz-green', '', '', '', 'ZAPARZACZ GREEN', '', '', '', ''),
+(447, 1, 1, '', 'Stalowy zaparzacz kulka o średnicy 6,5cm.', 'zaparzacz-kulka-l', '', '', '', 'ZAPARZACZ KULKA L', '', '', '', ''),
+(448, 1, 1, '', 'Zaparzacz plastikowy z pokrywką, rozmiar pasujący także do dzbanka.', 'zaparzacz-plastikowy-l', '', '', '', 'ZAPARZACZ PLASTIKOWY L', '', '', '', ''),
+(449, 1, 1, '', 'Zaparzacz plastikowy z pokrywką, pasujący do kubka.', 'zaparzacz-plastikowy-m', '', '', '', 'ZAPARZACZ PLASTIKOWY M', '', '', '', ''),
+(450, 1, 1, '', 'Stalowy zaparzacz z silikonowym uchwytem.', 'zaparzacz-red', '', '', '', 'ZAPARZACZ RED', '', '', '', ''),
+(451, 1, 1, '', 'Zaparzacz sitko metalowe z uchwytem o średnicy 8,5cm.', 'zaparzacz-sitko', '', '', '', 'ZAPARZACZ SITKO', '', '', '', ''),
+(452, 1, 1, '', 'Stalowy zaparzacz sitko ze składanymi rączkami.', 'zaparzacz-skladany', '', '', '', 'ZAPARZACZ SKŁADANY', '', '', '', ''),
+(453, 1, 1, '', 'Stalowy zaparzacz sitko z uchwytami.', 'zaparzacz-stalowy', '', '', '', 'ZAPARZACZ STALOWY', '', '', '', ''),
+(454, 1, 1, '', 'Stalowy zaparzacz z uchwytem i przykrywką.', 'zaparzacz-stalowy-i', '', '', '', 'ZAPARZACZ STALOWY I', '', '', '', ''),
+(455, 1, 1, '', 'Zaparzacz stalowy z rączką', 'zaparzacz-stalowy-z-raczka', '', '', '', 'ZAPARZACZ STALOWY Z RĄCZKĄ', '', '', '', ''),
+(456, 1, 1, '', 'Zaparzacz do herbaty typu kleszcze.', 'zaparzacz-szczypce-l', '', '', '', 'ZAPARZACZ SZCZYPCE L', '', '', '', ''),
+(457, 1, 1, '', 'Stalowy zaparzacz do herbaty typu kleszcze.', 'zaparzacz-szczypce-m', '', '', '', 'ZAPARZACZ SZCZYPCE M', '', '', '', ''),
+(458, 1, 1, '', 'Stalowy zaparzacz do herbaty typu kleszcze.', 'zaparzacz-szczypce-s', '', '', '', 'ZAPARZACZ SZCZYPCE S', '', '', '', ''),
+(459, 1, 1, '', 'Stalowy zaparzacz do herbaty typu kleszcze 4,5 cm', 'zaparzacz-szczypce-xs', '', '', '', 'ZAPARZACZ SZCZYPCE XS', '', '', '', ''),
+(460, 1, 1, '', 'Stalowy zaparzacz z silikonowym uchwytem.', 'zaparzacz-yellow', '', '', '', 'ZAPARZACZ YELLOW', '', '', '', ''),
+(461, 1, 1, '', 'Butelka z podwójną ścianką 350ml', 'butelka-flow-tea-cherry-blossom', '', '', '', 'BUTELKA FLOW TEA CHERRY BLOSSOM', '', '', '', ''),
+(462, 1, 1, '', 'Świeca sojowa Basic 100g czarna herbata', 'swieca-sojowa-basic-czarna-herbata', '', '', '', 'ŚWIECA SOJOWA BASIC CZARNA HERBATA', '', '', '', ''),
+(463, 1, 1, '', 'Świeca sojowa Basic 100g Earl Grey', 'swieca-sojowa-basic-earl-grey', '', '', '', 'ŚWIECA SOJOWA BASIC EARL GREY', '', '', '', ''),
+(464, 1, 1, '', 'Świeca sojowa Basic 100g zielona herbata', 'swieca-sojowa-basic-zielona-herbata', '', '', '', 'ŚWIECA SOJOWA BASIC ZIELONA HERBATA', '', '', '', ''),
+(465, 1, 1, '', 'Świeca sojowa Thalia 170g czarna herbata', 'swieca-sojowa-thalia-czarna-herbata', '', '', '', 'ŚWIECA SOJOWA THALIA CZARNA HERBATA', '', '', '', ''),
+(466, 1, 1, '', 'Świeca sojowa Thalia 170g earl grey', 'swieca-sojowa-thalia-earl-grey', '', '', '', 'ŚWIECA SOJOWA THALIA EARL GREY', '', '', '', ''),
+(467, 1, 1, '', 'Świeca sojowa Thalia 170g zielona herbata', 'swieca-sojowa-thalia-zielona-herbata', '', '', '', 'ŚWIECA SOJOWA THALIA ZIELONA HERBATA', '', '', '', ''),
+(468, 1, 1, '', 'Szklanki różowe ucho 2x400ml', 'szklanki-rozowe-ucho', '', '', '', 'SZKLANKI RÓŻOWE UCHO', '', '', '', ''),
+(469, 1, 1, '', 'Szklanki różowe ucho 2x350ml', 'szklanki-tulip-rozowe-ucho', '', '', '', 'SZKLANKI TULIP RÓŻOWE UCHO', '', '', '', ''),
+(470, 1, 1, '', 'Szklanki żółte ucho 2x350ml', 'szklanki-tulip-zolte-ucho', '', '', '', 'SZKLANKI TULIP ŻÓŁTE UCHO', '', '', '', ''),
+(471, 1, 1, '', 'Szklanki żółte ucho 2x400ml', 'szklanki-zolte-ucho', '', '', '', 'SZKLANKI ŻÓŁTE UCHO', '', '', '', ''),
+(472, 1, 1, '', 'Kubek z zaparzaczem i przykrywką Black Rose 420ml', 'kubek-black-rose', '', '', '', 'KUBEK BLACK ROSE', '', '', '', ''),
+(473, 1, 1, '', 'Kubek ceramiczny z sitkiem i pokrywką 300ml.', 'kubek-blue-butterfly', '', '', '', 'KUBEK BLUE BUTTERFLY', '', '', '', ''),
+(474, 1, 1, '', 'Kubek ceramiczny z sitkiem i pokrywką 300ml.', 'kubek-blue-flowers', '', '', '', 'KUBEK BLUE FLOWERS', '', '', '', ''),
+(475, 1, 1, '', 'Kubek ceramiczny z sitkiem i pokrywką 300ml.', 'kubek-blue-lines', '', '', '', 'KUBEK BLUE LINES', '', '', '', ''),
+(476, 1, 1, '', 'Kubek ceramiczny z sitkiem i pokrywką 300ml.', 'kubek-blue-little', '', '', '', 'KUBEK BLUE LITTLE', '', '', '', ''),
+(477, 1, 1, '', 'Kubek Klimt z sitkiem 250ml', 'kubek-pocalunek-klimt-z-zaparzaczem', '', '', '', 'KUBEK POCAŁUNEK KLIMT Z ZAPARZACZEM', '', '', '', ''),
+(478, 1, 1, '', 'Kubek z filtrem Dudek 380ml Ptaki', 'kubek-ptaki-polski-dudek', '', '', '', 'KUBEK PTAKI POLSKI DUDEK', '', '', '', ''),
+(479, 1, 1, '', 'Kubek z filtrem Gil 380ml Ptaki', 'kubek-ptaki-polski-gil', '', '', '', 'KUBEK PTAKI POLSKI GIL', '', '', '', ''),
+(480, 1, 1, '', 'Kubek z filtrem Sikora 380ml Ptaki', 'kubek-ptaki-polski-sikora', '', '', '', 'KUBEK PTAKI POLSKI SIKORA', '', '', '', ''),
+(481, 1, 1, '', 'Kubek z filtrem Zimorodek 380ml Ptaki', 'kubek-ptaki-polski-zimorodek', '', '', '', 'KUBEK PTAKI POLSKI ZIMORODEK', '', '', '', ''),
+(482, 1, 1, '', 'Kubek Zen 380ml z zaparzaczem', 'kubek-zen-z-zaparzaczem', '', '', '', 'KUBEK ZEN Z ZAPARZACZEM', '', '', '', ''),
+(483, 1, 1, '', 'Kubek termiczny Kambukka Etna 300ml', 'kambukka-etna-deep-teal', '', '', '', 'KAMBUKKA ETNA DEEP TEAL', '', '', '', ''),
+(484, 1, 1, '', 'Kubek termiczny Kambukka Etna 500ml', 'kambukka-etna-granatowy', '', '', '', 'KAMBUKKA ETNA GRANATOWY', '', '', '', ''),
+(485, 1, 1, '', 'Kubek termiczny Kambukka Etna 300ml', 'kambukka-etna-leopard-brush', '', '', '', 'KAMBUKKA ETNA LEOPARD BRUSH', '', '', '', ''),
+(486, 1, 1, '', 'Kubek termiczny Kambukka Etna 300ml', 'kambukka-etna-pitch-black', '', '', '', 'KAMBUKKA ETNA PITCH BLACK', '', '', '', ''),
+(487, 1, 1, '', 'Komplet kubków 4x370ml', 'komplet-kubkow-na-stojaku', '', '', '', 'KOMPLET KUBKÓW NA STOJAKU', '', '', '', ''),
+(488, 1, 1, '', 'Kubek Camio Adele Klimt 400ml.', 'kubek-adele-klimt', '', '', '', 'KUBEK ADELE KLIMT', '', '', '', ''),
+(489, 1, 1, '', 'Kubek ceramiczny 340ml', 'kubek-awesome-retro', '', '', '', 'KUBEK AWESOME RETRO', '', '', '', ''),
+(490, 1, 1, '', 'Kubek biały 450ml', 'kubek-bialy-menje', '', '', '', 'KUBEK BIAŁY MENJE', '', '', '', ''),
+(491, 1, 1, '', 'Kubek ceramiczny Nostalgic Art 330ml.', 'kubek-bmw-classic-retro', '', '', '', 'KUBEK BMW CLASSIC RETRO', '', '', '', ''),
+(492, 1, 1, '', 'Kubek Camio Adele Klimt', 'kubek-camio-adele-klimt', '', '', '', 'KUBEK CAMIO ADELE KLIMT', '', '', '', ''),
+(493, 1, 1, '', 'Kubek marki Carmani z motywem obrazu G. Klimta 300ml.', 'kubek-carmani-adele', '', '', '', 'KUBEK CARMANI - ADELE', '', '', '', ''),
+(494, 1, 1, '', 'Kubek marki Carmani z motywem obrazu G. Klimta 300ml.', 'kubek-carmani-family', '', '', '', 'KUBEK CARMANI - FAMILY', '', '', '', ''),
+(495, 1, 1, '', 'Kubek marki Carmani z motywem obrazu G. Klimta 300ml.', 'kubek-carmani-judith', '', '', '', 'KUBEK CARMANI - JUDITH', '', '', '', ''),
+(496, 1, 1, '', 'Kubek czarny 450ml', 'kubek-czarny-menje', '', '', '', 'KUBEK CZARNY MENJE', '', '', '', ''),
+(497, 1, 1, '', 'Kubek emaliowany Black Tea retro 360ml', 'kubek-emaliowany-black-tea-retro', '', '', '', 'KUBEK EMALIOWANY BLACK TEA RETRO', '', '', '', ''),
+(498, 1, 1, '', 'Kubek French Buldog 350ml Psy', 'kubek-french-buldog', '', '', '', 'KUBEK FRENCH BULDOG', '', '', '', ''),
+(499, 1, 1, '', 'Kubek Klimt Classic Pocałunek 350ml', 'kubek-klimt-classic-pocalunek', '', '', '', 'KUBEK KLIMT CLASSIC POCAŁUNEK', '', '', '', ''),
+(500, 1, 1, '', 'Kubek 320ml kreski graphic Tognana', 'kubek-kreski-graphic-tognana', '', '', '', 'KUBEK KRESKI GRAPHIC TOGNANA', '', '', '', ''),
+(501, 1, 1, '', 'Kubek Labrador 350ml Psy', 'kubek-labrador', '', '', '', 'KUBEK LABRADOR', '', '', '', ''),
+(502, 1, 1, '', 'Kubek Bocian Biały 300ml Ptaki', 'kubek-ptaki-polski-bocian-bialy', '', '', '', 'KUBEK PTAKI POLSKI BOCIAN BIAŁY', '', '', '', ''),
+(503, 1, 1, '', 'Kubek 300ml Dymówka Ptaki', 'kubek-ptaki-polski-dymowka', '', '', '', 'KUBEK PTAKI POLSKI DYMÓWKA', '', '', '', ''),
+(504, 1, 1, '', 'Kubek Puszczyk Uralski 300ml Ptaki', 'kubek-ptaki-polski-puszczyk', '', '', '', 'KUBEK PTAKI POLSKI PUSZCZYK', '', '', '', ''),
+(505, 1, 1, '', 'Kubek Rudzik 300ml Ptaki', 'kubek-ptaki-polski-rudzik', '', '', '', 'KUBEK PTAKI POLSKI RUDZIK', '', '', '', ''),
+(506, 1, 1, '', 'Filiżanka ze spodkiem 250ml', 'filizanka-4-serca', '', '', '', 'FILIŻANKA 4 SERCA', '', '', '', ''),
+(507, 1, 1, '', 'Filiżanki z motywem obrazu G. Klimta o pojemności 350ml.', 'filizanka-klimt-jumbo', '', '', '', 'FILIŻANKA KLIMT JUMBO', '', '', '', ''),
+(508, 1, 1, '', 'Filiżanka z talerzykiem Dudek 280ml Ptaki', 'filizanka-ptaki-polski-dudek', '', '', '', 'FILIŻANKA PTAKI POLSKI DUDEK', '', '', '', ''),
+(509, 1, 1, '', 'Filiżanka z tal Dzięcioł 280ml Ptaki', 'filizanka-ptaki-polski-dzieciol', '', '', '', 'FILIŻANKA PTAKI POLSKI DZIĘCIOŁ', '', '', '', ''),
+(510, 1, 1, '', 'Filiżanka z talerzykiem Gil 280ml Ptaki', 'filizanka-ptaki-polski-gil', '', '', '', 'FILIŻANKA PTAKI POLSKI GIL', '', '', '', ''),
+(511, 1, 1, '', 'Filiżanka z tal Kaczka 280ml Ptaki', 'filizanka-ptaki-polski-kaczka', '', '', '', 'FILIŻANKA PTAKI POLSKI KACZKA', '', '', '', ''),
+(512, 1, 1, '', 'Filiżanka z tal Puszczyk 280ml Ptaki', 'filizanka-ptaki-polski-puszczyk', '', '', '', 'FILIŻANKA PTAKI POLSKI PUSZCZYK', '', '', '', ''),
+(513, 1, 1, '', 'Filiżanka z talerzykiem Sikora 280ml Ptaki', 'filizanka-ptaki-polski-sikora', '', '', '', 'FILIŻANKA PTAKI POLSKI SIKORA', '', '', '', ''),
+(514, 1, 1, '', 'Filiżanka z talerzykiem Zimorodek 280ml Ptaki', 'filizanka-ptaki-polski-zimorodek', '', '', '', 'FILIŻANKA PTAKI POLSKI ZIMORODEK', '', '', '', ''),
+(515, 1, 1, '', 'Filiżanka z talerzykiem Zen 200ml', 'filizanka-z-talerzykiem-zen', '', '', '', 'FILIŻANKA Z TALERZYKIEM ZEN', '', '', '', ''),
+(516, 1, 1, '', 'Filiżanki białe 2x180ml', 'filizanki-biale-menje', '', '', '', 'FILIŻANKI BIAŁE MENJE', '', '', '', ''),
+(517, 1, 1, '', 'Filiżanki z błękitnym motywem 2x220ml.', 'filizanki-blue-butterfly', '', '', '', 'FILIŻANKI BLUE BUTTERFLY', '', '', '', ''),
+(518, 1, 1, '', 'Kubek 320ml trójkąty graphic Tognana', 'kubek-trojkaty-graphic-tognana', '', '', '', 'KUBEK TRÓJKĄTY GRAPHIC TOGNANA', '', '', '', ''),
+(519, 1, 1, '', 'Susz do zaparzania (op. 60g).', 'czystek', '', '', '', 'CZYSTEK', '', '', '', ''),
+(520, 1, 1, '', 'Suszony kwiat jaśminu (op. 20g).', 'jasmin', '', '', '', 'JAŚMIN', '', '', '', ''),
+(521, 1, 1, '', 'Suszone konopie (op. 40g).', 'konopie', '', '', '', 'KONOPIE', '', '', '', ''),
+(522, 1, 1, '', 'Suszony kwiat lipy (op. 50g).', 'kwiat-lipy', '', '', '', 'KWIAT LIPY', '', '', '', ''),
+(523, 1, 1, '', 'Suszone liście maliny (op. 30g).', 'malina-lisc', '', '', '', 'MALINA LIŚĆ', '', '', '', ''),
+(524, 1, 1, '', 'Suszone liście melisy (op. 50g)', 'melisa', '', '', '', 'MELISA', '', '', '', ''),
+(525, 1, 1, '', 'Suszony liść mięty (op. 50g).', 'mieta', '', '', '', 'MIĘTA', '', '', '', ''),
+(526, 1, 1, '', 'Suszony liść mięty (op. 50g).', 'mieta-spearmint', '', '', '', 'MIĘTA SPEARMINT', '', '', '', ''),
+(527, 1, 1, '', 'Suszone liście morwy (op. 60g).', 'morwa-biala-lisc', '', '', '', 'MORWA BIAŁA LIŚĆ', '', '', '', ''),
+(528, 1, 1, '', 'Suszone liście pokrzywy (op. 30g).', 'pokrzywa', '', '', '', 'POKRZYWA', '', '', '', ''),
+(529, 1, 1, '', 'Suszone płatki róży (op. 30g).', 'platki-rozy', '', '', '', 'PŁATKI RÓŻY', '', '', '', ''),
+(530, 1, 1, '', 'Suszony rumianek (op. 30g).', 'rumianek', '', '', '', 'RUMIANEK', '', '', '', ''),
+(531, 1, 1, '', 'Kompozycja ziołowo-kwiatowa (60g)', 'kwiatowa-melodia', '', '', '', 'KWIATOWA MELODIA', '', '', '', ''),
+(532, 1, 1, '', 'Mieszanka ziół wspomagających oczyszczanie organizmu (op. 60g).', 'oczyszczenie', '', '', '', 'OCZYSZCZENIE', '', '', '', ''),
+(533, 1, 1, '', 'Mieszanka ziół wspomagająca prawidłową pracę jelit (op. 50g).', 'przemiana', '', '', '', 'PRZEMIANA', '', '', '', ''),
+(534, 1, 1, '', 'Mieszanka ziół pomagająca ochronić się przed grypą (op. 70g).', 'rozgrzanie', '', '', '', 'ROZGRZANIE', '', '', '', ''),
+(535, 1, 1, '', 'Mieszanka ziół wspomagająca proces odchudzania (op. 90g).', 'sylwetka', '', '', '', 'SYLWETKA', '', '', '', ''),
+(536, 1, 1, '', 'Mieszanka ziołowa dla wzmocnienia organizmu (op. 120g).', 'wzmocnienie', '', '', '', 'WZMOCNIENIE', '', '', '', ''),
+(537, 1, 1, '', 'Herbatka na oczyszczenie organizmu.', 'detoks', '', '', '', 'DETOKS', '', '', '', ''),
+(538, 1, 1, '', 'Kompozycja ziół wyciszających.', 'dobry-sen', '', '', '', 'DOBRY SEN', '', '', '', ''),
+(539, 1, 1, '', 'Herbatka dodająca energii.', 'energia', '', '', '', 'ENERGIA', '', '', '', ''),
+(540, 1, 1, '', 'Herbatka na pobudzenie libido.', 'libido', '', '', '', 'LIBIDO', '', '', '', ''),
+(541, 1, 1, '', 'Herbatka ziołowa na przyśpieszenie metabolizmu.', 'metabolizm', '', '', '', 'METABOLIZM', '', '', '', ''),
+(542, 1, 1, '', 'Herbatka na odporność.', 'odpornosc', '', '', '', 'ODPORNOŚĆ', '', '', '', ''),
+(543, 1, 1, '', 'Zestaw kubków w prezentowym opakowaniu - 2x270ml.', 'kubki-w-sercu-klimt', '', '', '', 'KUBKI W SERCU KLIMT', '', '', '', ''),
+(544, 1, 1, '', 'Zestaw kubków w prezentowym opakowaniu - 2x270ml.', 'kubki-w-sercu-kwiaty', '', '', '', 'KUBKI W SERCU KWIATY', '', '', '', ''),
+(545, 1, 1, '', 'Czarna kompozycja 70g', 'laurka-imie-rozy', '', '', '', 'LAURKA: IMIĘ RÓŻY', '', '', '', ''),
+(546, 1, 1, '', 'Owocowa kompozycja 70g', 'laurka-ogrody-edenu', '', '', '', 'LAURKA: OGRODY EDENU', '', '', '', ''),
+(547, 1, 1, '', 'Owocowa kompozycja 70g', 'laurka-sekret-piekna', '', '', '', 'LAURKA: SEKRET PIĘKNA', '', '', '', ''),
+(548, 1, 1, '', 'Earl Grey z pomarańczą 70g', 'z-miloscia-madam-grey', '', '', '', 'Z MIŁOŚCIĄ MADAM GREY', '', '', '', ''),
+(549, 1, 1, '', 'Zestaw prezentowy ze słodkościami.', 'zestaw-bogactwo-smakow-duzy', '', '', '', 'ZESTAW BOGACTWO SMAKÓW DUŻY', '', '', '', ''),
+(550, 1, 1, '', 'Zestaw prezentowy ze słodkościami.', 'zestaw-bogactwo-smakow-maly', '', '', '', 'ZESTAW BOGACTWO SMAKÓW MAŁY', '', '', '', ''),
+(551, 1, 1, '', 'Zestaw kaw ziarnistych 10 x 50g', 'zestaw-degustacyjny-kawy-smakowe', '', '', '', 'ZESTAW DEGUSTACYJNY KAWY SMAKOWE', '', '', '', ''),
+(552, 1, 1, '', 'Zestaw prezentowy - słodkie dodatki.', 'zestaw-dodatki-do-herbatki', '', '', '', 'ZESTAW DODATKI DO HERBATKI', '', '', '', ''),
+(553, 1, 1, '', 'Podwójny zestaw herbaciany.', 'zestaw-dwie-herbaty-narcyzy', '', '', '', 'ZESTAW DWIE HERBATY NARCYZY', '', '', '', ''),
+(554, 1, 1, '', 'Potrójny zestaw kompozycji herbacianych.', 'do-trzech-razy-sztuka-i', '', '', '', 'DO TRZECH RAZY SZTUKA I', '', '', '', ''),
+(555, 1, 1, '', 'Potrójny zestaw kompozycji herbacianych.', 'do-trzech-razy-sztuka-ii', '', '', '', 'DO TRZECH RAZY SZTUKA II', '', '', '', ''),
+(556, 1, 1, '', 'Zielona kompozycja Earl grey Fantasy 70g', 'kazda-filizanka-earl-grey', '', '', '', 'KAŻDA FILIŻANKA... EARL GREY', '', '', '', ''),
+(557, 1, 1, '', 'Czarna kompozycja 70g', 'kazda-filizanka-wehikul-czasu', '', '', '', 'KAŻDA FILIŻANKA... WEHIKUŁ CZASU', '', '', '', ''),
+(558, 1, 1, '', 'Herbata zielona 70g', 'z-przyjacielem-sencha-japan-style', '', '', '', 'Z PRZYJACIELEM: SENCHA JAPAN STYLE', '', '', '', ''),
+(559, 1, 1, '', 'Zestaw prezentowy ze słodkościami.', 'zestaw-dla-mezczyzny', '', '', '', 'ZESTAW DLA MĘŻCZYZNY', '', '', '', ''),
+(560, 1, 1, '', 'Zestaw prezentowy zawierający dwie czarne herbaty.', 'zestaw-dwie-herbaty-czarne', '', '', '', 'ZESTAW DWIE HERBATY CZARNE', '', '', '', ''),
+(561, 1, 1, '', 'Zestaw prezentowy zawierający dwie herbaty Earl Grey.', 'zestaw-dwie-herbaty-earl-grey', '', '', '', 'ZESTAW DWIE HERBATY EARL GREY', '', '', '', ''),
+(562, 1, 1, '', 'Zestaw prezentowy zawierający dwie kawy.', 'zestaw-dwie-kawy-klasyczne', '', '', '', 'ZESTAW DWIE KAWY KLASYCZNE', '', '', '', ''),
+(563, 1, 1, '', 'Zestaw prezentowy zawierający dwie kawy.', 'zestaw-dwie-kawy-smakowe', '', '', '', 'ZESTAW DWIE KAWY SMAKOWE', '', '', '', ''),
+(564, 1, 1, '', 'Zestaw prezentowy w skrzynce', 'zestaw-herbata-i-kawa-skrzynka-azur', '', '', '', 'ZESTAW HERBATA I KAWA SKRZYNKA AŻUR', '', '', '', ''),
+(565, 1, 1, '', 'Podwójny zestaw herbaciany.', 'zestaw-kompozycje-czarne', '', '', '', 'ZESTAW KOMPOZYCJE CZARNE', '', '', '', ''),
+(566, 1, 1, '', 'Potrójny zestaw kompozycji herbacianych.', 'do-trzech-razy-sztuka-iii', '', '', '', 'DO TRZECH RAZY SZTUKA III', '', '', '', ''),
+(567, 1, 1, '', 'Zestaw prezentowy zawierający zieloną kompozycję oraz zaparzacz.', 'herbata-i-zaparzacz', '', '', '', 'HERBATA I ZAPARZACZ', '', '', '', ''),
+(568, 1, 1, '', 'Zestaw prezentowy ze słodkościami.', 'zestaw-bogactwo-smakow-dla-nauczyciela', '', '', '', 'ZESTAW BOGACTWO SMAKÓW DLA NAUCZYCIELA', '', '', '', ''),
+(569, 1, 1, '', 'Zestaw prezentowy ze słodkościami.', 'zestaw-bogactwo-smakow-premium', '', '', '', 'ZESTAW BOGACTWO SMAKÓW PREMIUM', '', '', '', ''),
+(570, 1, 1, '', 'Zestaw herbaciany 10x50g', 'zestaw-box-kompozycje-czarne', '', '', '', 'ZESTAW BOX KOMPOZYCJE CZARNE', '', '', '', ''),
+(571, 1, 1, '', 'Zestaw dedykowany nauczycielowi.', 'zestaw-dla-nauczyciela', '', '', '', 'ZESTAW DLA NAUCZYCIELA', '', '', '', ''),
+(572, 1, 1, '', 'Podwójny zestaw herbaciany dedykowany nauczycielowi.', 'zestaw-dla-nauczyciela-2-herbaty', '', '', '', 'ZESTAW DLA NAUCZYCIELA 2 HERBATY', '', '', '', ''),
+(573, 1, 1, '', 'Potrójny zestaw herbaciany dedykowany nauczycielowi.', 'zestaw-dla-nauczyciela-3-herbaty', '', '', '', 'ZESTAW DLA NAUCZYCIELA 3 HERBATY', '', '', '', ''),
+(574, 1, 1, '', 'Potrójny zestaw herbaciany dedykowany nauczycielowi.', 'zestaw-dla-nauczyciela-3-herbaty-klasyczne', '', '', '', 'ZESTAW DLA NAUCZYCIELA 3 HERBATY KLASYCZNE', '', '', '', ''),
+(575, 1, 1, '', 'Potrójny zestaw herbaciany', 'zestaw-domek', '', '', '', 'ZESTAW DOMEK', '', '', '', ''),
+(576, 1, 1, '', 'Czarna kompozycja 70g', 'komu-w-droge-madagaskar', '', '', '', 'KOMU W DROGĘ, MADAGASKAR', '', '', '', ''),
+(577, 1, 1, '', 'Zestaw trzech herbat zimowych', 'zestaw-biale-platki-sniegu', '', '', '', 'ZESTAW BIAŁE PŁATKI ŚNIEGU', '', '', '', ''),
+(578, 1, 1, '', 'Zestaw prezentowy ze słodkościami.', 'zestaw-bogactwo-smakow-laponia', '', '', '', 'ZESTAW BOGACTWO SMAKÓW - LAPONIA', '', '', '', ''),
+(579, 1, 1, '', 'Zestaw herbaciany 10x50g', 'zestaw-box-swiateczny', '', '', '', 'ZESTAW BOX ŚWIĄTECZNY', '', '', '', ''),
+(580, 1, 1, '', 'Zestaw 2 herbat w puszkach', 'zestaw-dwie-herbaty-w-puszkach', '', '', '', 'ZESTAW DWIE HERBATY W PUSZKACH', '', '', '', ''),
+(581, 1, 1, '', 'Zestaw prezentowy', 'zestaw-dzyn-dzyn-dzyn', '', '', '', 'ZESTAW DZYŃ DZYŃ DZYŃ', '', '', '', ''),
+(582, 1, 1, '', 'Zestaw świąteczny srebrny', 'zestaw-herbaciany-srebrny', '', '', '', 'ZESTAW HERBACIANY SREBRNY', '', '', '', ''),
+(583, 1, 1, '', 'Zestaw świąteczny złoty', 'zestaw-herbaciany-zloty', '', '', '', 'ZESTAW HERBACIANY ZŁOTY', '', '', '', ''),
+(584, 1, 1, '', 'Podwójny zestaw herbaciany', 'zestaw-kulig', '', '', '', 'ZESTAW KULIG', '', '', '', ''),
+(585, 1, 1, '', 'Zestaw prezentowy zawierający herbatę oraz czekoladki', 'zestaw-magiczny-czas', '', '', '', 'ZESTAW MAGICZNY CZAS', '', '', '', ''),
+(586, 1, 1, '', 'Zestaw prezentowy zawierający herbatę oraz czekoladki', 'zestaw-magiczny-nastroj', '', '', '', 'ZESTAW MAGICZNY NASTRÓJ', '', '', '', ''),
+(587, 1, 1, '', 'Zestaw trzech herbat zimowych', 'zestaw-noworoczny', '', '', '', 'ZESTAW NOWOROCZNY', '', '', '', ''),
+(588, 1, 1, '', 'Zestaw trzech czarnych herbat zimowych', 'zestaw-reniferek', '', '', '', 'ZESTAW RENIFEREK', '', '', '', ''),
+(589, 1, 1, '', 'Zestaw prezentowy Śnieżne święta', 'zestaw-sniezne-swieta', '', '', '', 'ZESTAW ŚNIEŻNE ŚWIĘTA', '', '', '', ''),
+(590, 1, 1, '', 'Zestaw herbaciany z syropem', 'zestaw-swiateczna-skrzynka', '', '', '', 'ZESTAW ŚWIĄTECZNA SKRZYNKA', '', '', '', ''),
+(591, 1, 1, '', 'Potrójny zestaw kompozycji herbacianych', 'zestaw-wesolych-swiat', '', '', '', 'ZESTAW WESOŁYCH ŚWIĄT', '', '', '', ''),
+(592, 1, 1, '', 'Kawa smakowa Miłość w Paryżu w kartoniku okazjonalnym (100g).', 'kawa-to-dobry-pomysl', '', '', '', 'KAWA TO DOBRY POMYSŁ', '', '', '', ''),
+(593, 1, 1, '', 'Czarna kompozycja 70g', 'narcyzy-lazy-day', '', '', '', 'NARCYZY LAZY DAY', '', '', '', ''),
+(594, 1, 1, '', 'Czarna kompozycja 70g', 'spelniaj-marzenia-casablanca', '', '', '', 'SPEŁNIAJ MARZENIA, CASABLANCA', '', '', '', ''),
+(595, 1, 1, '', 'Zestaw prezentowy zawierający dwie uniwersalne herbaty.', 'zestaw-dwie-herbaty-serca', '', '', '', 'ZESTAW DWIE HERBATY SERCA', '', '', '', ''),
+(596, 1, 1, '', 'Zestaw prezentowy zawierający herbatę, bakalie oraz smakowy miód.', 'zestaw-flower-power-bogactwo-smakow', '', '', '', 'ZESTAW FLOWER POWER BOGACTWO SMAKÓW', '', '', '', ''),
+(597, 1, 1, '', 'Zestaw prezentowy zawierający dwie uniwersalne herbaty.', 'zestaw-flower-power-dwie-herbaty', '', '', '', 'ZESTAW FLOWER POWER DWIE HERBATY', '', '', '', ''),
+(598, 1, 1, '', 'Zestaw 2 kompozycje herbaciane zielone', 'zestaw-herbaciany-skrzynka-azur', '', '', '', 'ZESTAW HERBACIANY SKRZYNKA AŻUR', '', '', '', ''),
+(599, 1, 1, '', 'Zestaw prezentowy zawierający herbatę, kawę oraz bakalie.', 'zestaw-herbata-i-kawa', '', '', '', 'ZESTAW HERBATA I KAWA', '', '', '', ''),
+(600, 1, 1, '', 'Zestaw prezentowy zawierający trzy uniwersalne herbaty.', 'zestaw-herbaciany', '', '', '', 'ZESTAW HERBACIANY', '', '', '', ''),
+(601, 1, 1, '', 'Owocowy zestaw w bambusowym koszyku.', 'zestaw-owocowy-koszyk-dla-nauczyciela', '', '', '', 'ZESTAW OWOCOWY KOSZYK DLA NAUCZYCIELA', '', '', '', ''),
+(602, 1, 1, '', 'Zestaw prezentowy ze słodkościami.', 'zestaw-rozmaitosci-w-pudelku', '', '', '', 'ZESTAW ROZMAITOŚCI W PUDEŁKU', '', '', '', ''),
+(603, 1, 1, '', 'Zestaw z kubkami w bambusowym koszyku.', 'zestaw-z-kubkiem', '', '', '', 'ZESTAW Z KUBKIEM', '', '', '', ''),
+(604, 1, 1, '', 'Wymiary 24,5 x 16,5 x 5 cm', 'koszyk-bambusowy-owal', '', '', '', 'KOSZYK BAMBUSOWY OWAL', '', '', '', ''),
+(605, 1, 1, '', 'Wymiary 38 x 28 x 8 cm', 'koszyk-bambusowy-xxl', '', '', '', 'KOSZYK BAMBUSOWY XXL', '', '', '', ''),
+(606, 1, 1, '', 'Wymiary 26 x 26 x 7 cm', 'koszyk-rattanowy-okragly', '', '', '', 'KOSZYK RATTANOWY OKRĄGŁY', '', '', '', ''),
+(607, 1, 1, '', 'Wymiary 26 x 22 x 10 cm', 'koszyk-rattanowy-z-uchwytami-owalny', '', '', '', 'KOSZYK RATTANOWY Z UCHWYTAMI OWALNY', '', '', '', ''),
+(608, 1, 1, '', 'Wymiary 36 x 17 x 12 cm', 'koszyk-wiklinowy-bialy', '', '', '', 'KOSZYK WIKLINOWY BIAŁY', '', '', '', ''),
+(609, 1, 1, '', 'Skrzynka ażurowa na dwie puszki firmowe z herbatą.', 'skrzynka-azurowa-na-2-puszki-firmowe', '', '', '', 'SKRZYNKA AŻUROWA NA 2 PUSZKI FIRMOWE', '', '', '', ''),
+(610, 1, 1, '', 'Skrzynka ażurowa na cztery puszki firmowe z herbatą.', 'skrzynka-azurowa-na-4-puszki-firmowe', '', '', '', 'SKRZYNKA AŻUROWA NA 4 PUSZKI FIRMOWE', '', '', '', ''),
+(611, 1, 1, '', 'Wymiary 32 x 22 x 5,5 cm', 'skrzynka-drewniana', '', '', '', 'SKRZYNKA DREWNIANA', '', '', '', ''),
+(612, 1, 1, '', 'Dodaj do zakupionych produktów i stwórz własny zestaw prezentowy.', 'usluga-pakowania-na-prezent', '', '', '', 'USŁUGA PAKOWANIA NA PREZENT', '', '', '', ''),
+(613, 1, 1, '', 'Zestaw filizanek w prezentowym opakowaniu - 2x200ml.', 'lawendowy-zestaw-do-herbaty', '', '', '', 'LAWENDOWY ZESTAW DO HERBATY', '', '', '', ''),
+(614, 1, 1, '', 'Zestaw prezentowy - słodkie dodatki.', 'zestaw-dziekuje-w-skrzynce', '', '', '', 'ZESTAW DZIĘKUJĘ! W SKRZYNCE', '', '', '', ''),
+(615, 1, 1, '', 'Zestaw prezentowy zawierający herbatę, kawę smakową oraz bakalie.', 'zestaw-romantyczny', '', '', '', 'ZESTAW ROMANTYCZNY', '', '', '', ''),
+(616, 1, 1, '', 'Czarna kompozycja 20g', 'dziekuje-lazy-day', '', '', '', 'DZIĘKUJĘ! LAZY DAY', '', '', '', ''),
+(617, 1, 1, '', 'Herbata Earl Grey z dodatkiem skórki cytrynowej w kartoniku 20g', 'eg-lemon-dla-mezczyzny', '', '', '', 'EG LEMON DLA MĘŻCZYZNY', '', '', '', ''),
+(618, 1, 1, '', 'Czarna kompozycja Pychotka w kartoniku 20g', 'pychotka-na-dzien-kobiet', '', '', '', 'PYCHOTKA NA DZIEŃ KOBIET', '', '', '', ''),
+(619, 1, 1, '', 'Kalendarz pełen aromatów', 'kalendarz-adwentowy-domek', '', '', '', 'KALENDARZ ADWENTOWY DOMEK', '', '', '', ''),
+(620, 1, 1, '', 'Kalendarz pełen aromatów', 'kalendarz-adwentowy-duzy', '', '', '', 'KALENDARZ ADWENTOWY DUŻY', '', '', '', ''),
+(621, 1, 1, '', 'Czekolada z dodatkami Mini Pomarańcza 50g', 'czekolada-ciemna-z-pomarancza', '', '', '', 'CZEKOLADA CIEMNA Z POMARAŃCZĄ', '', '', '', ''),
+(622, 1, 1, '', 'Czekolada Madagaskar Manu 50g.', 'czekolada-madagaskar-manu', '', '', '', 'CZEKOLADA MADAGASKAR MANU', '', '', '', ''),
+(623, 1, 1, '', 'Czekolada z dodatkami Mini Malina 50g', 'czekolada-mleczna-z-malina', '', '', '', 'CZEKOLADA MLECZNA Z MALINĄ', '', '', '', ''),
+(624, 1, 1, '', 'Różowa czekolada Chocotale z dodatkiem żurawiny i maliny 75g.', 'czekolada-ruby-z-zurawina-i-malina', '', '', '', 'CZEKOLADA RUBY Z ŻURAWINĄ I MALINĄ', '', '', '', ''),
+(625, 1, 1, '', 'Czekolada Chocotale ciemna z bananem i wiśnią 79g.', 'czekolada-z-bananem-i-malina', '', '', '', 'CZEKOLADA Z BANANEM I MALINĄ', '', '', '', ''),
+(626, 1, 1, '', 'Czekolada Chocotale mleczna z jabłkiem i wiśnią 79g.', 'czekolada-z-jablkiem-i-wisnia', '', '', '', 'CZEKOLADA Z JABŁKIEM I WIŚNIĄ', '', '', '', ''),
+(627, 1, 1, '', 'Czekolada Chocotale ciemna z maliną i jabłkiem 80g.', 'czekolada-z-malina-i-jablkiem', '', '', '', 'CZEKOLADA Z MALINĄ I JABŁKIEM', '', '', '', ''),
+(628, 1, 1, '', 'Czekolada Chocotale mleczna z dodatkiem mango i marakui 79g.', 'czekolada-z-mango-i-marakuja', '', '', '', 'CZEKOLADA Z MANGO I MARAKUJĄ', '', '', '', ''),
+(629, 1, 1, '', 'Czekolada mleczna z migdałami i solą morską 60g.', 'czekolada-z-migdalem-i-sola-manu', '', '', '', 'CZEKOLADA Z MIGDAŁEM I SOLĄ MANU', '', '', '', ''),
+(630, 1, 1, '', 'Czekolada mleczna z palonym słodem jęczmiennym 60g.', 'czekolada-z-piwem-manu', '', '', '', 'CZEKOLADA Z PIWEM MANU', '', '', '', ''),
+(631, 1, 1, '', 'Czekolada Chocotale biała z żurawiną i pistacjami 81g.', 'czekolada-z-zurawina-i-pistacjami', '', '', '', 'CZEKOLADA Z ŻURAWINĄ I PISTACJAMI', '', '', '', ''),
+(632, 1, 1, '', 'Czekolada Chocotale ciemna ze śliwką i kardamonem 77g.', 'czekolada-ze-sliwka-i-kardamonem', '', '', '', 'CZEKOLADA ZE ŚLIWKĄ I KARDAMONEM', '', '', '', ''),
+(633, 1, 1, '', 'Wyśmienita czekoladka z czekolady mlecznej.', 'mini-czekoladka-mleczna', '', '', '', 'MINI CZEKOLADKA MLECZNA', '', '', '', ''),
+(634, 1, 1, '', 'Czekolada na gorąco do samodzielnego przygotowania 200g.', 'goraca-czekolada-ciemna', '', '', '', 'GORĄCA CZEKOLADA CIEMNA', '', '', '', ''),
+(635, 1, 1, '', 'Czekolada na gorąco do samodzielnego przygotowania 200g.', 'goraca-czekolada-ciemna-z-wisniami', '', '', '', 'GORĄCA CZEKOLADA CIEMNA Z WIŚNIAMI', '', '', '', ''),
+(636, 1, 1, '', 'Czekolada na gorąco do samodzielnego przygotowania 200g.', 'goraca-czekolada-jablko-cynamon', '', '', '', 'GORĄCA CZEKOLADA JABŁKO CYNAMON', '', '', '', ''),
+(637, 1, 1, '', 'Czekolada na gorąco do samodzielnego przygotowania 200g.', 'goraca-czekolada-mleczna', '', '', '', 'GORĄCA CZEKOLADA MLECZNA', '', '', '', ''),
+(638, 1, 1, '', 'Czekolada na gorąco do samodzielnego przygotowania 200g.', 'goraca-czekolada-z-cappuccino', '', '', '', 'GORĄCA CZEKOLADA Z CAPPUCCINO', '', '', '', ''),
+(639, 1, 1, '', 'Najlepsze bakalie w wyśmienitej czekoladzie 100g.', 'migdal-w-bialej-czekoladzie-z-kokosem', '', '', '', 'MIGDAŁ W BIAŁEJ CZEKOLADZIE Z KOKOSEM', '', '', '', ''),
+(640, 1, 1, '', 'Najlepsze bakalie w wyśmienitej czekoladzie 100g.', 'migdaly-w-mlecznej-czekoladzie-z-cynamonem', '', '', '', 'MIGDAŁY W MLECZNEJ CZEKOLADZIE Z CYNAMONEM', '', '', '', ''),
+(641, 1, 1, '', 'Najlepsze bakalie w wyśmienitej czekoladzie 100g.', 'migdaly-w-slonym-karmelu', '', '', '', 'MIGDAŁY W SŁONYM KARMELU', '', '', '', ''),
+(642, 1, 1, '', 'Najlepsze bakalie w wyśmienitej czekoladzie 100g.', 'nerkowce-w-mlecznej-czekoladzie', '', '', '', 'NERKOWCE W MLECZNEJ CZEKOLADZIE', '', '', '', ''),
+(643, 1, 1, '', 'Najlepsze bakalie w wyśmienitej czekoladzie 100g.', 'orzech-laskowy-w-mlecznej-czekoladzie-z-cynamonem', '', '', '', 'ORZECH LASKOWY W MLECZNEJ CZEKOLADZIE Z CYNAMONEM', '', '', '', ''),
+(644, 1, 1, '', 'Najlepsze bakalie w wyśmienitej czekoladzie 100g.', 'truskawki-w-mlecznej-czekoladzie', '', '', '', 'TRUSKAWKI W MLECZNEJ CZEKOLADZIE', '', '', '', ''),
+(645, 1, 1, '', 'Najlepsze bakalie w wyśmienitej czekoladzie 100g.', 'ziarno-kawy-w-mlecznej-czekoladzie', '', '', '', 'ZIARNO KAWY W MLECZNEJ CZEKOLADZIE', '', '', '', ''),
+(646, 1, 1, '', 'Naturalny syrop do kaw i deserów 100ml.', 'syrop-cynamonowy', '', '', '', 'SYROP CYNAMONOWY', '', '', '', ''),
+(647, 1, 1, '', 'Naturalny syrop do kaw i deserów 100ml.', 'syrop-cytrynowy', '', '', '', 'SYROP CYTRYNOWY', '', '', '', ''),
+(648, 1, 1, '', 'Naturalny syrop do kaw i deserów 100ml.', 'syrop-imbirowy', '', '', '', 'SYROP IMBIROWY', '', '', '', ''),
+(649, 1, 1, '', 'Naturalny syrop do kaw i deserów 100ml.', 'syrop-karmelowy', '', '', '', 'SYROP KARMELOWY', '', '', '', ''),
+(650, 1, 1, '', 'Naturalny syrop do kaw i deserów 100ml.', 'syrop-mietowy', '', '', '', 'SYROP MIĘTOWY', '', '', '', ''),
+(651, 1, 1, '', 'Naturalny syrop do kaw i deserów 100ml.', 'syrop-migdalowy', '', '', '', 'SYROP MIGDAŁOWY', '', '', '', ''),
+(652, 1, 1, '', 'Naturalny syrop do kaw i deserów 100ml.', 'syrop-pomaranczowy', '', '', '', 'SYROP POMARAŃCZOWY', '', '', '', ''),
+(653, 1, 1, '', 'Naturalny syrop do kaw i deserów 100ml.', 'syrop-rozany', '', '', '', 'SYROP RÓŻANY', '', '', '', ''),
+(654, 1, 1, '', 'Naturalny syrop do kaw i deserów 100ml.', 'syrop-slony-karmel', '', '', '', 'SYROP SŁONY KARMEL', '', '', '', ''),
+(655, 1, 1, '', 'Naturalny syrop do kaw i deserów 100ml.', 'syrop-waniliowy', '', '', '', 'SYROP WANILIOWY', '', '', '', ''),
+(656, 1, 1, '', 'Naturalny syrop z kwiatów czarnego bzu 250ml.', 'syrop-czarny-bez', '', '', '', 'SYROP CZARNY BEZ', '', '', '', ''),
+(657, 1, 1, '', 'Naturalny syrop malinowy z dodatkiem lipy 250ml.', 'syrop-malina-z-lipa', '', '', '', 'SYROP MALINA Z LIPĄ', '', '', '', ''),
+(658, 1, 1, '', 'Naturalny syrop malinowy 250ml.', 'syrop-malinowy', '', '', '', 'SYROP MALINOWY', '', '', '', ''),
+(659, 1, 1, '', 'Syrop miodowy cytryna imbir 250ml', 'syrop-miodowy-z-cytryna-i-imbirem', '', '', '', 'SYROP MIODOWY Z CYTRYNĄ I IMBIREM', '', '', '', ''),
+(660, 1, 1, '', 'Syrop wiśniowy z rumem 250ml', 'syrop-wisnia-z-rumem', '', '', '', 'SYROP WIŚNIA Z RUMEM', '', '', '', ''),
+(661, 1, 1, '', 'Naturalny syrop żurawinowy 250ml.', 'syrop-zurawinowy', '', '', '', 'SYROP ŻURAWINOWY', '', '', '', ''),
+(662, 1, 1, '', 'Cytrynki z whisky 280g', 'cytrynki-z-whisky', '', '', '', 'CYTRYNKI Z WHISKY', '', '', '', ''),
+(663, 1, 1, '', 'Cytrynki z żurawiną i cynamonem 280g', 'cytrynki-z-zurawina-i-cynamonem', '', '', '', 'CYTRYNKI Z ŻURAWINĄ I CYNAMONEM', '', '', '', ''),
+(664, 1, 1, '', 'Czarny bez z sokiem cytrynowym 210g.', 'czarny-bez-z-sokiem', '', '', '', 'CZARNY BEZ Z SOKIEM', '', '', '', ''),
+(665, 1, 1, '', 'Imbir z sokiem cytrynowym.', 'imbir-z-sokiem-cytrynowym', '', '', '', 'IMBIR Z SOKIEM CYTRYNOWYM', '', '', '', ''),
+(666, 1, 1, '', 'Konfitura cytrynowa z imbirem 40g.', 'konfitura-cytrynowa', '', '', '', 'KONFITURA CYTRYNOWA', '', '', '', ''),
+(667, 1, 1, '', 'Konfitura wiśniowa z kardamonem 40g.', 'konfitura-wisniowa', '', '', '', 'KONFITURA WIŚNIOWA', '', '', '', ''),
+(668, 1, 1, '', 'Limonki 280g', 'limonki', '', '', '', 'LIMONKI', '', '', '', ''),
+(669, 1, 1, '', 'Maliny w syropie 300g', 'maliny-w-syropie', '', '', '', 'MALINY W SYROPIE', '', '', '', ''),
+(670, 1, 1, '', 'Maliny z sokiem cytrynowym 210g.', 'maliny-z-sokiem', '', '', '', 'MALINY Z SOKIEM', '', '', '', ''),
+(671, 1, 1, '', 'Mus malinowy 40g.', 'mus-malinowy', '', '', '', 'MUS MALINOWY', '', '', '', ''),
+(672, 1, 1, '', 'Pigwa 300g', 'pigwa', '', '', '', 'PIGWA', '', '', '', ''),
+(673, 1, 1, '', 'Powidła z orzechami i cynamonem 40g', 'powidla-z-orzechami', '', '', '', 'POWIDŁA Z ORZECHAMI', '', '', '', ''),
+(674, 1, 1, '', 'Płatki róży w syropie 310g.', 'platki-rozy-w-syropie', '', '', '', 'PŁATKI RÓŻY W SYROPIE', '', '', '', ''),
+(675, 1, 1, '', 'Konfitura truskawka z gruszką i prosecco 40g', 'truskawka-z-gruszka-i-prosecco', '', '', '', 'TRUSKAWKA Z GRUSZKĄ I PROSECCO', '', '', '', ''),
+(676, 1, 1, '', 'Kompozycja Malinowa rapsodia w miodzie akacjowym 50g.', 'miod-akacjowy-z-malinowa-rapsodia-mini-50g', '', '', '', 'MIÓD AKACJOWY Z MALINOWĄ RAPSODIĄ MINI 50G', '', '', '', ''),
+(677, 1, 1, '', 'Miód królewski białowieski 250g', 'miod-krolewski-matecznik', '', '', '', 'MIÓD KRÓLEWSKI MATECZNIK', '', '', '', ''),
+(678, 1, 1, '', 'Miód lipowy białowieski 250g', 'miod-lipowy-matecznik', '', '', '', 'MIÓD LIPOWY MATECZNIK', '', '', '', ''),
+(679, 1, 1, '', 'Miód sezonowany do kawy i herbaty  250g', 'miod-sezonowany-matecznik', '', '', '', 'MIÓD SEZONOWANY MATECZNIK', '', '', '', ''),
+(680, 1, 1, '', 'Naturalnego miód z nutą orzeźwiającej mięty 250g', 'miod-z-mieta-matecznik', '', '', '', 'MIÓD Z MIĘTĄ MATECZNIK', '', '', '', ''),
+(681, 1, 1, '', 'Mały słoiczek miodu akacjowego z dodatkami 45g.', 'miod-z-migdalami', '', '', '', 'MIÓD Z MIGDAŁAMI', '', '', '', ''),
+(682, 1, 1, '', 'Mały słoiczek miodu akacjowego z dodatkami 45g.', 'miod-z-orzechami', '', '', '', 'MIÓD Z ORZECHAMI', '', '', '', ''),
+(683, 1, 1, '', 'Mały słoiczek miodu z imbirem 40g.', 'miodowy-imbir', '', '', '', 'MIODOWY IMBIR', '', '', '', ''),
+(684, 1, 1, '', 'Czas na Ciacho Klasyczne z orzechami i ziarnami oraz z suszoną żurawiną.', 'czas-na-ciacho-klasyczne', '', '', '', 'CZAS NA CIACHO KLASYCZNE', '', '', '', ''),
+(685, 1, 1, '', 'Czas na Ciacho Leśne z orzechami i ziarnami oraz z borówką-brusznicą.', 'czas-na-ciacho-lesne', '', '', '', 'CZAS NA CIACHO LEŚNE', '', '', '', ''),
+(686, 1, 1, '', 'Czas na Ciacho Szarlotka z orzechami i ziarnami oraz z jabłkiem i cynamonem.', 'czas-na-ciacho-szarlotka', '', '', '', 'CZAS NA CIACHO SZARLOTKA', '', '', '', '');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_product_sale`
+-- Структура таблицы `ps_product_sale`
 --
 
 CREATE TABLE `ps_product_sale` (
@@ -8875,7 +17750,7 @@ CREATE TABLE `ps_product_sale` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_product_shop`
+-- Структура таблицы `ps_product_shop`
 --
 
 CREATE TABLE `ps_product_shop` (
@@ -8915,16 +17790,703 @@ CREATE TABLE `ps_product_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_product_shop`
+-- Дамп данных таблицы `ps_product_shop`
 --
 
 INSERT INTO `ps_product_shop` (`id_product`, `id_shop`, `id_category_default`, `id_tax_rules_group`, `on_sale`, `online_only`, `ecotax`, `minimal_quantity`, `low_stock_threshold`, `low_stock_alert`, `price`, `wholesale_price`, `unity`, `unit_price_ratio`, `additional_shipping_cost`, `customizable`, `uploadable_files`, `text_fields`, `active`, `redirect_type`, `id_type_redirected`, `available_for_order`, `available_date`, `show_condition`, `condition`, `show_price`, `indexed`, `visibility`, `cache_default_attribute`, `advanced_stock_management`, `date_add`, `date_upd`, `pack_stock_type`) VALUES
-(1, 1, 2, 0, 0, 0, 0.000000, 1, NULL, 0, 0.000000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 0, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-11-29 14:51:55', '2025-11-29 14:51:55', 3);
+(1, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 15.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:32', '2025-12-14 22:19:32', 3),
+(2, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 16.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:32', '2025-12-14 22:19:32', 3),
+(3, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 15.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:32', '2025-12-14 22:19:32', 3),
+(4, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 27.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:32', '2025-12-14 22:19:32', 3),
+(5, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 24.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:32', '2025-12-14 22:19:32', 3),
+(6, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 79.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 3),
+(7, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 29.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 3),
+(8, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 27.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 3),
+(9, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 21.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 3),
+(10, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 24.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 3),
+(11, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 13.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 3),
+(12, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 23.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 3),
+(13, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 23.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 3),
+(14, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 16.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 3),
+(15, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 24.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 3),
+(16, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 19.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:36', '2025-12-14 22:19:36', 3),
+(17, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 16.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:36', '2025-12-14 22:19:36', 3),
+(18, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 29.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:36', '2025-12-14 22:19:36', 3),
+(19, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 19.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:36', '2025-12-14 22:19:36', 3),
+(20, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 19.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:36', '2025-12-14 22:19:36', 3),
+(21, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 22.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:36', '2025-12-14 22:19:36', 3),
+(22, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 19.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:36', '2025-12-14 22:19:36', 3),
+(23, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 19.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:36', '2025-12-14 22:19:36', 3),
+(24, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 13.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:36', '2025-12-14 22:19:36', 3),
+(25, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 14.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:36', '2025-12-14 22:19:36', 3),
+(26, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 19.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:36', '2025-12-14 22:19:36', 3),
+(27, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 16.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:36', '2025-12-14 22:19:36', 3),
+(28, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 31.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:36', '2025-12-14 22:19:36', 3),
+(29, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 13.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:36', '2025-12-14 22:19:36', 3),
+(30, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 19.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:36', '2025-12-14 22:19:36', 3),
+(31, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 31.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:36', '2025-12-14 22:19:36', 3),
+(32, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 16.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:36', '2025-12-14 22:19:36', 3),
+(33, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 22.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:36', '2025-12-14 22:19:36', 3),
+(34, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 24.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:36', '2025-12-14 22:19:36', 3),
+(35, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 29.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:36', '2025-12-14 22:19:36', 3),
+(36, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 29.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:36', '2025-12-14 22:19:36', 3),
+(37, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 24.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:36', '2025-12-14 22:19:36', 3),
+(38, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 23.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:36', '2025-12-14 22:19:36', 3),
+(39, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 15.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:36', '2025-12-14 22:19:36', 3),
+(40, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 21.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:36', '2025-12-14 22:19:36', 3),
+(41, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 14.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:41', '2025-12-14 22:19:41', 3),
+(42, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 9.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:41', '2025-12-14 22:19:41', 3),
+(43, 1, 35, 1, 0, 0, 0.000000, 1, NULL, 0, 19.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:41', '2025-12-14 22:19:41', 3),
+(44, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 8.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:41', '2025-12-14 22:19:41', 3),
+(45, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 8.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:41', '2025-12-14 22:19:41', 3),
+(46, 1, 35, 1, 0, 0, 0.000000, 1, NULL, 0, 26.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:41', '2025-12-14 22:19:41', 3),
+(47, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 8.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:41', '2025-12-14 22:19:41', 3),
+(48, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 8.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:41', '2025-12-14 22:19:41', 3),
+(49, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 8.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:41', '2025-12-14 22:19:41', 3),
+(50, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 8.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:41', '2025-12-14 22:19:41', 3),
+(51, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 8.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:41', '2025-12-14 22:19:41', 3),
+(52, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 49.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:41', '2025-12-14 22:19:41', 3),
+(53, 1, 44, 1, 0, 0, 0.000000, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:41', '2025-12-14 22:19:41', 3),
+(54, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 24.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:41', '2025-12-14 22:19:41', 3),
+(55, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 20.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:41', '2025-12-14 22:19:41', 3),
+(56, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 23.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:41', '2025-12-14 22:19:41', 3),
+(57, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 19.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:41', '2025-12-14 22:19:41', 3),
+(58, 1, 46, 1, 0, 0, 0.000000, 1, NULL, 0, 21.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:41', '2025-12-14 22:19:41', 3),
+(59, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 18.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:41', '2025-12-14 22:19:41', 3),
+(60, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 19.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:41', '2025-12-14 22:19:41', 3),
+(61, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 18.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:41', '2025-12-14 22:19:41', 3),
+(62, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 18.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:41', '2025-12-14 22:19:41', 3),
+(63, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 18.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:41', '2025-12-14 22:19:41', 3),
+(64, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 34.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:41', '2025-12-14 22:19:41', 3),
+(65, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 19.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:41', '2025-12-14 22:19:41', 3),
+(66, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 19.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:46', '2025-12-14 22:19:46', 3),
+(67, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 19.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:46', '2025-12-14 22:19:46', 3),
+(68, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 23.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:46', '2025-12-14 22:19:46', 3),
+(69, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 20.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:46', '2025-12-14 22:19:46', 3),
+(70, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 18.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:46', '2025-12-14 22:19:46', 3),
+(71, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 18.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:46', '2025-12-14 22:19:46', 3),
+(72, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 18.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:46', '2025-12-14 22:19:46', 3),
+(73, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 18.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:46', '2025-12-14 22:19:46', 3),
+(74, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 19.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:46', '2025-12-14 22:19:46', 3),
+(75, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 19.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:46', '2025-12-14 22:19:46', 3),
+(76, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 19.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:46', '2025-12-14 22:19:46', 3),
+(77, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 21.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:46', '2025-12-14 22:19:46', 3),
+(78, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 19.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:46', '2025-12-14 22:19:46', 3),
+(79, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 19.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:46', '2025-12-14 22:19:46', 3),
+(80, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 19.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:46', '2025-12-14 22:19:46', 3),
+(81, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 19.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:46', '2025-12-14 22:19:46', 3),
+(82, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 22.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:46', '2025-12-14 22:19:46', 3),
+(83, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 19.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:46', '2025-12-14 22:19:46', 3),
+(84, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 36.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:46', '2025-12-14 22:19:46', 3),
+(85, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 18.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:46', '2025-12-14 22:19:46', 3),
+(86, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 19.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:46', '2025-12-14 22:19:46', 3),
+(87, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 22.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:46', '2025-12-14 22:19:46', 3),
+(88, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 19.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:46', '2025-12-14 22:19:46', 3),
+(89, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 23.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:51', '2025-12-14 22:19:51', 3),
+(90, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 15.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:51', '2025-12-14 22:19:51', 3),
+(91, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 19.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:51', '2025-12-14 22:19:51', 3),
+(92, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 20.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:51', '2025-12-14 22:19:51', 3),
+(93, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 22.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:51', '2025-12-14 22:19:51', 3),
+(94, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 21.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:51', '2025-12-14 22:19:51', 3),
+(95, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 19.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:51', '2025-12-14 22:19:51', 3),
+(96, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 19.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:51', '2025-12-14 22:19:51', 3),
+(97, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 19.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:51', '2025-12-14 22:19:51', 3),
+(98, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 21.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:51', '2025-12-14 22:19:51', 3),
+(99, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 19.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:51', '2025-12-14 22:19:51', 3),
+(100, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 19.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:51', '2025-12-14 22:19:51', 3),
+(101, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 45.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:51', '2025-12-14 22:19:51', 3),
+(102, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 29.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:51', '2025-12-14 22:19:51', 3),
+(103, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 34.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:51', '2025-12-14 22:19:51', 3),
+(104, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 29.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:51', '2025-12-14 22:19:51', 3),
+(105, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 24.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:51', '2025-12-14 22:19:51', 3),
+(106, 1, 65, 1, 0, 0, 0.000000, 1, NULL, 0, 18.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:51', '2025-12-14 22:19:51', 3),
+(107, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 32.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:51', '2025-12-14 22:19:51', 3),
+(108, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 24.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:51', '2025-12-14 22:19:51', 3),
+(109, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 32.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:51', '2025-12-14 22:19:51', 3),
+(110, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 24.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:51', '2025-12-14 22:19:51', 3),
+(111, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 39.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:51', '2025-12-14 22:19:51', 3),
+(112, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 25.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:51', '2025-12-14 22:19:51', 3),
+(113, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 24.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:51', '2025-12-14 22:19:51', 3),
+(114, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 27.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 3),
+(115, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 23.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 3),
+(116, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 22.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 3),
+(117, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 21.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 3),
+(118, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 21.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 3),
+(119, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 22.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 3),
+(120, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 22.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 3),
+(121, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 22.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 3),
+(122, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 19.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 3),
+(123, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 23.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 3),
+(124, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 14.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 3),
+(125, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 27.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 3),
+(126, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 22.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 3),
+(127, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 28.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 3),
+(128, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 22.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 3),
+(129, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 22.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 3),
+(130, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 22.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 3),
+(131, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 18.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 3),
+(132, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 26.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 3),
+(133, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 14.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 3),
+(134, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 15.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 3),
+(135, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 14.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 3),
+(136, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 14.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 3),
+(137, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 14.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 3),
+(138, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 22.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 3),
+(139, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 19.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 3),
+(140, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 19.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 3),
+(141, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 19.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 3),
+(142, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 22.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:19:55', '2025-12-14 22:19:55', 3),
+(143, 1, 56, 1, 0, 0, 0.000000, 1, NULL, 0, 12.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 3),
+(144, 1, 36, 1, 0, 0, 0.000000, 1, NULL, 0, 28.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 3),
+(145, 1, 36, 1, 0, 0, 0.000000, 1, NULL, 0, 44.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 3),
+(146, 1, 36, 1, 0, 0, 0.000000, 1, NULL, 0, 27.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 3),
+(147, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 21.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 3),
+(148, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 19.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 3),
+(149, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 17.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 3),
+(150, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 19.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 3),
+(151, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 22.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 3),
+(152, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 19.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 3),
+(153, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 19.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 3),
+(154, 1, 45, 1, 0, 0, 0.000000, 1, NULL, 0, 22.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 3),
+(155, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 18.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 3),
+(156, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 23.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 3),
+(157, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 33.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 3),
+(158, 1, 46, 1, 0, 0, 0.000000, 1, NULL, 0, 18.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 3),
+(159, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 14.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 3),
+(160, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 20.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 3),
+(161, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 19.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 3),
+(162, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 21.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 3),
+(163, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 20.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 3),
+(164, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 19.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 3),
+(165, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 20.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 3),
+(166, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 24.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 3),
+(167, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 19.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 3),
+(168, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 15.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 3),
+(169, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 18.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 3),
+(170, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 15.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 3),
+(171, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 19.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 3),
+(172, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 14.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:00', '2025-12-14 22:20:00', 3),
+(173, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 22.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 3),
+(174, 1, 73, 1, 0, 0, 0.000000, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 3),
+(175, 1, 73, 1, 0, 0, 0.000000, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 3),
+(176, 1, 73, 1, 0, 0, 0.000000, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 3),
+(177, 1, 73, 1, 0, 0, 0.000000, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 3),
+(178, 1, 73, 1, 0, 0, 0.000000, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 3),
+(179, 1, 73, 1, 0, 0, 0.000000, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 3),
+(180, 1, 41, 1, 0, 0, 0.000000, 1, NULL, 0, 21.520000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 3),
+(181, 1, 73, 1, 0, 0, 0.000000, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 3),
+(182, 1, 73, 1, 0, 0, 0.000000, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 3),
+(183, 1, 73, 1, 0, 0, 0.000000, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 3),
+(184, 1, 47, 1, 0, 0, 0.000000, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 3),
+(185, 1, 73, 1, 0, 0, 0.000000, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 3),
+(186, 1, 73, 1, 0, 0, 0.000000, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 3),
+(187, 1, 73, 1, 0, 0, 0.000000, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 3),
+(188, 1, 73, 1, 0, 0, 0.000000, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 3),
+(189, 1, 73, 1, 0, 0, 0.000000, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 3),
+(190, 1, 73, 1, 0, 0, 0.000000, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 3),
+(191, 1, 74, 1, 0, 0, 0.000000, 1, NULL, 0, 43.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 3),
+(192, 1, 74, 1, 0, 0, 0.000000, 1, NULL, 0, 43.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 3),
+(193, 1, 74, 1, 0, 0, 0.000000, 1, NULL, 0, 43.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 3),
+(194, 1, 74, 1, 0, 0, 0.000000, 1, NULL, 0, 43.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 3),
+(195, 1, 74, 1, 0, 0, 0.000000, 1, NULL, 0, 43.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 3),
+(196, 1, 74, 1, 0, 0, 0.000000, 1, NULL, 0, 43.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 3),
+(197, 1, 74, 1, 0, 0, 0.000000, 1, NULL, 0, 43.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 3),
+(198, 1, 36, 1, 0, 0, 0.000000, 1, NULL, 0, 27.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 3),
+(199, 1, 36, 1, 0, 0, 0.000000, 1, NULL, 0, 32.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 3),
+(200, 1, 36, 1, 0, 0, 0.000000, 1, NULL, 0, 25.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 3),
+(201, 1, 36, 1, 0, 0, 0.000000, 1, NULL, 0, 18.130000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:05', '2025-12-14 22:20:05', 3),
+(202, 1, 36, 1, 0, 0, 0.000000, 1, NULL, 0, 32.830000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:13', '2025-12-14 22:20:13', 3),
+(203, 1, 36, 1, 0, 0, 0.000000, 1, NULL, 0, 19.530000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:13', '2025-12-14 22:20:13', 3),
+(204, 1, 36, 1, 0, 0, 0.000000, 1, NULL, 0, 24.430000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:13', '2025-12-14 22:20:13', 3),
+(205, 1, 36, 1, 0, 0, 0.000000, 1, NULL, 0, 34.930000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:13', '2025-12-14 22:20:13', 3),
+(206, 1, 36, 1, 0, 0, 0.000000, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:13', '2025-12-14 22:20:13', 3),
+(207, 1, 36, 1, 0, 0, 0.000000, 1, NULL, 0, 37.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:13', '2025-12-14 22:20:13', 3),
+(208, 1, 36, 1, 0, 0, 0.000000, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:13', '2025-12-14 22:20:13', 3),
+(209, 1, 36, 1, 0, 0, 0.000000, 1, NULL, 0, 26.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:13', '2025-12-14 22:20:13', 3),
+(210, 1, 36, 1, 0, 0, 0.000000, 1, NULL, 0, 32.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:13', '2025-12-14 22:20:13', 3),
+(211, 1, 36, 1, 0, 0, 0.000000, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:13', '2025-12-14 22:20:13', 3),
+(212, 1, 36, 1, 0, 0, 0.000000, 1, NULL, 0, 26.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:13', '2025-12-14 22:20:13', 3),
+(213, 1, 36, 1, 0, 0, 0.000000, 1, NULL, 0, 25.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:13', '2025-12-14 22:20:13', 3),
+(214, 1, 36, 1, 0, 0, 0.000000, 1, NULL, 0, 26.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:13', '2025-12-14 22:20:13', 3),
+(215, 1, 38, 1, 0, 0, 0.000000, 1, NULL, 0, 36.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:13', '2025-12-14 22:20:13', 3),
+(216, 1, 41, 1, 0, 0, 0.000000, 1, NULL, 0, 34.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:13', '2025-12-14 22:20:13', 3),
+(217, 1, 37, 1, 0, 0, 0.000000, 1, NULL, 0, 38.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:13', '2025-12-14 22:20:13', 3),
+(218, 1, 41, 1, 0, 0, 0.000000, 1, NULL, 0, 34.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:13', '2025-12-14 22:20:13', 3),
+(219, 1, 75, 1, 0, 0, 0.000000, 1, NULL, 0, 40.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:13', '2025-12-14 22:20:13', 3),
+(220, 1, 37, 1, 0, 0, 0.000000, 1, NULL, 0, 39.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 3),
+(221, 1, 38, 1, 0, 0, 0.000000, 1, NULL, 0, 39.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 3),
+(222, 1, 41, 1, 0, 0, 0.000000, 1, NULL, 0, 39.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 3),
+(223, 1, 41, 1, 0, 0, 0.000000, 1, NULL, 0, 36.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 3),
+(224, 1, 78, 1, 0, 0, 0.000000, 1, NULL, 0, 19.960000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 3),
+(225, 1, 75, 1, 0, 0, 0.000000, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 3),
+(226, 1, 75, 1, 0, 0, 0.000000, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 3),
+(227, 1, 75, 1, 0, 0, 0.000000, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 3),
+(228, 1, 81, 1, 0, 0, 0.000000, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 3),
+(229, 1, 81, 1, 0, 0, 0.000000, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 3),
+(230, 1, 81, 1, 0, 0, 0.000000, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 3),
+(231, 1, 81, 1, 0, 0, 0.000000, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 3),
+(232, 1, 81, 1, 0, 0, 0.000000, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 3),
+(233, 1, 81, 1, 0, 0, 0.000000, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 3),
+(234, 1, 81, 1, 0, 0, 0.000000, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 3),
+(235, 1, 81, 1, 0, 0, 0.000000, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 3),
+(236, 1, 81, 1, 0, 0, 0.000000, 1, NULL, 0, 28.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 3),
+(237, 1, 81, 1, 0, 0, 0.000000, 1, NULL, 0, 34.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:18', '2025-12-14 22:20:18', 3),
+(238, 1, 81, 1, 0, 0, 0.000000, 1, NULL, 0, 31.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:23', '2025-12-14 22:20:23', 3),
+(239, 1, 81, 1, 0, 0, 0.000000, 1, NULL, 0, 41.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:23', '2025-12-14 22:20:23', 3),
+(240, 1, 81, 1, 0, 0, 0.000000, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:23', '2025-12-14 22:20:23', 3),
+(241, 1, 81, 1, 0, 0, 0.000000, 1, NULL, 0, 33.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:23', '2025-12-14 22:20:23', 3);
+INSERT INTO `ps_product_shop` (`id_product`, `id_shop`, `id_category_default`, `id_tax_rules_group`, `on_sale`, `online_only`, `ecotax`, `minimal_quantity`, `low_stock_threshold`, `low_stock_alert`, `price`, `wholesale_price`, `unity`, `unit_price_ratio`, `additional_shipping_cost`, `customizable`, `uploadable_files`, `text_fields`, `active`, `redirect_type`, `id_type_redirected`, `available_for_order`, `available_date`, `show_condition`, `condition`, `show_price`, `indexed`, `visibility`, `cache_default_attribute`, `advanced_stock_management`, `date_add`, `date_upd`, `pack_stock_type`) VALUES
+(242, 1, 81, 1, 0, 0, 0.000000, 1, NULL, 0, 35.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:23', '2025-12-14 22:20:23', 3),
+(243, 1, 81, 1, 0, 0, 0.000000, 1, NULL, 0, 30.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:23', '2025-12-14 22:20:23', 3),
+(244, 1, 81, 1, 0, 0, 0.000000, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:23', '2025-12-14 22:20:23', 3),
+(245, 1, 81, 1, 0, 0, 0.000000, 1, NULL, 0, 37.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:23', '2025-12-14 22:20:23', 3),
+(246, 1, 81, 1, 0, 0, 0.000000, 1, NULL, 0, 31.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:23', '2025-12-14 22:20:23', 3),
+(247, 1, 82, 1, 0, 0, 0.000000, 1, NULL, 0, 25.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:23', '2025-12-14 22:20:23', 3),
+(248, 1, 82, 1, 0, 0, 0.000000, 1, NULL, 0, 25.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:23', '2025-12-14 22:20:23', 3),
+(249, 1, 82, 1, 0, 0, 0.000000, 1, NULL, 0, 23.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:23', '2025-12-14 22:20:23', 3),
+(250, 1, 82, 1, 0, 0, 0.000000, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:23', '2025-12-14 22:20:23', 3),
+(251, 1, 82, 1, 0, 0, 0.000000, 1, NULL, 0, 19.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:23', '2025-12-14 22:20:23', 3),
+(252, 1, 82, 1, 0, 0, 0.000000, 1, NULL, 0, 23.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:23', '2025-12-14 22:20:23', 3),
+(253, 1, 82, 1, 0, 0, 0.000000, 1, NULL, 0, 21.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:23', '2025-12-14 22:20:23', 3),
+(254, 1, 41, 1, 0, 0, 0.000000, 1, NULL, 0, 26.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:30', '2025-12-14 22:20:30', 3),
+(255, 1, 41, 1, 0, 0, 0.000000, 1, NULL, 0, 18.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:30', '2025-12-14 22:20:30', 3),
+(256, 1, 41, 1, 0, 0, 0.000000, 1, NULL, 0, 26.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:30', '2025-12-14 22:20:30', 3),
+(257, 1, 84, 1, 0, 0, 0.000000, 1, NULL, 0, 71.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:30', '2025-12-14 22:20:30', 3),
+(258, 1, 84, 1, 0, 0, 0.000000, 1, NULL, 0, 39.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:30', '2025-12-14 22:20:30', 3),
+(259, 1, 84, 1, 0, 0, 0.000000, 1, NULL, 0, 41.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:30', '2025-12-14 22:20:30', 3),
+(260, 1, 84, 1, 0, 0, 0.000000, 1, NULL, 0, 41.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:30', '2025-12-14 22:20:30', 3),
+(261, 1, 84, 1, 0, 0, 0.000000, 1, NULL, 0, 39.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:30', '2025-12-14 22:20:30', 3),
+(262, 1, 84, 1, 0, 0, 0.000000, 1, NULL, 0, 41.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:30', '2025-12-14 22:20:30', 3),
+(263, 1, 84, 1, 0, 0, 0.000000, 1, NULL, 0, 23.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:30', '2025-12-14 22:20:30', 3),
+(264, 1, 84, 1, 0, 0, 0.000000, 1, NULL, 0, 77.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:30', '2025-12-14 22:20:30', 3),
+(265, 1, 85, 1, 0, 0, 0.000000, 1, NULL, 0, 23.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:33', '2025-12-14 22:20:33', 3),
+(266, 1, 85, 1, 0, 0, 0.000000, 1, NULL, 0, 23.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:33', '2025-12-14 22:20:33', 3),
+(267, 1, 85, 1, 0, 0, 0.000000, 1, NULL, 0, 23.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:33', '2025-12-14 22:20:33', 3),
+(268, 1, 85, 1, 0, 0, 0.000000, 1, NULL, 0, 23.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:33', '2025-12-14 22:20:33', 3),
+(269, 1, 85, 1, 0, 0, 0.000000, 1, NULL, 0, 23.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:33', '2025-12-14 22:20:33', 3),
+(270, 1, 2, 1, 0, 0, 0.000000, 1, NULL, 0, 24.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:33', '2025-12-14 22:20:33', 3),
+(271, 1, 2, 1, 0, 0, 0.000000, 1, NULL, 0, 19.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:33', '2025-12-14 22:20:33', 3),
+(272, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 23.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:33', '2025-12-14 22:20:33', 3),
+(273, 1, 86, 1, 0, 0, 0.000000, 1, NULL, 0, 15.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:33', '2025-12-14 22:20:33', 3),
+(274, 1, 3, 1, 0, 0, 0.000000, 1, NULL, 0, 19.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:33', '2025-12-14 22:20:33', 3),
+(275, 1, 87, 1, 0, 0, 0.000000, 1, NULL, 0, 12.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:33', '2025-12-14 22:20:33', 3),
+(276, 1, 87, 1, 0, 0, 0.000000, 1, NULL, 0, 12.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:33', '2025-12-14 22:20:33', 3),
+(277, 1, 87, 1, 0, 0, 0.000000, 1, NULL, 0, 11.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:33', '2025-12-14 22:20:33', 3),
+(278, 1, 87, 1, 0, 0, 0.000000, 1, NULL, 0, 12.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:33', '2025-12-14 22:20:33', 3),
+(279, 1, 87, 1, 0, 0, 0.000000, 1, NULL, 0, 12.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:33', '2025-12-14 22:20:33', 3),
+(280, 1, 87, 1, 0, 0, 0.000000, 1, NULL, 0, 12.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:33', '2025-12-14 22:20:33', 3),
+(281, 1, 87, 1, 0, 0, 0.000000, 1, NULL, 0, 16.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:33', '2025-12-14 22:20:33', 3),
+(282, 1, 87, 1, 0, 0, 0.000000, 1, NULL, 0, 17.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:33', '2025-12-14 22:20:33', 3),
+(283, 1, 87, 1, 0, 0, 0.000000, 1, NULL, 0, 16.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:33', '2025-12-14 22:20:33', 3),
+(284, 1, 87, 1, 0, 0, 0.000000, 1, NULL, 0, 9.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:33', '2025-12-14 22:20:33', 3),
+(285, 1, 87, 1, 0, 0, 0.000000, 1, NULL, 0, 12.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:33', '2025-12-14 22:20:33', 3),
+(286, 1, 87, 1, 0, 0, 0.000000, 1, NULL, 0, 17.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:37', '2025-12-14 22:20:37', 3),
+(287, 1, 87, 1, 0, 0, 0.000000, 1, NULL, 0, 9.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:37', '2025-12-14 22:20:37', 3),
+(288, 1, 87, 1, 0, 0, 0.000000, 1, NULL, 0, 10.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:37', '2025-12-14 22:20:37', 3),
+(289, 1, 87, 1, 0, 0, 0.000000, 1, NULL, 0, 12.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:37', '2025-12-14 22:20:37', 3),
+(290, 1, 87, 1, 0, 0, 0.000000, 1, NULL, 0, 12.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:37', '2025-12-14 22:20:37', 3),
+(291, 1, 87, 1, 0, 0, 0.000000, 1, NULL, 0, 14.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:37', '2025-12-14 22:20:37', 3),
+(292, 1, 87, 1, 0, 0, 0.000000, 1, NULL, 0, 12.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:37', '2025-12-14 22:20:37', 3),
+(293, 1, 87, 1, 0, 0, 0.000000, 1, NULL, 0, 16.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:37', '2025-12-14 22:20:37', 3),
+(294, 1, 87, 1, 0, 0, 0.000000, 1, NULL, 0, 12.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:37', '2025-12-14 22:20:37', 3),
+(295, 1, 87, 1, 0, 0, 0.000000, 1, NULL, 0, 12.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:37', '2025-12-14 22:20:37', 3),
+(296, 1, 87, 1, 0, 0, 0.000000, 1, NULL, 0, 12.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:37', '2025-12-14 22:20:37', 3),
+(297, 1, 87, 1, 0, 0, 0.000000, 1, NULL, 0, 12.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:37', '2025-12-14 22:20:37', 3),
+(298, 1, 89, 1, 0, 0, 0.000000, 1, NULL, 0, 12.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:37', '2025-12-14 22:20:37', 3),
+(299, 1, 87, 1, 0, 0, 0.000000, 1, NULL, 0, 12.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:37', '2025-12-14 22:20:37', 3),
+(300, 1, 87, 1, 0, 0, 0.000000, 1, NULL, 0, 12.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:37', '2025-12-14 22:20:37', 3),
+(301, 1, 87, 1, 0, 0, 0.000000, 1, NULL, 0, 12.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:37', '2025-12-14 22:20:37', 3),
+(302, 1, 87, 1, 0, 0, 0.000000, 1, NULL, 0, 12.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:37', '2025-12-14 22:20:37', 3),
+(303, 1, 87, 1, 0, 0, 0.000000, 1, NULL, 0, 12.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:37', '2025-12-14 22:20:37', 3),
+(304, 1, 87, 1, 0, 0, 0.000000, 1, NULL, 0, 12.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:37', '2025-12-14 22:20:37', 3),
+(305, 1, 87, 1, 0, 0, 0.000000, 1, NULL, 0, 12.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:37', '2025-12-14 22:20:37', 3),
+(306, 1, 87, 1, 0, 0, 0.000000, 1, NULL, 0, 12.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:37', '2025-12-14 22:20:37', 3),
+(307, 1, 87, 1, 0, 0, 0.000000, 1, NULL, 0, 12.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:37', '2025-12-14 22:20:37', 3),
+(308, 1, 87, 1, 0, 0, 0.000000, 1, NULL, 0, 12.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:37', '2025-12-14 22:20:37', 3),
+(309, 1, 87, 1, 0, 0, 0.000000, 1, NULL, 0, 12.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:37', '2025-12-14 22:20:37', 3),
+(310, 1, 87, 1, 0, 0, 0.000000, 1, NULL, 0, 12.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:43', '2025-12-14 22:20:43', 3),
+(311, 1, 87, 1, 0, 0, 0.000000, 1, NULL, 0, 12.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:43', '2025-12-14 22:20:43', 3),
+(312, 1, 87, 1, 0, 0, 0.000000, 1, NULL, 0, 12.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:43', '2025-12-14 22:20:43', 3),
+(313, 1, 87, 1, 0, 0, 0.000000, 1, NULL, 0, 12.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:43', '2025-12-14 22:20:43', 3),
+(314, 1, 87, 1, 0, 0, 0.000000, 1, NULL, 0, 12.950000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:43', '2025-12-14 22:20:43', 3),
+(315, 1, 90, 1, 0, 0, 0.000000, 1, NULL, 0, 119.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:43', '2025-12-14 22:20:43', 3),
+(316, 1, 90, 1, 0, 0, 0.000000, 1, NULL, 0, 44.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:43', '2025-12-14 22:20:43', 3),
+(317, 1, 90, 1, 0, 0, 0.000000, 1, NULL, 0, 57.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:43', '2025-12-14 22:20:43', 3),
+(318, 1, 90, 1, 0, 0, 0.000000, 1, NULL, 0, 119.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:43', '2025-12-14 22:20:43', 3),
+(319, 1, 90, 1, 0, 0, 0.000000, 1, NULL, 0, 99.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:43', '2025-12-14 22:20:43', 3),
+(320, 1, 90, 1, 0, 0, 0.000000, 1, NULL, 0, 43.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:43', '2025-12-14 22:20:43', 3),
+(321, 1, 90, 1, 0, 0, 0.000000, 1, NULL, 0, 40.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:43', '2025-12-14 22:20:43', 3),
+(322, 1, 90, 1, 0, 0, 0.000000, 1, NULL, 0, 40.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:43', '2025-12-14 22:20:43', 3),
+(323, 1, 90, 1, 0, 0, 0.000000, 1, NULL, 0, 40.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:43', '2025-12-14 22:20:43', 3),
+(324, 1, 90, 1, 0, 0, 0.000000, 1, NULL, 0, 40.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:43', '2025-12-14 22:20:43', 3),
+(325, 1, 90, 1, 0, 0, 0.000000, 1, NULL, 0, 39.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:43', '2025-12-14 22:20:43', 3),
+(326, 1, 90, 1, 0, 0, 0.000000, 1, NULL, 0, 39.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:43', '2025-12-14 22:20:43', 3),
+(327, 1, 90, 1, 0, 0, 0.000000, 1, NULL, 0, 129.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:43', '2025-12-14 22:20:43', 3),
+(328, 1, 90, 1, 0, 0, 0.000000, 1, NULL, 0, 39.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:43', '2025-12-14 22:20:43', 3),
+(329, 1, 87, 1, 0, 0, 0.000000, 1, NULL, 0, 13.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:43', '2025-12-14 22:20:43', 3),
+(330, 1, 87, 1, 0, 0, 0.000000, 1, NULL, 0, 14.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:43', '2025-12-14 22:20:43', 3),
+(331, 1, 87, 1, 0, 0, 0.000000, 1, NULL, 0, 14.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:47', '2025-12-14 22:20:47', 3),
+(332, 1, 87, 1, 0, 0, 0.000000, 1, NULL, 0, 14.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:47', '2025-12-14 22:20:47', 3),
+(333, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 199.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:47', '2025-12-14 22:20:47', 3),
+(334, 1, 93, 1, 0, 0, 0.000000, 1, NULL, 0, 33.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:47', '2025-12-14 22:20:47', 3),
+(335, 1, 93, 1, 0, 0, 0.000000, 1, NULL, 0, 17.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:47', '2025-12-14 22:20:47', 3),
+(336, 1, 93, 1, 0, 0, 0.000000, 1, NULL, 0, 25.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:47', '2025-12-14 22:20:47', 3),
+(337, 1, 93, 1, 0, 0, 0.000000, 1, NULL, 0, 26.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:47', '2025-12-14 22:20:47', 3),
+(338, 1, 93, 1, 0, 0, 0.000000, 1, NULL, 0, 55.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:47', '2025-12-14 22:20:47', 3),
+(339, 1, 93, 1, 0, 0, 0.000000, 1, NULL, 0, 86.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:47', '2025-12-14 22:20:47', 3),
+(340, 1, 93, 1, 0, 0, 0.000000, 1, NULL, 0, 79.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:47', '2025-12-14 22:20:47', 3),
+(341, 1, 93, 1, 0, 0, 0.000000, 1, NULL, 0, 86.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:47', '2025-12-14 22:20:47', 3),
+(342, 1, 93, 1, 0, 0, 0.000000, 1, NULL, 0, 71.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:47', '2025-12-14 22:20:47', 3),
+(343, 1, 93, 1, 0, 0, 0.000000, 1, NULL, 0, 263.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:47', '2025-12-14 22:20:47', 3),
+(344, 1, 93, 1, 0, 0, 0.000000, 1, NULL, 0, 268.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:47', '2025-12-14 22:20:47', 3),
+(345, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 49.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:47', '2025-12-14 22:20:47', 3),
+(346, 1, 98, 1, 0, 0, 0.000000, 1, NULL, 0, 45.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:47', '2025-12-14 22:20:47', 3),
+(347, 1, 93, 1, 0, 0, 0.000000, 1, NULL, 0, 49.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:47', '2025-12-14 22:20:47', 3),
+(348, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 88.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:47', '2025-12-14 22:20:47', 3),
+(349, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 108.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:47', '2025-12-14 22:20:47', 3),
+(350, 1, 102, 1, 0, 0, 0.000000, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:47', '2025-12-14 22:20:47', 3),
+(351, 1, 102, 1, 0, 0, 0.000000, 1, NULL, 0, 46.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:47', '2025-12-14 22:20:47', 3),
+(352, 1, 102, 1, 0, 0, 0.000000, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:47', '2025-12-14 22:20:47', 3),
+(353, 1, 102, 1, 0, 0, 0.000000, 1, NULL, 0, 46.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:47', '2025-12-14 22:20:47', 3),
+(354, 1, 102, 1, 0, 0, 0.000000, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:47', '2025-12-14 22:20:47', 3),
+(355, 1, 102, 1, 0, 0, 0.000000, 1, NULL, 0, 46.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:47', '2025-12-14 22:20:47', 3),
+(356, 1, 102, 1, 0, 0, 0.000000, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:47', '2025-12-14 22:20:47', 3),
+(357, 1, 102, 1, 0, 0, 0.000000, 1, NULL, 0, 46.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:52', '2025-12-14 22:20:52', 3),
+(358, 1, 102, 1, 0, 0, 0.000000, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:52', '2025-12-14 22:20:52', 3),
+(359, 1, 102, 1, 0, 0, 0.000000, 1, NULL, 0, 46.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:52', '2025-12-14 22:20:52', 3),
+(360, 1, 102, 1, 0, 0, 0.000000, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:52', '2025-12-14 22:20:52', 3),
+(361, 1, 102, 1, 0, 0, 0.000000, 1, NULL, 0, 46.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:52', '2025-12-14 22:20:52', 3),
+(362, 1, 102, 1, 0, 0, 0.000000, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:52', '2025-12-14 22:20:52', 3),
+(363, 1, 102, 1, 0, 0, 0.000000, 1, NULL, 0, 46.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:52', '2025-12-14 22:20:52', 3),
+(364, 1, 102, 1, 0, 0, 0.000000, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:52', '2025-12-14 22:20:52', 3),
+(365, 1, 102, 1, 0, 0, 0.000000, 1, NULL, 0, 46.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:52', '2025-12-14 22:20:52', 3),
+(366, 1, 102, 1, 0, 0, 0.000000, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:52', '2025-12-14 22:20:52', 3),
+(367, 1, 102, 1, 0, 0, 0.000000, 1, NULL, 0, 46.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:52', '2025-12-14 22:20:52', 3),
+(368, 1, 102, 1, 0, 0, 0.000000, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:52', '2025-12-14 22:20:52', 3),
+(369, 1, 102, 1, 0, 0, 0.000000, 1, NULL, 0, 46.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:52', '2025-12-14 22:20:52', 3),
+(370, 1, 44, 1, 0, 0, 0.000000, 1, NULL, 0, 64.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:52', '2025-12-14 22:20:52', 3),
+(371, 1, 44, 1, 0, 0, 0.000000, 1, NULL, 0, 64.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:52', '2025-12-14 22:20:52', 3),
+(372, 1, 102, 1, 0, 0, 0.000000, 1, NULL, 0, 93.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:52', '2025-12-14 22:20:52', 3),
+(373, 1, 102, 1, 0, 0, 0.000000, 1, NULL, 0, 93.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:52', '2025-12-14 22:20:52', 3),
+(374, 1, 102, 1, 0, 0, 0.000000, 1, NULL, 0, 93.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:52', '2025-12-14 22:20:52', 3),
+(375, 1, 102, 1, 0, 0, 0.000000, 1, NULL, 0, 72.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:52', '2025-12-14 22:20:52', 3),
+(376, 1, 102, 1, 0, 0, 0.000000, 1, NULL, 0, 8.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:52', '2025-12-14 22:20:52', 3),
+(377, 1, 102, 1, 0, 0, 0.000000, 1, NULL, 0, 8.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:52', '2025-12-14 22:20:52', 3),
+(378, 1, 102, 1, 0, 0, 0.000000, 1, NULL, 0, 8.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:52', '2025-12-14 22:20:52', 3),
+(379, 1, 106, 1, 0, 0, 0.000000, 1, NULL, 0, 18.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:52', '2025-12-14 22:20:52', 3),
+(380, 1, 106, 1, 0, 0, 0.000000, 1, NULL, 0, 30.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:52', '2025-12-14 22:20:52', 3),
+(381, 1, 106, 1, 0, 0, 0.000000, 1, NULL, 0, 25.990000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:58', '2025-12-14 22:20:58', 3),
+(382, 1, 106, 1, 0, 0, 0.000000, 1, NULL, 0, 74.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:58', '2025-12-14 22:20:58', 3),
+(383, 1, 106, 1, 0, 0, 0.000000, 1, NULL, 0, 25.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:58', '2025-12-14 22:20:58', 3),
+(384, 1, 106, 1, 0, 0, 0.000000, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:58', '2025-12-14 22:20:58', 3),
+(385, 1, 106, 1, 0, 0, 0.000000, 1, NULL, 0, 25.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:58', '2025-12-14 22:20:58', 3),
+(386, 1, 106, 1, 0, 0, 0.000000, 1, NULL, 0, 36.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:58', '2025-12-14 22:20:58', 3),
+(387, 1, 106, 1, 0, 0, 0.000000, 1, NULL, 0, 36.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:58', '2025-12-14 22:20:58', 3),
+(388, 1, 106, 1, 0, 0, 0.000000, 1, NULL, 0, 36.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:58', '2025-12-14 22:20:58', 3),
+(389, 1, 106, 1, 0, 0, 0.000000, 1, NULL, 0, 36.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:58', '2025-12-14 22:20:58', 3),
+(390, 1, 106, 1, 0, 0, 0.000000, 1, NULL, 0, 36.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:58', '2025-12-14 22:20:58', 3),
+(391, 1, 106, 1, 0, 0, 0.000000, 1, NULL, 0, 36.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:58', '2025-12-14 22:20:58', 3),
+(392, 1, 106, 1, 0, 0, 0.000000, 1, NULL, 0, 36.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:58', '2025-12-14 22:20:58', 3),
+(393, 1, 106, 1, 0, 0, 0.000000, 1, NULL, 0, 36.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:58', '2025-12-14 22:20:58', 3),
+(394, 1, 106, 1, 0, 0, 0.000000, 1, NULL, 0, 36.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:58', '2025-12-14 22:20:58', 3),
+(395, 1, 106, 1, 0, 0, 0.000000, 1, NULL, 0, 36.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:58', '2025-12-14 22:20:58', 3),
+(396, 1, 106, 1, 0, 0, 0.000000, 1, NULL, 0, 77.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:58', '2025-12-14 22:20:58', 3),
+(397, 1, 106, 1, 0, 0, 0.000000, 1, NULL, 0, 10.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:58', '2025-12-14 22:20:58', 3),
+(398, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 165.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:58', '2025-12-14 22:20:58', 3),
+(399, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 178.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:58', '2025-12-14 22:20:58', 3),
+(400, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 165.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:20:58', '2025-12-14 22:20:58', 3),
+(401, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 124.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 3),
+(402, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 112.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 3),
+(403, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 103.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 3),
+(404, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 54.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 3),
+(405, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 76.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 3),
+(406, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 59.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 3),
+(407, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 74.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 3),
+(408, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 82.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 3),
+(409, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 113.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 3),
+(410, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 87.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 3),
+(411, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 135.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 3),
+(412, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 131.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 3),
+(413, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 149.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 3),
+(414, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 159.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 3),
+(415, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 170.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 3),
+(416, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 38.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 3),
+(417, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 38.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 3),
+(418, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 63.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 3),
+(419, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 63.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 3),
+(420, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 77.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 3),
+(421, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 38.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 3),
+(422, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 38.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 3),
+(423, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 74.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 3),
+(424, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 18.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 3),
+(425, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 16.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 3),
+(426, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 53.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 3),
+(427, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 14.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 3),
+(428, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 56.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 3),
+(429, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 52.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 3),
+(430, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 71.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 3),
+(431, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 27.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 3),
+(432, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 1.120000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 3),
+(433, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 25.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 3),
+(434, 1, 86, 1, 0, 0, 0.000000, 1, NULL, 0, 36.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:01', '2025-12-14 22:21:01', 3),
+(435, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 36.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:07', '2025-12-14 22:21:07', 3),
+(436, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 22.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:07', '2025-12-14 22:21:07', 3),
+(437, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 34.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:07', '2025-12-14 22:21:07', 3),
+(438, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 20.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:07', '2025-12-14 22:21:07', 3),
+(439, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 25.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:07', '2025-12-14 22:21:07', 3),
+(440, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 34.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:07', '2025-12-14 22:21:07', 3),
+(441, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 27.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:07', '2025-12-14 22:21:07', 3),
+(442, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 107.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:07', '2025-12-14 22:21:07', 3),
+(443, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 109.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:07', '2025-12-14 22:21:07', 3),
+(444, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 166.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:07', '2025-12-14 22:21:07', 3),
+(445, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 16.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:07', '2025-12-14 22:21:07', 3),
+(446, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 38.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:07', '2025-12-14 22:21:07', 3),
+(447, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 18.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:07', '2025-12-14 22:21:07', 3),
+(448, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 46.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:07', '2025-12-14 22:21:07', 3),
+(449, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 41.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:07', '2025-12-14 22:21:07', 3),
+(450, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 38.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:07', '2025-12-14 22:21:07', 3),
+(451, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 11.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:07', '2025-12-14 22:21:07', 3),
+(452, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 34.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:07', '2025-12-14 22:21:07', 3),
+(453, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 28.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:07', '2025-12-14 22:21:07', 3),
+(454, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 34.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:07', '2025-12-14 22:21:07', 3),
+(455, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 30.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:07', '2025-12-14 22:21:07', 3),
+(456, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 21.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:07', '2025-12-14 22:21:07', 3),
+(457, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 13.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:07', '2025-12-14 22:21:07', 3),
+(458, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 13.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:07', '2025-12-14 22:21:07', 3),
+(459, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 14.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:07', '2025-12-14 22:21:07', 3),
+(460, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 38.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:07', '2025-12-14 22:21:07', 3),
+(461, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 181.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:07', '2025-12-14 22:21:07', 3),
+(462, 1, 14, 1, 0, 0, 0.000000, 1, NULL, 0, 69.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 3),
+(463, 1, 14, 1, 0, 0, 0.000000, 1, NULL, 0, 69.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 3),
+(464, 1, 14, 1, 0, 0, 0.000000, 1, NULL, 0, 69.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 3),
+(465, 1, 14, 1, 0, 0, 0.000000, 1, NULL, 0, 79.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 3),
+(466, 1, 14, 1, 0, 0, 0.000000, 1, NULL, 0, 79.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 3),
+(467, 1, 14, 1, 0, 0, 0.000000, 1, NULL, 0, 79.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 3),
+(468, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 39.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 3),
+(469, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 39.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 3),
+(470, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 39.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 3),
+(471, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 39.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 3),
+(472, 1, 98, 1, 0, 0, 0.000000, 1, NULL, 0, 48.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 3),
+(473, 1, 98, 1, 0, 0, 0.000000, 1, NULL, 0, 50.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 3),
+(474, 1, 98, 1, 0, 0, 0.000000, 1, NULL, 0, 50.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 3),
+(475, 1, 98, 1, 0, 0, 0.000000, 1, NULL, 0, 50.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 3),
+(476, 1, 98, 1, 0, 0, 0.000000, 1, NULL, 0, 50.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 3),
+(477, 1, 98, 1, 0, 0, 0.000000, 1, NULL, 0, 78.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 3),
+(478, 1, 98, 1, 0, 0, 0.000000, 1, NULL, 0, 54.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 3),
+(479, 1, 98, 1, 0, 0, 0.000000, 1, NULL, 0, 54.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 3),
+(480, 1, 98, 1, 0, 0, 0.000000, 1, NULL, 0, 54.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 3);
+INSERT INTO `ps_product_shop` (`id_product`, `id_shop`, `id_category_default`, `id_tax_rules_group`, `on_sale`, `online_only`, `ecotax`, `minimal_quantity`, `low_stock_threshold`, `low_stock_alert`, `price`, `wholesale_price`, `unity`, `unit_price_ratio`, `additional_shipping_cost`, `customizable`, `uploadable_files`, `text_fields`, `active`, `redirect_type`, `id_type_redirected`, `available_for_order`, `available_date`, `show_condition`, `condition`, `show_price`, `indexed`, `visibility`, `cache_default_attribute`, `advanced_stock_management`, `date_add`, `date_upd`, `pack_stock_type`) VALUES
+(481, 1, 98, 1, 0, 0, 0.000000, 1, NULL, 0, 54.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 3),
+(482, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 109.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 3),
+(483, 1, 98, 1, 0, 0, 0.000000, 1, NULL, 0, 149.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 3),
+(484, 1, 98, 1, 0, 0, 0.000000, 1, NULL, 0, 179.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 3),
+(485, 1, 98, 1, 0, 0, 0.000000, 1, NULL, 0, 149.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 3),
+(486, 1, 98, 1, 0, 0, 0.000000, 1, NULL, 0, 149.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 3),
+(487, 1, 98, 1, 0, 0, 0.000000, 1, NULL, 0, 89.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 3),
+(488, 1, 98, 1, 0, 0, 0.000000, 1, NULL, 0, 49.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 3),
+(489, 1, 98, 1, 0, 0, 0.000000, 1, NULL, 0, 27.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 3),
+(490, 1, 98, 1, 0, 0, 0.000000, 1, NULL, 0, 80.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 3),
+(491, 1, 98, 1, 0, 0, 0.000000, 1, NULL, 0, 49.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 3),
+(492, 1, 98, 1, 0, 0, 0.000000, 1, NULL, 0, 49.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 3),
+(493, 1, 98, 1, 0, 0, 0.000000, 1, NULL, 0, 39.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 3),
+(494, 1, 98, 1, 0, 0, 0.000000, 1, NULL, 0, 39.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:11', '2025-12-14 22:21:11', 3),
+(495, 1, 98, 1, 0, 0, 0.000000, 1, NULL, 0, 39.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:19', '2025-12-14 22:21:19', 3),
+(496, 1, 98, 1, 0, 0, 0.000000, 1, NULL, 0, 80.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:19', '2025-12-14 22:21:19', 3),
+(497, 1, 98, 1, 0, 0, 0.000000, 1, NULL, 0, 28.450000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:19', '2025-12-14 22:21:19', 3),
+(498, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 41.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:19', '2025-12-14 22:21:19', 3),
+(499, 1, 98, 1, 0, 0, 0.000000, 1, NULL, 0, 41.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:19', '2025-12-14 22:21:19', 3),
+(500, 1, 98, 1, 0, 0, 0.000000, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:19', '2025-12-14 22:21:19', 3),
+(501, 1, 99, 1, 0, 0, 0.000000, 1, NULL, 0, 41.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:19', '2025-12-14 22:21:19', 3),
+(502, 1, 98, 1, 0, 0, 0.000000, 1, NULL, 0, 49.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:19', '2025-12-14 22:21:19', 3),
+(503, 1, 98, 1, 0, 0, 0.000000, 1, NULL, 0, 49.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:19', '2025-12-14 22:21:19', 3),
+(504, 1, 98, 1, 0, 0, 0.000000, 1, NULL, 0, 49.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:19', '2025-12-14 22:21:19', 3),
+(505, 1, 98, 1, 0, 0, 0.000000, 1, NULL, 0, 49.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:19', '2025-12-14 22:21:19', 3),
+(506, 1, 101, 1, 0, 0, 0.000000, 1, NULL, 0, 49.520000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:19', '2025-12-14 22:21:19', 3),
+(507, 1, 101, 1, 0, 0, 0.000000, 1, NULL, 0, 84.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:19', '2025-12-14 22:21:19', 3),
+(508, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 72.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:19', '2025-12-14 22:21:19', 3),
+(509, 1, 101, 1, 0, 0, 0.000000, 1, NULL, 0, 72.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:19', '2025-12-14 22:21:19', 3),
+(510, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 72.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:19', '2025-12-14 22:21:19', 3),
+(511, 1, 101, 1, 0, 0, 0.000000, 1, NULL, 0, 72.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:19', '2025-12-14 22:21:19', 3),
+(512, 1, 101, 1, 0, 0, 0.000000, 1, NULL, 0, 72.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:19', '2025-12-14 22:21:19', 3),
+(513, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 72.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:19', '2025-12-14 22:21:19', 3),
+(514, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 72.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:19', '2025-12-14 22:21:19', 3),
+(515, 1, 92, 1, 0, 0, 0.000000, 1, NULL, 0, 55.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:23', '2025-12-14 22:21:23', 3),
+(516, 1, 101, 1, 0, 0, 0.000000, 1, NULL, 0, 135.800000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:23', '2025-12-14 22:21:23', 3),
+(517, 1, 14, 1, 0, 0, 0.000000, 1, NULL, 0, 90.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:23', '2025-12-14 22:21:23', 3),
+(518, 1, 98, 1, 0, 0, 0.000000, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:23', '2025-12-14 22:21:23', 3),
+(519, 1, 123, 1, 0, 0, 0.000000, 1, NULL, 0, 12.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:23', '2025-12-14 22:21:23', 3),
+(520, 1, 123, 1, 0, 0, 0.000000, 1, NULL, 0, 12.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:23', '2025-12-14 22:21:23', 3),
+(521, 1, 123, 1, 0, 0, 0.000000, 1, NULL, 0, 17.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:23', '2025-12-14 22:21:23', 3),
+(522, 1, 123, 1, 0, 0, 0.000000, 1, NULL, 0, 15.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:23', '2025-12-14 22:21:23', 3),
+(523, 1, 123, 1, 0, 0, 0.000000, 1, NULL, 0, 7.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:23', '2025-12-14 22:21:23', 3),
+(524, 1, 123, 1, 0, 0, 0.000000, 1, NULL, 0, 9.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:23', '2025-12-14 22:21:23', 3),
+(525, 1, 123, 1, 0, 0, 0.000000, 1, NULL, 0, 9.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:23', '2025-12-14 22:21:23', 3),
+(526, 1, 123, 1, 0, 0, 0.000000, 1, NULL, 0, 9.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:23', '2025-12-14 22:21:23', 3),
+(527, 1, 123, 1, 0, 0, 0.000000, 1, NULL, 0, 8.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:23', '2025-12-14 22:21:23', 3),
+(528, 1, 123, 1, 0, 0, 0.000000, 1, NULL, 0, 8.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:23', '2025-12-14 22:21:23', 3),
+(529, 1, 123, 1, 0, 0, 0.000000, 1, NULL, 0, 9.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:23', '2025-12-14 22:21:23', 3),
+(530, 1, 123, 1, 0, 0, 0.000000, 1, NULL, 0, 9.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:23', '2025-12-14 22:21:23', 3),
+(531, 1, 123, 1, 0, 0, 0.000000, 1, NULL, 0, 26.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:23', '2025-12-14 22:21:23', 3),
+(532, 1, 123, 1, 0, 0, 0.000000, 1, NULL, 0, 10.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:23', '2025-12-14 22:21:23', 3),
+(533, 1, 123, 1, 0, 0, 0.000000, 1, NULL, 0, 14.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:23', '2025-12-14 22:21:23', 3),
+(534, 1, 123, 1, 0, 0, 0.000000, 1, NULL, 0, 14.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:23', '2025-12-14 22:21:23', 3),
+(535, 1, 123, 1, 0, 0, 0.000000, 1, NULL, 0, 14.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:23', '2025-12-14 22:21:23', 3),
+(536, 1, 123, 1, 0, 0, 0.000000, 1, NULL, 0, 15.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:23', '2025-12-14 22:21:23', 3),
+(537, 1, 126, 1, 0, 0, 0.000000, 1, NULL, 0, 20.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:23', '2025-12-14 22:21:23', 3),
+(538, 1, 126, 1, 0, 0, 0.000000, 1, NULL, 0, 20.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:29', '2025-12-14 22:21:29', 3),
+(539, 1, 126, 1, 0, 0, 0.000000, 1, NULL, 0, 20.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:29', '2025-12-14 22:21:29', 3),
+(540, 1, 126, 1, 0, 0, 0.000000, 1, NULL, 0, 25.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:29', '2025-12-14 22:21:29', 3),
+(541, 1, 126, 1, 0, 0, 0.000000, 1, NULL, 0, 20.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:29', '2025-12-14 22:21:29', 3),
+(542, 1, 126, 1, 0, 0, 0.000000, 1, NULL, 0, 20.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:29', '2025-12-14 22:21:29', 3),
+(543, 1, 37, 1, 0, 0, 0.000000, 1, NULL, 0, 130.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:29', '2025-12-14 22:21:29', 3),
+(544, 1, 37, 1, 0, 0, 0.000000, 1, NULL, 0, 130.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:29', '2025-12-14 22:21:29', 3),
+(545, 1, 36, 1, 0, 0, 0.000000, 1, NULL, 0, 33.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:29', '2025-12-14 22:21:29', 3),
+(546, 1, 36, 1, 0, 0, 0.000000, 1, NULL, 0, 28.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:29', '2025-12-14 22:21:29', 3),
+(547, 1, 36, 1, 0, 0, 0.000000, 1, NULL, 0, 30.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:29', '2025-12-14 22:21:29', 3),
+(548, 1, 36, 1, 0, 0, 0.000000, 1, NULL, 0, 25.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:29', '2025-12-14 22:21:29', 3),
+(549, 1, 44, 1, 0, 0, 0.000000, 1, NULL, 0, 91.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:29', '2025-12-14 22:21:29', 3),
+(550, 1, 43, 1, 0, 0, 0.000000, 1, NULL, 0, 58.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:29', '2025-12-14 22:21:29', 3),
+(551, 1, 44, 1, 0, 0, 0.000000, 1, NULL, 0, 99.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:29', '2025-12-14 22:21:29', 3),
+(552, 1, 44, 1, 0, 0, 0.000000, 1, NULL, 0, 139.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:29', '2025-12-14 22:21:29', 3),
+(553, 1, 44, 1, 0, 0, 0.000000, 1, NULL, 0, 49.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:29', '2025-12-14 22:21:29', 3),
+(554, 1, 44, 1, 0, 0, 0.000000, 1, NULL, 0, 86.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:29', '2025-12-14 22:21:29', 3),
+(555, 1, 44, 1, 0, 0, 0.000000, 1, NULL, 0, 77.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:29', '2025-12-14 22:21:29', 3),
+(556, 1, 36, 1, 0, 0, 0.000000, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:29', '2025-12-14 22:21:29', 3),
+(557, 1, 36, 1, 0, 0, 0.000000, 1, NULL, 0, 32.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:29', '2025-12-14 22:21:29', 3),
+(558, 1, 36, 1, 0, 0, 0.000000, 1, NULL, 0, 26.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:37', '2025-12-14 22:21:37', 3),
+(559, 1, 43, 1, 0, 0, 0.000000, 1, NULL, 0, 74.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:37', '2025-12-14 22:21:37', 3),
+(560, 1, 44, 1, 0, 0, 0.000000, 1, NULL, 0, 54.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:37', '2025-12-14 22:21:37', 3),
+(561, 1, 44, 1, 0, 0, 0.000000, 1, NULL, 0, 63.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:37', '2025-12-14 22:21:37', 3),
+(562, 1, 44, 1, 0, 0, 0.000000, 1, NULL, 0, 70.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:37', '2025-12-14 22:21:37', 3),
+(563, 1, 44, 1, 0, 0, 0.000000, 1, NULL, 0, 54.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:37', '2025-12-14 22:21:37', 3),
+(564, 1, 44, 1, 0, 0, 0.000000, 1, NULL, 0, 79.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:37', '2025-12-14 22:21:37', 3),
+(565, 1, 44, 1, 0, 0, 0.000000, 1, NULL, 0, 56.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:37', '2025-12-14 22:21:37', 3),
+(566, 1, 44, 1, 0, 0, 0.000000, 1, NULL, 0, 88.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:37', '2025-12-14 22:21:37', 3),
+(567, 1, 44, 1, 0, 0, 0.000000, 1, NULL, 0, 47.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:37', '2025-12-14 22:21:37', 3),
+(568, 1, 44, 1, 0, 0, 0.000000, 1, NULL, 0, 58.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:37', '2025-12-14 22:21:37', 3),
+(569, 1, 44, 1, 0, 0, 0.000000, 1, NULL, 0, 91.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:42', '2025-12-14 22:21:42', 3),
+(570, 1, 44, 1, 0, 0, 0.000000, 1, NULL, 0, 149.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:42', '2025-12-14 22:21:42', 3),
+(571, 1, 44, 1, 0, 0, 0.000000, 1, NULL, 0, 63.630000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:42', '2025-12-14 22:21:42', 3),
+(572, 1, 44, 1, 0, 0, 0.000000, 1, NULL, 0, 69.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:42', '2025-12-14 22:21:42', 3),
+(573, 1, 44, 1, 0, 0, 0.000000, 1, NULL, 0, 59.430000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:42', '2025-12-14 22:21:42', 3),
+(574, 1, 44, 1, 0, 0, 0.000000, 1, NULL, 0, 59.430000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:42', '2025-12-14 22:21:42', 3),
+(575, 1, 44, 1, 0, 0, 0.000000, 1, NULL, 0, 79.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:42', '2025-12-14 22:21:42', 3),
+(576, 1, 36, 1, 0, 0, 0.000000, 1, NULL, 0, 26.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:42', '2025-12-14 22:21:42', 3),
+(577, 1, 129, 1, 0, 0, 0.000000, 1, NULL, 0, 74.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:42', '2025-12-14 22:21:42', 3),
+(578, 1, 129, 1, 0, 0, 0.000000, 1, NULL, 0, 59.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:42', '2025-12-14 22:21:42', 3),
+(579, 1, 129, 1, 0, 0, 0.000000, 1, NULL, 0, 149.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:48', '2025-12-14 22:21:48', 3),
+(580, 1, 129, 1, 0, 0, 0.000000, 1, NULL, 0, 99.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:48', '2025-12-14 22:21:48', 3),
+(581, 1, 129, 1, 0, 0, 0.000000, 1, NULL, 0, 149.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:48', '2025-12-14 22:21:48', 3),
+(582, 1, 44, 1, 0, 0, 0.000000, 1, NULL, 0, 79.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:48', '2025-12-14 22:21:48', 3),
+(583, 1, 44, 1, 0, 0, 0.000000, 1, NULL, 0, 159.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:48', '2025-12-14 22:21:48', 3),
+(584, 1, 44, 1, 0, 0, 0.000000, 1, NULL, 0, 54.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:48', '2025-12-14 22:21:48', 3),
+(585, 1, 129, 1, 0, 0, 0.000000, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:48', '2025-12-14 22:21:48', 3),
+(586, 1, 129, 1, 0, 0, 0.000000, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:53', '2025-12-14 22:21:53', 3),
+(587, 1, 129, 1, 0, 0, 0.000000, 1, NULL, 0, 59.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:53', '2025-12-14 22:21:53', 3),
+(588, 1, 129, 1, 0, 0, 0.000000, 1, NULL, 0, 64.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:53', '2025-12-14 22:21:53', 3),
+(589, 1, 129, 1, 0, 0, 0.000000, 1, NULL, 0, 109.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:53', '2025-12-14 22:21:53', 3),
+(590, 1, 129, 1, 0, 0, 0.000000, 1, NULL, 0, 149.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:53', '2025-12-14 22:21:53', 3),
+(591, 1, 129, 1, 0, 0, 0.000000, 1, NULL, 0, 84.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:53', '2025-12-14 22:21:53', 3),
+(592, 1, 90, 1, 0, 0, 0.000000, 1, NULL, 0, 26.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:53', '2025-12-14 22:21:53', 3),
+(593, 1, 36, 1, 0, 0, 0.000000, 1, NULL, 0, 19.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:57', '2025-12-14 22:21:57', 3),
+(594, 1, 36, 1, 0, 0, 0.000000, 1, NULL, 0, 32.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:57', '2025-12-14 22:21:57', 3),
+(595, 1, 44, 1, 0, 0, 0.000000, 1, NULL, 0, 56.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:57', '2025-12-14 22:21:57', 3),
+(596, 1, 44, 1, 0, 0, 0.000000, 1, NULL, 0, 61.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:57', '2025-12-14 22:21:57', 3),
+(597, 1, 44, 1, 0, 0, 0.000000, 1, NULL, 0, 55.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:57', '2025-12-14 22:21:57', 3),
+(598, 1, 44, 1, 0, 0, 0.000000, 1, NULL, 0, 79.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:57', '2025-12-14 22:21:57', 3),
+(599, 1, 44, 1, 0, 0, 0.000000, 1, NULL, 0, 89.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:57', '2025-12-14 22:21:57', 3),
+(600, 1, 44, 1, 0, 0, 0.000000, 1, NULL, 0, 87.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:57', '2025-12-14 22:21:57', 3),
+(601, 1, 44, 1, 0, 0, 0.000000, 1, NULL, 0, 134.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:21:57', '2025-12-14 22:21:57', 3),
+(602, 1, 44, 1, 0, 0, 0.000000, 1, NULL, 0, 169.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:00', '2025-12-14 22:22:00', 3),
+(603, 1, 44, 1, 0, 0, 0.000000, 1, NULL, 0, 169.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:00', '2025-12-14 22:22:00', 3),
+(604, 1, 114, 1, 0, 0, 0.000000, 1, NULL, 0, 14.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:00', '2025-12-14 22:22:00', 3),
+(605, 1, 114, 1, 0, 0, 0.000000, 1, NULL, 0, 19.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:00', '2025-12-14 22:22:00', 3),
+(606, 1, 114, 1, 0, 0, 0.000000, 1, NULL, 0, 40.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:00', '2025-12-14 22:22:00', 3),
+(607, 1, 114, 1, 0, 0, 0.000000, 1, NULL, 0, 36.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:00', '2025-12-14 22:22:00', 3),
+(608, 1, 114, 1, 0, 0, 0.000000, 1, NULL, 0, 30.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:00', '2025-12-14 22:22:00', 3),
+(609, 1, 114, 1, 0, 0, 0.000000, 1, NULL, 0, 43.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:00', '2025-12-14 22:22:00', 3),
+(610, 1, 114, 1, 0, 0, 0.000000, 1, NULL, 0, 53.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:00', '2025-12-14 22:22:00', 3),
+(611, 1, 114, 1, 0, 0, 0.000000, 1, NULL, 0, 25.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:00', '2025-12-14 22:22:00', 3),
+(612, 1, 114, 1, 0, 0, 0.000000, 1, NULL, 0, 9.000000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:00', '2025-12-14 22:22:00', 3),
+(613, 1, 98, 1, 0, 0, 0.000000, 1, NULL, 0, 86.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:04', '2025-12-14 22:22:04', 3),
+(614, 1, 44, 1, 0, 0, 0.000000, 1, NULL, 0, 139.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:04', '2025-12-14 22:22:04', 3),
+(615, 1, 44, 1, 0, 0, 0.000000, 1, NULL, 0, 91.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:04', '2025-12-14 22:22:04', 3),
+(616, 1, 130, 1, 0, 0, 0.000000, 1, NULL, 0, 5.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:04', '2025-12-14 22:22:04', 3),
+(617, 1, 130, 1, 0, 0, 0.000000, 1, NULL, 0, 5.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:04', '2025-12-14 22:22:04', 3),
+(618, 1, 130, 1, 0, 0, 0.000000, 1, NULL, 0, 5.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:04', '2025-12-14 22:22:04', 3),
+(619, 1, 131, 1, 0, 0, 0.000000, 1, NULL, 0, 69.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:04', '2025-12-14 22:22:04', 3),
+(620, 1, 131, 1, 0, 0, 0.000000, 1, NULL, 0, 129.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:04', '2025-12-14 22:22:04', 3),
+(621, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 27.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:04', '2025-12-14 22:22:04', 3),
+(622, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 31.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:04', '2025-12-14 22:22:04', 3),
+(623, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 27.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:04', '2025-12-14 22:22:04', 3),
+(624, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 29.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:04', '2025-12-14 22:22:04', 3),
+(625, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:04', '2025-12-14 22:22:04', 3),
+(626, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:04', '2025-12-14 22:22:04', 3),
+(627, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:08', '2025-12-14 22:22:08', 3),
+(628, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:08', '2025-12-14 22:22:08', 3),
+(629, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:08', '2025-12-14 22:22:08', 3),
+(630, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 34.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:08', '2025-12-14 22:22:08', 3),
+(631, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:08', '2025-12-14 22:22:08', 3),
+(632, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:08', '2025-12-14 22:22:08', 3),
+(633, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 1.690000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:08', '2025-12-14 22:22:08', 3),
+(634, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 42.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:08', '2025-12-14 22:22:08', 3),
+(635, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 42.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:08', '2025-12-14 22:22:08', 3),
+(636, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 38.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:08', '2025-12-14 22:22:08', 3),
+(637, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 42.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:08', '2025-12-14 22:22:08', 3),
+(638, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 42.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:08', '2025-12-14 22:22:08', 3),
+(639, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 23.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:08', '2025-12-14 22:22:08', 3),
+(640, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 23.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:08', '2025-12-14 22:22:08', 3),
+(641, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 23.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:08', '2025-12-14 22:22:08', 3),
+(642, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 23.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:08', '2025-12-14 22:22:08', 3),
+(643, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 23.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:08', '2025-12-14 22:22:08', 3),
+(644, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 23.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:12', '2025-12-14 22:22:12', 3),
+(645, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 23.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:12', '2025-12-14 22:22:12', 3),
+(646, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 11.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:12', '2025-12-14 22:22:12', 3),
+(647, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 11.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:12', '2025-12-14 22:22:12', 3),
+(648, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 11.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:12', '2025-12-14 22:22:12', 3),
+(649, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 11.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:12', '2025-12-14 22:22:12', 3),
+(650, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 11.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:12', '2025-12-14 22:22:12', 3),
+(651, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 11.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:12', '2025-12-14 22:22:12', 3),
+(652, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 11.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:12', '2025-12-14 22:22:12', 3),
+(653, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 11.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:12', '2025-12-14 22:22:12', 3),
+(654, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 11.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:12', '2025-12-14 22:22:12', 3),
+(655, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 11.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:12', '2025-12-14 22:22:12', 3),
+(656, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 20.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:12', '2025-12-14 22:22:12', 3),
+(657, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 20.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:12', '2025-12-14 22:22:12', 3),
+(658, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 20.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:12', '2025-12-14 22:22:12', 3),
+(659, 1, 137, 1, 0, 0, 0.000000, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:12', '2025-12-14 22:22:12', 3),
+(660, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:12', '2025-12-14 22:22:12', 3),
+(661, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 20.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:12', '2025-12-14 22:22:12', 3),
+(662, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 25.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:12', '2025-12-14 22:22:12', 3),
+(663, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 25.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:12', '2025-12-14 22:22:12', 3),
+(664, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 19.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:12', '2025-12-14 22:22:12', 3),
+(665, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 16.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:12', '2025-12-14 22:22:12', 3),
+(666, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 8.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:12', '2025-12-14 22:22:12', 3),
+(667, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 8.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:12', '2025-12-14 22:22:12', 3),
+(668, 1, 86, 1, 0, 0, 0.000000, 1, NULL, 0, 25.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:12', '2025-12-14 22:22:12', 3),
+(669, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 36.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:12', '2025-12-14 22:22:12', 3),
+(670, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 23.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:15', '2025-12-14 22:22:15', 3),
+(671, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 8.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:15', '2025-12-14 22:22:15', 3),
+(672, 1, 86, 1, 0, 0, 0.000000, 1, NULL, 0, 24.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:15', '2025-12-14 22:22:15', 3),
+(673, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 8.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:15', '2025-12-14 22:22:15', 3),
+(674, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 39.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:15', '2025-12-14 22:22:15', 3),
+(675, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 8.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:15', '2025-12-14 22:22:15', 3),
+(676, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 9.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:15', '2025-12-14 22:22:15', 3),
+(677, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 36.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:15', '2025-12-14 22:22:15', 3),
+(678, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 30.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:15', '2025-12-14 22:22:15', 3),
+(679, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 30.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:15', '2025-12-14 22:22:15', 3),
+(680, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 36.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:15', '2025-12-14 22:22:15', 3),
+(681, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 8.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:15', '2025-12-14 22:22:15', 3),
+(682, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 8.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:15', '2025-12-14 22:22:15', 3),
+(683, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 8.900000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:15', '2025-12-14 22:22:15', 3),
+(684, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 6.200000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:15', '2025-12-14 22:22:15', 3),
+(685, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 6.200000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:15', '2025-12-14 22:22:15', 3),
+(686, 1, 132, 1, 0, 0, 0.000000, 1, NULL, 0, 6.200000, 0.000000, '', 0.000000, 0.000000, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2025-12-14 22:22:15', '2025-12-14 22:22:15', 3);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_product_supplier`
+-- Структура таблицы `ps_product_supplier`
 --
 
 CREATE TABLE `ps_product_supplier` (
@@ -8940,7 +18502,7 @@ CREATE TABLE `ps_product_supplier` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_product_tag`
+-- Структура таблицы `ps_product_tag`
 --
 
 CREATE TABLE `ps_product_tag` (
@@ -8952,7 +18514,7 @@ CREATE TABLE `ps_product_tag` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_profile`
+-- Структура таблицы `ps_profile`
 --
 
 CREATE TABLE `ps_profile` (
@@ -8960,7 +18522,7 @@ CREATE TABLE `ps_profile` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_profile`
+-- Дамп данных таблицы `ps_profile`
 --
 
 INSERT INTO `ps_profile` (`id_profile`) VALUES
@@ -8969,7 +18531,7 @@ INSERT INTO `ps_profile` (`id_profile`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_profile_lang`
+-- Структура таблицы `ps_profile_lang`
 --
 
 CREATE TABLE `ps_profile_lang` (
@@ -8979,7 +18541,7 @@ CREATE TABLE `ps_profile_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_profile_lang`
+-- Дамп данных таблицы `ps_profile_lang`
 --
 
 INSERT INTO `ps_profile_lang` (`id_lang`, `id_profile`, `name`) VALUES
@@ -8988,7 +18550,7 @@ INSERT INTO `ps_profile_lang` (`id_lang`, `id_profile`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_pscheckout_authorization`
+-- Структура таблицы `ps_pscheckout_authorization`
 --
 
 CREATE TABLE `ps_pscheckout_authorization` (
@@ -9002,7 +18564,7 @@ CREATE TABLE `ps_pscheckout_authorization` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_pscheckout_capture`
+-- Структура таблицы `ps_pscheckout_capture`
 --
 
 CREATE TABLE `ps_pscheckout_capture` (
@@ -9019,7 +18581,7 @@ CREATE TABLE `ps_pscheckout_capture` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_pscheckout_cart`
+-- Структура таблицы `ps_pscheckout_cart`
 --
 
 CREATE TABLE `ps_pscheckout_cart` (
@@ -9042,7 +18604,7 @@ CREATE TABLE `ps_pscheckout_cart` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_pscheckout_customer`
+-- Структура таблицы `ps_pscheckout_customer`
 --
 
 CREATE TABLE `ps_pscheckout_customer` (
@@ -9053,7 +18615,7 @@ CREATE TABLE `ps_pscheckout_customer` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_pscheckout_funding_source`
+-- Структура таблицы `ps_pscheckout_funding_source`
 --
 
 CREATE TABLE `ps_pscheckout_funding_source` (
@@ -9064,7 +18626,7 @@ CREATE TABLE `ps_pscheckout_funding_source` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_pscheckout_funding_source`
+-- Дамп данных таблицы `ps_pscheckout_funding_source`
 --
 
 INSERT INTO `ps_pscheckout_funding_source` (`name`, `active`, `position`, `id_shop`) VALUES
@@ -9083,7 +18645,7 @@ INSERT INTO `ps_pscheckout_funding_source` (`name`, `active`, `position`, `id_sh
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_pscheckout_order`
+-- Структура таблицы `ps_pscheckout_order`
 --
 
 CREATE TABLE `ps_pscheckout_order` (
@@ -9104,7 +18666,7 @@ CREATE TABLE `ps_pscheckout_order` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_pscheckout_order_matrice`
+-- Структура таблицы `ps_pscheckout_order_matrice`
 --
 
 CREATE TABLE `ps_pscheckout_order_matrice` (
@@ -9116,7 +18678,7 @@ CREATE TABLE `ps_pscheckout_order_matrice` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_pscheckout_payment_token`
+-- Структура таблицы `ps_pscheckout_payment_token`
 --
 
 CREATE TABLE `ps_pscheckout_payment_token` (
@@ -9133,7 +18695,7 @@ CREATE TABLE `ps_pscheckout_payment_token` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_pscheckout_purchase_unit`
+-- Структура таблицы `ps_pscheckout_purchase_unit`
 --
 
 CREATE TABLE `ps_pscheckout_purchase_unit` (
@@ -9146,7 +18708,7 @@ CREATE TABLE `ps_pscheckout_purchase_unit` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_pscheckout_refund`
+-- Структура таблицы `ps_pscheckout_refund`
 --
 
 CREATE TABLE `ps_pscheckout_refund` (
@@ -9163,7 +18725,7 @@ CREATE TABLE `ps_pscheckout_refund` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_pscheckout_tracking`
+-- Структура таблицы `ps_pscheckout_tracking`
 --
 
 CREATE TABLE `ps_pscheckout_tracking` (
@@ -9187,7 +18749,7 @@ CREATE TABLE `ps_pscheckout_tracking` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_psgdpr_consent`
+-- Структура таблицы `ps_psgdpr_consent`
 --
 
 CREATE TABLE `ps_psgdpr_consent` (
@@ -9203,7 +18765,7 @@ CREATE TABLE `ps_psgdpr_consent` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_psgdpr_consent_lang`
+-- Структура таблицы `ps_psgdpr_consent_lang`
 --
 
 CREATE TABLE `ps_psgdpr_consent_lang` (
@@ -9216,7 +18778,7 @@ CREATE TABLE `ps_psgdpr_consent_lang` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_psgdpr_log`
+-- Структура таблицы `ps_psgdpr_log`
 --
 
 CREATE TABLE `ps_psgdpr_log` (
@@ -9233,7 +18795,7 @@ CREATE TABLE `ps_psgdpr_log` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_psreassurance`
+-- Структура таблицы `ps_psreassurance`
 --
 
 CREATE TABLE `ps_psreassurance` (
@@ -9249,7 +18811,7 @@ CREATE TABLE `ps_psreassurance` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_psreassurance`
+-- Дамп данных таблицы `ps_psreassurance`
 --
 
 INSERT INTO `ps_psreassurance` (`id_psreassurance`, `icon`, `custom_icon`, `status`, `position`, `type_link`, `id_cms`, `date_add`, `date_upd`) VALUES
@@ -9260,7 +18822,7 @@ INSERT INTO `ps_psreassurance` (`id_psreassurance`, `icon`, `custom_icon`, `stat
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_psreassurance_lang`
+-- Структура таблицы `ps_psreassurance_lang`
 --
 
 CREATE TABLE `ps_psreassurance_lang` (
@@ -9272,7 +18834,7 @@ CREATE TABLE `ps_psreassurance_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_psreassurance_lang`
+-- Дамп данных таблицы `ps_psreassurance_lang`
 --
 
 INSERT INTO `ps_psreassurance_lang` (`id_psreassurance`, `id_lang`, `title`, `description`, `link`) VALUES
@@ -9283,7 +18845,7 @@ INSERT INTO `ps_psreassurance_lang` (`id_psreassurance`, `id_lang`, `title`, `de
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_quick_access`
+-- Структура таблицы `ps_quick_access`
 --
 
 CREATE TABLE `ps_quick_access` (
@@ -9293,7 +18855,7 @@ CREATE TABLE `ps_quick_access` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_quick_access`
+-- Дамп данных таблицы `ps_quick_access`
 --
 
 INSERT INTO `ps_quick_access` (`id_quick_access`, `new_window`, `link`) VALUES
@@ -9307,7 +18869,7 @@ INSERT INTO `ps_quick_access` (`id_quick_access`, `new_window`, `link`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_quick_access_lang`
+-- Структура таблицы `ps_quick_access_lang`
 --
 
 CREATE TABLE `ps_quick_access_lang` (
@@ -9317,7 +18879,7 @@ CREATE TABLE `ps_quick_access_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_quick_access_lang`
+-- Дамп данных таблицы `ps_quick_access_lang`
 --
 
 INSERT INTO `ps_quick_access_lang` (`id_quick_access`, `id_lang`, `name`) VALUES
@@ -9331,7 +18893,7 @@ INSERT INTO `ps_quick_access_lang` (`id_quick_access`, `id_lang`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_range_price`
+-- Структура таблицы `ps_range_price`
 --
 
 CREATE TABLE `ps_range_price` (
@@ -9342,7 +18904,7 @@ CREATE TABLE `ps_range_price` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_range_price`
+-- Дамп данных таблицы `ps_range_price`
 --
 
 INSERT INTO `ps_range_price` (`id_range_price`, `id_carrier`, `delimiter1`, `delimiter2`) VALUES
@@ -9354,7 +18916,7 @@ INSERT INTO `ps_range_price` (`id_range_price`, `id_carrier`, `delimiter1`, `del
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_range_weight`
+-- Структура таблицы `ps_range_weight`
 --
 
 CREATE TABLE `ps_range_weight` (
@@ -9367,7 +18929,7 @@ CREATE TABLE `ps_range_weight` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_referrer`
+-- Структура таблицы `ps_referrer`
 --
 
 CREATE TABLE `ps_referrer` (
@@ -9391,7 +18953,7 @@ CREATE TABLE `ps_referrer` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_referrer_cache`
+-- Структура таблицы `ps_referrer_cache`
 --
 
 CREATE TABLE `ps_referrer_cache` (
@@ -9402,7 +18964,7 @@ CREATE TABLE `ps_referrer_cache` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_referrer_shop`
+-- Структура таблицы `ps_referrer_shop`
 --
 
 CREATE TABLE `ps_referrer_shop` (
@@ -9421,7 +18983,7 @@ CREATE TABLE `ps_referrer_shop` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_request_sql`
+-- Структура таблицы `ps_request_sql`
 --
 
 CREATE TABLE `ps_request_sql` (
@@ -9433,7 +18995,7 @@ CREATE TABLE `ps_request_sql` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_required_field`
+-- Структура таблицы `ps_required_field`
 --
 
 CREATE TABLE `ps_required_field` (
@@ -9445,7 +19007,7 @@ CREATE TABLE `ps_required_field` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_risk`
+-- Структура таблицы `ps_risk`
 --
 
 CREATE TABLE `ps_risk` (
@@ -9455,7 +19017,7 @@ CREATE TABLE `ps_risk` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_risk`
+-- Дамп данных таблицы `ps_risk`
 --
 
 INSERT INTO `ps_risk` (`id_risk`, `percent`, `color`) VALUES
@@ -9467,7 +19029,7 @@ INSERT INTO `ps_risk` (`id_risk`, `percent`, `color`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_risk_lang`
+-- Структура таблицы `ps_risk_lang`
 --
 
 CREATE TABLE `ps_risk_lang` (
@@ -9477,7 +19039,7 @@ CREATE TABLE `ps_risk_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_risk_lang`
+-- Дамп данных таблицы `ps_risk_lang`
 --
 
 INSERT INTO `ps_risk_lang` (`id_risk`, `id_lang`, `name`) VALUES
@@ -9489,7 +19051,7 @@ INSERT INTO `ps_risk_lang` (`id_risk`, `id_lang`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_search_engine`
+-- Структура таблицы `ps_search_engine`
 --
 
 CREATE TABLE `ps_search_engine` (
@@ -9499,7 +19061,7 @@ CREATE TABLE `ps_search_engine` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_search_engine`
+-- Дамп данных таблицы `ps_search_engine`
 --
 
 INSERT INTO `ps_search_engine` (`id_search_engine`, `server`, `getvar`) VALUES
@@ -9545,7 +19107,7 @@ INSERT INTO `ps_search_engine` (`id_search_engine`, `server`, `getvar`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_search_index`
+-- Структура таблицы `ps_search_index`
 --
 
 CREATE TABLE `ps_search_index` (
@@ -9557,7 +19119,7 @@ CREATE TABLE `ps_search_index` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_search_word`
+-- Структура таблицы `ps_search_word`
 --
 
 CREATE TABLE `ps_search_word` (
@@ -9570,7 +19132,7 @@ CREATE TABLE `ps_search_word` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_shop`
+-- Структура таблицы `ps_shop`
 --
 
 CREATE TABLE `ps_shop` (
@@ -9585,16 +19147,16 @@ CREATE TABLE `ps_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `ps_shop`
+-- Дамп данных таблицы `ps_shop`
 --
 
 INSERT INTO `ps_shop` (`id_shop`, `id_shop_group`, `name`, `color`, `id_category`, `theme_name`, `active`, `deleted`) VALUES
-(1, 1, 'Czas na herbatę', '', 2, 'classic', 1, 0);
+(1, 1, 'Czas na herbatę', '', 2, 'czasnaherbate', 1, 0);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_shop_group`
+-- Структура таблицы `ps_shop_group`
 --
 
 CREATE TABLE `ps_shop_group` (
@@ -9609,7 +19171,7 @@ CREATE TABLE `ps_shop_group` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `ps_shop_group`
+-- Дамп данных таблицы `ps_shop_group`
 --
 
 INSERT INTO `ps_shop_group` (`id_shop_group`, `name`, `color`, `share_customer`, `share_order`, `share_stock`, `active`, `deleted`) VALUES
@@ -9618,7 +19180,7 @@ INSERT INTO `ps_shop_group` (`id_shop_group`, `name`, `color`, `share_customer`,
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_shop_url`
+-- Структура таблицы `ps_shop_url`
 --
 
 CREATE TABLE `ps_shop_url` (
@@ -9633,7 +19195,7 @@ CREATE TABLE `ps_shop_url` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_shop_url`
+-- Дамп данных таблицы `ps_shop_url`
 --
 
 INSERT INTO `ps_shop_url` (`id_shop_url`, `id_shop`, `domain`, `domain_ssl`, `physical_uri`, `virtual_uri`, `main`, `active`) VALUES
@@ -9642,7 +19204,7 @@ INSERT INTO `ps_shop_url` (`id_shop_url`, `id_shop`, `domain`, `domain_ssl`, `ph
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_smarty_cache`
+-- Структура таблицы `ps_smarty_cache`
 --
 
 CREATE TABLE `ps_smarty_cache` (
@@ -9656,7 +19218,7 @@ CREATE TABLE `ps_smarty_cache` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_smarty_last_flush`
+-- Структура таблицы `ps_smarty_last_flush`
 --
 
 CREATE TABLE `ps_smarty_last_flush` (
@@ -9667,7 +19229,7 @@ CREATE TABLE `ps_smarty_last_flush` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_smarty_lazy_cache`
+-- Структура таблицы `ps_smarty_lazy_cache`
 --
 
 CREATE TABLE `ps_smarty_lazy_cache` (
@@ -9681,7 +19243,7 @@ CREATE TABLE `ps_smarty_lazy_cache` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_specific_price`
+-- Структура таблицы `ps_specific_price`
 --
 
 CREATE TABLE `ps_specific_price` (
@@ -9708,7 +19270,7 @@ CREATE TABLE `ps_specific_price` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_specific_price_priority`
+-- Структура таблицы `ps_specific_price_priority`
 --
 
 CREATE TABLE `ps_specific_price_priority` (
@@ -9720,7 +19282,7 @@ CREATE TABLE `ps_specific_price_priority` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_specific_price_rule`
+-- Структура таблицы `ps_specific_price_rule`
 --
 
 CREATE TABLE `ps_specific_price_rule` (
@@ -9742,7 +19304,7 @@ CREATE TABLE `ps_specific_price_rule` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_specific_price_rule_condition`
+-- Структура таблицы `ps_specific_price_rule_condition`
 --
 
 CREATE TABLE `ps_specific_price_rule_condition` (
@@ -9755,7 +19317,7 @@ CREATE TABLE `ps_specific_price_rule_condition` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_specific_price_rule_condition_group`
+-- Структура таблицы `ps_specific_price_rule_condition_group`
 --
 
 CREATE TABLE `ps_specific_price_rule_condition_group` (
@@ -9766,7 +19328,7 @@ CREATE TABLE `ps_specific_price_rule_condition_group` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_state`
+-- Структура таблицы `ps_state`
 --
 
 CREATE TABLE `ps_state` (
@@ -9780,7 +19342,7 @@ CREATE TABLE `ps_state` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_state`
+-- Дамп данных таблицы `ps_state`
 --
 
 INSERT INTO `ps_state` (`id_state`, `id_country`, `id_zone`, `name`, `iso_code`, `tax_behavior`, `active`) VALUES
@@ -10140,7 +19702,7 @@ INSERT INTO `ps_state` (`id_state`, `id_country`, `id_zone`, `name`, `iso_code`,
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_statssearch`
+-- Структура таблицы `ps_statssearch`
 --
 
 CREATE TABLE `ps_statssearch` (
@@ -10155,7 +19717,7 @@ CREATE TABLE `ps_statssearch` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_stock`
+-- Структура таблицы `ps_stock`
 --
 
 CREATE TABLE `ps_stock` (
@@ -10176,7 +19738,7 @@ CREATE TABLE `ps_stock` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_stock_available`
+-- Структура таблицы `ps_stock_available`
 --
 
 CREATE TABLE `ps_stock_available` (
@@ -10194,16 +19756,701 @@ CREATE TABLE `ps_stock_available` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_stock_available`
+-- Дамп данных таблицы `ps_stock_available`
 --
 
 INSERT INTO `ps_stock_available` (`id_stock_available`, `id_product`, `id_product_attribute`, `id_shop`, `id_shop_group`, `quantity`, `physical_quantity`, `reserved_quantity`, `depends_on_stock`, `out_of_stock`, `location`) VALUES
-(1, 1, 0, 1, 0, 0, 0, 0, 0, 2, '');
+(1, 1, 0, 1, 0, 66, 0, 0, 0, 2, ''),
+(2, 2, 0, 1, 0, 27, 0, 0, 0, 2, ''),
+(3, 3, 0, 1, 0, 64, 0, 0, 0, 2, ''),
+(4, 4, 0, 1, 0, 14, 0, 0, 0, 2, ''),
+(5, 5, 0, 1, 0, 22, 0, 0, 0, 2, ''),
+(6, 6, 0, 1, 0, 51, 0, 0, 0, 2, ''),
+(7, 7, 0, 1, 0, 48, 0, 0, 0, 2, ''),
+(8, 8, 0, 1, 0, 27, 0, 0, 0, 2, ''),
+(9, 9, 0, 1, 0, 11, 0, 0, 0, 2, ''),
+(10, 10, 0, 1, 0, 3, 0, 0, 0, 2, ''),
+(11, 11, 0, 1, 0, 51, 0, 0, 0, 2, ''),
+(12, 12, 0, 1, 0, 60, 0, 0, 0, 2, ''),
+(13, 13, 0, 1, 0, 13, 0, 0, 0, 2, ''),
+(14, 14, 0, 1, 0, 38, 0, 0, 0, 2, ''),
+(15, 15, 0, 1, 0, 85, 0, 0, 0, 2, ''),
+(16, 16, 0, 1, 0, 1, 0, 0, 0, 2, ''),
+(17, 17, 0, 1, 0, 42, 0, 0, 0, 2, ''),
+(18, 18, 0, 1, 0, 64, 0, 0, 0, 2, ''),
+(19, 19, 0, 1, 0, 10, 0, 0, 0, 2, ''),
+(20, 20, 0, 1, 0, 31, 0, 0, 0, 2, ''),
+(21, 21, 0, 1, 0, 40, 0, 0, 0, 2, ''),
+(22, 22, 0, 1, 0, 28, 0, 0, 0, 2, ''),
+(23, 23, 0, 1, 0, 5, 0, 0, 0, 2, ''),
+(24, 24, 0, 1, 0, 25, 0, 0, 0, 2, ''),
+(25, 25, 0, 1, 0, 22, 0, 0, 0, 2, ''),
+(26, 26, 0, 1, 0, 39, 0, 0, 0, 2, ''),
+(27, 27, 0, 1, 0, 44, 0, 0, 0, 2, ''),
+(28, 28, 0, 1, 0, 2, 0, 0, 0, 2, ''),
+(29, 29, 0, 1, 0, 66, 0, 0, 0, 2, ''),
+(30, 30, 0, 1, 0, 2, 0, 0, 0, 2, ''),
+(31, 31, 0, 1, 0, 58, 0, 0, 0, 2, ''),
+(32, 32, 0, 1, 0, 39, 0, 0, 0, 2, ''),
+(33, 33, 0, 1, 0, 55, 0, 0, 0, 2, ''),
+(34, 34, 0, 1, 0, 27, 0, 0, 0, 2, ''),
+(35, 35, 0, 1, 0, 45, 0, 0, 0, 2, ''),
+(36, 36, 0, 1, 0, 38, 0, 0, 0, 2, ''),
+(37, 37, 0, 1, 0, 36, 0, 0, 0, 2, ''),
+(38, 38, 0, 1, 0, 93, 0, 0, 0, 2, ''),
+(39, 39, 0, 1, 0, 48, 0, 0, 0, 2, ''),
+(40, 40, 0, 1, 0, 57, 0, 0, 0, 2, ''),
+(41, 41, 0, 1, 0, 94, 0, 0, 0, 2, ''),
+(42, 42, 0, 1, 0, 84, 0, 0, 0, 2, ''),
+(43, 43, 0, 1, 0, 67, 0, 0, 0, 2, ''),
+(44, 44, 0, 1, 0, 92, 0, 0, 0, 2, ''),
+(45, 45, 0, 1, 0, 56, 0, 0, 0, 2, ''),
+(46, 46, 0, 1, 0, 54, 0, 0, 0, 2, ''),
+(47, 47, 0, 1, 0, 65, 0, 0, 0, 2, ''),
+(48, 48, 0, 1, 0, 67, 0, 0, 0, 2, ''),
+(49, 49, 0, 1, 0, 86, 0, 0, 0, 2, ''),
+(50, 50, 0, 1, 0, 6, 0, 0, 0, 2, ''),
+(51, 51, 0, 1, 0, 35, 0, 0, 0, 2, ''),
+(52, 52, 0, 1, 0, 1, 0, 0, 0, 2, ''),
+(53, 53, 0, 1, 0, 71, 0, 0, 0, 2, ''),
+(54, 54, 0, 1, 0, 30, 0, 0, 0, 2, ''),
+(55, 55, 0, 1, 0, 70, 0, 0, 0, 2, ''),
+(56, 56, 0, 1, 0, 88, 0, 0, 0, 2, ''),
+(57, 57, 0, 1, 0, 20, 0, 0, 0, 2, ''),
+(58, 58, 0, 1, 0, 92, 0, 0, 0, 2, ''),
+(59, 59, 0, 1, 0, 21, 0, 0, 0, 2, ''),
+(60, 60, 0, 1, 0, 84, 0, 0, 0, 2, ''),
+(61, 61, 0, 1, 0, 10, 0, 0, 0, 2, ''),
+(62, 62, 0, 1, 0, 15, 0, 0, 0, 2, ''),
+(63, 63, 0, 1, 0, 100, 0, 0, 0, 2, ''),
+(64, 64, 0, 1, 0, 6, 0, 0, 0, 2, ''),
+(65, 65, 0, 1, 0, 21, 0, 0, 0, 2, ''),
+(66, 66, 0, 1, 0, 54, 0, 0, 0, 2, ''),
+(67, 67, 0, 1, 0, 56, 0, 0, 0, 2, ''),
+(68, 68, 0, 1, 0, 56, 0, 0, 0, 2, ''),
+(69, 69, 0, 1, 0, 96, 0, 0, 0, 2, ''),
+(70, 70, 0, 1, 0, 81, 0, 0, 0, 2, ''),
+(71, 71, 0, 1, 0, 69, 0, 0, 0, 2, ''),
+(72, 72, 0, 1, 0, 27, 0, 0, 0, 2, ''),
+(73, 73, 0, 1, 0, 57, 0, 0, 0, 2, ''),
+(74, 74, 0, 1, 0, 87, 0, 0, 0, 2, ''),
+(75, 75, 0, 1, 0, 93, 0, 0, 0, 2, ''),
+(76, 76, 0, 1, 0, 78, 0, 0, 0, 2, ''),
+(77, 77, 0, 1, 0, 46, 0, 0, 0, 2, ''),
+(78, 78, 0, 1, 0, 28, 0, 0, 0, 2, ''),
+(79, 79, 0, 1, 0, 50, 0, 0, 0, 2, ''),
+(80, 80, 0, 1, 0, 90, 0, 0, 0, 2, ''),
+(81, 81, 0, 1, 0, 54, 0, 0, 0, 2, ''),
+(82, 82, 0, 1, 0, 20, 0, 0, 0, 2, ''),
+(83, 83, 0, 1, 0, 36, 0, 0, 0, 2, ''),
+(84, 84, 0, 1, 0, 67, 0, 0, 0, 2, ''),
+(85, 85, 0, 1, 0, 64, 0, 0, 0, 2, ''),
+(86, 86, 0, 1, 0, 39, 0, 0, 0, 2, ''),
+(87, 87, 0, 1, 0, 71, 0, 0, 0, 2, ''),
+(88, 88, 0, 1, 0, 74, 0, 0, 0, 2, ''),
+(89, 89, 0, 1, 0, 66, 0, 0, 0, 2, ''),
+(90, 90, 0, 1, 0, 89, 0, 0, 0, 2, ''),
+(91, 91, 0, 1, 0, 60, 0, 0, 0, 2, ''),
+(92, 92, 0, 1, 0, 95, 0, 0, 0, 2, ''),
+(93, 93, 0, 1, 0, 88, 0, 0, 0, 2, ''),
+(94, 94, 0, 1, 0, 28, 0, 0, 0, 2, ''),
+(95, 95, 0, 1, 0, 78, 0, 0, 0, 2, ''),
+(96, 96, 0, 1, 0, 72, 0, 0, 0, 2, ''),
+(97, 97, 0, 1, 0, 100, 0, 0, 0, 2, ''),
+(98, 98, 0, 1, 0, 70, 0, 0, 0, 2, ''),
+(99, 99, 0, 1, 0, 61, 0, 0, 0, 2, ''),
+(100, 100, 0, 1, 0, 70, 0, 0, 0, 2, ''),
+(101, 101, 0, 1, 0, 86, 0, 0, 0, 2, ''),
+(102, 102, 0, 1, 0, 66, 0, 0, 0, 2, ''),
+(103, 103, 0, 1, 0, 58, 0, 0, 0, 2, ''),
+(104, 104, 0, 1, 0, 39, 0, 0, 0, 2, ''),
+(105, 105, 0, 1, 0, 69, 0, 0, 0, 2, ''),
+(106, 106, 0, 1, 0, 22, 0, 0, 0, 2, ''),
+(107, 107, 0, 1, 0, 55, 0, 0, 0, 2, ''),
+(108, 108, 0, 1, 0, 24, 0, 0, 0, 2, ''),
+(109, 109, 0, 1, 0, 98, 0, 0, 0, 2, ''),
+(110, 110, 0, 1, 0, 40, 0, 0, 0, 2, ''),
+(111, 111, 0, 1, 0, 83, 0, 0, 0, 2, ''),
+(112, 112, 0, 1, 0, 58, 0, 0, 0, 2, ''),
+(113, 113, 0, 1, 0, 40, 0, 0, 0, 2, ''),
+(114, 114, 0, 1, 0, 26, 0, 0, 0, 2, ''),
+(115, 115, 0, 1, 0, 15, 0, 0, 0, 2, ''),
+(116, 116, 0, 1, 0, 30, 0, 0, 0, 2, ''),
+(117, 117, 0, 1, 0, 23, 0, 0, 0, 2, ''),
+(118, 118, 0, 1, 0, 97, 0, 0, 0, 2, ''),
+(119, 119, 0, 1, 0, 71, 0, 0, 0, 2, ''),
+(120, 120, 0, 1, 0, 93, 0, 0, 0, 2, ''),
+(121, 121, 0, 1, 0, 64, 0, 0, 0, 2, ''),
+(122, 122, 0, 1, 0, 27, 0, 0, 0, 2, ''),
+(123, 123, 0, 1, 0, 2, 0, 0, 0, 2, ''),
+(124, 124, 0, 1, 0, 89, 0, 0, 0, 2, ''),
+(125, 125, 0, 1, 0, 91, 0, 0, 0, 2, ''),
+(126, 126, 0, 1, 0, 24, 0, 0, 0, 2, ''),
+(127, 127, 0, 1, 0, 3, 0, 0, 0, 2, ''),
+(128, 128, 0, 1, 0, 34, 0, 0, 0, 2, ''),
+(129, 129, 0, 1, 0, 16, 0, 0, 0, 2, ''),
+(130, 130, 0, 1, 0, 40, 0, 0, 0, 2, ''),
+(131, 131, 0, 1, 0, 38, 0, 0, 0, 2, ''),
+(132, 132, 0, 1, 0, 2, 0, 0, 0, 2, ''),
+(133, 133, 0, 1, 0, 59, 0, 0, 0, 2, ''),
+(134, 134, 0, 1, 0, 21, 0, 0, 0, 2, ''),
+(135, 135, 0, 1, 0, 89, 0, 0, 0, 2, ''),
+(136, 136, 0, 1, 0, 98, 0, 0, 0, 2, ''),
+(137, 137, 0, 1, 0, 37, 0, 0, 0, 2, ''),
+(138, 138, 0, 1, 0, 33, 0, 0, 0, 2, ''),
+(139, 139, 0, 1, 0, 59, 0, 0, 0, 2, ''),
+(140, 140, 0, 1, 0, 87, 0, 0, 0, 2, ''),
+(141, 141, 0, 1, 0, 80, 0, 0, 0, 2, ''),
+(142, 142, 0, 1, 0, 87, 0, 0, 0, 2, ''),
+(143, 143, 0, 1, 0, 33, 0, 0, 0, 2, ''),
+(144, 144, 0, 1, 0, 88, 0, 0, 0, 2, ''),
+(145, 145, 0, 1, 0, 54, 0, 0, 0, 2, ''),
+(146, 146, 0, 1, 0, 52, 0, 0, 0, 2, ''),
+(147, 147, 0, 1, 0, 98, 0, 0, 0, 2, ''),
+(148, 148, 0, 1, 0, 60, 0, 0, 0, 2, ''),
+(149, 149, 0, 1, 0, 41, 0, 0, 0, 2, ''),
+(150, 150, 0, 1, 0, 61, 0, 0, 0, 2, ''),
+(151, 151, 0, 1, 0, 67, 0, 0, 0, 2, ''),
+(152, 152, 0, 1, 0, 44, 0, 0, 0, 2, ''),
+(153, 153, 0, 1, 0, 20, 0, 0, 0, 2, ''),
+(154, 154, 0, 1, 0, 29, 0, 0, 0, 2, ''),
+(155, 155, 0, 1, 0, 25, 0, 0, 0, 2, ''),
+(156, 156, 0, 1, 0, 20, 0, 0, 0, 2, ''),
+(157, 157, 0, 1, 0, 11, 0, 0, 0, 2, ''),
+(158, 158, 0, 1, 0, 60, 0, 0, 0, 2, ''),
+(159, 159, 0, 1, 0, 55, 0, 0, 0, 2, ''),
+(160, 160, 0, 1, 0, 39, 0, 0, 0, 2, ''),
+(161, 161, 0, 1, 0, 69, 0, 0, 0, 2, ''),
+(162, 162, 0, 1, 0, 86, 0, 0, 0, 2, ''),
+(163, 163, 0, 1, 0, 34, 0, 0, 0, 2, ''),
+(164, 164, 0, 1, 0, 46, 0, 0, 0, 2, ''),
+(165, 165, 0, 1, 0, 85, 0, 0, 0, 2, ''),
+(166, 166, 0, 1, 0, 38, 0, 0, 0, 2, ''),
+(167, 167, 0, 1, 0, 45, 0, 0, 0, 2, ''),
+(168, 168, 0, 1, 0, 18, 0, 0, 0, 2, ''),
+(169, 169, 0, 1, 0, 94, 0, 0, 0, 2, ''),
+(170, 170, 0, 1, 0, 42, 0, 0, 0, 2, ''),
+(171, 171, 0, 1, 0, 59, 0, 0, 0, 2, ''),
+(172, 172, 0, 1, 0, 95, 0, 0, 0, 2, ''),
+(173, 173, 0, 1, 0, 21, 0, 0, 0, 2, ''),
+(174, 174, 0, 1, 0, 64, 0, 0, 0, 2, ''),
+(175, 175, 0, 1, 0, 49, 0, 0, 0, 2, ''),
+(176, 176, 0, 1, 0, 65, 0, 0, 0, 2, ''),
+(177, 177, 0, 1, 0, 75, 0, 0, 0, 2, ''),
+(178, 178, 0, 1, 0, 73, 0, 0, 0, 2, ''),
+(179, 179, 0, 1, 0, 35, 0, 0, 0, 2, ''),
+(180, 180, 0, 1, 0, 32, 0, 0, 0, 2, ''),
+(181, 181, 0, 1, 0, 61, 0, 0, 0, 2, ''),
+(182, 182, 0, 1, 0, 14, 0, 0, 0, 2, ''),
+(183, 183, 0, 1, 0, 6, 0, 0, 0, 2, ''),
+(184, 184, 0, 1, 0, 49, 0, 0, 0, 2, ''),
+(185, 185, 0, 1, 0, 73, 0, 0, 0, 2, ''),
+(186, 186, 0, 1, 0, 66, 0, 0, 0, 2, ''),
+(187, 187, 0, 1, 0, 54, 0, 0, 0, 2, ''),
+(188, 188, 0, 1, 0, 9, 0, 0, 0, 2, ''),
+(189, 189, 0, 1, 0, 49, 0, 0, 0, 2, ''),
+(190, 190, 0, 1, 0, 83, 0, 0, 0, 2, ''),
+(191, 191, 0, 1, 0, 25, 0, 0, 0, 2, ''),
+(192, 192, 0, 1, 0, 57, 0, 0, 0, 2, ''),
+(193, 193, 0, 1, 0, 14, 0, 0, 0, 2, ''),
+(194, 194, 0, 1, 0, 77, 0, 0, 0, 2, ''),
+(195, 195, 0, 1, 0, 37, 0, 0, 0, 2, ''),
+(196, 196, 0, 1, 0, 95, 0, 0, 0, 2, ''),
+(197, 197, 0, 1, 0, 23, 0, 0, 0, 2, ''),
+(198, 198, 0, 1, 0, 56, 0, 0, 0, 2, ''),
+(199, 199, 0, 1, 0, 1, 0, 0, 0, 2, ''),
+(200, 200, 0, 1, 0, 31, 0, 0, 0, 2, ''),
+(201, 201, 0, 1, 0, 37, 0, 0, 0, 2, ''),
+(202, 202, 0, 1, 0, 74, 0, 0, 0, 2, ''),
+(203, 203, 0, 1, 0, 51, 0, 0, 0, 2, ''),
+(204, 204, 0, 1, 0, 30, 0, 0, 0, 2, ''),
+(205, 205, 0, 1, 0, 10, 0, 0, 0, 2, ''),
+(206, 206, 0, 1, 0, 40, 0, 0, 0, 2, ''),
+(207, 207, 0, 1, 0, 11, 0, 0, 0, 2, ''),
+(208, 208, 0, 1, 0, 18, 0, 0, 0, 2, ''),
+(209, 209, 0, 1, 0, 34, 0, 0, 0, 2, ''),
+(210, 210, 0, 1, 0, 30, 0, 0, 0, 2, ''),
+(211, 211, 0, 1, 0, 49, 0, 0, 0, 2, ''),
+(212, 212, 0, 1, 0, 78, 0, 0, 0, 2, ''),
+(213, 213, 0, 1, 0, 88, 0, 0, 0, 2, ''),
+(214, 214, 0, 1, 0, 56, 0, 0, 0, 2, ''),
+(215, 215, 0, 1, 0, 11, 0, 0, 0, 2, ''),
+(216, 216, 0, 1, 0, 45, 0, 0, 0, 2, ''),
+(217, 217, 0, 1, 0, 60, 0, 0, 0, 2, ''),
+(218, 218, 0, 1, 0, 53, 0, 0, 0, 2, ''),
+(219, 219, 0, 1, 0, 32, 0, 0, 0, 2, ''),
+(220, 220, 0, 1, 0, 12, 0, 0, 0, 2, ''),
+(221, 221, 0, 1, 0, 65, 0, 0, 0, 2, ''),
+(222, 222, 0, 1, 0, 9, 0, 0, 0, 2, ''),
+(223, 223, 0, 1, 0, 3, 0, 0, 0, 2, ''),
+(224, 224, 0, 1, 0, 30, 0, 0, 0, 2, ''),
+(225, 225, 0, 1, 0, 58, 0, 0, 0, 2, ''),
+(226, 226, 0, 1, 0, 30, 0, 0, 0, 2, ''),
+(227, 227, 0, 1, 0, 86, 0, 0, 0, 2, ''),
+(228, 228, 0, 1, 0, 7, 0, 0, 0, 2, ''),
+(229, 229, 0, 1, 0, 8, 0, 0, 0, 2, ''),
+(230, 230, 0, 1, 0, 43, 0, 0, 0, 2, ''),
+(231, 231, 0, 1, 0, 68, 0, 0, 0, 2, ''),
+(232, 232, 0, 1, 0, 27, 0, 0, 0, 2, ''),
+(233, 233, 0, 1, 0, 45, 0, 0, 0, 2, ''),
+(234, 234, 0, 1, 0, 1, 0, 0, 0, 2, ''),
+(235, 235, 0, 1, 0, 34, 0, 0, 0, 2, ''),
+(236, 236, 0, 1, 0, 16, 0, 0, 0, 2, ''),
+(237, 237, 0, 1, 0, 35, 0, 0, 0, 2, ''),
+(238, 238, 0, 1, 0, 89, 0, 0, 0, 2, ''),
+(239, 239, 0, 1, 0, 64, 0, 0, 0, 2, ''),
+(240, 240, 0, 1, 0, 80, 0, 0, 0, 2, ''),
+(241, 241, 0, 1, 0, 95, 0, 0, 0, 2, ''),
+(242, 242, 0, 1, 0, 50, 0, 0, 0, 2, ''),
+(243, 243, 0, 1, 0, 17, 0, 0, 0, 2, ''),
+(244, 244, 0, 1, 0, 60, 0, 0, 0, 2, ''),
+(245, 245, 0, 1, 0, 91, 0, 0, 0, 2, ''),
+(246, 246, 0, 1, 0, 23, 0, 0, 0, 2, ''),
+(247, 247, 0, 1, 0, 4, 0, 0, 0, 2, ''),
+(248, 248, 0, 1, 0, 75, 0, 0, 0, 2, ''),
+(249, 249, 0, 1, 0, 81, 0, 0, 0, 2, ''),
+(250, 250, 0, 1, 0, 10, 0, 0, 0, 2, ''),
+(251, 251, 0, 1, 0, 40, 0, 0, 0, 2, ''),
+(252, 252, 0, 1, 0, 67, 0, 0, 0, 2, ''),
+(253, 253, 0, 1, 0, 23, 0, 0, 0, 2, ''),
+(254, 254, 0, 1, 0, 37, 0, 0, 0, 2, ''),
+(255, 255, 0, 1, 0, 33, 0, 0, 0, 2, ''),
+(256, 256, 0, 1, 0, 31, 0, 0, 0, 2, ''),
+(257, 257, 0, 1, 0, 28, 0, 0, 0, 2, ''),
+(258, 258, 0, 1, 0, 98, 0, 0, 0, 2, ''),
+(259, 259, 0, 1, 0, 50, 0, 0, 0, 2, ''),
+(260, 260, 0, 1, 0, 46, 0, 0, 0, 2, ''),
+(261, 261, 0, 1, 0, 57, 0, 0, 0, 2, ''),
+(262, 262, 0, 1, 0, 69, 0, 0, 0, 2, ''),
+(263, 263, 0, 1, 0, 82, 0, 0, 0, 2, ''),
+(264, 264, 0, 1, 0, 90, 0, 0, 0, 2, ''),
+(265, 265, 0, 1, 0, 44, 0, 0, 0, 2, ''),
+(266, 266, 0, 1, 0, 54, 0, 0, 0, 2, ''),
+(267, 267, 0, 1, 0, 32, 0, 0, 0, 2, ''),
+(268, 268, 0, 1, 0, 66, 0, 0, 0, 2, ''),
+(269, 269, 0, 1, 0, 35, 0, 0, 0, 2, ''),
+(270, 270, 0, 1, 0, 50, 0, 0, 0, 2, ''),
+(271, 271, 0, 1, 0, 59, 0, 0, 0, 2, ''),
+(272, 272, 0, 1, 0, 43, 0, 0, 0, 2, ''),
+(273, 273, 0, 1, 0, 43, 0, 0, 0, 2, ''),
+(274, 274, 0, 1, 0, 40, 0, 0, 0, 2, ''),
+(275, 275, 0, 1, 0, 7, 0, 0, 0, 2, ''),
+(276, 276, 0, 1, 0, 100, 0, 0, 0, 2, ''),
+(277, 277, 0, 1, 0, 77, 0, 0, 0, 2, ''),
+(278, 278, 0, 1, 0, 31, 0, 0, 0, 2, ''),
+(279, 279, 0, 1, 0, 2, 0, 0, 0, 2, ''),
+(280, 280, 0, 1, 0, 60, 0, 0, 0, 2, ''),
+(281, 281, 0, 1, 0, 35, 0, 0, 0, 2, ''),
+(282, 282, 0, 1, 0, 49, 0, 0, 0, 2, ''),
+(283, 283, 0, 1, 0, 59, 0, 0, 0, 2, ''),
+(284, 284, 0, 1, 0, 20, 0, 0, 0, 2, ''),
+(285, 285, 0, 1, 0, 66, 0, 0, 0, 2, ''),
+(286, 286, 0, 1, 0, 22, 0, 0, 0, 2, ''),
+(287, 287, 0, 1, 0, 46, 0, 0, 0, 2, ''),
+(288, 288, 0, 1, 0, 71, 0, 0, 0, 2, ''),
+(289, 289, 0, 1, 0, 28, 0, 0, 0, 2, ''),
+(290, 290, 0, 1, 0, 37, 0, 0, 0, 2, ''),
+(291, 291, 0, 1, 0, 21, 0, 0, 0, 2, ''),
+(292, 292, 0, 1, 0, 19, 0, 0, 0, 2, ''),
+(293, 293, 0, 1, 0, 8, 0, 0, 0, 2, ''),
+(294, 294, 0, 1, 0, 73, 0, 0, 0, 2, ''),
+(295, 295, 0, 1, 0, 85, 0, 0, 0, 2, ''),
+(296, 296, 0, 1, 0, 41, 0, 0, 0, 2, ''),
+(297, 297, 0, 1, 0, 97, 0, 0, 0, 2, ''),
+(298, 298, 0, 1, 0, 71, 0, 0, 0, 2, ''),
+(299, 299, 0, 1, 0, 84, 0, 0, 0, 2, ''),
+(300, 300, 0, 1, 0, 11, 0, 0, 0, 2, ''),
+(301, 301, 0, 1, 0, 4, 0, 0, 0, 2, ''),
+(302, 302, 0, 1, 0, 21, 0, 0, 0, 2, ''),
+(303, 303, 0, 1, 0, 19, 0, 0, 0, 2, ''),
+(304, 304, 0, 1, 0, 89, 0, 0, 0, 2, ''),
+(305, 305, 0, 1, 0, 90, 0, 0, 0, 2, ''),
+(306, 306, 0, 1, 0, 38, 0, 0, 0, 2, ''),
+(307, 307, 0, 1, 0, 1, 0, 0, 0, 2, ''),
+(308, 308, 0, 1, 0, 70, 0, 0, 0, 2, ''),
+(309, 309, 0, 1, 0, 60, 0, 0, 0, 2, ''),
+(310, 310, 0, 1, 0, 66, 0, 0, 0, 2, ''),
+(311, 311, 0, 1, 0, 5, 0, 0, 0, 2, ''),
+(312, 312, 0, 1, 0, 82, 0, 0, 0, 2, ''),
+(313, 313, 0, 1, 0, 86, 0, 0, 0, 2, ''),
+(314, 314, 0, 1, 0, 92, 0, 0, 0, 2, ''),
+(315, 315, 0, 1, 0, 13, 0, 0, 0, 2, ''),
+(316, 316, 0, 1, 0, 94, 0, 0, 0, 2, ''),
+(317, 317, 0, 1, 0, 66, 0, 0, 0, 2, ''),
+(318, 318, 0, 1, 0, 10, 0, 0, 0, 2, ''),
+(319, 319, 0, 1, 0, 62, 0, 0, 0, 2, ''),
+(320, 320, 0, 1, 0, 100, 0, 0, 0, 2, ''),
+(321, 321, 0, 1, 0, 7, 0, 0, 0, 2, ''),
+(322, 322, 0, 1, 0, 41, 0, 0, 0, 2, ''),
+(323, 323, 0, 1, 0, 66, 0, 0, 0, 2, ''),
+(324, 324, 0, 1, 0, 39, 0, 0, 0, 2, ''),
+(325, 325, 0, 1, 0, 15, 0, 0, 0, 2, ''),
+(326, 326, 0, 1, 0, 47, 0, 0, 0, 2, ''),
+(327, 327, 0, 1, 0, 77, 0, 0, 0, 2, ''),
+(328, 328, 0, 1, 0, 90, 0, 0, 0, 2, ''),
+(329, 329, 0, 1, 0, 94, 0, 0, 0, 2, ''),
+(330, 330, 0, 1, 0, 54, 0, 0, 0, 2, ''),
+(331, 331, 0, 1, 0, 17, 0, 0, 0, 2, ''),
+(332, 332, 0, 1, 0, 55, 0, 0, 0, 2, ''),
+(333, 333, 0, 1, 0, 92, 0, 0, 0, 2, ''),
+(334, 334, 0, 1, 0, 82, 0, 0, 0, 2, ''),
+(335, 335, 0, 1, 0, 37, 0, 0, 0, 2, ''),
+(336, 336, 0, 1, 0, 53, 0, 0, 0, 2, ''),
+(337, 337, 0, 1, 0, 16, 0, 0, 0, 2, ''),
+(338, 338, 0, 1, 0, 13, 0, 0, 0, 2, ''),
+(339, 339, 0, 1, 0, 96, 0, 0, 0, 2, ''),
+(340, 340, 0, 1, 0, 40, 0, 0, 0, 2, ''),
+(341, 341, 0, 1, 0, 60, 0, 0, 0, 2, ''),
+(342, 342, 0, 1, 0, 5, 0, 0, 0, 2, ''),
+(343, 343, 0, 1, 0, 47, 0, 0, 0, 2, ''),
+(344, 344, 0, 1, 0, 45, 0, 0, 0, 2, ''),
+(345, 345, 0, 1, 0, 66, 0, 0, 0, 2, ''),
+(346, 346, 0, 1, 0, 18, 0, 0, 0, 2, ''),
+(347, 347, 0, 1, 0, 11, 0, 0, 0, 2, ''),
+(348, 348, 0, 1, 0, 38, 0, 0, 0, 2, ''),
+(349, 349, 0, 1, 0, 79, 0, 0, 0, 2, ''),
+(350, 350, 0, 1, 0, 45, 0, 0, 0, 2, ''),
+(351, 351, 0, 1, 0, 59, 0, 0, 0, 2, ''),
+(352, 352, 0, 1, 0, 69, 0, 0, 0, 2, ''),
+(353, 353, 0, 1, 0, 65, 0, 0, 0, 2, ''),
+(354, 354, 0, 1, 0, 97, 0, 0, 0, 2, ''),
+(355, 355, 0, 1, 0, 21, 0, 0, 0, 2, ''),
+(356, 356, 0, 1, 0, 4, 0, 0, 0, 2, ''),
+(357, 357, 0, 1, 0, 30, 0, 0, 0, 2, ''),
+(358, 358, 0, 1, 0, 13, 0, 0, 0, 2, ''),
+(359, 359, 0, 1, 0, 75, 0, 0, 0, 2, ''),
+(360, 360, 0, 1, 0, 26, 0, 0, 0, 2, ''),
+(361, 361, 0, 1, 0, 32, 0, 0, 0, 2, ''),
+(362, 362, 0, 1, 0, 30, 0, 0, 0, 2, ''),
+(363, 363, 0, 1, 0, 73, 0, 0, 0, 2, ''),
+(364, 364, 0, 1, 0, 62, 0, 0, 0, 2, ''),
+(365, 365, 0, 1, 0, 33, 0, 0, 0, 2, ''),
+(366, 366, 0, 1, 0, 6, 0, 0, 0, 2, ''),
+(367, 367, 0, 1, 0, 6, 0, 0, 0, 2, ''),
+(368, 368, 0, 1, 0, 16, 0, 0, 0, 2, ''),
+(369, 369, 0, 1, 0, 63, 0, 0, 0, 2, ''),
+(370, 370, 0, 1, 0, 48, 0, 0, 0, 2, ''),
+(371, 371, 0, 1, 0, 67, 0, 0, 0, 2, ''),
+(372, 372, 0, 1, 0, 96, 0, 0, 0, 2, ''),
+(373, 373, 0, 1, 0, 61, 0, 0, 0, 2, ''),
+(374, 374, 0, 1, 0, 19, 0, 0, 0, 2, ''),
+(375, 375, 0, 1, 0, 81, 0, 0, 0, 2, ''),
+(376, 376, 0, 1, 0, 16, 0, 0, 0, 2, ''),
+(377, 377, 0, 1, 0, 69, 0, 0, 0, 2, ''),
+(378, 378, 0, 1, 0, 36, 0, 0, 0, 2, ''),
+(379, 379, 0, 1, 0, 37, 0, 0, 0, 2, ''),
+(380, 380, 0, 1, 0, 63, 0, 0, 0, 2, ''),
+(381, 381, 0, 1, 0, 69, 0, 0, 0, 2, ''),
+(382, 382, 0, 1, 0, 79, 0, 0, 0, 2, ''),
+(383, 383, 0, 1, 0, 96, 0, 0, 0, 2, ''),
+(384, 384, 0, 1, 0, 75, 0, 0, 0, 2, ''),
+(385, 385, 0, 1, 0, 36, 0, 0, 0, 2, ''),
+(386, 386, 0, 1, 0, 54, 0, 0, 0, 2, ''),
+(387, 387, 0, 1, 0, 50, 0, 0, 0, 2, ''),
+(388, 388, 0, 1, 0, 90, 0, 0, 0, 2, ''),
+(389, 389, 0, 1, 0, 41, 0, 0, 0, 2, ''),
+(390, 390, 0, 1, 0, 59, 0, 0, 0, 2, ''),
+(391, 391, 0, 1, 0, 19, 0, 0, 0, 2, ''),
+(392, 392, 0, 1, 0, 95, 0, 0, 0, 2, ''),
+(393, 393, 0, 1, 0, 9, 0, 0, 0, 2, ''),
+(394, 394, 0, 1, 0, 80, 0, 0, 0, 2, ''),
+(395, 395, 0, 1, 0, 54, 0, 0, 0, 2, ''),
+(396, 396, 0, 1, 0, 34, 0, 0, 0, 2, ''),
+(397, 397, 0, 1, 0, 23, 0, 0, 0, 2, ''),
+(398, 398, 0, 1, 0, 68, 0, 0, 0, 2, ''),
+(399, 399, 0, 1, 0, 9, 0, 0, 0, 2, ''),
+(400, 400, 0, 1, 0, 43, 0, 0, 0, 2, ''),
+(401, 401, 0, 1, 0, 27, 0, 0, 0, 2, ''),
+(402, 402, 0, 1, 0, 54, 0, 0, 0, 2, ''),
+(403, 403, 0, 1, 0, 44, 0, 0, 0, 2, ''),
+(404, 404, 0, 1, 0, 4, 0, 0, 0, 2, ''),
+(405, 405, 0, 1, 0, 90, 0, 0, 0, 2, ''),
+(406, 406, 0, 1, 0, 80, 0, 0, 0, 2, ''),
+(407, 407, 0, 1, 0, 82, 0, 0, 0, 2, ''),
+(408, 408, 0, 1, 0, 42, 0, 0, 0, 2, ''),
+(409, 409, 0, 1, 0, 79, 0, 0, 0, 2, ''),
+(410, 410, 0, 1, 0, 99, 0, 0, 0, 2, ''),
+(411, 411, 0, 1, 0, 15, 0, 0, 0, 2, ''),
+(412, 412, 0, 1, 0, 23, 0, 0, 0, 2, ''),
+(413, 413, 0, 1, 0, 59, 0, 0, 0, 2, ''),
+(414, 414, 0, 1, 0, 85, 0, 0, 0, 2, ''),
+(415, 415, 0, 1, 0, 21, 0, 0, 0, 2, ''),
+(416, 416, 0, 1, 0, 74, 0, 0, 0, 2, ''),
+(417, 417, 0, 1, 0, 5, 0, 0, 0, 2, ''),
+(418, 418, 0, 1, 0, 79, 0, 0, 0, 2, ''),
+(419, 419, 0, 1, 0, 88, 0, 0, 0, 2, ''),
+(420, 420, 0, 1, 0, 16, 0, 0, 0, 2, ''),
+(421, 421, 0, 1, 0, 43, 0, 0, 0, 2, ''),
+(422, 422, 0, 1, 0, 49, 0, 0, 0, 2, ''),
+(423, 423, 0, 1, 0, 36, 0, 0, 0, 2, ''),
+(424, 424, 0, 1, 0, 76, 0, 0, 0, 2, ''),
+(425, 425, 0, 1, 0, 41, 0, 0, 0, 2, ''),
+(426, 426, 0, 1, 0, 6, 0, 0, 0, 2, ''),
+(427, 427, 0, 1, 0, 67, 0, 0, 0, 2, ''),
+(428, 428, 0, 1, 0, 71, 0, 0, 0, 2, ''),
+(429, 429, 0, 1, 0, 54, 0, 0, 0, 2, ''),
+(430, 430, 0, 1, 0, 40, 0, 0, 0, 2, ''),
+(431, 431, 0, 1, 0, 28, 0, 0, 0, 2, ''),
+(432, 432, 0, 1, 0, 95, 0, 0, 0, 2, ''),
+(433, 433, 0, 1, 0, 60, 0, 0, 0, 2, ''),
+(434, 434, 0, 1, 0, 93, 0, 0, 0, 2, ''),
+(435, 435, 0, 1, 0, 78, 0, 0, 0, 2, ''),
+(436, 436, 0, 1, 0, 39, 0, 0, 0, 2, ''),
+(437, 437, 0, 1, 0, 63, 0, 0, 0, 2, ''),
+(438, 438, 0, 1, 0, 48, 0, 0, 0, 2, ''),
+(439, 439, 0, 1, 0, 88, 0, 0, 0, 2, ''),
+(440, 440, 0, 1, 0, 82, 0, 0, 0, 2, ''),
+(441, 441, 0, 1, 0, 34, 0, 0, 0, 2, ''),
+(442, 442, 0, 1, 0, 92, 0, 0, 0, 2, ''),
+(443, 443, 0, 1, 0, 86, 0, 0, 0, 2, ''),
+(444, 444, 0, 1, 0, 20, 0, 0, 0, 2, ''),
+(445, 445, 0, 1, 0, 92, 0, 0, 0, 2, ''),
+(446, 446, 0, 1, 0, 51, 0, 0, 0, 2, ''),
+(447, 447, 0, 1, 0, 75, 0, 0, 0, 2, ''),
+(448, 448, 0, 1, 0, 62, 0, 0, 0, 2, ''),
+(449, 449, 0, 1, 0, 98, 0, 0, 0, 2, ''),
+(450, 450, 0, 1, 0, 23, 0, 0, 0, 2, ''),
+(451, 451, 0, 1, 0, 95, 0, 0, 0, 2, ''),
+(452, 452, 0, 1, 0, 9, 0, 0, 0, 2, ''),
+(453, 453, 0, 1, 0, 1, 0, 0, 0, 2, ''),
+(454, 454, 0, 1, 0, 76, 0, 0, 0, 2, ''),
+(455, 455, 0, 1, 0, 65, 0, 0, 0, 2, ''),
+(456, 456, 0, 1, 0, 56, 0, 0, 0, 2, ''),
+(457, 457, 0, 1, 0, 97, 0, 0, 0, 2, ''),
+(458, 458, 0, 1, 0, 52, 0, 0, 0, 2, ''),
+(459, 459, 0, 1, 0, 57, 0, 0, 0, 2, ''),
+(460, 460, 0, 1, 0, 69, 0, 0, 0, 2, ''),
+(461, 461, 0, 1, 0, 60, 0, 0, 0, 2, ''),
+(462, 462, 0, 1, 0, 59, 0, 0, 0, 2, ''),
+(463, 463, 0, 1, 0, 19, 0, 0, 0, 2, ''),
+(464, 464, 0, 1, 0, 85, 0, 0, 0, 2, ''),
+(465, 465, 0, 1, 0, 73, 0, 0, 0, 2, ''),
+(466, 466, 0, 1, 0, 21, 0, 0, 0, 2, ''),
+(467, 467, 0, 1, 0, 21, 0, 0, 0, 2, ''),
+(468, 468, 0, 1, 0, 63, 0, 0, 0, 2, ''),
+(469, 469, 0, 1, 0, 68, 0, 0, 0, 2, ''),
+(470, 470, 0, 1, 0, 60, 0, 0, 0, 2, ''),
+(471, 471, 0, 1, 0, 34, 0, 0, 0, 2, ''),
+(472, 472, 0, 1, 0, 96, 0, 0, 0, 2, ''),
+(473, 473, 0, 1, 0, 87, 0, 0, 0, 2, ''),
+(474, 474, 0, 1, 0, 44, 0, 0, 0, 2, ''),
+(475, 475, 0, 1, 0, 26, 0, 0, 0, 2, ''),
+(476, 476, 0, 1, 0, 34, 0, 0, 0, 2, ''),
+(477, 477, 0, 1, 0, 31, 0, 0, 0, 2, ''),
+(478, 478, 0, 1, 0, 56, 0, 0, 0, 2, ''),
+(479, 479, 0, 1, 0, 53, 0, 0, 0, 2, ''),
+(480, 480, 0, 1, 0, 28, 0, 0, 0, 2, ''),
+(481, 481, 0, 1, 0, 69, 0, 0, 0, 2, ''),
+(482, 482, 0, 1, 0, 88, 0, 0, 0, 2, ''),
+(483, 483, 0, 1, 0, 16, 0, 0, 0, 2, ''),
+(484, 484, 0, 1, 0, 96, 0, 0, 0, 2, ''),
+(485, 485, 0, 1, 0, 80, 0, 0, 0, 2, ''),
+(486, 486, 0, 1, 0, 1, 0, 0, 0, 2, ''),
+(487, 487, 0, 1, 0, 59, 0, 0, 0, 2, ''),
+(488, 488, 0, 1, 0, 78, 0, 0, 0, 2, ''),
+(489, 489, 0, 1, 0, 96, 0, 0, 0, 2, ''),
+(490, 490, 0, 1, 0, 94, 0, 0, 0, 2, ''),
+(491, 491, 0, 1, 0, 97, 0, 0, 0, 2, ''),
+(492, 492, 0, 1, 0, 59, 0, 0, 0, 2, ''),
+(493, 493, 0, 1, 0, 15, 0, 0, 0, 2, ''),
+(494, 494, 0, 1, 0, 61, 0, 0, 0, 2, ''),
+(495, 495, 0, 1, 0, 92, 0, 0, 0, 2, ''),
+(496, 496, 0, 1, 0, 70, 0, 0, 0, 2, ''),
+(497, 497, 0, 1, 0, 33, 0, 0, 0, 2, ''),
+(498, 498, 0, 1, 0, 41, 0, 0, 0, 2, ''),
+(499, 499, 0, 1, 0, 87, 0, 0, 0, 2, ''),
+(500, 500, 0, 1, 0, 87, 0, 0, 0, 2, ''),
+(501, 501, 0, 1, 0, 21, 0, 0, 0, 2, ''),
+(502, 502, 0, 1, 0, 10, 0, 0, 0, 2, ''),
+(503, 503, 0, 1, 0, 67, 0, 0, 0, 2, ''),
+(504, 504, 0, 1, 0, 92, 0, 0, 0, 2, ''),
+(505, 505, 0, 1, 0, 71, 0, 0, 0, 2, ''),
+(506, 506, 0, 1, 0, 80, 0, 0, 0, 2, ''),
+(507, 507, 0, 1, 0, 97, 0, 0, 0, 2, ''),
+(508, 508, 0, 1, 0, 75, 0, 0, 0, 2, ''),
+(509, 509, 0, 1, 0, 65, 0, 0, 0, 2, ''),
+(510, 510, 0, 1, 0, 3, 0, 0, 0, 2, ''),
+(511, 511, 0, 1, 0, 98, 0, 0, 0, 2, ''),
+(512, 512, 0, 1, 0, 52, 0, 0, 0, 2, ''),
+(513, 513, 0, 1, 0, 13, 0, 0, 0, 2, ''),
+(514, 514, 0, 1, 0, 47, 0, 0, 0, 2, ''),
+(515, 515, 0, 1, 0, 94, 0, 0, 0, 2, ''),
+(516, 516, 0, 1, 0, 45, 0, 0, 0, 2, ''),
+(517, 517, 0, 1, 0, 75, 0, 0, 0, 2, ''),
+(518, 518, 0, 1, 0, 85, 0, 0, 0, 2, ''),
+(519, 519, 0, 1, 0, 5, 0, 0, 0, 2, ''),
+(520, 520, 0, 1, 0, 50, 0, 0, 0, 2, ''),
+(521, 521, 0, 1, 0, 80, 0, 0, 0, 2, ''),
+(522, 522, 0, 1, 0, 77, 0, 0, 0, 2, ''),
+(523, 523, 0, 1, 0, 24, 0, 0, 0, 2, ''),
+(524, 524, 0, 1, 0, 72, 0, 0, 0, 2, ''),
+(525, 525, 0, 1, 0, 58, 0, 0, 0, 2, ''),
+(526, 526, 0, 1, 0, 42, 0, 0, 0, 2, ''),
+(527, 527, 0, 1, 0, 89, 0, 0, 0, 2, ''),
+(528, 528, 0, 1, 0, 21, 0, 0, 0, 2, ''),
+(529, 529, 0, 1, 0, 1, 0, 0, 0, 2, ''),
+(530, 530, 0, 1, 0, 45, 0, 0, 0, 2, ''),
+(531, 531, 0, 1, 0, 94, 0, 0, 0, 2, ''),
+(532, 532, 0, 1, 0, 30, 0, 0, 0, 2, ''),
+(533, 533, 0, 1, 0, 2, 0, 0, 0, 2, ''),
+(534, 534, 0, 1, 0, 80, 0, 0, 0, 2, ''),
+(535, 535, 0, 1, 0, 26, 0, 0, 0, 2, ''),
+(536, 536, 0, 1, 0, 3, 0, 0, 0, 2, ''),
+(537, 537, 0, 1, 0, 88, 0, 0, 0, 2, ''),
+(538, 538, 0, 1, 0, 7, 0, 0, 0, 2, ''),
+(539, 539, 0, 1, 0, 55, 0, 0, 0, 2, ''),
+(540, 540, 0, 1, 0, 17, 0, 0, 0, 2, ''),
+(541, 541, 0, 1, 0, 96, 0, 0, 0, 2, ''),
+(542, 542, 0, 1, 0, 19, 0, 0, 0, 2, ''),
+(543, 543, 0, 1, 0, 56, 0, 0, 0, 2, ''),
+(544, 544, 0, 1, 0, 75, 0, 0, 0, 2, ''),
+(545, 545, 0, 1, 0, 58, 0, 0, 0, 2, ''),
+(546, 546, 0, 1, 0, 40, 0, 0, 0, 2, ''),
+(547, 547, 0, 1, 0, 63, 0, 0, 0, 2, ''),
+(548, 548, 0, 1, 0, 19, 0, 0, 0, 2, ''),
+(549, 549, 0, 1, 0, 48, 0, 0, 0, 2, ''),
+(550, 550, 0, 1, 0, 81, 0, 0, 0, 2, ''),
+(551, 551, 0, 1, 0, 89, 0, 0, 0, 2, ''),
+(552, 552, 0, 1, 0, 74, 0, 0, 0, 2, ''),
+(553, 553, 0, 1, 0, 78, 0, 0, 0, 2, ''),
+(554, 554, 0, 1, 0, 23, 0, 0, 0, 2, ''),
+(555, 555, 0, 1, 0, 72, 0, 0, 0, 2, ''),
+(556, 556, 0, 1, 0, 76, 0, 0, 0, 2, ''),
+(557, 557, 0, 1, 0, 96, 0, 0, 0, 2, ''),
+(558, 558, 0, 1, 0, 61, 0, 0, 0, 2, ''),
+(559, 559, 0, 1, 0, 21, 0, 0, 0, 2, ''),
+(560, 560, 0, 1, 0, 65, 0, 0, 0, 2, ''),
+(561, 561, 0, 1, 0, 23, 0, 0, 0, 2, ''),
+(562, 562, 0, 1, 0, 25, 0, 0, 0, 2, ''),
+(563, 563, 0, 1, 0, 32, 0, 0, 0, 2, ''),
+(564, 564, 0, 1, 0, 74, 0, 0, 0, 2, ''),
+(565, 565, 0, 1, 0, 10, 0, 0, 0, 2, ''),
+(566, 566, 0, 1, 0, 79, 0, 0, 0, 2, ''),
+(567, 567, 0, 1, 0, 35, 0, 0, 0, 2, ''),
+(568, 568, 0, 1, 0, 19, 0, 0, 0, 2, ''),
+(569, 569, 0, 1, 0, 77, 0, 0, 0, 2, ''),
+(570, 570, 0, 1, 0, 16, 0, 0, 0, 2, ''),
+(571, 571, 0, 1, 0, 78, 0, 0, 0, 2, ''),
+(572, 572, 0, 1, 0, 97, 0, 0, 0, 2, ''),
+(573, 573, 0, 1, 0, 82, 0, 0, 0, 2, ''),
+(574, 574, 0, 1, 0, 67, 0, 0, 0, 2, ''),
+(575, 575, 0, 1, 0, 67, 0, 0, 0, 2, ''),
+(576, 576, 0, 1, 0, 60, 0, 0, 0, 2, ''),
+(577, 577, 0, 1, 0, 37, 0, 0, 0, 2, ''),
+(578, 578, 0, 1, 0, 99, 0, 0, 0, 2, ''),
+(579, 579, 0, 1, 0, 97, 0, 0, 0, 2, ''),
+(580, 580, 0, 1, 0, 33, 0, 0, 0, 2, ''),
+(581, 581, 0, 1, 0, 23, 0, 0, 0, 2, ''),
+(582, 582, 0, 1, 0, 16, 0, 0, 0, 2, ''),
+(583, 583, 0, 1, 0, 20, 0, 0, 0, 2, ''),
+(584, 584, 0, 1, 0, 82, 0, 0, 0, 2, ''),
+(585, 585, 0, 1, 0, 19, 0, 0, 0, 2, ''),
+(586, 586, 0, 1, 0, 42, 0, 0, 0, 2, ''),
+(587, 587, 0, 1, 0, 11, 0, 0, 0, 2, ''),
+(588, 588, 0, 1, 0, 59, 0, 0, 0, 2, ''),
+(589, 589, 0, 1, 0, 33, 0, 0, 0, 2, ''),
+(590, 590, 0, 1, 0, 63, 0, 0, 0, 2, ''),
+(591, 591, 0, 1, 0, 45, 0, 0, 0, 2, ''),
+(592, 592, 0, 1, 0, 39, 0, 0, 0, 2, ''),
+(593, 593, 0, 1, 0, 85, 0, 0, 0, 2, ''),
+(594, 594, 0, 1, 0, 89, 0, 0, 0, 2, ''),
+(595, 595, 0, 1, 0, 13, 0, 0, 0, 2, ''),
+(596, 596, 0, 1, 0, 19, 0, 0, 0, 2, ''),
+(597, 597, 0, 1, 0, 88, 0, 0, 0, 2, ''),
+(598, 598, 0, 1, 0, 35, 0, 0, 0, 2, ''),
+(599, 599, 0, 1, 0, 85, 0, 0, 0, 2, ''),
+(600, 600, 0, 1, 0, 69, 0, 0, 0, 2, ''),
+(601, 601, 0, 1, 0, 94, 0, 0, 0, 2, ''),
+(602, 602, 0, 1, 0, 3, 0, 0, 0, 2, ''),
+(603, 603, 0, 1, 0, 83, 0, 0, 0, 2, ''),
+(604, 604, 0, 1, 0, 100, 0, 0, 0, 2, ''),
+(605, 605, 0, 1, 0, 73, 0, 0, 0, 2, ''),
+(606, 606, 0, 1, 0, 38, 0, 0, 0, 2, ''),
+(607, 607, 0, 1, 0, 41, 0, 0, 0, 2, ''),
+(608, 608, 0, 1, 0, 62, 0, 0, 0, 2, ''),
+(609, 609, 0, 1, 0, 99, 0, 0, 0, 2, ''),
+(610, 610, 0, 1, 0, 53, 0, 0, 0, 2, ''),
+(611, 611, 0, 1, 0, 35, 0, 0, 0, 2, ''),
+(612, 612, 0, 1, 0, 42, 0, 0, 0, 2, ''),
+(613, 613, 0, 1, 0, 5, 0, 0, 0, 2, ''),
+(614, 614, 0, 1, 0, 27, 0, 0, 0, 2, ''),
+(615, 615, 0, 1, 0, 5, 0, 0, 0, 2, ''),
+(616, 616, 0, 1, 0, 42, 0, 0, 0, 2, ''),
+(617, 617, 0, 1, 0, 20, 0, 0, 0, 2, ''),
+(618, 618, 0, 1, 0, 85, 0, 0, 0, 2, ''),
+(619, 619, 0, 1, 0, 58, 0, 0, 0, 2, ''),
+(620, 620, 0, 1, 0, 39, 0, 0, 0, 2, ''),
+(621, 621, 0, 1, 0, 1, 0, 0, 0, 2, ''),
+(622, 622, 0, 1, 0, 100, 0, 0, 0, 2, ''),
+(623, 623, 0, 1, 0, 43, 0, 0, 0, 2, ''),
+(624, 624, 0, 1, 0, 86, 0, 0, 0, 2, ''),
+(625, 625, 0, 1, 0, 39, 0, 0, 0, 2, ''),
+(626, 626, 0, 1, 0, 44, 0, 0, 0, 2, ''),
+(627, 627, 0, 1, 0, 43, 0, 0, 0, 2, ''),
+(628, 628, 0, 1, 0, 95, 0, 0, 0, 2, ''),
+(629, 629, 0, 1, 0, 11, 0, 0, 0, 2, ''),
+(630, 630, 0, 1, 0, 52, 0, 0, 0, 2, ''),
+(631, 631, 0, 1, 0, 76, 0, 0, 0, 2, ''),
+(632, 632, 0, 1, 0, 65, 0, 0, 0, 2, ''),
+(633, 633, 0, 1, 0, 23, 0, 0, 0, 2, ''),
+(634, 634, 0, 1, 0, 31, 0, 0, 0, 2, ''),
+(635, 635, 0, 1, 0, 51, 0, 0, 0, 2, ''),
+(636, 636, 0, 1, 0, 78, 0, 0, 0, 2, ''),
+(637, 637, 0, 1, 0, 35, 0, 0, 0, 2, ''),
+(638, 638, 0, 1, 0, 88, 0, 0, 0, 2, ''),
+(639, 639, 0, 1, 0, 80, 0, 0, 0, 2, ''),
+(640, 640, 0, 1, 0, 22, 0, 0, 0, 2, ''),
+(641, 641, 0, 1, 0, 69, 0, 0, 0, 2, ''),
+(642, 642, 0, 1, 0, 55, 0, 0, 0, 2, ''),
+(643, 643, 0, 1, 0, 26, 0, 0, 0, 2, ''),
+(644, 644, 0, 1, 0, 97, 0, 0, 0, 2, ''),
+(645, 645, 0, 1, 0, 73, 0, 0, 0, 2, ''),
+(646, 646, 0, 1, 0, 10, 0, 0, 0, 2, ''),
+(647, 647, 0, 1, 0, 95, 0, 0, 0, 2, ''),
+(648, 648, 0, 1, 0, 3, 0, 0, 0, 2, ''),
+(649, 649, 0, 1, 0, 85, 0, 0, 0, 2, ''),
+(650, 650, 0, 1, 0, 10, 0, 0, 0, 2, ''),
+(651, 651, 0, 1, 0, 85, 0, 0, 0, 2, ''),
+(652, 652, 0, 1, 0, 34, 0, 0, 0, 2, ''),
+(653, 653, 0, 1, 0, 53, 0, 0, 0, 2, ''),
+(654, 654, 0, 1, 0, 21, 0, 0, 0, 2, ''),
+(655, 655, 0, 1, 0, 50, 0, 0, 0, 2, ''),
+(656, 656, 0, 1, 0, 46, 0, 0, 0, 2, ''),
+(657, 657, 0, 1, 0, 6, 0, 0, 0, 2, ''),
+(658, 658, 0, 1, 0, 88, 0, 0, 0, 2, ''),
+(659, 659, 0, 1, 0, 95, 0, 0, 0, 2, ''),
+(660, 660, 0, 1, 0, 91, 0, 0, 0, 2, ''),
+(661, 661, 0, 1, 0, 68, 0, 0, 0, 2, ''),
+(662, 662, 0, 1, 0, 79, 0, 0, 0, 2, ''),
+(663, 663, 0, 1, 0, 59, 0, 0, 0, 2, ''),
+(664, 664, 0, 1, 0, 14, 0, 0, 0, 2, ''),
+(665, 665, 0, 1, 0, 58, 0, 0, 0, 2, ''),
+(666, 666, 0, 1, 0, 25, 0, 0, 0, 2, ''),
+(667, 667, 0, 1, 0, 93, 0, 0, 0, 2, ''),
+(668, 668, 0, 1, 0, 24, 0, 0, 0, 2, ''),
+(669, 669, 0, 1, 0, 49, 0, 0, 0, 2, ''),
+(670, 670, 0, 1, 0, 17, 0, 0, 0, 2, ''),
+(671, 671, 0, 1, 0, 76, 0, 0, 0, 2, ''),
+(672, 672, 0, 1, 0, 94, 0, 0, 0, 2, ''),
+(673, 673, 0, 1, 0, 24, 0, 0, 0, 2, ''),
+(674, 674, 0, 1, 0, 44, 0, 0, 0, 2, ''),
+(675, 675, 0, 1, 0, 23, 0, 0, 0, 2, ''),
+(676, 676, 0, 1, 0, 86, 0, 0, 0, 2, ''),
+(677, 677, 0, 1, 0, 62, 0, 0, 0, 2, ''),
+(678, 678, 0, 1, 0, 8, 0, 0, 0, 2, ''),
+(679, 679, 0, 1, 0, 41, 0, 0, 0, 2, ''),
+(680, 680, 0, 1, 0, 57, 0, 0, 0, 2, ''),
+(681, 681, 0, 1, 0, 58, 0, 0, 0, 2, ''),
+(682, 682, 0, 1, 0, 34, 0, 0, 0, 2, ''),
+(683, 683, 0, 1, 0, 66, 0, 0, 0, 2, ''),
+(684, 684, 0, 1, 0, 58, 0, 0, 0, 2, ''),
+(685, 685, 0, 1, 0, 31, 0, 0, 0, 2, ''),
+(686, 686, 0, 1, 0, 12, 0, 0, 0, 2, '');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_stock_mvt`
+-- Структура таблицы `ps_stock_mvt`
 --
 
 CREATE TABLE `ps_stock_mvt` (
@@ -10224,10 +20471,703 @@ CREATE TABLE `ps_stock_mvt` (
   `referer` bigint(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Дамп данных таблицы `ps_stock_mvt`
+--
+
+INSERT INTO `ps_stock_mvt` (`id_stock_mvt`, `id_stock`, `id_order`, `id_supply_order`, `id_stock_mvt_reason`, `id_employee`, `employee_lastname`, `employee_firstname`, `physical_quantity`, `date_add`, `sign`, `price_te`, `last_wa`, `current_wa`, `referer`) VALUES
+(1, 1, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 66, '2025-12-14 22:19:33', 1, 0.000000, 0.000000, 0.000000, NULL),
+(2, 2, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 27, '2025-12-14 22:19:34', 1, 0.000000, 0.000000, 0.000000, NULL),
+(3, 3, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 64, '2025-12-14 22:19:34', 1, 0.000000, 0.000000, 0.000000, NULL),
+(4, 4, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 14, '2025-12-14 22:19:34', 1, 0.000000, 0.000000, 0.000000, NULL),
+(5, 5, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 22, '2025-12-14 22:19:34', 1, 0.000000, 0.000000, 0.000000, NULL),
+(6, 6, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 51, '2025-12-14 22:19:34', 1, 0.000000, 0.000000, 0.000000, NULL),
+(7, 7, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 48, '2025-12-14 22:19:35', 1, 0.000000, 0.000000, 0.000000, NULL),
+(8, 8, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 27, '2025-12-14 22:19:35', 1, 0.000000, 0.000000, 0.000000, NULL),
+(9, 9, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 11, '2025-12-14 22:19:35', 1, 0.000000, 0.000000, 0.000000, NULL),
+(10, 10, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 3, '2025-12-14 22:19:35', 1, 0.000000, 0.000000, 0.000000, NULL),
+(11, 11, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 51, '2025-12-14 22:19:35', 1, 0.000000, 0.000000, 0.000000, NULL),
+(12, 12, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 60, '2025-12-14 22:19:36', 1, 0.000000, 0.000000, 0.000000, NULL),
+(13, 13, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 13, '2025-12-14 22:19:36', 1, 0.000000, 0.000000, 0.000000, NULL),
+(14, 14, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 38, '2025-12-14 22:19:36', 1, 0.000000, 0.000000, 0.000000, NULL),
+(15, 15, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 85, '2025-12-14 22:19:36', 1, 0.000000, 0.000000, 0.000000, NULL),
+(16, 16, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 1, '2025-12-14 22:19:37', 1, 0.000000, 0.000000, 0.000000, NULL),
+(17, 17, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 42, '2025-12-14 22:19:37', 1, 0.000000, 0.000000, 0.000000, NULL),
+(18, 18, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 64, '2025-12-14 22:19:37', 1, 0.000000, 0.000000, 0.000000, NULL),
+(19, 19, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 10, '2025-12-14 22:19:37', 1, 0.000000, 0.000000, 0.000000, NULL),
+(20, 20, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 31, '2025-12-14 22:19:37', 1, 0.000000, 0.000000, 0.000000, NULL),
+(21, 21, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 40, '2025-12-14 22:19:38', 1, 0.000000, 0.000000, 0.000000, NULL),
+(22, 22, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 28, '2025-12-14 22:19:38', 1, 0.000000, 0.000000, 0.000000, NULL),
+(23, 23, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 5, '2025-12-14 22:19:38', 1, 0.000000, 0.000000, 0.000000, NULL),
+(24, 24, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 25, '2025-12-14 22:19:38', 1, 0.000000, 0.000000, 0.000000, NULL),
+(25, 25, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 22, '2025-12-14 22:19:38', 1, 0.000000, 0.000000, 0.000000, NULL),
+(26, 26, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 39, '2025-12-14 22:19:39', 1, 0.000000, 0.000000, 0.000000, NULL),
+(27, 27, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 44, '2025-12-14 22:19:39', 1, 0.000000, 0.000000, 0.000000, NULL),
+(28, 28, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 2, '2025-12-14 22:19:39', 1, 0.000000, 0.000000, 0.000000, NULL),
+(29, 29, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 66, '2025-12-14 22:19:39', 1, 0.000000, 0.000000, 0.000000, NULL),
+(30, 30, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 2, '2025-12-14 22:19:39', 1, 0.000000, 0.000000, 0.000000, NULL),
+(31, 31, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 58, '2025-12-14 22:20:23', 1, 0.000000, 0.000000, 0.000000, NULL),
+(32, 32, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 39, '2025-12-14 22:19:39', 1, 0.000000, 0.000000, 0.000000, NULL),
+(33, 33, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 55, '2025-12-14 22:19:40', 1, 0.000000, 0.000000, 0.000000, NULL),
+(34, 34, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 27, '2025-12-14 22:19:40', 1, 0.000000, 0.000000, 0.000000, NULL),
+(35, 35, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 45, '2025-12-14 22:19:40', 1, 0.000000, 0.000000, 0.000000, NULL),
+(36, 36, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 38, '2025-12-14 22:19:40', 1, 0.000000, 0.000000, 0.000000, NULL),
+(37, 37, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 36, '2025-12-14 22:19:40', 1, 0.000000, 0.000000, 0.000000, NULL),
+(38, 38, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 93, '2025-12-14 22:19:41', 1, 0.000000, 0.000000, 0.000000, NULL),
+(39, 39, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 48, '2025-12-14 22:19:41', 1, 0.000000, 0.000000, 0.000000, NULL),
+(40, 40, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 57, '2025-12-14 22:19:41', 1, 0.000000, 0.000000, 0.000000, NULL),
+(41, 41, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 94, '2025-12-14 22:19:42', 1, 0.000000, 0.000000, 0.000000, NULL),
+(42, 42, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 84, '2025-12-14 22:19:42', 1, 0.000000, 0.000000, 0.000000, NULL),
+(43, 43, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 67, '2025-12-14 22:19:42', 1, 0.000000, 0.000000, 0.000000, NULL),
+(44, 44, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 92, '2025-12-14 22:19:42', 1, 0.000000, 0.000000, 0.000000, NULL),
+(45, 45, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 56, '2025-12-14 22:19:43', 1, 0.000000, 0.000000, 0.000000, NULL),
+(46, 46, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 54, '2025-12-14 22:19:43', 1, 0.000000, 0.000000, 0.000000, NULL),
+(47, 47, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 65, '2025-12-14 22:19:43', 1, 0.000000, 0.000000, 0.000000, NULL),
+(48, 48, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 67, '2025-12-14 22:19:43', 1, 0.000000, 0.000000, 0.000000, NULL),
+(49, 49, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 86, '2025-12-14 22:19:43', 1, 0.000000, 0.000000, 0.000000, NULL),
+(50, 50, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 6, '2025-12-14 22:19:43', 1, 0.000000, 0.000000, 0.000000, NULL),
+(51, 51, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 35, '2025-12-14 22:19:44', 1, 0.000000, 0.000000, 0.000000, NULL),
+(52, 52, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 1, '2025-12-14 22:19:44', 1, 0.000000, 0.000000, 0.000000, NULL),
+(53, 53, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 71, '2025-12-14 22:19:44', 1, 0.000000, 0.000000, 0.000000, NULL),
+(54, 54, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 30, '2025-12-14 22:19:45', 1, 0.000000, 0.000000, 0.000000, NULL),
+(55, 55, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 70, '2025-12-14 22:19:44', 1, 0.000000, 0.000000, 0.000000, NULL),
+(56, 56, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 88, '2025-12-14 22:19:44', 1, 0.000000, 0.000000, 0.000000, NULL),
+(57, 57, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 20, '2025-12-14 22:19:45', 1, 0.000000, 0.000000, 0.000000, NULL),
+(58, 58, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 92, '2025-12-14 22:19:45', 1, 0.000000, 0.000000, 0.000000, NULL),
+(59, 59, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 21, '2025-12-14 22:19:45', 1, 0.000000, 0.000000, 0.000000, NULL),
+(60, 60, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 84, '2025-12-14 22:19:45', 1, 0.000000, 0.000000, 0.000000, NULL),
+(61, 61, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 10, '2025-12-14 22:19:45', 1, 0.000000, 0.000000, 0.000000, NULL),
+(62, 62, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 15, '2025-12-14 22:19:46', 1, 0.000000, 0.000000, 0.000000, NULL),
+(63, 63, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 100, '2025-12-14 22:19:46', 1, 0.000000, 0.000000, 0.000000, NULL),
+(64, 64, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 6, '2025-12-14 22:19:46', 1, 0.000000, 0.000000, 0.000000, NULL),
+(65, 65, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 21, '2025-12-14 22:19:46', 1, 0.000000, 0.000000, 0.000000, NULL),
+(66, 66, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 54, '2025-12-14 22:19:47', 1, 0.000000, 0.000000, 0.000000, NULL),
+(67, 67, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 56, '2025-12-14 22:19:47', 1, 0.000000, 0.000000, 0.000000, NULL),
+(68, 68, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 56, '2025-12-14 22:19:47', 1, 0.000000, 0.000000, 0.000000, NULL),
+(69, 69, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 96, '2025-12-14 22:19:47', 1, 0.000000, 0.000000, 0.000000, NULL),
+(70, 70, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 81, '2025-12-14 22:19:48', 1, 0.000000, 0.000000, 0.000000, NULL),
+(71, 71, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 69, '2025-12-14 22:19:48', 1, 0.000000, 0.000000, 0.000000, NULL),
+(72, 72, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 27, '2025-12-14 22:19:48', 1, 0.000000, 0.000000, 0.000000, NULL),
+(73, 73, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 57, '2025-12-14 22:19:48', 1, 0.000000, 0.000000, 0.000000, NULL),
+(74, 74, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 87, '2025-12-14 22:19:48', 1, 0.000000, 0.000000, 0.000000, NULL),
+(75, 75, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 93, '2025-12-14 22:19:49', 1, 0.000000, 0.000000, 0.000000, NULL),
+(76, 76, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 78, '2025-12-14 22:19:49', 1, 0.000000, 0.000000, 0.000000, NULL),
+(77, 77, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 46, '2025-12-14 22:19:49', 1, 0.000000, 0.000000, 0.000000, NULL),
+(78, 78, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 28, '2025-12-14 22:19:49', 1, 0.000000, 0.000000, 0.000000, NULL),
+(79, 79, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 50, '2025-12-14 22:19:50', 1, 0.000000, 0.000000, 0.000000, NULL),
+(80, 80, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 90, '2025-12-14 22:19:49', 1, 0.000000, 0.000000, 0.000000, NULL),
+(81, 81, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 54, '2025-12-14 22:19:50', 1, 0.000000, 0.000000, 0.000000, NULL),
+(82, 82, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 20, '2025-12-14 22:19:50', 1, 0.000000, 0.000000, 0.000000, NULL),
+(83, 83, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 36, '2025-12-14 22:19:50', 1, 0.000000, 0.000000, 0.000000, NULL),
+(84, 84, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 67, '2025-12-14 22:19:50', 1, 0.000000, 0.000000, 0.000000, NULL),
+(85, 85, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 64, '2025-12-14 22:19:50', 1, 0.000000, 0.000000, 0.000000, NULL),
+(86, 86, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 39, '2025-12-14 22:19:50', 1, 0.000000, 0.000000, 0.000000, NULL),
+(87, 87, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 71, '2025-12-14 22:19:51', 1, 0.000000, 0.000000, 0.000000, NULL),
+(88, 88, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 74, '2025-12-14 22:19:51', 1, 0.000000, 0.000000, 0.000000, NULL),
+(89, 89, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 66, '2025-12-14 22:19:51', 1, 0.000000, 0.000000, 0.000000, NULL),
+(90, 90, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 89, '2025-12-14 22:19:51', 1, 0.000000, 0.000000, 0.000000, NULL),
+(91, 91, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 60, '2025-12-14 22:19:52', 1, 0.000000, 0.000000, 0.000000, NULL),
+(92, 92, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 95, '2025-12-14 22:19:52', 1, 0.000000, 0.000000, 0.000000, NULL),
+(93, 93, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 88, '2025-12-14 22:19:52', 1, 0.000000, 0.000000, 0.000000, NULL),
+(94, 94, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 28, '2025-12-14 22:19:52', 1, 0.000000, 0.000000, 0.000000, NULL),
+(95, 95, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 78, '2025-12-14 22:19:52', 1, 0.000000, 0.000000, 0.000000, NULL),
+(96, 96, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 72, '2025-12-14 22:19:52', 1, 0.000000, 0.000000, 0.000000, NULL),
+(97, 97, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 100, '2025-12-14 22:19:53', 1, 0.000000, 0.000000, 0.000000, NULL),
+(98, 98, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 70, '2025-12-14 22:19:53', 1, 0.000000, 0.000000, 0.000000, NULL),
+(99, 99, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 61, '2025-12-14 22:19:53', 1, 0.000000, 0.000000, 0.000000, NULL),
+(100, 100, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 70, '2025-12-14 22:19:53', 1, 0.000000, 0.000000, 0.000000, NULL),
+(101, 101, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 86, '2025-12-14 22:19:54', 1, 0.000000, 0.000000, 0.000000, NULL),
+(102, 102, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 66, '2025-12-14 22:19:53', 1, 0.000000, 0.000000, 0.000000, NULL),
+(103, 103, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 58, '2025-12-14 22:19:53', 1, 0.000000, 0.000000, 0.000000, NULL),
+(104, 104, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 39, '2025-12-14 22:19:54', 1, 0.000000, 0.000000, 0.000000, NULL),
+(105, 105, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 69, '2025-12-14 22:19:54', 1, 0.000000, 0.000000, 0.000000, NULL),
+(106, 106, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 22, '2025-12-14 22:19:54', 1, 0.000000, 0.000000, 0.000000, NULL),
+(107, 107, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 55, '2025-12-14 22:19:54', 1, 0.000000, 0.000000, 0.000000, NULL),
+(108, 108, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 24, '2025-12-14 22:20:38', 1, 0.000000, 0.000000, 0.000000, NULL),
+(109, 109, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 98, '2025-12-14 22:19:54', 1, 0.000000, 0.000000, 0.000000, NULL),
+(110, 110, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 40, '2025-12-14 22:19:55', 1, 0.000000, 0.000000, 0.000000, NULL),
+(111, 111, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 83, '2025-12-14 22:19:55', 1, 0.000000, 0.000000, 0.000000, NULL),
+(112, 112, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 58, '2025-12-14 22:19:55', 1, 0.000000, 0.000000, 0.000000, NULL),
+(113, 113, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 40, '2025-12-14 22:19:55', 1, 0.000000, 0.000000, 0.000000, NULL),
+(114, 114, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 26, '2025-12-14 22:19:55', 1, 0.000000, 0.000000, 0.000000, NULL),
+(115, 115, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 15, '2025-12-14 22:19:56', 1, 0.000000, 0.000000, 0.000000, NULL),
+(116, 116, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 30, '2025-12-14 22:19:56', 1, 0.000000, 0.000000, 0.000000, NULL),
+(117, 117, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 23, '2025-12-14 22:19:56', 1, 0.000000, 0.000000, 0.000000, NULL),
+(118, 118, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 97, '2025-12-14 22:19:56', 1, 0.000000, 0.000000, 0.000000, NULL),
+(119, 119, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 71, '2025-12-14 22:19:56', 1, 0.000000, 0.000000, 0.000000, NULL),
+(120, 120, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 93, '2025-12-14 22:19:56', 1, 0.000000, 0.000000, 0.000000, NULL),
+(121, 121, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 64, '2025-12-14 22:19:57', 1, 0.000000, 0.000000, 0.000000, NULL),
+(122, 122, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 27, '2025-12-14 22:19:57', 1, 0.000000, 0.000000, 0.000000, NULL),
+(123, 123, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 2, '2025-12-14 22:19:57', 1, 0.000000, 0.000000, 0.000000, NULL),
+(124, 124, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 89, '2025-12-14 22:19:57', 1, 0.000000, 0.000000, 0.000000, NULL),
+(125, 125, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 91, '2025-12-14 22:19:57', 1, 0.000000, 0.000000, 0.000000, NULL),
+(126, 126, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 24, '2025-12-14 22:19:57', 1, 0.000000, 0.000000, 0.000000, NULL),
+(127, 127, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 3, '2025-12-14 22:19:58', 1, 0.000000, 0.000000, 0.000000, NULL),
+(128, 128, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 34, '2025-12-14 22:19:58', 1, 0.000000, 0.000000, 0.000000, NULL),
+(129, 129, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 16, '2025-12-14 22:19:58', 1, 0.000000, 0.000000, 0.000000, NULL),
+(130, 130, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 40, '2025-12-14 22:19:58', 1, 0.000000, 0.000000, 0.000000, NULL),
+(131, 131, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 38, '2025-12-14 22:19:58', 1, 0.000000, 0.000000, 0.000000, NULL),
+(132, 132, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 2, '2025-12-14 22:19:58', 1, 0.000000, 0.000000, 0.000000, NULL),
+(133, 133, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 59, '2025-12-14 22:19:59', 1, 0.000000, 0.000000, 0.000000, NULL),
+(134, 134, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 21, '2025-12-14 22:19:59', 1, 0.000000, 0.000000, 0.000000, NULL),
+(135, 135, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 89, '2025-12-14 22:19:59', 1, 0.000000, 0.000000, 0.000000, NULL),
+(136, 136, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 98, '2025-12-14 22:19:59', 1, 0.000000, 0.000000, 0.000000, NULL),
+(137, 137, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 37, '2025-12-14 22:19:59', 1, 0.000000, 0.000000, 0.000000, NULL),
+(138, 138, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 33, '2025-12-14 22:19:59', 1, 0.000000, 0.000000, 0.000000, NULL),
+(139, 139, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 59, '2025-12-14 22:19:59', 1, 0.000000, 0.000000, 0.000000, NULL),
+(140, 140, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 87, '2025-12-14 22:19:59', 1, 0.000000, 0.000000, 0.000000, NULL),
+(141, 141, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 80, '2025-12-14 22:20:00', 1, 0.000000, 0.000000, 0.000000, NULL),
+(142, 142, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 87, '2025-12-14 22:20:00', 1, 0.000000, 0.000000, 0.000000, NULL),
+(143, 143, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 33, '2025-12-14 22:20:00', 1, 0.000000, 0.000000, 0.000000, NULL),
+(144, 144, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 88, '2025-12-14 22:20:00', 1, 0.000000, 0.000000, 0.000000, NULL),
+(145, 145, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 54, '2025-12-14 22:20:00', 1, 0.000000, 0.000000, 0.000000, NULL),
+(146, 146, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 52, '2025-12-14 22:20:01', 1, 0.000000, 0.000000, 0.000000, NULL),
+(147, 147, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 98, '2025-12-14 22:20:01', 1, 0.000000, 0.000000, 0.000000, NULL),
+(148, 148, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 60, '2025-12-14 22:20:01', 1, 0.000000, 0.000000, 0.000000, NULL),
+(149, 149, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 41, '2025-12-14 22:20:01', 1, 0.000000, 0.000000, 0.000000, NULL),
+(150, 150, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 61, '2025-12-14 22:20:01', 1, 0.000000, 0.000000, 0.000000, NULL),
+(151, 151, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 67, '2025-12-14 22:20:02', 1, 0.000000, 0.000000, 0.000000, NULL),
+(152, 152, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 44, '2025-12-14 22:20:02', 1, 0.000000, 0.000000, 0.000000, NULL),
+(153, 153, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 20, '2025-12-14 22:20:02', 1, 0.000000, 0.000000, 0.000000, NULL),
+(154, 154, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 29, '2025-12-14 22:20:02', 1, 0.000000, 0.000000, 0.000000, NULL),
+(155, 155, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 25, '2025-12-14 22:20:02', 1, 0.000000, 0.000000, 0.000000, NULL),
+(156, 156, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 20, '2025-12-14 22:20:02', 1, 0.000000, 0.000000, 0.000000, NULL),
+(157, 157, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 11, '2025-12-14 22:20:03', 1, 0.000000, 0.000000, 0.000000, NULL),
+(158, 158, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 60, '2025-12-14 22:20:03', 1, 0.000000, 0.000000, 0.000000, NULL),
+(159, 159, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 55, '2025-12-14 22:20:03', 1, 0.000000, 0.000000, 0.000000, NULL),
+(160, 160, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 39, '2025-12-14 22:20:03', 1, 0.000000, 0.000000, 0.000000, NULL),
+(161, 161, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 69, '2025-12-14 22:20:03', 1, 0.000000, 0.000000, 0.000000, NULL),
+(162, 162, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 86, '2025-12-14 22:20:03', 1, 0.000000, 0.000000, 0.000000, NULL),
+(163, 163, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 34, '2025-12-14 22:20:04', 1, 0.000000, 0.000000, 0.000000, NULL),
+(164, 164, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 46, '2025-12-14 22:20:04', 1, 0.000000, 0.000000, 0.000000, NULL),
+(165, 165, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 85, '2025-12-14 22:20:04', 1, 0.000000, 0.000000, 0.000000, NULL),
+(166, 166, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 38, '2025-12-14 22:20:04', 1, 0.000000, 0.000000, 0.000000, NULL),
+(167, 167, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 45, '2025-12-14 22:20:04', 1, 0.000000, 0.000000, 0.000000, NULL),
+(168, 168, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 18, '2025-12-14 22:20:04', 1, 0.000000, 0.000000, 0.000000, NULL),
+(169, 169, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 94, '2025-12-14 22:20:04', 1, 0.000000, 0.000000, 0.000000, NULL),
+(170, 170, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 42, '2025-12-14 22:20:04', 1, 0.000000, 0.000000, 0.000000, NULL),
+(171, 171, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 59, '2025-12-14 22:20:05', 1, 0.000000, 0.000000, 0.000000, NULL),
+(172, 172, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 95, '2025-12-14 22:20:05', 1, 0.000000, 0.000000, 0.000000, NULL),
+(173, 173, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 21, '2025-12-14 22:20:05', 1, 0.000000, 0.000000, 0.000000, NULL),
+(174, 174, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 64, '2025-12-14 22:20:05', 1, 0.000000, 0.000000, 0.000000, NULL),
+(175, 175, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 49, '2025-12-14 22:20:06', 1, 0.000000, 0.000000, 0.000000, NULL),
+(176, 176, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 65, '2025-12-14 22:20:06', 1, 0.000000, 0.000000, 0.000000, NULL),
+(177, 177, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 75, '2025-12-14 22:20:06', 1, 0.000000, 0.000000, 0.000000, NULL),
+(178, 178, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 73, '2025-12-14 22:20:07', 1, 0.000000, 0.000000, 0.000000, NULL),
+(179, 179, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 35, '2025-12-14 22:20:07', 1, 0.000000, 0.000000, 0.000000, NULL),
+(180, 180, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 32, '2025-12-14 22:20:07', 1, 0.000000, 0.000000, 0.000000, NULL),
+(181, 181, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 61, '2025-12-14 22:20:07', 1, 0.000000, 0.000000, 0.000000, NULL),
+(182, 182, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 14, '2025-12-14 22:20:08', 1, 0.000000, 0.000000, 0.000000, NULL),
+(183, 183, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 6, '2025-12-14 22:20:08', 1, 0.000000, 0.000000, 0.000000, NULL),
+(184, 184, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 49, '2025-12-14 22:20:08', 1, 0.000000, 0.000000, 0.000000, NULL),
+(185, 185, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 73, '2025-12-14 22:20:08', 1, 0.000000, 0.000000, 0.000000, NULL),
+(186, 186, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 66, '2025-12-14 22:20:09', 1, 0.000000, 0.000000, 0.000000, NULL),
+(187, 187, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 54, '2025-12-14 22:20:09', 1, 0.000000, 0.000000, 0.000000, NULL),
+(188, 188, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 9, '2025-12-14 22:20:09', 1, 0.000000, 0.000000, 0.000000, NULL),
+(189, 189, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 49, '2025-12-14 22:20:09', 1, 0.000000, 0.000000, 0.000000, NULL),
+(190, 190, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 83, '2025-12-14 22:20:09', 1, 0.000000, 0.000000, 0.000000, NULL),
+(191, 191, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 25, '2025-12-14 22:20:10', 1, 0.000000, 0.000000, 0.000000, NULL),
+(192, 192, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 57, '2025-12-14 22:20:10', 1, 0.000000, 0.000000, 0.000000, NULL),
+(193, 193, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 14, '2025-12-14 22:20:11', 1, 0.000000, 0.000000, 0.000000, NULL),
+(194, 194, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 77, '2025-12-14 22:20:11', 1, 0.000000, 0.000000, 0.000000, NULL),
+(195, 195, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 37, '2025-12-14 22:20:11', 1, 0.000000, 0.000000, 0.000000, NULL),
+(196, 196, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 95, '2025-12-14 22:20:12', 1, 0.000000, 0.000000, 0.000000, NULL),
+(197, 197, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 23, '2025-12-14 22:20:12', 1, 0.000000, 0.000000, 0.000000, NULL),
+(198, 198, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 56, '2025-12-14 22:20:12', 1, 0.000000, 0.000000, 0.000000, NULL),
+(199, 199, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 1, '2025-12-14 22:20:13', 1, 0.000000, 0.000000, 0.000000, NULL),
+(200, 200, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 31, '2025-12-14 22:20:13', 1, 0.000000, 0.000000, 0.000000, NULL),
+(201, 201, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 37, '2025-12-14 22:20:13', 1, 0.000000, 0.000000, 0.000000, NULL),
+(202, 202, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 74, '2025-12-14 22:20:14', 1, 0.000000, 0.000000, 0.000000, NULL),
+(203, 203, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 51, '2025-12-14 22:20:14', 1, 0.000000, 0.000000, 0.000000, NULL),
+(204, 204, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 30, '2025-12-14 22:20:14', 1, 0.000000, 0.000000, 0.000000, NULL),
+(205, 205, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 10, '2025-12-14 22:20:14', 1, 0.000000, 0.000000, 0.000000, NULL),
+(206, 206, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 40, '2025-12-14 22:20:14', 1, 0.000000, 0.000000, 0.000000, NULL),
+(207, 207, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 11, '2025-12-14 22:20:14', 1, 0.000000, 0.000000, 0.000000, NULL),
+(208, 208, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 18, '2025-12-14 22:20:15', 1, 0.000000, 0.000000, 0.000000, NULL),
+(209, 209, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 34, '2025-12-14 22:20:15', 1, 0.000000, 0.000000, 0.000000, NULL),
+(210, 210, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 30, '2025-12-14 22:20:15', 1, 0.000000, 0.000000, 0.000000, NULL),
+(211, 211, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 49, '2025-12-14 22:20:16', 1, 0.000000, 0.000000, 0.000000, NULL),
+(212, 212, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 78, '2025-12-14 22:20:16', 1, 0.000000, 0.000000, 0.000000, NULL),
+(213, 213, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 88, '2025-12-14 22:20:16', 1, 0.000000, 0.000000, 0.000000, NULL),
+(214, 214, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 56, '2025-12-14 22:20:16', 1, 0.000000, 0.000000, 0.000000, NULL),
+(215, 215, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 11, '2025-12-14 22:20:17', 1, 0.000000, 0.000000, 0.000000, NULL),
+(216, 216, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 45, '2025-12-14 22:20:17', 1, 0.000000, 0.000000, 0.000000, NULL),
+(217, 217, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 60, '2025-12-14 22:20:17', 1, 0.000000, 0.000000, 0.000000, NULL),
+(218, 218, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 53, '2025-12-14 22:20:17', 1, 0.000000, 0.000000, 0.000000, NULL),
+(219, 219, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 32, '2025-12-14 22:20:18', 1, 0.000000, 0.000000, 0.000000, NULL),
+(220, 220, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 12, '2025-12-14 22:20:18', 1, 0.000000, 0.000000, 0.000000, NULL),
+(221, 221, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 65, '2025-12-14 22:20:18', 1, 0.000000, 0.000000, 0.000000, NULL),
+(222, 222, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 9, '2025-12-14 22:20:19', 1, 0.000000, 0.000000, 0.000000, NULL),
+(223, 223, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 3, '2025-12-14 22:20:19', 1, 0.000000, 0.000000, 0.000000, NULL),
+(224, 224, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 30, '2025-12-14 22:20:19', 1, 0.000000, 0.000000, 0.000000, NULL),
+(225, 225, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 58, '2025-12-14 22:20:19', 1, 0.000000, 0.000000, 0.000000, NULL),
+(226, 226, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 30, '2025-12-14 22:20:20', 1, 0.000000, 0.000000, 0.000000, NULL),
+(227, 227, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 86, '2025-12-14 22:20:20', 1, 0.000000, 0.000000, 0.000000, NULL),
+(228, 228, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 7, '2025-12-14 22:20:21', 1, 0.000000, 0.000000, 0.000000, NULL),
+(229, 229, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 8, '2025-12-14 22:20:21', 1, 0.000000, 0.000000, 0.000000, NULL),
+(230, 230, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 43, '2025-12-14 22:20:21', 1, 0.000000, 0.000000, 0.000000, NULL),
+(231, 231, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 68, '2025-12-14 22:20:21', 1, 0.000000, 0.000000, 0.000000, NULL),
+(232, 232, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 27, '2025-12-14 22:20:22', 1, 0.000000, 0.000000, 0.000000, NULL),
+(233, 233, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 45, '2025-12-14 22:20:22', 1, 0.000000, 0.000000, 0.000000, NULL),
+(234, 234, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 1, '2025-12-14 22:20:22', 1, 0.000000, 0.000000, 0.000000, NULL),
+(235, 235, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 34, '2025-12-14 22:20:22', 1, 0.000000, 0.000000, 0.000000, NULL),
+(236, 236, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 16, '2025-12-14 22:20:23', 1, 0.000000, 0.000000, 0.000000, NULL),
+(237, 237, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 35, '2025-12-14 22:20:23', 1, 0.000000, 0.000000, 0.000000, NULL),
+(238, 238, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 89, '2025-12-14 22:20:23', 1, 0.000000, 0.000000, 0.000000, NULL),
+(239, 239, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 64, '2025-12-14 22:20:24', 1, 0.000000, 0.000000, 0.000000, NULL),
+(240, 240, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 80, '2025-12-14 22:20:24', 1, 0.000000, 0.000000, 0.000000, NULL),
+(241, 241, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 95, '2025-12-14 22:20:24', 1, 0.000000, 0.000000, 0.000000, NULL),
+(242, 242, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 50, '2025-12-14 22:20:24', 1, 0.000000, 0.000000, 0.000000, NULL),
+(243, 243, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 17, '2025-12-14 22:20:25', 1, 0.000000, 0.000000, 0.000000, NULL),
+(244, 244, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 60, '2025-12-14 22:20:25', 1, 0.000000, 0.000000, 0.000000, NULL),
+(245, 245, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 91, '2025-12-14 22:20:25', 1, 0.000000, 0.000000, 0.000000, NULL),
+(246, 246, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 23, '2025-12-14 22:20:25', 1, 0.000000, 0.000000, 0.000000, NULL),
+(247, 247, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 4, '2025-12-14 22:20:26', 1, 0.000000, 0.000000, 0.000000, NULL),
+(248, 248, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 75, '2025-12-14 22:20:27', 1, 0.000000, 0.000000, 0.000000, NULL),
+(249, 249, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 81, '2025-12-14 22:20:27', 1, 0.000000, 0.000000, 0.000000, NULL),
+(250, 250, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 10, '2025-12-14 22:20:28', 1, 0.000000, 0.000000, 0.000000, NULL),
+(251, 251, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 40, '2025-12-14 22:20:29', 1, 0.000000, 0.000000, 0.000000, NULL),
+(252, 252, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 67, '2025-12-14 22:20:29', 1, 0.000000, 0.000000, 0.000000, NULL),
+(253, 253, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 23, '2025-12-14 22:20:30', 1, 0.000000, 0.000000, 0.000000, NULL),
+(254, 254, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 37, '2025-12-14 22:20:30', 1, 0.000000, 0.000000, 0.000000, NULL),
+(255, 255, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 33, '2025-12-14 22:20:31', 1, 0.000000, 0.000000, 0.000000, NULL),
+(256, 256, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 31, '2025-12-14 22:20:31', 1, 0.000000, 0.000000, 0.000000, NULL),
+(257, 257, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 28, '2025-12-14 22:20:31', 1, 0.000000, 0.000000, 0.000000, NULL),
+(258, 258, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 98, '2025-12-14 22:20:31', 1, 0.000000, 0.000000, 0.000000, NULL),
+(259, 259, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 50, '2025-12-14 22:20:31', 1, 0.000000, 0.000000, 0.000000, NULL),
+(260, 260, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 46, '2025-12-14 22:20:32', 1, 0.000000, 0.000000, 0.000000, NULL),
+(261, 261, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 57, '2025-12-14 22:20:32', 1, 0.000000, 0.000000, 0.000000, NULL),
+(262, 262, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 69, '2025-12-14 22:20:32', 1, 0.000000, 0.000000, 0.000000, NULL),
+(263, 263, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 82, '2025-12-14 22:20:33', 1, 0.000000, 0.000000, 0.000000, NULL),
+(264, 264, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 90, '2025-12-14 22:20:33', 1, 0.000000, 0.000000, 0.000000, NULL),
+(265, 265, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 44, '2025-12-14 22:20:33', 1, 0.000000, 0.000000, 0.000000, NULL),
+(266, 266, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 54, '2025-12-14 22:20:33', 1, 0.000000, 0.000000, 0.000000, NULL),
+(267, 267, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 32, '2025-12-14 22:20:33', 1, 0.000000, 0.000000, 0.000000, NULL),
+(268, 268, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 66, '2025-12-14 22:20:33', 1, 0.000000, 0.000000, 0.000000, NULL),
+(269, 269, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 35, '2025-12-14 22:20:34', 1, 0.000000, 0.000000, 0.000000, NULL),
+(270, 270, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 50, '2025-12-14 22:20:34', 1, 0.000000, 0.000000, 0.000000, NULL),
+(271, 271, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 59, '2025-12-14 22:20:34', 1, 0.000000, 0.000000, 0.000000, NULL),
+(272, 272, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 43, '2025-12-14 22:20:34', 1, 0.000000, 0.000000, 0.000000, NULL),
+(273, 273, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 43, '2025-12-14 22:20:35', 1, 0.000000, 0.000000, 0.000000, NULL),
+(274, 274, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 40, '2025-12-14 22:20:35', 1, 0.000000, 0.000000, 0.000000, NULL),
+(275, 275, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 7, '2025-12-14 22:20:35', 1, 0.000000, 0.000000, 0.000000, NULL),
+(276, 276, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 100, '2025-12-14 22:20:35', 1, 0.000000, 0.000000, 0.000000, NULL),
+(277, 277, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 77, '2025-12-14 22:20:35', 1, 0.000000, 0.000000, 0.000000, NULL),
+(278, 278, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 31, '2025-12-14 22:20:36', 1, 0.000000, 0.000000, 0.000000, NULL),
+(279, 279, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 2, '2025-12-14 22:20:36', 1, 0.000000, 0.000000, 0.000000, NULL),
+(280, 280, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 60, '2025-12-14 22:20:36', 1, 0.000000, 0.000000, 0.000000, NULL),
+(281, 281, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 35, '2025-12-14 22:20:36', 1, 0.000000, 0.000000, 0.000000, NULL),
+(282, 282, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 49, '2025-12-14 22:20:36', 1, 0.000000, 0.000000, 0.000000, NULL),
+(283, 283, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 59, '2025-12-14 22:20:37', 1, 0.000000, 0.000000, 0.000000, NULL),
+(284, 284, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 20, '2025-12-14 22:20:37', 1, 0.000000, 0.000000, 0.000000, NULL),
+(285, 285, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 66, '2025-12-14 22:20:37', 1, 0.000000, 0.000000, 0.000000, NULL),
+(286, 286, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 22, '2025-12-14 22:20:37', 1, 0.000000, 0.000000, 0.000000, NULL),
+(287, 287, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 46, '2025-12-14 22:20:38', 1, 0.000000, 0.000000, 0.000000, NULL),
+(288, 288, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 71, '2025-12-14 22:20:38', 1, 0.000000, 0.000000, 0.000000, NULL),
+(289, 289, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 28, '2025-12-14 22:20:38', 1, 0.000000, 0.000000, 0.000000, NULL),
+(290, 290, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 37, '2025-12-14 22:20:38', 1, 0.000000, 0.000000, 0.000000, NULL),
+(291, 291, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 21, '2025-12-14 22:20:39', 1, 0.000000, 0.000000, 0.000000, NULL),
+(292, 292, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 19, '2025-12-14 22:20:39', 1, 0.000000, 0.000000, 0.000000, NULL),
+(293, 293, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 8, '2025-12-14 22:20:39', 1, 0.000000, 0.000000, 0.000000, NULL),
+(294, 294, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 73, '2025-12-14 22:20:39', 1, 0.000000, 0.000000, 0.000000, NULL),
+(295, 295, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 85, '2025-12-14 22:20:39', 1, 0.000000, 0.000000, 0.000000, NULL),
+(296, 296, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 41, '2025-12-14 22:20:40', 1, 0.000000, 0.000000, 0.000000, NULL),
+(297, 297, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 97, '2025-12-14 22:20:40', 1, 0.000000, 0.000000, 0.000000, NULL),
+(298, 298, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 71, '2025-12-14 22:20:40', 1, 0.000000, 0.000000, 0.000000, NULL),
+(299, 299, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 84, '2025-12-14 22:20:40', 1, 0.000000, 0.000000, 0.000000, NULL),
+(300, 300, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 11, '2025-12-14 22:20:40', 1, 0.000000, 0.000000, 0.000000, NULL),
+(301, 301, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 4, '2025-12-14 22:20:41', 1, 0.000000, 0.000000, 0.000000, NULL),
+(302, 302, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 21, '2025-12-14 22:20:41', 1, 0.000000, 0.000000, 0.000000, NULL),
+(303, 303, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 19, '2025-12-14 22:20:41', 1, 0.000000, 0.000000, 0.000000, NULL),
+(304, 304, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 89, '2025-12-14 22:20:42', 1, 0.000000, 0.000000, 0.000000, NULL),
+(305, 305, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 90, '2025-12-14 22:20:42', 1, 0.000000, 0.000000, 0.000000, NULL),
+(306, 306, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 38, '2025-12-14 22:20:42', 1, 0.000000, 0.000000, 0.000000, NULL),
+(307, 307, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 1, '2025-12-14 22:20:42', 1, 0.000000, 0.000000, 0.000000, NULL),
+(308, 308, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 70, '2025-12-14 22:20:42', 1, 0.000000, 0.000000, 0.000000, NULL),
+(309, 309, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 60, '2025-12-14 22:20:43', 1, 0.000000, 0.000000, 0.000000, NULL),
+(310, 310, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 66, '2025-12-14 22:20:43', 1, 0.000000, 0.000000, 0.000000, NULL),
+(311, 311, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 5, '2025-12-14 22:20:43', 1, 0.000000, 0.000000, 0.000000, NULL),
+(312, 312, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 82, '2025-12-14 22:20:44', 1, 0.000000, 0.000000, 0.000000, NULL),
+(313, 313, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 86, '2025-12-14 22:20:44', 1, 0.000000, 0.000000, 0.000000, NULL),
+(314, 314, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 92, '2025-12-14 22:20:44', 1, 0.000000, 0.000000, 0.000000, NULL),
+(315, 315, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 13, '2025-12-14 22:20:44', 1, 0.000000, 0.000000, 0.000000, NULL),
+(316, 316, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 94, '2025-12-14 22:20:44', 1, 0.000000, 0.000000, 0.000000, NULL),
+(317, 317, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 66, '2025-12-14 22:20:44', 1, 0.000000, 0.000000, 0.000000, NULL),
+(318, 318, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 10, '2025-12-14 22:20:44', 1, 0.000000, 0.000000, 0.000000, NULL),
+(319, 319, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 62, '2025-12-14 22:20:45', 1, 0.000000, 0.000000, 0.000000, NULL),
+(320, 320, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 100, '2025-12-14 22:20:45', 1, 0.000000, 0.000000, 0.000000, NULL),
+(321, 321, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 7, '2025-12-14 22:20:45', 1, 0.000000, 0.000000, 0.000000, NULL),
+(322, 322, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 41, '2025-12-14 22:20:45', 1, 0.000000, 0.000000, 0.000000, NULL),
+(323, 323, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 66, '2025-12-14 22:20:45', 1, 0.000000, 0.000000, 0.000000, NULL),
+(324, 324, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 39, '2025-12-14 22:20:45', 1, 0.000000, 0.000000, 0.000000, NULL),
+(325, 325, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 15, '2025-12-14 22:20:46', 1, 0.000000, 0.000000, 0.000000, NULL),
+(326, 326, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 47, '2025-12-14 22:20:46', 1, 0.000000, 0.000000, 0.000000, NULL),
+(327, 327, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 77, '2025-12-14 22:20:46', 1, 0.000000, 0.000000, 0.000000, NULL),
+(328, 328, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 90, '2025-12-14 22:20:46', 1, 0.000000, 0.000000, 0.000000, NULL),
+(329, 329, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 94, '2025-12-14 22:20:46', 1, 0.000000, 0.000000, 0.000000, NULL),
+(330, 330, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 54, '2025-12-14 22:20:47', 1, 0.000000, 0.000000, 0.000000, NULL),
+(331, 331, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 17, '2025-12-14 22:20:47', 1, 0.000000, 0.000000, 0.000000, NULL),
+(332, 332, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 55, '2025-12-14 22:20:47', 1, 0.000000, 0.000000, 0.000000, NULL),
+(333, 333, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 92, '2025-12-14 22:20:47', 1, 0.000000, 0.000000, 0.000000, NULL),
+(334, 334, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 82, '2025-12-14 22:20:48', 1, 0.000000, 0.000000, 0.000000, NULL),
+(335, 335, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 37, '2025-12-14 22:20:48', 1, 0.000000, 0.000000, 0.000000, NULL),
+(336, 336, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 53, '2025-12-14 22:20:48', 1, 0.000000, 0.000000, 0.000000, NULL),
+(337, 337, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 16, '2025-12-14 22:20:48', 1, 0.000000, 0.000000, 0.000000, NULL),
+(338, 338, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 13, '2025-12-14 22:20:48', 1, 0.000000, 0.000000, 0.000000, NULL),
+(339, 339, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 96, '2025-12-14 22:20:49', 1, 0.000000, 0.000000, 0.000000, NULL),
+(340, 340, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 40, '2025-12-14 22:20:49', 1, 0.000000, 0.000000, 0.000000, NULL),
+(341, 341, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 60, '2025-12-14 22:20:49', 1, 0.000000, 0.000000, 0.000000, NULL),
+(342, 342, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 5, '2025-12-14 22:20:49', 1, 0.000000, 0.000000, 0.000000, NULL),
+(343, 343, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 47, '2025-12-14 22:20:49', 1, 0.000000, 0.000000, 0.000000, NULL),
+(344, 344, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 45, '2025-12-14 22:20:49', 1, 0.000000, 0.000000, 0.000000, NULL),
+(345, 345, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 66, '2025-12-14 22:20:50', 1, 0.000000, 0.000000, 0.000000, NULL),
+(346, 346, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 18, '2025-12-14 22:20:50', 1, 0.000000, 0.000000, 0.000000, NULL),
+(347, 347, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 11, '2025-12-14 22:20:50', 1, 0.000000, 0.000000, 0.000000, NULL),
+(348, 348, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 38, '2025-12-14 22:20:50', 1, 0.000000, 0.000000, 0.000000, NULL),
+(349, 349, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 79, '2025-12-14 22:20:50', 1, 0.000000, 0.000000, 0.000000, NULL),
+(350, 350, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 45, '2025-12-14 22:20:50', 1, 0.000000, 0.000000, 0.000000, NULL),
+(351, 351, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 59, '2025-12-14 22:20:51', 1, 0.000000, 0.000000, 0.000000, NULL),
+(352, 352, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 69, '2025-12-14 22:20:51', 1, 0.000000, 0.000000, 0.000000, NULL),
+(353, 353, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 65, '2025-12-14 22:20:51', 1, 0.000000, 0.000000, 0.000000, NULL),
+(354, 354, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 97, '2025-12-14 22:20:51', 1, 0.000000, 0.000000, 0.000000, NULL),
+(355, 355, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 21, '2025-12-14 22:20:51', 1, 0.000000, 0.000000, 0.000000, NULL),
+(356, 356, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 4, '2025-12-14 22:20:52', 1, 0.000000, 0.000000, 0.000000, NULL),
+(357, 357, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 30, '2025-12-14 22:20:52', 1, 0.000000, 0.000000, 0.000000, NULL),
+(358, 358, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 13, '2025-12-14 22:20:52', 1, 0.000000, 0.000000, 0.000000, NULL),
+(359, 359, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 75, '2025-12-14 22:20:52', 1, 0.000000, 0.000000, 0.000000, NULL),
+(360, 360, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 26, '2025-12-14 22:20:53', 1, 0.000000, 0.000000, 0.000000, NULL),
+(361, 361, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 32, '2025-12-14 22:20:53', 1, 0.000000, 0.000000, 0.000000, NULL),
+(362, 362, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 30, '2025-12-14 22:20:53', 1, 0.000000, 0.000000, 0.000000, NULL),
+(363, 363, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 73, '2025-12-14 22:20:53', 1, 0.000000, 0.000000, 0.000000, NULL),
+(364, 364, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 62, '2025-12-14 22:20:54', 1, 0.000000, 0.000000, 0.000000, NULL),
+(365, 365, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 33, '2025-12-14 22:20:54', 1, 0.000000, 0.000000, 0.000000, NULL),
+(366, 366, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 6, '2025-12-14 22:20:54', 1, 0.000000, 0.000000, 0.000000, NULL),
+(367, 367, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 6, '2025-12-14 22:20:54', 1, 0.000000, 0.000000, 0.000000, NULL),
+(368, 368, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 16, '2025-12-14 22:20:55', 1, 0.000000, 0.000000, 0.000000, NULL),
+(369, 369, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 63, '2025-12-14 22:20:55', 1, 0.000000, 0.000000, 0.000000, NULL),
+(370, 370, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 48, '2025-12-14 22:20:55', 1, 0.000000, 0.000000, 0.000000, NULL),
+(371, 371, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 67, '2025-12-14 22:20:56', 1, 0.000000, 0.000000, 0.000000, NULL),
+(372, 372, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 96, '2025-12-14 22:20:56', 1, 0.000000, 0.000000, 0.000000, NULL),
+(373, 373, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 61, '2025-12-14 22:20:56', 1, 0.000000, 0.000000, 0.000000, NULL),
+(374, 374, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 19, '2025-12-14 22:20:57', 1, 0.000000, 0.000000, 0.000000, NULL),
+(375, 375, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 81, '2025-12-14 22:20:57', 1, 0.000000, 0.000000, 0.000000, NULL),
+(376, 376, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 16, '2025-12-14 22:20:57', 1, 0.000000, 0.000000, 0.000000, NULL),
+(377, 377, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 69, '2025-12-14 22:20:57', 1, 0.000000, 0.000000, 0.000000, NULL),
+(378, 378, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 36, '2025-12-14 22:20:57', 1, 0.000000, 0.000000, 0.000000, NULL),
+(379, 379, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 37, '2025-12-14 22:20:57', 1, 0.000000, 0.000000, 0.000000, NULL),
+(380, 380, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 63, '2025-12-14 22:20:58', 1, 0.000000, 0.000000, 0.000000, NULL),
+(381, 381, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 69, '2025-12-14 22:20:58', 1, 0.000000, 0.000000, 0.000000, NULL),
+(382, 382, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 79, '2025-12-14 22:20:58', 1, 0.000000, 0.000000, 0.000000, NULL),
+(383, 383, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 96, '2025-12-14 22:20:58', 1, 0.000000, 0.000000, 0.000000, NULL),
+(384, 384, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 75, '2025-12-14 22:20:58', 1, 0.000000, 0.000000, 0.000000, NULL),
+(385, 385, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 36, '2025-12-14 22:20:58', 1, 0.000000, 0.000000, 0.000000, NULL),
+(386, 386, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 54, '2025-12-14 22:20:59', 1, 0.000000, 0.000000, 0.000000, NULL),
+(387, 387, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 50, '2025-12-14 22:20:59', 1, 0.000000, 0.000000, 0.000000, NULL),
+(388, 388, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 90, '2025-12-14 22:20:59', 1, 0.000000, 0.000000, 0.000000, NULL),
+(389, 389, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 41, '2025-12-14 22:20:59', 1, 0.000000, 0.000000, 0.000000, NULL),
+(390, 390, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 59, '2025-12-14 22:20:59', 1, 0.000000, 0.000000, 0.000000, NULL),
+(391, 391, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 19, '2025-12-14 22:20:59', 1, 0.000000, 0.000000, 0.000000, NULL),
+(392, 392, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 95, '2025-12-14 22:20:59', 1, 0.000000, 0.000000, 0.000000, NULL),
+(393, 393, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 9, '2025-12-14 22:21:00', 1, 0.000000, 0.000000, 0.000000, NULL),
+(394, 394, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 80, '2025-12-14 22:21:00', 1, 0.000000, 0.000000, 0.000000, NULL),
+(395, 395, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 54, '2025-12-14 22:21:00', 1, 0.000000, 0.000000, 0.000000, NULL),
+(396, 396, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 34, '2025-12-14 22:21:00', 1, 0.000000, 0.000000, 0.000000, NULL),
+(397, 397, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 23, '2025-12-14 22:21:00', 1, 0.000000, 0.000000, 0.000000, NULL),
+(398, 398, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 68, '2025-12-14 22:21:00', 1, 0.000000, 0.000000, 0.000000, NULL),
+(399, 399, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 9, '2025-12-14 22:21:00', 1, 0.000000, 0.000000, 0.000000, NULL),
+(400, 400, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 43, '2025-12-14 22:21:00', 1, 0.000000, 0.000000, 0.000000, NULL),
+(401, 401, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 27, '2025-12-14 22:21:01', 1, 0.000000, 0.000000, 0.000000, NULL),
+(402, 402, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 54, '2025-12-14 22:21:01', 1, 0.000000, 0.000000, 0.000000, NULL),
+(403, 403, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 44, '2025-12-14 22:21:01', 1, 0.000000, 0.000000, 0.000000, NULL),
+(404, 404, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 4, '2025-12-14 22:21:01', 1, 0.000000, 0.000000, 0.000000, NULL),
+(405, 405, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 90, '2025-12-14 22:21:02', 1, 0.000000, 0.000000, 0.000000, NULL),
+(406, 406, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 80, '2025-12-14 22:21:02', 1, 0.000000, 0.000000, 0.000000, NULL),
+(407, 407, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 82, '2025-12-14 22:21:02', 1, 0.000000, 0.000000, 0.000000, NULL),
+(408, 408, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 42, '2025-12-14 22:21:02', 1, 0.000000, 0.000000, 0.000000, NULL),
+(409, 409, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 79, '2025-12-14 22:21:02', 1, 0.000000, 0.000000, 0.000000, NULL),
+(410, 410, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 99, '2025-12-14 22:21:02', 1, 0.000000, 0.000000, 0.000000, NULL),
+(411, 411, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 15, '2025-12-14 22:21:03', 1, 0.000000, 0.000000, 0.000000, NULL),
+(412, 412, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 23, '2025-12-14 22:21:03', 1, 0.000000, 0.000000, 0.000000, NULL),
+(413, 413, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 59, '2025-12-14 22:21:03', 1, 0.000000, 0.000000, 0.000000, NULL),
+(414, 414, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 85, '2025-12-14 22:21:03', 1, 0.000000, 0.000000, 0.000000, NULL),
+(415, 415, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 21, '2025-12-14 22:21:03', 1, 0.000000, 0.000000, 0.000000, NULL),
+(416, 416, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 74, '2025-12-14 22:21:03', 1, 0.000000, 0.000000, 0.000000, NULL),
+(417, 417, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 5, '2025-12-14 22:21:03', 1, 0.000000, 0.000000, 0.000000, NULL),
+(418, 418, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 79, '2025-12-14 22:21:04', 1, 0.000000, 0.000000, 0.000000, NULL),
+(419, 419, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 88, '2025-12-14 22:21:04', 1, 0.000000, 0.000000, 0.000000, NULL),
+(420, 420, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 16, '2025-12-14 22:21:04', 1, 0.000000, 0.000000, 0.000000, NULL),
+(421, 421, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 43, '2025-12-14 22:21:05', 1, 0.000000, 0.000000, 0.000000, NULL),
+(422, 422, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 49, '2025-12-14 22:21:05', 1, 0.000000, 0.000000, 0.000000, NULL),
+(423, 423, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 36, '2025-12-14 22:21:05', 1, 0.000000, 0.000000, 0.000000, NULL),
+(424, 424, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 76, '2025-12-14 22:21:05', 1, 0.000000, 0.000000, 0.000000, NULL),
+(425, 425, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 41, '2025-12-14 22:21:05', 1, 0.000000, 0.000000, 0.000000, NULL),
+(426, 426, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 6, '2025-12-14 22:21:05', 1, 0.000000, 0.000000, 0.000000, NULL),
+(427, 427, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 67, '2025-12-14 22:21:05', 1, 0.000000, 0.000000, 0.000000, NULL),
+(428, 428, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 71, '2025-12-14 22:21:05', 1, 0.000000, 0.000000, 0.000000, NULL),
+(429, 429, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 54, '2025-12-14 22:21:06', 1, 0.000000, 0.000000, 0.000000, NULL),
+(430, 430, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 40, '2025-12-14 22:21:06', 1, 0.000000, 0.000000, 0.000000, NULL);
+INSERT INTO `ps_stock_mvt` (`id_stock_mvt`, `id_stock`, `id_order`, `id_supply_order`, `id_stock_mvt_reason`, `id_employee`, `employee_lastname`, `employee_firstname`, `physical_quantity`, `date_add`, `sign`, `price_te`, `last_wa`, `current_wa`, `referer`) VALUES
+(431, 431, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 28, '2025-12-14 22:21:06', 1, 0.000000, 0.000000, 0.000000, NULL),
+(432, 432, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 95, '2025-12-14 22:21:06', 1, 0.000000, 0.000000, 0.000000, NULL),
+(433, 433, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 60, '2025-12-14 22:21:07', 1, 0.000000, 0.000000, 0.000000, NULL),
+(434, 434, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 93, '2025-12-14 22:21:07', 1, 0.000000, 0.000000, 0.000000, NULL),
+(435, 435, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 78, '2025-12-14 22:21:07', 1, 0.000000, 0.000000, 0.000000, NULL),
+(436, 436, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 39, '2025-12-14 22:21:07', 1, 0.000000, 0.000000, 0.000000, NULL),
+(437, 437, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 63, '2025-12-14 22:21:07', 1, 0.000000, 0.000000, 0.000000, NULL),
+(438, 438, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 48, '2025-12-14 22:21:07', 1, 0.000000, 0.000000, 0.000000, NULL),
+(439, 439, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 88, '2025-12-14 22:21:07', 1, 0.000000, 0.000000, 0.000000, NULL),
+(440, 440, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 82, '2025-12-14 22:21:08', 1, 0.000000, 0.000000, 0.000000, NULL),
+(441, 441, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 34, '2025-12-14 22:21:08', 1, 0.000000, 0.000000, 0.000000, NULL),
+(442, 442, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 92, '2025-12-14 22:21:08', 1, 0.000000, 0.000000, 0.000000, NULL),
+(443, 443, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 86, '2025-12-14 22:21:08', 1, 0.000000, 0.000000, 0.000000, NULL),
+(444, 444, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 20, '2025-12-14 22:21:08', 1, 0.000000, 0.000000, 0.000000, NULL),
+(445, 445, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 92, '2025-12-14 22:21:08', 1, 0.000000, 0.000000, 0.000000, NULL),
+(446, 446, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 51, '2025-12-14 22:21:09', 1, 0.000000, 0.000000, 0.000000, NULL),
+(447, 447, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 75, '2025-12-14 22:21:09', 1, 0.000000, 0.000000, 0.000000, NULL),
+(448, 448, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 62, '2025-12-14 22:21:09', 1, 0.000000, 0.000000, 0.000000, NULL),
+(449, 449, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 98, '2025-12-14 22:21:09', 1, 0.000000, 0.000000, 0.000000, NULL),
+(450, 450, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 23, '2025-12-14 22:21:09', 1, 0.000000, 0.000000, 0.000000, NULL),
+(451, 451, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 95, '2025-12-14 22:21:09', 1, 0.000000, 0.000000, 0.000000, NULL),
+(452, 452, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 9, '2025-12-14 22:21:09', 1, 0.000000, 0.000000, 0.000000, NULL),
+(453, 453, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 1, '2025-12-14 22:21:10', 1, 0.000000, 0.000000, 0.000000, NULL),
+(454, 454, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 76, '2025-12-14 22:21:10', 1, 0.000000, 0.000000, 0.000000, NULL),
+(455, 455, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 65, '2025-12-14 22:21:10', 1, 0.000000, 0.000000, 0.000000, NULL),
+(456, 456, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 56, '2025-12-14 22:21:10', 1, 0.000000, 0.000000, 0.000000, NULL),
+(457, 457, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 97, '2025-12-14 22:21:10', 1, 0.000000, 0.000000, 0.000000, NULL),
+(458, 458, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 52, '2025-12-14 22:21:10', 1, 0.000000, 0.000000, 0.000000, NULL),
+(459, 459, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 57, '2025-12-14 22:21:10', 1, 0.000000, 0.000000, 0.000000, NULL),
+(460, 460, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 69, '2025-12-14 22:21:10', 1, 0.000000, 0.000000, 0.000000, NULL),
+(461, 461, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 60, '2025-12-14 22:21:11', 1, 0.000000, 0.000000, 0.000000, NULL),
+(462, 462, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 59, '2025-12-14 22:21:11', 1, 0.000000, 0.000000, 0.000000, NULL),
+(463, 463, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 19, '2025-12-14 22:21:12', 1, 0.000000, 0.000000, 0.000000, NULL),
+(464, 464, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 85, '2025-12-14 22:21:12', 1, 0.000000, 0.000000, 0.000000, NULL),
+(465, 465, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 73, '2025-12-14 22:21:12', 1, 0.000000, 0.000000, 0.000000, NULL),
+(466, 466, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 21, '2025-12-14 22:21:12', 1, 0.000000, 0.000000, 0.000000, NULL),
+(467, 467, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 21, '2025-12-14 22:21:13', 1, 0.000000, 0.000000, 0.000000, NULL),
+(468, 468, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 63, '2025-12-14 22:21:13', 1, 0.000000, 0.000000, 0.000000, NULL),
+(469, 469, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 68, '2025-12-14 22:21:13', 1, 0.000000, 0.000000, 0.000000, NULL),
+(470, 470, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 60, '2025-12-14 22:21:14', 1, 0.000000, 0.000000, 0.000000, NULL),
+(471, 471, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 34, '2025-12-14 22:21:14', 1, 0.000000, 0.000000, 0.000000, NULL),
+(472, 472, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 96, '2025-12-14 22:21:59', 1, 0.000000, 0.000000, 0.000000, NULL),
+(473, 473, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 87, '2025-12-14 22:21:59', 1, 0.000000, 0.000000, 0.000000, NULL),
+(474, 474, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 44, '2025-12-14 22:21:59', 1, 0.000000, 0.000000, 0.000000, NULL),
+(475, 475, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 26, '2025-12-14 22:21:59', 1, 0.000000, 0.000000, 0.000000, NULL),
+(476, 476, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 34, '2025-12-14 22:21:15', 1, 0.000000, 0.000000, 0.000000, NULL),
+(477, 477, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 31, '2025-12-14 22:21:15', 1, 0.000000, 0.000000, 0.000000, NULL),
+(478, 478, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 56, '2025-12-14 22:21:15', 1, 0.000000, 0.000000, 0.000000, NULL),
+(479, 479, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 53, '2025-12-14 22:21:16', 1, 0.000000, 0.000000, 0.000000, NULL),
+(480, 480, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 28, '2025-12-14 22:21:16', 1, 0.000000, 0.000000, 0.000000, NULL),
+(481, 481, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 69, '2025-12-14 22:21:16', 1, 0.000000, 0.000000, 0.000000, NULL),
+(482, 482, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 88, '2025-12-14 22:21:16', 1, 0.000000, 0.000000, 0.000000, NULL),
+(483, 483, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 16, '2025-12-14 22:21:17', 1, 0.000000, 0.000000, 0.000000, NULL),
+(484, 484, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 96, '2025-12-14 22:21:17', 1, 0.000000, 0.000000, 0.000000, NULL),
+(485, 485, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 80, '2025-12-14 22:21:17', 1, 0.000000, 0.000000, 0.000000, NULL),
+(486, 486, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 1, '2025-12-14 22:21:17', 1, 0.000000, 0.000000, 0.000000, NULL),
+(487, 487, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 59, '2025-12-14 22:21:18', 1, 0.000000, 0.000000, 0.000000, NULL),
+(488, 488, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 78, '2025-12-14 22:21:18', 1, 0.000000, 0.000000, 0.000000, NULL),
+(489, 489, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 96, '2025-12-14 22:21:18', 1, 0.000000, 0.000000, 0.000000, NULL),
+(490, 490, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 94, '2025-12-14 22:21:18', 1, 0.000000, 0.000000, 0.000000, NULL),
+(491, 491, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 97, '2025-12-14 22:21:18', 1, 0.000000, 0.000000, 0.000000, NULL),
+(492, 492, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 59, '2025-12-14 22:21:19', 1, 0.000000, 0.000000, 0.000000, NULL),
+(493, 493, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 15, '2025-12-14 22:21:19', 1, 0.000000, 0.000000, 0.000000, NULL),
+(494, 494, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 61, '2025-12-14 22:21:19', 1, 0.000000, 0.000000, 0.000000, NULL),
+(495, 495, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 92, '2025-12-14 22:21:19', 1, 0.000000, 0.000000, 0.000000, NULL),
+(496, 496, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 70, '2025-12-14 22:21:19', 1, 0.000000, 0.000000, 0.000000, NULL),
+(497, 497, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 33, '2025-12-14 22:21:19', 1, 0.000000, 0.000000, 0.000000, NULL),
+(498, 498, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 41, '2025-12-14 22:21:19', 1, 0.000000, 0.000000, 0.000000, NULL),
+(499, 499, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 87, '2025-12-14 22:21:20', 1, 0.000000, 0.000000, 0.000000, NULL),
+(500, 500, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 87, '2025-12-14 22:21:20', 1, 0.000000, 0.000000, 0.000000, NULL),
+(501, 501, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 21, '2025-12-14 22:21:20', 1, 0.000000, 0.000000, 0.000000, NULL),
+(502, 502, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 10, '2025-12-14 22:21:20', 1, 0.000000, 0.000000, 0.000000, NULL),
+(503, 503, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 67, '2025-12-14 22:22:05', 1, 0.000000, 0.000000, 0.000000, NULL),
+(504, 504, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 92, '2025-12-14 22:21:21', 1, 0.000000, 0.000000, 0.000000, NULL),
+(505, 505, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 71, '2025-12-14 22:21:21', 1, 0.000000, 0.000000, 0.000000, NULL),
+(506, 506, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 80, '2025-12-14 22:21:21', 1, 0.000000, 0.000000, 0.000000, NULL),
+(507, 507, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 97, '2025-12-14 22:21:21', 1, 0.000000, 0.000000, 0.000000, NULL),
+(508, 508, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 75, '2025-12-14 22:21:22', 1, 0.000000, 0.000000, 0.000000, NULL),
+(509, 509, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 65, '2025-12-14 22:21:22', 1, 0.000000, 0.000000, 0.000000, NULL),
+(510, 510, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 3, '2025-12-14 22:21:22', 1, 0.000000, 0.000000, 0.000000, NULL),
+(511, 511, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 98, '2025-12-14 22:21:22', 1, 0.000000, 0.000000, 0.000000, NULL),
+(512, 512, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 52, '2025-12-14 22:21:22', 1, 0.000000, 0.000000, 0.000000, NULL),
+(513, 513, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 13, '2025-12-14 22:21:23', 1, 0.000000, 0.000000, 0.000000, NULL),
+(514, 514, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 47, '2025-12-14 22:21:23', 1, 0.000000, 0.000000, 0.000000, NULL),
+(515, 515, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 94, '2025-12-14 22:21:23', 1, 0.000000, 0.000000, 0.000000, NULL),
+(516, 516, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 45, '2025-12-14 22:21:23', 1, 0.000000, 0.000000, 0.000000, NULL),
+(517, 517, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 75, '2025-12-14 22:21:23', 1, 0.000000, 0.000000, 0.000000, NULL),
+(518, 518, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 85, '2025-12-14 22:21:24', 1, 0.000000, 0.000000, 0.000000, NULL),
+(519, 519, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 5, '2025-12-14 22:21:24', 1, 0.000000, 0.000000, 0.000000, NULL),
+(520, 520, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 50, '2025-12-14 22:21:24', 1, 0.000000, 0.000000, 0.000000, NULL),
+(521, 521, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 80, '2025-12-14 22:21:24', 1, 0.000000, 0.000000, 0.000000, NULL),
+(522, 522, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 77, '2025-12-14 22:21:25', 1, 0.000000, 0.000000, 0.000000, NULL),
+(523, 523, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 24, '2025-12-14 22:21:25', 1, 0.000000, 0.000000, 0.000000, NULL),
+(524, 524, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 72, '2025-12-14 22:21:25', 1, 0.000000, 0.000000, 0.000000, NULL),
+(525, 525, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 58, '2025-12-14 22:21:25', 1, 0.000000, 0.000000, 0.000000, NULL),
+(526, 526, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 42, '2025-12-14 22:21:26', 1, 0.000000, 0.000000, 0.000000, NULL),
+(527, 527, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 89, '2025-12-14 22:21:26', 1, 0.000000, 0.000000, 0.000000, NULL),
+(528, 528, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 21, '2025-12-14 22:21:26', 1, 0.000000, 0.000000, 0.000000, NULL),
+(529, 529, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 1, '2025-12-14 22:21:26', 1, 0.000000, 0.000000, 0.000000, NULL),
+(530, 530, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 45, '2025-12-14 22:21:27', 1, 0.000000, 0.000000, 0.000000, NULL),
+(531, 531, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 94, '2025-12-14 22:21:27', 1, 0.000000, 0.000000, 0.000000, NULL),
+(532, 532, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 30, '2025-12-14 22:21:27', 1, 0.000000, 0.000000, 0.000000, NULL),
+(533, 533, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 2, '2025-12-14 22:21:27', 1, 0.000000, 0.000000, 0.000000, NULL),
+(534, 534, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 80, '2025-12-14 22:21:28', 1, 0.000000, 0.000000, 0.000000, NULL),
+(535, 535, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 26, '2025-12-14 22:21:28', 1, 0.000000, 0.000000, 0.000000, NULL),
+(536, 536, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 3, '2025-12-14 22:21:28', 1, 0.000000, 0.000000, 0.000000, NULL),
+(537, 537, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 88, '2025-12-14 22:21:28', 1, 0.000000, 0.000000, 0.000000, NULL),
+(538, 538, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 7, '2025-12-14 22:21:29', 1, 0.000000, 0.000000, 0.000000, NULL),
+(539, 539, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 55, '2025-12-14 22:21:29', 1, 0.000000, 0.000000, 0.000000, NULL),
+(540, 540, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 17, '2025-12-14 22:21:29', 1, 0.000000, 0.000000, 0.000000, NULL),
+(541, 541, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 96, '2025-12-14 22:21:30', 1, 0.000000, 0.000000, 0.000000, NULL),
+(542, 542, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 19, '2025-12-14 22:21:30', 1, 0.000000, 0.000000, 0.000000, NULL),
+(543, 543, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 56, '2025-12-14 22:21:30', 1, 0.000000, 0.000000, 0.000000, NULL),
+(544, 544, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 75, '2025-12-14 22:21:30', 1, 0.000000, 0.000000, 0.000000, NULL),
+(545, 545, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 58, '2025-12-14 22:21:31', 1, 0.000000, 0.000000, 0.000000, NULL),
+(546, 546, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 40, '2025-12-14 22:21:31', 1, 0.000000, 0.000000, 0.000000, NULL),
+(547, 547, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 63, '2025-12-14 22:21:31', 1, 0.000000, 0.000000, 0.000000, NULL),
+(548, 548, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 19, '2025-12-14 22:21:31', 1, 0.000000, 0.000000, 0.000000, NULL),
+(549, 549, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 48, '2025-12-14 22:21:32', 1, 0.000000, 0.000000, 0.000000, NULL),
+(550, 550, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 81, '2025-12-14 22:21:33', 1, 0.000000, 0.000000, 0.000000, NULL),
+(551, 551, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 89, '2025-12-14 22:21:34', 1, 0.000000, 0.000000, 0.000000, NULL),
+(552, 552, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 74, '2025-12-14 22:21:34', 1, 0.000000, 0.000000, 0.000000, NULL),
+(553, 553, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 78, '2025-12-14 22:21:35', 1, 0.000000, 0.000000, 0.000000, NULL),
+(554, 554, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 23, '2025-12-14 22:21:36', 1, 0.000000, 0.000000, 0.000000, NULL),
+(555, 555, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 72, '2025-12-14 22:21:36', 1, 0.000000, 0.000000, 0.000000, NULL),
+(556, 556, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 76, '2025-12-14 22:21:37', 1, 0.000000, 0.000000, 0.000000, NULL),
+(557, 557, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 96, '2025-12-14 22:21:37', 1, 0.000000, 0.000000, 0.000000, NULL),
+(558, 558, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 61, '2025-12-14 22:21:37', 1, 0.000000, 0.000000, 0.000000, NULL),
+(559, 559, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 21, '2025-12-14 22:21:38', 1, 0.000000, 0.000000, 0.000000, NULL),
+(560, 560, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 65, '2025-12-14 22:21:38', 1, 0.000000, 0.000000, 0.000000, NULL),
+(561, 561, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 23, '2025-12-14 22:21:39', 1, 0.000000, 0.000000, 0.000000, NULL),
+(562, 562, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 25, '2025-12-14 22:21:39', 1, 0.000000, 0.000000, 0.000000, NULL),
+(563, 563, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 32, '2025-12-14 22:21:39', 1, 0.000000, 0.000000, 0.000000, NULL),
+(564, 564, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 74, '2025-12-14 22:21:40', 1, 0.000000, 0.000000, 0.000000, NULL),
+(565, 565, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 10, '2025-12-14 22:21:40', 1, 0.000000, 0.000000, 0.000000, NULL),
+(566, 566, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 79, '2025-12-14 22:21:41', 1, 0.000000, 0.000000, 0.000000, NULL),
+(567, 567, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 35, '2025-12-14 22:21:42', 1, 0.000000, 0.000000, 0.000000, NULL),
+(568, 568, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 19, '2025-12-14 22:21:42', 1, 0.000000, 0.000000, 0.000000, NULL),
+(569, 569, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 77, '2025-12-14 22:21:43', 1, 0.000000, 0.000000, 0.000000, NULL),
+(570, 570, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 16, '2025-12-14 22:22:28', 1, 0.000000, 0.000000, 0.000000, NULL),
+(571, 571, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 78, '2025-12-14 22:21:45', 1, 0.000000, 0.000000, 0.000000, NULL),
+(572, 572, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 97, '2025-12-14 22:21:45', 1, 0.000000, 0.000000, 0.000000, NULL),
+(573, 573, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 82, '2025-12-14 22:21:46', 1, 0.000000, 0.000000, 0.000000, NULL),
+(574, 574, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 67, '2025-12-14 22:21:46', 1, 0.000000, 0.000000, 0.000000, NULL),
+(575, 575, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 67, '2025-12-14 22:21:47', 1, 0.000000, 0.000000, 0.000000, NULL),
+(576, 576, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 60, '2025-12-14 22:21:47', 1, 0.000000, 0.000000, 0.000000, NULL),
+(577, 577, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 37, '2025-12-14 22:21:48', 1, 0.000000, 0.000000, 0.000000, NULL),
+(578, 578, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 99, '2025-12-14 22:21:48', 1, 0.000000, 0.000000, 0.000000, NULL),
+(579, 579, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 97, '2025-12-14 22:21:50', 1, 0.000000, 0.000000, 0.000000, NULL),
+(580, 580, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 33, '2025-12-14 22:21:51', 1, 0.000000, 0.000000, 0.000000, NULL),
+(581, 581, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 23, '2025-12-14 22:21:51', 1, 0.000000, 0.000000, 0.000000, NULL),
+(582, 582, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 16, '2025-12-14 22:21:51', 1, 0.000000, 0.000000, 0.000000, NULL),
+(583, 583, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 20, '2025-12-14 22:21:52', 1, 0.000000, 0.000000, 0.000000, NULL),
+(584, 584, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 82, '2025-12-14 22:21:52', 1, 0.000000, 0.000000, 0.000000, NULL),
+(585, 585, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 19, '2025-12-14 22:21:53', 1, 0.000000, 0.000000, 0.000000, NULL),
+(586, 586, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 42, '2025-12-14 22:21:53', 1, 0.000000, 0.000000, 0.000000, NULL),
+(587, 587, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 11, '2025-12-14 22:21:54', 1, 0.000000, 0.000000, 0.000000, NULL),
+(588, 588, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 59, '2025-12-14 22:21:55', 1, 0.000000, 0.000000, 0.000000, NULL),
+(589, 589, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 33, '2025-12-14 22:21:55', 1, 0.000000, 0.000000, 0.000000, NULL),
+(590, 590, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 63, '2025-12-14 22:21:56', 1, 0.000000, 0.000000, 0.000000, NULL),
+(591, 591, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 45, '2025-12-14 22:21:56', 1, 0.000000, 0.000000, 0.000000, NULL),
+(592, 592, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 39, '2025-12-14 22:21:57', 1, 0.000000, 0.000000, 0.000000, NULL),
+(593, 593, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 85, '2025-12-14 22:21:57', 1, 0.000000, 0.000000, 0.000000, NULL),
+(594, 594, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 89, '2025-12-14 22:21:57', 1, 0.000000, 0.000000, 0.000000, NULL),
+(595, 595, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 13, '2025-12-14 22:21:58', 1, 0.000000, 0.000000, 0.000000, NULL),
+(596, 596, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 19, '2025-12-14 22:21:58', 1, 0.000000, 0.000000, 0.000000, NULL),
+(597, 597, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 88, '2025-12-14 22:21:58', 1, 0.000000, 0.000000, 0.000000, NULL),
+(598, 598, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 35, '2025-12-14 22:21:59', 1, 0.000000, 0.000000, 0.000000, NULL),
+(599, 599, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 85, '2025-12-14 22:22:00', 1, 0.000000, 0.000000, 0.000000, NULL),
+(600, 600, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 69, '2025-12-14 22:22:00', 1, 0.000000, 0.000000, 0.000000, NULL),
+(601, 601, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 94, '2025-12-14 22:22:00', 1, 0.000000, 0.000000, 0.000000, NULL),
+(602, 602, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 3, '2025-12-14 22:22:01', 1, 0.000000, 0.000000, 0.000000, NULL),
+(603, 603, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 83, '2025-12-14 22:22:02', 1, 0.000000, 0.000000, 0.000000, NULL),
+(604, 604, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 100, '2025-12-14 22:22:02', 1, 0.000000, 0.000000, 0.000000, NULL),
+(605, 605, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 73, '2025-12-14 22:22:02', 1, 0.000000, 0.000000, 0.000000, NULL),
+(606, 606, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 38, '2025-12-14 22:22:03', 1, 0.000000, 0.000000, 0.000000, NULL),
+(607, 607, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 41, '2025-12-14 22:22:03', 1, 0.000000, 0.000000, 0.000000, NULL),
+(608, 608, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 62, '2025-12-14 22:22:03', 1, 0.000000, 0.000000, 0.000000, NULL),
+(609, 609, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 99, '2025-12-14 22:22:04', 1, 0.000000, 0.000000, 0.000000, NULL),
+(610, 610, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 53, '2025-12-14 22:22:04', 1, 0.000000, 0.000000, 0.000000, NULL),
+(611, 611, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 35, '2025-12-14 22:22:49', 1, 0.000000, 0.000000, 0.000000, NULL),
+(612, 612, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 42, '2025-12-14 22:22:04', 1, 0.000000, 0.000000, 0.000000, NULL),
+(613, 613, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 5, '2025-12-14 22:22:05', 1, 0.000000, 0.000000, 0.000000, NULL),
+(614, 614, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 27, '2025-12-14 22:22:06', 1, 0.000000, 0.000000, 0.000000, NULL),
+(615, 615, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 5, '2025-12-14 22:22:06', 1, 0.000000, 0.000000, 0.000000, NULL),
+(616, 616, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 42, '2025-12-14 22:22:06', 1, 0.000000, 0.000000, 0.000000, NULL),
+(617, 617, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 20, '2025-12-14 22:22:07', 1, 0.000000, 0.000000, 0.000000, NULL),
+(618, 618, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 85, '2025-12-14 22:22:07', 1, 0.000000, 0.000000, 0.000000, NULL),
+(619, 619, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 58, '2025-12-14 22:22:07', 1, 0.000000, 0.000000, 0.000000, NULL),
+(620, 620, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 39, '2025-12-14 22:22:07', 1, 0.000000, 0.000000, 0.000000, NULL),
+(621, 621, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 1, '2025-12-14 22:22:08', 1, 0.000000, 0.000000, 0.000000, NULL),
+(622, 622, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 100, '2025-12-14 22:22:08', 1, 0.000000, 0.000000, 0.000000, NULL),
+(623, 623, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 43, '2025-12-14 22:22:08', 1, 0.000000, 0.000000, 0.000000, NULL),
+(624, 624, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 86, '2025-12-14 22:22:08', 1, 0.000000, 0.000000, 0.000000, NULL),
+(625, 625, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 39, '2025-12-14 22:22:08', 1, 0.000000, 0.000000, 0.000000, NULL),
+(626, 626, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 44, '2025-12-14 22:22:08', 1, 0.000000, 0.000000, 0.000000, NULL),
+(627, 627, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 43, '2025-12-14 22:22:09', 1, 0.000000, 0.000000, 0.000000, NULL),
+(628, 628, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 95, '2025-12-14 22:22:09', 1, 0.000000, 0.000000, 0.000000, NULL),
+(629, 629, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 11, '2025-12-14 22:22:09', 1, 0.000000, 0.000000, 0.000000, NULL),
+(630, 630, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 52, '2025-12-14 22:22:54', 1, 0.000000, 0.000000, 0.000000, NULL),
+(631, 631, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 76, '2025-12-14 22:22:09', 1, 0.000000, 0.000000, 0.000000, NULL),
+(632, 632, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 65, '2025-12-14 22:22:10', 1, 0.000000, 0.000000, 0.000000, NULL),
+(633, 633, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 23, '2025-12-14 22:22:10', 1, 0.000000, 0.000000, 0.000000, NULL),
+(634, 634, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 31, '2025-12-14 22:22:10', 1, 0.000000, 0.000000, 0.000000, NULL),
+(635, 635, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 51, '2025-12-14 22:22:10', 1, 0.000000, 0.000000, 0.000000, NULL),
+(636, 636, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 78, '2025-12-14 22:22:11', 1, 0.000000, 0.000000, 0.000000, NULL),
+(637, 637, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 35, '2025-12-14 22:22:11', 1, 0.000000, 0.000000, 0.000000, NULL),
+(638, 638, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 88, '2025-12-14 22:22:11', 1, 0.000000, 0.000000, 0.000000, NULL),
+(639, 639, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 80, '2025-12-14 22:22:11', 1, 0.000000, 0.000000, 0.000000, NULL),
+(640, 640, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 22, '2025-12-14 22:22:11', 1, 0.000000, 0.000000, 0.000000, NULL),
+(641, 641, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 69, '2025-12-14 22:22:11', 1, 0.000000, 0.000000, 0.000000, NULL),
+(642, 642, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 55, '2025-12-14 22:22:11', 1, 0.000000, 0.000000, 0.000000, NULL),
+(643, 643, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 26, '2025-12-14 22:22:12', 1, 0.000000, 0.000000, 0.000000, NULL),
+(644, 644, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 97, '2025-12-14 22:22:12', 1, 0.000000, 0.000000, 0.000000, NULL),
+(645, 645, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 73, '2025-12-14 22:22:12', 1, 0.000000, 0.000000, 0.000000, NULL),
+(646, 646, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 10, '2025-12-14 22:22:12', 1, 0.000000, 0.000000, 0.000000, NULL),
+(647, 647, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 95, '2025-12-14 22:22:12', 1, 0.000000, 0.000000, 0.000000, NULL),
+(648, 648, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 3, '2025-12-14 22:22:12', 1, 0.000000, 0.000000, 0.000000, NULL),
+(649, 649, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 85, '2025-12-14 22:22:13', 1, 0.000000, 0.000000, 0.000000, NULL),
+(650, 650, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 10, '2025-12-14 22:22:13', 1, 0.000000, 0.000000, 0.000000, NULL),
+(651, 651, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 85, '2025-12-14 22:22:13', 1, 0.000000, 0.000000, 0.000000, NULL),
+(652, 652, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 34, '2025-12-14 22:22:13', 1, 0.000000, 0.000000, 0.000000, NULL),
+(653, 653, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 53, '2025-12-14 22:22:13', 1, 0.000000, 0.000000, 0.000000, NULL),
+(654, 654, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 21, '2025-12-14 22:22:13', 1, 0.000000, 0.000000, 0.000000, NULL),
+(655, 655, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 50, '2025-12-14 22:22:13', 1, 0.000000, 0.000000, 0.000000, NULL),
+(656, 656, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 46, '2025-12-14 22:22:13', 1, 0.000000, 0.000000, 0.000000, NULL),
+(657, 657, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 6, '2025-12-14 22:22:14', 1, 0.000000, 0.000000, 0.000000, NULL),
+(658, 658, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 88, '2025-12-14 22:22:14', 1, 0.000000, 0.000000, 0.000000, NULL),
+(659, 659, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 95, '2025-12-14 22:22:14', 1, 0.000000, 0.000000, 0.000000, NULL),
+(660, 660, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 91, '2025-12-14 22:22:14', 1, 0.000000, 0.000000, 0.000000, NULL),
+(661, 661, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 68, '2025-12-14 22:22:14', 1, 0.000000, 0.000000, 0.000000, NULL),
+(662, 662, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 79, '2025-12-14 22:22:14', 1, 0.000000, 0.000000, 0.000000, NULL),
+(663, 663, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 59, '2025-12-14 22:22:14', 1, 0.000000, 0.000000, 0.000000, NULL),
+(664, 664, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 14, '2025-12-14 22:22:15', 1, 0.000000, 0.000000, 0.000000, NULL),
+(665, 665, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 58, '2025-12-14 22:22:15', 1, 0.000000, 0.000000, 0.000000, NULL),
+(666, 666, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 25, '2025-12-14 22:22:15', 1, 0.000000, 0.000000, 0.000000, NULL),
+(667, 667, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 93, '2025-12-14 22:22:15', 1, 0.000000, 0.000000, 0.000000, NULL),
+(668, 668, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 24, '2025-12-14 22:22:15', 1, 0.000000, 0.000000, 0.000000, NULL),
+(669, 669, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 49, '2025-12-14 22:22:15', 1, 0.000000, 0.000000, 0.000000, NULL),
+(670, 670, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 17, '2025-12-14 22:22:16', 1, 0.000000, 0.000000, 0.000000, NULL),
+(671, 671, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 76, '2025-12-14 22:22:16', 1, 0.000000, 0.000000, 0.000000, NULL),
+(672, 672, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 94, '2025-12-14 22:22:16', 1, 0.000000, 0.000000, 0.000000, NULL),
+(673, 673, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 24, '2025-12-14 22:22:16', 1, 0.000000, 0.000000, 0.000000, NULL),
+(674, 674, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 44, '2025-12-14 22:22:16', 1, 0.000000, 0.000000, 0.000000, NULL),
+(675, 675, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 23, '2025-12-14 22:22:16', 1, 0.000000, 0.000000, 0.000000, NULL),
+(676, 676, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 86, '2025-12-14 22:22:16', 1, 0.000000, 0.000000, 0.000000, NULL),
+(677, 677, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 62, '2025-12-14 22:22:17', 1, 0.000000, 0.000000, 0.000000, NULL),
+(678, 678, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 8, '2025-12-14 22:22:17', 1, 0.000000, 0.000000, 0.000000, NULL),
+(679, 679, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 41, '2025-12-14 22:22:17', 1, 0.000000, 0.000000, 0.000000, NULL),
+(680, 680, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 57, '2025-12-14 22:22:17', 1, 0.000000, 0.000000, 0.000000, NULL),
+(681, 681, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 58, '2025-12-14 22:22:17', 1, 0.000000, 0.000000, 0.000000, NULL),
+(682, 682, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 34, '2025-12-14 22:22:17', 1, 0.000000, 0.000000, 0.000000, NULL),
+(683, 683, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 66, '2025-12-14 22:22:17', 1, 0.000000, 0.000000, 0.000000, NULL),
+(684, 684, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 58, '2025-12-14 22:22:18', 1, 0.000000, 0.000000, 0.000000, NULL),
+(685, 685, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 31, '2025-12-14 22:22:18', 1, 0.000000, 0.000000, 0.000000, NULL),
+(686, 686, NULL, NULL, 11, 1, 'Rylova', 'Evelina', 12, '2025-12-14 22:22:18', 1, 0.000000, 0.000000, 0.000000, NULL);
+
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_stock_mvt_reason`
+-- Структура таблицы `ps_stock_mvt_reason`
 --
 
 CREATE TABLE `ps_stock_mvt_reason` (
@@ -10239,7 +21179,7 @@ CREATE TABLE `ps_stock_mvt_reason` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_stock_mvt_reason`
+-- Дамп данных таблицы `ps_stock_mvt_reason`
 --
 
 INSERT INTO `ps_stock_mvt_reason` (`id_stock_mvt_reason`, `sign`, `date_add`, `date_upd`, `deleted`) VALUES
@@ -10259,7 +21199,7 @@ INSERT INTO `ps_stock_mvt_reason` (`id_stock_mvt_reason`, `sign`, `date_add`, `d
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_stock_mvt_reason_lang`
+-- Структура таблицы `ps_stock_mvt_reason_lang`
 --
 
 CREATE TABLE `ps_stock_mvt_reason_lang` (
@@ -10269,7 +21209,7 @@ CREATE TABLE `ps_stock_mvt_reason_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_stock_mvt_reason_lang`
+-- Дамп данных таблицы `ps_stock_mvt_reason_lang`
 --
 
 INSERT INTO `ps_stock_mvt_reason_lang` (`id_stock_mvt_reason`, `id_lang`, `name`) VALUES
@@ -10289,7 +21229,7 @@ INSERT INTO `ps_stock_mvt_reason_lang` (`id_stock_mvt_reason`, `id_lang`, `name`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_store`
+-- Структура таблицы `ps_store`
 --
 
 CREATE TABLE `ps_store` (
@@ -10311,7 +21251,7 @@ CREATE TABLE `ps_store` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_store_lang`
+-- Структура таблицы `ps_store_lang`
 --
 
 CREATE TABLE `ps_store_lang` (
@@ -10327,7 +21267,7 @@ CREATE TABLE `ps_store_lang` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_store_shop`
+-- Структура таблицы `ps_store_shop`
 --
 
 CREATE TABLE `ps_store_shop` (
@@ -10338,7 +21278,7 @@ CREATE TABLE `ps_store_shop` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_supplier`
+-- Структура таблицы `ps_supplier`
 --
 
 CREATE TABLE `ps_supplier` (
@@ -10352,7 +21292,7 @@ CREATE TABLE `ps_supplier` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_supplier_lang`
+-- Структура таблицы `ps_supplier_lang`
 --
 
 CREATE TABLE `ps_supplier_lang` (
@@ -10367,7 +21307,7 @@ CREATE TABLE `ps_supplier_lang` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_supplier_shop`
+-- Структура таблицы `ps_supplier_shop`
 --
 
 CREATE TABLE `ps_supplier_shop` (
@@ -10378,7 +21318,7 @@ CREATE TABLE `ps_supplier_shop` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_supply_order`
+-- Структура таблицы `ps_supply_order`
 --
 
 CREATE TABLE `ps_supply_order` (
@@ -10406,7 +21346,7 @@ CREATE TABLE `ps_supply_order` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_supply_order_detail`
+-- Структура таблицы `ps_supply_order_detail`
 --
 
 CREATE TABLE `ps_supply_order_detail` (
@@ -10440,7 +21380,7 @@ CREATE TABLE `ps_supply_order_detail` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_supply_order_history`
+-- Структура таблицы `ps_supply_order_history`
 --
 
 CREATE TABLE `ps_supply_order_history` (
@@ -10456,7 +21396,7 @@ CREATE TABLE `ps_supply_order_history` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_supply_order_receipt_history`
+-- Структура таблицы `ps_supply_order_receipt_history`
 --
 
 CREATE TABLE `ps_supply_order_receipt_history` (
@@ -10473,7 +21413,7 @@ CREATE TABLE `ps_supply_order_receipt_history` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_supply_order_state`
+-- Структура таблицы `ps_supply_order_state`
 --
 
 CREATE TABLE `ps_supply_order_state` (
@@ -10487,7 +21427,7 @@ CREATE TABLE `ps_supply_order_state` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_supply_order_state`
+-- Дамп данных таблицы `ps_supply_order_state`
 --
 
 INSERT INTO `ps_supply_order_state` (`id_supply_order_state`, `delivery_note`, `editable`, `receipt_state`, `pending_receipt`, `enclosed`, `color`) VALUES
@@ -10501,7 +21441,7 @@ INSERT INTO `ps_supply_order_state` (`id_supply_order_state`, `delivery_note`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_supply_order_state_lang`
+-- Структура таблицы `ps_supply_order_state_lang`
 --
 
 CREATE TABLE `ps_supply_order_state_lang` (
@@ -10511,7 +21451,7 @@ CREATE TABLE `ps_supply_order_state_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_supply_order_state_lang`
+-- Дамп данных таблицы `ps_supply_order_state_lang`
 --
 
 INSERT INTO `ps_supply_order_state_lang` (`id_supply_order_state`, `id_lang`, `name`) VALUES
@@ -10525,7 +21465,7 @@ INSERT INTO `ps_supply_order_state_lang` (`id_supply_order_state`, `id_lang`, `n
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_tab`
+-- Структура таблицы `ps_tab`
 --
 
 CREATE TABLE `ps_tab` (
@@ -10544,7 +21484,7 @@ CREATE TABLE `ps_tab` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `ps_tab`
+-- Дамп данных таблицы `ps_tab`
 --
 
 INSERT INTO `ps_tab` (`id_tab`, `id_parent`, `position`, `module`, `class_name`, `route_name`, `active`, `enabled`, `hide_host_mode`, `icon`, `wording`, `wording_domain`) VALUES
@@ -10708,7 +21648,7 @@ INSERT INTO `ps_tab` (`id_tab`, `id_parent`, `position`, `module`, `class_name`,
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_tab_lang`
+-- Структура таблицы `ps_tab_lang`
 --
 
 CREATE TABLE `ps_tab_lang` (
@@ -10718,7 +21658,7 @@ CREATE TABLE `ps_tab_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `ps_tab_lang`
+-- Дамп данных таблицы `ps_tab_lang`
 --
 
 INSERT INTO `ps_tab_lang` (`id_tab`, `id_lang`, `name`) VALUES
@@ -10878,7 +21818,7 @@ INSERT INTO `ps_tab_lang` (`id_tab`, `id_lang`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_tab_module_preference`
+-- Структура таблицы `ps_tab_module_preference`
 --
 
 CREATE TABLE `ps_tab_module_preference` (
@@ -10891,7 +21831,7 @@ CREATE TABLE `ps_tab_module_preference` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_tag`
+-- Структура таблицы `ps_tag`
 --
 
 CREATE TABLE `ps_tag` (
@@ -10903,7 +21843,7 @@ CREATE TABLE `ps_tag` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_tag_count`
+-- Структура таблицы `ps_tag_count`
 --
 
 CREATE TABLE `ps_tag_count` (
@@ -10917,7 +21857,7 @@ CREATE TABLE `ps_tag_count` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_tax`
+-- Структура таблицы `ps_tax`
 --
 
 CREATE TABLE `ps_tax` (
@@ -10928,7 +21868,7 @@ CREATE TABLE `ps_tax` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_tax`
+-- Дамп данных таблицы `ps_tax`
 --
 
 INSERT INTO `ps_tax` (`id_tax`, `rate`, `active`, `deleted`) VALUES
@@ -10967,7 +21907,7 @@ INSERT INTO `ps_tax` (`id_tax`, `rate`, `active`, `deleted`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_tax_lang`
+-- Структура таблицы `ps_tax_lang`
 --
 
 CREATE TABLE `ps_tax_lang` (
@@ -10977,7 +21917,7 @@ CREATE TABLE `ps_tax_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_tax_lang`
+-- Дамп данных таблицы `ps_tax_lang`
 --
 
 INSERT INTO `ps_tax_lang` (`id_tax`, `id_lang`, `name`) VALUES
@@ -11016,7 +21956,7 @@ INSERT INTO `ps_tax_lang` (`id_tax`, `id_lang`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_tax_rule`
+-- Структура таблицы `ps_tax_rule`
 --
 
 CREATE TABLE `ps_tax_rule` (
@@ -11032,7 +21972,7 @@ CREATE TABLE `ps_tax_rule` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_tax_rule`
+-- Дамп данных таблицы `ps_tax_rule`
 --
 
 INSERT INTO `ps_tax_rule` (`id_tax_rule`, `id_tax_rules_group`, `id_country`, `id_state`, `zipcode_from`, `zipcode_to`, `id_tax`, `behavior`, `description`) VALUES
@@ -11178,7 +22118,7 @@ INSERT INTO `ps_tax_rule` (`id_tax_rule`, `id_tax_rules_group`, `id_country`, `i
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_tax_rules_group`
+-- Структура таблицы `ps_tax_rules_group`
 --
 
 CREATE TABLE `ps_tax_rules_group` (
@@ -11191,7 +22131,7 @@ CREATE TABLE `ps_tax_rules_group` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_tax_rules_group`
+-- Дамп данных таблицы `ps_tax_rules_group`
 --
 
 INSERT INTO `ps_tax_rules_group` (`id_tax_rules_group`, `name`, `active`, `deleted`, `date_add`, `date_upd`) VALUES
@@ -11204,7 +22144,7 @@ INSERT INTO `ps_tax_rules_group` (`id_tax_rules_group`, `name`, `active`, `delet
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_tax_rules_group_shop`
+-- Структура таблицы `ps_tax_rules_group_shop`
 --
 
 CREATE TABLE `ps_tax_rules_group_shop` (
@@ -11213,7 +22153,7 @@ CREATE TABLE `ps_tax_rules_group_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_tax_rules_group_shop`
+-- Дамп данных таблицы `ps_tax_rules_group_shop`
 --
 
 INSERT INTO `ps_tax_rules_group_shop` (`id_tax_rules_group`, `id_shop`) VALUES
@@ -11226,7 +22166,7 @@ INSERT INTO `ps_tax_rules_group_shop` (`id_tax_rules_group`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_timezone`
+-- Структура таблицы `ps_timezone`
 --
 
 CREATE TABLE `ps_timezone` (
@@ -11235,7 +22175,7 @@ CREATE TABLE `ps_timezone` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_timezone`
+-- Дамп данных таблицы `ps_timezone`
 --
 
 INSERT INTO `ps_timezone` (`id_timezone`, `name`) VALUES
@@ -11803,7 +22743,7 @@ INSERT INTO `ps_timezone` (`id_timezone`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_translation`
+-- Структура таблицы `ps_translation`
 --
 
 CREATE TABLE `ps_translation` (
@@ -11818,7 +22758,7 @@ CREATE TABLE `ps_translation` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_warehouse`
+-- Структура таблицы `ps_warehouse`
 --
 
 CREATE TABLE `ps_warehouse` (
@@ -11835,7 +22775,7 @@ CREATE TABLE `ps_warehouse` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_warehouse_carrier`
+-- Структура таблицы `ps_warehouse_carrier`
 --
 
 CREATE TABLE `ps_warehouse_carrier` (
@@ -11846,7 +22786,7 @@ CREATE TABLE `ps_warehouse_carrier` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_warehouse_product_location`
+-- Структура таблицы `ps_warehouse_product_location`
 --
 
 CREATE TABLE `ps_warehouse_product_location` (
@@ -11860,7 +22800,7 @@ CREATE TABLE `ps_warehouse_product_location` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_warehouse_shop`
+-- Структура таблицы `ps_warehouse_shop`
 --
 
 CREATE TABLE `ps_warehouse_shop` (
@@ -11871,7 +22811,7 @@ CREATE TABLE `ps_warehouse_shop` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_webservice_account`
+-- Структура таблицы `ps_webservice_account`
 --
 
 CREATE TABLE `ps_webservice_account` (
@@ -11887,7 +22827,7 @@ CREATE TABLE `ps_webservice_account` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_webservice_account_shop`
+-- Структура таблицы `ps_webservice_account_shop`
 --
 
 CREATE TABLE `ps_webservice_account_shop` (
@@ -11898,7 +22838,7 @@ CREATE TABLE `ps_webservice_account_shop` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_webservice_permission`
+-- Структура таблицы `ps_webservice_permission`
 --
 
 CREATE TABLE `ps_webservice_permission` (
@@ -11911,7 +22851,7 @@ CREATE TABLE `ps_webservice_permission` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_web_browser`
+-- Структура таблицы `ps_web_browser`
 --
 
 CREATE TABLE `ps_web_browser` (
@@ -11920,7 +22860,7 @@ CREATE TABLE `ps_web_browser` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_web_browser`
+-- Дамп данных таблицы `ps_web_browser`
 --
 
 INSERT INTO `ps_web_browser` (`id_web_browser`, `name`) VALUES
@@ -11939,7 +22879,7 @@ INSERT INTO `ps_web_browser` (`id_web_browser`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_wishlist`
+-- Структура таблицы `ps_wishlist`
 --
 
 CREATE TABLE `ps_wishlist` (
@@ -11958,7 +22898,7 @@ CREATE TABLE `ps_wishlist` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_wishlist_product`
+-- Структура таблицы `ps_wishlist_product`
 --
 
 CREATE TABLE `ps_wishlist_product` (
@@ -11973,7 +22913,7 @@ CREATE TABLE `ps_wishlist_product` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_wishlist_product_cart`
+-- Структура таблицы `ps_wishlist_product_cart`
 --
 
 CREATE TABLE `ps_wishlist_product_cart` (
@@ -11986,7 +22926,7 @@ CREATE TABLE `ps_wishlist_product_cart` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_zone`
+-- Структура таблицы `ps_zone`
 --
 
 CREATE TABLE `ps_zone` (
@@ -11996,7 +22936,7 @@ CREATE TABLE `ps_zone` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_zone`
+-- Дамп данных таблицы `ps_zone`
 --
 
 INSERT INTO `ps_zone` (`id_zone`, `name`, `active`) VALUES
@@ -12012,7 +22952,7 @@ INSERT INTO `ps_zone` (`id_zone`, `name`, `active`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_zone_shop`
+-- Структура таблицы `ps_zone_shop`
 --
 
 CREATE TABLE `ps_zone_shop` (
@@ -12021,7 +22961,7 @@ CREATE TABLE `ps_zone_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
--- Dumping data for table `ps_zone_shop`
+-- Дамп данных таблицы `ps_zone_shop`
 --
 
 INSERT INTO `ps_zone_shop` (`id_zone`, `id_shop`) VALUES
@@ -12035,23 +22975,23 @@ INSERT INTO `ps_zone_shop` (`id_zone`, `id_shop`) VALUES
 (8, 1);
 
 --
--- Indexes for dumped tables
+-- Индексы сохранённых таблиц
 --
 
 --
--- Indexes for table `ps_access`
+-- Индексы таблицы `ps_access`
 --
 ALTER TABLE `ps_access`
   ADD PRIMARY KEY (`id_profile`,`id_authorization_role`);
 
 --
--- Indexes for table `ps_accessory`
+-- Индексы таблицы `ps_accessory`
 --
 ALTER TABLE `ps_accessory`
   ADD KEY `accessory_product` (`id_product_1`,`id_product_2`);
 
 --
--- Indexes for table `ps_address`
+-- Индексы таблицы `ps_address`
 --
 ALTER TABLE `ps_address`
   ADD PRIMARY KEY (`id_address`),
@@ -12063,52 +23003,52 @@ ALTER TABLE `ps_address`
   ADD KEY `id_warehouse` (`id_warehouse`);
 
 --
--- Indexes for table `ps_address_format`
+-- Индексы таблицы `ps_address_format`
 --
 ALTER TABLE `ps_address_format`
   ADD PRIMARY KEY (`id_country`);
 
 --
--- Indexes for table `ps_admin_filter`
+-- Индексы таблицы `ps_admin_filter`
 --
 ALTER TABLE `ps_admin_filter`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `admin_filter_search_id_idx` (`employee`,`shop`,`controller`,`action`,`filter_id`);
 
 --
--- Indexes for table `ps_alias`
+-- Индексы таблицы `ps_alias`
 --
 ALTER TABLE `ps_alias`
   ADD PRIMARY KEY (`id_alias`),
   ADD UNIQUE KEY `alias` (`alias`);
 
 --
--- Indexes for table `ps_attachment`
+-- Индексы таблицы `ps_attachment`
 --
 ALTER TABLE `ps_attachment`
   ADD PRIMARY KEY (`id_attachment`);
 
 --
--- Indexes for table `ps_attachment_lang`
+-- Индексы таблицы `ps_attachment_lang`
 --
 ALTER TABLE `ps_attachment_lang`
   ADD PRIMARY KEY (`id_attachment`,`id_lang`);
 
 --
--- Indexes for table `ps_attribute`
+-- Индексы таблицы `ps_attribute`
 --
 ALTER TABLE `ps_attribute`
   ADD PRIMARY KEY (`id_attribute`),
   ADD KEY `attribute_group` (`id_attribute_group`);
 
 --
--- Indexes for table `ps_attribute_group`
+-- Индексы таблицы `ps_attribute_group`
 --
 ALTER TABLE `ps_attribute_group`
   ADD PRIMARY KEY (`id_attribute_group`);
 
 --
--- Indexes for table `ps_attribute_group_lang`
+-- Индексы таблицы `ps_attribute_group_lang`
 --
 ALTER TABLE `ps_attribute_group_lang`
   ADD PRIMARY KEY (`id_attribute_group`,`id_lang`),
@@ -12116,7 +23056,7 @@ ALTER TABLE `ps_attribute_group_lang`
   ADD KEY `IDX_4653726CBA299860` (`id_lang`);
 
 --
--- Indexes for table `ps_attribute_group_shop`
+-- Индексы таблицы `ps_attribute_group_shop`
 --
 ALTER TABLE `ps_attribute_group_shop`
   ADD PRIMARY KEY (`id_attribute_group`,`id_shop`),
@@ -12124,14 +23064,14 @@ ALTER TABLE `ps_attribute_group_shop`
   ADD KEY `IDX_DB30BAAC274A50A0` (`id_shop`);
 
 --
--- Indexes for table `ps_attribute_impact`
+-- Индексы таблицы `ps_attribute_impact`
 --
 ALTER TABLE `ps_attribute_impact`
   ADD PRIMARY KEY (`id_attribute_impact`),
   ADD UNIQUE KEY `id_product` (`id_product`,`id_attribute`);
 
 --
--- Indexes for table `ps_attribute_lang`
+-- Индексы таблицы `ps_attribute_lang`
 --
 ALTER TABLE `ps_attribute_lang`
   ADD PRIMARY KEY (`id_attribute`,`id_lang`),
@@ -12139,7 +23079,7 @@ ALTER TABLE `ps_attribute_lang`
   ADD KEY `IDX_3ABE46A7BA299860` (`id_lang`);
 
 --
--- Indexes for table `ps_attribute_shop`
+-- Индексы таблицы `ps_attribute_shop`
 --
 ALTER TABLE `ps_attribute_shop`
   ADD PRIMARY KEY (`id_attribute`,`id_shop`),
@@ -12147,20 +23087,20 @@ ALTER TABLE `ps_attribute_shop`
   ADD KEY `IDX_A7DD8E67274A50A0` (`id_shop`);
 
 --
--- Indexes for table `ps_authorization_role`
+-- Индексы таблицы `ps_authorization_role`
 --
 ALTER TABLE `ps_authorization_role`
   ADD PRIMARY KEY (`id_authorization_role`),
   ADD UNIQUE KEY `slug` (`slug`);
 
 --
--- Indexes for table `ps_blockwishlist_statistics`
+-- Индексы таблицы `ps_blockwishlist_statistics`
 --
 ALTER TABLE `ps_blockwishlist_statistics`
   ADD PRIMARY KEY (`id_statistics`);
 
 --
--- Indexes for table `ps_carrier`
+-- Индексы таблицы `ps_carrier`
 --
 ALTER TABLE `ps_carrier`
   ADD PRIMARY KEY (`id_carrier`),
@@ -12169,38 +23109,38 @@ ALTER TABLE `ps_carrier`
   ADD KEY `reference` (`id_reference`,`deleted`,`active`);
 
 --
--- Indexes for table `ps_carrier_group`
+-- Индексы таблицы `ps_carrier_group`
 --
 ALTER TABLE `ps_carrier_group`
   ADD PRIMARY KEY (`id_carrier`,`id_group`);
 
 --
--- Indexes for table `ps_carrier_lang`
+-- Индексы таблицы `ps_carrier_lang`
 --
 ALTER TABLE `ps_carrier_lang`
   ADD PRIMARY KEY (`id_lang`,`id_shop`,`id_carrier`);
 
 --
--- Indexes for table `ps_carrier_shop`
+-- Индексы таблицы `ps_carrier_shop`
 --
 ALTER TABLE `ps_carrier_shop`
   ADD PRIMARY KEY (`id_carrier`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `ps_carrier_tax_rules_group_shop`
+-- Индексы таблицы `ps_carrier_tax_rules_group_shop`
 --
 ALTER TABLE `ps_carrier_tax_rules_group_shop`
   ADD PRIMARY KEY (`id_carrier`,`id_tax_rules_group`,`id_shop`);
 
 --
--- Indexes for table `ps_carrier_zone`
+-- Индексы таблицы `ps_carrier_zone`
 --
 ALTER TABLE `ps_carrier_zone`
   ADD PRIMARY KEY (`id_carrier`,`id_zone`);
 
 --
--- Indexes for table `ps_cart`
+-- Индексы таблицы `ps_cart`
 --
 ALTER TABLE `ps_cart`
   ADD PRIMARY KEY (`id_cart`),
@@ -12216,14 +23156,14 @@ ALTER TABLE `ps_cart`
   ADD KEY `id_shop` (`id_shop`,`date_add`);
 
 --
--- Indexes for table `ps_cart_cart_rule`
+-- Индексы таблицы `ps_cart_cart_rule`
 --
 ALTER TABLE `ps_cart_cart_rule`
   ADD PRIMARY KEY (`id_cart`,`id_cart_rule`),
   ADD KEY `id_cart_rule` (`id_cart_rule`);
 
 --
--- Indexes for table `ps_cart_product`
+-- Индексы таблицы `ps_cart_product`
 --
 ALTER TABLE `ps_cart_product`
   ADD PRIMARY KEY (`id_cart`,`id_product`,`id_product_attribute`,`id_customization`,`id_address_delivery`),
@@ -12231,7 +23171,7 @@ ALTER TABLE `ps_cart_product`
   ADD KEY `id_cart_order` (`id_cart`,`date_add`,`id_product`,`id_product_attribute`);
 
 --
--- Indexes for table `ps_cart_rule`
+-- Индексы таблицы `ps_cart_rule`
 --
 ALTER TABLE `ps_cart_rule`
   ADD PRIMARY KEY (`id_cart_rule`),
@@ -12243,13 +23183,13 @@ ALTER TABLE `ps_cart_rule`
   ADD KEY `date_to` (`date_to`);
 
 --
--- Indexes for table `ps_cart_rule_carrier`
+-- Индексы таблицы `ps_cart_rule_carrier`
 --
 ALTER TABLE `ps_cart_rule_carrier`
   ADD PRIMARY KEY (`id_cart_rule`,`id_carrier`);
 
 --
--- Indexes for table `ps_cart_rule_combination`
+-- Индексы таблицы `ps_cart_rule_combination`
 --
 ALTER TABLE `ps_cart_rule_combination`
   ADD PRIMARY KEY (`id_cart_rule_1`,`id_cart_rule_2`),
@@ -12257,49 +23197,49 @@ ALTER TABLE `ps_cart_rule_combination`
   ADD KEY `id_cart_rule_2` (`id_cart_rule_2`);
 
 --
--- Indexes for table `ps_cart_rule_country`
+-- Индексы таблицы `ps_cart_rule_country`
 --
 ALTER TABLE `ps_cart_rule_country`
   ADD PRIMARY KEY (`id_cart_rule`,`id_country`);
 
 --
--- Indexes for table `ps_cart_rule_group`
+-- Индексы таблицы `ps_cart_rule_group`
 --
 ALTER TABLE `ps_cart_rule_group`
   ADD PRIMARY KEY (`id_cart_rule`,`id_group`);
 
 --
--- Indexes for table `ps_cart_rule_lang`
+-- Индексы таблицы `ps_cart_rule_lang`
 --
 ALTER TABLE `ps_cart_rule_lang`
   ADD PRIMARY KEY (`id_cart_rule`,`id_lang`);
 
 --
--- Indexes for table `ps_cart_rule_product_rule`
+-- Индексы таблицы `ps_cart_rule_product_rule`
 --
 ALTER TABLE `ps_cart_rule_product_rule`
   ADD PRIMARY KEY (`id_product_rule`);
 
 --
--- Indexes for table `ps_cart_rule_product_rule_group`
+-- Индексы таблицы `ps_cart_rule_product_rule_group`
 --
 ALTER TABLE `ps_cart_rule_product_rule_group`
   ADD PRIMARY KEY (`id_product_rule_group`);
 
 --
--- Indexes for table `ps_cart_rule_product_rule_value`
+-- Индексы таблицы `ps_cart_rule_product_rule_value`
 --
 ALTER TABLE `ps_cart_rule_product_rule_value`
   ADD PRIMARY KEY (`id_product_rule`,`id_item`);
 
 --
--- Indexes for table `ps_cart_rule_shop`
+-- Индексы таблицы `ps_cart_rule_shop`
 --
 ALTER TABLE `ps_cart_rule_shop`
   ADD PRIMARY KEY (`id_cart_rule`,`id_shop`);
 
 --
--- Indexes for table `ps_category`
+-- Индексы таблицы `ps_category`
 --
 ALTER TABLE `ps_category`
   ADD PRIMARY KEY (`id_category`),
@@ -12311,7 +23251,7 @@ ALTER TABLE `ps_category`
   ADD KEY `activenright` (`active`,`nright`);
 
 --
--- Indexes for table `ps_category_group`
+-- Индексы таблицы `ps_category_group`
 --
 ALTER TABLE `ps_category_group`
   ADD PRIMARY KEY (`id_category`,`id_group`),
@@ -12319,14 +23259,14 @@ ALTER TABLE `ps_category_group`
   ADD KEY `id_group` (`id_group`);
 
 --
--- Indexes for table `ps_category_lang`
+-- Индексы таблицы `ps_category_lang`
 --
 ALTER TABLE `ps_category_lang`
   ADD PRIMARY KEY (`id_category`,`id_shop`,`id_lang`),
   ADD KEY `category_name` (`name`);
 
 --
--- Indexes for table `ps_category_product`
+-- Индексы таблицы `ps_category_product`
 --
 ALTER TABLE `ps_category_product`
   ADD PRIMARY KEY (`id_category`,`id_product`),
@@ -12334,66 +23274,66 @@ ALTER TABLE `ps_category_product`
   ADD KEY `id_category` (`id_category`,`position`);
 
 --
--- Indexes for table `ps_category_shop`
+-- Индексы таблицы `ps_category_shop`
 --
 ALTER TABLE `ps_category_shop`
   ADD PRIMARY KEY (`id_category`,`id_shop`);
 
 --
--- Indexes for table `ps_cms`
+-- Индексы таблицы `ps_cms`
 --
 ALTER TABLE `ps_cms`
   ADD PRIMARY KEY (`id_cms`);
 
 --
--- Indexes for table `ps_cms_category`
+-- Индексы таблицы `ps_cms_category`
 --
 ALTER TABLE `ps_cms_category`
   ADD PRIMARY KEY (`id_cms_category`),
   ADD KEY `category_parent` (`id_parent`);
 
 --
--- Indexes for table `ps_cms_category_lang`
+-- Индексы таблицы `ps_cms_category_lang`
 --
 ALTER TABLE `ps_cms_category_lang`
   ADD PRIMARY KEY (`id_cms_category`,`id_shop`,`id_lang`),
   ADD KEY `category_name` (`name`);
 
 --
--- Indexes for table `ps_cms_category_shop`
+-- Индексы таблицы `ps_cms_category_shop`
 --
 ALTER TABLE `ps_cms_category_shop`
   ADD PRIMARY KEY (`id_cms_category`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `ps_cms_lang`
+-- Индексы таблицы `ps_cms_lang`
 --
 ALTER TABLE `ps_cms_lang`
   ADD PRIMARY KEY (`id_cms`,`id_shop`,`id_lang`);
 
 --
--- Indexes for table `ps_cms_role`
+-- Индексы таблицы `ps_cms_role`
 --
 ALTER TABLE `ps_cms_role`
   ADD PRIMARY KEY (`id_cms_role`,`id_cms`),
   ADD UNIQUE KEY `name` (`name`);
 
 --
--- Indexes for table `ps_cms_role_lang`
+-- Индексы таблицы `ps_cms_role_lang`
 --
 ALTER TABLE `ps_cms_role_lang`
   ADD PRIMARY KEY (`id_cms_role`,`id_lang`,`id_shop`);
 
 --
--- Indexes for table `ps_cms_shop`
+-- Индексы таблицы `ps_cms_shop`
 --
 ALTER TABLE `ps_cms_shop`
   ADD PRIMARY KEY (`id_cms`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `ps_configuration`
+-- Индексы таблицы `ps_configuration`
 --
 ALTER TABLE `ps_configuration`
   ADD PRIMARY KEY (`id_configuration`),
@@ -12402,7 +23342,7 @@ ALTER TABLE `ps_configuration`
   ADD KEY `id_shop_group` (`id_shop_group`);
 
 --
--- Indexes for table `ps_configuration_kpi`
+-- Индексы таблицы `ps_configuration_kpi`
 --
 ALTER TABLE `ps_configuration_kpi`
   ADD PRIMARY KEY (`id_configuration_kpi`),
@@ -12411,19 +23351,19 @@ ALTER TABLE `ps_configuration_kpi`
   ADD KEY `id_shop_group` (`id_shop_group`);
 
 --
--- Indexes for table `ps_configuration_kpi_lang`
+-- Индексы таблицы `ps_configuration_kpi_lang`
 --
 ALTER TABLE `ps_configuration_kpi_lang`
   ADD PRIMARY KEY (`id_configuration_kpi`,`id_lang`);
 
 --
--- Indexes for table `ps_configuration_lang`
+-- Индексы таблицы `ps_configuration_lang`
 --
 ALTER TABLE `ps_configuration_lang`
   ADD PRIMARY KEY (`id_configuration`,`id_lang`);
 
 --
--- Indexes for table `ps_connections`
+-- Индексы таблицы `ps_connections`
 --
 ALTER TABLE `ps_connections`
   ADD PRIMARY KEY (`id_connections`),
@@ -12432,13 +23372,13 @@ ALTER TABLE `ps_connections`
   ADD KEY `id_page` (`id_page`);
 
 --
--- Indexes for table `ps_connections_page`
+-- Индексы таблицы `ps_connections_page`
 --
 ALTER TABLE `ps_connections_page`
   ADD PRIMARY KEY (`id_connections`,`id_page`,`time_start`);
 
 --
--- Indexes for table `ps_connections_source`
+-- Индексы таблицы `ps_connections_source`
 --
 ALTER TABLE `ps_connections_source`
   ADD PRIMARY KEY (`id_connections_source`),
@@ -12448,26 +23388,26 @@ ALTER TABLE `ps_connections_source`
   ADD KEY `request_uri` (`request_uri`);
 
 --
--- Indexes for table `ps_contact`
+-- Индексы таблицы `ps_contact`
 --
 ALTER TABLE `ps_contact`
   ADD PRIMARY KEY (`id_contact`);
 
 --
--- Indexes for table `ps_contact_lang`
+-- Индексы таблицы `ps_contact_lang`
 --
 ALTER TABLE `ps_contact_lang`
   ADD PRIMARY KEY (`id_contact`,`id_lang`);
 
 --
--- Indexes for table `ps_contact_shop`
+-- Индексы таблицы `ps_contact_shop`
 --
 ALTER TABLE `ps_contact_shop`
   ADD PRIMARY KEY (`id_contact`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `ps_country`
+-- Индексы таблицы `ps_country`
 --
 ALTER TABLE `ps_country`
   ADD PRIMARY KEY (`id_country`),
@@ -12475,40 +23415,40 @@ ALTER TABLE `ps_country`
   ADD KEY `country_` (`id_zone`);
 
 --
--- Indexes for table `ps_country_lang`
+-- Индексы таблицы `ps_country_lang`
 --
 ALTER TABLE `ps_country_lang`
   ADD PRIMARY KEY (`id_country`,`id_lang`);
 
 --
--- Indexes for table `ps_country_shop`
+-- Индексы таблицы `ps_country_shop`
 --
 ALTER TABLE `ps_country_shop`
   ADD PRIMARY KEY (`id_country`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `ps_currency`
+-- Индексы таблицы `ps_currency`
 --
 ALTER TABLE `ps_currency`
   ADD PRIMARY KEY (`id_currency`),
   ADD KEY `currency_iso_code` (`iso_code`);
 
 --
--- Indexes for table `ps_currency_lang`
+-- Индексы таблицы `ps_currency_lang`
 --
 ALTER TABLE `ps_currency_lang`
   ADD PRIMARY KEY (`id_currency`,`id_lang`);
 
 --
--- Indexes for table `ps_currency_shop`
+-- Индексы таблицы `ps_currency_shop`
 --
 ALTER TABLE `ps_currency_shop`
   ADD PRIMARY KEY (`id_currency`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `ps_customer`
+-- Индексы таблицы `ps_customer`
 --
 ALTER TABLE `ps_customer`
   ADD PRIMARY KEY (`id_customer`),
@@ -12520,7 +23460,7 @@ ALTER TABLE `ps_customer`
   ADD KEY `id_shop` (`id_shop`,`date_add`);
 
 --
--- Indexes for table `ps_customer_group`
+-- Индексы таблицы `ps_customer_group`
 --
 ALTER TABLE `ps_customer_group`
   ADD PRIMARY KEY (`id_customer`,`id_group`),
@@ -12528,7 +23468,7 @@ ALTER TABLE `ps_customer_group`
   ADD KEY `id_customer` (`id_customer`);
 
 --
--- Indexes for table `ps_customer_message`
+-- Индексы таблицы `ps_customer_message`
 --
 ALTER TABLE `ps_customer_message`
   ADD PRIMARY KEY (`id_customer_message`),
@@ -12536,19 +23476,19 @@ ALTER TABLE `ps_customer_message`
   ADD KEY `id_employee` (`id_employee`);
 
 --
--- Indexes for table `ps_customer_message_sync_imap`
+-- Индексы таблицы `ps_customer_message_sync_imap`
 --
 ALTER TABLE `ps_customer_message_sync_imap`
   ADD KEY `md5_header_index` (`md5_header`(4));
 
 --
--- Indexes for table `ps_customer_session`
+-- Индексы таблицы `ps_customer_session`
 --
 ALTER TABLE `ps_customer_session`
   ADD PRIMARY KEY (`id_customer_session`);
 
 --
--- Indexes for table `ps_customer_thread`
+-- Индексы таблицы `ps_customer_thread`
 --
 ALTER TABLE `ps_customer_thread`
   ADD PRIMARY KEY (`id_customer_thread`),
@@ -12560,7 +23500,7 @@ ALTER TABLE `ps_customer_thread`
   ADD KEY `id_product` (`id_product`);
 
 --
--- Indexes for table `ps_customization`
+-- Индексы таблицы `ps_customization`
 --
 ALTER TABLE `ps_customization`
   ADD PRIMARY KEY (`id_customization`,`id_cart`,`id_product`,`id_address_delivery`),
@@ -12568,32 +23508,32 @@ ALTER TABLE `ps_customization`
   ADD KEY `id_cart_product` (`id_cart`,`id_product`,`id_product_attribute`);
 
 --
--- Indexes for table `ps_customization_field`
+-- Индексы таблицы `ps_customization_field`
 --
 ALTER TABLE `ps_customization_field`
   ADD PRIMARY KEY (`id_customization_field`),
   ADD KEY `id_product` (`id_product`);
 
 --
--- Indexes for table `ps_customization_field_lang`
+-- Индексы таблицы `ps_customization_field_lang`
 --
 ALTER TABLE `ps_customization_field_lang`
   ADD PRIMARY KEY (`id_customization_field`,`id_lang`,`id_shop`);
 
 --
--- Indexes for table `ps_customized_data`
+-- Индексы таблицы `ps_customized_data`
 --
 ALTER TABLE `ps_customized_data`
   ADD PRIMARY KEY (`id_customization`,`type`,`index`);
 
 --
--- Indexes for table `ps_date_range`
+-- Индексы таблицы `ps_date_range`
 --
 ALTER TABLE `ps_date_range`
   ADD PRIMARY KEY (`id_date_range`);
 
 --
--- Indexes for table `ps_delivery`
+-- Индексы таблицы `ps_delivery`
 --
 ALTER TABLE `ps_delivery`
   ADD PRIMARY KEY (`id_delivery`),
@@ -12603,13 +23543,13 @@ ALTER TABLE `ps_delivery`
   ADD KEY `id_range_weight` (`id_range_weight`);
 
 --
--- Indexes for table `ps_emailsubscription`
+-- Индексы таблицы `ps_emailsubscription`
 --
 ALTER TABLE `ps_emailsubscription`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `ps_employee`
+-- Индексы таблицы `ps_employee`
 --
 ALTER TABLE `ps_employee`
   ADD PRIMARY KEY (`id_employee`),
@@ -12618,53 +23558,53 @@ ALTER TABLE `ps_employee`
   ADD KEY `id_profile` (`id_profile`);
 
 --
--- Indexes for table `ps_employee_account`
+-- Индексы таблицы `ps_employee_account`
 --
 ALTER TABLE `ps_employee_account`
   ADD PRIMARY KEY (`id_employee_account`);
 
 --
--- Indexes for table `ps_employee_session`
+-- Индексы таблицы `ps_employee_session`
 --
 ALTER TABLE `ps_employee_session`
   ADD PRIMARY KEY (`id_employee_session`);
 
 --
--- Indexes for table `ps_employee_shop`
+-- Индексы таблицы `ps_employee_shop`
 --
 ALTER TABLE `ps_employee_shop`
   ADD PRIMARY KEY (`id_employee`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `ps_fb_category_match`
+-- Индексы таблицы `ps_fb_category_match`
 --
 ALTER TABLE `ps_fb_category_match`
   ADD PRIMARY KEY (`id_category`,`id_shop`),
   ADD KEY `id_category` (`id_category`,`google_category_id`);
 
 --
--- Indexes for table `ps_feature`
+-- Индексы таблицы `ps_feature`
 --
 ALTER TABLE `ps_feature`
   ADD PRIMARY KEY (`id_feature`);
 
 --
--- Indexes for table `ps_feature_flag`
+-- Индексы таблицы `ps_feature_flag`
 --
 ALTER TABLE `ps_feature_flag`
   ADD PRIMARY KEY (`id_feature_flag`),
   ADD UNIQUE KEY `UNIQ_91700F175E237E06` (`name`);
 
 --
--- Indexes for table `ps_feature_lang`
+-- Индексы таблицы `ps_feature_lang`
 --
 ALTER TABLE `ps_feature_lang`
   ADD PRIMARY KEY (`id_feature`,`id_lang`),
   ADD KEY `id_lang` (`id_lang`,`name`);
 
 --
--- Indexes for table `ps_feature_product`
+-- Индексы таблицы `ps_feature_product`
 --
 ALTER TABLE `ps_feature_product`
   ADD PRIMARY KEY (`id_feature`,`id_product`,`id_feature_value`),
@@ -12672,66 +23612,66 @@ ALTER TABLE `ps_feature_product`
   ADD KEY `id_product` (`id_product`);
 
 --
--- Indexes for table `ps_feature_shop`
+-- Индексы таблицы `ps_feature_shop`
 --
 ALTER TABLE `ps_feature_shop`
   ADD PRIMARY KEY (`id_feature`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `ps_feature_value`
+-- Индексы таблицы `ps_feature_value`
 --
 ALTER TABLE `ps_feature_value`
   ADD PRIMARY KEY (`id_feature_value`),
   ADD KEY `feature` (`id_feature`);
 
 --
--- Indexes for table `ps_feature_value_lang`
+-- Индексы таблицы `ps_feature_value_lang`
 --
 ALTER TABLE `ps_feature_value_lang`
   ADD PRIMARY KEY (`id_feature_value`,`id_lang`);
 
 --
--- Indexes for table `ps_gender`
+-- Индексы таблицы `ps_gender`
 --
 ALTER TABLE `ps_gender`
   ADD PRIMARY KEY (`id_gender`);
 
 --
--- Indexes for table `ps_gender_lang`
+-- Индексы таблицы `ps_gender_lang`
 --
 ALTER TABLE `ps_gender_lang`
   ADD PRIMARY KEY (`id_gender`,`id_lang`),
   ADD KEY `id_gender` (`id_gender`);
 
 --
--- Indexes for table `ps_group`
+-- Индексы таблицы `ps_group`
 --
 ALTER TABLE `ps_group`
   ADD PRIMARY KEY (`id_group`);
 
 --
--- Indexes for table `ps_group_lang`
+-- Индексы таблицы `ps_group_lang`
 --
 ALTER TABLE `ps_group_lang`
   ADD PRIMARY KEY (`id_group`,`id_lang`);
 
 --
--- Indexes for table `ps_group_reduction`
+-- Индексы таблицы `ps_group_reduction`
 --
 ALTER TABLE `ps_group_reduction`
   ADD PRIMARY KEY (`id_group_reduction`),
   ADD UNIQUE KEY `id_group` (`id_group`,`id_category`);
 
 --
--- Indexes for table `ps_group_shop`
+-- Индексы таблицы `ps_group_shop`
 --
 ALTER TABLE `ps_group_shop`
   ADD PRIMARY KEY (`id_group`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `ps_guest`
+-- Индексы таблицы `ps_guest`
 --
 ALTER TABLE `ps_guest`
   ADD PRIMARY KEY (`id_guest`),
@@ -12740,39 +23680,39 @@ ALTER TABLE `ps_guest`
   ADD KEY `id_web_browser` (`id_web_browser`);
 
 --
--- Indexes for table `ps_homeslider`
+-- Индексы таблицы `ps_homeslider`
 --
 ALTER TABLE `ps_homeslider`
   ADD PRIMARY KEY (`id_homeslider_slides`,`id_shop`);
 
 --
--- Indexes for table `ps_homeslider_slides`
+-- Индексы таблицы `ps_homeslider_slides`
 --
 ALTER TABLE `ps_homeslider_slides`
   ADD PRIMARY KEY (`id_homeslider_slides`);
 
 --
--- Indexes for table `ps_homeslider_slides_lang`
+-- Индексы таблицы `ps_homeslider_slides_lang`
 --
 ALTER TABLE `ps_homeslider_slides_lang`
   ADD PRIMARY KEY (`id_homeslider_slides`,`id_lang`);
 
 --
--- Indexes for table `ps_hook`
+-- Индексы таблицы `ps_hook`
 --
 ALTER TABLE `ps_hook`
   ADD PRIMARY KEY (`id_hook`),
   ADD UNIQUE KEY `hook_name` (`name`);
 
 --
--- Indexes for table `ps_hook_alias`
+-- Индексы таблицы `ps_hook_alias`
 --
 ALTER TABLE `ps_hook_alias`
   ADD PRIMARY KEY (`id_hook_alias`),
   ADD UNIQUE KEY `alias` (`alias`);
 
 --
--- Indexes for table `ps_hook_module`
+-- Индексы таблицы `ps_hook_module`
 --
 ALTER TABLE `ps_hook_module`
   ADD PRIMARY KEY (`id_module`,`id_hook`,`id_shop`),
@@ -12781,7 +23721,7 @@ ALTER TABLE `ps_hook_module`
   ADD KEY `position` (`id_shop`,`position`);
 
 --
--- Indexes for table `ps_hook_module_exceptions`
+-- Индексы таблицы `ps_hook_module_exceptions`
 --
 ALTER TABLE `ps_hook_module_exceptions`
   ADD PRIMARY KEY (`id_hook_module_exceptions`),
@@ -12789,7 +23729,7 @@ ALTER TABLE `ps_hook_module_exceptions`
   ADD KEY `id_hook` (`id_hook`);
 
 --
--- Indexes for table `ps_image`
+-- Индексы таблицы `ps_image`
 --
 ALTER TABLE `ps_image`
   ADD PRIMARY KEY (`id_image`),
@@ -12798,14 +23738,14 @@ ALTER TABLE `ps_image`
   ADD KEY `image_product` (`id_product`);
 
 --
--- Indexes for table `ps_image_lang`
+-- Индексы таблицы `ps_image_lang`
 --
 ALTER TABLE `ps_image_lang`
   ADD PRIMARY KEY (`id_image`,`id_lang`),
   ADD KEY `id_image` (`id_image`);
 
 --
--- Indexes for table `ps_image_shop`
+-- Индексы таблицы `ps_image_shop`
 --
 ALTER TABLE `ps_image_shop`
   ADD PRIMARY KEY (`id_image`,`id_shop`),
@@ -12813,44 +23753,44 @@ ALTER TABLE `ps_image_shop`
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `ps_image_type`
+-- Индексы таблицы `ps_image_type`
 --
 ALTER TABLE `ps_image_type`
   ADD PRIMARY KEY (`id_image_type`),
   ADD KEY `image_type_name` (`name`);
 
 --
--- Indexes for table `ps_import_match`
+-- Индексы таблицы `ps_import_match`
 --
 ALTER TABLE `ps_import_match`
   ADD PRIMARY KEY (`id_import_match`);
 
 --
--- Indexes for table `ps_info`
+-- Индексы таблицы `ps_info`
 --
 ALTER TABLE `ps_info`
   ADD PRIMARY KEY (`id_info`);
 
 --
--- Indexes for table `ps_info_lang`
+-- Индексы таблицы `ps_info_lang`
 --
 ALTER TABLE `ps_info_lang`
   ADD PRIMARY KEY (`id_info`,`id_lang`,`id_shop`);
 
 --
--- Indexes for table `ps_info_shop`
+-- Индексы таблицы `ps_info_shop`
 --
 ALTER TABLE `ps_info_shop`
   ADD PRIMARY KEY (`id_info`,`id_shop`);
 
 --
--- Indexes for table `ps_lang`
+-- Индексы таблицы `ps_lang`
 --
 ALTER TABLE `ps_lang`
   ADD PRIMARY KEY (`id_lang`);
 
 --
--- Indexes for table `ps_lang_shop`
+-- Индексы таблицы `ps_lang_shop`
 --
 ALTER TABLE `ps_lang_shop`
   ADD PRIMARY KEY (`id_lang`,`id_shop`),
@@ -12858,7 +23798,7 @@ ALTER TABLE `ps_lang_shop`
   ADD KEY `IDX_2F43BFC7274A50A0` (`id_shop`);
 
 --
--- Indexes for table `ps_layered_category`
+-- Индексы таблицы `ps_layered_category`
 --
 ALTER TABLE `ps_layered_category`
   ADD PRIMARY KEY (`id_layered_category`),
@@ -12866,62 +23806,62 @@ ALTER TABLE `ps_layered_category`
   ADD KEY `id_category` (`id_category`,`type`);
 
 --
--- Indexes for table `ps_layered_filter`
+-- Индексы таблицы `ps_layered_filter`
 --
 ALTER TABLE `ps_layered_filter`
   ADD PRIMARY KEY (`id_layered_filter`);
 
 --
--- Indexes for table `ps_layered_filter_block`
+-- Индексы таблицы `ps_layered_filter_block`
 --
 ALTER TABLE `ps_layered_filter_block`
   ADD PRIMARY KEY (`hash`);
 
 --
--- Indexes for table `ps_layered_filter_shop`
+-- Индексы таблицы `ps_layered_filter_shop`
 --
 ALTER TABLE `ps_layered_filter_shop`
   ADD PRIMARY KEY (`id_layered_filter`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `ps_layered_indexable_attribute_group`
+-- Индексы таблицы `ps_layered_indexable_attribute_group`
 --
 ALTER TABLE `ps_layered_indexable_attribute_group`
   ADD PRIMARY KEY (`id_attribute_group`);
 
 --
--- Indexes for table `ps_layered_indexable_attribute_group_lang_value`
+-- Индексы таблицы `ps_layered_indexable_attribute_group_lang_value`
 --
 ALTER TABLE `ps_layered_indexable_attribute_group_lang_value`
   ADD PRIMARY KEY (`id_attribute_group`,`id_lang`);
 
 --
--- Indexes for table `ps_layered_indexable_attribute_lang_value`
+-- Индексы таблицы `ps_layered_indexable_attribute_lang_value`
 --
 ALTER TABLE `ps_layered_indexable_attribute_lang_value`
   ADD PRIMARY KEY (`id_attribute`,`id_lang`);
 
 --
--- Indexes for table `ps_layered_indexable_feature`
+-- Индексы таблицы `ps_layered_indexable_feature`
 --
 ALTER TABLE `ps_layered_indexable_feature`
   ADD PRIMARY KEY (`id_feature`);
 
 --
--- Indexes for table `ps_layered_indexable_feature_lang_value`
+-- Индексы таблицы `ps_layered_indexable_feature_lang_value`
 --
 ALTER TABLE `ps_layered_indexable_feature_lang_value`
   ADD PRIMARY KEY (`id_feature`,`id_lang`);
 
 --
--- Indexes for table `ps_layered_indexable_feature_value_lang_value`
+-- Индексы таблицы `ps_layered_indexable_feature_value_lang_value`
 --
 ALTER TABLE `ps_layered_indexable_feature_value_lang_value`
   ADD PRIMARY KEY (`id_feature_value`,`id_lang`);
 
 --
--- Indexes for table `ps_layered_price_index`
+-- Индексы таблицы `ps_layered_price_index`
 --
 ALTER TABLE `ps_layered_price_index`
   ADD PRIMARY KEY (`id_product`,`id_currency`,`id_shop`,`id_country`),
@@ -12930,83 +23870,83 @@ ALTER TABLE `ps_layered_price_index`
   ADD KEY `price_max` (`price_max`);
 
 --
--- Indexes for table `ps_layered_product_attribute`
+-- Индексы таблицы `ps_layered_product_attribute`
 --
 ALTER TABLE `ps_layered_product_attribute`
   ADD PRIMARY KEY (`id_attribute`,`id_product`,`id_shop`),
   ADD UNIQUE KEY `id_attribute_group` (`id_attribute_group`,`id_attribute`,`id_product`,`id_shop`);
 
 --
--- Indexes for table `ps_linksmenutop`
+-- Индексы таблицы `ps_linksmenutop`
 --
 ALTER TABLE `ps_linksmenutop`
   ADD PRIMARY KEY (`id_linksmenutop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `ps_linksmenutop_lang`
+-- Индексы таблицы `ps_linksmenutop_lang`
 --
 ALTER TABLE `ps_linksmenutop_lang`
   ADD KEY `id_linksmenutop` (`id_linksmenutop`,`id_lang`,`id_shop`);
 
 --
--- Indexes for table `ps_link_block`
+-- Индексы таблицы `ps_link_block`
 --
 ALTER TABLE `ps_link_block`
   ADD PRIMARY KEY (`id_link_block`);
 
 --
--- Indexes for table `ps_link_block_lang`
+-- Индексы таблицы `ps_link_block_lang`
 --
 ALTER TABLE `ps_link_block_lang`
   ADD PRIMARY KEY (`id_link_block`,`id_lang`);
 
 --
--- Indexes for table `ps_link_block_shop`
+-- Индексы таблицы `ps_link_block_shop`
 --
 ALTER TABLE `ps_link_block_shop`
   ADD PRIMARY KEY (`id_link_block`,`id_shop`);
 
 --
--- Indexes for table `ps_log`
+-- Индексы таблицы `ps_log`
 --
 ALTER TABLE `ps_log`
   ADD PRIMARY KEY (`id_log`);
 
 --
--- Indexes for table `ps_mail`
+-- Индексы таблицы `ps_mail`
 --
 ALTER TABLE `ps_mail`
   ADD PRIMARY KEY (`id_mail`),
   ADD KEY `recipient` (`recipient`(10));
 
 --
--- Indexes for table `ps_manufacturer`
+-- Индексы таблицы `ps_manufacturer`
 --
 ALTER TABLE `ps_manufacturer`
   ADD PRIMARY KEY (`id_manufacturer`);
 
 --
--- Indexes for table `ps_manufacturer_lang`
+-- Индексы таблицы `ps_manufacturer_lang`
 --
 ALTER TABLE `ps_manufacturer_lang`
   ADD PRIMARY KEY (`id_manufacturer`,`id_lang`);
 
 --
--- Indexes for table `ps_manufacturer_shop`
+-- Индексы таблицы `ps_manufacturer_shop`
 --
 ALTER TABLE `ps_manufacturer_shop`
   ADD PRIMARY KEY (`id_manufacturer`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `ps_memcached_servers`
+-- Индексы таблицы `ps_memcached_servers`
 --
 ALTER TABLE `ps_memcached_servers`
   ADD PRIMARY KEY (`id_memcached_server`);
 
 --
--- Indexes for table `ps_message`
+-- Индексы таблицы `ps_message`
 --
 ALTER TABLE `ps_message`
   ADD PRIMARY KEY (`id_message`),
@@ -13016,20 +23956,20 @@ ALTER TABLE `ps_message`
   ADD KEY `id_employee` (`id_employee`);
 
 --
--- Indexes for table `ps_message_readed`
+-- Индексы таблицы `ps_message_readed`
 --
 ALTER TABLE `ps_message_readed`
   ADD PRIMARY KEY (`id_message`,`id_employee`);
 
 --
--- Indexes for table `ps_meta`
+-- Индексы таблицы `ps_meta`
 --
 ALTER TABLE `ps_meta`
   ADD PRIMARY KEY (`id_meta`),
   ADD UNIQUE KEY `page` (`page`);
 
 --
--- Indexes for table `ps_meta_lang`
+-- Индексы таблицы `ps_meta_lang`
 --
 ALTER TABLE `ps_meta_lang`
   ADD PRIMARY KEY (`id_meta`,`id_shop`,`id_lang`),
@@ -13037,7 +23977,7 @@ ALTER TABLE `ps_meta_lang`
   ADD KEY `id_lang` (`id_lang`);
 
 --
--- Indexes for table `ps_module`
+-- Индексы таблицы `ps_module`
 --
 ALTER TABLE `ps_module`
   ADD PRIMARY KEY (`id_module`),
@@ -13045,64 +23985,64 @@ ALTER TABLE `ps_module`
   ADD KEY `name` (`name`);
 
 --
--- Indexes for table `ps_module_access`
+-- Индексы таблицы `ps_module_access`
 --
 ALTER TABLE `ps_module_access`
   ADD PRIMARY KEY (`id_profile`,`id_authorization_role`);
 
 --
--- Indexes for table `ps_module_carrier`
+-- Индексы таблицы `ps_module_carrier`
 --
 ALTER TABLE `ps_module_carrier`
   ADD PRIMARY KEY (`id_module`,`id_shop`,`id_reference`);
 
 --
--- Indexes for table `ps_module_country`
+-- Индексы таблицы `ps_module_country`
 --
 ALTER TABLE `ps_module_country`
   ADD PRIMARY KEY (`id_module`,`id_shop`,`id_country`);
 
 --
--- Indexes for table `ps_module_currency`
+-- Индексы таблицы `ps_module_currency`
 --
 ALTER TABLE `ps_module_currency`
   ADD PRIMARY KEY (`id_module`,`id_shop`,`id_currency`),
   ADD KEY `id_module` (`id_module`);
 
 --
--- Indexes for table `ps_module_group`
+-- Индексы таблицы `ps_module_group`
 --
 ALTER TABLE `ps_module_group`
   ADD PRIMARY KEY (`id_module`,`id_shop`,`id_group`);
 
 --
--- Indexes for table `ps_module_history`
+-- Индексы таблицы `ps_module_history`
 --
 ALTER TABLE `ps_module_history`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `ps_module_preference`
+-- Индексы таблицы `ps_module_preference`
 --
 ALTER TABLE `ps_module_preference`
   ADD PRIMARY KEY (`id_module_preference`),
   ADD UNIQUE KEY `employee_module` (`id_employee`,`module`);
 
 --
--- Indexes for table `ps_module_shop`
+-- Индексы таблицы `ps_module_shop`
 --
 ALTER TABLE `ps_module_shop`
   ADD PRIMARY KEY (`id_module`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `ps_operating_system`
+-- Индексы таблицы `ps_operating_system`
 --
 ALTER TABLE `ps_operating_system`
   ADD PRIMARY KEY (`id_operating_system`);
 
 --
--- Indexes for table `ps_orders`
+-- Индексы таблицы `ps_orders`
 --
 ALTER TABLE `ps_orders`
   ADD PRIMARY KEY (`id_order`),
@@ -13121,7 +24061,7 @@ ALTER TABLE `ps_orders`
   ADD KEY `date_add` (`date_add`);
 
 --
--- Indexes for table `ps_order_carrier`
+-- Индексы таблицы `ps_order_carrier`
 --
 ALTER TABLE `ps_order_carrier`
   ADD PRIMARY KEY (`id_order_carrier`),
@@ -13130,7 +24070,7 @@ ALTER TABLE `ps_order_carrier`
   ADD KEY `id_order_invoice` (`id_order_invoice`);
 
 --
--- Indexes for table `ps_order_cart_rule`
+-- Индексы таблицы `ps_order_cart_rule`
 --
 ALTER TABLE `ps_order_cart_rule`
   ADD PRIMARY KEY (`id_order_cart_rule`),
@@ -13138,7 +24078,7 @@ ALTER TABLE `ps_order_cart_rule`
   ADD KEY `id_cart_rule` (`id_cart_rule`);
 
 --
--- Indexes for table `ps_order_detail`
+-- Индексы таблицы `ps_order_detail`
 --
 ALTER TABLE `ps_order_detail`
   ADD PRIMARY KEY (`id_order_detail`),
@@ -13149,14 +24089,14 @@ ALTER TABLE `ps_order_detail`
   ADD KEY `id_order_id_order_detail` (`id_order`,`id_order_detail`);
 
 --
--- Indexes for table `ps_order_detail_tax`
+-- Индексы таблицы `ps_order_detail_tax`
 --
 ALTER TABLE `ps_order_detail_tax`
   ADD KEY `id_order_detail` (`id_order_detail`),
   ADD KEY `id_tax` (`id_tax`);
 
 --
--- Indexes for table `ps_order_history`
+-- Индексы таблицы `ps_order_history`
 --
 ALTER TABLE `ps_order_history`
   ADD PRIMARY KEY (`id_order_history`),
@@ -13165,14 +24105,14 @@ ALTER TABLE `ps_order_history`
   ADD KEY `id_order_state` (`id_order_state`);
 
 --
--- Indexes for table `ps_order_invoice`
+-- Индексы таблицы `ps_order_invoice`
 --
 ALTER TABLE `ps_order_invoice`
   ADD PRIMARY KEY (`id_order_invoice`),
   ADD KEY `id_order` (`id_order`);
 
 --
--- Indexes for table `ps_order_invoice_payment`
+-- Индексы таблицы `ps_order_invoice_payment`
 --
 ALTER TABLE `ps_order_invoice_payment`
   ADD PRIMARY KEY (`id_order_invoice`,`id_order_payment`),
@@ -13180,44 +24120,44 @@ ALTER TABLE `ps_order_invoice_payment`
   ADD KEY `id_order` (`id_order`);
 
 --
--- Indexes for table `ps_order_invoice_tax`
+-- Индексы таблицы `ps_order_invoice_tax`
 --
 ALTER TABLE `ps_order_invoice_tax`
   ADD KEY `id_tax` (`id_tax`);
 
 --
--- Indexes for table `ps_order_message`
+-- Индексы таблицы `ps_order_message`
 --
 ALTER TABLE `ps_order_message`
   ADD PRIMARY KEY (`id_order_message`);
 
 --
--- Indexes for table `ps_order_message_lang`
+-- Индексы таблицы `ps_order_message_lang`
 --
 ALTER TABLE `ps_order_message_lang`
   ADD PRIMARY KEY (`id_order_message`,`id_lang`);
 
 --
--- Indexes for table `ps_order_payment`
+-- Индексы таблицы `ps_order_payment`
 --
 ALTER TABLE `ps_order_payment`
   ADD PRIMARY KEY (`id_order_payment`),
   ADD KEY `order_reference` (`order_reference`);
 
 --
--- Indexes for table `ps_order_payu_payments`
+-- Индексы таблицы `ps_order_payu_payments`
 --
 ALTER TABLE `ps_order_payu_payments`
   ADD PRIMARY KEY (`id_payu_payment`);
 
 --
--- Indexes for table `ps_order_payu_payments_history`
+-- Индексы таблицы `ps_order_payu_payments_history`
 --
 ALTER TABLE `ps_order_payu_payments_history`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `ps_order_return`
+-- Индексы таблицы `ps_order_return`
 --
 ALTER TABLE `ps_order_return`
   ADD PRIMARY KEY (`id_order_return`),
@@ -13225,25 +24165,25 @@ ALTER TABLE `ps_order_return`
   ADD KEY `id_order` (`id_order`);
 
 --
--- Indexes for table `ps_order_return_detail`
+-- Индексы таблицы `ps_order_return_detail`
 --
 ALTER TABLE `ps_order_return_detail`
   ADD PRIMARY KEY (`id_order_return`,`id_order_detail`,`id_customization`);
 
 --
--- Indexes for table `ps_order_return_state`
+-- Индексы таблицы `ps_order_return_state`
 --
 ALTER TABLE `ps_order_return_state`
   ADD PRIMARY KEY (`id_order_return_state`);
 
 --
--- Indexes for table `ps_order_return_state_lang`
+-- Индексы таблицы `ps_order_return_state_lang`
 --
 ALTER TABLE `ps_order_return_state_lang`
   ADD PRIMARY KEY (`id_order_return_state`,`id_lang`);
 
 --
--- Indexes for table `ps_order_slip`
+-- Индексы таблицы `ps_order_slip`
 --
 ALTER TABLE `ps_order_slip`
   ADD PRIMARY KEY (`id_order_slip`),
@@ -13251,33 +24191,33 @@ ALTER TABLE `ps_order_slip`
   ADD KEY `id_order` (`id_order`);
 
 --
--- Indexes for table `ps_order_slip_detail`
+-- Индексы таблицы `ps_order_slip_detail`
 --
 ALTER TABLE `ps_order_slip_detail`
   ADD PRIMARY KEY (`id_order_slip`,`id_order_detail`);
 
 --
--- Indexes for table `ps_order_state`
+-- Индексы таблицы `ps_order_state`
 --
 ALTER TABLE `ps_order_state`
   ADD PRIMARY KEY (`id_order_state`),
   ADD KEY `module_name` (`module_name`);
 
 --
--- Indexes for table `ps_order_state_lang`
+-- Индексы таблицы `ps_order_state_lang`
 --
 ALTER TABLE `ps_order_state_lang`
   ADD PRIMARY KEY (`id_order_state`,`id_lang`);
 
 --
--- Indexes for table `ps_pack`
+-- Индексы таблицы `ps_pack`
 --
 ALTER TABLE `ps_pack`
   ADD PRIMARY KEY (`id_product_pack`,`id_product_item`,`id_product_attribute_item`),
   ADD KEY `product_item` (`id_product_item`,`id_product_attribute_item`);
 
 --
--- Indexes for table `ps_page`
+-- Индексы таблицы `ps_page`
 --
 ALTER TABLE `ps_page`
   ADD PRIMARY KEY (`id_page`),
@@ -13285,27 +24225,27 @@ ALTER TABLE `ps_page`
   ADD KEY `id_object` (`id_object`);
 
 --
--- Indexes for table `ps_pagenotfound`
+-- Индексы таблицы `ps_pagenotfound`
 --
 ALTER TABLE `ps_pagenotfound`
   ADD PRIMARY KEY (`id_pagenotfound`),
   ADD KEY `date_add` (`date_add`);
 
 --
--- Indexes for table `ps_page_type`
+-- Индексы таблицы `ps_page_type`
 --
 ALTER TABLE `ps_page_type`
   ADD PRIMARY KEY (`id_page_type`),
   ADD KEY `name` (`name`);
 
 --
--- Indexes for table `ps_page_viewed`
+-- Индексы таблицы `ps_page_viewed`
 --
 ALTER TABLE `ps_page_viewed`
   ADD PRIMARY KEY (`id_page`,`id_date_range`,`id_shop`);
 
 --
--- Indexes for table `ps_product`
+-- Индексы таблицы `ps_product`
 --
 ALTER TABLE `ps_product`
   ADD PRIMARY KEY (`id_product`),
@@ -13319,13 +24259,13 @@ ALTER TABLE `ps_product`
   ADD KEY `state` (`state`,`date_upd`);
 
 --
--- Indexes for table `ps_product_attachment`
+-- Индексы таблицы `ps_product_attachment`
 --
 ALTER TABLE `ps_product_attachment`
   ADD PRIMARY KEY (`id_product`,`id_attachment`);
 
 --
--- Indexes for table `ps_product_attribute`
+-- Индексы таблицы `ps_product_attribute`
 --
 ALTER TABLE `ps_product_attribute`
   ADD PRIMARY KEY (`id_product_attribute`),
@@ -13336,66 +24276,66 @@ ALTER TABLE `ps_product_attribute`
   ADD KEY `id_product_id_product_attribute` (`id_product_attribute`,`id_product`);
 
 --
--- Indexes for table `ps_product_attribute_combination`
+-- Индексы таблицы `ps_product_attribute_combination`
 --
 ALTER TABLE `ps_product_attribute_combination`
   ADD PRIMARY KEY (`id_attribute`,`id_product_attribute`),
   ADD KEY `id_product_attribute` (`id_product_attribute`);
 
 --
--- Indexes for table `ps_product_attribute_image`
+-- Индексы таблицы `ps_product_attribute_image`
 --
 ALTER TABLE `ps_product_attribute_image`
   ADD PRIMARY KEY (`id_product_attribute`,`id_image`),
   ADD KEY `id_image` (`id_image`);
 
 --
--- Indexes for table `ps_product_attribute_shop`
+-- Индексы таблицы `ps_product_attribute_shop`
 --
 ALTER TABLE `ps_product_attribute_shop`
   ADD PRIMARY KEY (`id_product_attribute`,`id_shop`),
   ADD UNIQUE KEY `id_product` (`id_product`,`id_shop`,`default_on`);
 
 --
--- Indexes for table `ps_product_carrier`
+-- Индексы таблицы `ps_product_carrier`
 --
 ALTER TABLE `ps_product_carrier`
   ADD PRIMARY KEY (`id_product`,`id_carrier_reference`,`id_shop`);
 
 --
--- Indexes for table `ps_product_comment`
+-- Индексы таблицы `ps_product_comment`
 --
 ALTER TABLE `ps_product_comment`
   ADD PRIMARY KEY (`id_product_comment`);
 
 --
--- Indexes for table `ps_product_comment_criterion`
+-- Индексы таблицы `ps_product_comment_criterion`
 --
 ALTER TABLE `ps_product_comment_criterion`
   ADD PRIMARY KEY (`id_product_comment_criterion`);
 
 --
--- Indexes for table `ps_product_comment_criterion_category`
+-- Индексы таблицы `ps_product_comment_criterion_category`
 --
 ALTER TABLE `ps_product_comment_criterion_category`
   ADD PRIMARY KEY (`id_product_comment_criterion`,`id_category`),
   ADD KEY `id_category` (`id_category`);
 
 --
--- Indexes for table `ps_product_comment_criterion_lang`
+-- Индексы таблицы `ps_product_comment_criterion_lang`
 --
 ALTER TABLE `ps_product_comment_criterion_lang`
   ADD PRIMARY KEY (`id_product_comment_criterion`,`id_lang`);
 
 --
--- Indexes for table `ps_product_comment_criterion_product`
+-- Индексы таблицы `ps_product_comment_criterion_product`
 --
 ALTER TABLE `ps_product_comment_criterion_product`
   ADD PRIMARY KEY (`id_product`,`id_product_comment_criterion`),
   ADD KEY `id_product_comment_criterion` (`id_product_comment_criterion`);
 
 --
--- Indexes for table `ps_product_comment_grade`
+-- Индексы таблицы `ps_product_comment_grade`
 --
 ALTER TABLE `ps_product_comment_grade`
   ADD PRIMARY KEY (`id_product_comment`,`id_product_comment_criterion`),
@@ -13403,39 +24343,39 @@ ALTER TABLE `ps_product_comment_grade`
   ADD KEY `IDX_A01285718375853C` (`id_product_comment_criterion`);
 
 --
--- Indexes for table `ps_product_comment_report`
+-- Индексы таблицы `ps_product_comment_report`
 --
 ALTER TABLE `ps_product_comment_report`
   ADD PRIMARY KEY (`id_product_comment`,`id_customer`),
   ADD KEY `IDX_C2608AB0ACF38A54` (`id_product_comment`);
 
 --
--- Indexes for table `ps_product_comment_usefulness`
+-- Индексы таблицы `ps_product_comment_usefulness`
 --
 ALTER TABLE `ps_product_comment_usefulness`
   ADD PRIMARY KEY (`id_product_comment`,`id_customer`),
   ADD KEY `IDX_49A8F246ACF38A54` (`id_product_comment`);
 
 --
--- Indexes for table `ps_product_country_tax`
+-- Индексы таблицы `ps_product_country_tax`
 --
 ALTER TABLE `ps_product_country_tax`
   ADD PRIMARY KEY (`id_product`,`id_country`);
 
 --
--- Indexes for table `ps_product_download`
+-- Индексы таблицы `ps_product_download`
 --
 ALTER TABLE `ps_product_download`
   ADD PRIMARY KEY (`id_product_download`);
 
 --
--- Indexes for table `ps_product_group_reduction_cache`
+-- Индексы таблицы `ps_product_group_reduction_cache`
 --
 ALTER TABLE `ps_product_group_reduction_cache`
   ADD PRIMARY KEY (`id_product`,`id_group`);
 
 --
--- Indexes for table `ps_product_lang`
+-- Индексы таблицы `ps_product_lang`
 --
 ALTER TABLE `ps_product_lang`
   ADD PRIMARY KEY (`id_product`,`id_shop`,`id_lang`),
@@ -13443,14 +24383,14 @@ ALTER TABLE `ps_product_lang`
   ADD KEY `name` (`name`);
 
 --
--- Indexes for table `ps_product_sale`
+-- Индексы таблицы `ps_product_sale`
 --
 ALTER TABLE `ps_product_sale`
   ADD PRIMARY KEY (`id_product`),
   ADD KEY `quantity` (`quantity`);
 
 --
--- Indexes for table `ps_product_shop`
+-- Индексы таблицы `ps_product_shop`
 --
 ALTER TABLE `ps_product_shop`
   ADD PRIMARY KEY (`id_product`,`id_shop`),
@@ -13459,7 +24399,7 @@ ALTER TABLE `ps_product_shop`
   ADD KEY `indexed` (`indexed`,`active`,`id_product`);
 
 --
--- Indexes for table `ps_product_supplier`
+-- Индексы таблицы `ps_product_supplier`
 --
 ALTER TABLE `ps_product_supplier`
   ADD PRIMARY KEY (`id_product_supplier`),
@@ -13467,7 +24407,7 @@ ALTER TABLE `ps_product_supplier`
   ADD KEY `id_supplier` (`id_supplier`,`id_product`);
 
 --
--- Indexes for table `ps_product_tag`
+-- Индексы таблицы `ps_product_tag`
 --
 ALTER TABLE `ps_product_tag`
   ADD PRIMARY KEY (`id_product`,`id_tag`),
@@ -13475,81 +24415,81 @@ ALTER TABLE `ps_product_tag`
   ADD KEY `id_lang` (`id_lang`,`id_tag`);
 
 --
--- Indexes for table `ps_profile`
+-- Индексы таблицы `ps_profile`
 --
 ALTER TABLE `ps_profile`
   ADD PRIMARY KEY (`id_profile`);
 
 --
--- Indexes for table `ps_profile_lang`
+-- Индексы таблицы `ps_profile_lang`
 --
 ALTER TABLE `ps_profile_lang`
   ADD PRIMARY KEY (`id_profile`,`id_lang`);
 
 --
--- Indexes for table `ps_pscheckout_authorization`
+-- Индексы таблицы `ps_pscheckout_authorization`
 --
 ALTER TABLE `ps_pscheckout_authorization`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `ps_pscheckout_capture`
+-- Индексы таблицы `ps_pscheckout_capture`
 --
 ALTER TABLE `ps_pscheckout_capture`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `ps_pscheckout_cart`
+-- Индексы таблицы `ps_pscheckout_cart`
 --
 ALTER TABLE `ps_pscheckout_cart`
   ADD PRIMARY KEY (`id_pscheckout_cart`);
 
 --
--- Indexes for table `ps_pscheckout_customer`
+-- Индексы таблицы `ps_pscheckout_customer`
 --
 ALTER TABLE `ps_pscheckout_customer`
   ADD PRIMARY KEY (`id_customer`,`paypal_customer_id`);
 
 --
--- Indexes for table `ps_pscheckout_funding_source`
+-- Индексы таблицы `ps_pscheckout_funding_source`
 --
 ALTER TABLE `ps_pscheckout_funding_source`
   ADD PRIMARY KEY (`name`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `ps_pscheckout_order`
+-- Индексы таблицы `ps_pscheckout_order`
 --
 ALTER TABLE `ps_pscheckout_order`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `ps_pscheckout_order_matrice`
+-- Индексы таблицы `ps_pscheckout_order_matrice`
 --
 ALTER TABLE `ps_pscheckout_order_matrice`
   ADD PRIMARY KEY (`id_order_matrice`);
 
 --
--- Indexes for table `ps_pscheckout_payment_token`
+-- Индексы таблицы `ps_pscheckout_payment_token`
 --
 ALTER TABLE `ps_pscheckout_payment_token`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `token_id_merchant_id_paypal_customer_id` (`token_id`,`merchant_id`,`paypal_customer_id`);
 
 --
--- Indexes for table `ps_pscheckout_purchase_unit`
+-- Индексы таблицы `ps_pscheckout_purchase_unit`
 --
 ALTER TABLE `ps_pscheckout_purchase_unit`
   ADD PRIMARY KEY (`reference_id`,`id_order`);
 
 --
--- Indexes for table `ps_pscheckout_refund`
+-- Индексы таблицы `ps_pscheckout_refund`
 --
 ALTER TABLE `ps_pscheckout_refund`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `ps_pscheckout_tracking`
+-- Индексы таблицы `ps_pscheckout_tracking`
 --
 ALTER TABLE `ps_pscheckout_tracking`
   ADD PRIMARY KEY (`id`),
@@ -13558,19 +24498,19 @@ ALTER TABLE `ps_pscheckout_tracking`
   ADD KEY `paypal_order_id` (`paypal_order_id`);
 
 --
--- Indexes for table `ps_psgdpr_consent`
+-- Индексы таблицы `ps_psgdpr_consent`
 --
 ALTER TABLE `ps_psgdpr_consent`
   ADD PRIMARY KEY (`id_gdpr_consent`,`id_module`);
 
 --
--- Indexes for table `ps_psgdpr_consent_lang`
+-- Индексы таблицы `ps_psgdpr_consent_lang`
 --
 ALTER TABLE `ps_psgdpr_consent_lang`
   ADD PRIMARY KEY (`id_gdpr_consent`,`id_lang`,`id_shop`);
 
 --
--- Indexes for table `ps_psgdpr_log`
+-- Индексы таблицы `ps_psgdpr_log`
 --
 ALTER TABLE `ps_psgdpr_log`
   ADD PRIMARY KEY (`id_gdpr_log`),
@@ -13578,129 +24518,129 @@ ALTER TABLE `ps_psgdpr_log`
   ADD KEY `idx_id_customer` (`id_customer`,`id_guest`,`client_name`,`id_module`,`date_add`,`date_upd`);
 
 --
--- Indexes for table `ps_psreassurance`
+-- Индексы таблицы `ps_psreassurance`
 --
 ALTER TABLE `ps_psreassurance`
   ADD PRIMARY KEY (`id_psreassurance`);
 
 --
--- Indexes for table `ps_psreassurance_lang`
+-- Индексы таблицы `ps_psreassurance_lang`
 --
 ALTER TABLE `ps_psreassurance_lang`
   ADD PRIMARY KEY (`id_psreassurance`,`id_lang`);
 
 --
--- Indexes for table `ps_quick_access`
+-- Индексы таблицы `ps_quick_access`
 --
 ALTER TABLE `ps_quick_access`
   ADD PRIMARY KEY (`id_quick_access`);
 
 --
--- Indexes for table `ps_quick_access_lang`
+-- Индексы таблицы `ps_quick_access_lang`
 --
 ALTER TABLE `ps_quick_access_lang`
   ADD PRIMARY KEY (`id_quick_access`,`id_lang`);
 
 --
--- Indexes for table `ps_range_price`
+-- Индексы таблицы `ps_range_price`
 --
 ALTER TABLE `ps_range_price`
   ADD PRIMARY KEY (`id_range_price`),
   ADD UNIQUE KEY `id_carrier` (`id_carrier`,`delimiter1`,`delimiter2`);
 
 --
--- Indexes for table `ps_range_weight`
+-- Индексы таблицы `ps_range_weight`
 --
 ALTER TABLE `ps_range_weight`
   ADD PRIMARY KEY (`id_range_weight`),
   ADD UNIQUE KEY `id_carrier` (`id_carrier`,`delimiter1`,`delimiter2`);
 
 --
--- Indexes for table `ps_referrer`
+-- Индексы таблицы `ps_referrer`
 --
 ALTER TABLE `ps_referrer`
   ADD PRIMARY KEY (`id_referrer`);
 
 --
--- Indexes for table `ps_referrer_cache`
+-- Индексы таблицы `ps_referrer_cache`
 --
 ALTER TABLE `ps_referrer_cache`
   ADD PRIMARY KEY (`id_connections_source`,`id_referrer`);
 
 --
--- Indexes for table `ps_referrer_shop`
+-- Индексы таблицы `ps_referrer_shop`
 --
 ALTER TABLE `ps_referrer_shop`
   ADD PRIMARY KEY (`id_referrer`,`id_shop`);
 
 --
--- Indexes for table `ps_request_sql`
+-- Индексы таблицы `ps_request_sql`
 --
 ALTER TABLE `ps_request_sql`
   ADD PRIMARY KEY (`id_request_sql`);
 
 --
--- Indexes for table `ps_required_field`
+-- Индексы таблицы `ps_required_field`
 --
 ALTER TABLE `ps_required_field`
   ADD PRIMARY KEY (`id_required_field`),
   ADD KEY `object_name` (`object_name`);
 
 --
--- Indexes for table `ps_risk`
+-- Индексы таблицы `ps_risk`
 --
 ALTER TABLE `ps_risk`
   ADD PRIMARY KEY (`id_risk`);
 
 --
--- Indexes for table `ps_risk_lang`
+-- Индексы таблицы `ps_risk_lang`
 --
 ALTER TABLE `ps_risk_lang`
   ADD PRIMARY KEY (`id_risk`,`id_lang`),
   ADD KEY `id_risk` (`id_risk`);
 
 --
--- Indexes for table `ps_search_engine`
+-- Индексы таблицы `ps_search_engine`
 --
 ALTER TABLE `ps_search_engine`
   ADD PRIMARY KEY (`id_search_engine`);
 
 --
--- Indexes for table `ps_search_index`
+-- Индексы таблицы `ps_search_index`
 --
 ALTER TABLE `ps_search_index`
   ADD PRIMARY KEY (`id_word`,`id_product`),
   ADD KEY `id_product` (`id_product`,`weight`);
 
 --
--- Indexes for table `ps_search_word`
+-- Индексы таблицы `ps_search_word`
 --
 ALTER TABLE `ps_search_word`
   ADD PRIMARY KEY (`id_word`),
   ADD UNIQUE KEY `id_lang` (`id_lang`,`id_shop`,`word`);
 
 --
--- Indexes for table `ps_shop`
+-- Индексы таблицы `ps_shop`
 --
 ALTER TABLE `ps_shop`
   ADD PRIMARY KEY (`id_shop`),
   ADD KEY `IDX_CBDFBB9EF5C9E40` (`id_shop_group`);
 
 --
--- Indexes for table `ps_shop_group`
+-- Индексы таблицы `ps_shop_group`
 --
 ALTER TABLE `ps_shop_group`
   ADD PRIMARY KEY (`id_shop_group`);
 
 --
--- Indexes for table `ps_shop_url`
+-- Индексы таблицы `ps_shop_url`
 --
 ALTER TABLE `ps_shop_url`
   ADD PRIMARY KEY (`id_shop_url`),
   ADD KEY `IDX_279F19DA274A50A0` (`id_shop`);
 
 --
--- Indexes for table `ps_smarty_cache`
+-- Индексы таблицы `ps_smarty_cache`
 --
 ALTER TABLE `ps_smarty_cache`
   ADD PRIMARY KEY (`id_smarty_cache`),
@@ -13709,19 +24649,19 @@ ALTER TABLE `ps_smarty_cache`
   ADD KEY `modified` (`modified`);
 
 --
--- Indexes for table `ps_smarty_last_flush`
+-- Индексы таблицы `ps_smarty_last_flush`
 --
 ALTER TABLE `ps_smarty_last_flush`
   ADD PRIMARY KEY (`type`);
 
 --
--- Indexes for table `ps_smarty_lazy_cache`
+-- Индексы таблицы `ps_smarty_lazy_cache`
 --
 ALTER TABLE `ps_smarty_lazy_cache`
   ADD PRIMARY KEY (`template_hash`,`cache_id`,`compile_id`);
 
 --
--- Indexes for table `ps_specific_price`
+-- Индексы таблицы `ps_specific_price`
 --
 ALTER TABLE `ps_specific_price`
   ADD PRIMARY KEY (`id_specific_price`),
@@ -13737,34 +24677,34 @@ ALTER TABLE `ps_specific_price`
   ADD KEY `to` (`to`);
 
 --
--- Indexes for table `ps_specific_price_priority`
+-- Индексы таблицы `ps_specific_price_priority`
 --
 ALTER TABLE `ps_specific_price_priority`
   ADD PRIMARY KEY (`id_specific_price_priority`,`id_product`),
   ADD UNIQUE KEY `id_product` (`id_product`);
 
 --
--- Indexes for table `ps_specific_price_rule`
+-- Индексы таблицы `ps_specific_price_rule`
 --
 ALTER TABLE `ps_specific_price_rule`
   ADD PRIMARY KEY (`id_specific_price_rule`),
   ADD KEY `id_product` (`id_shop`,`id_currency`,`id_country`,`id_group`,`from_quantity`,`from`,`to`);
 
 --
--- Indexes for table `ps_specific_price_rule_condition`
+-- Индексы таблицы `ps_specific_price_rule_condition`
 --
 ALTER TABLE `ps_specific_price_rule_condition`
   ADD PRIMARY KEY (`id_specific_price_rule_condition`),
   ADD KEY `id_specific_price_rule_condition_group` (`id_specific_price_rule_condition_group`);
 
 --
--- Indexes for table `ps_specific_price_rule_condition_group`
+-- Индексы таблицы `ps_specific_price_rule_condition_group`
 --
 ALTER TABLE `ps_specific_price_rule_condition_group`
   ADD PRIMARY KEY (`id_specific_price_rule_condition_group`,`id_specific_price_rule`);
 
 --
--- Indexes for table `ps_state`
+-- Индексы таблицы `ps_state`
 --
 ALTER TABLE `ps_state`
   ADD PRIMARY KEY (`id_state`),
@@ -13773,13 +24713,13 @@ ALTER TABLE `ps_state`
   ADD KEY `id_zone` (`id_zone`);
 
 --
--- Indexes for table `ps_statssearch`
+-- Индексы таблицы `ps_statssearch`
 --
 ALTER TABLE `ps_statssearch`
   ADD PRIMARY KEY (`id_statssearch`);
 
 --
--- Indexes for table `ps_stock`
+-- Индексы таблицы `ps_stock`
 --
 ALTER TABLE `ps_stock`
   ADD PRIMARY KEY (`id_stock`),
@@ -13788,7 +24728,7 @@ ALTER TABLE `ps_stock`
   ADD KEY `id_product_attribute` (`id_product_attribute`);
 
 --
--- Indexes for table `ps_stock_available`
+-- Индексы таблицы `ps_stock_available`
 --
 ALTER TABLE `ps_stock_available`
   ADD PRIMARY KEY (`id_stock_available`),
@@ -13799,7 +24739,7 @@ ALTER TABLE `ps_stock_available`
   ADD KEY `id_product_attribute` (`id_product_attribute`);
 
 --
--- Indexes for table `ps_stock_mvt`
+-- Индексы таблицы `ps_stock_mvt`
 --
 ALTER TABLE `ps_stock_mvt`
   ADD PRIMARY KEY (`id_stock_mvt`),
@@ -13807,57 +24747,57 @@ ALTER TABLE `ps_stock_mvt`
   ADD KEY `id_stock_mvt_reason` (`id_stock_mvt_reason`);
 
 --
--- Indexes for table `ps_stock_mvt_reason`
+-- Индексы таблицы `ps_stock_mvt_reason`
 --
 ALTER TABLE `ps_stock_mvt_reason`
   ADD PRIMARY KEY (`id_stock_mvt_reason`);
 
 --
--- Indexes for table `ps_stock_mvt_reason_lang`
+-- Индексы таблицы `ps_stock_mvt_reason_lang`
 --
 ALTER TABLE `ps_stock_mvt_reason_lang`
   ADD PRIMARY KEY (`id_stock_mvt_reason`,`id_lang`);
 
 --
--- Indexes for table `ps_store`
+-- Индексы таблицы `ps_store`
 --
 ALTER TABLE `ps_store`
   ADD PRIMARY KEY (`id_store`);
 
 --
--- Indexes for table `ps_store_lang`
+-- Индексы таблицы `ps_store_lang`
 --
 ALTER TABLE `ps_store_lang`
   ADD PRIMARY KEY (`id_store`,`id_lang`);
 
 --
--- Indexes for table `ps_store_shop`
+-- Индексы таблицы `ps_store_shop`
 --
 ALTER TABLE `ps_store_shop`
   ADD PRIMARY KEY (`id_store`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `ps_supplier`
+-- Индексы таблицы `ps_supplier`
 --
 ALTER TABLE `ps_supplier`
   ADD PRIMARY KEY (`id_supplier`);
 
 --
--- Indexes for table `ps_supplier_lang`
+-- Индексы таблицы `ps_supplier_lang`
 --
 ALTER TABLE `ps_supplier_lang`
   ADD PRIMARY KEY (`id_supplier`,`id_lang`);
 
 --
--- Indexes for table `ps_supplier_shop`
+-- Индексы таблицы `ps_supplier_shop`
 --
 ALTER TABLE `ps_supplier_shop`
   ADD PRIMARY KEY (`id_supplier`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `ps_supply_order`
+-- Индексы таблицы `ps_supply_order`
 --
 ALTER TABLE `ps_supply_order`
   ADD PRIMARY KEY (`id_supply_order`),
@@ -13866,7 +24806,7 @@ ALTER TABLE `ps_supply_order`
   ADD KEY `reference` (`reference`);
 
 --
--- Indexes for table `ps_supply_order_detail`
+-- Индексы таблицы `ps_supply_order_detail`
 --
 ALTER TABLE `ps_supply_order_detail`
   ADD PRIMARY KEY (`id_supply_order_detail`),
@@ -13875,7 +24815,7 @@ ALTER TABLE `ps_supply_order_detail`
   ADD KEY `id_product_product_attribute` (`id_product`,`id_product_attribute`);
 
 --
--- Indexes for table `ps_supply_order_history`
+-- Индексы таблицы `ps_supply_order_history`
 --
 ALTER TABLE `ps_supply_order_history`
   ADD PRIMARY KEY (`id_supply_order_history`),
@@ -13884,7 +24824,7 @@ ALTER TABLE `ps_supply_order_history`
   ADD KEY `id_state` (`id_state`);
 
 --
--- Indexes for table `ps_supply_order_receipt_history`
+-- Индексы таблицы `ps_supply_order_receipt_history`
 --
 ALTER TABLE `ps_supply_order_receipt_history`
   ADD PRIMARY KEY (`id_supply_order_receipt_history`),
@@ -13892,25 +24832,25 @@ ALTER TABLE `ps_supply_order_receipt_history`
   ADD KEY `id_supply_order_state` (`id_supply_order_state`);
 
 --
--- Indexes for table `ps_supply_order_state`
+-- Индексы таблицы `ps_supply_order_state`
 --
 ALTER TABLE `ps_supply_order_state`
   ADD PRIMARY KEY (`id_supply_order_state`);
 
 --
--- Indexes for table `ps_supply_order_state_lang`
+-- Индексы таблицы `ps_supply_order_state_lang`
 --
 ALTER TABLE `ps_supply_order_state_lang`
   ADD PRIMARY KEY (`id_supply_order_state`,`id_lang`);
 
 --
--- Indexes for table `ps_tab`
+-- Индексы таблицы `ps_tab`
 --
 ALTER TABLE `ps_tab`
   ADD PRIMARY KEY (`id_tab`);
 
 --
--- Indexes for table `ps_tab_lang`
+-- Индексы таблицы `ps_tab_lang`
 --
 ALTER TABLE `ps_tab_lang`
   ADD PRIMARY KEY (`id_tab`,`id_lang`),
@@ -13918,14 +24858,14 @@ ALTER TABLE `ps_tab_lang`
   ADD KEY `IDX_CFD9262DBA299860` (`id_lang`);
 
 --
--- Indexes for table `ps_tab_module_preference`
+-- Индексы таблицы `ps_tab_module_preference`
 --
 ALTER TABLE `ps_tab_module_preference`
   ADD PRIMARY KEY (`id_tab_module_preference`),
   ADD UNIQUE KEY `employee_module` (`id_employee`,`id_tab`,`module`);
 
 --
--- Indexes for table `ps_tag`
+-- Индексы таблицы `ps_tag`
 --
 ALTER TABLE `ps_tag`
   ADD PRIMARY KEY (`id_tag`),
@@ -13933,26 +24873,26 @@ ALTER TABLE `ps_tag`
   ADD KEY `id_lang` (`id_lang`);
 
 --
--- Indexes for table `ps_tag_count`
+-- Индексы таблицы `ps_tag_count`
 --
 ALTER TABLE `ps_tag_count`
   ADD PRIMARY KEY (`id_group`,`id_tag`),
   ADD KEY `id_group` (`id_group`,`id_lang`,`id_shop`,`counter`);
 
 --
--- Indexes for table `ps_tax`
+-- Индексы таблицы `ps_tax`
 --
 ALTER TABLE `ps_tax`
   ADD PRIMARY KEY (`id_tax`);
 
 --
--- Indexes for table `ps_tax_lang`
+-- Индексы таблицы `ps_tax_lang`
 --
 ALTER TABLE `ps_tax_lang`
   ADD PRIMARY KEY (`id_tax`,`id_lang`);
 
 --
--- Indexes for table `ps_tax_rule`
+-- Индексы таблицы `ps_tax_rule`
 --
 ALTER TABLE `ps_tax_rule`
   ADD PRIMARY KEY (`id_tax_rule`),
@@ -13961,26 +24901,26 @@ ALTER TABLE `ps_tax_rule`
   ADD KEY `category_getproducts` (`id_tax_rules_group`,`id_country`,`id_state`,`zipcode_from`);
 
 --
--- Indexes for table `ps_tax_rules_group`
+-- Индексы таблицы `ps_tax_rules_group`
 --
 ALTER TABLE `ps_tax_rules_group`
   ADD PRIMARY KEY (`id_tax_rules_group`);
 
 --
--- Indexes for table `ps_tax_rules_group_shop`
+-- Индексы таблицы `ps_tax_rules_group_shop`
 --
 ALTER TABLE `ps_tax_rules_group_shop`
   ADD PRIMARY KEY (`id_tax_rules_group`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `ps_timezone`
+-- Индексы таблицы `ps_timezone`
 --
 ALTER TABLE `ps_timezone`
   ADD PRIMARY KEY (`id_timezone`);
 
 --
--- Indexes for table `ps_translation`
+-- Индексы таблицы `ps_translation`
 --
 ALTER TABLE `ps_translation`
   ADD PRIMARY KEY (`id_translation`),
@@ -13988,13 +24928,13 @@ ALTER TABLE `ps_translation`
   ADD KEY `key` (`domain`);
 
 --
--- Indexes for table `ps_warehouse`
+-- Индексы таблицы `ps_warehouse`
 --
 ALTER TABLE `ps_warehouse`
   ADD PRIMARY KEY (`id_warehouse`);
 
 --
--- Indexes for table `ps_warehouse_carrier`
+-- Индексы таблицы `ps_warehouse_carrier`
 --
 ALTER TABLE `ps_warehouse_carrier`
   ADD PRIMARY KEY (`id_warehouse`,`id_carrier`),
@@ -14002,14 +24942,14 @@ ALTER TABLE `ps_warehouse_carrier`
   ADD KEY `id_carrier` (`id_carrier`);
 
 --
--- Indexes for table `ps_warehouse_product_location`
+-- Индексы таблицы `ps_warehouse_product_location`
 --
 ALTER TABLE `ps_warehouse_product_location`
   ADD PRIMARY KEY (`id_warehouse_product_location`),
   ADD UNIQUE KEY `id_product` (`id_product`,`id_product_attribute`,`id_warehouse`);
 
 --
--- Indexes for table `ps_warehouse_shop`
+-- Индексы таблицы `ps_warehouse_shop`
 --
 ALTER TABLE `ps_warehouse_shop`
   ADD PRIMARY KEY (`id_warehouse`,`id_shop`),
@@ -14017,21 +24957,21 @@ ALTER TABLE `ps_warehouse_shop`
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `ps_webservice_account`
+-- Индексы таблицы `ps_webservice_account`
 --
 ALTER TABLE `ps_webservice_account`
   ADD PRIMARY KEY (`id_webservice_account`),
   ADD KEY `key` (`key`);
 
 --
--- Indexes for table `ps_webservice_account_shop`
+-- Индексы таблицы `ps_webservice_account_shop`
 --
 ALTER TABLE `ps_webservice_account_shop`
   ADD PRIMARY KEY (`id_webservice_account`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `ps_webservice_permission`
+-- Индексы таблицы `ps_webservice_permission`
 --
 ALTER TABLE `ps_webservice_permission`
   ADD PRIMARY KEY (`id_webservice_permission`),
@@ -14041,936 +24981,936 @@ ALTER TABLE `ps_webservice_permission`
   ADD KEY `id_webservice_account` (`id_webservice_account`);
 
 --
--- Indexes for table `ps_web_browser`
+-- Индексы таблицы `ps_web_browser`
 --
 ALTER TABLE `ps_web_browser`
   ADD PRIMARY KEY (`id_web_browser`);
 
 --
--- Indexes for table `ps_wishlist`
+-- Индексы таблицы `ps_wishlist`
 --
 ALTER TABLE `ps_wishlist`
   ADD PRIMARY KEY (`id_wishlist`);
 
 --
--- Indexes for table `ps_wishlist_product`
+-- Индексы таблицы `ps_wishlist_product`
 --
 ALTER TABLE `ps_wishlist_product`
   ADD PRIMARY KEY (`id_wishlist_product`);
 
 --
--- Indexes for table `ps_zone`
+-- Индексы таблицы `ps_zone`
 --
 ALTER TABLE `ps_zone`
   ADD PRIMARY KEY (`id_zone`);
 
 --
--- Indexes for table `ps_zone_shop`
+-- Индексы таблицы `ps_zone_shop`
 --
 ALTER TABLE `ps_zone_shop`
   ADD PRIMARY KEY (`id_zone`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT для сохранённых таблиц
 --
 
 --
--- AUTO_INCREMENT for table `ps_address`
+-- AUTO_INCREMENT для таблицы `ps_address`
 --
 ALTER TABLE `ps_address`
   MODIFY `id_address` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `ps_admin_filter`
+-- AUTO_INCREMENT для таблицы `ps_admin_filter`
 --
 ALTER TABLE `ps_admin_filter`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `ps_alias`
+-- AUTO_INCREMENT для таблицы `ps_alias`
 --
 ALTER TABLE `ps_alias`
   MODIFY `id_alias` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_attachment`
+-- AUTO_INCREMENT для таблицы `ps_attachment`
 --
 ALTER TABLE `ps_attachment`
   MODIFY `id_attachment` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_attachment_lang`
+-- AUTO_INCREMENT для таблицы `ps_attachment_lang`
 --
 ALTER TABLE `ps_attachment_lang`
   MODIFY `id_attachment` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_attribute`
+-- AUTO_INCREMENT для таблицы `ps_attribute`
 --
 ALTER TABLE `ps_attribute`
   MODIFY `id_attribute` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_attribute_group`
+-- AUTO_INCREMENT для таблицы `ps_attribute_group`
 --
 ALTER TABLE `ps_attribute_group`
   MODIFY `id_attribute_group` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_attribute_impact`
+-- AUTO_INCREMENT для таблицы `ps_attribute_impact`
 --
 ALTER TABLE `ps_attribute_impact`
   MODIFY `id_attribute_impact` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_authorization_role`
+-- AUTO_INCREMENT для таблицы `ps_authorization_role`
 --
 ALTER TABLE `ps_authorization_role`
   MODIFY `id_authorization_role` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=861;
 
 --
--- AUTO_INCREMENT for table `ps_blockwishlist_statistics`
+-- AUTO_INCREMENT для таблицы `ps_blockwishlist_statistics`
 --
 ALTER TABLE `ps_blockwishlist_statistics`
   MODIFY `id_statistics` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_carrier`
+-- AUTO_INCREMENT для таблицы `ps_carrier`
 --
 ALTER TABLE `ps_carrier`
   MODIFY `id_carrier` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `ps_cart`
+-- AUTO_INCREMENT для таблицы `ps_cart`
 --
 ALTER TABLE `ps_cart`
-  MODIFY `id_cart` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id_cart` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `ps_cart_rule`
+-- AUTO_INCREMENT для таблицы `ps_cart_rule`
 --
 ALTER TABLE `ps_cart_rule`
   MODIFY `id_cart_rule` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_cart_rule_product_rule`
+-- AUTO_INCREMENT для таблицы `ps_cart_rule_product_rule`
 --
 ALTER TABLE `ps_cart_rule_product_rule`
   MODIFY `id_product_rule` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_cart_rule_product_rule_group`
+-- AUTO_INCREMENT для таблицы `ps_cart_rule_product_rule_group`
 --
 ALTER TABLE `ps_cart_rule_product_rule_group`
   MODIFY `id_product_rule_group` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_category`
+-- AUTO_INCREMENT для таблицы `ps_category`
 --
 ALTER TABLE `ps_category`
-  MODIFY `id_category` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_category` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=141;
 
 --
--- AUTO_INCREMENT for table `ps_cms`
+-- AUTO_INCREMENT для таблицы `ps_cms`
 --
 ALTER TABLE `ps_cms`
   MODIFY `id_cms` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `ps_cms_category`
+-- AUTO_INCREMENT для таблицы `ps_cms_category`
 --
 ALTER TABLE `ps_cms_category`
   MODIFY `id_cms_category` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `ps_cms_category_shop`
+-- AUTO_INCREMENT для таблицы `ps_cms_category_shop`
 --
 ALTER TABLE `ps_cms_category_shop`
   MODIFY `id_cms_category` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `ps_cms_role`
+-- AUTO_INCREMENT для таблицы `ps_cms_role`
 --
 ALTER TABLE `ps_cms_role`
   MODIFY `id_cms_role` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `ps_configuration`
+-- AUTO_INCREMENT для таблицы `ps_configuration`
 --
 ALTER TABLE `ps_configuration`
   MODIFY `id_configuration` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=469;
 
 --
--- AUTO_INCREMENT for table `ps_configuration_kpi`
+-- AUTO_INCREMENT для таблицы `ps_configuration_kpi`
 --
 ALTER TABLE `ps_configuration_kpi`
   MODIFY `id_configuration_kpi` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 
 --
--- AUTO_INCREMENT for table `ps_connections`
+-- AUTO_INCREMENT для таблицы `ps_connections`
 --
 ALTER TABLE `ps_connections`
-  MODIFY `id_connections` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_connections` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `ps_connections_source`
+-- AUTO_INCREMENT для таблицы `ps_connections_source`
 --
 ALTER TABLE `ps_connections_source`
   MODIFY `id_connections_source` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
--- AUTO_INCREMENT for table `ps_contact`
+-- AUTO_INCREMENT для таблицы `ps_contact`
 --
 ALTER TABLE `ps_contact`
   MODIFY `id_contact` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `ps_country`
+-- AUTO_INCREMENT для таблицы `ps_country`
 --
 ALTER TABLE `ps_country`
   MODIFY `id_country` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=242;
 
 --
--- AUTO_INCREMENT for table `ps_currency`
+-- AUTO_INCREMENT для таблицы `ps_currency`
 --
 ALTER TABLE `ps_currency`
   MODIFY `id_currency` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `ps_customer`
+-- AUTO_INCREMENT для таблицы `ps_customer`
 --
 ALTER TABLE `ps_customer`
   MODIFY `id_customer` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `ps_customer_message`
+-- AUTO_INCREMENT для таблицы `ps_customer_message`
 --
 ALTER TABLE `ps_customer_message`
   MODIFY `id_customer_message` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_customer_session`
+-- AUTO_INCREMENT для таблицы `ps_customer_session`
 --
 ALTER TABLE `ps_customer_session`
   MODIFY `id_customer_session` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_customer_thread`
+-- AUTO_INCREMENT для таблицы `ps_customer_thread`
 --
 ALTER TABLE `ps_customer_thread`
   MODIFY `id_customer_thread` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_customization`
+-- AUTO_INCREMENT для таблицы `ps_customization`
 --
 ALTER TABLE `ps_customization`
   MODIFY `id_customization` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_customization_field`
+-- AUTO_INCREMENT для таблицы `ps_customization_field`
 --
 ALTER TABLE `ps_customization_field`
   MODIFY `id_customization_field` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_date_range`
+-- AUTO_INCREMENT для таблицы `ps_date_range`
 --
 ALTER TABLE `ps_date_range`
   MODIFY `id_date_range` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_delivery`
+-- AUTO_INCREMENT для таблицы `ps_delivery`
 --
 ALTER TABLE `ps_delivery`
   MODIFY `id_delivery` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- AUTO_INCREMENT for table `ps_emailsubscription`
+-- AUTO_INCREMENT для таблицы `ps_emailsubscription`
 --
 ALTER TABLE `ps_emailsubscription`
   MODIFY `id` int(6) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_employee`
+-- AUTO_INCREMENT для таблицы `ps_employee`
 --
 ALTER TABLE `ps_employee`
   MODIFY `id_employee` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `ps_employee_account`
+-- AUTO_INCREMENT для таблицы `ps_employee_account`
 --
 ALTER TABLE `ps_employee_account`
   MODIFY `id_employee_account` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_employee_session`
+-- AUTO_INCREMENT для таблицы `ps_employee_session`
 --
 ALTER TABLE `ps_employee_session`
-  MODIFY `id_employee_session` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_employee_session` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `ps_feature`
+-- AUTO_INCREMENT для таблицы `ps_feature`
 --
 ALTER TABLE `ps_feature`
   MODIFY `id_feature` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_feature_flag`
+-- AUTO_INCREMENT для таблицы `ps_feature_flag`
 --
 ALTER TABLE `ps_feature_flag`
   MODIFY `id_feature_flag` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `ps_feature_value`
+-- AUTO_INCREMENT для таблицы `ps_feature_value`
 --
 ALTER TABLE `ps_feature_value`
   MODIFY `id_feature_value` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_gender`
+-- AUTO_INCREMENT для таблицы `ps_gender`
 --
 ALTER TABLE `ps_gender`
   MODIFY `id_gender` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `ps_group`
+-- AUTO_INCREMENT для таблицы `ps_group`
 --
 ALTER TABLE `ps_group`
   MODIFY `id_group` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `ps_group_reduction`
+-- AUTO_INCREMENT для таблицы `ps_group_reduction`
 --
 ALTER TABLE `ps_group_reduction`
   MODIFY `id_group_reduction` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_guest`
+-- AUTO_INCREMENT для таблицы `ps_guest`
 --
 ALTER TABLE `ps_guest`
   MODIFY `id_guest` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `ps_homeslider`
+-- AUTO_INCREMENT для таблицы `ps_homeslider`
 --
 ALTER TABLE `ps_homeslider`
   MODIFY `id_homeslider_slides` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `ps_homeslider_slides`
+-- AUTO_INCREMENT для таблицы `ps_homeslider_slides`
 --
 ALTER TABLE `ps_homeslider_slides`
   MODIFY `id_homeslider_slides` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `ps_hook`
+-- AUTO_INCREMENT для таблицы `ps_hook`
 --
 ALTER TABLE `ps_hook`
   MODIFY `id_hook` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=764;
 
 --
--- AUTO_INCREMENT for table `ps_hook_alias`
+-- AUTO_INCREMENT для таблицы `ps_hook_alias`
 --
 ALTER TABLE `ps_hook_alias`
   MODIFY `id_hook_alias` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=89;
 
 --
--- AUTO_INCREMENT for table `ps_hook_module_exceptions`
+-- AUTO_INCREMENT для таблицы `ps_hook_module_exceptions`
 --
 ALTER TABLE `ps_hook_module_exceptions`
   MODIFY `id_hook_module_exceptions` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_image`
+-- AUTO_INCREMENT для таблицы `ps_image`
 --
 ALTER TABLE `ps_image`
-  MODIFY `id_image` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id_image` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1303;
 
 --
--- AUTO_INCREMENT for table `ps_image_type`
+-- AUTO_INCREMENT для таблицы `ps_image_type`
 --
 ALTER TABLE `ps_image_type`
   MODIFY `id_image_type` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT for table `ps_import_match`
+-- AUTO_INCREMENT для таблицы `ps_import_match`
 --
 ALTER TABLE `ps_import_match`
   MODIFY `id_import_match` int(10) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_info`
+-- AUTO_INCREMENT для таблицы `ps_info`
 --
 ALTER TABLE `ps_info`
   MODIFY `id_info` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `ps_lang`
+-- AUTO_INCREMENT для таблицы `ps_lang`
 --
 ALTER TABLE `ps_lang`
   MODIFY `id_lang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `ps_layered_category`
+-- AUTO_INCREMENT для таблицы `ps_layered_category`
 --
 ALTER TABLE `ps_layered_category`
   MODIFY `id_layered_category` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_layered_filter`
+-- AUTO_INCREMENT для таблицы `ps_layered_filter`
 --
 ALTER TABLE `ps_layered_filter`
   MODIFY `id_layered_filter` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_linksmenutop`
+-- AUTO_INCREMENT для таблицы `ps_linksmenutop`
 --
 ALTER TABLE `ps_linksmenutop`
   MODIFY `id_linksmenutop` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_link_block`
+-- AUTO_INCREMENT для таблицы `ps_link_block`
 --
 ALTER TABLE `ps_link_block`
   MODIFY `id_link_block` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `ps_link_block_shop`
+-- AUTO_INCREMENT для таблицы `ps_link_block_shop`
 --
 ALTER TABLE `ps_link_block_shop`
   MODIFY `id_link_block` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `ps_log`
+-- AUTO_INCREMENT для таблицы `ps_log`
 --
 ALTER TABLE `ps_log`
-  MODIFY `id_log` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=235;
+  MODIFY `id_log` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=281;
 
 --
--- AUTO_INCREMENT for table `ps_mail`
+-- AUTO_INCREMENT для таблицы `ps_mail`
 --
 ALTER TABLE `ps_mail`
   MODIFY `id_mail` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_manufacturer`
+-- AUTO_INCREMENT для таблицы `ps_manufacturer`
 --
 ALTER TABLE `ps_manufacturer`
   MODIFY `id_manufacturer` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_memcached_servers`
+-- AUTO_INCREMENT для таблицы `ps_memcached_servers`
 --
 ALTER TABLE `ps_memcached_servers`
   MODIFY `id_memcached_server` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_message`
+-- AUTO_INCREMENT для таблицы `ps_message`
 --
 ALTER TABLE `ps_message`
   MODIFY `id_message` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_meta`
+-- AUTO_INCREMENT для таблицы `ps_meta`
 --
 ALTER TABLE `ps_meta`
   MODIFY `id_meta` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 
 --
--- AUTO_INCREMENT for table `ps_module`
+-- AUTO_INCREMENT для таблицы `ps_module`
 --
 ALTER TABLE `ps_module`
   MODIFY `id_module` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=63;
 
 --
--- AUTO_INCREMENT for table `ps_module_history`
+-- AUTO_INCREMENT для таблицы `ps_module_history`
 --
 ALTER TABLE `ps_module_history`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `ps_module_preference`
+-- AUTO_INCREMENT для таблицы `ps_module_preference`
 --
 ALTER TABLE `ps_module_preference`
   MODIFY `id_module_preference` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_operating_system`
+-- AUTO_INCREMENT для таблицы `ps_operating_system`
 --
 ALTER TABLE `ps_operating_system`
   MODIFY `id_operating_system` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
--- AUTO_INCREMENT for table `ps_orders`
+-- AUTO_INCREMENT для таблицы `ps_orders`
 --
 ALTER TABLE `ps_orders`
   MODIFY `id_order` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_order_carrier`
+-- AUTO_INCREMENT для таблицы `ps_order_carrier`
 --
 ALTER TABLE `ps_order_carrier`
   MODIFY `id_order_carrier` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_order_cart_rule`
+-- AUTO_INCREMENT для таблицы `ps_order_cart_rule`
 --
 ALTER TABLE `ps_order_cart_rule`
   MODIFY `id_order_cart_rule` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_order_detail`
+-- AUTO_INCREMENT для таблицы `ps_order_detail`
 --
 ALTER TABLE `ps_order_detail`
   MODIFY `id_order_detail` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_order_history`
+-- AUTO_INCREMENT для таблицы `ps_order_history`
 --
 ALTER TABLE `ps_order_history`
   MODIFY `id_order_history` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_order_invoice`
+-- AUTO_INCREMENT для таблицы `ps_order_invoice`
 --
 ALTER TABLE `ps_order_invoice`
   MODIFY `id_order_invoice` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_order_message`
+-- AUTO_INCREMENT для таблицы `ps_order_message`
 --
 ALTER TABLE `ps_order_message`
   MODIFY `id_order_message` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_order_payment`
+-- AUTO_INCREMENT для таблицы `ps_order_payment`
 --
 ALTER TABLE `ps_order_payment`
   MODIFY `id_order_payment` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_order_payu_payments`
+-- AUTO_INCREMENT для таблицы `ps_order_payu_payments`
 --
 ALTER TABLE `ps_order_payu_payments`
   MODIFY `id_payu_payment` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_order_payu_payments_history`
+-- AUTO_INCREMENT для таблицы `ps_order_payu_payments_history`
 --
 ALTER TABLE `ps_order_payu_payments_history`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_order_return`
+-- AUTO_INCREMENT для таблицы `ps_order_return`
 --
 ALTER TABLE `ps_order_return`
   MODIFY `id_order_return` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_order_return_state`
+-- AUTO_INCREMENT для таблицы `ps_order_return_state`
 --
 ALTER TABLE `ps_order_return_state`
   MODIFY `id_order_return_state` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `ps_order_slip`
+-- AUTO_INCREMENT для таблицы `ps_order_slip`
 --
 ALTER TABLE `ps_order_slip`
   MODIFY `id_order_slip` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_order_state`
+-- AUTO_INCREMENT для таблицы `ps_order_state`
 --
 ALTER TABLE `ps_order_state`
   MODIFY `id_order_state` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
--- AUTO_INCREMENT for table `ps_page`
+-- AUTO_INCREMENT для таблицы `ps_page`
 --
 ALTER TABLE `ps_page`
   MODIFY `id_page` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `ps_pagenotfound`
+-- AUTO_INCREMENT для таблицы `ps_pagenotfound`
 --
 ALTER TABLE `ps_pagenotfound`
   MODIFY `id_pagenotfound` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_page_type`
+-- AUTO_INCREMENT для таблицы `ps_page_type`
 --
 ALTER TABLE `ps_page_type`
   MODIFY `id_page_type` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `ps_product`
+-- AUTO_INCREMENT для таблицы `ps_product`
 --
 ALTER TABLE `ps_product`
-  MODIFY `id_product` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_product` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=687;
 
 --
--- AUTO_INCREMENT for table `ps_product_attribute`
+-- AUTO_INCREMENT для таблицы `ps_product_attribute`
 --
 ALTER TABLE `ps_product_attribute`
   MODIFY `id_product_attribute` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_product_comment`
+-- AUTO_INCREMENT для таблицы `ps_product_comment`
 --
 ALTER TABLE `ps_product_comment`
   MODIFY `id_product_comment` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_product_comment_criterion`
+-- AUTO_INCREMENT для таблицы `ps_product_comment_criterion`
 --
 ALTER TABLE `ps_product_comment_criterion`
   MODIFY `id_product_comment_criterion` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `ps_product_download`
+-- AUTO_INCREMENT для таблицы `ps_product_download`
 --
 ALTER TABLE `ps_product_download`
   MODIFY `id_product_download` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_product_supplier`
+-- AUTO_INCREMENT для таблицы `ps_product_supplier`
 --
 ALTER TABLE `ps_product_supplier`
   MODIFY `id_product_supplier` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_profile`
+-- AUTO_INCREMENT для таблицы `ps_profile`
 --
 ALTER TABLE `ps_profile`
   MODIFY `id_profile` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `ps_pscheckout_cart`
+-- AUTO_INCREMENT для таблицы `ps_pscheckout_cart`
 --
 ALTER TABLE `ps_pscheckout_cart`
   MODIFY `id_pscheckout_cart` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_pscheckout_order_matrice`
+-- AUTO_INCREMENT для таблицы `ps_pscheckout_order_matrice`
 --
 ALTER TABLE `ps_pscheckout_order_matrice`
   MODIFY `id_order_matrice` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_pscheckout_payment_token`
+-- AUTO_INCREMENT для таблицы `ps_pscheckout_payment_token`
 --
 ALTER TABLE `ps_pscheckout_payment_token`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_pscheckout_tracking`
+-- AUTO_INCREMENT для таблицы `ps_pscheckout_tracking`
 --
 ALTER TABLE `ps_pscheckout_tracking`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_psgdpr_consent`
+-- AUTO_INCREMENT для таблицы `ps_psgdpr_consent`
 --
 ALTER TABLE `ps_psgdpr_consent`
   MODIFY `id_gdpr_consent` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_psgdpr_consent_lang`
+-- AUTO_INCREMENT для таблицы `ps_psgdpr_consent_lang`
 --
 ALTER TABLE `ps_psgdpr_consent_lang`
   MODIFY `id_gdpr_consent` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_psgdpr_log`
+-- AUTO_INCREMENT для таблицы `ps_psgdpr_log`
 --
 ALTER TABLE `ps_psgdpr_log`
   MODIFY `id_gdpr_log` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_psreassurance`
+-- AUTO_INCREMENT для таблицы `ps_psreassurance`
 --
 ALTER TABLE `ps_psreassurance`
   MODIFY `id_psreassurance` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `ps_quick_access`
+-- AUTO_INCREMENT для таблицы `ps_quick_access`
 --
 ALTER TABLE `ps_quick_access`
   MODIFY `id_quick_access` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT for table `ps_range_price`
+-- AUTO_INCREMENT для таблицы `ps_range_price`
 --
 ALTER TABLE `ps_range_price`
   MODIFY `id_range_price` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `ps_range_weight`
+-- AUTO_INCREMENT для таблицы `ps_range_weight`
 --
 ALTER TABLE `ps_range_weight`
   MODIFY `id_range_weight` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_referrer`
+-- AUTO_INCREMENT для таблицы `ps_referrer`
 --
 ALTER TABLE `ps_referrer`
   MODIFY `id_referrer` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_referrer_shop`
+-- AUTO_INCREMENT для таблицы `ps_referrer_shop`
 --
 ALTER TABLE `ps_referrer_shop`
   MODIFY `id_referrer` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_request_sql`
+-- AUTO_INCREMENT для таблицы `ps_request_sql`
 --
 ALTER TABLE `ps_request_sql`
   MODIFY `id_request_sql` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_required_field`
+-- AUTO_INCREMENT для таблицы `ps_required_field`
 --
 ALTER TABLE `ps_required_field`
   MODIFY `id_required_field` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_risk`
+-- AUTO_INCREMENT для таблицы `ps_risk`
 --
 ALTER TABLE `ps_risk`
   MODIFY `id_risk` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `ps_search_engine`
+-- AUTO_INCREMENT для таблицы `ps_search_engine`
 --
 ALTER TABLE `ps_search_engine`
   MODIFY `id_search_engine` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 
 --
--- AUTO_INCREMENT for table `ps_search_word`
+-- AUTO_INCREMENT для таблицы `ps_search_word`
 --
 ALTER TABLE `ps_search_word`
   MODIFY `id_word` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_shop`
+-- AUTO_INCREMENT для таблицы `ps_shop`
 --
 ALTER TABLE `ps_shop`
   MODIFY `id_shop` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `ps_shop_group`
+-- AUTO_INCREMENT для таблицы `ps_shop_group`
 --
 ALTER TABLE `ps_shop_group`
   MODIFY `id_shop_group` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `ps_shop_url`
+-- AUTO_INCREMENT для таблицы `ps_shop_url`
 --
 ALTER TABLE `ps_shop_url`
   MODIFY `id_shop_url` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `ps_specific_price`
+-- AUTO_INCREMENT для таблицы `ps_specific_price`
 --
 ALTER TABLE `ps_specific_price`
   MODIFY `id_specific_price` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_specific_price_priority`
+-- AUTO_INCREMENT для таблицы `ps_specific_price_priority`
 --
 ALTER TABLE `ps_specific_price_priority`
   MODIFY `id_specific_price_priority` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_specific_price_rule`
+-- AUTO_INCREMENT для таблицы `ps_specific_price_rule`
 --
 ALTER TABLE `ps_specific_price_rule`
   MODIFY `id_specific_price_rule` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_specific_price_rule_condition`
+-- AUTO_INCREMENT для таблицы `ps_specific_price_rule_condition`
 --
 ALTER TABLE `ps_specific_price_rule_condition`
   MODIFY `id_specific_price_rule_condition` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_specific_price_rule_condition_group`
+-- AUTO_INCREMENT для таблицы `ps_specific_price_rule_condition_group`
 --
 ALTER TABLE `ps_specific_price_rule_condition_group`
   MODIFY `id_specific_price_rule_condition_group` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_state`
+-- AUTO_INCREMENT для таблицы `ps_state`
 --
 ALTER TABLE `ps_state`
   MODIFY `id_state` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=353;
 
 --
--- AUTO_INCREMENT for table `ps_statssearch`
+-- AUTO_INCREMENT для таблицы `ps_statssearch`
 --
 ALTER TABLE `ps_statssearch`
   MODIFY `id_statssearch` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_stock`
+-- AUTO_INCREMENT для таблицы `ps_stock`
 --
 ALTER TABLE `ps_stock`
   MODIFY `id_stock` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_stock_available`
+-- AUTO_INCREMENT для таблицы `ps_stock_available`
 --
 ALTER TABLE `ps_stock_available`
-  MODIFY `id_stock_available` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_stock_available` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=687;
 
 --
--- AUTO_INCREMENT for table `ps_stock_mvt`
+-- AUTO_INCREMENT для таблицы `ps_stock_mvt`
 --
 ALTER TABLE `ps_stock_mvt`
-  MODIFY `id_stock_mvt` bigint(20) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_stock_mvt` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=687;
 
 --
--- AUTO_INCREMENT for table `ps_stock_mvt_reason`
+-- AUTO_INCREMENT для таблицы `ps_stock_mvt_reason`
 --
 ALTER TABLE `ps_stock_mvt_reason`
   MODIFY `id_stock_mvt_reason` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
--- AUTO_INCREMENT for table `ps_store`
+-- AUTO_INCREMENT для таблицы `ps_store`
 --
 ALTER TABLE `ps_store`
   MODIFY `id_store` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_supplier`
+-- AUTO_INCREMENT для таблицы `ps_supplier`
 --
 ALTER TABLE `ps_supplier`
   MODIFY `id_supplier` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_supply_order`
+-- AUTO_INCREMENT для таблицы `ps_supply_order`
 --
 ALTER TABLE `ps_supply_order`
   MODIFY `id_supply_order` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_supply_order_detail`
+-- AUTO_INCREMENT для таблицы `ps_supply_order_detail`
 --
 ALTER TABLE `ps_supply_order_detail`
   MODIFY `id_supply_order_detail` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_supply_order_history`
+-- AUTO_INCREMENT для таблицы `ps_supply_order_history`
 --
 ALTER TABLE `ps_supply_order_history`
   MODIFY `id_supply_order_history` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_supply_order_receipt_history`
+-- AUTO_INCREMENT для таблицы `ps_supply_order_receipt_history`
 --
 ALTER TABLE `ps_supply_order_receipt_history`
   MODIFY `id_supply_order_receipt_history` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_supply_order_state`
+-- AUTO_INCREMENT для таблицы `ps_supply_order_state`
 --
 ALTER TABLE `ps_supply_order_state`
   MODIFY `id_supply_order_state` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT for table `ps_tab`
+-- AUTO_INCREMENT для таблицы `ps_tab`
 --
 ALTER TABLE `ps_tab`
   MODIFY `id_tab` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=157;
 
 --
--- AUTO_INCREMENT for table `ps_tab_module_preference`
+-- AUTO_INCREMENT для таблицы `ps_tab_module_preference`
 --
 ALTER TABLE `ps_tab_module_preference`
   MODIFY `id_tab_module_preference` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_tag`
+-- AUTO_INCREMENT для таблицы `ps_tag`
 --
 ALTER TABLE `ps_tag`
   MODIFY `id_tag` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_tax`
+-- AUTO_INCREMENT для таблицы `ps_tax`
 --
 ALTER TABLE `ps_tax`
   MODIFY `id_tax` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
--- AUTO_INCREMENT for table `ps_tax_rule`
+-- AUTO_INCREMENT для таблицы `ps_tax_rule`
 --
 ALTER TABLE `ps_tax_rule`
   MODIFY `id_tax_rule` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=139;
 
 --
--- AUTO_INCREMENT for table `ps_tax_rules_group`
+-- AUTO_INCREMENT для таблицы `ps_tax_rules_group`
 --
 ALTER TABLE `ps_tax_rules_group`
   MODIFY `id_tax_rules_group` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `ps_timezone`
+-- AUTO_INCREMENT для таблицы `ps_timezone`
 --
 ALTER TABLE `ps_timezone`
   MODIFY `id_timezone` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=561;
 
 --
--- AUTO_INCREMENT for table `ps_translation`
+-- AUTO_INCREMENT для таблицы `ps_translation`
 --
 ALTER TABLE `ps_translation`
   MODIFY `id_translation` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_warehouse`
+-- AUTO_INCREMENT для таблицы `ps_warehouse`
 --
 ALTER TABLE `ps_warehouse`
   MODIFY `id_warehouse` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_warehouse_product_location`
+-- AUTO_INCREMENT для таблицы `ps_warehouse_product_location`
 --
 ALTER TABLE `ps_warehouse_product_location`
   MODIFY `id_warehouse_product_location` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_webservice_account`
+-- AUTO_INCREMENT для таблицы `ps_webservice_account`
 --
 ALTER TABLE `ps_webservice_account`
   MODIFY `id_webservice_account` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_webservice_permission`
+-- AUTO_INCREMENT для таблицы `ps_webservice_permission`
 --
 ALTER TABLE `ps_webservice_permission`
   MODIFY `id_webservice_permission` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_web_browser`
+-- AUTO_INCREMENT для таблицы `ps_web_browser`
 --
 ALTER TABLE `ps_web_browser`
   MODIFY `id_web_browser` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
--- AUTO_INCREMENT for table `ps_wishlist`
+-- AUTO_INCREMENT для таблицы `ps_wishlist`
 --
 ALTER TABLE `ps_wishlist`
   MODIFY `id_wishlist` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_wishlist_product`
+-- AUTO_INCREMENT для таблицы `ps_wishlist_product`
 --
 ALTER TABLE `ps_wishlist_product`
   MODIFY `id_wishlist_product` int(10) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `ps_zone`
+-- AUTO_INCREMENT для таблицы `ps_zone`
 --
 ALTER TABLE `ps_zone`
   MODIFY `id_zone` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
