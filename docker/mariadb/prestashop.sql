@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: mariadb
--- Generation Time: Dec 14, 2025 at 03:40 PM
+-- Generation Time: Dec 14, 2025 at 04:15 PM
 -- Server version: 12.1.2-MariaDB-ubu2404
 -- PHP Version: 8.3.26
 
@@ -968,7 +968,9 @@ CREATE TABLE `ps_admin_filter` (
 --
 
 INSERT INTO `ps_admin_filter` (`id`, `employee`, `shop`, `controller`, `action`, `filter`, `filter_id`) VALUES
-(1, 1, 1, 'ProductController', 'catalogAction', '{\"filter_category\":\"\",\"filter_column_id_product\":\"\",\"filter_column_name\":\"\",\"filter_column_reference\":\"\",\"filter_column_name_category\":\"\",\"filter_column_price\":\"\",\"filter_column_sav_quantity\":\"\",\"filter_column_active\":\"\",\"last_offset\":\"0\",\"last_limit\":\"20\",\"last_orderBy\":\"id_product\",\"last_sortOrder\":\"desc\"}', '');
+(1, 1, 1, 'ProductController', 'catalogAction', '{\"filter_category\":\"\",\"filter_column_id_product\":\"\",\"filter_column_name\":\"\",\"filter_column_reference\":\"\",\"filter_column_name_category\":\"\",\"filter_column_price\":\"\",\"filter_column_sav_quantity\":\"\",\"filter_column_active\":\"\",\"last_offset\":\"0\",\"last_limit\":\"20\",\"last_orderBy\":\"id_product\",\"last_sortOrder\":\"desc\"}', ''),
+(2, 1, 1, '', '', '{\"limit\":50,\"orderBy\":\"id_meta\",\"sortOrder\":\"asc\",\"filters\":[]}', 'meta'),
+(3, 1, 1, 'email', 'index', '{\"limit\":50,\"orderBy\":\"id_mail\",\"sortOrder\":\"desc\",\"filters\":[]}', '');
 
 -- --------------------------------------------------------
 
@@ -2868,7 +2870,7 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (235, NULL, NULL, 'PS_SHOP_DOMAIN_SSL', 'localhost:8080', '0000-00-00 00:00:00', '2025-11-29 14:49:44'),
 (236, NULL, NULL, 'PS_SHOP_NAME', 'Czas na herbatę', '0000-00-00 00:00:00', '2025-11-29 14:49:44'),
 (237, NULL, NULL, 'PS_SHOP_EMAIL', 's201303@student.pg.edu.pl', '0000-00-00 00:00:00', '2025-11-29 14:49:45'),
-(238, NULL, NULL, 'PS_MAIL_METHOD', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(238, NULL, NULL, 'PS_MAIL_METHOD', '2', '0000-00-00 00:00:00', '2025-12-14 17:12:29'),
 (239, NULL, NULL, 'PS_SHOP_ACTIVITY', '11', '0000-00-00 00:00:00', '2025-11-29 14:49:44'),
 (240, NULL, NULL, 'PS_LOGO', 'logo-1765726344.jpg', '0000-00-00 00:00:00', '2025-12-14 16:32:24'),
 (241, NULL, NULL, 'PS_FAVICON', 'favicon.ico', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
@@ -2876,11 +2878,11 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (243, NULL, NULL, 'PS_ROOT_CATEGORY', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (244, NULL, NULL, 'PS_HOME_CATEGORY', '2', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (245, NULL, NULL, 'PS_CONFIGURATION_AGREMENT', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(246, NULL, NULL, 'PS_MAIL_SERVER', 'smtp.', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(247, NULL, NULL, 'PS_MAIL_USER', '', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(248, NULL, NULL, 'PS_MAIL_PASSWD', '', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(249, NULL, NULL, 'PS_MAIL_SMTP_ENCRYPTION', 'off', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(250, NULL, NULL, 'PS_MAIL_SMTP_PORT', '25', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(246, NULL, NULL, 'PS_MAIL_SERVER', 'smtp.gmail.com', '0000-00-00 00:00:00', '2025-12-14 17:12:29'),
+(247, NULL, NULL, 'PS_MAIL_USER', 'czas1na1herbate@gmail.com', '0000-00-00 00:00:00', '2025-12-14 17:12:29'),
+(248, NULL, NULL, 'PS_MAIL_PASSWD', 'vtsu kmiu dkuq sqnw', '0000-00-00 00:00:00', '2025-12-14 17:12:29'),
+(249, NULL, NULL, 'PS_MAIL_SMTP_ENCRYPTION', 'ssl', '0000-00-00 00:00:00', '2025-12-14 17:12:29'),
+(250, NULL, NULL, 'PS_MAIL_SMTP_PORT', '465', '0000-00-00 00:00:00', '2025-12-14 17:12:29'),
 (251, NULL, NULL, 'PS_MAIL_COLOR', '#db3484', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (252, NULL, NULL, 'NW_SALT', 'bYRv47Fb9L5FFLkS', '0000-00-00 00:00:00', '2025-11-29 14:49:47'),
 (253, NULL, NULL, 'PS_PAYMENT_LOGO_CMS_ID', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
@@ -2901,7 +2903,7 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (268, NULL, NULL, 'PS_DETECT_LANG', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (269, NULL, NULL, 'PS_DETECT_COUNTRY', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (270, NULL, NULL, 'PS_ROUND_TYPE', '2', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(271, NULL, NULL, 'PS_LOG_EMAILS', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(271, NULL, NULL, 'PS_LOG_EMAILS', '1', '0000-00-00 00:00:00', '2025-12-14 17:12:29'),
 (272, NULL, NULL, 'PS_CUSTOMER_OPTIN', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (273, NULL, NULL, 'PS_CUSTOMER_BIRTHDATE', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (274, NULL, NULL, 'PS_PACK_STOCK_TYPE', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
@@ -3063,7 +3065,7 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (430, NULL, NULL, 'PS_PSX_FIREBASE_REFRESH_TOKEN', NULL, '2025-11-29 14:52:49', '2025-11-29 14:52:49'),
 (431, NULL, NULL, 'PS_PSX_FIREBASE_REFRESH_DATE', '2025-11-29 14:52:49', '2025-11-29 14:52:49', '2025-11-29 14:52:49'),
 (432, NULL, NULL, 'PS_ACCOUNTS_FIREBASE_ID_TOKEN', NULL, '2025-11-29 14:52:49', '2025-11-29 14:52:49'),
-(433, NULL, NULL, 'PS_ACCOUNTS_FIREBASE_REFRESH_TOKEN', NULL, '2025-11-29 14:52:49', '2025-12-14 16:36:32'),
+(433, NULL, NULL, 'PS_ACCOUNTS_FIREBASE_REFRESH_TOKEN', NULL, '2025-11-29 14:52:49', '2025-12-14 16:52:30'),
 (434, NULL, NULL, 'CONF_PAYU_FIXED', '0.2', '2025-12-14 16:33:39', '2025-12-14 16:33:39'),
 (435, NULL, NULL, 'CONF_PAYU_VAR', '2', '2025-12-14 16:33:39', '2025-12-14 16:33:39'),
 (436, NULL, NULL, 'CONF_PAYU_FIXED_FOREIGN', '0.2', '2025-12-14 16:33:39', '2025-12-14 16:33:39'),
@@ -3096,7 +3098,9 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (463, NULL, NULL, 'PAYU_SEPARATE_PAY_LATER_KLARNA', '0', '2025-12-14 16:35:40', '2025-12-14 16:35:40'),
 (464, NULL, NULL, 'PAYU_SEPARATE_PAY_LATER_PAYPO', '0', '2025-12-14 16:35:40', '2025-12-14 16:35:40'),
 (465, NULL, NULL, 'PAYU_PAYMENT_METHODS_GRID', '1', '2025-12-14 16:35:40', '2025-12-14 16:36:25'),
-(466, NULL, NULL, 'PAYU_CREDIT_WIDGET_EXCLUDED_PAYTYPES', NULL, '2025-12-14 16:35:40', '2025-12-14 16:35:40');
+(466, NULL, NULL, 'PAYU_CREDIT_WIDGET_EXCLUDED_PAYTYPES', NULL, '2025-12-14 16:35:40', '2025-12-14 16:35:40'),
+(467, NULL, NULL, 'PS_MAIL_EMAIL_MESSAGE', '2', '2025-12-14 17:12:29', '2025-12-14 17:12:29'),
+(468, NULL, NULL, 'PS_MAIL_DOMAIN', NULL, '2025-12-14 17:12:29', '2025-12-14 17:12:29');
 
 -- --------------------------------------------------------
 
@@ -14037,7 +14041,7 @@ ALTER TABLE `ps_address`
 -- AUTO_INCREMENT for table `ps_admin_filter`
 --
 ALTER TABLE `ps_admin_filter`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `ps_alias`
@@ -14151,7 +14155,7 @@ ALTER TABLE `ps_cms_role`
 -- AUTO_INCREMENT for table `ps_configuration`
 --
 ALTER TABLE `ps_configuration`
-  MODIFY `id_configuration` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=467;
+  MODIFY `id_configuration` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=469;
 
 --
 -- AUTO_INCREMENT for table `ps_configuration_kpi`
