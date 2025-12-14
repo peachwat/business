@@ -206,8 +206,8 @@
     </div>
     <p style="text-align: center;"><a href="https://localhost/content/22-blog-kontakt" target="">Skontaktuj się z nami</a></p>
    </div> 
-   <button id="totop">
-   <svg width="16" height="16 style="position: relative; top: 1px; color: #fff;" viewBox="0 0 14 8" fill="white">
+   <button id="totop" style="border: 2px solid #000; background-color: #f9b93e;">
+   <svg width="16" height="16" style=position: relative; top: 1px; color: #fff;" viewBox="0 0 14 8" fill="white">
             <path d="M7.00039 1.41421L1.41439 7L0.000183105 5.58579L7.00039 0L14.0004 5.58579L12.5862 7L7.00039 1.41421Z"/>
         </svg>
     <span>TOP</span>
@@ -221,7 +221,6 @@
         var toTopButton = document.getElementById('totop');
 
         if (toTopButton) {
-            // Функціонал: Плавне прокручування до верху (ЗБЕРЕЖЕНО)
             toTopButton.addEventListener('click', function() {
                 window.scrollTo({
                     top: 0,
@@ -229,11 +228,10 @@
                 });
             });
 
-            // Логіка видимості видалена, кнопка завжди відображається через CSS (display: flex).
         }
       });
     </script>
-    
+
 <div class="footer-container">
   <div class="container">
     <div class="row">
