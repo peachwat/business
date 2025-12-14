@@ -5,4 +5,3 @@ venv
 .vscode
 
 /prestashop_src/var/cache/dev
-/prestashop_src/img
