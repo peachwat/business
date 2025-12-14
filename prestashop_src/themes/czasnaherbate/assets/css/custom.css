@@ -1,0 +1,39 @@
+#wrapper, 
+#content-wrapper, 
+#main {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
+.breadcrumb, 
+nav.breadcrumb, 
+.container > nav {
+    display: none !important;
+}
+
+#carousel {
+    width: 100vw;              
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;         
+    margin-right: -50vw;
+    
+    margin-top: 0 !important;   
+    margin-bottom: 150px;        
+}
+
+#carousel .carousel-inner,
+#carousel .carousel-item {
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+}
+
+#carousel .carousel-item img {
+    width: 100%;               
+    height: auto !important;    
+    max-height: none !important;
+    object-fit: cover;
+    display: block;            
+}

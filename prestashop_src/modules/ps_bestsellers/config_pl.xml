@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <module>
-    <name>ps_imageslider</name>
-    <displayName><![CDATA[Slider zdjęć]]></displayName>
-    <version><![CDATA[3.2.2]]></version>
-    <description><![CDATA[Add sliding images to your homepage to welcome your visitors in a visual and friendly way.]]></description>
+    <name>ps_bestsellers</name>
+    <displayName><![CDATA[Blok najczęściej kupowanych]]></displayName>
+    <version><![CDATA[1.0.7]]></version>
+    <description><![CDATA[Show your visitors what are your top-selling products directly on your homepage.]]></description>
     <author><![CDATA[PrestaShop]]></author>
     <tab><![CDATA[front_office_features]]></tab>
     <is_configurable>1</is_configurable>
