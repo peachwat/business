@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: mariadb
--- Generation Time: Dec 14, 2025 at 04:15 PM
+-- Generation Time: Dec 14, 2025 at 04:39 PM
 -- Server version: 12.1.2-MariaDB-ubu2404
 -- PHP Version: 8.3.26
 
@@ -2026,7 +2026,9 @@ CREATE TABLE `ps_carrier` (
 --
 
 INSERT INTO `ps_carrier` (`id_carrier`, `id_reference`, `id_tax_rules_group`, `name`, `url`, `active`, `deleted`, `shipping_handling`, `range_behavior`, `is_module`, `is_free`, `shipping_external`, `need_range`, `external_module_name`, `shipping_method`, `position`, `max_width`, `max_height`, `max_depth`, `max_weight`, `grade`) VALUES
-(1, 1, 0, '0', '', 1, 0, 0, 0, 0, 1, 0, 0, '', 0, 0, 0, 0, 0, 0.000000, 0);
+(1, 1, 0, '0', '', 1, 0, 0, 0, 0, 1, 0, 0, '', 0, 0, 0, 0, 0, 0.000000, 0),
+(2, 2, 0, 'InPost', '', 1, 0, 1, 0, 0, 0, 0, 0, '', 2, 1, 0, 0, 0, 50.000000, 0),
+(3, 3, 0, 'ORLEN Paczka', '', 1, 0, 0, 0, 0, 0, 0, 0, '', 2, 2, 0, 0, 0, 50.000000, 0);
 
 -- --------------------------------------------------------
 
@@ -2046,7 +2048,13 @@ CREATE TABLE `ps_carrier_group` (
 INSERT INTO `ps_carrier_group` (`id_carrier`, `id_group`) VALUES
 (1, 1),
 (1, 2),
-(1, 3);
+(1, 3),
+(2, 1),
+(2, 2),
+(2, 3),
+(3, 1),
+(3, 2),
+(3, 3);
 
 -- --------------------------------------------------------
 
@@ -2066,7 +2074,9 @@ CREATE TABLE `ps_carrier_lang` (
 --
 
 INSERT INTO `ps_carrier_lang` (`id_carrier`, `id_shop`, `id_lang`, `delay`) VALUES
-(1, 1, 1, 'Pick up in-store');
+(1, 1, 1, 'Pick up in-store'),
+(2, 1, 1, '72-96h'),
+(3, 1, 1, '72-96h');
 
 -- --------------------------------------------------------
 
@@ -2084,7 +2094,9 @@ CREATE TABLE `ps_carrier_shop` (
 --
 
 INSERT INTO `ps_carrier_shop` (`id_carrier`, `id_shop`) VALUES
-(1, 1);
+(1, 1),
+(2, 1),
+(3, 1);
 
 -- --------------------------------------------------------
 
@@ -2103,7 +2115,9 @@ CREATE TABLE `ps_carrier_tax_rules_group_shop` (
 --
 
 INSERT INTO `ps_carrier_tax_rules_group_shop` (`id_carrier`, `id_tax_rules_group`, `id_shop`) VALUES
-(1, 1, 1);
+(1, 1, 1),
+(2, 0, 1),
+(3, 0, 1);
 
 -- --------------------------------------------------------
 
@@ -2121,7 +2135,9 @@ CREATE TABLE `ps_carrier_zone` (
 --
 
 INSERT INTO `ps_carrier_zone` (`id_carrier`, `id_zone`) VALUES
-(1, 1);
+(1, 1),
+(2, 1),
+(3, 1);
 
 -- --------------------------------------------------------
 
@@ -4425,6 +4441,16 @@ CREATE TABLE `ps_delivery` (
   `id_zone` int(10) UNSIGNED NOT NULL,
   `price` decimal(20,6) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
+
+--
+-- Dumping data for table `ps_delivery`
+--
+
+INSERT INTO `ps_delivery` (`id_delivery`, `id_shop`, `id_shop_group`, `id_carrier`, `id_range_price`, `id_range_weight`, `id_zone`, `price`) VALUES
+(2, NULL, NULL, 2, 1, NULL, 1, 19.000000),
+(4, NULL, NULL, 2, 2, NULL, 1, 0.000000),
+(6, NULL, NULL, 3, 3, NULL, 1, 14.000000),
+(8, NULL, NULL, 3, 4, NULL, 1, 0.000000);
 
 -- --------------------------------------------------------
 
@@ -7292,9 +7318,17 @@ CREATE TABLE `ps_module_carrier` (
 
 INSERT INTO `ps_module_carrier` (`id_module`, `id_shop`, `id_reference`) VALUES
 (14, 1, 1),
+(14, 1, 2),
+(14, 1, 3),
 (35, 1, 1),
+(35, 1, 2),
+(35, 1, 3),
 (57, 1, 1),
-(62, 1, 1);
+(57, 1, 2),
+(57, 1, 3),
+(62, 1, 1),
+(62, 1, 2),
+(62, 1, 3);
 
 -- --------------------------------------------------------
 
@@ -9306,6 +9340,16 @@ CREATE TABLE `ps_range_price` (
   `delimiter1` decimal(20,6) NOT NULL,
   `delimiter2` decimal(20,6) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
+
+--
+-- Dumping data for table `ps_range_price`
+--
+
+INSERT INTO `ps_range_price` (`id_range_price`, `id_carrier`, `delimiter1`, `delimiter2`) VALUES
+(1, 2, 0.000000, 2000.000000),
+(2, 2, 2000.000000, 99999999999999.999999),
+(3, 3, 0.000000, 200.000000),
+(4, 3, 200.000000, 99999999999999.999999);
 
 -- --------------------------------------------------------
 
@@ -14095,7 +14139,7 @@ ALTER TABLE `ps_blockwishlist_statistics`
 -- AUTO_INCREMENT for table `ps_carrier`
 --
 ALTER TABLE `ps_carrier`
-  MODIFY `id_carrier` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_carrier` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `ps_cart`
@@ -14239,7 +14283,7 @@ ALTER TABLE `ps_date_range`
 -- AUTO_INCREMENT for table `ps_delivery`
 --
 ALTER TABLE `ps_delivery`
-  MODIFY `id_delivery` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id_delivery` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `ps_emailsubscription`
@@ -14659,7 +14703,7 @@ ALTER TABLE `ps_quick_access`
 -- AUTO_INCREMENT for table `ps_range_price`
 --
 ALTER TABLE `ps_range_price`
-  MODIFY `id_range_price` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id_range_price` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `ps_range_weight`
