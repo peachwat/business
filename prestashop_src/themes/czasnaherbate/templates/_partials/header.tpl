@@ -214,7 +214,7 @@
 				<div class="menutopright">
 					<ul class="menu-top-l">
 						<li>
-							<a class="menu-link salony-menu" href="https://localhost/content/24-salony">SALONY</a>
+							<a class="menu-link salony-menu" href="https://localhost/stores#">SALONY</a>
 						</li>
 						<li>
 							<a class="menu-link kontakt-menu" href="https://localhost/content/22-blog-kontakt">FIRMA</a>

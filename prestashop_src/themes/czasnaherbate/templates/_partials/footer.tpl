@@ -298,7 +298,7 @@
             </a>
           </li>
                   <li>
-            <a id="link-cms-page-10-2" class="cms-page-link" href="https://localhost/content/10-metody-platnosci" title="">
+            <a id="link-cms-page-10-2" class="cms-page-link" href="https://localhost/content/5-secure-payment" title="">
               Metody płatności
             </a>
           </li>
@@ -308,7 +308,7 @@
             </a>
           </li>
                   <li>
-            <a id="link-static-page-sitemap-2" class="cms-page-link" href="https://localhost/content/12-mapa-strony" title="Zagubiłeś się? Znajdź to, czego szukasz!">
+            <a id="link-static-page-sitemap-2" class="cms-page-link" href="https://localhost/sitemap" title="Zagubiłeś się? Znajdź to, czego szukasz!">
               Mapa strony
             </a>
           </li>
