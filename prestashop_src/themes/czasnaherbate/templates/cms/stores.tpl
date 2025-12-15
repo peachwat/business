@@ -1,96 +1,212 @@
-{**
- * Copyright since 2007 PrestaShop SA and Contributors
- * PrestaShop is an International Registered Trademark & Property of PrestaShop SA
- *
- * NOTICE OF LICENSE
- *
- * This source file is subject to the Academic Free License 3.0 (AFL-3.0)
- * that is bundled with this package in the file LICENSE.md.
- * It is also available through the world-wide-web at this URL:
- * https://opensource.org/licenses/AFL-3.0
- * If you did not receive a copy of the license and are unable to
- * obtain it through the world-wide-web, please send an email
- * to license@prestashop.com so we can send you a copy immediately.
- *
- * DISCLAIMER
- *
- * Do not edit or add to this file if you wish to upgrade PrestaShop to newer
- * versions in the future. If you wish to customize PrestaShop for your
- * needs please refer to https://devdocs.prestashop.com/ for more information.
- *
- * @author    PrestaShop SA and Contributors <contact@prestashop.com>
- * @copyright Since 2007 PrestaShop SA and Contributors
- * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
- *}
 {extends file='page.tpl'}
-
-{block name='page_title'}
-  {l s='Our stores' d='Shop.Theme.Global'}
-{/block}
 
 {block name='page_content_container'}
   <section id="content" class="page-content page-stores">
 
-    {foreach $stores as $store}
-      <article id="store-{$store.id}" class="store-item card">
-        <div class="store-item-container clearfix">
-          <div class="col-md-3 store-picture hidden-sm-down">
-            <img
-              src="{$store.image.bySize.stores_default.url}"
-              {if !empty($store.image.legend)}
-                alt="{$store.image.legend}"
-                title="{$store.image.legend}"
-              {else}
-                alt="{$store.name}"
-              {/if}
-            >
-          </div>
-          <div class="col-md-5 col-sm-7 col-xs-12 store-description">
-            <p class="h3 card-title">{$store.name}</p>
-            <address>{$store.address.formatted nofilter}</address>
-            {if $store.note || $store.phone || $store.fax || $store.email}
-              <a data-toggle="collapse" href="#about-{$store.id}" aria-expanded="false" aria-controls="about-{$store.id}"><strong>{l s='About and Contact' d='Shop.Theme.Global'}</strong><i class="material-icons">&#xE409;</i></a>
-            {/if}
-          </div>
-          <div class="col-md-4 col-sm-5 col-xs-12 divide-left">
-            <table>
-              {foreach $store.business_hours as $day}
-              <tr>
-                <th>{$day.day|truncate:4:'.'}</th>
-                <td>
-                  <ul>
-                  {foreach $day.hours as $h}
-                    <li>{$h}</li>
-                  {/foreach}
-                  </ul>
-                </td>
-              </tr>
-              {/foreach}
-            </table>
-          </div>
-        </div>
-        <footer id="about-{$store.id}" class="collapse">
-          <div class="store-item-footer divide-top">
-            {if $store.note}
-              <div class="card-block">
-                <p class="text-justify">{$store.note}</p>
-              </div>
-            {/if}
-            <ul class="card-block">
-              {if $store.phone}
-                <li><i class="material-icons">&#xE0B0;</i>{$store.phone}</li>
-              {/if}
-              {if $store.fax}
-                <li><i class="material-icons">&#xE8AD;</i>{$store.fax}</li>
-              {/if}
-              {if $store.email}
-                <li><i class="material-icons">&#xE0BE;</i>{$store.email}</li>
-              {/if}
-            </ul>
-          </div>
-        </footer>
-      </article>
-    {/foreach}
+    {literal}
+    <style>
+        #wrapper, #content-wrapper { padding-top: 0 !important; margin-top:0 !important;}
+        .container { max-width: 100% !important; padding: 0 !important; width: 100% !important; }
 
+        .stores-custom-page {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #555;
+            background: #fff;
+        }
+
+        .stores-parallax-banner {
+            background-image: url('../themes/czasnaherbate/assets/img/salon-CnH-2020.jpg'); 
+            
+            background-attachment: fixed;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+            height: 450px; 
+            width: 100vw;
+            margin-left: calc(-50vw + 50%); 
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            margin-bottom: 60px;
+        }
+        
+        .stores-parallax-banner::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.3); 
+        }
+
+        .stores-parallax-banner h1 {
+            position: relative;
+            color: #fff;
+            font-size: 52px;
+            font-family: 'Garamond', 'Georgia', serif;
+            font-weight: 700;
+            text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+            z-index: 2;
+            margin: 0;
+        }
+
+        .stores-content-width {
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 0 15px 80px 15px;
+        }
+
+        h2.gold-title {
+            color: #f9a918; 
+            font-size: 36px;
+            font-family: 'Garamond', 'Georgia', serif;
+            margin-bottom: 20px;
+            font-weight: normal;
+            margin-top: 0;
+            text-align: left;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eaeaea;
+        }
+
+        .intro-text {
+            font-size: 13px;
+            line-height: 1.8;
+            color: #4a4a4a;
+            margin-bottom: 50px;
+            text-align: left;
+        }
+
+        .map-section {
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 40px;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+
+        .map-container {
+            width: 500px;
+            flex-shrink: 0;
+        }
+
+        .map-image-png {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .list-container {
+            flex-grow: 1;
+            padding-top: 10px;
+        }
+
+        .list-header {
+            font-family: 'Garamond', serif;
+            font-size: 16px;
+            font-weight: bold;
+            color: #381b15;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eaeaea;
+            padding-bottom: 10px;
+            display: block;
+            width: 100%;
+        }
+
+        .voivodeships-columns {
+            display: flex;
+            gap: 40px;
+        }
+
+        .v-col {
+            min-width: 150px;
+        }
+
+        .v-col ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .v-col li {
+            margin-bottom: 12px;
+        }
+
+        .v-col li a {
+            font-size: 13px;
+            color: #555;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .v-col li a:hover {
+            color: #f9a918;
+            font-weight: bold;
+        }
+
+        @media (max-width: 992px) {
+             .map-section { flex-direction: column; align-items: center; }
+             .map-container { width: 100%; max-width: 500px; }
+             .stores-parallax-banner h1 { font-size: 36px; }
+             .stores-parallax-banner { margin-left: 0; width: 100%; }
+        }
+    </style>
+    {/literal}
+
+    <div class="stores-custom-page">
+        
+        <div class="stores-parallax-banner">
+            <h1>Salony</h1>
+        </div>
+
+        <div class="stores-content-width">
+            
+            <h2 class="gold-title">Odszukaj najbliższy sklep</h2>
+            <div class="intro-text">
+                <p>Nasze salony odnajdziesz na terenie całej Polski, zatem nie czekaj i <strong>Znajdź swój Czas na Herbatę</strong>.</p>
+                <p>Jeśli jednak nasz punkt nie jest w pobliżu Twojej lokalizacji, zapraszamy do odwiedzenia naszego sklepu internetowego www.czasnaherbate.net</p>
+            </div>
+
+            <div class="map-section">
+                
+                <div class="map-container">
+                    <img src="{$urls.theme_assets}img/pl-02.png" alt="Mapa Salonów" class="map-image-png">
+                </div>
+
+                <div class="list-container">
+                    <span class="list-header">Województwa</span>
+                    
+                    <div class="voivodeships-columns">
+                        <div class="v-col">
+                            <ul>
+                                <li><a href="#">dolnośląskie</a></li>
+                                <li><a href="#">łódzkie</a></li>
+                                <li><a href="#">lubuskie</a></li>
+                                <li><a href="#">mazowieckie</a></li>
+                                <li><a href="#">podkarpackie</a></li>
+                                <li><a href="#">pomorskie</a></li>
+                                <li><a href="#">świętokrzyskie</a></li>
+                                <li><a href="#">wielkopolskie</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="v-col">
+                            <ul>
+                                <li><a href="#">kujawsko-pomorskie</a></li>
+                                <li><a href="#">lubelskie</a></li>
+                                <li><a href="#">małopolskie</a></li>
+                                <li><a href="#">opolskie</a></li>
+                                <li><a href="#">podlaskie</a></li>
+                                <li><a href="#">śląskie</a></li>
+                                <li><a href="#">warmińsko-mazurskie</a></li>
+                                <li><a href="#">zachodniopomorskie</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
   </section>
 {/block}
