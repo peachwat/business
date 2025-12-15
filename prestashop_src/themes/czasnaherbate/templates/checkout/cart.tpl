@@ -88,11 +88,16 @@
         </div>
     </div>
 
+	{block name='cart_actions'}
+              {include file='checkout/_partials/cart-detailed-actions.tpl' cart=$cart}
+
+    {/block}
+
 	<div class="row ">
 		<div class="col-md-4">
 			<div class="card">
 			FORM
-				{*TODO: include file='checkout/_partials/address-form.tpl'*}
+				{*TODO: include file='checkout/_partials/steps/adresses.tpl'*}
 			</div>
 		</div>
 	</div>
