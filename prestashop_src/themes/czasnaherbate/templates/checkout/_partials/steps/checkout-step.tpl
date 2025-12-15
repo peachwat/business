@@ -23,15 +23,7 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
 {block name='step'}
-  <section  id    = "{$identifier}"
-            class = "{[
-                        'checkout-step'   => true,
-                        '-current'        => $step_is_current,
-                        '-reachable'      => $step_is_reachable,
-                        '-complete'       => $step_is_complete,
-                        'js-current-step' => $step_is_current
-                    ]|classnames}"
-  >
+  <section  id    = "{$identifier}" class = "checkout-step -current -reachable -complete" {* Modified: Always show as active *}>
     <h1 class="step-title js-step-title h3">
       <i class="material-icons rtl-no-flip done">&#xE876;</i>
       <span class="step-number">{$position}</span>
@@ -39,7 +31,7 @@
       <span class="step-edit text-muted"><i class="material-icons edit">mode_edit</i> {l s='Edit' d='Shop.Theme.Actions'}</span>
     </h1>
 
-    <div class="content">
+    <div class="content"> {* Modified: Always show content, removed js-current-step conditional *}
       {block name='step_content'}DUMMY STEP CONTENT{/block}
     </div>
   </section>
