@@ -174,7 +174,7 @@
 							<ul class="cb-menu">
 								<li><a href="https://localhost/content/4-about-us">O MARCE</a></li>
 								<li><a href="https://czasnaherbate.net/blog/aktualnosci/">AKTUALNOŚCI</a></li>
-								<li><a href="https://czasnaherbate.net/blog/promocje/">OFERTY SPECJALNE</a></li>
+								<li><a href="https://localhost/prices-drop">OFERTY SPECJALNE</a></li>
 							</ul>
 						</li>
 						<li class="menu-item-has-children wiedza-menu">
@@ -222,7 +222,7 @@
 					</ul>
 					{widget name="ps_shoppingcart"}
 					<div class="special">
-						<a href="{$urls.base_url}promocje">{l s='PROMOCJE' d='Shop.Theme.Global'}</a>{*TODO*}
+    					<a href="{$urls.pages.prices_drop}">{l s='PROMOCJE' d='Shop.Theme.Global'}</a>
 					</div>
 				</div>
 			</div>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: mariadb
--- Время создания: Дек 15 2025 г., 02:25
+-- Время создания: Дек 16 2025 г., 00:44
 -- Версия сервера: 12.1.2-MariaDB-ubu2404
 -- Версия PHP: 8.3.26
 
@@ -971,7 +971,9 @@ INSERT INTO `ps_admin_filter` (`id`, `employee`, `shop`, `controller`, `action`,
 (1, 1, 1, 'ProductController', 'catalogAction', '{\"filter_category\":\"\",\"filter_column_id_product\":\"\",\"filter_column_name\":\"wielkano\",\"filter_column_reference\":\"\",\"filter_column_name_category\":\"\",\"filter_column_price\":\"\",\"filter_column_sav_quantity\":\"\",\"filter_column_active\":\"\",\"last_offset\":\"0\",\"last_limit\":\"20\",\"last_orderBy\":\"id_product\",\"last_sortOrder\":\"desc\"}', ''),
 (2, 1, 1, '', '', '{\"limit\":50,\"orderBy\":\"id_meta\",\"sortOrder\":\"asc\",\"filters\":[]}', 'meta'),
 (3, 1, 1, 'email', 'index', '{\"limit\":50,\"orderBy\":\"id_mail\",\"sortOrder\":\"desc\",\"filters\":[]}', ''),
-(4, 1, 1, '', '', '{\"orderBy\":\"position\",\"sortOrder\":\"asc\",\"limit\":50,\"filters\":{\"id_category_parent\":\"2\"}}', 'category');
+(4, 1, 1, '', '', '{\"orderBy\":\"position\",\"sortOrder\":\"asc\",\"limit\":50,\"filters\":{\"id_category_parent\":\"2\"}}', 'category'),
+(5, 1, 1, '', '', '{\"orderBy\":\"position\",\"sortOrder\":\"asc\",\"limit\":50,\"filters\":{\"id_cms_category_parent\":1}}', 'cms_page_category'),
+(6, 1, 1, '', '', '{\"orderBy\":\"position\",\"sortOrder\":\"asc\",\"limit\":50,\"filters\":{\"id_cms_category_parent\":1}}', 'cms_page');
 
 -- --------------------------------------------------------
 
@@ -2039,7 +2041,7 @@ CREATE TABLE `ps_carrier` (
 --
 
 INSERT INTO `ps_carrier` (`id_carrier`, `id_reference`, `id_tax_rules_group`, `name`, `url`, `active`, `deleted`, `shipping_handling`, `range_behavior`, `is_module`, `is_free`, `shipping_external`, `need_range`, `external_module_name`, `shipping_method`, `position`, `max_width`, `max_height`, `max_depth`, `max_weight`, `grade`) VALUES
-(1, 1, 0, '0', '', 1, 0, 0, 0, 0, 1, 0, 0, '', 0, 0, 0, 0, 0, 0.000000, 0),
+(1, 1, 0, 'Czas na herbatę', '', 1, 0, 0, 0, 0, 0, 0, 0, '', 1, 0, 0, 0, 0, 0.000000, 0),
 (2, 2, 0, 'InPost', '', 1, 0, 1, 0, 0, 0, 0, 0, '', 2, 1, 0, 0, 0, 50.000000, 0),
 (3, 3, 0, 'ORLEN Paczka', '', 1, 0, 0, 0, 0, 0, 0, 0, '', 2, 2, 0, 0, 0, 50.000000, 0);
 
@@ -5311,7 +5313,17 @@ INSERT INTO `ps_cms` (`id_cms`, `id_cms_category`, `position`, `active`, `indexa
 (2, 1, 1, 1, 0),
 (3, 1, 2, 1, 0),
 (4, 1, 3, 1, 0),
-(5, 1, 4, 1, 0);
+(5, 1, 4, 1, 0),
+(6, 1, 5, 1, 0),
+(7, 1, 6, 1, 0),
+(8, 1, 7, 1, 0),
+(9, 1, 8, 1, 0),
+(10, 1, 9, 1, 0),
+(11, 1, 10, 1, 0),
+(12, 1, 11, 1, 0),
+(13, 1, 12, 1, 0),
+(14, 1, 13, 1, 0),
+(15, 1, 14, 1, 0);
 
 -- --------------------------------------------------------
 
@@ -5402,11 +5414,21 @@ CREATE TABLE `ps_cms_lang` (
 --
 
 INSERT INTO `ps_cms_lang` (`id_cms`, `id_lang`, `id_shop`, `meta_title`, `head_seo_title`, `meta_description`, `meta_keywords`, `content`, `link_rewrite`) VALUES
-(1, 1, 1, 'Delivery', '', 'Our terms and conditions of delivery', 'conditions, delivery, delay, shipment, pack', '<h2>Shipments and returns</h2><h3>Your pack shipment</h3><p>Packages are generally dispatched within 2 days after receipt of payment and are shipped via UPS with tracking and drop-off without signature. If you prefer delivery by UPS Extra with required signature, an additional cost will be applied, so please contact us before choosing this method. Whichever shipment choice you make, we will provide you with a link to track your package online.</p><p>Shipping fees include handling and packing fees as well as postage costs. Handling fees are fixed, whereas transport fees vary according to total weight of the shipment. We advise you to group your items in one order. We cannot group two distinct orders placed separately, and shipping fees will apply to each of them. Your package will be dispatched at your own risk, but special care is taken to protect fragile objects.<br /><br />Boxes are amply sized and your items are well-protected.</p>', 'delivery'),
-(2, 1, 1, 'Legal Notice', '', 'Legal notice', 'notice, legal, credits', '<h2>Legal</h2><h3>Credits</h3><p>Concept and production:</p><p>This Web site was created using <a href=\"http://www.prestashop.com\">PrestaShop</a>&trade; open-source software.</p>', 'legal-notice'),
-(3, 1, 1, 'Terms and conditions of use', '', 'Our terms and conditions of use', 'conditions, terms, use, sell', '<h2>Your terms and conditions of use</h2><h3>Rule 1</h3><p>Here is the rule 1 content</p>\r\n<h3>Rule 2</h3><p>Here is the rule 2 content</p>\r\n<h3>Rule 3</h3><p>Here is the rule 3 content</p>', 'terms-and-conditions-of-use'),
-(4, 1, 1, 'About us', '', 'Learn more about us', 'about us, informations', '<h2>About us</h2>\r\n<h3>Our company</h3><p>Our company</p>\r\n<h3>Our team</h3><p>Our team</p>\r\n<h3>Informations</h3><p>Informations</p>', 'about-us'),
-(5, 1, 1, 'Secure payment', '', 'Our secure payment mean', 'secure payment, ssl, visa, mastercard, paypal', '<h2>Secure payment</h2>\r\n<h3>Our secure payment</h3><p>With SSL</p>\r\n<h3>Using Visa/Mastercard/Paypal</h3><p>About this services</p>', 'secure-payment');
+(1, 1, 1, 'Warunki dostawy', '', 'Our terms and conditions of delivery', 'conditions, delivery, delay, shipment, pack', '<h2>Shipments and returns</h2>\n<h3>Your pack shipment</h3>\n<p>Packages are generally dispatched within 2 days after receipt of payment and are shipped via UPS with tracking and drop-off without signature. If you prefer delivery by UPS Extra with required signature, an additional cost will be applied, so please contact us before choosing this method. Whichever shipment choice you make, we will provide you with a link to track your package online.</p>\n<p>Shipping fees include handling and packing fees as well as postage costs. Handling fees are fixed, whereas transport fees vary according to total weight of the shipment. We advise you to group your items in one order. We cannot group two distinct orders placed separately, and shipping fees will apply to each of them. Your package will be dispatched at your own risk, but special care is taken to protect fragile objects.<br /><br />Boxes are amply sized and your items are well-protected.</p>', 'delivery'),
+(2, 1, 1, 'Regulamin sklepu', '', 'Regulamin sklepu', 'notice, legal, credits, regulamin', '', 'regulamin-sklepu'),
+(3, 1, 1, 'Polityka prywatności', '', 'Our terms and conditions of use', 'conditions, terms, use, sell', '<h2>Your terms and conditions of use</h2>\n<h3>Rule 1</h3>\n<p>Here is the rule 1 content</p>\n<h3>Rule 2</h3>\n<p>Here is the rule 2 content</p>\n<h3>Rule 3</h3>\n<p>Here is the rule 3 content</p>', 'polityka-prywatnosci'),
+(4, 1, 1, 'O marce', '', 'Learn more about us', 'about us, informations', '<h2>About us</h2>\n<h3>Our company</h3>\n<p>Our company</p>\n<h3>Our team</h3>\n<p>Our team</p>\n<h3>Informations</h3>\n<p>Informations</p>', 'about-us'),
+(5, 1, 1, 'Metody płatności', '', 'Our secure payment mean', 'secure payment, ssl, visa, mastercard, paypal', '<h2>Secure payment</h2>\n<h3>Our secure payment</h3>\n<p>With SSL</p>\n<h3>Using Visa/Mastercard/Paypal</h3>\n<p>About this services</p>', 'secure-payment'),
+(6, 1, 1, 'Rachunek bankowy', '', '', '', '', 'rachunek-bankowy'),
+(7, 1, 1, 'Reklamacje', '', '', '', '', 'reklamacje'),
+(8, 1, 1, 'Zwroty', '', '', '', '', 'zwroty'),
+(9, 1, 1, 'Jak pakujemy zamówienia', '', '', '', '', 'jak-pakujemy-zamowienia'),
+(10, 1, 1, 'Zasady realizowania bonów rabatowych', '', '', '', '', 'zasady-realizowania-bonow-rabatowych'),
+(11, 1, 1, 'Regulamin Karty Stałego Klienta', '', '', '', '', 'regulamin-karty-stalego-klienta'),
+(12, 1, 1, 'Regulamin programu lojalnościowego „Listek herbaty”', '', '', '', '', 'regulamin-programu-lojalnosciowego-listek-herbaty'),
+(13, 1, 1, 'Polityka cookies', '', '', '', '', 'polityka-cookies'),
+(14, 1, 1, 'Regulamin Konkursu Dzień Nauczyciela', '', '', '', '', 'regulamin-konkursu-dzien-nauczyciela'),
+(15, 1, 1, 'Rozstrzygnięcie konkursu - Dzień Nauczyciela', '', '', '', '', 'rozstrzygniecie-konkursu-dzien-nauczyciela');
 
 -- --------------------------------------------------------
 
@@ -5461,7 +5483,17 @@ INSERT INTO `ps_cms_shop` (`id_cms`, `id_shop`) VALUES
 (2, 1),
 (3, 1),
 (4, 1),
-(5, 1);
+(5, 1),
+(6, 1),
+(7, 1),
+(8, 1),
+(9, 1),
+(10, 1),
+(11, 1),
+(12, 1),
+(13, 1),
+(14, 1),
+(15, 1);
 
 -- --------------------------------------------------------
 
@@ -5916,7 +5948,7 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (430, NULL, NULL, 'PS_PSX_FIREBASE_REFRESH_TOKEN', NULL, '2025-11-29 14:52:49', '2025-11-29 14:52:49'),
 (431, NULL, NULL, 'PS_PSX_FIREBASE_REFRESH_DATE', '2025-11-29 14:52:49', '2025-11-29 14:52:49', '2025-11-29 14:52:49'),
 (432, NULL, NULL, 'PS_ACCOUNTS_FIREBASE_ID_TOKEN', NULL, '2025-11-29 14:52:49', '2025-11-29 14:52:49'),
-(433, NULL, NULL, 'PS_ACCOUNTS_FIREBASE_REFRESH_TOKEN', NULL, '2025-11-29 14:52:49', '2025-12-15 02:52:27'),
+(433, NULL, NULL, 'PS_ACCOUNTS_FIREBASE_REFRESH_TOKEN', NULL, '2025-11-29 14:52:49', '2025-12-15 23:44:57'),
 (434, NULL, NULL, 'CONF_PAYU_FIXED', '0.2', '2025-12-14 16:33:39', '2025-12-14 16:33:39'),
 (435, NULL, NULL, 'CONF_PAYU_VAR', '2', '2025-12-14 16:33:39', '2025-12-14 16:33:39'),
 (436, NULL, NULL, 'CONF_PAYU_FIXED_FOREIGN', '0.2', '2025-12-14 16:33:39', '2025-12-14 16:33:39'),
@@ -6116,7 +6148,10 @@ INSERT INTO `ps_connections` (`id_connections`, `id_shop_group`, `id_shop`, `id_
 (2, 1, 1, 2, 1, 2886860801, '2025-11-29 16:47:09', ''),
 (3, 1, 1, 1, 1, 2886926337, '2025-12-12 17:08:14', ''),
 (4, 1, 1, 1, 1, 2886926337, '2025-12-14 16:19:10', ''),
-(5, 1, 1, 30, 1, 2886860801, '2025-12-14 22:12:19', '');
+(5, 1, 1, 30, 1, 2886860801, '2025-12-14 22:12:19', ''),
+(6, 1, 1, 2, 2, 2886860801, '2025-12-15 23:31:05', ''),
+(7, 1, 1, 2, 3, 2886860801, '2025-12-16 00:16:13', ''),
+(8, 1, 1, 2, 3, 2886860801, '2025-12-16 01:41:25', '');
 
 -- --------------------------------------------------------
 
@@ -7377,7 +7412,7 @@ CREATE TABLE `ps_employee` (
 --
 
 INSERT INTO `ps_employee` (`id_employee`, `id_profile`, `id_lang`, `lastname`, `firstname`, `email`, `passwd`, `last_passwd_gen`, `stats_date_from`, `stats_date_to`, `stats_compare_from`, `stats_compare_to`, `stats_compare_option`, `preselect_date_range`, `bo_color`, `bo_theme`, `bo_css`, `default_tab`, `bo_width`, `bo_menu`, `active`, `optin`, `id_last_order`, `id_last_customer_message`, `id_last_customer`, `last_connection_date`, `reset_password_token`, `reset_password_validity`, `has_enabled_gravatar`) VALUES
-(1, 1, 1, 'Rylova', 'Evelina', 's201303@student.pg.edu.pl', '$2y$10$MispUiHgyo8yhIL1Aj13SOxB/SU14SvC9uItdO0XVTjFj1KsNY7Ra', '2025-11-29 08:49:45', '2025-10-29', '2025-11-29', '0000-00-00', '0000-00-00', 1, NULL, NULL, 'default', 'theme.css', 1, 0, 1, 1, NULL, 0, 0, 0, '2025-12-15', NULL, '0000-00-00 00:00:00', 0);
+(1, 1, 1, 'Rylova', 'Evelina', 's201303@student.pg.edu.pl', '$2y$10$MispUiHgyo8yhIL1Aj13SOxB/SU14SvC9uItdO0XVTjFj1KsNY7Ra', '2025-11-29 08:49:45', '2025-10-29', '2025-11-29', '0000-00-00', '0000-00-00', 1, NULL, NULL, 'default', 'theme.css', 1, 0, 1, 1, NULL, 0, 0, 0, '2025-12-16', NULL, '0000-00-00 00:00:00', 0);
 
 -- --------------------------------------------------------
 
@@ -7414,7 +7449,8 @@ INSERT INTO `ps_employee_session` (`id_employee_session`, `id_employee`, `token`
 (1, 1, 'd8eccd9621dd0cb8af640740159f71cac1d78b74'),
 (2, 1, 'd21a534a32ad3f9ebdc0edc05f1f82577879df23'),
 (3, 1, 'b1c871aaa5cfcdc07c18853105675b2b5f59ac70'),
-(7, 1, '23c3ee2453e6dae15d60da357cbffd94cfe3c71d');
+(7, 1, '23c3ee2453e6dae15d60da357cbffd94cfe3c71d'),
+(8, 1, '4396dc88c448279cd72c0a9d5060b99f53772fd8');
 
 -- --------------------------------------------------------
 
@@ -13083,6 +13119,13 @@ CREATE TABLE `ps_layered_filter_block` (
   `data` text DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_uca1400_ai_ci;
 
+--
+-- Дамп данных таблицы `ps_layered_filter_block`
+--
+
+INSERT INTO `ps_layered_filter_block` (`hash`, `data`) VALUES
+('49fe8498c58dfc48a60ed6c25cb40b6e', 'a:1:{s:7:\"filters\";a:0:{}}');
+
 -- --------------------------------------------------------
 
 --
@@ -14335,7 +14378,9 @@ INSERT INTO `ps_log` (`id_log`, `severity`, `error_code`, `message`, `object_typ
 (330, 3, 0, 'EntityManager#remove() expects parameter 1 to be an entity object, NULL given.', '', 0, 1, NULL, 1, 0, 1, '2025-12-15 03:25:00', '2025-12-15 03:25:00'),
 (331, 3, 0, 'EntityManager#remove() expects parameter 1 to be an entity object, NULL given.', '', 0, 1, NULL, 1, 0, 1, '2025-12-15 03:25:01', '2025-12-15 03:25:01'),
 (332, 3, 0, 'EntityManager#remove() expects parameter 1 to be an entity object, NULL given.', '', 0, 1, NULL, 1, 0, 1, '2025-12-15 03:25:01', '2025-12-15 03:25:01'),
-(333, 3, 0, 'No result was found for query although at least one row was expected.', '', 0, 1, NULL, 1, 0, 1, '2025-12-15 03:25:14', '2025-12-15 03:25:14');
+(333, 3, 0, 'No result was found for query although at least one row was expected.', '', 0, 1, NULL, 1, 0, 1, '2025-12-15 03:25:14', '2025-12-15 03:25:14'),
+(334, 1, 0, 'Połączenie z panelem administracyjnym z 172.18.0.1', '', 0, NULL, NULL, 1, 1, 1, '2025-12-15 22:49:26', '2025-12-15 22:49:26'),
+(335, 3, 0, 'Data from PrestaShop Addons is invalid, and cannot fallback on cache.', '', 0, 1, NULL, 1, 0, 1, '2025-12-15 23:44:56', '2025-12-15 23:44:56');
 
 -- --------------------------------------------------------
 
@@ -15422,7 +15467,8 @@ INSERT INTO `ps_module_history` (`id`, `id_employee`, `id_module`, `date_add`, `
 (7, 1, 63, '2025-12-14 23:26:15', '2025-12-14 23:26:15'),
 (8, 1, 64, '2025-12-14 23:39:15', '2025-12-14 23:39:15'),
 (9, 1, 20, '2025-12-14 23:42:39', '2025-12-14 23:42:39'),
-(10, 1, 65, '2025-12-15 02:52:32', '2025-12-15 02:52:32');
+(10, 1, 65, '2025-12-15 02:52:32', '2025-12-15 02:52:32'),
+(11, 1, 14, '2025-12-15 22:50:53', '2025-12-15 22:50:53');
 
 -- --------------------------------------------------------
 
@@ -15468,7 +15514,6 @@ INSERT INTO `ps_module_shop` (`id_module`, `id_shop`, `enable_device`) VALUES
 (11, 1, 7),
 (12, 1, 3),
 (13, 1, 7),
-(14, 1, 7),
 (15, 1, 7),
 (16, 1, 7),
 (17, 1, 7),
@@ -16084,7 +16129,9 @@ CREATE TABLE `ps_page` (
 --
 
 INSERT INTO `ps_page` (`id_page`, `id_page_type`, `id_object`) VALUES
-(1, 1, NULL);
+(1, 1, NULL),
+(2, 2, NULL),
+(3, 3, NULL);
 
 -- --------------------------------------------------------
 
@@ -16117,7 +16164,9 @@ CREATE TABLE `ps_page_type` (
 --
 
 INSERT INTO `ps_page_type` (`id_page_type`, `name`) VALUES
-(1, 'index');
+(1, 'index'),
+(2, 'pagenotfound'),
+(3, 'pricesdrop');
 
 -- --------------------------------------------------------
 
@@ -25314,7 +25363,7 @@ ALTER TABLE `ps_address`
 -- AUTO_INCREMENT для таблицы `ps_admin_filter`
 --
 ALTER TABLE `ps_admin_filter`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT для таблицы `ps_alias`
@@ -25404,7 +25453,7 @@ ALTER TABLE `ps_category`
 -- AUTO_INCREMENT для таблицы `ps_cms`
 --
 ALTER TABLE `ps_cms`
-  MODIFY `id_cms` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_cms` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT для таблицы `ps_cms_category`
@@ -25440,7 +25489,7 @@ ALTER TABLE `ps_configuration_kpi`
 -- AUTO_INCREMENT для таблицы `ps_connections`
 --
 ALTER TABLE `ps_connections`
-  MODIFY `id_connections` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_connections` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT для таблицы `ps_connections_source`
@@ -25536,7 +25585,7 @@ ALTER TABLE `ps_employee_account`
 -- AUTO_INCREMENT для таблицы `ps_employee_session`
 --
 ALTER TABLE `ps_employee_session`
-  MODIFY `id_employee_session` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id_employee_session` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT для таблицы `ps_feature`
@@ -25674,7 +25723,7 @@ ALTER TABLE `ps_link_block_shop`
 -- AUTO_INCREMENT для таблицы `ps_log`
 --
 ALTER TABLE `ps_log`
-  MODIFY `id_log` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=334;
+  MODIFY `id_log` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=336;
 
 --
 -- AUTO_INCREMENT для таблицы `ps_mail`
@@ -25716,7 +25765,7 @@ ALTER TABLE `ps_module`
 -- AUTO_INCREMENT для таблицы `ps_module_history`
 --
 ALTER TABLE `ps_module_history`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT для таблицы `ps_module_preference`
@@ -25818,7 +25867,7 @@ ALTER TABLE `ps_order_state`
 -- AUTO_INCREMENT для таблицы `ps_page`
 --
 ALTER TABLE `ps_page`
-  MODIFY `id_page` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_page` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT для таблицы `ps_pagenotfound`
@@ -25830,7 +25879,7 @@ ALTER TABLE `ps_pagenotfound`
 -- AUTO_INCREMENT для таблицы `ps_page_type`
 --
 ALTER TABLE `ps_page_type`
-  MODIFY `id_page_type` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_page_type` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT для таблицы `ps_product`

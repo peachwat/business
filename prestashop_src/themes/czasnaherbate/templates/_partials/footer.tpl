@@ -273,27 +273,27 @@
       </div>
       <ul id="footer_sub_menu_4620" class="collapse">
                   <li>
-            <a id="link-cms-page-8-2" class="cms-page-link" href="https://localhost/content/8-jak-pakujemy-zamowienia" title="pakowanie zamówień">
+            <a id="link-cms-page-8-2" class="cms-page-link" href="https://localhost/content/9-jak-pakujemy-zamowienia" title="pakowanie zamówień">
               Jak pakujemy zamówienia
             </a>
           </li>
                   <li>
-            <a id="link-cms-page-7-2" class="cms-page-link" href="https://localhost/content/7-rachunek-bankowy" title="rachunek bankowy">
+            <a id="link-cms-page-7-2" class="cms-page-link" href="https://localhost/content/6-rachunek-bankowy" title="rachunek bankowy">
               Rachunek bankowy
             </a>
           </li>
                   <li>
-            <a id="link-cms-page-6-2" class="cms-page-link" href="https://localhost/content/6-zwroty" title="">
+            <a id="link-cms-page-6-2" class="cms-page-link" href="https://localhost/content/8-zwroty" title="">
               Zwroty
             </a>
           </li>
                   <li>
-            <a id="link-cms-page-13-2" class="cms-page-link" href="https://localhost/content/13-reklamacje" title="">
+            <a id="link-cms-page-13-2" class="cms-page-link" href="https://localhost/content/7-reklamacje" title="">
               Reklamacje
             </a>
           </li>
                   <li>
-            <a id="link-cms-page-9-2" class="cms-page-link" href="https://localhost/content/9-warunki-dostawy" title="Warunki dostawy">
+            <a id="link-cms-page-9-2" class="cms-page-link" href="https://localhost/content/1-delivery" title="Warunki dostawy">
               Warunki dostawy
             </a>
           </li>
@@ -327,42 +327,42 @@
       </div>
       <ul id="footer_sub_menu_20066" class="collapse">
                   <li>
-            <a id="link-cms-page-14-3" class="cms-page-link" href="https://localhost/content/14-regulamin-sklepu" title="Our terms and conditions of use">
+            <a id="link-cms-page-14-3" class="cms-page-link" href="https://localhost/content/2-regulamin-sklepu" title="Our terms and conditions of use">
               Regulamin sklepu
             </a>
           </li>
                   <li>
-            <a id="link-cms-page-15-3" class="cms-page-link" href="https://localhost/content/15-polityka-prywatnosci" title="">
+            <a id="link-cms-page-15-3" class="cms-page-link" href="https://localhost/content/3-polityka-prywatnosci" title="">
               Polityka prywatności
             </a>
           </li>
                   <li>
-            <a id="link-cms-page-16-3" class="cms-page-link" href="https://localhost/content/16-zasady-realizowania-bonow-rabatowych" title="">
+            <a id="link-cms-page-16-3" class="cms-page-link" href="https://localhost/content/10-zasady-realizowania-bonow-rabatowych" title="">
               Zasady realizowania bonów rabatowych
             </a>
           </li>
                   <li>
-            <a id="link-cms-page-17-3" class="cms-page-link" href="https://localhost/content/17-regulamin-karty-stalego-klienta" title="">
+            <a id="link-cms-page-17-3" class="cms-page-link" href="https://localhost/content/11-regulamin-karty-stalego-klienta" title="">
               Regulamin Karty Stałego Klienta
             </a>
           </li>
                   <li>
-            <a id="link-cms-page-18-3" class="cms-page-link" href="https://localhost/content/18-regulamin-programu-lojalnosciowego-listek-herbaty" title="">
+            <a id="link-cms-page-18-3" class="cms-page-link" href="https://localhost/content/12-regulamin-programu-lojalnosciowego-listek-herbaty" title="">
               Regulamin programu lojalnościowego  „Listek herbaty”
             </a>
           </li>
                   <li>
-            <a id="link-cms-page-19-3" class="cms-page-link" href="https://localhost/content/19-polityka-cookies" title="">
+            <a id="link-cms-page-19-3" class="cms-page-link" href="https://localhost/content/13-polityka-cookies" title="">
               Polityka cookies
             </a>
           </li>
                   <li>
-            <a id="link-cms-page-20-3" class="cms-page-link" href="https://localhost/content/20-regulamin-konkursu-dzien-nauczyciela" title="Dzień Nauczyciela">
+            <a id="link-cms-page-20-3" class="cms-page-link" href="https://localhost/content/14-regulamin-konkursu-dzien-nauczyciela" title="Dzień Nauczyciela">
               Regulamin Konkursu Dzień Nauczyciela
             </a>
           </li>
                   <li>
-            <a id="link-cms-page-21-3" class="cms-page-link" href="https://localhost/content/21-rozstrzygniecie-konkursu-dzien-nauczyciela" title="">
+            <a id="link-cms-page-21-3" class="cms-page-link" href="https://localhost/content/15-rozstrzygniecie-konkursu-dzien-nauczyciela" title="">
               Rozstrzygnięcie konkursu - Dzień Nauczyciela
             </a>
           </li>

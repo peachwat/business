@@ -5,3 +5,4 @@ venv
 .vscode
 
 /prestashop_src/var/cache/dev
+*:Zone.Identifier
