@@ -109,7 +109,7 @@ nav.breadcrumb,
     bottom: -60px;
     left: 50% !important;
     transform: translateX(-50%) !important;
-    margin-left: 15px !important; 
+   text-align: center;
     width: 50px !important;
     height: 50px !important;
     z-index: 100;
@@ -275,4 +275,35 @@ nav.breadcrumb,
 
 .top-menu li#category-89 > a {
     color: black !important;
+}
+
+@media (min-width: 1200px) {
+    .col-xl-2-4 {
+        flex: 0 0 20%; 
+        max-width: 20%;
+    }
+}
+
+
+.js-product {
+    margin-bottom: 100px; 
+}
+
+.product-price-and-shipping{
+    margin-top: 40px; 
+}
+
+.js-product {
+    position: relative;
+    height: 450px;
+}
+.js-product::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 30px;
+    bottom: 0;             
+    width: 80%;
+    height: 2px;
+    background-color: #FFD700;
 }

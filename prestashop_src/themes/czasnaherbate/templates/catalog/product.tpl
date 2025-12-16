@@ -2,44 +2,81 @@
  * Copyright since 2007 PrestaShop SA and Contributors
  * PrestaShop is an International Registered Trademark & Property of PrestaShop SA
  *
- * NOTICE OF LICENSE
- *
- * This source file is subject to the Academic Free License 3.0 (AFL-3.0)
- * that is bundled with this package in the file LICENSE.md.
- * It is also available through the world-wide-web at this URL:
- * https://opensource.org/licenses/AFL-3.0
- * If you did not receive a copy of the license and are unable to
- * obtain it through the world-wide-web, please send an email
- * to license@prestashop.com so we can send you a copy immediately.
- *
- * DISCLAIMER
- *
- * Do not edit or add to this file if you wish to upgrade PrestaShop to newer
- * versions in the future. If you wish to customize PrestaShop for your
- * needs please refer to https://devdocs.prestashop.com/ for more information.
+ * NOTICE OF LICENSE (AFL-3.0)
  *
  * @author    PrestaShop SA and Contributors <contact@prestashop.com>
  * @copyright Since 2007 PrestaShop SA and Contributors
- * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
+ * @license    https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
 {extends file=$layout}
 
 {block name='head' append}
   <meta property="og:type" content="product">
   {if $product.cover}
-    <meta property="og:image" content="{$product.cover.large.url}">
+    <meta property="og:image" content="{$product.cover.large.url|escape:'html':'UTF-8'}">
   {/if}
 
+  {* Екранування для числових мета-тегів *}
   {if $product.show_price}
-    <meta property="product:pretax_price:amount" content="{$product.price_tax_exc}">
-    <meta property="product:pretax_price:currency" content="{$currency.iso_code}">
-    <meta property="product:price:amount" content="{$product.price_amount}">
-    <meta property="product:price:currency" content="{$currency.iso_code}">
+    <meta property="product:pretax_price:amount" content="{$product.price_tax_exc|escape:'html':'UTF-8'}">
+    <meta property="product:pretax_price:currency" content="{$currency.iso_code|escape:'html':'UTF-8'}">
+    <meta property="product:price:amount" content="{$product.price_amount|escape:'html':'UTF-8'}">
+    <meta property="product:price:currency" content="{$currency.iso_code|escape:'html':'UTF-8'}">
   {/if}
   {if isset($product.weight) && ($product.weight != 0)}
-  <meta property="product:weight:value" content="{$product.weight}">
-  <meta property="product:weight:units" content="{$product.weight_unit}">
+    <meta property="product:weight:value" content="{$product.weight|escape:'html':'UTF-8'}">
+    <meta property="product:weight:units" content="{$product.weight_unit|escape:'html':'UTF-8'}">
   {/if}
+
+  {* ========================================================== *}
+  {* >>> ІНТЕГРАЦІЯ КАСТОМНОГО CSS ДЛЯ ЦІЄЇ СТОРІНКИ <<< *}
+  {* ========================================================== *}
+  {block name='product_custom_css'}
+  <style>
+    /* ---------------------------------------------------- */
+    /* ВСТАВТЕ ВАШ CSS ТУТ, НАПРИКЛАД: */
+    
+    .produkt-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap; /* Для мобільної адаптації */
+        margin-bottom: 15px;
+    }
+    
+    /* СТИЛІ ДЛЯ PDFFLA (доставки) */
+    .pdfla-cart {
+        background: #f8f8f8;
+        padding: 15px;
+        border: 1px solid #e7e7e7;
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    .pdfla-prices {
+        font-size: 14px;
+    }
+    
+    .pdfla-delta-price {
+        font-weight: bold;
+        color: #a60000; /* Червоний колір для "бракує" */
+    }
+
+    /* ДОДАНІ СТИЛІ ДЛЯ ТАБЛИЦІ TableCombz */
+    .tablecombz-table th, 
+    .tablecombz-table td {
+        text-align: center;
+        vertical-align: middle !important;
+    }
+    .tablecombz-price .price-lowered {
+        text-align: center; /* Центрування вмісту всередині комірки ціни */
+    }
+    
+    /* ---------------------------------------------------- */
+  </style>
+  {/block}
+  {* ========================================================== *}
+
 {/block}
 
 {block name='head_microdata_special'}
@@ -48,213 +85,371 @@
 
 {block name='content'}
 
-  <section id="main">
-    <meta content="{$product.url}">
+  <section id="main" itemscope itemtype="https://schema.org/Product">
+    <meta content="{$product.url|escape:'html':'UTF-8'}">
 
-    <div class="row product-container js-product-container">
-      <div class="col-md-6">
-        {block name='page_content_container'}
-          <section class="page-content" id="content">
-            {block name='page_content'}
-              {include file='catalog/_partials/product-flags.tpl'}
+    {* ВСТАВКА ХЛІБНИХ КРИШТІВ (PSHOWBREADCRUMB) *}
+    {hook h='displayWrapperTop'}
 
-              {block name='product_cover_thumbnails'}
-                {include file='catalog/_partials/product-cover-thumbnails.tpl'}
-              {/block}
-              <div class="scroll-box-arrows">
-                <i class="material-icons left">&#xE314;</i>
-                <i class="material-icons right">&#xE315;</i>
-              </div>
-
-            {/block}
-          </section>
-        {/block}
+    <div id="content-wrapper">
+        
+        {* ========================================================== *}
+        {* 2.1 ЗАГОЛОВОК ТА TRUSTMATE *}
+        {* ========================================================== *}
+        <div class="row clearfix">
+            <div class="col-sm-12">
+                
+                {block name='page_header_container'}
+                    {block name='page_header'}
+                        <h1 class="h1" itemprop="name">{block name='page_title'}{$product.name|escape:'html':'UTF-8'}{/block}</h1>
+                    {/block}
+                {/block}
+                
+                {* ХУК: Trustmate Widget *}
+                {hook h='displayProductExtraContent'}
+                
+            </div>
         </div>
-        <div class="col-md-6">
-          {block name='page_header_container'}
-            {block name='page_header'}
-              <h1 class="h1">{block name='page_title'}{$product.name}{/block}</h1>
-            {/block}
-          {/block}
-          {block name='product_prices'}
-            {include file='catalog/_partials/product-prices.tpl'}
-          {/block}
+        {* ========================================================== *}
+        
+        
+        <div class="row product-container js-product-container clearfix">
+          
+            {** 1. ЛІВА КОЛОНКА: ЗОБРАЖЕННЯ (col-md-4) **}
+            <div class="col-md-4">
+                {block name='page_content_container'}
+                    <section class="page-content" id="content">
+                        {block name='page_content'}
+                            {* Прапори продукту *}
+                            {include file='catalog/_partials/product-flags.tpl'}
 
-          <div class="product-information">
-            {block name='product_description_short'}
-              <div id="product-description-short-{$product.id}" class="product-description">{$product.description_short nofilter}</div>
-            {/block}
+                            {block name='product_cover_thumbnails'}
+                                {* Головне зображення та мініатюри *}
+                                {include file='catalog/_partials/product-cover-thumbnails.tpl'}
+                            {/block} 
+                            
+                            {* Стрілки прокрутки *}
+                            <div class="scroll-box-arrows scroll">
+                                <i class="material-icons">&#xE314;</i>
+                                <i class="material-icons">&#xE315;</i>
+                            </div>
 
-            {if $product.is_customizable && count($product.customizations.fields)}
-              {block name='product_customization'}
-                {include file="catalog/_partials/product-customization.tpl" customizations=$product.customizations}
-              {/block}
-            {/if}
-
-            <div class="product-actions js-product-actions">
-              {block name='product_buy'}
-                <form action="{$urls.pages.cart}" method="post" id="add-to-cart-or-refresh">
-                  <input type="hidden" name="token" value="{$static_token}">
-                  <input type="hidden" name="id_product" value="{$product.id}" id="product_page_product_id">
-                  <input type="hidden" name="id_customization" value="{$product.id_customization}" id="product_customization_id" class="js-product-customization-id">
-
-                  {block name='product_variants'}
-                    {include file='catalog/_partials/product-variants.tpl'}
-                  {/block}
-
-                  {block name='product_pack'}
-                    {if $packItems}
-                      <section class="product-pack">
-                        <p class="h4">{l s='This pack contains' d='Shop.Theme.Catalog'}</p>
-                        {foreach from=$packItems item="product_pack"}
-                          {block name='product_miniature'}
-                            {include file='catalog/_partials/miniatures/pack-product.tpl' product=$product_pack showPackProductsPrice=$product.show_price}
-                          {/block}
-                        {/foreach}
+                        {/block}
                     </section>
+                {/block}
+            </div>
+
+
+            {** 2. ПРАВА КОЛОНКА: ІНФОРМАЦІЯ, ЦІНА, КУПІВЛЯ (col-md-8) **}
+            <div class="col-md-8">
+                
+                
+                {* 2.2 БЛОК ДІЙ та ЦІН (produkt-top) *}
+                <div class="produkt-top clearfix">
+                    
+                    {* ВСТАВКА: PRODUCT DISCOUNT TOP (PROMOCJA) *}
+                    {if $product.has_discount}
+                        <div class="product-discount-top"><div>{l s='PROMOCJA' d='Shop.Theme.Catalog'}</div></div>
                     {/if}
-                  {/block}
+                    
+                    {* Оцінка *}
+                    <div class="produkt-ocena-top">
+                        {hook h='displayProductListReviews' product=$product}
+                    </div>
 
-                  {block name='product_discounts'}
-                    {include file='catalog/_partials/product-discounts.tpl'}
-                  {/block}
+                    {* ========================================================= *}
+                    {* БЛОК З СОЦМЕРЕЖАМИ ТА ДОСТАВКОЮ (product-additional-info) *}
+                    {* ========================================================= *}
+                    {block name='product_additional_info'}
+                        <div class="product-additional-info">
+                            
+                            {* Social Sharing (Динамічні посилання) *}
+                            <div class="social-sharing">
+                                <span>{l s='Udostępnij' d='Shop.Theme.Catalog'}</span>
+                                <ul>
+                                    <li class="facebook icon-gray">
+                                        <a href="https://www.facebook.com/sharer.php?u={$product.url|urlencode}" title="{l s='Udostępnij' d='Shop.Theme.Catalog'}" target="_blank">
+                                            <svg width="22" height="22" id="facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="currentColor"><path d="M40 0H8a8 8 0 0 0-8 8v32a8 8 0 0 0 8 8h17V31h-6v-7h6v-5c0-7 4-11 10-11a11.4 11.4 0 0 1 5 1v6h-4a3.78 3.78 0 0 0-4 4v5h7l-1 7h-6v17h8a8 8 0 0 0 8-8V8a8 8 0 0 0-8-8Z"></path></svg>
+                                        </a>
+                                    </li>
+                                    <li class="pinterest icon-gray">
+                                        <a href="https://www.pinterest.com/pin/create/button/?media={$product.cover.large.url|urlencode}&amp;url={$product.url|urlencode}" title="{l s='Pinterest' d='Shop.Theme.Catalog'}" target="_blank">
+                                            <svg width="22" height="22" id="pinterest" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0"></path></svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            {* EDRONE Tracking Script - ОБГОРНУТИ В LITERAL *}
+                            <script>
+                            {literal}
+                            if (document.getElementById('add_to_cart')) {
+                                document.getElementById('add_to_cart').addEventListener('click', function(event) {
+                                    if (typeof(ajaxCart) !== 'object') {
+                                        _edrone.action_type = 'add_to_cart';
+                                        _edrone.init()
+                                    };
+                                }, false);
+                            } else {
+                                document.body.addEventListener('click', function _func(e) {
+                                    if (e.srcElement.classList.contains('add-to-cart')) {
+                                        if (typeof(ajaxCart) !== 'object') {
+                                            _edrone.action_type = 'add_to_cart';
+                                            _edrone.init()
+                                        };
+                                    };
+                                    document.body.removeEventListener('click', _func)
+                                })
+                            }
+                            {/literal}
+                            </script>
+                            
+                            {* --- ІНТЕГРАЦІЯ ЛОГІКИ ПРОГРЕСУ PDFFLA --- *}
+                            {assign var="shipping_free_price" value=2000.00} {* Порогове значення 2000 zł *}
+                            {assign var=cart_products_total value=$cart.subtotals.products.amount}
+                            
+                                {if isset($cart.subtotals.discounts)}
+                                    {assign var=cart_products_total value=$cart_products_total - $cart.subtotals.discounts.amount}
+                                {/if}
+                                
+                                <div class="pdfla-cart clearfix">
+                                    <div class="pdfla-prices">
+                                        {if $shipping_free_price <= $cart_products_total}
+                                            <span class="pdfla-delta-price free-shipping-success">
+                                                {l s='Masz darmową dostawę!' d='Shop.Theme.Global'}
+                                            </span>
+                                        {else}
+                                            {assign var="missing_amount" value=$shipping_free_price - $cart_products_total}
+                                            {l s='Do darmowej dostawy brakuje' d='Shop.Theme.Global'}
+                                            <span class="pdfla-delta-price">
+                                                {Tools::displayPrice(max(0, $missing_amount), $currency) nofilter}
+                                            </span> 
+                                        {/if}
+                                        
+                                        {l s='Darmowa dostawa obowiązuje od' d='Shop.Theme.Global'}
+                                        <span class="pdfla-start-from-price">
+                                            {Tools::displayPrice($shipping_free_price, $currency) nofilter}
+                                        </span>
+                                    </div>
+                                </div>
+                            {* ------------------------------------------------------------------- *}
+                            
+                           {if isset($product.gpsr_info) && $product.gpsr_info}
+                            <p class="x13gpsr-info-desc">
+                                Szczegóły dotyczące zgodności produktu z przepisami:
+                                <a href="#x13gpsr" rel="nofollow" class="x13gpsr__btn--show">
+                                    Producent i osoba odpowiedzialna za produkt
+                                </a>
+                            </p>
+                        {/if}
+                        </div>
+                    {/block}
+                    {* ========================================================= *}
+                </div>
+                
+                {* 2.3 ЦІНИ (product-prices) *}
+                <div class="product-prices clearfix">
+                    {block name='product_prices'}
+                        {include file='catalog/_partials/product-prices.tpl'}
+                    {/block}
+                    
+                    {* Додатковий текст про податки/найнижча ціна/доставка *}
+                    {* ВПЕВНЮЄМОСЯ, ЩО НЕМАЄ ЗНИЖКИ, ПЕРЕД ТИМ ЯК ВИВОДИТИ БЛОК *}
+                    {if !$product.has_discount}
+                        <div class="tax-shipping-delivery-label schowaj">
+                            {l s='Brutto' d='Shop.Theme.Catalog'}
+                            {hook h='displayOmniversePricingNotice' product=$product}
+                            <span class="delivery-information">{$product.delivery_information|escape:'html':'UTF-8'}</span>
+                        </div>
+                    {/if}
+                </div>
 
-                  {block name='product_add_to_cart'}
-                    {include file='catalog/_partials/product-add-to-cart.tpl'}
-                  {/block}
+                {* 2.4 ВАРІАНТИ та КНОПКА КУПІВЛІ (product-actions) - ІНТЕГРАЦІЯ TABLECOMBZ СТРУКТУРИ *}
+                <div class="product-information">
+                    
+                    <div class="product-actions js-product-actions">
+                        {block name='product_buy'}
+                            <form action="{$urls.pages.cart|escape:'html':'UTF-8'}" method="post" id="add-to-cart-or-refresh">
+                                <input type="hidden" name="token" value="{$static_token|escape:'html':'UTF-8'}">
+                                <input type="hidden" name="id_product" value="{$product.id|intval}" id="product_page_product_id">
+                                <input type="hidden" name="id_customization" value="{$product.id_customization|intval}" id="product_customization_id" class="js-product-customization-id">
 
-                  {block name='product_additional_info'}
-                    {include file='catalog/_partials/product-additional-info.tpl'}
-                  {/block}
+                                {* ВАРІАНТИ (TableCombz) *}
+                                {block name='product_variants'}
+                                    {* TABLECOMBZ OVERRIDE - ЦЕЙ БЛОК МИ ЗАЛИШАЄМО ПУСТИМ, АЛЕ ВИКЛИКАЄМО ХУК,
+                                       ЯКЩО ВИ ПЛАНУЄТЕ НАЙБЛИЖЧИМ ЧАСОМ ІНТЕГРУВАТИ TABLECOMBZ *}{/block}
 
-                  {* Input to refresh product HTML removed, block kept for compatibility with themes *}
-                  {block name='product_refresh'}{/block}
-                </form>
-              {/block}
+                                {* ЗНИЖКИ (Стандартний блок) - залишаємо, якщо його не було в TableCombz *}
+                                {block name='product_discounts'}
+                                    {include file='catalog/_partials/product-discounts.tpl'}
+                                {/block}
 
-            </div>
+                                {* ====================================================================================== *}
+                                {* ПОВЕРНЕННЯ СТАНДАРТНОГО product-add-to-cart (КІЛЬКІСТЬ + КНОПКА) ВНУТРІ ФОРМИ TABLECOMBZ *}
+                                {* ====================================================================================== *}
+                                {block name='product_add_to_cart'}
+                                    <div id="tablecombz-wrapper"> {* Обгортаємо в той самий ID, що був у TableCombz *}
+                                        <div id="tablecombz-box-due">
+                                            <div class="tablecombz-legend-row">
+                                                <div class="tablecombz-legend-item">
+                                                    <div class="tablecombz-legend-dot available"></div>
+                                                    <div class="tablecombz-legend-text">{l s='Produkt dostępny' d='Shop.Theme.Catalog'}</div>
+                                                </div>
+                                                <div class="tablecombz-legend-item">
+                                                    <div class="tablecombz-legend-dot unavailable"></div>
+                                                    <div class="tablecombz-legend-text">{l s='Produkt niedostępny' d='Shop.Theme.Catalog'}</div>
+                                                </div>
+                                            </div>
+                                            <table style="background-color:#f0f0f0" class="table table-bordered tablecombz-table" id="tablecombz-table">
+                                                <thead>
+                                                    <tr>
+                                                        <th style="width: 130px; text-align: center; vertical-align: middle;background-color:white" class="first_item">{l s='Cena' d='Shop.Theme.Catalog'}</th>
+                                                        <th style="text-align: center; vertical-align: middle;background-color:white" class="item in-stock-availability"></th>
+                                                        <th style="width: 150px; text-align: center; vertical-align: middle;background-color:white" class="itemquantity">{l s='Ilość' d='Shop.Theme.Catalog'}</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="tablecombz-price tablecombz-discount" style="text-align: center; vertical-align: middle;">
+                                                            <div class="price price-lowered">
+                                                                <div>
+                                                                    {if $product.has_discount}
+                                                                        <s>{$product.regular_price}</s>
+                                                                    {/if}
+                                                                </div>
+                                                                {if $product.discount_percentage}
+                                                                    <div class="price-reduction">{$product.discount_percentage}</div>
+                                                                {/if}
+                                                                {$product.price}
+                                                                <span class="omniversepricing-notice">
+                                                                    {* ВИКЛИК ХУКА ДЛЯ НАЙНИЖЧОЇ ЦІНИ ЗА 30 ДНІВ *}
+                                                                    {hook h='displayProductPriceBlock' product=$product type="price_min_30_days"}
+                                                                </span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="tablecombz-avail" style="text-align: center; vertical-align: middle;"><div class="dot {$product.availability}"></div></td>
+                                                        <td class="tablecombz-quantity-wanted" style="width: 150px; text-align: center; vertical-align: middle;">
+                                                            {* ВСТАВЛЯЄМО СТАНДАРТНИЙ UI КОШИКА ТУТ *}
+                                                            {include file='catalog/_partials/product-add-to-cart.tpl'}
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <p class="tablecombz-desc">
+                                                {l s='Produkt dostępny w sklepie internetowym' d='Shop.Theme.Catalog'} {$shop.name} {l s='oraz w wybranych salonach' d='Shop.Theme.Catalog'}
+                                            </p>
+                                        </div>
+                                    </div>
+                                {/block}
+                                {* ====================================================================================== *}
+                                
 
-            {block name='hook_display_reassurance'}
-              {hook h='displayReassurance'}
-            {/block}
+                                {block name='product_refresh'}{/block}
+                            </form>
+                        {/block}
+                    </div>
+                    
+                    {* 2.5 КОРОТКИЙ ОПИС *}
+                    <div class="produkt-opis clearfix">
+                        {block name='product_description_short'}
+                            <div id="product-description-short-{$product.id|intval}" class="product-description">{$product.description_short nofilter}</div>
+                        {/block}
+                    </div>
 
-            {block name='product_tabs'}
-              <div class="tabs">
-                <ul class="nav nav-tabs" role="tablist">
-                  {if $product.description}
-                    <li class="nav-item">
-                       <a
-                         class="nav-link{if $product.description} active js-product-nav-active{/if}"
-                         data-toggle="tab"
-                         href="#description"
-                         role="tab"
-                         aria-controls="description"
-                         {if $product.description} aria-selected="true"{/if}>{l s='Description' d='Shop.Theme.Catalog'}</a>
-                    </li>
-                  {/if}
-                  <li class="nav-item">
-                    <a
-                      class="nav-link{if !$product.description} active js-product-nav-active{/if}"
-                      data-toggle="tab"
-                      href="#product-details"
-                      role="tab"
-                      aria-controls="product-details"
-                      {if !$product.description} aria-selected="true"{/if}>{l s='Product Details' d='Shop.Theme.Catalog'}</a>
-                  </li>
-                  {if $product.attachments}
-                    <li class="nav-item">
-                      <a
-                        class="nav-link"
-                        data-toggle="tab"
-                        href="#attachments"
-                        role="tab"
-                        aria-controls="attachments">{l s='Attachments' d='Shop.Theme.Catalog'}</a>
-                    </li>
-                  {/if}
-                  {foreach from=$product.extraContent item=extra key=extraKey}
-                    <li class="nav-item">
-                      <a
-                        class="nav-link"
-                        data-toggle="tab"
-                        href="#extra-{$extraKey}"
-                        role="tab"
-                        aria-controls="extra-{$extraKey}">{$extra.title}</a>
-                    </li>
-                  {/foreach}
-                </ul>
+                    {* 2.6 ХАРАКТЕРИСТИКИ / ДОСТАВКА / КОД ПРОДУКТУ *}
+                    <div class="produkt-szczegoly clearfix">
+                        {block name='product_details_features'}
+                            <section class="product-features">
+                                {include file='catalog/_partials/product-details.tpl'}
+                            </section>
+                        {/block}
+                        
+                        {* Доступність та код продукту *}
+                        <div class="dostepnosc">
+                            <label>{l s='Czas wysyłki:' d='Shop.Theme.Catalog'}</label>
+                            <span>{$product.delivery_in_stock|escape:'html':'UTF-8'}</span>
+                        </div>
+                        <div class="dostepnosc">
+                            <label>{l s='Koszt wysyłki:' d='Shop.Theme.Catalog'}</label><span>{l s='od 15,00 zł' d='Shop.Theme.Catalog'}</span>
+                        </div>
+                        <div class="product-reference">
+                            <label class="label">{l s='Kod produktu:' d='Shop.Theme.Catalog'}</label><span itemprop="sku">{$product.reference|escape:'html':'UTF-8'}</span>
+                        </div>
+                    </div>
 
-                <div class="tab-content" id="tab-content">
-                 <div class="tab-pane fade in{if $product.description} active js-product-tab-active{/if}" id="description" role="tabpanel">
-                   {block name='product_description'}
-                     <div class="product-description">{$product.description nofilter}</div>
-                   {/block}
-                 </div>
+                    {* 2.7 ДОДАТКОВІ ПОСИЛАННЯ (Zapytaj/Send2fr) *}
+                    <div class="box3pola clearfix">
+                        <div class="zapytaj-o-produkt">
+                            <a href="{$urls.pages.contact|escape:'html':'UTF-8'}">
+                                <svg width="19" height="14" style="vertical-align: middle;position: relative;top: -2px;"><use href="#envelope"></use></svg>
+                                {l s='Zapytaj o produkt' d='Shop.Theme.Catalog'}
+                            </a>
+                        </div>
+                        <div class="send2fr">
+                            {hook h='displaySendToFriend'}
+                        </div>
+                    </div>
+                    
+                    {* 2.8 Категорії продукту *}
+                    <div class="lista-kategorii clearfix"><div class="tytulkat">{l s='Kategorie:' d='Shop.Theme.Catalog'}</div>
+                        <div class="productcats">
+                            {assign var="defaultCategoryLink" value=$link->getCategoryLink($product.id_category_default)}
+                            {if $product.category_name}
+                                <span class="pole">
+                                    <a href="{$defaultCategoryLink|escape:'html':'UTF-8'}" title="{$product.category_name|escape:'html':'UTF-8'}">{$product.category_name|escape:'html':'UTF-8'}</a>
+                                </span>
+                            {/if}
+                        </div>
+                    </div>
+                
+                </div> {* /.product-information *}
+                
+                {* Кнопка повернення до категорії *}
+                <div class="extrabutton">
+                    <a href="{$defaultCategoryLink|escape:'html':'UTF-8'}">
+                        <svg style="margin-top:7px; margin-bottom:-4px" fill="currentColor" width="16" height="16" id="arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.967 16.967" fill="currentColor"><path d="M5.95939566 10.03934203h9.45118924V6.92807219H5.95939566l3.94777716-3.94777716L7.70524231.7783645-.00222161 8.48582843l7.70463549 7.70463548 2.20405184-2.20405183Z"></path></svg>
+                        {l s='POWRÓT DO LISTY PRODUKTÓW' d='Shop.Theme.Catalog'}
+                    </a>
+                </div>
 
-                 {block name='product_details'}
-                   {include file='catalog/_partials/product-details.tpl'}
-                 {/block}
+            </div> {* /.col-md-8 *}
+            
+        </div> {* /.row.product-container *}
 
-                 {block name='product_attachments'}
-                   {if $product.attachments}
-                    <div class="tab-pane fade in" id="attachments" role="tabpanel">
-                       <section class="product-attachments">
-                         <p class="h5 text-uppercase">{l s='Download' d='Shop.Theme.Actions'}</p>
-                         {foreach from=$product.attachments item=attachment}
-                           <div class="attachment">
-                             <h4><a href="{url entity='attachment' params=['id_attachment' => $attachment.id_attachment]}">{$attachment.name}</a></h4>
-                             <p>{$attachment.description}</p>
-                             <a href="{url entity='attachment' params=['id_attachment' => $attachment.id_attachment]}">
-                               {l s='Download' d='Shop.Theme.Actions'} ({$attachment.file_size_formatted})
-                             </a>
-                           </div>
-                         {/foreach}
-                       </section>
-                     </div>
-                   {/if}
-                 {/block}
-
-                 {foreach from=$product.extraContent item=extra key=extraKey}
-                 <div class="tab-pane fade in {$extra.attr.class}" id="extra-{$extraKey}" role="tabpanel" {foreach $extra.attr as $key => $val} {$key}="{$val}"{/foreach}>
-                   {$extra.content nofilter}
-                 </div>
-                 {/foreach}
-              </div>
-            </div>
-          {/block}
-        </div>
-      </div>
-    </div>
-
-    {block name='product_accessories'}
-      {if $accessories}
-        <section class="product-accessories clearfix">
-          <p class="h5 text-uppercase">{l s='You might also like' d='Shop.Theme.Catalog'}</p>
-          <div class="products row">
-            {foreach from=$accessories item="product_accessory" key="position"}
-              {block name='product_miniature'}
-                {include file='catalog/_partials/miniatures/product.tpl' product=$product_accessory position=$position productClasses="col-xs-12 col-sm-6 col-lg-4 col-xl-3"}
-              {/block}
-            {/foreach}
-          </div>
-        </section>
-      {/if}
-    {/block}
-
-    {block name='product_footer'}
-      {hook h='displayFooterProduct' product=$product category=$category}
-    {/block}
-
-    {block name='product_images_modal'}
-      {include file='catalog/_partials/product-images-modal.tpl'}
-    {/block}
-
-    {block name='page_footer_container'}
-      <footer class="page-footer">
-        {block name='page_footer'}
-          <!-- Footer content -->
+        {* 3. НИЖНІЙ БЛОК: АКСЕСУАРИ/КАРУСЕЛЬ *}
+        {block name='product_accessories'}
+            {if $accessories}
+                <section class="product-accessories clearfix">
+                    <p class="h5 text-uppercase">{l s='You might also like' d='Shop.Theme.Catalog'}</p>
+                    <div class="products row">
+                        {foreach from=$accessories item="product_accessory" key="position"}
+                            {block name='product_miniature'}
+                                {include file='catalog/_partials/miniatures/product.tpl' product=$product_accessory position=$position productClasses="col-xs-12 col-sm-6 col-lg-4 col-xl-3"}
+                            {/block}
+                        {/foreach}
+                    </div>
+                </section>
+            {/if}
         {/block}
-      </footer>
-    {/block}
+
+        {block name='product_footer'}
+            {hook h='displayFooterProduct' product=$product category=$category}
+        {/block}
+
+        {block name='product_images_modal'}
+            {include file='catalog/_partials/product-images-modal.tpl'}
+        {/block}
+
+        {block name='page_footer_container'}
+            <footer class="page-footer">
+                {block name='page_footer'}
+                    <!-- Footer content -->
+                {/block}
+            </footer>
+        {/block}
+    
+    </div> {* /#content-wrapper *}
+    
   </section>
 
 {/block}
