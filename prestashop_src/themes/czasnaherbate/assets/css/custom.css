@@ -109,7 +109,7 @@ nav.breadcrumb,
     bottom: -60px;
     left: 50% !important;
     transform: translateX(-50%) !important;
-    margin-left: 15px !important; 
+   text-align: center;
     width: 50px !important;
     height: 50px !important;
     z-index: 100;
