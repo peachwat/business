@@ -377,7 +377,7 @@
         <div class="lgcookieslaw-banner-message">
             <p>Ta witryna korzysta z własnych plików cookie i plików cookie stron trzecich w celu ulepszenia naszych usług i pokazywać Ci reklamy związane z Twoimi preferencjami, analizując Twoje nawyki nawigacja. Aby wyrazić zgodę na jego użycie, naciśnij przycisk Akceptuj.</p> 
             <div class="lgcookieslaw-link-container">
-                <a class="lgcookieslaw-info-link lgcookieslaw-link" target="_blank" href="https://czasnaherbate.net/content/3-regulamin-sklepu">Więcej informacji</a>
+               {* <a class="lgcookieslaw-info-link lgcookieslaw-link" target="_blank" href="https://czasnaherbate.net/content/3-regulamin-sklepu">Więcej informacji</a>*}
 
                 <a id="lgcookieslaw_customize_cookies_link" class="lgcookieslaw-customize-cookies-link lgcookieslaw-link">Dostosuj pliki cookie</a>
             </div>
@@ -403,7 +403,7 @@
                 <div class="lgcookieslaw-badge lgcookieslaw-tooltip-container lgcookieslaw-user-consent-consent-date tooltipstered" role="tooltip">
                     <i class="lgcookieslaw-icon-schedule"></i> <span class="lgcookieslaw-user-consent-consent-date-text">01/12/2025 19:41:22</span>
                 </div>
-                <a class="lgcookieslaw-badge lgcookieslaw-tooltip-container lgcookieslaw-user-consent-download tooltipstered" role="tooltip" target="_blank" href="https://czasnaherbate.net/module/lgcookieslaw/download?id_shop=1&amp;download_hash=f5131f95ba5123ee85cdb2284bfe009b">
+              {*  <a class="lgcookieslaw-badge lgcookieslaw-tooltip-container lgcookieslaw-user-consent-download tooltipstered" role="tooltip" target="_blank" href="https://czasnaherbate.net/module/lgcookieslaw/download?id_shop=1&amp;download_hash=f5131f95ba5123ee85cdb2284bfe009b">*}
                     <i class="lgcookieslaw-icon-download"></i> Zgoda
                 </a>
             </div>
