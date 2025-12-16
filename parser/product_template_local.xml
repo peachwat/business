@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
+<product>
+	<id_category_default><![CDATA[]]></id_category_default>
+	<id_tax_rules_group><![CDATA[1]]></id_tax_rules_group>
+	<minimal_quantity><![CDATA[1]]></minimal_quantity>
+	<price><![CDATA[]]></price>
+	<active><![CDATA[]]></active>
+	<state><![CDATA[1]]></state>
+	<show_price><![CDATA[1]]></show_price>
+	<indexed><![CDATA[1]]></indexed>
+	<visibility><![CDATA[both]]></visibility>
+    <on_sale><![CDATA[0]]></on_sale>
+    <new><![CDATA[0]]></new>
+    <weight><![CDATA[0]]></weight>
+	<name><language id="1"><![CDATA[]]></language></name>
+	<link_rewrite><language id="1"><![CDATA[]]></language></link_rewrite>
+    <description><language id="1"><![CDATA[]]></language></description>
+    <description_short><language id="1"><![CDATA[]]></language></description_short>
+    <available_for_order><![CDATA[1]]></available_for_order>
+	<associations>
+		<categories>
+			<category>
+			<id><![CDATA[]]></id>
+			</category>
+		</categories>
+		<images>
+			<image>
+			</image>
+		</images>
+	</associations>
+</product>
+</prestashop>

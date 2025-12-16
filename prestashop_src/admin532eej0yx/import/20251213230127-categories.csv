@@ -1,0 +1,134 @@
+Category ID;Active (0/1);Name *;Parent category;Root category (0/1);Description;Meta title;Meta keywords;Meta description;URL rewritten;Image URL
+;1;Herbata;Home;0
+;1;Klasyczna;Herbata;0
+;1;Herbata Czarna;Klasyczna;0
+;1;Herbata Zielona;Klasyczna;0
+;1;Herbata Pu Erh;Klasyczna;0
+;1;Herbata Żółta;Klasyczna;0
+;1;Herbata Oolong;Klasyczna;0
+;1;Rooibos i Honeybush;Klasyczna;0
+;1;Herbata Kwitnąca;Klasyczna;0
+;1;Kompozycje;Herbata;0
+;1;Herbata Czarna z dodatkami;Kompozycje;0
+;1;Herbata Zielona z dodatkami;Kompozycje;0
+;1;Herbata Pu Erh z dodatkami;Kompozycje;0
+;1;Herbata Biała z dodatkami;Kompozycje;0
+;1;Herbata Żółta z dodatkami;Kompozycje;0
+;1;Herbata Oolong kompozycje;Kompozycje;0
+;1;Herbata Owocowa;Kompozycje;0
+;1;Rooibos kompozycje;Kompozycje;0
+;1;Polecane;Herbata;0
+;1;Herbata Earl Grey;Polecane;0
+;1;Herbata z jaśminem;Polecane;0
+;1;Herbata z hibiskusem;Polecane;0
+;1;Herbata z imbirem;Polecane;0
+;1;Herbaty limitowane;Polecane;0
+;1;Herbaty rozgrzewające;Polecane;0
+;1;Herbata z miętą;Polecane;0
+;1;Herbaty urodzinowe;Polecane;0
+;1;Herbaty na lato;Polecane;0
+;1;Herbaty na wiosnę;Polecane;0
+;1;Herbaty świąteczne;Polecane;0
+;1;Herbaty kwiatowe;Polecane;0
+;1;Herbaty do gastronomii;Polecane;0
+;1;Herbaty do restauracji;Polecane;0
+;1;Herbaty do kawiarni;Polecane;0
+;1;Herbaty do biura;Polecane;0
+;1;Herbaty na zimę;Polecane;0
+;1;Herbaty na jesień;Polecane;0
+;1;Herbaty na zimno;Polecane;0
+;1;Herbaty wielkanocne;Polecane;0
+;1;Herbaty pakowane;Herbata;0
+;1;Herbaty świąteczne w kartonikach;Herbaty pakowane;0
+;1;Herbaty świąteczne w torebkach;Herbaty pakowane;0
+;1;Herbaty w kartonikach okazjonalnych;Herbaty pakowane;0
+;1;Herbaty w torebkach okazjonalnych;Herbaty pakowane;0
+;1;Herbaty w puszkach;Herbaty pakowane;0
+;1;Herbaty w Filtrach/Herbaciane kubki;Herbaty pakowane;0
+;1;Zestawy Degustacyjne;Herbaty pakowane;0
+;1;Herbaty do Sushi;Herbaty pakowane;0
+;1;Matcha;Herbaty pakowane;0
+;1;Bomby herbaciane;Herbaty pakowane;0
+;1;Herbaty z adaptogenami;Herbaty pakowane;0
+;1;Regiony;Herbata;0
+;1;Herbaty indyjskie Assam;Regiony;0
+;1;Herbaty Indyjskie Darjeeling;Regiony;0
+;1;Herbaty chińskie;Regiony;0
+;1;Herbaty chińskie Anhui;Regiony;0
+;1;Herbaty chińskie Yunnan;Regiony;0
+;1;Herbaty chińskie Zheijang;Regiony;0
+;1;Herbaty cejlońskie;Regiony;0
+;1;Herbaty koreańskie;Regiony;0
+;1;Herbaty gruzińskie;Regiony;0
+;1;Herbaty kenijskie;Regiony;0
+;1;Herbaty tureckie;Regiony;0
+;1;Herbaty nepalskie;Regiony;0
+;1;Herbaty RPA;Regiony;0
+;1;Herbata wietnamska;Regiony;0
+;1;Herbaty z Egiptu;Regiony;0
+;1;Herbaty Sri Lanka;Regiony;0
+;1;Kawa;Home;0
+;1;Kawy Klasyczne;Kawa;0
+;1;Kawy Smakowe;Kawa;0
+;1;Kawy Paczkowane;Kawa;0
+;1;Kawy bezkofeinowe;Kawa;0
+;1;AKCESORIA DO KAWY;Kawa;0
+;1;Yerba Mate;Home;0
+;1;Yerba Mate Pakowana;Yerba Mate;0
+;1;Zestawy Yerba Mate;Yerba Mate;0
+;1;Napoje z Yerba Mate;Yerba Mate;0
+;1;AKCESORIA DO YERBA MATE;Yerba Mate;0
+;1;Akcesoria;Home;0
+;1;Dzbanki do herbaty;Akcesoria;0
+;1;Akcesoria do matchy;Akcesoria;0
+;1;Filtry do herbaty;Akcesoria;0
+;1;Podgrzewacze;Akcesoria;0
+;1;Przechowywanie;Akcesoria;0
+;1;Tea for one;Akcesoria;0
+;1;Zaparzacze;Akcesoria;0
+;1;Butelki;Akcesoria;0
+;1;Świece Teaverso Home;Akcesoria;0
+;1;Akcesoria do kawy;Akcesoria;0
+;1;Filtry papierowe;Akcesoria do kawy;0
+;1;French Press;Akcesoria do kawy;0
+;1;Kawiarki;Akcesoria do kawy;0
+;1;Szklanki;Akcesoria do kawy;0
+;1;Kubki;Akcesoria;0
+;1;Kubki z zaparzaczem;Kubki;0
+;1;Kubki termiczne;Kubki;0
+;1;Pozostałe;Kubki;0
+;1;Akcesoria do yerba mate;Akcesoria;0
+;1;Bombille;Akcesoria do yerba mate;0
+;1;Matero;Akcesoria do yerba mate;0
+;1;Filiżanki;Akcesoria;0
+;1;Wyprzedaż;Akcesoria;0
+;1;Zioła;Home;0
+;1;Zioła klasyczne;Zioła;0
+;1;Kompozycje ziołowe;Zioła;0
+;1;Suplementy diety;Zioła;0
+;1;Prezenty;Home;0
+;1;Prezenty dla mamy;Prezenty;0
+;1;Prezenty dla taty;Prezenty;0
+;1;Zestawy prezentowe;Prezenty;0
+;1;Prezenty dla kobiety;Prezenty;0
+;1;Prezenty na Święta;Prezenty;0
+;1;Prezenty dla mężczyzny;Prezenty;0
+;1;Prezenty dla zakochanych;Prezenty;0
+;1;Prezenty dla nauczyciela;Prezenty;0
+;1;Dodatki do prezentów;Prezenty;0
+;1;Prezenty dla Babci i Dziadka;Prezenty;0
+;1;Prezenty na Wielkanoc;Prezenty;0
+;1;Prezenty z bakaliami;Prezenty;0
+;1;Drobne upominki;Prezenty;0
+;1;Karty Podarunkowe;Prezenty;0
+;1;Kalendarze Adwentowe;Prezenty;0
+;1;HERBATY OKAZJONALNE;Prezenty;0
+;1;Słodkości i przekąski;Home;0
+;1;Czekolada;Słodkości i przekąski;0
+;1;Czekolada na Gorąco;Słodkości i przekąski;0
+;1;Bakalie;Słodkości i przekąski;0
+;1;Syropy do kawy;Słodkości i przekąski;0
+;1;Syropy owocowe;Słodkości i przekąski;0
+;1;Konfitury;Słodkości i przekąski;0
+;1;Miody;Słodkości i przekąski;0
+;1;Ciastka;Słodkości i przekąski;0

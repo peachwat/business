@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
+    <product>
+        <name>
+            <language id="1">BURMALDA</language>
+        </name>
+        <link_rewrite>
+            <language id="1">burmalda</language>
+        </link_rewrite>
+        <id_category_default>2</id_category_default>
+        
+        <price>99.99</price>
+
+        <active>1</active>
+        <state>1</state>
+
+        
+        <minimal_quantity>1</minimal_quantity>
+        
+        <product_type>standard</product_type>
+        <show_price>1</show_price>
+    </product>
+</prestashop>

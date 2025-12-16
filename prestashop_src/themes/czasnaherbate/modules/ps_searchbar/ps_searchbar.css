@@ -1,0 +1,84 @@
+/* 1. Container alignment */
+.search-widget form {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* 2. The "SZUKAJ:" text styling */
+.search-widget .search_word {
+  font-weight: bold;
+  font-size: 13px;
+  color: #333;
+  /* Dark grey text */
+  margin-right: 10px;
+  /* Space between text and input */
+  text-transform: uppercase;
+}
+
+/* 3. Wrapper for Input and Button */
+.search-widget .search-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+/* 4. The Input Field Styling */
+.search-widget input.text_input {
+  height: 40px;
+  /* Adjust to match header height */
+  min-width: 250px;
+  /* Width of the search box */
+  padding: 0 15px;
+  padding-right: 40px;
+  /* Space on the right so text doesn't hit the icon */
+  border: 1px solid #e5e5e5;
+  /* Light grey border */
+  background-color: #fff;
+  color: #7a7a7a;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.search-widget input.text_input:focus {
+  border-color: #000;
+  /* Darker border when typing */
+}
+
+/* 5. The Submit Button (Icon) Styling */
+.search-widget button.search-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 40px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  color: #ff0000;
+  /* Icon color */
+  transition: color 0.3s;
+}
+
+.search-widget button.search-button:hover {
+  color: #000;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
