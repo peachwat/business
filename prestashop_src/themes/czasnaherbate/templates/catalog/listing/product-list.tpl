@@ -43,7 +43,7 @@
     
     {hook h="displayHeaderCategory"}
 
-    <section id="products">
+    <section style="padding-left: 5%;" id="products">
       {if $listing.products|count}
 
         {block name='product_list_top'}
