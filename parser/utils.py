@@ -341,7 +341,7 @@ def load_products(clean=False):
 
         discount = int(product.get('discount_percent', 0))
         if discount > 0:
-            root.find('.//on_sale').text = '1'
+            root.find('.//on_sale').text = '0'
 
         root.find('.//new').text =  str(product.get('is_new', 0))
         root.find('.//weight').text = '0.005'
