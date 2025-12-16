@@ -113,6 +113,7 @@ abstract class HTMLTemplateCore
      */
     protected function getLogo()
     {
+        return null;
         $id_shop = (int) $this->shop->id;
 
         $invoiceLogo = Configuration::get('PS_LOGO_INVOICE', null, null, $id_shop);
