@@ -169,12 +169,12 @@
                                 <ul>
                                     <li class="facebook icon-gray">
                                         <a href="https://www.facebook.com/sharer.php?u={$product.url|urlencode}" title="{l s='Udostępnij' d='Shop.Theme.Catalog'}" target="_blank">
-                                            <svg width="22" height="22"><use href="#facebook"></use></svg>
+                                            <svg width="22" height="22" id="facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="currentColor"><path d="M40 0H8a8 8 0 0 0-8 8v32a8 8 0 0 0 8 8h17V31h-6v-7h6v-5c0-7 4-11 10-11a11.4 11.4 0 0 1 5 1v6h-4a3.78 3.78 0 0 0-4 4v5h7l-1 7h-6v17h8a8 8 0 0 0 8-8V8a8 8 0 0 0-8-8Z"></path></svg>
                                         </a>
                                     </li>
                                     <li class="pinterest icon-gray">
                                         <a href="https://www.pinterest.com/pin/create/button/?media={$product.cover.large.url|urlencode}&amp;url={$product.url|urlencode}" title="{l s='Pinterest' d='Shop.Theme.Catalog'}" target="_blank">
-                                            <svg width="22" height="22"><use href="#pinterest"></use></svg>
+                                            <svg width="22" height="22" id="pinterest" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0"></path></svg>
                                         </a>
                                     </li>
                                 </ul>
@@ -208,15 +208,11 @@
                             {assign var="shipping_free_price" value=2000.00} {* Порогове значення 2000 zł *}
                             {assign var=cart_products_total value=$cart.subtotals.products.amount}
                             
-                            {if $cart_products_total > 0} {* Виводимо лише якщо в кошику є товари *}
                                 {if isset($cart.subtotals.discounts)}
                                     {assign var=cart_products_total value=$cart_products_total - $cart.subtotals.discounts.amount}
                                 {/if}
                                 
                                 <div class="pdfla-cart clearfix">
-                                    <div class="pdfla-icon">
-                                        <i class="material-icons">local_shipping</i>
-                                    </div>
                                     <div class="pdfla-prices">
                                         {if $shipping_free_price <= $cart_products_total}
                                             <span class="pdfla-delta-price free-shipping-success">
@@ -236,9 +232,16 @@
                                         </span>
                                     </div>
                                 </div>
-                            {/if}
                             {* ------------------------------------------------------------------- *}
                             
+                           {if isset($product.gpsr_info) && $product.gpsr_info}
+                            <p class="x13gpsr-info-desc">
+                                Szczegóły dotyczące zgodności produktu z przepisami:
+                                <a href="#x13gpsr" rel="nofollow" class="x13gpsr__btn--show">
+                                    Producent i osoba odpowiedzialna za produkt
+                                </a>
+                            </p>
+                        {/if}
                         </div>
                     {/block}
                     {* ========================================================= *}
@@ -297,12 +300,12 @@
                                                     <div class="tablecombz-legend-text">{l s='Produkt niedostępny' d='Shop.Theme.Catalog'}</div>
                                                 </div>
                                             </div>
-                                            <table class="table table-bordered tablecombz-table" id="tablecombz-table">
+                                            <table style="background-color:#f0f0f0" class="table table-bordered tablecombz-table" id="tablecombz-table">
                                                 <thead>
                                                     <tr>
-                                                        <th style="width: 130px; text-align: center; vertical-align: middle;" class="first_item">{l s='Cena' d='Shop.Theme.Catalog'}</th>
-                                                        <th style="text-align: center; vertical-align: middle;" class="item in-stock-availability"></th>
-                                                        <th style="width: 150px; text-align: center; vertical-align: middle;" class="itemquantity">{l s='Ilość' d='Shop.Theme.Catalog'}</th>
+                                                        <th style="width: 130px; text-align: center; vertical-align: middle;background-color:white" class="first_item">{l s='Cena' d='Shop.Theme.Catalog'}</th>
+                                                        <th style="text-align: center; vertical-align: middle;background-color:white" class="item in-stock-availability"></th>
+                                                        <th style="width: 150px; text-align: center; vertical-align: middle;background-color:white" class="itemquantity">{l s='Ilość' d='Shop.Theme.Catalog'}</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -404,7 +407,7 @@
                 {* Кнопка повернення до категорії *}
                 <div class="extrabutton">
                     <a href="{$defaultCategoryLink|escape:'html':'UTF-8'}">
-                        <svg width="16" height="16" style="vertical-align: middle;position: relative;top: -1px; margin-right: 1rem;"><use href="#arrow-right"></use></svg>
+                        <svg style="margin-top:7px; margin-bottom:-4px" fill="currentColor" width="16" height="16" id="arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.967 16.967" fill="currentColor"><path d="M5.95939566 10.03934203h9.45118924V6.92807219H5.95939566l3.94777716-3.94777716L7.70524231.7783645-.00222161 8.48582843l7.70463549 7.70463548 2.20405184-2.20405183Z"></path></svg>
                         {l s='POWRÓT DO LISTY PRODUKTÓW' d='Shop.Theme.Catalog'}
                     </a>
                 </div>
