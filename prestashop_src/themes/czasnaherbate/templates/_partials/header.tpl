@@ -57,7 +57,7 @@
 									</a>
 								</li>
 								<li>
-									{*TODO???*}          <a class="language-menu-link dropdown-item" href="https://czasnaherbate.net/en/" data-iso-code="en">
+									{*TODO???*}       <a class="language-menu-link dropdown-item" href="" data-iso-code="en">
 									<span class="language-menu-flag">
 									<img src="{$urls.theme_assets}english.jpg" alt="en" width="16" height="11">
 									</span>
@@ -173,24 +173,24 @@
 							<span class="menu-link">O NAS<i class="icon-arrow-right"></i></span>
 							<ul class="cb-menu">
 								<li><a href="https://localhost/content/4-about-us">O MARCE</a></li>
-								<li><a href="https://czasnaherbate.net/blog/aktualnosci/">AKTUALNOŚCI</a></li>
+								<li><a href="">AKTUALNOŚCI</a></li>
 								<li><a href="https://localhost/prices-drop">OFERTY SPECJALNE</a></li>
 							</ul>
 						</li>
 						<li class="menu-item-has-children wiedza-menu">
 							<span class="menu-link">KROPLA WIEDZY<i class="icon-arrow-right"></i></span>
 							<ul class="cb-menu">
-								<li><a href="https://czasnaherbate.net/blog/leksykon/herbata_zielona/">LEKSYKON</a></li>
-								<li><a href="https://czasnaherbate.net/blog/artykuly/">ARTYKUŁY</a></li>
-								<li><a href="https://czasnaherbate.net/blog/inspiracje/">INSPIRACJE</a></li>
+								<li><a href="">LEKSYKON</a></li>
+								<li><a href="">ARTYKUŁY</a></li>
+								<li><a href="">INSPIRACJE</a></li>
 							</ul>
 						</li>
 						<li class="menu-item-has-children wspolapraca-menu">
 							<span class="menu-link">WSPÓŁPRACA<i class="icon-arrow-right"></i></span>
 							<ul class="cb-menu">
-								<li><a href="https://czasnaherbate.net/blog/b2b/">OFERTY DLA FIRM</a></li>
-								<li><a href="https://czasnaherbate.net/blog/zaloz-swoj-sklep/">ZAŁÓŻ SWÓJ SKLEP</a></li>
-								<li><a href="https://czasnaherbate.net/blog/oferty-pracy/">KARIERA</a></li>
+								<li><a href="">OFERTY DLA FIRM</a></li>
+								<li><a href="">ZAŁÓŻ SWÓJ SKLEP</a></li>
+								<li><a href="">KARIERA</a></li>
 							</ul>
 						</li>
 					</ul>
