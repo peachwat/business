@@ -77,6 +77,89 @@
 	</div>
 </div>
 <nav class="header-nav">
+{literal}
+<style>
+    /* 1. ODBLOKOWANIE WIDOCZNOŚCI (Naprawa ucinania) */
+    /* Nakazujemy wszystkim kontenerom, by pokazywały to, co wystaje poza ramkę */
+    #header .header-nav,
+    .header-nav .container,
+    .header-nav .row,
+    .header-nav .menuold,
+    .header-nav .menutopleft,
+    .header-nav .menu-top-l,
+    .header-nav .menu-top-l > li {
+        overflow: visible !important;
+        position: relative !important;
+        z-index: auto;
+    }
+
+    /* 2. WYGLĄD ROZWIJANEGO MENU (.cb-menu) */
+    .menu-top-l .cb-menu {
+        /* Domyślnie ukryte */
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+
+        /* Pozycjonowanie */
+        position: absolute;
+        top: 100%; /* Zaraz pod napisem */
+        left: 0;
+        z-index: 99999; /* Najwyższa warstwa */
+
+        /* Wygląd pudełka */
+        width: 220px;
+        background-color: #ffffff;
+        border-top: 3px solid #f6a624; /* Pomarańczowa linia */
+        box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        padding: 10px 0;
+        text-align: left;
+        
+        /* Płynne pojawianie się */
+        transition: all 0.2s ease-in-out;
+    }
+
+    /* 3. MECHANIZM HOVER (Pokaż menu po najechaniu) */
+    .menu-top-l > li:hover .cb-menu {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+        margin-top: 0; /* Ewentualna korekta pozycji */
+    }
+
+    /* 4. STYLIZACJA LINKÓW WEWNĄTRZ */
+    .menu-top-l .cb-menu li {
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border: none;
+        float: none; /* Resetowanie floatów */
+    }
+
+    .menu-top-l .cb-menu li a {
+        display: block; /* Klikalne na całej szerokości */
+        padding: 10px 20px;
+        color: #cbbba0; /* Beżowy kolor */
+        font-weight: 700;
+        font-size: 14px;
+        text-transform: uppercase;
+        text-decoration: none;
+        line-height: normal;
+        background: transparent;
+    }
+
+    /* Kolor po najechaniu na link */
+    .menu-top-l .cb-menu li a:hover {
+        color: #f6a624; /* Pomarańczowy */
+        background-color: #f9f9f9;
+    }
+    
+    /* Ukrycie strzałek wewnątrz dropdowna (jeśli jakieś są) */
+    .menu-top-l .cb-menu i {
+        display: none !important;
+    }
+</style>
+{/literal}
 	<div class="container">
 		<div class="row">
 			<div class="hidden-sm-down">
@@ -89,9 +172,9 @@
 						<li class="menu-item-has-children onas-menu">
 							<span class="menu-link">O NAS<i class="icon-arrow-right"></i></span>
 							<ul class="cb-menu">
-								<li><a href="https://czasnaherbate.net/blog/o-marce/">O MARCE</a></li>
+								<li><a href="https://localhost/content/4-about-us">O MARCE</a></li>
 								<li><a href="https://czasnaherbate.net/blog/aktualnosci/">AKTUALNOŚCI</a></li>
-								<li><a href="https://czasnaherbate.net/blog/promocje/">OFERTY SPECJALNE</a></li>
+								<li><a href="https://localhost/prices-drop">OFERTY SPECJALNE</a></li>
 							</ul>
 						</li>
 						<li class="menu-item-has-children wiedza-menu">
@@ -131,7 +214,7 @@
 				<div class="menutopright">
 					<ul class="menu-top-l">
 						<li>
-							<a class="menu-link salony-menu" href="https://localhost/content/24-salony">SALONY</a>
+							<a class="menu-link salony-menu" href="https://localhost/stores#">SALONY</a>
 						</li>
 						<li>
 							<a class="menu-link kontakt-menu" href="https://localhost/content/22-blog-kontakt">FIRMA</a>
@@ -139,7 +222,7 @@
 					</ul>
 					{widget name="ps_shoppingcart"}
 					<div class="special">
-						<a href="{$urls.base_url}promocje">{l s='PROMOCJE' d='Shop.Theme.Global'}</a>{*TODO*}
+    					<a href="{$urls.pages.prices_drop}">{l s='PROMOCJE' d='Shop.Theme.Global'}</a>
 					</div>
 				</div>
 			</div>
