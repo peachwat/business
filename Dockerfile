@@ -6,6 +6,12 @@ RUN rm /etc/apache2/sites-available/000-default.conf
 
 COPY ./docker/ssl/000-default.conf /etc/apache2/sites-available/000-default.conf
 
+RUN rm -rf /var/www/html/*
+
+COPY --chmod=777 ./prestashop_src/ /var/www/html/
+
 RUN a2enmod ssl
 
-RUN service apache2 restart
+RUN apt-get update && apt-get install -y libmemcached-dev zlib1g-dev
+RUN pecl install memcached
+RUN docker-php-ext-enable memcached

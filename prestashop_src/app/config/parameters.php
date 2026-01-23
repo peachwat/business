@@ -3,9 +3,9 @@
   array (
     'database_host' => 'mysql',
     'database_port' => '',
-    'database_name' => 'prestashop',
+    'database_name' => 'BE_196803',
     'database_user' => 'root',
-    'database_password' => 'admin',
+    'database_password' => 'student',
     'database_prefix' => 'ps_',
     'database_engine' => 'InnoDB',
     'mailer_transport' => 'smtp',

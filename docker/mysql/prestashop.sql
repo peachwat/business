@@ -2,8 +2,8 @@
 -- version 5.2.3
 -- https://www.phpmyadmin.net/
 --
--- Host: mysql
--- Generation Time: Jan 23, 2026 at 08:47 PM
+-- Host: admin-mysql_db
+-- Generation Time: Jan 23, 2026 at 10:32 PM
 -- Server version: 5.7.41
 -- PHP Version: 8.3.26
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `prestashop`
+-- Database: `BE_196803`
 --
 
 -- --------------------------------------------------------
@@ -996,7 +996,9 @@ INSERT INTO `ps_admin_filter` (`id`, `employee`, `shop`, `controller`, `action`,
 (6, 1, 1, '', '', '{\"orderBy\":\"position\",\"sortOrder\":\"asc\",\"limit\":50,\"filters\":{\"id_cms_category_parent\":1}}', 'cms_page'),
 (7, 1, 1, '', '', '{\"limit\":50,\"orderBy\":\"id_webservice_account\",\"sortOrder\":\"asc\",\"filters\":[]}', 'webservice_key'),
 (8, 1, 1, '', '', '{\"limit\":50,\"orderBy\":\"id_order\",\"sortOrder\":\"DESC\",\"filters\":[]}', 'order'),
-(9, 1, 1, '', '', '{\"limit\":50,\"orderBy\":\"id_order_slip\",\"sortOrder\":\"asc\",\"filters\":[]}', 'credit_slip');
+(9, 1, 1, '', '', '{\"limit\":50,\"orderBy\":\"id_order_slip\",\"sortOrder\":\"asc\",\"filters\":[]}', 'credit_slip'),
+(10, 1, 1, '', '', '{\"limit\":10,\"orderBy\":\"id_request_sql\",\"sortOrder\":\"desc\",\"filters\":[]}', 'sql_request'),
+(11, 1, 1, 'backup', 'index', '{\"limit\":20,\"orderBy\":null,\"sortOrder\":null,\"filters\":[]}', '');
 
 -- --------------------------------------------------------
 
@@ -5567,7 +5569,7 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (84, NULL, NULL, 'PS_STOCK_MVT_REASON_DEFAULT', '3', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (85, NULL, NULL, 'PS_SPECIFIC_PRICE_PRIORITIES', 'id_shop;id_currency;id_country;id_group', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (86, NULL, NULL, 'PS_TAX_DISPLAY', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(87, NULL, NULL, 'PS_SMARTY_FORCE_COMPILE', '2', '0000-00-00 00:00:00', '2025-11-29 16:49:02'),
+(87, NULL, NULL, 'PS_SMARTY_FORCE_COMPILE', '1', '0000-00-00 00:00:00', '2026-01-23 23:30:37'),
 (88, NULL, NULL, 'PS_DISTANCE_UNIT', 'km', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (89, NULL, NULL, 'PS_STORES_DISPLAY_CMS', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (90, NULL, NULL, 'SHOP_LOGO_WIDTH', '225', '0000-00-00 00:00:00', '2025-12-14 16:32:24'),
@@ -5583,7 +5585,7 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (100, NULL, NULL, 'PS_LOCALE_LANGUAGE', 'pl', '0000-00-00 00:00:00', '2025-11-29 14:49:44'),
 (101, NULL, NULL, 'PS_LOCALE_COUNTRY', 'pl', '0000-00-00 00:00:00', '2025-11-29 14:49:44'),
 (102, NULL, NULL, 'PS_ATTACHMENT_MAXIMUM_SIZE', '8', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(103, NULL, NULL, 'PS_SMARTY_CACHE', NULL, '0000-00-00 00:00:00', '2025-11-29 16:49:02'),
+(103, NULL, NULL, 'PS_SMARTY_CACHE', NULL, '0000-00-00 00:00:00', '2026-01-23 23:30:37'),
 (104, NULL, NULL, 'PS_DIMENSION_UNIT', 'cm', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (105, NULL, NULL, 'PS_GUEST_CHECKOUT_ENABLED', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (106, NULL, NULL, 'PS_DISPLAY_SUPPLIERS', NULL, '0000-00-00 00:00:00', '2025-12-12 17:09:08'),
@@ -5746,7 +5748,7 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (263, NULL, NULL, 'PS_DASHBOARD_SIMULATION', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (264, NULL, NULL, 'PS_USE_HTMLPURIFIER', '1', '0000-00-00 00:00:00', '2025-12-12 17:09:08'),
 (265, NULL, NULL, 'PS_SMARTY_CACHING_TYPE', 'filesystem', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(266, NULL, NULL, 'PS_SMARTY_LOCAL', NULL, '0000-00-00 00:00:00', '2025-11-29 16:49:02'),
+(266, NULL, NULL, 'PS_SMARTY_LOCAL', NULL, '0000-00-00 00:00:00', '2026-01-23 23:30:37'),
 (267, NULL, NULL, 'PS_SMARTY_CLEAR_CACHE', 'everytime', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (268, NULL, NULL, 'PS_DETECT_LANG', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (269, NULL, NULL, 'PS_DETECT_COUNTRY', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
@@ -5913,7 +5915,7 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (430, NULL, NULL, 'PS_PSX_FIREBASE_REFRESH_TOKEN', NULL, '2025-11-29 14:52:49', '2025-11-29 14:52:49'),
 (431, NULL, NULL, 'PS_PSX_FIREBASE_REFRESH_DATE', '2025-11-29 14:52:49', '2025-11-29 14:52:49', '2025-11-29 14:52:49'),
 (432, NULL, NULL, 'PS_ACCOUNTS_FIREBASE_ID_TOKEN', NULL, '2025-11-29 14:52:49', '2025-11-29 14:52:49'),
-(433, NULL, NULL, 'PS_ACCOUNTS_FIREBASE_REFRESH_TOKEN', NULL, '2025-11-29 14:52:49', '2025-12-16 15:29:33'),
+(433, NULL, NULL, 'PS_ACCOUNTS_FIREBASE_REFRESH_TOKEN', NULL, '2025-11-29 14:52:49', '2026-01-23 23:30:05'),
 (434, NULL, NULL, 'CONF_PAYU_FIXED', '0.2', '2025-12-14 16:33:39', '2025-12-14 16:33:39'),
 (435, NULL, NULL, 'CONF_PAYU_VAR', '2', '2025-12-14 16:33:39', '2025-12-14 16:33:39'),
 (436, NULL, NULL, 'CONF_PAYU_FIXED_FOREIGN', '0.2', '2025-12-14 16:33:39', '2025-12-14 16:33:39'),
@@ -5949,8 +5951,8 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (466, NULL, NULL, 'PAYU_CREDIT_WIDGET_EXCLUDED_PAYTYPES', NULL, '2025-12-14 16:35:40', '2025-12-14 16:35:40'),
 (467, NULL, NULL, 'PS_MAIL_EMAIL_MESSAGE', '2', '2025-12-14 17:12:29', '2025-12-14 17:12:29'),
 (468, NULL, NULL, 'PS_MAIL_DOMAIN', NULL, '2025-12-14 17:12:29', '2025-12-14 17:12:29'),
-(469, NULL, NULL, 'PS_CCCJS_VERSION', '2', '2025-12-14 23:20:28', '2025-12-14 23:21:45'),
-(470, NULL, NULL, 'PS_CCCCSS_VERSION', '2', '2025-12-14 23:20:28', '2025-12-14 23:21:45');
+(469, NULL, NULL, 'PS_CCCJS_VERSION', '3', '2025-12-14 23:20:28', '2026-01-23 23:29:44'),
+(470, NULL, NULL, 'PS_CCCCSS_VERSION', '3', '2025-12-14 23:20:28', '2026-01-23 23:29:44');
 INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, `name`, `value`, `date_add`, `date_upd`) VALUES
 (471, NULL, NULL, 'BLOCKSPECIALS_SPECIALS_NBR', '9', '2025-12-15 02:30:51', '2025-12-15 02:52:37'),
 (472, NULL, NULL, 'PS_WEBSERVICE', '1', '2025-12-16 02:07:25', '2025-12-16 02:07:25'),
@@ -6258,7 +6260,8 @@ INSERT INTO `ps_connections` (`id_connections`, `id_shop_group`, `id_shop`, `id_
 (132, 1, 1, 123, 1, 2886860801, '2025-12-16 16:15:30', ''),
 (133, 1, 1, 52, 7, 2886860801, '2025-12-16 16:22:22', 'https://merch-prod.snd.payu.com/'),
 (134, 1, 1, 124, 2, 2886860801, '2025-12-16 16:22:29', ''),
-(135, 1, 1, 125, 1, 2886860801, '2025-12-16 16:23:18', '');
+(135, 1, 1, 125, 1, 2886860801, '2025-12-16 16:23:18', ''),
+(136, 1, 1, 126, 1, 3232252161, '2026-01-23 23:26:41', '');
 
 -- --------------------------------------------------------
 
@@ -7614,7 +7617,7 @@ CREATE TABLE `ps_employee` (
 --
 
 INSERT INTO `ps_employee` (`id_employee`, `id_profile`, `id_lang`, `lastname`, `firstname`, `email`, `passwd`, `last_passwd_gen`, `stats_date_from`, `stats_date_to`, `stats_compare_from`, `stats_compare_to`, `stats_compare_option`, `preselect_date_range`, `bo_color`, `bo_theme`, `bo_css`, `default_tab`, `bo_width`, `bo_menu`, `active`, `optin`, `id_last_order`, `id_last_customer_message`, `id_last_customer`, `last_connection_date`, `reset_password_token`, `reset_password_validity`, `has_enabled_gravatar`) VALUES
-(1, 1, 1, 'Rylova', 'Evelina', 's201303@student.pg.edu.pl', '$2y$10$MispUiHgyo8yhIL1Aj13SOxB/SU14SvC9uItdO0XVTjFj1KsNY7Ra', '2025-11-29 08:49:45', '2025-10-29', '2025-11-29', '0000-00-00', '0000-00-00', 1, NULL, NULL, 'default', 'theme.css', 1, 0, 1, 1, NULL, 0, 0, 0, '2025-12-16', NULL, '0000-00-00 00:00:00', 0);
+(1, 1, 1, 'Rylova', 'Evelina', 's201303@student.pg.edu.pl', '$2y$10$MispUiHgyo8yhIL1Aj13SOxB/SU14SvC9uItdO0XVTjFj1KsNY7Ra', '2025-11-29 08:49:45', '2025-10-29', '2025-11-29', '0000-00-00', '0000-00-00', 1, NULL, NULL, 'default', 'theme.css', 1, 0, 1, 1, NULL, 0, 0, 0, '2026-01-23', NULL, '0000-00-00 00:00:00', 0);
 
 -- --------------------------------------------------------
 
@@ -7653,7 +7656,8 @@ INSERT INTO `ps_employee_session` (`id_employee_session`, `id_employee`, `token`
 (3, 1, 'b1c871aaa5cfcdc07c18853105675b2b5f59ac70'),
 (7, 1, '23c3ee2453e6dae15d60da357cbffd94cfe3c71d'),
 (11, 1, '43357638563ce538791215d47d57868f0cd52e39'),
-(12, 1, '4d0d8c4be126c1cb1b3b57fe33a2dda509983bad');
+(12, 1, '4d0d8c4be126c1cb1b3b57fe33a2dda509983bad'),
+(14, 1, '05bdcdeaa39c5aaa42ca240e8a919658a304f668');
 
 -- --------------------------------------------------------
 
@@ -16451,7 +16455,9 @@ INSERT INTO `ps_log` (`id_log`, `severity`, `error_code`, `message`, `object_typ
 (440, 1, 0, 'Frontcontroller::init - Cart cannot be loaded or an order has already been placed using this cart', 'Cart', 43, 1, NULL, 1, 0, 0, '2025-12-16 15:54:36', '2025-12-16 15:54:36'),
 (441, 1, 0, 'Frontcontroller::init - Cart cannot be loaded or an order has already been placed using this cart', 'Cart', 44, 1, NULL, 1, 0, 0, '2025-12-16 15:56:03', '2025-12-16 15:56:03'),
 (442, 1, 0, 'Frontcontroller::init - Cart cannot be loaded or an order has already been placed using this cart', 'Cart', 45, 1, NULL, 1, 0, 0, '2025-12-16 16:16:28', '2025-12-16 16:16:28'),
-(443, 1, 0, 'Frontcontroller::init - Cart cannot be loaded or an order has already been placed using this cart', 'Cart', 46, 1, NULL, 1, 0, 0, '2025-12-16 16:23:59', '2025-12-16 16:23:59');
+(443, 1, 0, 'Frontcontroller::init - Cart cannot be loaded or an order has already been placed using this cart', 'Cart', 46, 1, NULL, 1, 0, 0, '2025-12-16 16:23:59', '2025-12-16 16:23:59'),
+(444, 1, 0, 'Połączenie z panelem administracyjnym z 192.168.65.1', '', 0, NULL, NULL, 1, 1, 1, '2026-01-23 23:28:02', '2026-01-23 23:28:02'),
+(445, 1, 0, 'Połączenie z panelem administracyjnym z 151.101.129.91', '', 0, NULL, NULL, 1, 1, 1, '2026-01-23 23:30:04', '2026-01-23 23:30:04');
 
 -- --------------------------------------------------------
 
@@ -16587,6 +16593,13 @@ CREATE TABLE `ps_memcached_servers` (
   `port` int(11) UNSIGNED NOT NULL,
   `weight` int(11) UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `ps_memcached_servers`
+--
+
+INSERT INTO `ps_memcached_servers` (`id_memcached_server`, `ip`, `port`, `weight`) VALUES
+(1, 'memcached', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -61144,7 +61157,7 @@ ALTER TABLE `ps_address`
 -- AUTO_INCREMENT for table `ps_admin_filter`
 --
 ALTER TABLE `ps_admin_filter`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `ps_alias`
@@ -61270,7 +61283,7 @@ ALTER TABLE `ps_configuration_kpi`
 -- AUTO_INCREMENT for table `ps_connections`
 --
 ALTER TABLE `ps_connections`
-  MODIFY `id_connections` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=136;
+  MODIFY `id_connections` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=137;
 
 --
 -- AUTO_INCREMENT for table `ps_connections_source`
@@ -61366,7 +61379,7 @@ ALTER TABLE `ps_employee_account`
 -- AUTO_INCREMENT for table `ps_employee_session`
 --
 ALTER TABLE `ps_employee_session`
-  MODIFY `id_employee_session` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id_employee_session` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `ps_feature`
@@ -61504,7 +61517,7 @@ ALTER TABLE `ps_link_block_shop`
 -- AUTO_INCREMENT for table `ps_log`
 --
 ALTER TABLE `ps_log`
-  MODIFY `id_log` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=444;
+  MODIFY `id_log` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=446;
 
 --
 -- AUTO_INCREMENT for table `ps_mail`
@@ -61522,7 +61535,7 @@ ALTER TABLE `ps_manufacturer`
 -- AUTO_INCREMENT for table `ps_memcached_servers`
 --
 ALTER TABLE `ps_memcached_servers`
-  MODIFY `id_memcached_server` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id_memcached_server` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `ps_message`
