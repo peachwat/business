@@ -2,7 +2,7 @@ name: Test Build Pipeline
 
 on:
   push:
-    branches: [ "pipeline" ] 
+    branches: [ "main" ] 
 
 jobs:
   build:
