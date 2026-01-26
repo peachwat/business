@@ -6,3 +6,6 @@ venv
 *.jpg
 /prestashop_src/var/cache/dev
 *:Zone.Identifier
+
+prestashop_src/cache
+prestashop_src/var

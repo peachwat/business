@@ -1,36 +1,33 @@
 version: "3"
 services:
-    mariadb:
-        container_name: mariadb
+    mysql:
+        container_name: admin-mysql_db
         platform: linux/x86_64
-        image: mariadb:12.1.2
+        image: mysql:5.7.41
         restart: unless-stopped
         environment:
-            MARIADB_ROOT_PASSWORD: admin
-            MARIADB_DATABASE: prestashop
-            MARIADB_USER: admin
-            MARIADB_PASSWORD: admin
+            MYSQL_ROOT_PASSWORD: student
+            MYSQL_PASSWORD: student
         networks:
             - prestashop_network
-        volumes:
-            - ./docker/mariadb:/docker-entrypoint-initdb.d
+    
     prestashop:
         platform: linux/x86_64
-        container_name: prestashop
-        build: .
+        container_name: BE_196803_prestashop
         restart: unless-stopped
+        image: prestashop
         depends_on:
-            - mariadb
+            - mysql
         ports:
-            - 80:80
             - 443:443
         volumes:
-            - ./prestashop_src:/var/www/html
+            # - ./prestashop_src:/var/www/html
+            - ./docker/mysql:/var/www/html/scripts
         environment:
-            DB_SERVER: mariadb
-            DB_NAME: prestashop
-            DB_USER: admin
-            DB_PASSWD: admin
+            DB_SERVER: admin-mysql_db
+            DB_NAME: BE_196803
+            DB_USER: root
+            DB_PASSWD: student
             PS_INSTALL_AUTO: 0
             PS_FOLDER_ADMIN: admin
             PS_DEV_MODE: 1
@@ -38,21 +35,42 @@ services:
             ADMIN_MAIL: admin@prestashop.com
             # set admin password
             ADMIN_PASSWD: admin
+        command: bash -c "chmod +x /var/www/html/scripts/init_database.sh && sh /var/www/html/scripts/init_database.sh"
         networks:
             - prestashop_network
+
     phpmyadmin:
         platform: linux/x86_64
         container_name: phpmyadmin
         image: phpmyadmin/phpmyadmin:5.2.3
         restart: unless-stopped
         depends_on:
-            - mariadb
+            - mysql
         ports:
             - 8081:80
         environment:
-            PMA_HOST: mariadb
+            PMA_HOST: admin-mysql_db
             MYSQL_ROOT_PASSWORD: admin
         networks:
             - prestashop_network
+
+    memcached:
+        image: memcached:1.6-alpine
+        container_name: BE_196803_memcached
+        deploy:
+            resources:
+                limits:
+                    cpus: '0.5'
+                    memory: 64M
+                reservations:
+                    cpus: '0.25'
+                    memory: 32M
+            restart_policy:
+                condition: on-failure
+                delay: 5s
+                max_attempts: 3
+                window: 180s
+        networks:
+        - prestashop_network
 networks:
     prestashop_network:
